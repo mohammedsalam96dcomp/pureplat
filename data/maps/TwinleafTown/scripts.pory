@@ -1,0 +1,28 @@
+mapscripts TwinleafTown_MapScripts{
+
+}
+
+script TwinleafTown_EventScript_PlayersHouseSign{
+    lock
+    faceplayer
+    msgbox("{PLAYER}'s House")
+    release
+    end
+}
+
+script TwinleafTown_EventScript_RivalsHouseSign{
+	lock
+    faceplayer
+    msgbox("Barry's House")
+    release
+    end
+}
+
+script TwinleafTown_EventScript_TwinleafSign{
+	lock
+    faceplayer
+    msgbox(format("Twinleaf Town\n"
+				  "Fresh and Free!"))
+    release
+    end
+}
