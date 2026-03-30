@@ -1,46 +1,105 @@
 mapscripts TwinleafTownPlayersHouse_2F_MapScripts {
-  //MAP_SCRIPT_ON_TRANSITION: OnTransition
-
   MAP_SCRIPT_ON_FRAME_TABLE[
-    VAR_TWINLEAF_INTRO_STATE, 1: TV
+    VAR_TWINLEAF_INTRO_STATE, 1: TwinleafTownPlayersHouse_2F_ON_FRAME
   ]
 
   MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
-    VAR_TWINLEAF_INTRO_STATE, 0: GameStart
+    VAR_TWINLEAF_INTRO_STATE, 0: TwinleafTownPlayersHouse_2F_ON_WARP
   ]
-
 }
 
-// script OnTransition {
-//   if (flag(FLAG_GAME_START)) {
-//     setvar(VAR_TEMP_2, 0)
-//   }
-// }
-
-script TV {
+script TwinleafTownPlayersHouse_2F_ON_FRAME {
   lock
   msgbox(format("That concludes our special program,\n"
                 "'Lets ask Prof. Rowan!'\p"
+
                 "Brought to you by Jubilife TV on\n"
                 "Nationwide Net!\p"
+
                 "See you next week, same time\n"
                 "same channel."))
   release
   setvar(VAR_TWINLEAF_INTRO_STATE, 2)
-  // clearflag(FLAG_GAME_START)
 }
 
-script GameStart {
+script TwinleafTownPlayersHouse_2F_ON_WARP {
   applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-  // msgbox(format("That concludes our special program,\n"
-  //               "'Lets ask Prof. Rowan!'\p"
-  //               "Brought to you by Jubilife TV on\n"
-  //               "Nationwide Net!\p"
-  //               "See you next week, same time\n"
-  //               "same channel."))
   setvar(VAR_TWINLEAF_INTRO_STATE, 1)
 }
 
+script TwinleafTownPlayersHouse_2F_EnterBarry {
+  lockall
+  clearflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
+  addobject(LOCALID_RIVAL)
+
+  playse(SE_RG_DOOR)
+  applymovement(LOCALID_RIVAL, moves(walk_fast_left))
+  waitmovement(LOCALID_RIVAL)
+  applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+  playse(SE_PIN)
+  waitmovement(0)
+  waitse
+  msgbox(format("There you are!"))
+  closemessage
+  applymovement(LOCALID_RIVAL, moves(walk_down*2, walk_left *2))
+  waitmovement(LOCALID_RIVAL)
+  msgbox(format("Hey, {PLAYER}!\n"
+                "Did you just see the TV? Sure you did!\p"
+                "Prof. Rowan's that really important\n" 
+                "guy who studies Pokemon, right?\p"
+                "That means he must have lots and lots\n"
+                "of Pokemon.\p"
+                "So if we ask him, I bet he'd give us\n"
+                "some Pokemon!"
+  ))
+  closemessage
+
+  applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+  playse(SE_PIN)
+  waitmovement(0)
+  waitse
+  applymovement(LOCALID_RIVAL, Common_Movement_Delay48)
+	waitmovement(LOCALID_RIVAL)
+
+  applymovement(LOCALID_RIVAL, moves(walk_up, walk_left*3))
+  waitmovement(LOCALID_RIVAL)
+  applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+  applymovement(LOCALID_RIVAL, moves(walk_left*2, face_up))
+  waitmovement(LOCALID_RIVAL)
+  msgbox(format("Oh, hey!\n"
+                "Is this a new PC?!"
+  ))
+  closemessage
+
+  applymovement(LOCALID_RIVAL, moves(face_right))
+  waitmovement(LOCALID_RIVAL)
+  msgbox(format("Uh...\n"
+                "Where was I?"
+  ))
+  closemessage
+
+  applymovement(LOCALID_RIVAL, moves(walk_right, walk_down, walk_right*2))
+  waitmovement(LOCALID_RIVAL)
+  msgbox(format("Oh, right, right! We're going to go see\n"
+                "Prof. Rowan and get some Pokemon.\p"
+                "I'll be waiting outside.\p"
+                "OK, {PLAYER}? If you're late, I'm\n"
+                "fining you 10 million!"
+  ))
+  closemessage
+
+  applymovement(LOCALID_RIVAL, moves(walk_up, walk_right*2, walk_up))
+  waitmovement(LOCALID_RIVAL)
+  applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+  applymovement(LOCALID_RIVAL, moves(walk_right*3))
+  waitmovement(LOCALID_RIVAL)
+  playse(SE_RG_DOOR)
+
+  removeobject(LOCALID_RIVAL)
+  setflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
+  setvar(VAR_TWINLEAF_INTRO_STATE, 3)
+  releaseall
+}
 
 
 
