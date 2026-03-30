@@ -1739,3 +1739,7 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/apricorn_tree.inc"
 
 	.include "data/maps/TwinleafTown/scripts.inc"
+
+	.include "data/maps/TwinleafTownPlayersHouse_2F/scripts.inc"
+
+	.include "data/maps/TwinleafTownPlayersHouse_1F/scripts.inc"

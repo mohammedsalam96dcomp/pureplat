@@ -1563,3 +1563,25 @@ const struct Tileset gTileset_Twinleaf =
     .metatileAttributes = gMetatileAttributes_Twinleaf,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PlayersHouse =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PlayersHouse,
+    .palettes = gTilesetPalettes_PlayersHouse,
+    .metatiles = gMetatiles_PlayersHouse,
+    .metatileAttributes = gMetatileAttributes_PlayersHouse,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_BuildingSinnoh =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_BuildingSinnoh,
+    .palettes = gTilesetPalettes_BuildingSinnoh,
+    .metatiles = gMetatiles_BuildingSinnoh,
+    .metatileAttributes = gMetatileAttributes_BuildingSinnoh,
+    .callback = NULL,
+};
