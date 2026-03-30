@@ -1,0 +1,46 @@
+mapscripts TwinleafTownPlayersHouse_2F_MapScripts {
+  //MAP_SCRIPT_ON_TRANSITION: OnTransition
+
+  MAP_SCRIPT_ON_FRAME_TABLE[
+    VAR_TWINLEAF_INTRO_STATE, 1: TV
+  ]
+
+  MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+    VAR_TWINLEAF_INTRO_STATE, 0: GameStart
+  ]
+
+}
+
+// script OnTransition {
+//   if (flag(FLAG_GAME_START)) {
+//     setvar(VAR_TEMP_2, 0)
+//   }
+// }
+
+script TV {
+  lock
+  msgbox(format("That concludes our special program,\n"
+                "'Lets ask Prof. Rowan!'\p"
+                "Brought to you by Jubilife TV on\n"
+                "Nationwide Net!\p"
+                "See you next week, same time\n"
+                "same channel."))
+  release
+  setvar(VAR_TWINLEAF_INTRO_STATE, 2)
+  // clearflag(FLAG_GAME_START)
+}
+
+script GameStart {
+  applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+  // msgbox(format("That concludes our special program,\n"
+  //               "'Lets ask Prof. Rowan!'\p"
+  //               "Brought to you by Jubilife TV on\n"
+  //               "Nationwide Net!\p"
+  //               "See you next week, same time\n"
+  //               "same channel."))
+  setvar(VAR_TWINLEAF_INTRO_STATE, 1)
+}
+
+
+
+
