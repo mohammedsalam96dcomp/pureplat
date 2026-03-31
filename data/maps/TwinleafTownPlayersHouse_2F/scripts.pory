@@ -191,5 +191,33 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   releaseall
 }
 
+script TwinleafTownPlayersHouse_2F_TVGift {
+  lockall
+	msgbox(format("Mom bought this TV as a gift."))
+	releaseall
+}
 
+script TwinleafTownPlayersHouse_2F_ItsAWii {
+  lockall
+	msgbox(format("It's a Wii!\n"
+               "Its controlled by a Wii Remote!"))
+	releaseall
+}
 
+script TwinleafTownPlayersHouse_2F_OpenMenu {
+  lockall
+	msgbox(format("The START Button\n"
+               "opens the menu!"))
+	releaseall
+}
+
+script TwinleafTownPlayersHouse_2F_CheckPC {
+  lockall
+	msgbox(format("{PLAYER} checked the PC.\p"
+               "Pokemon Basics...\p"
+               "People live alongisde Pokemon in\n"
+               "this world.\p"
+               "The people that battle Pokemon are\n"
+               "called Pokemon Trainers."))
+	releaseall
+}

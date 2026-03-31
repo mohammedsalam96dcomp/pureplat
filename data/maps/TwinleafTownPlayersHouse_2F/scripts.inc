@@ -340,6 +340,46 @@ TwinleafTownPlayersHouse_2F_EnterBarry_24:
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_19
 
 
+TwinleafTownPlayersHouse_2F_TVGift::
+# 195 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	lockall
+# 196 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	msgbox TwinleafTownPlayersHouse_2F_TVGift_Text_0
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	releaseall
+	return
+
+
+TwinleafTownPlayersHouse_2F_ItsAWii::
+# 201 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	lockall
+# 202 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	msgbox TwinleafTownPlayersHouse_2F_ItsAWii_Text_0
+# 204 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	releaseall
+	return
+
+
+TwinleafTownPlayersHouse_2F_OpenMenu::
+# 208 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	lockall
+# 209 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	msgbox TwinleafTownPlayersHouse_2F_OpenMenu_Text_0
+# 211 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	releaseall
+	return
+
+
+TwinleafTownPlayersHouse_2F_CheckPC::
+# 215 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	lockall
+# 216 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	msgbox TwinleafTownPlayersHouse_2F_CheckPC_Text_0
+# 222 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	releaseall
+	return
+
+
 # 26 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_ON_WARP_Movement_0:
 # 26 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
@@ -637,3 +677,26 @@ TwinleafTownPlayersHouse_2F_EnterBarry_Text_4:
 	.string "I'll be waiting outside.\p"
 	.string "OK, {PLAYER}? If you're late, I'm\n"
 	.string "fining you ¥10 million!$"
+
+TwinleafTownPlayersHouse_2F_TVGift_Text_0:
+# 196 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	.string "Mom bought this TV as a gift.$"
+
+TwinleafTownPlayersHouse_2F_ItsAWii_Text_0:
+# 202 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	.string "It's a Wii!\n"
+	.string "Its controlled by a Wii Remote!$"
+
+TwinleafTownPlayersHouse_2F_OpenMenu_Text_0:
+# 209 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	.string "The START Button\n"
+	.string "opens the menu!$"
+
+TwinleafTownPlayersHouse_2F_CheckPC_Text_0:
+# 216 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	.string "{PLAYER} checked the PC.\p"
+	.string "Pokemon Basics...\p"
+	.string "People live alongisde Pokemon in\n"
+	.string "this world.\p"
+	.string "The people that battle Pokemon are\n"
+	.string "called Pokemon Trainers.$"
