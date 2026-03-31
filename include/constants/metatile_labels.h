@@ -121,6 +121,10 @@
 #define METATILE_BuildingFrlg_PCOff  0x062
 #define METATILE_BuildingFrlg_PCOn   0x063
 
+// gTileset_BuildingSinnoh
+#define METATILE_BuildingSinnoh_Exit     0x004
+#define METATILE_BuildingSinnoh_NonExit  0x010
+
 // gTileset_Cave
 #define METATILE_Cave_CrackedFloor                       0x22F
 #define METATILE_Cave_CrackedFloor_Hole                  0x206

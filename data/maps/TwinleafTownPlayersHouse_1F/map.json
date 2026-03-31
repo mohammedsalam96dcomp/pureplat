@@ -45,7 +45,17 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "4",
+      "script": "TwinleafTown_PlayersHouse1F_EventScript_ExitHouse"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

@@ -45,7 +45,7 @@ LittlerootTown_MaysHouse_1F_EventScript_CheckShowShoesManual::
 # 23 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 LittlerootTown_MaysHouse_1F_EventScript_ShowRunningShoesManual::
 # 24 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
-	setmetatile 6, 7, METATILE_BrendansMaysHouse_BookOnTable, TRUE
+	setmetatile 6, 7, METATILE_BuildingSinnoh_Exit, TRUE
 # 25 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"
 	return
 # 26 "data/maps/LittlerootTown_MaysHouse_1F/scripts.pory"

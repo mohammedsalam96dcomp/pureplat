@@ -1,4 +1,5 @@
 //VAR_TWINLEAF_INTRO_STATE = 4 after mom scene
+//VAR_TWINLEAF_INTRO_STATE = 5 after leaving house
 
 mapscripts TwinleafTownPlayersHouse_1F_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE[
@@ -30,7 +31,10 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME {
 
 	applymovement(LOCALID_MOM, moves(walk_down, walk_left*3, walk_down*2, walk_in_place_up))
 	waitmovement(LOCALID_MOM)
-	delay(10)
+	delay(10)  
+
+	setmetatile(5, 8, METATILE_BuildingSinnoh_NonExit, FALSE)
+	special(DrawWholeMapView)
 
 	releaseall
 	setvar(VAR_TWINLEAF_INTRO_STATE, 4)
@@ -41,6 +45,8 @@ script TwinleafTown_PlayersHouse1F_EventScript_Mom {
 	switch(var(VAR_TWINLEAF_INTRO_STATE)) {
 		case 4:
 			goto(TwinleafTown_PlayersHouse1F_HowImpatient)
+		case 5:
+			goto(TwinleafTown_PlayersHouse1F_ByeBye)
 	}
 	release
 }
@@ -94,6 +100,45 @@ script TwinleafTown_PlayersHouse1F_ContestDigest {
 				  "Smart Contest is. . .\p"
 				  "Westley, who won with his bright spark\n"
 				  "of a Pokemon!"
+	))
+	closemessage
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_EventScript_ExitHouse {
+	lock
+	applymovement(LOCALID_MOM, moves(walk_in_place_down))
+	waitmovement(LOCALID_MOM)
+	delay(8)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+	waitmovement(0)
+	delay(8)
+
+	setspeaker(SP_NAME_MOM)
+	msgbox(format("Oh, yes!\n"
+				  "{PLAYER}!\p"
+				  "Don't go into the tall grass.\n"
+				  "Wild Pokemon might attack you.\p"
+				  "It would be OK if you had your own\n"
+				  "Pokemon, but you don't so. . .\p"
+				  "Well, take care, sweetie!"
+	))
+	closemessage
+
+	setmetatile(5, 8, METATILE_BuildingSinnoh_Exit, FALSE)
+	special(DrawWholeMapView)
+
+	setvar(VAR_TWINLEAF_INTRO_STATE, 5)
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_ByeBye {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_MOM)
+	msgbox(format("Bye-Bye, Nic!\n"
+				  "You take care now!"
 	))
 	closemessage
 	release
