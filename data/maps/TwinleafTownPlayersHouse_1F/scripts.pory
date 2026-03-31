@@ -99,7 +99,7 @@ script TwinleafTown_PlayersHouse1F_ContestDigest {
 				  "The winner of today's Normal Rank\n"
 				  "Smart Contest is. . .\p"
 				  "Westley, who won with his bright spark\n"
-				  "of a Pokemon!"
+				  "of a Pokémon!"
 	))
 	closemessage
 	release
@@ -118,9 +118,9 @@ script TwinleafTown_PlayersHouse1F_EventScript_ExitHouse {
 	msgbox(format("Oh, yes!\n"
 				  "{PLAYER}!\p"
 				  "Don't go into the tall grass.\n"
-				  "Wild Pokemon might attack you.\p"
+				  "Wild Pokémon might attack you.\p"
 				  "It would be OK if you had your own\n"
-				  "Pokemon, but you don't so. . .\p"
+				  "Pokémon, but you don't so. . .\p"
 				  "Well, take care, sweetie!"
 	))
 	closemessage

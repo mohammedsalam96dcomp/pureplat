@@ -2,6 +2,26 @@ mapscripts TwinleafTown_MapScripts{
 
 }
 
+
+script TwinleafTown_Technology {
+    lock
+    faceplayer
+    msgbox(format("Technology just blows me away!\p"
+                "I mean now you can play with people\n"
+                "around the world. . . wirelessly!"))
+    release
+}
+
+script TwinleafTown_WildPokemon {
+    lock
+    faceplayer
+    msgbox(format("It's true that wild Pokémon do attack\n"
+                "people sometimes. . .\p"
+                "But, Pokémon also open their hearts\n"
+                "to you, so you can become friends."))
+    release
+}
+
 script TwinleafTown_EventScript_PlayersHouseSign{
     lock
     msgbox("{PLAYER}'s House")
@@ -22,4 +42,125 @@ script TwinleafTown_EventScript_TwinleafSign{
 				  "Fresh and Free!"))
     release
     end
+}
+
+script TwinleafTown_GoSeeBarry1 {
+    lock
+	setvar(VAR_TEMP_1, 1)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry2 {
+    lock
+	setvar(VAR_TEMP_1, 2)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry3 {
+    lock
+	setvar(VAR_TEMP_1, 3)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry4 {
+    lock
+	setvar(VAR_TEMP_1, 4)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry5 {
+    lock
+	setvar(VAR_TEMP_1, 5)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry6 {
+    lock
+	setvar(VAR_TEMP_1, 6)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry7 {
+    lock
+	setvar(VAR_TEMP_1, 7)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry8 {
+    lock
+	setvar(VAR_TEMP_1, 8)
+	goto(TwinleafTown_GoSeeBarry)
+	release
+}
+
+script TwinleafTown_GoSeeBarry {
+    lock
+
+    applymovement(LOCALID_NPC3, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    waitmovement(0)
+    waitse
+    delay(30)
+
+    switch(var(VAR_TEMP_1)){
+        case 1:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up, walk_fast_right, walk_fast_up*2, walk_fast_left))
+        case 2:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up*3, walk_fast_right))
+        case 3:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up*3, walk_fast_right*2))
+        case 4:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up*3, walk_fast_right*3))    
+        case 5:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up*3, walk_fast_right*4))
+        case 6:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up*3, walk_fast_right*5))    
+        case 7:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up*3, walk_fast_right*6))
+        case 8:
+            applymovement(LOCALID_NPC3, moves(walk_fast_up*3, walk_fast_right*7))          
+
+    }
+    waitmovement(LOCALID_NPC3)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction))
+    waitmovement(0)
+    applymovement(LOCALID_NPC3, moves(walk_down))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+
+    msgbox(format("Hiya, {PLAYER}.\n"
+                 "Barry was looking for you.\p"
+                 "I think he's home now.\n"
+                 "Why don't you go check it out?"))
+    closemessage
+
+    switch(var(VAR_TEMP_1)){
+        case 1:
+            applymovement(LOCALID_NPC3, moves(walk_right, walk_down*2, walk_left))
+        case 2:
+            applymovement(LOCALID_NPC3, moves(walk_left, walk_down*2))
+        case 3:
+            applymovement(LOCALID_NPC3, moves(walk_left*2, walk_down*2))
+        case 4:
+            applymovement(LOCALID_NPC3, moves(walk_left*3, walk_down*2))
+        case 5:
+            applymovement(LOCALID_NPC3, moves(walk_left*4, walk_down*2))
+        case 6:
+            applymovement(LOCALID_NPC3, moves(walk_left*5, walk_down*2))
+        case 7:
+            applymovement(LOCALID_NPC3, moves(walk_left*6, walk_down*2))
+        case 8:
+            applymovement(LOCALID_NPC3, moves(walk_left*7, walk_down*2))
+    }
+    waitmovement(LOCALID_NPC3)
+
+    release
 }

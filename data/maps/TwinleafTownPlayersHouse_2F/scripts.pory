@@ -102,11 +102,11 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   msgbox(format("Hey, {PLAYER}!\n"
                 "Did you just see the TV? Sure you did!\p"
                 "Prof. Rowan's that really important\n" 
-                "guy who studies Pokemon, right?\p"
+                "guy who studies Pokémon, right?\p"
                 "That means he must have lots and lots\n"
-                "of Pokemon.\p"
+                "of Pokémon.\p"
                 "So if we ask him, I bet he'd give us\n"
-                "some Pokemon!"
+                "some Pokémon!"
   ))
   closemessage
 
@@ -169,7 +169,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   
   setspeaker(SP_NAME_BARRY)
   msgbox(format("Oh, right, right! We're going to go see\n"
-                "Prof. Rowan and get some Pokemon.\p"
+                "Prof. Rowan and get some Pokémon.\p"
                 "I'll be waiting outside.\p"
                 "OK, {PLAYER}? If you're late, I'm\n"
                 "fining you ¥10 million!"
@@ -225,10 +225,10 @@ script TwinleafTownPlayersHouse_2F_OpenMenu {
 script TwinleafTownPlayersHouse_2F_CheckPC {
   lockall
 	msgbox(format("{PLAYER} checked the PC.\p"
-               "Pokemon Basics...\p"
-               "People live alongisde Pokemon in\n"
+               "Pokémon Basics...\p"
+               "People live alongisde Pokémon in\n"
                "this world.\p"
-               "The people that battle Pokemon are\n"
-               "called Pokemon Trainers."))
+               "The people that battle Pokémon are\n"
+               "called Pokémon Trainers."))
 	releaseall
 }

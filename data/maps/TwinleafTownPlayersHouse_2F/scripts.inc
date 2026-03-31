@@ -674,11 +674,11 @@ TwinleafTownPlayersHouse_2F_EnterBarry_Text_1:
 	.string "Hey, {PLAYER}!\n"
 	.string "Did you just see the TV? Sure you did!\p"
 	.string "Prof. Rowan's that really important\n"
-	.string "guy who studies Pokemon, right?\p"
+	.string "guy who studies Pokémon, right?\p"
 	.string "That means he must have lots and lots\n"
-	.string "of Pokemon.\p"
+	.string "of Pokémon.\p"
 	.string "So if we ask him, I bet he'd give us\n"
-	.string "some Pokemon!$"
+	.string "some Pokémon!$"
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_2:
 # 145 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
@@ -693,7 +693,7 @@ TwinleafTownPlayersHouse_2F_EnterBarry_Text_3:
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_4:
 # 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "Oh, right, right! We're going to go see\n"
-	.string "Prof. Rowan and get some Pokemon.\p"
+	.string "Prof. Rowan and get some Pokémon.\p"
 	.string "I'll be waiting outside.\p"
 	.string "OK, {PLAYER}? If you're late, I'm\n"
 	.string "fining you ¥10 million!$"
@@ -715,8 +715,8 @@ TwinleafTownPlayersHouse_2F_OpenMenu_Text_0:
 TwinleafTownPlayersHouse_2F_CheckPC_Text_0:
 # 227 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "{PLAYER} checked the PC.\p"
-	.string "Pokemon Basics...\p"
-	.string "People live alongisde Pokemon in\n"
+	.string "Pokémon Basics...\p"
+	.string "People live alongisde Pokémon in\n"
 	.string "this world.\p"
-	.string "The people that battle Pokemon are\n"
-	.string "called Pokemon Trainers.$"
+	.string "The people that battle Pokémon are\n"
+	.string "called Pokémon Trainers.$"

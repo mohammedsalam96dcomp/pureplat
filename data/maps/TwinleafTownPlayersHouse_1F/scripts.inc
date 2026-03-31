@@ -280,16 +280,16 @@ TwinleafTown_PlayersHouse1F_ContestDigest_Text_0:
 	.string "The winner of today's Normal Rank\n"
 	.string "Smart Contest is. . .\p"
 	.string "Westley, who won with his bright spark\n"
-	.string "of a Pokemon!$"
+	.string "of a Pokémon!$"
 
 TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Text_0:
 # 118 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "Oh, yes!\n"
 	.string "{PLAYER}!\p"
 	.string "Don't go into the tall grass.\n"
-	.string "Wild Pokemon might attack you.\p"
+	.string "Wild Pokémon might attack you.\p"
 	.string "It would be OK if you had your own\n"
-	.string "Pokemon, but you don't so. . .\p"
+	.string "Pokémon, but you don't so. . .\p"
 	.string "Well, take care, sweetie!$"
 
 TwinleafTown_PlayersHouse1F_ByeBye_Text_0:
