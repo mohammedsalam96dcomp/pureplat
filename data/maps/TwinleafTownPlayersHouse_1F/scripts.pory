@@ -1,3 +1,35 @@
 mapscripts TwinleafTownPlayersHouse_1F_MapScripts {
+	MAP_SCRIPT_ON_FRAME_TABLE[
+		VAR_TWINLEAF_INTRO_STATE, 3: TwinleafTownPlayersHouse_1F_ON_FRAME
+  	]
+}
 
+script TwinleafTownPlayersHouse_1F_ON_FRAME {
+	lockall
+
+	applymovement(LOCALID_MOM, moves(walk_in_place_up))
+	waitmovement(LOCALID_MOM)
+	applymovement(LOCALID_MOM, Common_Movement_ExclamationMark)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+	playse(SE_PIN)
+	waitmovement(0)
+	waitse
+	delay(48)
+	applymovement(LOCALID_MOM, moves(walk_up, walk_right*3, walk_up*2))
+	waitmovement(LOCALID_MOM)
+
+	setspeaker(SP_NAME_MOM)
+	msgbox(format("Hey, {PLAYER}!\p"
+					"Barry already left.\p"
+					"I don't know what it was about, but\n" 
+					"he sure was in a hurry!"
+	))
+	closemessage
+
+	applymovement(LOCALID_MOM, moves(walk_down, walk_left*3, walk_down*2, walk_in_place_up))
+	waitmovement(LOCALID_MOM)
+	delay(10)
+
+	releaseall
+	setvar(VAR_TWINLEAF_INTRO_STATE, 4)
 }

@@ -73,8 +73,6 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   waitmovement(0)
   waitse
   delay(48)
-  waitmovement(0)
-  waitse
   setspeaker(SP_NAME_BARRY)
   msgbox(format("There you are!"))
   closemessage
