@@ -1,3 +1,5 @@
+//VAR_TWINLEAF_INTRO_STATE is 3 at the end of this screipt
+
 mapscripts TwinleafTownPlayersHouse_2F_MapScripts {
   MAP_SCRIPT_ON_FRAME_TABLE[
     VAR_TWINLEAF_INTRO_STATE, 1: TwinleafTownPlayersHouse_2F_ON_FRAME
@@ -61,11 +63,16 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   clearflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
   addobject(LOCALID_RIVAL)
 
-  playse(SE_RG_DOOR)
+  playse(SE_EXIT)
   applymovement(LOCALID_RIVAL, moves(walk_fast_left))
   waitmovement(LOCALID_RIVAL)
+  waitse
+  playbgm(MUS_GSC_ROUTE38,0)
   applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
   playse(SE_PIN)
+  waitmovement(0)
+  waitse
+  delay(48)
   waitmovement(0)
   waitse
   msgbox(format("There you are!"))
@@ -181,13 +188,14 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
       waitmovement(LOCALID_RIVAL)
   }
   applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
-  applymovement(LOCALID_RIVAL, moves(walk_right*3))
+  applymovement(LOCALID_RIVAL, moves(walk_right*2, walk_slow_stairs_right))
   waitmovement(LOCALID_RIVAL)
-  playse(SE_RG_DOOR)
-
+  playse(SE_EXIT)
   removeobject(LOCALID_RIVAL)
   setflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
+  delay(40)
   setvar(VAR_TWINLEAF_INTRO_STATE, 3)
+  fadedefaultbgm()
   releaseall
 }
 
