@@ -75,6 +75,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   delay(48)
   waitmovement(0)
   waitse
+  setspeaker(SP_NAME_BARRY)
   msgbox(format("There you are!"))
   closemessage
 
@@ -99,6 +100,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   }
   waitmovement(LOCALID_RIVAL)
 
+  setspeaker(SP_NAME_BARRY)
   msgbox(format("Hey, {PLAYER}!\n"
                 "Did you just see the TV? Sure you did!\p"
                 "Prof. Rowan's that really important\n" 
@@ -141,6 +143,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   }
   waitmovement(LOCALID_RIVAL)
 
+  setspeaker(SP_NAME_BARRY)
   msgbox(format("Oh, hey!\n"
                 "Is this a new PC?!"
   ))
@@ -148,6 +151,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
 
   applymovement(LOCALID_RIVAL, moves(face_right))
   waitmovement(LOCALID_RIVAL)
+  setspeaker(SP_NAME_BARRY)
   msgbox(format("Uh...\n"
                 "Where was I?"
   ))
@@ -165,6 +169,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   }
   waitmovement(LOCALID_RIVAL)
   
+  setspeaker(SP_NAME_BARRY)
   msgbox(format("Oh, right, right! We're going to go see\n"
                 "Prof. Rowan and get some Pokemon.\p"
                 "I'll be waiting outside.\p"
