@@ -46,7 +46,7 @@
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "2",
-      "script": "TwinleafTownPlayersHouse_2F_EnterBarry"
+      "script": "TwinleafTownPlayersHouse_2F_EnterBarryRight"
     },
     {
       "type": "trigger",
@@ -55,7 +55,7 @@
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "2",
-      "script": "TwinleafTownPlayersHouse_2F_EnterBarry"
+      "script": "TwinleafTownPlayersHouse_2F_EnterBarryDown"
     },
     {
       "type": "trigger",
@@ -64,7 +64,7 @@
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "2",
-      "script": "NULL"
+      "script": "TwinleafTownPlayersHouse_2F_EnterBarryLeft"
     },
     {
       "type": "trigger",
@@ -73,7 +73,7 @@
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "2",
-      "script": "TwinleafTownPlayersHouse_2F_EnterBarry"
+      "script": "TwinleafTownPlayersHouse_2F_EnterBarryUp"
     }
   ],
   "bg_events": []
