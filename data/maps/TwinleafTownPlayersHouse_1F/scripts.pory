@@ -1,3 +1,5 @@
+//VAR_TWINLEAF_INTRO_STATE = 4 after mom scene
+
 mapscripts TwinleafTownPlayersHouse_1F_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE[
 		VAR_TWINLEAF_INTRO_STATE, 3: TwinleafTownPlayersHouse_1F_ON_FRAME
@@ -32,4 +34,67 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME {
 
 	releaseall
 	setvar(VAR_TWINLEAF_INTRO_STATE, 4)
+}
+
+script TwinleafTown_PlayersHouse1F_EventScript_Mom {
+	lock
+	switch(var(VAR_TWINLEAF_INTRO_STATE)) {
+		case 4:
+			goto(TwinleafTown_PlayersHouse1F_HowImpatient)
+	}
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_HowImpatient{
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_MOM)
+	msgbox(format("You know how impatient\n"
+				  "Barry is.\p"
+				  "He took off before I could even\n"
+				  "ask what it was about."
+	))
+	closemessage
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_Cooking {
+	lock
+	msgbox(format("This is where Mom does all her\n"
+				  "delicious cooking."
+	))
+	closemessage
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_Dessert {
+	lock
+	msgbox(format("Mom's favorite dessert is in\n"
+				  "the refrigerator."
+	))
+	closemessage
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_Spotless {
+	lock
+	msgbox(format("Mom's kitchen is spotless!\n"
+				  "You can see your face on the floor!"
+	))
+	closemessage
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_ContestDigest {
+	lock
+	msgbox(format("MC: Here we are!\n"
+				  "It's the Contest Digest!\p"
+				  "The winner of today's Normal Rank\n"
+				  "Smart Contest is. . .\p"
+				  "Westley, who won with his bright spark\n"
+				  "of a Pokemon!"
+	))
+	closemessage
+	release
 }

@@ -687,7 +687,7 @@ TwinleafTownPlayersHouse_2F_EnterBarry_Text_2:
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_3:
 # 153 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	.string "Uh...\n"
+	.string "Uh. . .\n"
 	.string "Where was I?$"
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_4:

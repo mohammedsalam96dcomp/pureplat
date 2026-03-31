@@ -150,7 +150,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   applymovement(LOCALID_RIVAL, moves(face_right))
   waitmovement(LOCALID_RIVAL)
   setspeaker(SP_NAME_BARRY)
-  msgbox(format("Uh...\n"
+  msgbox(format("Uh. . .\n"
                 "Where was I?"
   ))
   closemessage
