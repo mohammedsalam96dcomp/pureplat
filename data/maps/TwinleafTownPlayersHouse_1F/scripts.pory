@@ -1,3 +1,4 @@
+//VAR_TWINLEAF_INTRO_STATE 3 when scene start
 //VAR_TWINLEAF_INTRO_STATE = 4 after mom scene
 //VAR_TWINLEAF_INTRO_STATE = 5 after leaving house
 
@@ -37,17 +38,27 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME {
 	special(DrawWholeMapView)
 
 	releaseall
+
+	setvar(VAR_TEMP_1, 1)
 	setvar(VAR_TWINLEAF_INTRO_STATE, 4)
 }
 
 script TwinleafTown_PlayersHouse1F_EventScript_Mom {
 	lock
-	switch(var(VAR_TWINLEAF_INTRO_STATE)) {
-		case 4:
-			goto(TwinleafTown_PlayersHouse1F_HowImpatient)
-		case 5:
-			goto(TwinleafTown_PlayersHouse1F_ByeBye)
+
+	if(var(VAR_TEMP_1) == 1) {
+		goto(TwinleafTown_PlayersHouse1F_HowImpatient)
+	} elif (var(VAR_TEMP_1) == 2) {
+		goto(TwinleafTown_PlayersHouse1F_ByeBye)
+	} else{
+		goto(TwinleafTown_PlayersHouse1F_BarryWaiting)
 	}
+	// switch(var((VAR_TEMP_1, 1))) {
+	// 	case 1:
+	// 		goto(TwinleafTown_PlayersHouse1F_HowImpatient)
+	// 	case 2:
+	// 		goto(TwinleafTown_PlayersHouse1F_ByeBye)
+	// }
 	release
 }
 
@@ -128,7 +139,8 @@ script TwinleafTown_PlayersHouse1F_EventScript_ExitHouse {
 	setmetatile(5, 8, METATILE_BuildingSinnoh_Exit, FALSE)
 	special(DrawWholeMapView)
 
-	setvar(VAR_TWINLEAF_INTRO_STATE, 5)
+	setvar(VAR_TEMP_1, 2)
+
 	release
 }
 
@@ -139,6 +151,18 @@ script TwinleafTown_PlayersHouse1F_ByeBye {
 	setspeaker(SP_NAME_MOM)
 	msgbox(format("Bye-Bye, Nic!\n"
 				  "You take care now!"
+	))
+	closemessage
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_BarryWaiting {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_MOM)
+	msgbox(format("What is it, dear?\n"
+				  "Isn't Barry waiting for you?"
 	))
 	closemessage
 	release
