@@ -266,4 +266,4 @@ TwinleafTownPlayersHouse_2F_EnterBarry_Text_4:
 	.string "Prof. Rowan and get some Pokemon.\p"
 	.string "I'll be waiting outside.\p"
 	.string "OK, {PLAYER}? If you're late, I'm\n"
-	.string "fining you 10 million!$"
+	.string "fining you ¥10 million!$"

@@ -84,7 +84,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
                 "Prof. Rowan and get some Pokemon.\p"
                 "I'll be waiting outside.\p"
                 "OK, {PLAYER}? If you're late, I'm\n"
-                "fining you 10 million!"
+                "fining you ¥10 million!"
   ))
   closemessage
 
