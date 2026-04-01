@@ -1,4 +1,5 @@
 //VAR_TWINLEAF_INTRO_STATE is 3 at the end of this screipt
+const LOCALID_RIVAL = 1
 
 mapscripts TwinleafTownPlayersHouse_2F_MapScripts {
   MAP_SCRIPT_ON_FRAME_TABLE[

@@ -180,7 +180,7 @@ TwinleafTown_PlayersHouse1F_EventScript_ExitHouse::
 # 145 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 5
 # 146 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	setvar VAR_BARRYTWINLEAF, 1
+	setvar VAR_TWINLEAF_BARRY_STATE, 1
 # 148 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	release
 	return
@@ -199,21 +199,23 @@ TwinleafTown_PlayersHouse1F_ByeBye::
 	closemessage
 # 160 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	release
+# 161 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 6
 	return
 
 
 TwinleafTown_PlayersHouse1F_BarryWaiting::
-# 164 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	lock
 # 165 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	lock
+# 166 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	faceplayer
-# 167 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	setspeaker SP_NAME_MOM
 # 168 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setspeaker SP_NAME_MOM
+# 169 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	msgbox TwinleafTown_PlayersHouse1F_BarryWaiting_Text_0
-# 171 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	closemessage
 # 172 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	closemessage
+# 173 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	release
 	return
 
@@ -324,6 +326,6 @@ TwinleafTown_PlayersHouse1F_ByeBye_Text_0:
 	.string "You take care now!$"
 
 TwinleafTown_PlayersHouse1F_BarryWaiting_Text_0:
-# 168 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 169 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "What is it, dear?\n"
 	.string "Isn't Barry waiting for you?$"

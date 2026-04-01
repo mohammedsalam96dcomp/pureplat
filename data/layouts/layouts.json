@@ -9353,6 +9353,16 @@
       "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/TwinleafTownPlayersHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTownPlayersHouse_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_TWINLEAF_TOWN_BARRYS_HOUSE_1F",
+      "name": "TwinleafTownBarrysHouse_1F_Layout",
+      "width": 11,
+      "height": 11,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_PlayersHouse",
+      "border_filepath": "data/layouts/TwinleafTownBarrysHouse_1F/border.bin",
+      "blockdata_filepath": "data/layouts/TwinleafTownBarrysHouse_1F/map.bin"
     }
   ]
 }

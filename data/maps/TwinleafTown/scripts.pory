@@ -11,7 +11,7 @@ script TwinleafTown_ON_FRAME {
   setvar(VAR_TWINLEAF_INTRO_STATE, 6)
 }
 
-script TwinleafTown_THUD {
+script TwinleafTown_EventScript_THUD {
     lock
     clearflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
     addobject(LOCALID_RIVAL)
@@ -69,14 +69,13 @@ script TwinleafTown_THUD {
     // waitse
 
     setflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
-
-    setvar(VAR_BARRYTWINLEAF,2)
+    setvar(VAR_TWINLEAF_BARRY_STATE,2)
 
     release
 }
 
 
-script TwinleafTown_Technology {
+script TwinleafTown_EventScript_Technology {
     lock
     faceplayer
     msgbox(format("Technology just blows me away!\p"
@@ -85,7 +84,7 @@ script TwinleafTown_Technology {
     release
 }
 
-script TwinleafTown_WildPokemon {
+script TwinleafTown_EventScript_WildPokemon {
     lock
     faceplayer
     msgbox(format("It's true that wild Pokémon do attack\n"
@@ -117,63 +116,63 @@ script TwinleafTown_EventScript_TwinleafSign{
     end
 }
 
-script TwinleafTown_GoSeeBarry1 {
+script TwinleafTown_EventScript_GoSeeBarry1 {
     lock
 	setvar(VAR_TEMP_1, 1)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry2 {
+script TwinleafTown_EventScript_GoSeeBarry2 {
     lock
 	setvar(VAR_TEMP_1, 2)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry3 {
+script TwinleafTown_EventScript_GoSeeBarry3 {
     lock
 	setvar(VAR_TEMP_1, 3)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry4 {
+script TwinleafTown_EventScript_GoSeeBarry4 {
     lock
 	setvar(VAR_TEMP_1, 4)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry5 {
+script TwinleafTown_EventScript_GoSeeBarry5 {
     lock
 	setvar(VAR_TEMP_1, 5)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry6 {
+script TwinleafTown_EventScript_GoSeeBarry6 {
     lock
 	setvar(VAR_TEMP_1, 6)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry7 {
+script TwinleafTown_EventScript_GoSeeBarry7 {
     lock
 	setvar(VAR_TEMP_1, 7)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry8 {
+script TwinleafTown_EventScript_GoSeeBarry8 {
     lock
 	setvar(VAR_TEMP_1, 8)
-	goto(TwinleafTown_GoSeeBarry)
+	goto(TwinleafTown_EventScript_GoSeeBarry)
 	release
 }
 
-script TwinleafTown_GoSeeBarry {
+script TwinleafTown_EventScript_GoSeeBarry {
     lock
 
     applymovement(LOCALID_NPC3, Common_Movement_ExclamationMark)
