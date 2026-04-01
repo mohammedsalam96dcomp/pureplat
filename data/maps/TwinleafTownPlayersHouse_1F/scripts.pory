@@ -24,9 +24,9 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME {
 
 	setspeaker(SP_NAME_MOM)
 	msgbox(format("Hey, {PLAYER}!\p"
-					"Barry already left.\p"
-					"I don't know what it was about, but\n" 
-					"he sure was in a hurry!"
+				"Barry already left.\p"
+				"I don't know what it was about, but\n" 
+				"he sure was in a hurry!"
 	))
 	closemessage
 
@@ -34,23 +34,22 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME {
 	waitmovement(LOCALID_MOM)
 	delay(10)  
 
-	setmetatile(5, 8, METATILE_BuildingSinnoh_NonExit, FALSE)
-	special(DrawWholeMapView)
+	// setmetatile(5, 8, METATILE_BuildingSinnoh_NonExit, FALSE)
+	// special(DrawWholeMapView)
 
 	releaseall
 
-	setvar(VAR_TEMP_1, 1)
 	setvar(VAR_TWINLEAF_INTRO_STATE, 4)
 }
 
 script TwinleafTown_PlayersHouse1F_EventScript_Mom {
 	lock
 
-	if(var(VAR_TEMP_1) == 1) {
+	if(var(VAR_TWINLEAF_INTRO_STATE) == 4) {
 		goto(TwinleafTown_PlayersHouse1F_HowImpatient)
-	} elif (var(VAR_TEMP_1) == 2) {
+	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 5) {
 		goto(TwinleafTown_PlayersHouse1F_ByeBye)
-	} else{
+	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
 		goto(TwinleafTown_PlayersHouse1F_BarryWaiting)
 	}
 	// switch(var((VAR_TEMP_1, 1))) {
@@ -118,6 +117,10 @@ script TwinleafTown_PlayersHouse1F_ContestDigest {
 
 script TwinleafTown_PlayersHouse1F_EventScript_ExitHouse {
 	lock
+
+	setmetatile(5, 8, METATILE_BuildingSinnoh_NonExit, FALSE)
+	special(DrawWholeMapView)
+
 	applymovement(LOCALID_MOM, moves(walk_in_place_down))
 	waitmovement(LOCALID_MOM)
 	delay(8)
@@ -139,7 +142,8 @@ script TwinleafTown_PlayersHouse1F_EventScript_ExitHouse {
 	setmetatile(5, 8, METATILE_BuildingSinnoh_Exit, FALSE)
 	special(DrawWholeMapView)
 
-	setvar(VAR_TEMP_1, 2)
+	setvar(VAR_TWINLEAF_INTRO_STATE, 5)
+	setvar(VAR_BARRYTWINLEAF, 1)
 
 	release
 }

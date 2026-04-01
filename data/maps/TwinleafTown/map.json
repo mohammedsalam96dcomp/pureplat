@@ -53,6 +53,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "TwinleafTown_GoSeeBarry1",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 7,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_TWINLEAF_BARRY"
     }
   ],
   "warp_events": [
@@ -71,7 +84,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry1"
     },
     {
@@ -80,7 +93,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry2"
     },
     {
@@ -89,7 +102,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry3"
     },
     {
@@ -98,7 +111,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry4"
     },
     {
@@ -107,7 +120,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry5"
     },
     {
@@ -116,7 +129,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry6"
     },
     {
@@ -125,7 +138,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry7"
     },
     {
@@ -134,8 +147,17 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "4",
+      "var_value": "6",
       "script": "TwinleafTown_GoSeeBarry8"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_BARRYTWINLEAF",
+      "var_value": "1",
+      "script": "TwinleafTown_THUD"
     }
   ],
   "bg_events": [

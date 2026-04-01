@@ -1,5 +1,78 @@
-mapscripts TwinleafTown_MapScripts{
+//VAR_TWINLEAF_INTRO_STATE is 6 at the start of this script
+const LOCALID_RIVAL = 4
 
+mapscripts TwinleafTown_MapScripts{
+    MAP_SCRIPT_ON_FRAME_TABLE[
+        VAR_TWINLEAF_INTRO_STATE, 5: TwinleafTown_ON_FRAME
+  ]
+}
+
+script TwinleafTown_ON_FRAME {
+  setvar(VAR_TWINLEAF_INTRO_STATE, 6)
+}
+
+script TwinleafTown_THUD {
+    lock
+    clearflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
+    addobject(LOCALID_RIVAL)
+
+    playse(SE_DOOR)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction))
+    waitmovement(0)
+    applymovement(LOCALID_RIVAL, moves(walk_fast_down))
+    waitmovement(0)
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+    waitmovement(0)
+    waitse
+
+    msgbox(format("THUD! !"))
+    closemessage
+
+    applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    waitmovement(0)
+    waitse
+    delay(48)
+
+    setspeaker(SP_NAME_BARRY)
+    msgbox(format("What was that about?!\p"
+                 "Oh, hey, {PLAYER}!\p"
+                 "Hey! I'm going to see Prof. Rowan!\n"
+                 "You should come, too! And quickly!"))
+    closemessage
+
+    applymovement(LOCALID_RIVAL, moves(walk_fast_right*4))
+    waitmovement(0)
+    applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    waitmovement(0)
+    waitse
+    delay(48)
+    applymovement(LOCALID_RIVAL, moves(walk_fast_left*4, face_down))
+    waitmovement(LOCALID_RIVAL)
+
+    setspeaker(SP_NAME_BARRY)
+    msgbox(format("Oh, jeez!\n"
+                 "Forgot something!"))
+    closemessage
+
+    opendoor(7,10)
+    waitdooranim
+    // playse(SE_DOOR)
+    applymovement(LOCALID_RIVAL, moves(walk_fast_up))
+    waitmovement(0)
+    removeobject(LOCALID_RIVAL)
+    closedoor(7,10)
+    waitdooranim
+    // waitse
+
+    setflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
+
+    setvar(VAR_BARRYTWINLEAF,2)
+
+    release
 }
 
 
