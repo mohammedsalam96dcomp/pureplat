@@ -118,8 +118,8 @@ script TwinleafTown_PlayersHouse1F_ContestDigest {
 script TwinleafTown_PlayersHouse1F_EventScript_ExitHouse {
 	lock
 
-	setmetatile(5, 8, METATILE_BuildingSinnoh_NonExit, FALSE)
-	special(DrawWholeMapView)
+	// setmetatile(5, 8, METATILE_BuildingSinnoh_NonExit, FALSE)
+	// special(DrawWholeMapView)
 
 	applymovement(LOCALID_MOM, moves(walk_in_place_down))
 	waitmovement(LOCALID_MOM)
@@ -139,8 +139,8 @@ script TwinleafTown_PlayersHouse1F_EventScript_ExitHouse {
 	))
 	closemessage
 
-	setmetatile(5, 8, METATILE_BuildingSinnoh_Exit, FALSE)
-	special(DrawWholeMapView)
+	// setmetatile(5, 8, METATILE_BuildingSinnoh_Exit, FALSE)
+	// special(DrawWholeMapView)
 
 	setvar(VAR_TWINLEAF_INTRO_STATE, 5)
 	setvar(VAR_TWINLEAF_BARRY_STATE, 1)

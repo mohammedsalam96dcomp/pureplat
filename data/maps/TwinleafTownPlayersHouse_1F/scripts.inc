@@ -151,10 +151,6 @@ TwinleafTown_PlayersHouse1F_ContestDigest::
 TwinleafTown_PlayersHouse1F_EventScript_ExitHouse::
 # 119 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	lock
-# 121 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	setmetatile 5, 8, METATILE_BuildingSinnoh_NonExit, FALSE
-# 122 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	special DrawWholeMapView
 # 124 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	applymovement LOCALID_MOM, TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0
 # 125 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
@@ -173,10 +169,6 @@ TwinleafTown_PlayersHouse1F_EventScript_ExitHouse::
 	msgbox TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Text_0
 # 140 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	closemessage
-# 142 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	setmetatile 5, 8, METATILE_BuildingSinnoh_Exit, FALSE
-# 143 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	special DrawWholeMapView
 # 145 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 5
 # 146 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"

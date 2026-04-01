@@ -9339,7 +9339,7 @@
       "name": "TwinleafTownPlayersHouse_2F_Layout",
       "width": 10,
       "height": 10,
-      "primary_tileset": "gTileset_BuildingSinnoh",
+      "primary_tileset": "gTileset_GeneralSinnoh",
       "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/TwinleafTownPlayersHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTownPlayersHouse_2F/map.bin"
@@ -9349,7 +9349,7 @@
       "name": "TwinleafTownPlayersHouse_1F_Layout",
       "width": 11,
       "height": 10,
-      "primary_tileset": "gTileset_BuildingSinnoh",
+      "primary_tileset": "gTileset_GeneralSinnoh",
       "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/TwinleafTownPlayersHouse_1F/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTownPlayersHouse_1F/map.bin"
