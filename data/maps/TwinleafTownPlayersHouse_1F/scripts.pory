@@ -1,6 +1,7 @@
 //VAR_TWINLEAF_INTRO_STATE 3 when scene start
 //VAR_TWINLEAF_INTRO_STATE = 4 after mom scene
 //VAR_TWINLEAF_INTRO_STATE = 5 after leaving house
+const LOCALID_MOM = 1
 
 mapscripts TwinleafTownPlayersHouse_1F_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE[

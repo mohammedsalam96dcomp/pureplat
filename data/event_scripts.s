@@ -1745,3 +1745,5 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/maps/TwinleafTownPlayersHouse_1F/scripts.inc"
 
 	.include "data/maps/TwinleafTownBarrysHouse_1F/scripts.inc"
+
+	.include "data/maps/TwinleafTownBarrysHouse_2f/scripts.inc"

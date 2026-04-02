@@ -1,4 +1,5 @@
 //VAR_TWINLEAF_INTRO_STATE is 6 at the start of this script
+const LOCALID_NPC3 = 3
 const LOCALID_RIVAL = 4
 
 mapscripts TwinleafTown_MapScripts{

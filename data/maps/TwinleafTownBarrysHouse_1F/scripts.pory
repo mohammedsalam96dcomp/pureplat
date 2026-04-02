@@ -1,0 +1,25 @@
+mapscripts TwinleafTownBarrysHouse_1F_MapScripts{
+}
+
+script TwinleafTown_EventScript_BarrysMom {
+	lock
+	if (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
+		goto(TwinleafTown_EventScript_SitStill)
+	}
+	release
+}
+
+script TwinleafTown_EventScript_SitStill {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_BARRYMOM)
+	msgbox(format("Oh, hi,\n"
+				"{PLAYER}.\p"
+				"Did you come calling on Barry?\p"
+				"He was gone for a second, but then\n"
+				"he came running right back home.\p"
+				"He just can't sit still, that boy.\n"
+				"I wonder who he takes after?"))
+	release
+}
