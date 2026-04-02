@@ -1,4 +1,43 @@
-raw `
-TwinleafTownBarrysHouse_2f_MapScripts::
-	.byte 0
-`
+//VAR_TWINLEAF_INTRO_STATE 7 after speaking to barry in Barrys House
+const LOCALID_RIVAL = 1
+
+mapscripts TwinleafTownBarrysHouse_2f_MapScripts{
+	MAP_SCRIPT_ON_FRAME_TABLE[
+    	VAR_TWINLEAF_INTRO_STATE, 6: TwinleafTownBarrysHouse_2F_ON_FRAME
+  	]
+}
+
+script TwinleafTownBarrysHouse_2F_ON_FRAME {
+	lock
+
+	setspeaker(SP_NAME_BARRY)
+    msgbox(". . .I'd better take\n"
+		"my Bag and Journal, too. . .")
+    closemessage
+
+  	applymovement(LOCALID_RIVAL, moves(face_left))
+    waitmovement(0)
+   	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+    playse(SE_PIN)
+    waitmovement(0)
+    waitse
+    delay(48)
+
+	setspeaker(SP_NAME_BARRY)
+    msgbox("Oh, hey, {PLAYER}!\p"
+		"I'll be waiting on the road!\n"
+		"It's a ¥10 million fine if you're late!")
+    closemessage
+
+	applymovement(LOCALID_RIVAL, moves(walk_fast_left*4, walk_fast_up))
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, face_up))
+	applymovement(LOCALID_RIVAL, moves(walk_fast_left*2, walk_slow_stairs_left))
+	waitmovement(0)
+
+    setflag(FLAG_HIDE_BARRY_ROOM_BARRY)
+    removeobject(LOCALID_RIVAL)
+
+	setvar(VAR_TWINLEAF_INTRO_STATE, 7)
+	release
+}

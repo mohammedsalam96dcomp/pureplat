@@ -70,6 +70,8 @@ script TwinleafTown_EventScript_THUD {
     // waitse
 
     setflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
+    removeobject(LOCALID_RIVAL)
+
     setvar(VAR_TWINLEAF_BARRY_STATE,2)
 
     release
@@ -99,7 +101,10 @@ script TwinleafTown_EventScript_TwinleafMan {
     lock
     if (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
         goto(TwinleafTown_EventScript_BarryLooking)
+    } elif (var(VAR_TWINLEAF_INTRO_STATE) == 7) {
+        goto(TwinleafTown_EventScript_TearingOff)
     }
+
     release
 }
 
@@ -247,6 +252,20 @@ script TwinleafTown_EventScript_GoSeeBarry {
             applymovement(LOCALID_NPC3, moves(walk_left*7, walk_down*2))
     }
     waitmovement(LOCALID_NPC3)
+
+    release
+}
+
+script TwinleafTown_EventScript_TearingOff {
+    lock
+
+    faceplayer
+    msgbox("Hiya, {PLAYER}.\n"
+        "You're looking for Barry?\p"
+        "He just went tearing off a little\n"
+        "while ago.\p"
+        "He's probably not gone too far.\n"
+        "Why not go chase after him?")
 
     release
 }

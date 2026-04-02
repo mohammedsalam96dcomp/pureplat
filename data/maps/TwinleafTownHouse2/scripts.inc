@@ -29,14 +29,14 @@ TwinleafTownHouse2_EventScript_LittleGirl::
 TwinleafTownHouse2_EventScript_OldWoman_Text_0:
 # 7 "data/maps/TwinleafTownHouse2/scripts.pory"
 	.string "Did you hear?\p"
-	.string "The Pokemon Professor returned\n"
+	.string "The Pokémon Professor returned\n"
 	.string "to the next town over.\p"
-	.string "They say he was gone for four long\p"
+	.string "They say he was gone for four long\n"
 	.string "years.\p"
 	.string "I wonder if he found some amazing\n"
-	.string "Pokemon while he was gone?$"
+	.string "Pokémon while he was gone?$"
 
 TwinleafTownHouse2_EventScript_LittleGirl_Text_0:
 # 20 "data/maps/TwinleafTownHouse2/scripts.pory"
-	.string "Listen, listen, {PLAYER}\n"
-	.string "I want a cute Pokemon!$"
+	.string "Listen, listen, {PLAYER}.\n"
+	.string "I want a cute Pokémon!$"

@@ -1224,7 +1224,7 @@
 
 #define FLAG_HIDE_PLAYER_HOUSE_BARRY                                0x493 // Unused Flag
 #define FLAG_HIDE_TWINLEAF_BARRY                                    0x494 // Unused Flag
-#define FLAG_UNUSED_0x495                                           0x495 // Unused Flag
+#define FLAG_HIDE_BARRY_ROOM_BARRY                                  0x495 // Unused Flag
 #define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
 #define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
 #define FLAG_UNUSED_0x498                                           0x498 // Unused Flag

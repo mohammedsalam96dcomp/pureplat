@@ -5,6 +5,8 @@ script TwinleafTown_EventScript_BarrysMom {
 	lock
 	if (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
 		goto(TwinleafTown_EventScript_SitStill)
+	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 7) {
+		goto(TwinleafTown_EventScript_RocketedOff)
 	}
 	release
 }
@@ -21,5 +23,21 @@ script TwinleafTown_EventScript_SitStill {
 				"he came running right back home.\p"
 				"He just can't sit still, that boy.\n"
 				"I wonder who he takes after?"))
+				
+	release
+}
+
+script TwinleafTown_EventScript_RocketedOff {
+	lock
+
+	faceplayer
+	setspeaker(SP_NAME_BARRYMOM)
+	msgbox("That kid rocketed\n"
+		"off again like usual.\p"
+		"I'd guess he would be out on\n"
+		"Route 201 by now?\p"
+		"He just can't sit still, that boy.\n"
+		"I wonder who he takes after?")
+
 	release
 }

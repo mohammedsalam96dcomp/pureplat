@@ -52,6 +52,8 @@ script TwinleafTown_PlayersHouse1F_EventScript_Mom {
 		goto(TwinleafTown_PlayersHouse1F_ByeBye)
 	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
 		goto(TwinleafTown_PlayersHouse1F_BarryWaiting)
+	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 7) {
+		goto(TwinleafTown_PlayersHouse1F_BarryWaiting)
 	}
 	// switch(var((VAR_TEMP_1, 1))) {
 	// 	case 1:
