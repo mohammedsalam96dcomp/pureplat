@@ -81,6 +81,20 @@
       "elevation": 0,
       "dest_map": "MAP_TWINLEAF_TOWN_BARRYS_HOUSE_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_TWINLEAF_TOWN_HOUSE2",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

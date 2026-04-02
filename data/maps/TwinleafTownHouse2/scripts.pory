@@ -1,0 +1,23 @@
+mapscripts TwinleafTownHouse2_MapScripts{
+}
+
+script TwinleafTownHouse2_EventScript_OldWoman {
+	lock
+	faceplayer
+	msgbox("Did you hear?\p"
+		"The Pokémon Professor returned\n"
+		"to the next town over.\p"
+		"They say he was gone for four long\n"
+		"years.\p"
+		"I wonder if he found some amazing\n"
+		"Pokémon while he was gone?")
+	release
+}
+
+script TwinleafTownHouse2_EventScript_LittleGirl {
+	lock
+	faceplayer
+	msgbox("Listen, listen, {PLAYER}.\n"
+		"I want a cute Pokémon!")
+	release
+}

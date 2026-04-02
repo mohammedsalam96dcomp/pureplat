@@ -1,0 +1,10 @@
+mapscripts TwinleafTownHouse1_MapScripts{
+}
+
+script TwinleafTownHouse1_EventScript_Man {
+	lock
+	faceplayer
+	msgbox("You're off to hang with Barry\n"
+		"again, right? You two sure are tight!")
+	release
+}
