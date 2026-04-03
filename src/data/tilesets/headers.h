@@ -1585,3 +1585,13 @@ const struct Tileset gTileset_BuildingSinnoh =
     .metatileAttributes = gMetatileAttributes_BuildingSinnoh,
     .callback = NULL,
 };
+const struct Tileset gTileset_IndoorTwinleaf =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_IndoorTwinleaf,
+    .palettes = gTilesetPalettes_IndoorTwinleaf,
+    .metatiles = gMetatiles_IndoorTwinleaf,
+    .metatileAttributes = gMetatileAttributes_IndoorTwinleaf,
+    .callback = NULL,
+};

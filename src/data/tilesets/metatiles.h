@@ -420,3 +420,6 @@ const u16 gMetatileAttributes_PlayersHouse[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_BuildingSinnoh[] = INCBIN_U16("data/tilesets/primary/building_sinnoh/metatiles.bin");
 const u16 gMetatileAttributes_BuildingSinnoh[] = INCBIN_U16("data/tilesets/primary/building_sinnoh/metatile_attributes.bin");
+
+const u16 gMetatiles_IndoorTwinleaf[] = INCBIN_U16("data/tilesets/secondary/indoor_twinleaf/metatiles.bin");
+const u16 gMetatileAttributes_IndoorTwinleaf[] = INCBIN_U16("data/tilesets/secondary/indoor_twinleaf/metatile_attributes.bin");

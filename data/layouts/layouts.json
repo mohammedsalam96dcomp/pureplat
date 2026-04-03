@@ -9380,7 +9380,7 @@
       "width": 9,
       "height": 9,
       "primary_tileset": "gTileset_BuildingSinnoh",
-      "secondary_tileset": "gTileset_PlayersHouse",
+      "secondary_tileset": "gTileset_IndoorTwinleaf",
       "border_filepath": "data/layouts/TwinleafTownHouse1/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTownHouse1/map.bin"
     },
@@ -9390,7 +9390,7 @@
       "width": 9,
       "height": 9,
       "primary_tileset": "gTileset_BuildingSinnoh",
-      "secondary_tileset": "gTileset_PlayersHouse",
+      "secondary_tileset": "gTileset_IndoorTwinleaf",
       "border_filepath": "data/layouts/TwinleafTownHouse2/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTownHouse2/map.bin"
     }

@@ -461,7 +461,7 @@ TwinleafTown_EventScript_TearingOff::
 	faceplayer
 # 263 "data/maps/TwinleafTown/scripts.pory"
 	msgbox TwinleafTown_EventScript_TearingOff_Text_0
-# 269 "data/maps/TwinleafTown/scripts.pory"
+# 270 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
@@ -830,7 +830,7 @@ TwinleafTown_EventScript_TwinleafSign_Text_0:
 
 TwinleafTown_EventScript_TearingOff_Text_0:
 # 263 "data/maps/TwinleafTown/scripts.pory"
-	.string "Hiya, {PLAYER}."
+	.string "Hiya, {PLAYER}.\n"
 	.string "You're looking for Barry?\p"
 	.string "He just went tearing off a little\n"
 	.string "while ago.\p"
@@ -838,7 +838,7 @@ TwinleafTown_EventScript_TearingOff_Text_0:
 	.string "Why not go chase after him?$"
 
 BarryLooking::
-# 272 "data/maps/TwinleafTown/scripts.pory"
+# 273 "data/maps/TwinleafTown/scripts.pory"
 	.string "Hiya, {PLAYER}.\n"
 	.string "Barry was looking for you.\p"
 	.string "I think he's home now.\n"
