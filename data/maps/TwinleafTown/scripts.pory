@@ -1,16 +1,16 @@
-//VAR_TWINLEAF_INTRO_STATE is 6 at the start of this script
+//VAR_TWINLEAF_INTRO_STATE is 5 at the start of this script
 const LOCALID_NPC3 = 3
 const LOCALID_RIVAL = 4
 
 mapscripts TwinleafTown_MapScripts{
-    MAP_SCRIPT_ON_FRAME_TABLE[
-        VAR_TWINLEAF_INTRO_STATE, 5: TwinleafTown_ON_FRAME
-  ]
+//     MAP_SCRIPT_ON_FRAME_TABLE[
+//         VAR_TWINLEAF_INTRO_STATE, 5: TwinleafTown_ON_FRAME
+//   ]
 }
 
-script TwinleafTown_ON_FRAME {
-  setvar(VAR_TWINLEAF_INTRO_STATE, 6)
-}
+// script TwinleafTown_ON_FRAME {
+//   setvar(VAR_TWINLEAF_INTRO_STATE, 6)
+// }
 
 script TwinleafTown_EventScript_THUD {
     lock
@@ -99,9 +99,9 @@ script TwinleafTown_EventScript_WildPokemon {
 
 script TwinleafTown_EventScript_TwinleafMan {
     lock
-    if (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
+    if (var(VAR_TWINLEAF_INTRO_STATE) == 5) {
         goto(TwinleafTown_EventScript_BarryLooking)
-    } elif (var(VAR_TWINLEAF_INTRO_STATE) == 7) {
+    } elif (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
         goto(TwinleafTown_EventScript_TearingOff)
     }
 

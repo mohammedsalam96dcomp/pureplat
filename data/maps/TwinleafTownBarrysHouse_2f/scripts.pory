@@ -3,7 +3,7 @@ const LOCALID_RIVAL = 1
 
 mapscripts TwinleafTownBarrysHouse_2f_MapScripts{
 	MAP_SCRIPT_ON_FRAME_TABLE[
-    	VAR_TWINLEAF_INTRO_STATE, 6: TwinleafTownBarrysHouse_2F_ON_FRAME
+    	VAR_TWINLEAF_INTRO_STATE, 5: TwinleafTownBarrysHouse_2F_ON_FRAME
   	]
 }
 
@@ -38,6 +38,6 @@ script TwinleafTownBarrysHouse_2F_ON_FRAME {
     setflag(FLAG_HIDE_BARRY_ROOM_BARRY)
     removeobject(LOCALID_RIVAL)
 
-	setvar(VAR_TWINLEAF_INTRO_STATE, 7)
+	setvar(VAR_TWINLEAF_INTRO_STATE, 6)
 	release
 }

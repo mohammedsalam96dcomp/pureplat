@@ -333,7 +333,7 @@ LittlerootTown_BrendansHouse_1F_EventScript_MeetRival::
 # 167 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	setvar VAR_LITTLEROOT_RIVAL_STATE, 3
 # 168 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
-	setvar VAR_LITTLEROOT_TOWN_STATE, 1
+	setvar VAR_TWINLEAF_MOM_STATE, 1
 # 169 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"
 	savebgm MUS_DUMMY
 # 170 "data/maps/LittlerootTown_BrendansHouse_1F/scripts.pory"

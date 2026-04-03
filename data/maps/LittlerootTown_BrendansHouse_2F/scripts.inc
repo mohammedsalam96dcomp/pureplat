@@ -149,7 +149,7 @@ LittlerootTown_BrendansHouse_2F_EventScript_MeetBrendan::
 # 75 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_BEDROOM
 # 76 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
-	setvar VAR_LITTLEROOT_TOWN_STATE, 1
+	setvar VAR_TWINLEAF_MOM_STATE, 1
 # 77 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"
 	savebgm MUS_DUMMY
 # 78 "data/maps/LittlerootTown_BrendansHouse_2F/scripts.pory"

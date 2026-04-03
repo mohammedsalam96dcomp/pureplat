@@ -6,10 +6,10 @@ TwinleafTown_EventScript_BarrysMom::
 # 5 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"
 	lock
 # 6 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"
-	compare VAR_TWINLEAF_INTRO_STATE, 6
+	compare VAR_TWINLEAF_INTRO_STATE, 5
 	goto_if_eq TwinleafTown_EventScript_BarrysMom_2
 # 8 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"
-	compare VAR_TWINLEAF_INTRO_STATE, 7
+	compare VAR_TWINLEAF_INTRO_STATE, 6
 	goto_if_eq TwinleafTown_EventScript_BarrysMom_3
 TwinleafTown_EventScript_BarrysMom_1:
 # 11 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"

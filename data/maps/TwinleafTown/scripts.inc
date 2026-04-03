@@ -1,18 +1,5 @@
 TwinleafTown_MapScripts::
-# 6 "data/maps/TwinleafTown/scripts.pory"
-	map_script MAP_SCRIPT_ON_FRAME_TABLE, TwinleafTown_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
-
-TwinleafTown_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 7 "data/maps/TwinleafTown/scripts.pory"
-	map_script_2 VAR_TWINLEAF_INTRO_STATE, 5, TwinleafTown_ON_FRAME
-	.2byte 0
-
-
-TwinleafTown_ON_FRAME::
-# 12 "data/maps/TwinleafTown/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 6
-	return
 
 
 TwinleafTown_EventScript_THUD::
@@ -139,10 +126,10 @@ TwinleafTown_EventScript_TwinleafMan::
 # 101 "data/maps/TwinleafTown/scripts.pory"
 	lock
 # 102 "data/maps/TwinleafTown/scripts.pory"
-	compare VAR_TWINLEAF_INTRO_STATE, 6
+	compare VAR_TWINLEAF_INTRO_STATE, 5
 	goto_if_eq TwinleafTown_EventScript_TwinleafMan_2
 # 104 "data/maps/TwinleafTown/scripts.pory"
-	compare VAR_TWINLEAF_INTRO_STATE, 7
+	compare VAR_TWINLEAF_INTRO_STATE, 6
 	goto_if_eq TwinleafTown_EventScript_TwinleafMan_3
 TwinleafTown_EventScript_TwinleafMan_1:
 # 108 "data/maps/TwinleafTown/scripts.pory"

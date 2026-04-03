@@ -3,9 +3,9 @@ mapscripts TwinleafTownBarrysHouse_1F_MapScripts{
 
 script TwinleafTown_EventScript_BarrysMom {
 	lock
-	if (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
+	if (var(VAR_TWINLEAF_INTRO_STATE) == 5) {
 		goto(TwinleafTown_EventScript_SitStill)
-	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 7) {
+	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
 		goto(TwinleafTown_EventScript_RocketedOff)
 	}
 	release

@@ -104,7 +104,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry1"
     },
     {
@@ -113,7 +113,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry2"
     },
     {
@@ -122,7 +122,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry3"
     },
     {
@@ -131,7 +131,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry4"
     },
     {
@@ -140,7 +140,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry5"
     },
     {
@@ -149,7 +149,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry6"
     },
     {
@@ -158,7 +158,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry7"
     },
     {
@@ -167,7 +167,7 @@
       "y": 4,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var_value": "5",
       "script": "TwinleafTown_EventScript_GoSeeBarry8"
     },
     {

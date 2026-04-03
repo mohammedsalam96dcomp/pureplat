@@ -5,7 +5,7 @@ TwinleafTownBarrysHouse_2f_MapScripts::
 
 TwinleafTownBarrysHouse_2f_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
 # 6 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
-	map_script_2 VAR_TWINLEAF_INTRO_STATE, 6, TwinleafTownBarrysHouse_2F_ON_FRAME
+	map_script_2 VAR_TWINLEAF_INTRO_STATE, 5, TwinleafTownBarrysHouse_2F_ON_FRAME
 	.2byte 0
 
 
@@ -53,7 +53,7 @@ TwinleafTownBarrysHouse_2F_ON_FRAME::
 # 39 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	removeobject 1
 # 41 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 7
+	setvar VAR_TWINLEAF_INTRO_STATE, 6
 # 42 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	release
 	return

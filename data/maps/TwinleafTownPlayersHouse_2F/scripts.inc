@@ -1,663 +1,663 @@
 TwinleafTownPlayersHouse_2F_MapScripts::
-# 5 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 11 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, TwinleafTownPlayersHouse_2F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
-# 9 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 15 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, TwinleafTownPlayersHouse_2F_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE
 	.byte 0
 
 TwinleafTownPlayersHouse_2F_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
-# 6 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 12 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	map_script_2 VAR_TWINLEAF_INTRO_STATE, 1, TwinleafTownPlayersHouse_2F_ON_FRAME
 	.2byte 0
 
 TwinleafTownPlayersHouse_2F_MapScripts_MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE:
-# 10 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 16 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	map_script_2 VAR_TWINLEAF_INTRO_STATE, 0, TwinleafTownPlayersHouse_2F_ON_WARP
 	.2byte 0
 
 
 TwinleafTownPlayersHouse_2F_ON_FRAME::
-# 15 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 21 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lock
-# 16 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 22 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	msgbox TwinleafTownPlayersHouse_2F_ON_FRAME_Text_0
-# 24 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 30 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	release
-# 25 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 31 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 2
 	return
 
 
 TwinleafTownPlayersHouse_2F_ON_WARP::
-# 29 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 35 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_ON_WARP_Movement_0
-# 30 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 36 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 1
 	return
 
 
 TwinleafTownPlayersHouse_2F_EnterBarryRight::
-# 35 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 41 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 36 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 42 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setvar VAR_TEMP_1, 0
-# 37 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 43 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	goto TwinleafTownPlayersHouse_2F_EnterBarry
-# 38 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 44 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 TwinleafTownPlayersHouse_2F_EnterBarryUp::
-# 42 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 48 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 43 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 49 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 44 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 50 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	goto TwinleafTownPlayersHouse_2F_EnterBarry
-# 45 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 51 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 TwinleafTownPlayersHouse_2F_EnterBarryDown::
-# 49 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 55 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 50 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 56 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setvar VAR_TEMP_1, 2
-# 51 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 57 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	goto TwinleafTownPlayersHouse_2F_EnterBarry
-# 52 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 58 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 TwinleafTownPlayersHouse_2F_EnterBarryLeft::
-# 56 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 62 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 57 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 63 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setvar VAR_TEMP_1, 3
-# 58 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 64 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	goto TwinleafTownPlayersHouse_2F_EnterBarry
-# 59 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 65 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 TwinleafTownPlayersHouse_2F_EnterBarry::
-# 63 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	lockall
-# 64 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	clearflag FLAG_HIDE_PLAYER_HOUSE_BARRY
-# 65 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	addobject 1
-# 67 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	playse SE_EXIT
-# 68 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_0
 # 69 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 1
+	lockall
 # 70 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitse
+	clearflag FLAG_HIDE_PLAYER_HOUSE_BARRY
 # 71 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	playbgm MUS_GSC_ROUTE38, 0
-# 72 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
+	addobject 1
 # 73 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	playse SE_PIN
+	playse SE_EXIT
 # 74 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 0
+	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_0
 # 75 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitse
+	waitmovement 1
 # 76 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	delay 48
+	waitse
 # 77 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	setspeaker SP_NAME_BARRY
+	playbgm MUS_GSC_ROUTE38, 0
 # 78 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_0
+	applymovement 1, Common_Movement_ExclamationMark
 # 79 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	closemessage
+	playse SE_PIN
+# 80 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	waitmovement 0
 # 81 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	switch VAR_TEMP_1
+	waitse
 # 82 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_3
+	delay 48
+# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	setspeaker SP_NAME_BARRY
 # 84 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_0
+# 85 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	closemessage
+# 87 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	switch VAR_TEMP_1
+# 88 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_3
+# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 1, TwinleafTownPlayersHouse_2F_EnterBarry_4
-# 89 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 2, TwinleafTownPlayersHouse_2F_EnterBarry_5
-# 94 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 100 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 3, TwinleafTownPlayersHouse_2F_EnterBarry_6
 TwinleafTownPlayersHouse_2F_EnterBarry_1:
-# 100 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 106 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 102 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 108 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 103 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 109 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_1
-# 112 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	closemessage
-# 114 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
-# 115 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	playse SE_PIN
-# 116 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 0
-# 117 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitse
 # 118 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, Common_Movement_Delay48
-# 119 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 1
+	closemessage
+# 120 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	applymovement 1, Common_Movement_ExclamationMark
 # 121 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	switch VAR_TEMP_1
+	playse SE_PIN
 # 122 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_9
+	waitmovement 0
+# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	waitse
+# 124 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	applymovement 1, Common_Movement_Delay48
+# 125 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	waitmovement 1
 # 127 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	switch VAR_TEMP_1
+# 128 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_9
+# 133 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 1, TwinleafTownPlayersHouse_2F_EnterBarry_10
-# 132 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 138 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 2, TwinleafTownPlayersHouse_2F_EnterBarry_11
-# 137 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 143 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 3, TwinleafTownPlayersHouse_2F_EnterBarry_12
 TwinleafTownPlayersHouse_2F_EnterBarry_7:
-# 143 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 1
-# 145 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	setspeaker SP_NAME_BARRY
-# 146 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_2
 # 149 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	closemessage
-# 151 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3
-# 152 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 153 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 151 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 154 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_3
-# 157 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 152 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_2
+# 155 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	closemessage
+# 157 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3
+# 158 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	waitmovement 1
 # 159 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	switch VAR_TEMP_1
+	setspeaker SP_NAME_BARRY
 # 160 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_15
-# 162 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 1, TwinleafTownPlayersHouse_2F_EnterBarry_16
-# 164 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 2, TwinleafTownPlayersHouse_2F_EnterBarry_17
+	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_3
+# 163 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	closemessage
+# 165 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	switch VAR_TEMP_1
 # 166 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_15
+# 168 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	case 1, TwinleafTownPlayersHouse_2F_EnterBarry_16
+# 170 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	case 2, TwinleafTownPlayersHouse_2F_EnterBarry_17
+# 172 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 3, TwinleafTownPlayersHouse_2F_EnterBarry_18
 TwinleafTownPlayersHouse_2F_EnterBarry_13:
-# 169 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 175 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 177 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 172 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_4
 # 178 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	closemessage
-# 180 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	switch VAR_TEMP_1
-# 181 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_21
+	msgbox TwinleafTownPlayersHouse_2F_EnterBarry_Text_4
 # 184 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 1, TwinleafTownPlayersHouse_2F_EnterBarry_22
+	closemessage
+# 186 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	switch VAR_TEMP_1
 # 187 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	case 2, TwinleafTownPlayersHouse_2F_EnterBarry_23
+	case 0, TwinleafTownPlayersHouse_2F_EnterBarry_21
 # 190 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	case 1, TwinleafTownPlayersHouse_2F_EnterBarry_22
+# 193 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	case 2, TwinleafTownPlayersHouse_2F_EnterBarry_23
+# 196 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	case 3, TwinleafTownPlayersHouse_2F_EnterBarry_24
 TwinleafTownPlayersHouse_2F_EnterBarry_19:
-# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3
-# 195 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_22
-# 196 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 1
-# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	playse SE_EXIT
-# 198 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	removeobject 1
-# 199 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	setflag FLAG_HIDE_PLAYER_HOUSE_BARRY
 # 200 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	delay 40
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3
 # 201 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 3
+	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_22
 # 202 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	fadedefaultbgm
+	waitmovement 1
 # 203 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	playse SE_EXIT
+# 204 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	removeobject 1
+# 205 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	setflag FLAG_HIDE_PLAYER_HOUSE_BARRY
+# 206 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	delay 40
+# 207 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 3
+# 208 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	fadedefaultbgm
+# 209 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 TwinleafTownPlayersHouse_2F_EnterBarry_3:
-# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 89 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_1
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_1
 
 TwinleafTownPlayersHouse_2F_EnterBarry_4:
-# 85 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 91 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_2
-# 86 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 92 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 87 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 93 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3
-# 88 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 94 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_4
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_1
 
 TwinleafTownPlayersHouse_2F_EnterBarry_5:
-# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_5
-# 91 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 97 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 92 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 98 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3
-# 93 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 99 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_4
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_1
 
 TwinleafTownPlayersHouse_2F_EnterBarry_6:
-# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 101 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_6
-# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 102 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 97 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 103 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3
-# 98 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 104 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_4
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_1
 
 TwinleafTownPlayersHouse_2F_EnterBarry_9:
-# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_7
-# 124 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 130 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 125 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 131 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_8
-# 126 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 132 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_9
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_7
 
 TwinleafTownPlayersHouse_2F_EnterBarry_10:
-# 128 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 134 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_10
-# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 135 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 130 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 136 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_8
-# 131 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 137 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_11
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_7
 
 TwinleafTownPlayersHouse_2F_EnterBarry_11:
-# 133 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 139 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_12
-# 134 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 140 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 135 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 141 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_8
-# 136 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 142 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_11
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_7
 
 TwinleafTownPlayersHouse_2F_EnterBarry_12:
-# 138 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 144 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_13
-# 139 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 145 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
-# 140 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 146 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_8
-# 141 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 147 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_9
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_7
 
 TwinleafTownPlayersHouse_2F_EnterBarry_15:
-# 161 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_14
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_13
 
 TwinleafTownPlayersHouse_2F_EnterBarry_16:
-# 163 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 169 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_15
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_13
 
 TwinleafTownPlayersHouse_2F_EnterBarry_17:
-# 165 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_16
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_13
 
 TwinleafTownPlayersHouse_2F_EnterBarry_18:
-# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 173 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_17
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_13
 
 TwinleafTownPlayersHouse_2F_EnterBarry_21:
-# 182 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_18
-# 183 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 1
-	goto TwinleafTownPlayersHouse_2F_EnterBarry_19
-
-TwinleafTownPlayersHouse_2F_EnterBarry_22:
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_19
-# 186 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	waitmovement 1
-	goto TwinleafTownPlayersHouse_2F_EnterBarry_19
-
-TwinleafTownPlayersHouse_2F_EnterBarry_23:
 # 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_20
+	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_18
 # 189 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_19
 
-TwinleafTownPlayersHouse_2F_EnterBarry_24:
+TwinleafTownPlayersHouse_2F_EnterBarry_22:
 # 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_21
+	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_19
 # 192 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	waitmovement 1
+	goto TwinleafTownPlayersHouse_2F_EnterBarry_19
+
+TwinleafTownPlayersHouse_2F_EnterBarry_23:
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_20
+# 195 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	waitmovement 1
+	goto TwinleafTownPlayersHouse_2F_EnterBarry_19
+
+TwinleafTownPlayersHouse_2F_EnterBarry_24:
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	applymovement 1, TwinleafTownPlayersHouse_2F_EnterBarry_Movement_21
+# 198 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 1
 	goto TwinleafTownPlayersHouse_2F_EnterBarry_19
 
 
 TwinleafTownPlayersHouse_2F_TVGift::
-# 207 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 213 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 208 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 214 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	msgbox TwinleafTownPlayersHouse_2F_TVGift_Text_0
-# 209 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 215 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 TwinleafTownPlayersHouse_2F_ItsAWii::
-# 213 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 219 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 214 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 220 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	msgbox TwinleafTownPlayersHouse_2F_ItsAWii_Text_0
-# 216 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 222 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 TwinleafTownPlayersHouse_2F_OpenMenu::
-# 220 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 226 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 221 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 227 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	msgbox TwinleafTownPlayersHouse_2F_OpenMenu_Text_0
-# 223 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 229 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
 TwinleafTownPlayersHouse_2F_CheckPC::
-# 227 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 233 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	lockall
-# 228 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	msgbox TwinleafTownPlayersHouse_2F_CheckPC_Text_0
 # 234 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	msgbox TwinleafTownPlayersHouse_2F_CheckPC_Text_0
+# 240 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	releaseall
 	return
 
 
-# 29 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 35 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_ON_WARP_Movement_0:
-# 29 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 35 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	face_up
 	step_end
 
-# 68 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 74 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_0:
-# 68 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 74 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 89 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_1:
-# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 89 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 89 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 89 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 89 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 85 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 91 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_2:
-# 85 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 91 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 85 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 91 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 85 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 91 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 87 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 93 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_3:
-# 87 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 93 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	face_right
 	step_end
 
-# 88 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 94 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_4:
-# 88 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 94 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_5:
-# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 90 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 96 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 101 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_6:
-# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 101 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 101 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 101 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 101 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 95 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 101 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_7:
-# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 123 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 129 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 125 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 131 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_8:
-# 125 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 131 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	face_left
 	step_end
 
-# 126 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 132 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_9:
-# 126 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 132 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 126 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 132 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	face_up
 	step_end
 
-# 128 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 134 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_10:
-# 128 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 134 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 128 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 134 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 128 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 134 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 128 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 134 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 131 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 137 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_11:
-# 131 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 137 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 131 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 137 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
 	step_end
 
-# 133 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 139 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_12:
-# 133 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 139 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 133 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 139 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 133 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 139 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 133 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 139 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 138 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 144 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_13:
-# 138 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 144 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 138 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 144 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
-# 138 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 144 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_left
 	step_end
 
-# 161 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_14:
-# 161 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 161 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 161 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 161 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
 	step_end
 
-# 163 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 169 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_15:
-# 163 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 169 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 163 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 169 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
 	step_end
 
-# 165 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_16:
-# 165 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 165 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 165 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 165 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 171 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
 	step_end
 
-# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 173 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_17:
-# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 173 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 173 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 167 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 173 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	face_right
 	step_end
 
-# 182 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_18:
-# 182 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 182 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 182 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 182 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
 	step_end
 
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_19:
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_down
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 185 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
 	step_end
 
-# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_20:
-# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 188 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 194 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
 	step_end
 
-# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_21:
-# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
-# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 191 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 197 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_up
 	step_end
 
-# 195 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 201 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 TwinleafTownPlayersHouse_2F_EnterBarry_Movement_22:
-# 195 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 201 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 195 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 201 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_right
-# 195 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 201 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	walk_slow_stairs_right
 	step_end
 
 TwinleafTownPlayersHouse_2F_ON_FRAME_Text_0:
-# 16 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 22 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "That concludes our special program,\n"
 	.string "'Lets ask Prof. Rowan!'\p"
 	.string "Brought to you by Jubilife TV on\n"
@@ -666,11 +666,11 @@ TwinleafTownPlayersHouse_2F_ON_FRAME_Text_0:
 	.string "same channel.$"
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_0:
-# 78 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 84 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "There you are!$"
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_1:
-# 103 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 109 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "Hey, {PLAYER}!\n"
 	.string "Did you just see the TV? Sure you did!\p"
 	.string "Prof. Rowan's that really important\n"
@@ -681,17 +681,17 @@ TwinleafTownPlayersHouse_2F_EnterBarry_Text_1:
 	.string "some Pokémon!$"
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_2:
-# 146 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 152 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "Oh, hey!\n"
 	.string "Is this a new PC?!$"
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_3:
-# 154 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 160 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "Uh. . .\n"
 	.string "Where was I?$"
 
 TwinleafTownPlayersHouse_2F_EnterBarry_Text_4:
-# 172 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 178 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "Oh, right, right! We're going to go see\n"
 	.string "Prof. Rowan and get some Pokémon.\p"
 	.string "I'll be waiting outside.\p"
@@ -699,21 +699,21 @@ TwinleafTownPlayersHouse_2F_EnterBarry_Text_4:
 	.string "fining you ¥10 million!$"
 
 TwinleafTownPlayersHouse_2F_TVGift_Text_0:
-# 208 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 214 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "Mom bought this TV as a gift.$"
 
 TwinleafTownPlayersHouse_2F_ItsAWii_Text_0:
-# 214 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 220 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "It's a Wii!\n"
 	.string "Its controlled by a Wii Remote!$"
 
 TwinleafTownPlayersHouse_2F_OpenMenu_Text_0:
-# 221 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 227 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "The START Button\n"
 	.string "opens the menu!$"
 
 TwinleafTownPlayersHouse_2F_CheckPC_Text_0:
-# 228 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 234 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	.string "{PLAYER} checked the PC.\p"
 	.string "Pokémon Basics...\p"
 	.string "People live alongisde Pokémon in\n"
