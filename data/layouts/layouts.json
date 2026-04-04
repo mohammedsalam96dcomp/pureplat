@@ -9393,6 +9393,16 @@
       "secondary_tileset": "gTileset_IndoorTwinleaf",
       "border_filepath": "data/layouts/TwinleafTownHouse2/border.bin",
       "blockdata_filepath": "data/layouts/TwinleafTownHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE201",
+      "name": "Route201_Layout",
+      "width": 64,
+      "height": 23,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_Twinleaf",
+      "border_filepath": "data/layouts/Route201/border.bin",
+      "blockdata_filepath": "data/layouts/Route201/map.bin"
     }
   ]
 }

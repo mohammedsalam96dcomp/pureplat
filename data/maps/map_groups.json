@@ -1164,7 +1164,8 @@
     "SevenIsland_SevaultCanyon_House_Frlg"
   ],
   "gMapGroup_TownsAndRoutes_Plat": [
-    "TwinleafTown"
+    "TwinleafTown",
+    "Route201"
   ],
   "gMapGroup_IndoorTwinleaf": [
     "TwinleafTownPlayersHouse_2F",
