@@ -2010,7 +2010,7 @@
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_201_ROWAN                      0
-#define FLAG_HIDE_APPRENTICE                                        0
+#define FLAG_HIDE_ROUTE_201_DAWN                                        0
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2               0

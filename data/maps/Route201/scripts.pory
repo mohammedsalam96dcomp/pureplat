@@ -1,7 +1,13 @@
 const LOCALID_RIVAL = 1
 const LOCALID_ROWAN = 2
+const LOCALID_LUCASDAWN = 3
 
 mapscripts Route201_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION: Route201_EventScript_OnTransition
+}
+
+script Route201_EventScript_OnTransition {
+	call(Common_EventScript_SetupRivalGfxId)
 }
 
 script Route201_EventScript_BarryScene1 {
@@ -273,8 +279,16 @@ script Route201_EventScript_BarryScene {
 			"Hm?\n"
 			"Now, where. . .?")
 
-	applymovement(LOCALID_ROWAN, moves(face_right, face_left))
-	waitmovement(LOCALID_RIVAL)
+	closemessage
+
+	applymovement(LOCALID_ROWAN, moves(face_left, face_right))
+	waitmovement(LOCALID_ROWAN)
+
+	clearflag(FLAG_HIDE_ROUTE_201_DAWN)
+  	addobject(LOCALID_LUCASDAWN)	
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right*7))
+	waitmovement(LOCALID_LUCASDAWN)
 
 	release
 }
