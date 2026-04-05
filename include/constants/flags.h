@@ -757,9 +757,8 @@
 #define FLAG_HIDE_PLAYER_HOUSE_BARRY                                0x493 // Unused Flag
 #define FLAG_HIDE_TWINLEAF_BARRY                                    0x494 // Unused Flag
 #define FLAG_HIDE_BARRY_ROOM_BARRY                                  0x495 // Unused Flag
+#define FLAG_HIDE_ROUTE_201_ROWAN                                   0x2BC
 
-
-#define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
 #define FLAG_HIDE_APPRENTICE                                        0x2BD
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0x2C7

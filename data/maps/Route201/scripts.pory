@@ -1,0 +1,280 @@
+const LOCALID_RIVAL = 1
+const LOCALID_ROWAN = 2
+
+mapscripts Route201_MapScripts{
+}
+
+script Route201_EventScript_BarryScene1 {
+	lock
+	setvar(VAR_TEMP_1, 1)
+	goto(Route201_EventScript_BarryScene)
+	release
+}
+
+script Route201_EventScript_BarryScene2 {
+	lock
+	setvar(VAR_TEMP_1, 2)
+	goto(Route201_EventScript_BarryScene)
+	release
+}
+
+script Route201_EventScript_BarryScene3 {
+	lock
+	setvar(VAR_TEMP_1, 3)
+	goto(Route201_EventScript_BarryScene)
+	release
+}
+
+script Route201_EventScript_BarryScene4 {
+	lock
+	setvar(VAR_TEMP_1, 4)
+	goto(Route201_EventScript_BarryScene)
+	release
+}
+
+
+script Route201_EventScript_BarryScene {
+	lock
+
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_down))
+    waitmovement(0)
+
+	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	playse(SE_PIN)
+	waitmovement(0)
+	waitse
+	delay(30)
+
+	setspeaker(SP_NAME_BARRY)
+	msgbox("Too slow!")
+	closemessage
+
+	switch(var(VAR_TEMP_1)){
+		case 1:
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left*2, face_down))
+		case 2: 
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left, face_down))
+		case 3:
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down))
+		case 4:
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_right, face_down))
+	}
+	waitmovement(0)
+
+	setspeaker(SP_NAME_BARRY)
+	msgbox("All right!\n"
+			"Let's get moving to Prof. Rowan's lab.")
+	closemessage
+
+	switch(var(VAR_TEMP_1)){
+		case 1:
+			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right*4, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*4, walk_up*2, face_right))
+		case 2: 
+			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right*3, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*3, walk_up*2, face_right))
+		case 3:
+			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right*2, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*2, walk_up*2, face_right))
+		case 4:
+			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right, walk_up*2, face_right))
+	}
+	waitmovement(LOCALID_RIVAL)
+
+	setspeaker(SP_NAME_BARRY)
+	msgbox(". . .\n"
+			". . .\p"
+			"What?\n"
+			"Don't go into the grass, right?\l"
+			"No worries! No problem!\p"
+			"It doesn't matter that we don't have\n"
+			"any Pokémon.\p"
+			"Trust me on this one.\n"
+			"I've got an idea!\p"
+			"Now listen. You know how wild Pokémon\n"
+			"jump out when you go into tall grass?")
+	closemessage
+
+	applymovement(LOCALID_RIVAL, moves(walk_left))
+	waitmovement(0)
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_down))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+	waitmovement(LOCALID_RIVAL)
+
+	setspeaker(SP_NAME_BARRY)
+	msgbox("So, what you do is, you scoot over to\n"
+			"the next patch of grass before any\l"
+			"wild Pokémon can appear!\p"
+			"If we just keep dashing, we can get to\n"
+			"Sandgem Town without running into\l"
+			"wild Pokémon!\p"
+			"OK, stick with me!")
+	closemessage
+
+	applymovement(LOCALID_RIVAL, moves(walk_left))
+	waitmovement(0)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
+	applymovement(LOCALID_RIVAL, moves(walk_left*2, walk_in_place_right))
+	waitmovement(LOCALID_RIVAL)
+
+	setspeaker(SP_NAME_BARRY)
+	msgbox("OK, here goes!\p"
+			"On your marks. . .")
+	closemessage
+
+	applymovement(LOCALID_RIVAL, moves(walk_fast_right*3))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+	waitmovement(0)
+
+	msgbox("HOLD IT!")
+	closemessage
+
+	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	playse(SE_PIN)
+	waitmovement(0)
+	waitse
+	delay(30)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+	applymovement(LOCALID_RIVAL, moves(face_left))
+	waitmovement(LOCALID_RIVAL)
+	
+	clearflag(FLAG_HIDE_ROUTE_201_ROWAN)
+  	addobject(LOCALID_ROWAN)
+
+	applymovement(LOCALID_ROWAN, moves(walk_right*8))
+	waitmovement(LOCALID_ROWAN)
+
+	msgbox("{SPEAKER NAME_PROFESSOR}You two don't seem to have\n"
+			"any Pokémon between you?\p"
+			"Then, what is the meaning of going into\n"
+			"the tall grass?!\p"
+			"{SPEAKER NAME_BARRY}. . .\n"
+			". . .\p"
+			"{SPEAKER NAME_PROFESSOR}. . .\n"
+			". . .\p"
+			". . .\n"
+			". . .")
+
+	applymovement(LOCALID_RIVAL, moves(face_down))
+	waitmovement(LOCALID_RIVAL)
+
+	msgbox("{SPEAKER NAME_BARRY}Hey, {PLAYER}.\n"
+			"This old guy. . .\p"
+			"It's Prof. Rowan, isn't it?\n"
+			"What's he doing here. . .?")
+	closemessage
+
+	applymovement(LOCALID_ROWAN, moves(walk_left*3))
+	applymovement(LOCALID_RIVAL, moves(face_left))
+	waitmovement(LOCALID_ROWAN)
+	waitmovement(LOCALID_RIVAL)
+
+	msgbox("{SPEAKER NAME_PROFESSOR}. . .\n"
+			". . .\p"
+			"They tried to go into the tall grass\n"
+			"because they wanted Pokémon. . .\p"
+			"Hmm. . . \n"
+			"What to do. . .?\p"
+			"Their world would surely change if\n"
+			"they were to meet Pokémon. . .\p"
+			"Is it right for me to put them on that\n"
+			"path. . .?\p"
+			". . .\n"
+			". . .")
+	closemessage
+
+	delay(30)
+	applymovement(LOCALID_ROWAN, moves(walk_right*3))
+	waitmovement(LOCALID_ROWAN)
+	
+	while {
+		msgbox("{SPEAKER NAME_PROFESSOR}You two.\n"
+				"You truly love Pokémon, do you?", MSGBOX_YESNO)
+		closemessage
+        if (var(VAR_RESULT) != 1) {
+			applymovement(LOCALID_RIVAL, moves(walk_in_place_down))
+			waitmovement(LOCALID_RIVAL)
+
+			msgbox("{SPEAKER NAME_BARRY}Whoa, hold up!\n"
+					"You're not making any sense here!")
+
+			applymovement(LOCALID_RIVAL, moves(face_left))
+			waitmovement(LOCALID_RIVAL)
+
+			msgbox("{SPEAKER NAME_PROFESSOR}Er-hem!\p"
+					"I didn't quite catch that, so I will\n"
+					"ask you again.")
+        } else {
+			break
+		}
+    } 
+
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_left))
+	waitmovement(LOCALID_RIVAL)
+
+	msgbox("{SPEAKER NAME_BARRY}Me, too!\n"
+			"I love Pokémon, too!\p"
+			"{SPEAKER NAME_PROFESSOR}I will ask you once again.\p"
+			"You two.\n"
+			"You truly love Pokémon, do you?")
+
+	while {
+		setspeaker(SP_NAME_BARRY)
+		msgbox("What?!\n"
+				"You can ask a hundred times!\l"
+				"The answer will never change!\p"
+				"We'll both answer a hundred times\n"
+				"we love Pokémon!")
+		applymovement(LOCALID_RIVAL, moves(walk_in_place_down))
+		waitmovement(LOCALID_RIVAL)
+		setspeaker(SP_NAME_BARRY)
+		msgbox("Right, {PLAYER}?", MSGBOX_YESNO)
+		if (var(VAR_RESULT) != 1) {
+			setspeaker(SP_NAME_BARRY)
+			msgbox(". . .\n"
+			"That joke's getting old!")
+			applymovement(LOCALID_RIVAL, moves(face_left))
+			waitmovement(LOCALID_RIVAL)
+		} else {
+			break
+		}
+	}
+
+	msgbox("{SPEAKER NAME_PROFESSOR}. . .A pair of reckless kids\n"
+			"who foolishly try to enter tall grass\l"
+			"without Pokémon of their own. . .?\p"
+			"It worries what people like that\n"
+			"would do with Pokémon.")
+	applymovement(LOCALID_RIVAL, moves(face_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+	waitmovement(LOCALID_RIVAL)
+
+	msgbox("{SPEAKER NAME_BARRY}. . .Uh. . .\n"
+			"Well, I, uh. . .\p"
+			". . .\n"
+			". . .\p"
+			"Well, then forget about me, but give\n"
+			"a Pokémon to my friend here!\p"
+			"I mean, it was me who tried to get into\n"
+			"the tall grass and all. . .\p"
+			"{SPEAKER NAME_PROFESSOR}!\p"
+			"How big of you. . .\p"
+			"Very well, then!\n"
+			"I will entrust you two with Pokémon!\p"
+			"I apologize for putting you through\n"
+			"that exercise.\p"
+			"However!\p"
+			"You must promise me that you will never\n"
+			"recklessly endanger yourselves again.\p"
+			"Now, then. . .\p"
+			"Hm?\n"
+			"Now, where. . .?")
+
+	applymovement(LOCALID_ROWAN, moves(face_right, face_left))
+	waitmovement(LOCALID_RIVAL)
+
+	release
+}
