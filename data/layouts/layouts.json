@@ -9408,7 +9408,7 @@
       "id": "LAYOUT_VERITY_LAKE_FRONT",
       "name": "VerityLakeFront_Layout",
       "width": 20,
-      "height": 26,
+      "height": 24,
       "primary_tileset": "gTileset_GeneralSinnoh",
       "secondary_tileset": "gTileset_Twinleaf",
       "border_filepath": "data/layouts/VerityLakeFront/border.bin",

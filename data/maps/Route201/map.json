@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_VERITY_LAKE_FRONT",
-      "offset": -3,
+      "offset": -4,
       "direction": "left"
     }
   ],
@@ -83,7 +83,7 @@
     {
       "type": "trigger",
       "x": 14,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
@@ -92,7 +92,7 @@
     {
       "type": "trigger",
       "x": 15,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
@@ -101,7 +101,7 @@
     {
       "type": "trigger",
       "x": 16,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
@@ -110,7 +110,7 @@
     {
       "type": "trigger",
       "x": 17,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",

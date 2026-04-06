@@ -58,13 +58,13 @@ script Route201_EventScript_BarryScene {
 
 	switch(var(VAR_TEMP_1)){
 		case 1:
-			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left*2, face_down))
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left*2, walk_fast_down))
 		case 2: 
-			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left, face_down))
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left, walk_fast_down))
 		case 3:
-			applymovement(LOCALID_RIVAL, moves(walk_fast_down))
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down*2))
 		case 4:
-			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_right, face_down))
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_right, walk_fast_down))
 	}
 	waitmovement(0)
 
@@ -75,17 +75,17 @@ script Route201_EventScript_BarryScene {
 
 	switch(var(VAR_TEMP_1)){
 		case 1:
-			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right*4, walk_up*2, walk_right, walk_in_place_left))
-			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*4, walk_up*2, face_right))
+			applymovement(LOCALID_RIVAL, moves(walk_up*2, walk_right*4, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right*4, walk_up*2, face_right))
 		case 2: 
-			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right*3, walk_up*2, walk_right, walk_in_place_left))
-			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*3, walk_up*2, face_right))
+			applymovement(LOCALID_RIVAL, moves(walk_up*2, walk_right*3, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right*3, walk_up*2, face_right))
 		case 3:
-			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right*2, walk_up*2, walk_right, walk_in_place_left))
-			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*2, walk_up*2, face_right))
+			applymovement(LOCALID_RIVAL, moves(walk_up*2, walk_right*2, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right*2, walk_up*2, face_right))
 		case 4:
-			applymovement(LOCALID_RIVAL, moves(walk_up, walk_right, walk_up*2, walk_right, walk_in_place_left))
-			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right, walk_up*2, face_right))
+			applymovement(LOCALID_RIVAL, moves(walk_up*2, walk_right, walk_up*2, walk_right, walk_in_place_left))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right, walk_up*2, face_right))
 	}
 	waitmovement(LOCALID_RIVAL)
 

@@ -691,7 +691,7 @@ Route201_EventScript_BarryScene_Movement_1:
 # 61 "data/maps/Route201/scripts.pory"
 	walk_fast_left
 # 61 "data/maps/Route201/scripts.pory"
-	face_down
+	walk_fast_down
 	step_end
 
 # 63 "data/maps/Route201/scripts.pory"
@@ -701,11 +701,13 @@ Route201_EventScript_BarryScene_Movement_2:
 # 63 "data/maps/Route201/scripts.pory"
 	walk_fast_left
 # 63 "data/maps/Route201/scripts.pory"
-	face_down
+	walk_fast_down
 	step_end
 
 # 65 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_3:
+# 65 "data/maps/Route201/scripts.pory"
+	walk_fast_down
 # 65 "data/maps/Route201/scripts.pory"
 	walk_fast_down
 	step_end
@@ -717,11 +719,13 @@ Route201_EventScript_BarryScene_Movement_4:
 # 67 "data/maps/Route201/scripts.pory"
 	walk_fast_right
 # 67 "data/maps/Route201/scripts.pory"
-	face_down
+	walk_fast_down
 	step_end
 
 # 78 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_5:
+# 78 "data/maps/Route201/scripts.pory"
+	walk_up
 # 78 "data/maps/Route201/scripts.pory"
 	walk_up
 # 78 "data/maps/Route201/scripts.pory"
@@ -747,6 +751,8 @@ Route201_EventScript_BarryScene_Movement_6:
 # 79 "data/maps/Route201/scripts.pory"
 	walk_up
 # 79 "data/maps/Route201/scripts.pory"
+	walk_up
+# 79 "data/maps/Route201/scripts.pory"
 	walk_right
 # 79 "data/maps/Route201/scripts.pory"
 	walk_right
@@ -764,6 +770,8 @@ Route201_EventScript_BarryScene_Movement_6:
 
 # 81 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_7:
+# 81 "data/maps/Route201/scripts.pory"
+	walk_up
 # 81 "data/maps/Route201/scripts.pory"
 	walk_up
 # 81 "data/maps/Route201/scripts.pory"
@@ -787,6 +795,8 @@ Route201_EventScript_BarryScene_Movement_8:
 # 82 "data/maps/Route201/scripts.pory"
 	walk_up
 # 82 "data/maps/Route201/scripts.pory"
+	walk_up
+# 82 "data/maps/Route201/scripts.pory"
 	walk_right
 # 82 "data/maps/Route201/scripts.pory"
 	walk_right
@@ -802,6 +812,8 @@ Route201_EventScript_BarryScene_Movement_8:
 
 # 84 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_9:
+# 84 "data/maps/Route201/scripts.pory"
+	walk_up
 # 84 "data/maps/Route201/scripts.pory"
 	walk_up
 # 84 "data/maps/Route201/scripts.pory"
@@ -823,6 +835,8 @@ Route201_EventScript_BarryScene_Movement_10:
 # 85 "data/maps/Route201/scripts.pory"
 	walk_up
 # 85 "data/maps/Route201/scripts.pory"
+	walk_up
+# 85 "data/maps/Route201/scripts.pory"
 	walk_right
 # 85 "data/maps/Route201/scripts.pory"
 	walk_right
@@ -839,6 +853,8 @@ Route201_EventScript_BarryScene_Movement_11:
 # 87 "data/maps/Route201/scripts.pory"
 	walk_up
 # 87 "data/maps/Route201/scripts.pory"
+	walk_up
+# 87 "data/maps/Route201/scripts.pory"
 	walk_right
 # 87 "data/maps/Route201/scripts.pory"
 	walk_up
@@ -852,6 +868,8 @@ Route201_EventScript_BarryScene_Movement_11:
 
 # 88 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_12:
+# 88 "data/maps/Route201/scripts.pory"
+	walk_up
 # 88 "data/maps/Route201/scripts.pory"
 	walk_up
 # 88 "data/maps/Route201/scripts.pory"
