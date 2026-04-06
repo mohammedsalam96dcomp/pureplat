@@ -760,6 +760,7 @@
 #define FLAG_HIDE_ROUTE_201_ROWAN                                   0x2BC
 #define FLAG_HIDE_ROUTE_201_DAWN                                    0x2BD
 #define FLAG_HIDE_ROUTE_201_BRIEFCASE                               0x2CF
+#define FLAG_HIDE_ROUTE_201_BARRY                                   0x2D0
 
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 
@@ -772,7 +773,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
 
-#define FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE                  0x2D0
+
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3

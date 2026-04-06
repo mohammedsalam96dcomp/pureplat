@@ -533,9 +533,25 @@ script Route201_EventScript_ChooseStarter {
 				"My Pokémon needs rest, too.\p"
 				"See ya, {PLAYER}!")
 	} else {
-		msgbox("{SPEAKER NAME_BARRY}WTEST")
+		msgbox("{SPEAKER NAME_BARRY}Aha. . .\n"
+				"Ahaha. . . I won? I won!\p"
+				"But that battle, it could've gone\n"
+				"either way. It was that close!\p"
+				"I can tell you one thing: battling is\n"
+				"awesomely fun!\p"
+				"OK, let's go home.\p"
+				"I'm beat after that battle.\n"
+				"My Pokémon needs rest, too.\p"
+				"See ya, {PLAYER}!")
 	}
 		
+	special(HealPlayerParty)
+	setvar(VAR_TWINLEAF_INTRO_STATE, 7)
+
+	fadescreen(FADE_TO_BLACK)
+	setflag(FLAG_HIDE_ROUTE_201_BARRY)
+	removeobject(LOCALID_RIVAL)
+	warp(MAP_TWINLEAF_TOWN_PLAYERS_HOUSE_1F, 1, 5)
 
 	release
 }

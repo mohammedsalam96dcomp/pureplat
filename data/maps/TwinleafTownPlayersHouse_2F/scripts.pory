@@ -3,7 +3,9 @@
 //VAR_TWINLEAF_INTRO_STATE 3 - barry leave room
 //VAR_TWINLEAF_INTRO_STATE 4 - Leaving House
 //VAR_TWINLEAF_INTRO_STATE 5 - Talked to barry
-//VAR_TWINLEAF_INTRO_STATE 6 - 
+//VAR_TWINLEAF_INTRO_STATE 6 - Left twinleaf
+//VAR_TWINLEAF_INTRO_STATE 7 - Got Pokemon
+
 
 const LOCALID_RIVAL = 1
 

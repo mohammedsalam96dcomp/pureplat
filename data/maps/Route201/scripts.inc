@@ -618,7 +618,19 @@ Route201_EventScript_ChooseStarter_10:
 # 536 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_11
 Route201_EventScript_ChooseStarter_18:
-# 540 "data/maps/Route201/scripts.pory"
+# 548 "data/maps/Route201/scripts.pory"
+	special HealPlayerParty
+# 549 "data/maps/Route201/scripts.pory"
+	setvar VAR_TWINLEAF_INTRO_STATE, 7
+# 551 "data/maps/Route201/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 552 "data/maps/Route201/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_201_BARRY
+# 553 "data/maps/Route201/scripts.pory"
+	removeobject 1
+# 554 "data/maps/Route201/scripts.pory"
+	warp MAP_TWINLEAF_TOWN_PLAYERS_HOUSE_1F, 1, 5
+# 556 "data/maps/Route201/scripts.pory"
 	release
 	return
 
@@ -1291,8 +1303,17 @@ Route201_EventScript_ChooseStarter_Text_10:
 
 Route201_EventScript_ChooseStarter_Text_11:
 # 536 "data/maps/Route201/scripts.pory"
-	.string "{SPEAKER NAME_BARRY}WTEST$"
+	.string "{SPEAKER NAME_BARRY}Aha. . .\n"
+	.string "Ahaha. . . I won? I won!\p"
+	.string "But that battle, it could've gone\n"
+	.string "either way. It was that close!\p"
+	.string "I can tell you one thing: battling is\n"
+	.string "awesomely fun!\p"
+	.string "OK, let's go home.\p"
+	.string "I'm beat after that battle.\n"
+	.string "My Pokémon needs rest, too.\p"
+	.string "See ya, {PLAYER}!$"
 
 Route201_Text_BarryDefeated::
-# 543 "data/maps/Route201/scripts.pory"
+# 559 "data/maps/Route201/scripts.pory"
 	.string "What are you saying?!\nWe ended up losing?$"

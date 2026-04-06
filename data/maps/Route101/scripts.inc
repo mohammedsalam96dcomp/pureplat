@@ -467,7 +467,7 @@ Route101_EventScript_BirchsBag::
 # 234 "data/maps/Route101/scripts.pory"
 	special HealPlayerParty
 # 235 "data/maps/Route101/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE
+	setflag FLAG_HIDE_ROUTE_201_BARRY
 # 236 "data/maps/Route101/scripts.pory"
 	clearflag FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH
 # 237 "data/maps/Route101/scripts.pory"
