@@ -35,7 +35,7 @@ BattleFrontier_BattleTowerLobby_OnTransition:
 # 18 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_EventScript_ShowApprentice::
 # 19 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	clearflag FLAG_HIDE_APPRENTICE
+	clearflag FLAG_HIDE_ROUTE_201_DAWN
 # 20 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	apprentice_setgfx
 # 21 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
@@ -47,7 +47,7 @@ BattleFrontier_BattleTowerLobby_EventScript_EndShowOrHideApprentice::
 # 24 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 BattleFrontier_BattleTowerLobby_EventScript_HideApprentice::
 # 25 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
-	setflag FLAG_HIDE_APPRENTICE
+	setflag FLAG_HIDE_ROUTE_201_DAWN
 # 26 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndShowOrHideApprentice
 # 27 "data/maps/BattleFrontier_BattleTowerLobby/scripts.pory"

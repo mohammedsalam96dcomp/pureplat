@@ -1134,12 +1134,12 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BerryTreeLateStage
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfBirch = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_3,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ROWAN,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_3,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
     .compressed = FALSE,
@@ -3912,12 +3912,12 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azurill = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_4,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MOM,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
     .height = 32,
-    .paletteSlot = PALSLOT_NPC_4,
+    .paletteSlot = PALSLOT_NPC_SPECIAL,
     .shadowSize = SHADOW_SIZE_M,
     .inanimate = FALSE,
     .compressed = FALSE,
@@ -4092,7 +4092,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnionRoomAttendant
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RED_LEAF,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MOM,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4110,7 +4110,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Red = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Leaf = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_RED_LEAF,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MOM,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

@@ -1,0 +1,143 @@
+{
+  "id": "MAP_ROUTE201",
+  "name": "Route201",
+  "layout": "LAYOUT_ROUTE201",
+  "music": "MUS_ROUTE101",
+  "region_map_section": "MAPSEC_ROUTE_201",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_TWINLEAF_TOWN",
+      "offset": 2,
+      "direction": "down"
+    }
+  ],
+  "object_events": [
+    {
+      "graphics_id": "OBJ_EVENT_GFX_WALLY",
+      "x": 16,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route201_EventScript_Rival",
+      "flag": "FLAG_HIDE_ROUTE_201_BARRY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route201_EventScript_Rowan",
+      "flag": "FLAG_HIDE_ROUTE_201_ROWAN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_0",
+      "x": 9,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ROUTE_201_DAWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BIRCHS_BAG",
+      "x": 5,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route201_EventScript_ChooseStarter",
+      "flag": "FLAG_HIDE_ROUTE_201_BRIEFCASE"
+    }
+  ],
+  "warp_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "6",
+      "script": "Route201_EventScript_BarryScene1"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "6",
+      "script": "Route201_EventScript_BarryScene2"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "6",
+      "script": "Route201_EventScript_BarryScene3"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "6",
+      "script": "Route201_EventScript_BarryScene4"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "6",
+      "script": "Route201_EventScript_PickAPokemonDown"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "6",
+      "script": "Route201_EventScript_PickAPokemonDown"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "6",
+      "script": "Route201_EventScript_PickAPokemonRight"
+    }
+  ],
+  "bg_events": []
+}

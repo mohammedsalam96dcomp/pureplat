@@ -32,6 +32,8 @@ TwinleafTownBarrysHouse_2F_ON_FRAME::
 	waitse
 # 24 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	delay 48
+# 25 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	playbgm MUS_GSC_ROUTE38, 0
 # 26 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	setspeaker SP_NAME_BARRY
 # 27 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
@@ -48,13 +50,37 @@ TwinleafTownBarrysHouse_2F_ON_FRAME::
 	applymovement 1, TwinleafTownBarrysHouse_2F_ON_FRAME_Movement_3
 # 36 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	waitmovement 0
+# 37 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	playse SE_EXIT
 # 38 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	fadedefaultbgm
+# 40 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	setflag FLAG_HIDE_BARRY_ROOM_BARRY
-# 39 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
-	removeobject 1
 # 41 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	removeobject 1
+# 43 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	setvar VAR_TWINLEAF_INTRO_STATE, 6
-# 42 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+# 44 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	release
+	return
+
+
+TwinleafTownBarrysHouse_2f_EventScript_Wii::
+# 48 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	lock
+# 49 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	msgbox TwinleafTownBarrysHouse_2f_EventScript_Wii_Text_0
+# 51 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	release
+	return
+
+
+TwinleafTownBarrysHouse_2f_EventScript_PC::
+# 55 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	lock
+# 56 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	msgbox TwinleafTownBarrysHouse_2f_EventScript_PC_Text_0
+# 62 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	release
 	return
 
@@ -107,3 +133,17 @@ TwinleafTownBarrysHouse_2F_ON_FRAME_Text_1:
 	.string "Oh, hey, {PLAYER}!\p"
 	.string "I'll be waiting on the road!\n"
 	.string "It's a ¥10 million fine if you're late!$"
+
+TwinleafTownBarrysHouse_2f_EventScript_Wii_Text_0:
+# 49 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	.string "It's a wii!\n"
+	.string "It's controlled by a Wii Remote!$"
+
+TwinleafTownBarrysHouse_2f_EventScript_PC_Text_0:
+# 56 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	.string "{PLAYER} checked the PC screen.\p"
+	.string "Adventure Rule No. 1\n"
+	.string "The START Button opens the menu!\p"
+	.string "Adventure Rule No. 2\n"
+	.string "Record your progress with SAVE.\p"
+	.string "There is nothing else on here. . .$"

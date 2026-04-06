@@ -2,7 +2,7 @@
   "map_sections": [
     {
       "id": "MAPSEC_LITTLEROOT_TOWN",
-      "name": "LITTLEROOT TOWN",
+      "name": "Twinleaf Town",
       "x": 4,
       "y": 11,
       "width": 1,
@@ -130,7 +130,7 @@
     },
     {
       "id": "MAPSEC_ROUTE_101",
-      "name": "ROUTE 101",
+      "name": "ROUTE 201",
       "x": 4,
       "y": 10,
       "width": 1,
@@ -490,7 +490,7 @@
     },
     {
       "id": "MAPSEC_ABANDONED_SHIP",
-      "name": "Twinleaf Town",
+      "name": "Route 201",
       "x": 6,
       "y": 14,
       "width": 1,
@@ -1626,6 +1626,14 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_TWINLEAF_TOWN",
+      "name": "Twinleaf Town"
+    },
+    {
+      "id": "MAPSEC_ROUTE_201",
+      "name": "Route 201"
     }
   ]
 }

@@ -757,11 +757,13 @@
 #define FLAG_HIDE_PLAYER_HOUSE_BARRY                                0x493 // Unused Flag
 #define FLAG_HIDE_TWINLEAF_BARRY                                    0x494 // Unused Flag
 #define FLAG_HIDE_BARRY_ROOM_BARRY                                  0x495 // Unused Flag
+#define FLAG_HIDE_ROUTE_201_ROWAN                                   0x2BC
+#define FLAG_HIDE_ROUTE_201_DAWN                                    0x2BD
+#define FLAG_HIDE_ROUTE_201_BRIEFCASE                               0x2CF
+#define FLAG_HIDE_ROUTE_201_BARRY                                   0x2D0
 
-
-#define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
-#define FLAG_HIDE_APPRENTICE                                        0x2BD
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
+
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0x2C7
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2               0x2C8
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_3               0x2C9
@@ -770,8 +772,8 @@
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_6               0x2CC
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
-#define FLAG_HIDE_ROUTE_104_RIVAL                                   0x2CF
-#define FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE                  0x2D0
+
+
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0x2D1
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3
@@ -1390,7 +1392,7 @@
 #define FLAG_IS_CHAMPION                            (SYSTEM_FLAGS + 0x1F) // Seems to be related to linking.
 #define FLAG_NURSE_UNION_ROOM_REMINDER              (SYSTEM_FLAGS + 0x20)
 
-#define FLAG_UNUSED_0x881                           (SYSTEM_FLAGS + 0x21) // Unused Flag
+#define FLAG_NO_WHITEOUT                            (SYSTEM_FLAGS + 0x21) // Unused Flag
 #define FLAG_UNUSED_0x882                           (SYSTEM_FLAGS + 0x22) // Unused Flag
 #define FLAG_UNUSED_0x883                           (SYSTEM_FLAGS + 0x23) // Unused Flag
 #define FLAG_UNUSED_0x884                           (SYSTEM_FLAGS + 0x24) // Unused Flag

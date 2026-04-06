@@ -22,7 +22,7 @@ script TwinleafTownBarrysHouse_2F_ON_FRAME {
     waitmovement(0)
     waitse
     delay(48)
-
+	playbgm(MUS_GSC_ROUTE38,0)
 	setspeaker(SP_NAME_BARRY)
     msgbox("Oh, hey, {PLAYER}!\p"
 		"I'll be waiting on the road!\n"
@@ -34,10 +34,30 @@ script TwinleafTownBarrysHouse_2F_ON_FRAME {
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, face_up))
 	applymovement(LOCALID_RIVAL, moves(walk_fast_left*2, walk_slow_stairs_left))
 	waitmovement(0)
+	playse(SE_EXIT)
+	fadedefaultbgm()
 
     setflag(FLAG_HIDE_BARRY_ROOM_BARRY)
     removeobject(LOCALID_RIVAL)
 
 	setvar(VAR_TWINLEAF_INTRO_STATE, 6)
+	release
+}
+
+script TwinleafTownBarrysHouse_2f_EventScript_Wii {
+	lock
+	msgbox("It's a wii!\n"
+			"It's controlled by a Wii Remote!")
+	release
+}
+
+script TwinleafTownBarrysHouse_2f_EventScript_PC {
+	lock
+	msgbox("{PLAYER} checked the PC screen.\p"
+			"Adventure Rule No. 1\n"
+			"The START Button opens the menu!\p"
+			"Adventure Rule No. 2\n"
+			"Record your progress with SAVE.\p"
+			"There is nothing else on here. . .")
 	release
 }

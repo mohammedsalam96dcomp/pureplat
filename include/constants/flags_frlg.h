@@ -1427,7 +1427,7 @@
 #define FLAG_WORLD_MAP_SEVEN_ISLAND_SEVAULT_CANYON_TANOBY_KEY       (SYS_FLAGS + 0xC1)
 #define FLAG_WORLD_MAP_BIRTH_ISLAND_EXTERIOR                        (SYS_FLAGS + 0xC2)
 
-#define FLAG_0x8C3                                                  (SYS_FLAGS + 0xC3)
+#define FLAG_NO_WHITEOUT                                            (SYS_FLAGS + 0xC3)
 #define FLAG_0x8C4                                                  (SYS_FLAGS + 0xC4)
 #define FLAG_0x8C5                                                  (SYS_FLAGS + 0xC5)
 #define FLAG_0x8C6                                                  (SYS_FLAGS + 0xC6)
@@ -2009,8 +2009,8 @@
 
 
 // Event Flags
-#define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0
-#define FLAG_HIDE_APPRENTICE                                        0
+#define FLAG_HIDE_ROUTE_201_ROWAN                      0
+#define FLAG_HIDE_ROUTE_201_DAWN                                        0
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_1               0
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_2               0
@@ -2020,8 +2020,8 @@
 #define FLAG_HIDE_BATTLE_TOWER_MULTI_BATTLE_PARTNER_6               0
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0
 #define FLAG_HIDE_MEW                                               0
-#define FLAG_HIDE_ROUTE_104_RIVAL                                   0
-#define FLAG_HIDE_ROUTE_101_BIRCH_ZIGZAGOON_BATTLE                  0
+#define FLAG_HIDE_ROUTE_201_BRIEFCASE                                   0
+#define FLAG_HIDE_ROUTE_201_BARRY                  0
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0
