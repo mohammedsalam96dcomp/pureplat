@@ -610,7 +610,15 @@ Route201_EventScript_ChooseStarter_8:
 # 522 "data/maps/Route201/scripts.pory"
 	case 2, Route201_EventScript_ChooseStarter_14
 Route201_EventScript_ChooseStarter_10:
-# 526 "data/maps/Route201/scripts.pory"
+# 527 "data/maps/Route201/scripts.pory"
+	specialvar VAR_RESULT, GetBattleOutcome
+# 529 "data/maps/Route201/scripts.pory"
+	compare VAR_RESULT, B_OUTCOME_WON
+	goto_if_eq Route201_EventScript_ChooseStarter_19
+# 536 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_ChooseStarter_Text_11
+Route201_EventScript_ChooseStarter_18:
+# 540 "data/maps/Route201/scripts.pory"
 	release
 	return
 
@@ -626,23 +634,28 @@ Route201_EventScript_ChooseStarter_3:
 
 Route201_EventScript_ChooseStarter_12:
 # 519 "data/maps/Route201/scripts.pory"
-	trainerbattle_no_intro TRAINER_BARRY_ROUTE_201_TURTWIG, Route201_Text_BarryDefeated
+	trainerbattle_no_intro_no_whiteout TRAINER_BARRY_ROUTE_201_TURTWIG, Route201_Text_BarryDefeated
 	goto Route201_EventScript_ChooseStarter_10
 
 Route201_EventScript_ChooseStarter_13:
 # 521 "data/maps/Route201/scripts.pory"
-	trainerbattle_no_intro TRAINER_BARRY_ROUTE_201_CHIMCHAR, Route201_Text_BarryDefeated
+	trainerbattle_no_intro_no_whiteout TRAINER_BARRY_ROUTE_201_CHIMCHAR, Route201_Text_BarryDefeated
 	goto Route201_EventScript_ChooseStarter_10
 
 Route201_EventScript_ChooseStarter_14:
 # 523 "data/maps/Route201/scripts.pory"
-	trainerbattle_no_intro TRAINER_BARRY_ROUTE_201_PIPLUP, Route201_Text_BarryDefeated
+	trainerbattle_no_intro_no_whiteout TRAINER_BARRY_ROUTE_201_PIPLUP, Route201_Text_BarryDefeated
 	goto Route201_EventScript_ChooseStarter_10
 
 Route201_EventScript_ChooseStarter_15:
 # 504 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_8
 	goto Route201_EventScript_ChooseStarter_8
+
+Route201_EventScript_ChooseStarter_19:
+# 530 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_ChooseStarter_Text_10
+	goto Route201_EventScript_ChooseStarter_18
 
 
 # 46 "data/maps/Route201/scripts.pory"
@@ -1268,6 +1281,18 @@ Route201_EventScript_ChooseStarter_Text_9:
 	.string "{PLAYER}!\p"
 	.string "I challenge you to a battle!$"
 
+Route201_EventScript_ChooseStarter_Text_10:
+# 530 "data/maps/Route201/scripts.pory"
+	.string "{SPEAKER NAME_BARRY}Whew!\n"
+	.string "Let's go home.\p"
+	.string "I'm beat after that battle.\n"
+	.string "My Pokémon needs rest, too.\p"
+	.string "See ya, {PLAYER}!$"
+
+Route201_EventScript_ChooseStarter_Text_11:
+# 536 "data/maps/Route201/scripts.pory"
+	.string "{SPEAKER NAME_BARRY}WTEST$"
+
 Route201_Text_BarryDefeated::
-# 529 "data/maps/Route201/scripts.pory"
+# 543 "data/maps/Route201/scripts.pory"
 	.string "What are you saying?!\nWe ended up losing?$"

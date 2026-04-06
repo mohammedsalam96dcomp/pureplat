@@ -516,12 +516,26 @@ script Route201_EventScript_ChooseStarter {
 
 	switch(var(VAR_STARTER_MON)){
 		case 0:
-			trainerbattle_no_intro(TRAINER_BARRY_ROUTE_201_TURTWIG, Route201_Text_BarryDefeated)
+			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_TURTWIG, Route201_Text_BarryDefeated)
 		case 1:
-			trainerbattle_no_intro(TRAINER_BARRY_ROUTE_201_CHIMCHAR, Route201_Text_BarryDefeated)
+			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_CHIMCHAR, Route201_Text_BarryDefeated)
 		case 2:
-			trainerbattle_no_intro(TRAINER_BARRY_ROUTE_201_PIPLUP, Route201_Text_BarryDefeated)
+			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_PIPLUP, Route201_Text_BarryDefeated)
 	}
+
+	// setflag(B_FLAG_NO_WHITEOUT)
+	specialvar(VAR_RESULT, GetBattleOutcome)
+
+	if (var(VAR_RESULT) == B_OUTCOME_WON) {
+		msgbox("{SPEAKER NAME_BARRY}Whew!\n" 
+				"Let's go home.\p"
+				"I'm beat after that battle.\n"
+				"My Pokémon needs rest, too.\p"
+				"See ya, {PLAYER}!")
+	} else {
+		msgbox("{SPEAKER NAME_BARRY}WTEST")
+	}
+		
 
 	release
 }
