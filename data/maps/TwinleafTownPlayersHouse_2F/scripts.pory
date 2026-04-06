@@ -76,12 +76,12 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   applymovement(LOCALID_RIVAL, moves(walk_fast_left))
   waitmovement(LOCALID_RIVAL)
   waitse
-  playbgm(MUS_GSC_ROUTE38,0)
   applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
   playse(SE_PIN)
   waitmovement(0)
   waitse
   delay(48)
+  playbgm(MUS_GSC_ROUTE38,0)
   setspeaker(SP_NAME_BARRY)
   msgbox(format("There you are!"))
   closemessage

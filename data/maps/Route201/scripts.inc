@@ -184,142 +184,148 @@ Route201_EventScript_BarryScene_7:
 # 152 "data/maps/Route201/scripts.pory"
 	addobject 2
 # 154 "data/maps/Route201/scripts.pory"
+	playbgm MUS_BIRCH_LAB, 0
+# 156 "data/maps/Route201/scripts.pory"
 	applymovement 2, Route201_EventScript_BarryScene_Movement_19
-# 155 "data/maps/Route201/scripts.pory"
-	waitmovement 2
 # 157 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_6
-# 168 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_20
-# 169 "data/maps/Route201/scripts.pory"
-	waitmovement 1
-# 171 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_7
-# 175 "data/maps/Route201/scripts.pory"
-	closemessage
-# 177 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_21
-# 178 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_18
-# 179 "data/maps/Route201/scripts.pory"
 	waitmovement 2
-# 180 "data/maps/Route201/scripts.pory"
+# 159 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_6
+# 170 "data/maps/Route201/scripts.pory"
+	applymovement 1, Route201_EventScript_BarryScene_Movement_20
+# 171 "data/maps/Route201/scripts.pory"
 	waitmovement 1
-# 182 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_8
-# 194 "data/maps/Route201/scripts.pory"
+# 173 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_7
+# 177 "data/maps/Route201/scripts.pory"
 	closemessage
+# 179 "data/maps/Route201/scripts.pory"
+	applymovement 2, Route201_EventScript_BarryScene_Movement_21
+# 180 "data/maps/Route201/scripts.pory"
+	applymovement 1, Route201_EventScript_BarryScene_Movement_18
+# 181 "data/maps/Route201/scripts.pory"
+	waitmovement 2
+# 182 "data/maps/Route201/scripts.pory"
+	waitmovement 1
+# 184 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_8
 # 196 "data/maps/Route201/scripts.pory"
-	delay 30
-# 197 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_22
+	closemessage
 # 198 "data/maps/Route201/scripts.pory"
+	delay 30
+# 199 "data/maps/Route201/scripts.pory"
+	applymovement 2, Route201_EventScript_BarryScene_Movement_22
+# 200 "data/maps/Route201/scripts.pory"
 	waitmovement 2
 Route201_EventScript_BarryScene_14:
-# 201 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_9, MSGBOX_YESNO
 # 203 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_9, MSGBOX_YESNO
+# 205 "data/maps/Route201/scripts.pory"
 	closemessage
-# 204 "data/maps/Route201/scripts.pory"
+# 206 "data/maps/Route201/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_ne Route201_EventScript_BarryScene_19
-# 222 "data/maps/Route201/scripts.pory"
+# 224 "data/maps/Route201/scripts.pory"
 	applymovement 1, Route201_EventScript_BarryScene_Movement_15
-# 223 "data/maps/Route201/scripts.pory"
-	waitmovement 1
 # 225 "data/maps/Route201/scripts.pory"
+	waitmovement 1
+# 227 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_BarryScene_Text_12
 Route201_EventScript_BarryScene_17:
-# 232 "data/maps/Route201/scripts.pory"
+# 234 "data/maps/Route201/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 233 "data/maps/Route201/scripts.pory"
+# 235 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_BarryScene_Text_13
-# 238 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_0
-# 239 "data/maps/Route201/scripts.pory"
-	waitmovement 1
 # 240 "data/maps/Route201/scripts.pory"
-	setspeaker SP_NAME_BARRY
+	applymovement 1, Route201_EventScript_BarryScene_Movement_0
 # 241 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_14, MSGBOX_YESNO
+	waitmovement 1
 # 242 "data/maps/Route201/scripts.pory"
+	setspeaker SP_NAME_BARRY
+# 243 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_14, MSGBOX_YESNO
+# 244 "data/maps/Route201/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_ne Route201_EventScript_BarryScene_22
-# 253 "data/maps/Route201/scripts.pory"
+# 255 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_BarryScene_Text_16
-# 258 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_18
-# 259 "data/maps/Route201/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_18
 # 260 "data/maps/Route201/scripts.pory"
-	waitmovement 1
+	applymovement 1, Route201_EventScript_BarryScene_Movement_18
+# 261 "data/maps/Route201/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_18
 # 262 "data/maps/Route201/scripts.pory"
+	waitmovement 1
+# 264 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_BarryScene_Text_17
-# 282 "data/maps/Route201/scripts.pory"
-	closemessage
 # 284 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_18
-# 285 "data/maps/Route201/scripts.pory"
-	delay 30
+	closemessage
 # 286 "data/maps/Route201/scripts.pory"
-	waitmovement 2
+	applymovement 2, Route201_EventScript_BarryScene_Movement_18
 # 287 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_23
+	delay 30
 # 288 "data/maps/Route201/scripts.pory"
 	waitmovement 2
 # 289 "data/maps/Route201/scripts.pory"
-	delay 30
+	applymovement 2, Route201_EventScript_BarryScene_Movement_23
+# 290 "data/maps/Route201/scripts.pory"
+	waitmovement 2
 # 291 "data/maps/Route201/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_201_DAWN
-# 292 "data/maps/Route201/scripts.pory"
-	addobject 3
+	delay 30
+# 293 "data/maps/Route201/scripts.pory"
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
 # 294 "data/maps/Route201/scripts.pory"
-	applymovement 3, Route201_EventScript_BarryScene_Movement_24
+	clearflag FLAG_HIDE_ROUTE_201_DAWN
 # 295 "data/maps/Route201/scripts.pory"
-	waitmovement 3
+	addobject 3
 # 297 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_18
-# 300 "data/maps/Route201/scripts.pory"
-	closemessage
-# 302 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_15
-# 303 "data/maps/Route201/scripts.pory"
-	waitmovement 2
-# 305 "data/maps/Route201/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_201_BRIEFCASE
-# 306 "data/maps/Route201/scripts.pory"
-	addobject 4
-# 307 "data/maps/Route201/scripts.pory"
-	setobjectxy 4, 16, 14
-# 309 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_19
-# 314 "data/maps/Route201/scripts.pory"
-	applymovement 3, Route201_EventScript_BarryScene_Movement_25
-# 315 "data/maps/Route201/scripts.pory"
+	applymovement 3, Route201_EventScript_BarryScene_Movement_24
+# 298 "data/maps/Route201/scripts.pory"
 	waitmovement 3
-# 317 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_20
-# 328 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_25
-# 329 "data/maps/Route201/scripts.pory"
-	waitmovement 2
-# 330 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_21
-# 332 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_15
-# 333 "data/maps/Route201/scripts.pory"
-	waitmovement 1
-# 334 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_22
-# 338 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_0
-# 339 "data/maps/Route201/scripts.pory"
-	waitmovement 1
-# 340 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_23
-# 344 "data/maps/Route201/scripts.pory"
+# 300 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_18
+# 303 "data/maps/Route201/scripts.pory"
 	closemessage
-# 346 "data/maps/Route201/scripts.pory"
+# 305 "data/maps/Route201/scripts.pory"
+	applymovement 2, Route201_EventScript_BarryScene_Movement_15
+# 306 "data/maps/Route201/scripts.pory"
+	waitmovement 2
+# 308 "data/maps/Route201/scripts.pory"
+	clearflag FLAG_HIDE_ROUTE_201_BRIEFCASE
+# 309 "data/maps/Route201/scripts.pory"
+	addobject 4
+# 310 "data/maps/Route201/scripts.pory"
+	setobjectxy 4, 16, 14
+# 312 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_19
+# 317 "data/maps/Route201/scripts.pory"
+	applymovement 3, Route201_EventScript_BarryScene_Movement_25
+# 318 "data/maps/Route201/scripts.pory"
+	waitmovement 3
+# 320 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_20
+# 331 "data/maps/Route201/scripts.pory"
+	applymovement 2, Route201_EventScript_BarryScene_Movement_25
+# 332 "data/maps/Route201/scripts.pory"
+	waitmovement 2
+# 333 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_21
+# 335 "data/maps/Route201/scripts.pory"
+	applymovement 1, Route201_EventScript_BarryScene_Movement_15
+# 336 "data/maps/Route201/scripts.pory"
+	waitmovement 1
+# 337 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_22
+# 341 "data/maps/Route201/scripts.pory"
+	applymovement 1, Route201_EventScript_BarryScene_Movement_0
+# 342 "data/maps/Route201/scripts.pory"
+	waitmovement 1
+# 343 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_23
+# 348 "data/maps/Route201/scripts.pory"
+	closemessage
+# 349 "data/maps/Route201/scripts.pory"
+	fadedefaultbgm
+# 350 "data/maps/Route201/scripts.pory"
 	release
 	return
 
@@ -372,300 +378,300 @@ Route201_EventScript_BarryScene_12:
 	goto Route201_EventScript_BarryScene_7
 
 Route201_EventScript_BarryScene_19:
-# 205 "data/maps/Route201/scripts.pory"
+# 207 "data/maps/Route201/scripts.pory"
 	applymovement 1, Route201_EventScript_BarryScene_Movement_0
-# 206 "data/maps/Route201/scripts.pory"
-	waitmovement 1
 # 208 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_10
-# 211 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_18
-# 212 "data/maps/Route201/scripts.pory"
 	waitmovement 1
+# 210 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_10
+# 213 "data/maps/Route201/scripts.pory"
+	applymovement 1, Route201_EventScript_BarryScene_Movement_18
 # 214 "data/maps/Route201/scripts.pory"
+	waitmovement 1
+# 216 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_BarryScene_Text_11
 	goto Route201_EventScript_BarryScene_14
 
 Route201_EventScript_BarryScene_22:
-# 243 "data/maps/Route201/scripts.pory"
+# 245 "data/maps/Route201/scripts.pory"
 	setspeaker SP_NAME_BARRY
-# 244 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_15
 # 246 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_15
+# 248 "data/maps/Route201/scripts.pory"
 	applymovement 1, Route201_EventScript_BarryScene_Movement_18
-# 247 "data/maps/Route201/scripts.pory"
+# 249 "data/maps/Route201/scripts.pory"
 	waitmovement 1
 	goto Route201_EventScript_BarryScene_17
 
 
 Route201_EventScript_PickAPokemonRight::
-# 350 "data/maps/Route201/scripts.pory"
+# 354 "data/maps/Route201/scripts.pory"
 	lock
-# 352 "data/maps/Route201/scripts.pory"
+# 356 "data/maps/Route201/scripts.pory"
 	setvar VAR_TEMP_2, 1
-# 353 "data/maps/Route201/scripts.pory"
+# 357 "data/maps/Route201/scripts.pory"
 	goto Route201_EventScript_PickAPokemon
-# 355 "data/maps/Route201/scripts.pory"
+# 359 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 Route201_EventScript_PickAPokemonDown::
-# 359 "data/maps/Route201/scripts.pory"
+# 363 "data/maps/Route201/scripts.pory"
 	lock
-# 361 "data/maps/Route201/scripts.pory"
+# 365 "data/maps/Route201/scripts.pory"
 	setvar VAR_TEMP_2, 2
-# 362 "data/maps/Route201/scripts.pory"
+# 366 "data/maps/Route201/scripts.pory"
 	goto Route201_EventScript_PickAPokemon
-# 364 "data/maps/Route201/scripts.pory"
+# 368 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 Route201_EventScript_PickAPokemon::
-# 368 "data/maps/Route201/scripts.pory"
-	lock
-# 370 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_0
-# 371 "data/maps/Route201/scripts.pory"
-	waitmovement 1
 # 372 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_PickAPokemon_Text_0
+	lock
 # 374 "data/maps/Route201/scripts.pory"
-	closemessage
+	applymovement 1, Route201_EventScript_BarryScene_Movement_0
+# 375 "data/maps/Route201/scripts.pory"
+	waitmovement 1
 # 376 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_PickAPokemon_Text_0
+# 378 "data/maps/Route201/scripts.pory"
+	closemessage
+# 380 "data/maps/Route201/scripts.pory"
 	compare VAR_TEMP_2, 1
 	goto_if_eq Route201_EventScript_PickAPokemon_2
-# 379 "data/maps/Route201/scripts.pory"
+# 383 "data/maps/Route201/scripts.pory"
 	compare VAR_TEMP_2, 2
 	goto_if_eq Route201_EventScript_PickAPokemon_3
 Route201_EventScript_PickAPokemon_1:
-# 382 "data/maps/Route201/scripts.pory"
+# 386 "data/maps/Route201/scripts.pory"
 	waitmovement 0
-# 384 "data/maps/Route201/scripts.pory"
+# 388 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 Route201_EventScript_PickAPokemon_2:
-# 377 "data/maps/Route201/scripts.pory"
+# 381 "data/maps/Route201/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_13
 	goto Route201_EventScript_PickAPokemon_1
 
 Route201_EventScript_PickAPokemon_3:
-# 380 "data/maps/Route201/scripts.pory"
+# 384 "data/maps/Route201/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_PickAPokemon_Movement_0
 	goto Route201_EventScript_PickAPokemon_1
 
 
 Route201_EventScript_Rowan::
-# 388 "data/maps/Route201/scripts.pory"
-	lock
-# 389 "data/maps/Route201/scripts.pory"
-	faceplayer
-# 390 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_BarryScene_Text_21
 # 392 "data/maps/Route201/scripts.pory"
-	closemessage
+	lock
 # 393 "data/maps/Route201/scripts.pory"
+	faceplayer
+# 394 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_BarryScene_Text_21
+# 396 "data/maps/Route201/scripts.pory"
+	closemessage
+# 397 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 Route201_EventScript_Rival::
-# 397 "data/maps/Route201/scripts.pory"
+# 401 "data/maps/Route201/scripts.pory"
 	lock
-# 399 "data/maps/Route201/scripts.pory"
+# 403 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 400 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_Rival_Text_0
 # 404 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_Rival_Text_0
+# 408 "data/maps/Route201/scripts.pory"
 	closemessage
-# 406 "data/maps/Route201/scripts.pory"
+# 410 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 
 Route201_EventScript_ChooseStarter::
-# 411 "data/maps/Route201/scripts.pory"
-	lock
-# 413 "data/maps/Route201/scripts.pory"
-	setflag FLAG_SYS_POKEMON_GET
-# 414 "data/maps/Route201/scripts.pory"
-	special ChooseStarter
 # 415 "data/maps/Route201/scripts.pory"
-	waitstate
+	lock
 # 417 "data/maps/Route201/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_201_BRIEFCASE
+	setflag FLAG_SYS_POKEMON_GET
 # 418 "data/maps/Route201/scripts.pory"
-	removeobject 4
+	special ChooseStarter
+# 419 "data/maps/Route201/scripts.pory"
+	waitstate
 # 421 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_20
+	setflag FLAG_HIDE_ROUTE_201_BRIEFCASE
 # 422 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_18
-# 423 "data/maps/Route201/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_ChooseStarter_Movement_0
-# 424 "data/maps/Route201/scripts.pory"
-	waitmovement 0
+	removeobject 4
 # 425 "data/maps/Route201/scripts.pory"
-	delay 8
+	applymovement 2, Route201_EventScript_BarryScene_Movement_20
 # 426 "data/maps/Route201/scripts.pory"
-	waitmovement 0
+	applymovement 1, Route201_EventScript_BarryScene_Movement_18
+# 427 "data/maps/Route201/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_ChooseStarter_Movement_0
 # 428 "data/maps/Route201/scripts.pory"
+	waitmovement 0
+# 429 "data/maps/Route201/scripts.pory"
+	delay 8
+# 430 "data/maps/Route201/scripts.pory"
+	waitmovement 0
+# 432 "data/maps/Route201/scripts.pory"
 	compare VAR_STARTER_MON, 0
 	goto_if_eq Route201_EventScript_ChooseStarter_2
-# 431 "data/maps/Route201/scripts.pory"
+# 435 "data/maps/Route201/scripts.pory"
 	compare VAR_STARTER_MON, 1
 	goto_if_eq Route201_EventScript_ChooseStarter_3
-# 435 "data/maps/Route201/scripts.pory"
+# 439 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_2
 Route201_EventScript_ChooseStarter_1:
-# 438 "data/maps/Route201/scripts.pory"
+# 442 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_3
-# 450 "data/maps/Route201/scripts.pory"
-	closemessage
-# 452 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_PickAPokemon_Movement_0
-# 453 "data/maps/Route201/scripts.pory"
-	waitmovement 1
 # 454 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_25
-# 455 "data/maps/Route201/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_25
+	closemessage
 # 456 "data/maps/Route201/scripts.pory"
-	waitmovement 1
+	applymovement 1, Route201_EventScript_PickAPokemon_Movement_0
 # 457 "data/maps/Route201/scripts.pory"
-	delay 8
+	waitmovement 1
 # 458 "data/maps/Route201/scripts.pory"
-	applymovement 2, Route201_EventScript_BarryScene_Movement_19
+	applymovement 1, Route201_EventScript_BarryScene_Movement_25
 # 459 "data/maps/Route201/scripts.pory"
-	waitmovement 2
-# 460 "data/maps/Route201/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_201_ROWAN
-# 461 "data/maps/Route201/scripts.pory"
-	removeobject 2
-# 463 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_ChooseStarter_Text_4
-# 465 "data/maps/Route201/scripts.pory"
-	closemessage
-# 467 "data/maps/Route201/scripts.pory"
-	applymovement 3, Route201_EventScript_ChooseStarter_Movement_1
-# 468 "data/maps/Route201/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_14
-# 469 "data/maps/Route201/scripts.pory"
-	waitmovement 3
-# 471 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_ChooseStarter_Text_5
-# 472 "data/maps/Route201/scripts.pory"
-	closemessage
-# 474 "data/maps/Route201/scripts.pory"
-	applymovement 3, Route201_EventScript_ChooseStarter_Movement_1
-# 475 "data/maps/Route201/scripts.pory"
-	waitmovement 3
-# 476 "data/maps/Route201/scripts.pory"
-	applymovement 3, Route201_EventScript_BarryScene_Movement_24
-# 477 "data/maps/Route201/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_25
+# 460 "data/maps/Route201/scripts.pory"
+	waitmovement 1
+# 461 "data/maps/Route201/scripts.pory"
+	delay 8
+# 462 "data/maps/Route201/scripts.pory"
+	applymovement 2, Route201_EventScript_BarryScene_Movement_19
+# 463 "data/maps/Route201/scripts.pory"
+	waitmovement 2
+# 464 "data/maps/Route201/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_201_ROWAN
+# 465 "data/maps/Route201/scripts.pory"
+	removeobject 2
+# 467 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_ChooseStarter_Text_4
+# 469 "data/maps/Route201/scripts.pory"
+	closemessage
+# 471 "data/maps/Route201/scripts.pory"
+	applymovement 3, Route201_EventScript_ChooseStarter_Movement_1
+# 472 "data/maps/Route201/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_14
+# 473 "data/maps/Route201/scripts.pory"
+	waitmovement 3
+# 475 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_ChooseStarter_Text_5
+# 476 "data/maps/Route201/scripts.pory"
+	closemessage
 # 478 "data/maps/Route201/scripts.pory"
+	applymovement 3, Route201_EventScript_ChooseStarter_Movement_1
+# 479 "data/maps/Route201/scripts.pory"
 	waitmovement 3
 # 480 "data/maps/Route201/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_201_DAWN
+	applymovement 3, Route201_EventScript_BarryScene_Movement_24
 # 481 "data/maps/Route201/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_BarryScene_Movement_25
+# 482 "data/maps/Route201/scripts.pory"
+	waitmovement 3
+# 484 "data/maps/Route201/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_201_DAWN
+# 485 "data/maps/Route201/scripts.pory"
 	removeobject 3
-# 483 "data/maps/Route201/scripts.pory"
+# 487 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_6
-# 486 "data/maps/Route201/scripts.pory"
-	closemessage
-# 488 "data/maps/Route201/scripts.pory"
-	delay 60
-# 489 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_BarryScene_Movement_20
 # 490 "data/maps/Route201/scripts.pory"
-	waitmovement 1
-# 491 "data/maps/Route201/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_ChooseStarter_Movement_0
+	closemessage
 # 492 "data/maps/Route201/scripts.pory"
-	waitmovement 0
+	delay 60
 # 493 "data/maps/Route201/scripts.pory"
-	delay 40
+	applymovement 1, Route201_EventScript_BarryScene_Movement_20
 # 494 "data/maps/Route201/scripts.pory"
-	waitmovement 0
+	waitmovement 1
 # 495 "data/maps/Route201/scripts.pory"
-	applymovement 1, Route201_EventScript_ChooseStarter_Movement_2
+	applymovement OBJ_EVENT_ID_PLAYER, Route201_EventScript_ChooseStarter_Movement_0
 # 496 "data/maps/Route201/scripts.pory"
+	waitmovement 0
+# 497 "data/maps/Route201/scripts.pory"
+	delay 40
+# 498 "data/maps/Route201/scripts.pory"
+	waitmovement 0
+# 499 "data/maps/Route201/scripts.pory"
+	applymovement 1, Route201_EventScript_ChooseStarter_Movement_2
+# 500 "data/maps/Route201/scripts.pory"
 	waitmovement 1
 Route201_EventScript_ChooseStarter_8:
-# 499 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_ChooseStarter_Text_7, MSGBOX_YESNO
 # 503 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_ChooseStarter_Text_7, MSGBOX_YESNO
+# 507 "data/maps/Route201/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_ne Route201_EventScript_ChooseStarter_15
-# 511 "data/maps/Route201/scripts.pory"
+# 515 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_9
-# 517 "data/maps/Route201/scripts.pory"
+# 521 "data/maps/Route201/scripts.pory"
 	switch VAR_STARTER_MON
-# 518 "data/maps/Route201/scripts.pory"
-	case 0, Route201_EventScript_ChooseStarter_12
-# 520 "data/maps/Route201/scripts.pory"
-	case 1, Route201_EventScript_ChooseStarter_13
 # 522 "data/maps/Route201/scripts.pory"
+	case 0, Route201_EventScript_ChooseStarter_12
+# 524 "data/maps/Route201/scripts.pory"
+	case 1, Route201_EventScript_ChooseStarter_13
+# 526 "data/maps/Route201/scripts.pory"
 	case 2, Route201_EventScript_ChooseStarter_14
 Route201_EventScript_ChooseStarter_10:
-# 527 "data/maps/Route201/scripts.pory"
+# 531 "data/maps/Route201/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 529 "data/maps/Route201/scripts.pory"
+# 533 "data/maps/Route201/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route201_EventScript_ChooseStarter_19
-# 536 "data/maps/Route201/scripts.pory"
+# 540 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_11
 Route201_EventScript_ChooseStarter_18:
-# 548 "data/maps/Route201/scripts.pory"
-	special HealPlayerParty
-# 549 "data/maps/Route201/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 7
-# 551 "data/maps/Route201/scripts.pory"
-	fadescreen FADE_TO_BLACK
 # 552 "data/maps/Route201/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_201_BARRY
+	special HealPlayerParty
 # 553 "data/maps/Route201/scripts.pory"
-	removeobject 1
-# 554 "data/maps/Route201/scripts.pory"
-	warp MAP_TWINLEAF_TOWN_PLAYERS_HOUSE_1F, 1, 5
+	setvar VAR_TWINLEAF_INTRO_STATE, 7
+# 555 "data/maps/Route201/scripts.pory"
+	fadescreen FADE_TO_BLACK
 # 556 "data/maps/Route201/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_201_BARRY
+# 557 "data/maps/Route201/scripts.pory"
+	removeobject 1
+# 558 "data/maps/Route201/scripts.pory"
+	warp MAP_TWINLEAF_TOWN_PLAYERS_HOUSE_1F, 1, 5
+# 560 "data/maps/Route201/scripts.pory"
 	release
 	return
 
 Route201_EventScript_ChooseStarter_2:
-# 429 "data/maps/Route201/scripts.pory"
+# 433 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_0
 	goto Route201_EventScript_ChooseStarter_1
 
 Route201_EventScript_ChooseStarter_3:
-# 432 "data/maps/Route201/scripts.pory"
+# 436 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_1
 	goto Route201_EventScript_ChooseStarter_1
 
 Route201_EventScript_ChooseStarter_12:
-# 519 "data/maps/Route201/scripts.pory"
+# 523 "data/maps/Route201/scripts.pory"
 	trainerbattle_no_intro_no_whiteout TRAINER_BARRY_ROUTE_201_TURTWIG, Route201_Text_BarryDefeated
 	goto Route201_EventScript_ChooseStarter_10
 
 Route201_EventScript_ChooseStarter_13:
-# 521 "data/maps/Route201/scripts.pory"
+# 525 "data/maps/Route201/scripts.pory"
 	trainerbattle_no_intro_no_whiteout TRAINER_BARRY_ROUTE_201_CHIMCHAR, Route201_Text_BarryDefeated
 	goto Route201_EventScript_ChooseStarter_10
 
 Route201_EventScript_ChooseStarter_14:
-# 523 "data/maps/Route201/scripts.pory"
+# 527 "data/maps/Route201/scripts.pory"
 	trainerbattle_no_intro_no_whiteout TRAINER_BARRY_ROUTE_201_PIPLUP, Route201_Text_BarryDefeated
 	goto Route201_EventScript_ChooseStarter_10
 
 Route201_EventScript_ChooseStarter_15:
-# 504 "data/maps/Route201/scripts.pory"
+# 508 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_8
 	goto Route201_EventScript_ChooseStarter_8
 
 Route201_EventScript_ChooseStarter_19:
-# 530 "data/maps/Route201/scripts.pory"
+# 534 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_10
 	goto Route201_EventScript_ChooseStarter_18
 
@@ -902,121 +908,121 @@ Route201_EventScript_BarryScene_Movement_18:
 	face_left
 	step_end
 
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_19:
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
-# 154 "data/maps/Route201/scripts.pory"
+# 156 "data/maps/Route201/scripts.pory"
 	walk_right
 	step_end
 
-# 168 "data/maps/Route201/scripts.pory"
+# 170 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_20:
-# 168 "data/maps/Route201/scripts.pory"
+# 170 "data/maps/Route201/scripts.pory"
 	face_down
 	step_end
 
-# 177 "data/maps/Route201/scripts.pory"
+# 179 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_21:
-# 177 "data/maps/Route201/scripts.pory"
+# 179 "data/maps/Route201/scripts.pory"
 	walk_left
-# 177 "data/maps/Route201/scripts.pory"
+# 179 "data/maps/Route201/scripts.pory"
 	walk_left
-# 177 "data/maps/Route201/scripts.pory"
+# 179 "data/maps/Route201/scripts.pory"
 	walk_left
 	step_end
 
-# 197 "data/maps/Route201/scripts.pory"
+# 199 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_22:
-# 197 "data/maps/Route201/scripts.pory"
+# 199 "data/maps/Route201/scripts.pory"
 	walk_right
-# 197 "data/maps/Route201/scripts.pory"
+# 199 "data/maps/Route201/scripts.pory"
 	walk_right
-# 197 "data/maps/Route201/scripts.pory"
+# 199 "data/maps/Route201/scripts.pory"
 	walk_right
 	step_end
 
-# 287 "data/maps/Route201/scripts.pory"
+# 289 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_23:
-# 287 "data/maps/Route201/scripts.pory"
+# 289 "data/maps/Route201/scripts.pory"
 	face_right
 	step_end
 
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_24:
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 	walk_right
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 	walk_right
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 	walk_right
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 	walk_right
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 	walk_right
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 	walk_right
-# 294 "data/maps/Route201/scripts.pory"
+# 297 "data/maps/Route201/scripts.pory"
 	walk_right
 	step_end
 
-# 314 "data/maps/Route201/scripts.pory"
+# 317 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_25:
-# 314 "data/maps/Route201/scripts.pory"
+# 317 "data/maps/Route201/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 380 "data/maps/Route201/scripts.pory"
+# 384 "data/maps/Route201/scripts.pory"
 Route201_EventScript_PickAPokemon_Movement_0:
-# 380 "data/maps/Route201/scripts.pory"
+# 384 "data/maps/Route201/scripts.pory"
 	walk_up
 	step_end
 
-# 423 "data/maps/Route201/scripts.pory"
+# 427 "data/maps/Route201/scripts.pory"
 Route201_EventScript_ChooseStarter_Movement_0:
-# 423 "data/maps/Route201/scripts.pory"
+# 427 "data/maps/Route201/scripts.pory"
 	face_up
 	step_end
 
-# 467 "data/maps/Route201/scripts.pory"
+# 471 "data/maps/Route201/scripts.pory"
 Route201_EventScript_ChooseStarter_Movement_1:
-# 467 "data/maps/Route201/scripts.pory"
+# 471 "data/maps/Route201/scripts.pory"
 	walk_right
 	step_end
 
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 Route201_EventScript_ChooseStarter_Movement_2:
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_in_place_faster_down
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_fast_left
-# 495 "data/maps/Route201/scripts.pory"
+# 499 "data/maps/Route201/scripts.pory"
 	walk_fast_down
 	step_end
 
@@ -1063,7 +1069,7 @@ Route201_EventScript_BarryScene_Text_5:
 	.string "HOLD IT!$"
 
 Route201_EventScript_BarryScene_Text_6:
-# 157 "data/maps/Route201/scripts.pory"
+# 159 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}You two don't seem to have\n"
 	.string "any Pokémon between you?\p"
 	.string "Then, what is the meaning of going into\n"
@@ -1076,14 +1082,14 @@ Route201_EventScript_BarryScene_Text_6:
 	.string ". . .$"
 
 Route201_EventScript_BarryScene_Text_7:
-# 171 "data/maps/Route201/scripts.pory"
+# 173 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Hey, {PLAYER}.\n"
 	.string "This old guy. . .\p"
 	.string "It's Prof. Rowan, isn't it?\n"
 	.string "What's he doing here. . .?$"
 
 Route201_EventScript_BarryScene_Text_8:
-# 182 "data/maps/Route201/scripts.pory"
+# 184 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}. . .\n"
 	.string ". . .\p"
 	.string "They tried to go into the tall grass\n"
@@ -1098,23 +1104,23 @@ Route201_EventScript_BarryScene_Text_8:
 	.string ". . .$"
 
 Route201_EventScript_BarryScene_Text_9:
-# 201 "data/maps/Route201/scripts.pory"
+# 203 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}You two.\n"
 	.string "You truly love Pokémon, do you?$"
 
 Route201_EventScript_BarryScene_Text_10:
-# 208 "data/maps/Route201/scripts.pory"
+# 210 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Whoa, hold up!\n"
 	.string "You're not making any sense here!$"
 
 Route201_EventScript_BarryScene_Text_11:
-# 214 "data/maps/Route201/scripts.pory"
+# 216 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}Er-hem!\p"
 	.string "I didn't quite catch that, so I will\n"
 	.string "ask you again.$"
 
 Route201_EventScript_BarryScene_Text_12:
-# 225 "data/maps/Route201/scripts.pory"
+# 227 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Me, too!\n"
 	.string "I love Pokémon, too!\p"
 	.string "{SPEAKER NAME_PROFESSOR}I will ask you once again.\p"
@@ -1122,7 +1128,7 @@ Route201_EventScript_BarryScene_Text_12:
 	.string "You truly love Pokémon, do you?$"
 
 Route201_EventScript_BarryScene_Text_13:
-# 233 "data/maps/Route201/scripts.pory"
+# 235 "data/maps/Route201/scripts.pory"
 	.string "What?!\n"
 	.string "You can ask a hundred times!\l"
 	.string "The answer will never change!\p"
@@ -1130,16 +1136,16 @@ Route201_EventScript_BarryScene_Text_13:
 	.string "we love Pokémon!$"
 
 Route201_EventScript_BarryScene_Text_14:
-# 241 "data/maps/Route201/scripts.pory"
+# 243 "data/maps/Route201/scripts.pory"
 	.string "Right, {PLAYER}?$"
 
 Route201_EventScript_BarryScene_Text_15:
-# 244 "data/maps/Route201/scripts.pory"
+# 246 "data/maps/Route201/scripts.pory"
 	.string ". . .\n"
 	.string "That joke's getting old!$"
 
 Route201_EventScript_BarryScene_Text_16:
-# 253 "data/maps/Route201/scripts.pory"
+# 255 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}. . .A pair of reckless kids\n"
 	.string "who foolishly try to enter tall grass\l"
 	.string "without Pokémon of their own. . .?\p"
@@ -1147,7 +1153,7 @@ Route201_EventScript_BarryScene_Text_16:
 	.string "would do with Pokémon.$"
 
 Route201_EventScript_BarryScene_Text_17:
-# 262 "data/maps/Route201/scripts.pory"
+# 264 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}. . .Uh. . .\n"
 	.string "Well, I, uh. . .\p"
 	.string ". . .\n"
@@ -1170,13 +1176,13 @@ Route201_EventScript_BarryScene_Text_17:
 	.string "Now, where. . .?$"
 
 Route201_EventScript_BarryScene_Text_18:
-# 297 "data/maps/Route201/scripts.pory"
+# 300 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Professor Rowan!\p"
 	.string "You left your briefcase behind at\n"
 	.string "the lake.$"
 
 Route201_EventScript_BarryScene_Text_19:
-# 309 "data/maps/Route201/scripts.pory"
+# 312 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Is something wrong here?\p"
 	.string "{SPEAKER NAME_PROFESSOR}Ah! There it is!\n"
 	.string "{RIVAL}, nice work.\p"
@@ -1184,7 +1190,7 @@ Route201_EventScript_BarryScene_Text_19:
 	.string "these two with their own Pokémon.$"
 
 Route201_EventScript_BarryScene_Text_20:
-# 317 "data/maps/Route201/scripts.pory"
+# 320 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Wha. . .?!\p"
 	.string "Those Pokémon are crucial.\n"
 	.string "You're giving them away?\p"
@@ -1198,53 +1204,53 @@ Route201_EventScript_BarryScene_Text_20:
 	.string "The place, right here.$"
 
 Route201_EventScript_BarryScene_Text_21:
-# 330 "data/maps/Route201/scripts.pory"
+# 333 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}Go on! Open the briefcase and choose\n"
 	.string "a Pokémon!$"
 
 Route201_EventScript_BarryScene_Text_22:
-# 334 "data/maps/Route201/scripts.pory"
+# 337 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Really?!\n"
 	.string "Prof. Rowan!\p"
 	.string "I can't believe it! I'm so happy now\n"
 	.string "that I can't keep a straight face!$"
 
 Route201_EventScript_BarryScene_Text_23:
-# 340 "data/maps/Route201/scripts.pory"
+# 343 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Hey {PLAYER}.\n"
 	.string "You can choose first.\p"
 	.string "Hey, I'm practically a grown-up.\n"
 	.string "I have to show some class here.$"
 
 Route201_EventScript_PickAPokemon_Text_0:
-# 372 "data/maps/Route201/scripts.pory"
+# 376 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}What's up with you?\n"
 	.string "Open the briefcase and pick a Pokémon!$"
 
 Route201_EventScript_Rival_Text_0:
-# 400 "data/maps/Route201/scripts.pory"
+# 404 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Hey, {PLAYER}.\n"
 	.string "You can choose first. Go ahead.\p"
 	.string "You know, like, I'm gonna be a man\n"
 	.string "about it. Yeah, I'm slick.$"
 
 Route201_EventScript_ChooseStarter_Text_0:
-# 429 "data/maps/Route201/scripts.pory"
+# 433 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Then, I choose you!\n"
 	.string "I'm picking this CHIMCHAR.$"
 
 Route201_EventScript_ChooseStarter_Text_1:
-# 432 "data/maps/Route201/scripts.pory"
+# 436 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Then, I choose you!\n"
 	.string "I'm picking this PIPLUP.$"
 
 Route201_EventScript_ChooseStarter_Text_2:
-# 435 "data/maps/Route201/scripts.pory"
+# 439 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Then, I choose you!\n"
 	.string "I'm picking this TURTWIG.$"
 
 Route201_EventScript_ChooseStarter_Text_3:
-# 438 "data/maps/Route201/scripts.pory"
+# 442 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}Very well! Both of you have\n"
 	.string "chosen a good Pokémon, it seems.\p"
 	.string "Now, listen well!\p"
@@ -1259,34 +1265,34 @@ Route201_EventScript_ChooseStarter_Text_3:
 	.string "And now, we'll be on our way.$"
 
 Route201_EventScript_ChooseStarter_Text_4:
-# 463 "data/maps/Route201/scripts.pory"
+# 467 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Professor!\n"
 	.string "Wait for me!$"
 
 Route201_EventScript_ChooseStarter_Text_5:
-# 471 "data/maps/Route201/scripts.pory"
+# 475 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Uh, sorry, folks.$"
 
 Route201_EventScript_ChooseStarter_Text_6:
-# 483 "data/maps/Route201/scripts.pory"
+# 487 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}How do you like that?\n"
 	.string "Prof. Rowan's really nice.\p"
 	.string "On TV, he seems so stern and scary.$"
 
 Route201_EventScript_ChooseStarter_Text_7:
-# 499 "data/maps/Route201/scripts.pory"
+# 503 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Heheh, {PLAYER}!\n"
 	.string "We've both got Pokémon now.\p"
 	.string "There's only one thing to do, right?\n"
 	.string "Are you up for this?$"
 
 Route201_EventScript_ChooseStarter_Text_8:
-# 504 "data/maps/Route201/scripts.pory"
+# 508 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}What's with that attitude?\n"
 	.string "Don't be that way!$"
 
 Route201_EventScript_ChooseStarter_Text_9:
-# 511 "data/maps/Route201/scripts.pory"
+# 515 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}I've always wanted to\n"
 	.string "say this. . .\p"
 	.string "The time has finally come!\p"
@@ -1294,7 +1300,7 @@ Route201_EventScript_ChooseStarter_Text_9:
 	.string "I challenge you to a battle!$"
 
 Route201_EventScript_ChooseStarter_Text_10:
-# 530 "data/maps/Route201/scripts.pory"
+# 534 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Whew!\n"
 	.string "Let's go home.\p"
 	.string "I'm beat after that battle.\n"
@@ -1302,7 +1308,7 @@ Route201_EventScript_ChooseStarter_Text_10:
 	.string "See ya, {PLAYER}!$"
 
 Route201_EventScript_ChooseStarter_Text_11:
-# 536 "data/maps/Route201/scripts.pory"
+# 540 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Aha. . .\n"
 	.string "Ahaha. . . I won? I won!\p"
 	.string "But that battle, it could've gone\n"
@@ -1315,5 +1321,5 @@ Route201_EventScript_ChooseStarter_Text_11:
 	.string "See ya, {PLAYER}!$"
 
 Route201_Text_BarryDefeated::
-# 559 "data/maps/Route201/scripts.pory"
+# 563 "data/maps/Route201/scripts.pory"
 	.string "What are you saying?!\nWe ended up losing?$"

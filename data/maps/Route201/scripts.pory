@@ -151,6 +151,8 @@ script Route201_EventScript_BarryScene {
 	clearflag(FLAG_HIDE_ROUTE_201_ROWAN)
   	addobject(LOCALID_ROWAN)
 
+	playbgm(MUS_BIRCH_LAB, 0)
+
 	applymovement(LOCALID_ROWAN, moves(walk_right*8))
 	waitmovement(LOCALID_ROWAN)
 
@@ -288,6 +290,7 @@ script Route201_EventScript_BarryScene {
 	waitmovement(LOCALID_ROWAN)
 	delay(30)
 
+	playbgm(MUS_ENCOUNTER_BRENDAN, 0)
 	clearflag(FLAG_HIDE_ROUTE_201_DAWN)
   	addobject(LOCALID_LUCASDAWN)	
 
@@ -341,8 +344,9 @@ script Route201_EventScript_BarryScene {
 			"You can choose first.\p"
 			"Hey, I'm practically a grown-up.\n"
 			"I have to show some class here.")
-	closemessage
 
+	closemessage
+	fadedefaultbgm()
 	release
 }
 

@@ -100,17 +100,17 @@ TwinleafTownPlayersHouse_2F_EnterBarry::
 # 78 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitse
 # 79 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
-	playbgm MUS_GSC_ROUTE38, 0
-# 80 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	applymovement 1, Common_Movement_ExclamationMark
-# 81 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 80 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	playse SE_PIN
-# 82 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 81 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitmovement 0
-# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 82 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	waitse
-# 84 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+# 83 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	delay 48
+# 84 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
+	playbgm MUS_GSC_ROUTE38, 0
 # 85 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"
 	setspeaker SP_NAME_BARRY
 # 86 "data/maps/TwinleafTownPlayersHouse_2F/scripts.pory"

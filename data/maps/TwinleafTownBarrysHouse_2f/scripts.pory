@@ -22,7 +22,7 @@ script TwinleafTownBarrysHouse_2F_ON_FRAME {
     waitmovement(0)
     waitse
     delay(48)
-
+	playbgm(MUS_GSC_ROUTE38,0)
 	setspeaker(SP_NAME_BARRY)
     msgbox("Oh, hey, {PLAYER}!\p"
 		"I'll be waiting on the road!\n"
@@ -34,6 +34,8 @@ script TwinleafTownBarrysHouse_2F_ON_FRAME {
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, face_up))
 	applymovement(LOCALID_RIVAL, moves(walk_fast_left*2, walk_slow_stairs_left))
 	waitmovement(0)
+	playse(SE_EXIT)
+	fadedefaultbgm()
 
     setflag(FLAG_HIDE_BARRY_ROOM_BARRY)
     removeobject(LOCALID_RIVAL)
