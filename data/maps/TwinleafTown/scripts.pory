@@ -4,12 +4,12 @@ const LOCALID_RIVAL = 4
 
 mapscripts TwinleafTown_MapScripts{
 //     MAP_SCRIPT_ON_FRAME_TABLE[
-//         VAR_TWINLEAF_INTRO_STATE, 5: TwinleafTown_ON_FRAME
+//         VAR_TWINLEAF_MOM_STATE, 4: TwinleafTown_ON_FRAME
 //   ]
 }
 
 // script TwinleafTown_ON_FRAME {
-//   setvar(VAR_TWINLEAF_INTRO_STATE, 6)
+//   setvar(VAR_TWINLEAF_MOM_STATE, 5)
 // }
 
 script TwinleafTown_EventScript_THUD {

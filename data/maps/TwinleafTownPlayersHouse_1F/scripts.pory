@@ -1,15 +1,22 @@
 //VAR_TWINLEAF_INTRO_STATE = 4 after mom scene
 //VAR_TWINLEAF_INTRO_STATE = 5 after leaving house
+//VAR_TWINLEAF_INTRO_STATE = 8 after entering house
 
 const LOCALID_MOM = 1
 
 mapscripts TwinleafTownPlayersHouse_1F_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE[
-		VAR_TWINLEAF_INTRO_STATE, 3: TwinleafTownPlayersHouse_1F_ON_FRAME
+		VAR_TWINLEAF_INTRO_STATE, 3: TwinleafTownPlayersHouse_1F_ON_FRAME3
+		VAR_TWINLEAF_INTRO_STATE, 7: TwinleafTownPlayersHouse_1F_ON_FRAME8
   	]
+
+
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+		VAR_TWINLEAF_INTRO_STATE, 6: TwinleafTownPlayersHouse_1F_ON_WARP
+	]
 }
 
-script TwinleafTownPlayersHouse_1F_ON_FRAME {
+script TwinleafTownPlayersHouse_1F_ON_FRAME3 {
 	lockall
 
 	applymovement(LOCALID_MOM, moves(walk_in_place_up))
@@ -44,16 +51,85 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME {
 	setvar(VAR_TWINLEAF_INTRO_STATE, 4)
 }
 
+script TwinleafTownPlayersHouse_1F_ON_FRAME8 {
+	lock
+
+	applymovement(LOCALID_MOM, moves(walk_left, face_up))
+	waitmovement(0)
+	delay(30)
+	applymovement(LOCALID_MOM, moves(walk_right))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
+	waitmovement(LOCALID_MOM)
+
+	applymovement(LOCALID_MOM, moves(walk_right*2, walk_down, walk_right))
+	waitmovement(0)
+
+	applymovement(LOCALID_MOM, moves(walk_right*2, walk_down*2, face_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*3, walk_down, walk_right))
+	waitmovement(0)
+	delay(8)
+
+	msgbox("{SPEAKER NAME_MOM}What's the matter, dear?\p"
+			". . .\p"
+			"Wow.\n"
+			"That's what happened to you?\p"
+			"You and Barry are lucky to have\n"
+			"met Prof. Rowan.\p"
+			"Imagine if you didn't. . .\p"
+			"I wouldn't like to think what the wild\n"
+			"Pokémon might have done to you two.\p"
+			"{PLAYER}, go see Prof. Rowan, and\n"
+			"thank him properly for your Pokémon.\p"
+			"His lab is in Sandgem Town, isn't it?\p"
+			"Now that you have your own Pokémon,\n"
+			"the tall grass won't be so threatening.\p"
+			"Oh, I know!\n"
+			"{PLAYER}, put these on.\p"
+			"{PLAYER} received a pair of\n"
+			"Running Shoes!\p"
+			"Going to Sandgem Town is like an\n"
+			"adventure in itself, right?\p"
+			"With those Running Shoes, you can\n"
+			"get to faraway places much faster.\p"
+			"OK. . .\n"
+			"Let me read the instructions. . .\p"
+			"Press the B Button and dash\n"
+			"about faster than ever before!\p"
+			"Put on the Running Shoes and\n"
+			"blaze new trails of adventure!\p"
+			"Well, isn't that just nifty!")
+
+	setflag(FLAG_SYS_B_DASH)
+
+
+	setvar(VAR_TEMP_1, 1)
+	setvar(VAR_TWINLEAF_MOM_STATE, 4)
+	setvar(VAR_TWINLEAF_INTRO_STATE, 8)
+
+	release
+}
+
+script TwinleafTownPlayersHouse_1F_ON_WARP {
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+	setobjectxy(LOCALID_MOM, 1, 3)
+	setvar(VAR_TWINLEAF_INTRO_STATE, 7)
+
+}
+
 script TwinleafTown_PlayersHouse1F_EventScript_Mom {
 	lock
 
-	if(var(VAR_TWINLEAF_MOM_STATE) == 1) {
+	if(var(VAR_TEMP_1) == 1) {
+		goto(TwinleafTown_PlayersHouse1F_RunningShoes)
+	} elif(var(VAR_TWINLEAF_MOM_STATE) == 1) {
 		goto(TwinleafTown_PlayersHouse1F_HowImpatient)
 	} elif (var(VAR_TWINLEAF_MOM_STATE) == 2) {
 		goto(TwinleafTown_PlayersHouse1F_ByeBye)
 	} elif (var(VAR_TWINLEAF_MOM_STATE) == 3) {
 		goto(TwinleafTown_PlayersHouse1F_BarryWaiting)
-	} 
+	} elif (var(VAR_TWINLEAF_MOM_STATE) == 4) {
+		goto(TwinleafTown_PlayersHouse1F_Heal)
+	}
 	
 	release
 }
@@ -169,4 +245,35 @@ script TwinleafTown_PlayersHouse1F_BarryWaiting {
 	))
 	closemessage
 	release
+}
+
+script TwinleafTown_PlayersHouse1F_RunningShoes {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_MOM)
+	msgbox(format("I'll read you the instructions\n"
+				"for the Running Shoes. . .\p"
+				"Press the B Button and dash\n"
+				"about faster than ever before!\p"
+				"Put on the Running Shoes and\n"
+				"blaze new trails of adventure!\p"
+				"Well, isn't that just nifty!"
+	))
+	closemessage
+
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_Heal {
+	lock
+	faceplayer
+
+	setspeaker(SP_NAME_MOM)
+	msgbox("Welcome home {PLAYER}.\n"
+			"Are you and your Pokémon healthy?\l"
+			"Take a quick rest, dear.")
+	closemessage
+
+	call(Common_EventScript_OutOfCenterPartyHeal)
 }

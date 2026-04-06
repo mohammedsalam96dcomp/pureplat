@@ -496,14 +496,16 @@ Route201_EventScript_ChooseStarter::
 	lock
 # 417 "data/maps/Route201/scripts.pory"
 	setflag FLAG_SYS_POKEMON_GET
-# 418 "data/maps/Route201/scripts.pory"
-	special ChooseStarter
 # 419 "data/maps/Route201/scripts.pory"
-	waitstate
-# 421 "data/maps/Route201/scripts.pory"
+	fadescreen FADE_TO_BLACK
+# 420 "data/maps/Route201/scripts.pory"
 	setflag FLAG_HIDE_ROUTE_201_BRIEFCASE
-# 422 "data/maps/Route201/scripts.pory"
+# 421 "data/maps/Route201/scripts.pory"
 	removeobject 4
+# 422 "data/maps/Route201/scripts.pory"
+	special ChooseStarter
+# 423 "data/maps/Route201/scripts.pory"
+	waitstate
 # 425 "data/maps/Route201/scripts.pory"
 	applymovement 2, Route201_EventScript_BarryScene_Movement_20
 # 426 "data/maps/Route201/scripts.pory"
@@ -626,8 +628,6 @@ Route201_EventScript_ChooseStarter_10:
 Route201_EventScript_ChooseStarter_18:
 # 552 "data/maps/Route201/scripts.pory"
 	special HealPlayerParty
-# 553 "data/maps/Route201/scripts.pory"
-	setvar VAR_TWINLEAF_INTRO_STATE, 7
 # 555 "data/maps/Route201/scripts.pory"
 	fadescreen FADE_TO_BLACK
 # 556 "data/maps/Route201/scripts.pory"
