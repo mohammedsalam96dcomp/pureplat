@@ -1626,6 +1626,14 @@
       "y": 4,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_TWINLEAF_TOWN",
+      "name": "Twinleaf Town"
+    },
+    {
+      "id": "MAPSEC_ROUTE_201",
+      "name": "Route 201"
     }
   ]
 }

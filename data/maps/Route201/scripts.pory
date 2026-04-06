@@ -1,6 +1,7 @@
 const LOCALID_RIVAL = 1
 const LOCALID_ROWAN = 2
 const LOCALID_LUCASDAWN = 3
+const LOCALID_BRIEFCASE = 4
 
 mapscripts Route201_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION: Route201_EventScript_OnTransition
@@ -278,11 +279,14 @@ script Route201_EventScript_BarryScene {
 			"Now, then. . .\p"
 			"Hm?\n"
 			"Now, where. . .?")
-
 	closemessage
 
-	applymovement(LOCALID_ROWAN, moves(face_left, face_right))
+	applymovement(LOCALID_ROWAN, moves(face_left))
+	delay(30)
 	waitmovement(LOCALID_ROWAN)
+	applymovement(LOCALID_ROWAN, moves(face_right))
+	waitmovement(LOCALID_ROWAN)
+	delay(30)
 
 	clearflag(FLAG_HIDE_ROUTE_201_DAWN)
   	addobject(LOCALID_LUCASDAWN)	
@@ -290,5 +294,238 @@ script Route201_EventScript_BarryScene {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_right*7))
 	waitmovement(LOCALID_LUCASDAWN)
 
+	msgbox("{SPEAKER NAME_RIVAL}Professor Rowan!\p"
+			"You left your briefcase behind at\n" 
+			"the lake.")
+	closemessage
+
+	applymovement(LOCALID_ROWAN, moves(walk_in_place_left))
+	waitmovement(LOCALID_ROWAN)
+
+	clearflag(FLAG_HIDE_ROUTE_201_BRIEFCASE)
+	addobject(LOCALID_BRIEFCASE)
+  	setobjectxy(LOCALID_BRIEFCASE, 16, 14)	
+
+	msgbox("{SPEAKER NAME_RIVAL}Is something wrong here?\p"
+			"{SPEAKER NAME_PROFESSOR}Ah! There it is!\n" 
+			"{RIVAL}, nice work.\p"
+			"What I was about to do was to entrust\n"
+			"these two with their own Pokémon.")
+	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}Wha. . .?!\p"
+			"Those Pokémon are crucial.\n"
+			"You're giving them away?\p"
+			"{SPEAKER NAME_PROFESSOR}Hm!\p"
+			"We exist side by side with Pokémon.\p"
+			"There comes a time when people should\n"
+			"meet Pokémon.\p"
+			"There is a world that should be\n"
+			"explored together.\p"
+			"For them, today is that time.\n"
+			"The place, right here.")
+	applymovement(LOCALID_ROWAN, moves(walk_in_place_right))
+	waitmovement(LOCALID_ROWAN)
+	msgbox("{SPEAKER NAME_PROFESSOR}Go on! Open the briefcase and choose\n"
+			"a Pokémon!")
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_left))
+	waitmovement(LOCALID_RIVAL)
+	msgbox("{SPEAKER NAME_BARRY}Really?!\n"
+			"Prof. Rowan!\p"
+			"I can't believe it! I'm so happy now\n"
+			"that I can't keep a straight face!")
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_down))
+	waitmovement(LOCALID_RIVAL)
+	msgbox("{SPEAKER NAME_BARRY}Hey {PLAYER}.\n"
+			"You can choose first.\p"
+			"Hey, I'm practically a grown-up.\n"
+			"I have to show some class here.")
+	closemessage
+
 	release
+}
+
+script Route201_EventScript_PickAPokemonRight {
+	lock
+
+	setvar(VAR_TEMP_2, 1)
+	goto(Route201_EventScript_PickAPokemon)
+
+	release
+}
+
+script Route201_EventScript_PickAPokemonDown {
+	lock
+
+	setvar(VAR_TEMP_2, 2)
+	goto(Route201_EventScript_PickAPokemon)
+
+	release
+}
+
+script Route201_EventScript_PickAPokemon {
+	lock
+
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_down))
+	waitmovement(LOCALID_RIVAL)
+	msgbox("{SPEAKER NAME_BARRY}What's up with you?\n"
+			"Open the briefcase and pick a Pokémon!")
+	closemessage
+
+	if(var(VAR_TEMP_2) == 1) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+
+	} elif (var(VAR_TEMP_2) == 2) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	}
+	waitmovement(0)
+
+	release
+}
+
+script Route201_EventScript_Rowan {
+	lock
+	faceplayer
+	msgbox("{SPEAKER NAME_PROFESSOR}Go on! Open the briefcase and choose\n"
+		"a Pokémon!")
+	closemessage
+	release
+}
+
+script Route201_EventScript_Rival {
+	lock
+
+	faceplayer
+	msgbox("{SPEAKER NAME_BARRY}Hey, {PLAYER}.\n"
+		"You can choose first. Go ahead.\p"
+		"You know, like, I'm gonna be a man\n"
+		"about it. Yeah, I'm slick.")
+	closemessage
+
+	release
+}
+
+
+script Route201_EventScript_ChooseStarter {
+	lock
+
+	setflag(FLAG_SYS_POKEMON_GET)
+	special(ChooseStarter)
+	waitstate
+
+	setflag(FLAG_HIDE_ROUTE_201_BRIEFCASE)
+	removeobject(LOCALID_BRIEFCASE)
+
+
+	applymovement(LOCALID_ROWAN, moves(face_down))
+	applymovement(LOCALID_RIVAL, moves(face_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+	waitmovement(0)
+	delay(8)
+	waitmovement(0)
+
+	if(var(VAR_STARTER_MON) == 0) {
+		msgbox("{SPEAKER NAME_BARRY}Then, I choose you!\n"
+		"I'm picking this CHIMCHAR.")
+	} elif(var(VAR_STARTER_MON) == 1) {
+		msgbox("{SPEAKER NAME_BARRY}Then, I choose you!\n"
+		"I'm picking this PIPLUP.")
+	} else {
+		msgbox("{SPEAKER NAME_BARRY}Then, I choose you!\n"
+		"I'm picking this TURTWIG.")
+	}
+	msgbox("{SPEAKER NAME_PROFESSOR}Very well! Both of you have\n"
+			"chosen a good Pokémon, it seems.\p"
+			"Now, listen well!\p"
+			"The Pokémon you have been entrusted\n"
+			"with are unfamiliar with the world.\p"
+			"In that regard, they're much\n"
+			"like you.\p"
+			"As fellow newcomers to the world,\n"
+			"I hope you'll do well together.\p"
+			"If you have any trouble, come see me\n"
+			"at my lab in Sandgem Town.\p"
+			"And now, we'll be on our way.")
+	closemessage
+
+	applymovement(LOCALID_RIVAL, moves(walk_up))
+	waitmovement(LOCALID_RIVAL)
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_right))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
+	waitmovement(LOCALID_RIVAL)
+	delay(8)
+	applymovement(LOCALID_ROWAN, moves(walk_right*8))
+	waitmovement(LOCALID_ROWAN)
+	setflag(FLAG_HIDE_ROUTE_201_ROWAN)
+	removeobject(LOCALID_ROWAN)
+
+	msgbox("{SPEAKER NAME_RIVAL}Professor!\n"
+			"Wait for me!")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}Uh, sorry, folks.")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right))
+	waitmovement(LOCALID_LUCASDAWN)
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right*7))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	setflag(FLAG_HIDE_ROUTE_201_DAWN)
+	removeobject(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_BARRY}How do you like that?\n"
+			"Prof. Rowan's really nice.\p"
+			"On TV, he seems so stern and scary.")
+	closemessage
+
+	delay(60)
+	applymovement(LOCALID_RIVAL, moves(face_down))
+	waitmovement(LOCALID_RIVAL)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+	waitmovement(0)
+	delay(40)
+	waitmovement(0)
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_faster_down*8, walk_fast_left, walk_fast_down))
+	waitmovement(LOCALID_RIVAL)
+
+	while {
+		msgbox("{SPEAKER NAME_BARRY}Heheh, {PLAYER}!\n"
+				"We've both got Pokémon now.\p"
+				"There's only one thing to do, right?\n"
+				"Are you up for this?", MSGBOX_YESNO)
+        if (var(VAR_RESULT) != 1) {
+			msgbox("{SPEAKER NAME_BARRY}What's with that attitude?\n"
+					"Don't be that way!")
+        } else {
+			break
+		}
+    } 
+
+	msgbox("{SPEAKER NAME_BARRY}I've always wanted to\n" 
+			"say this. . .\p"
+			"The time has finally come!\p"
+			"{PLAYER}!\p"
+			"I challenge you to a battle!")
+
+	switch(var(VAR_STARTER_MON)){
+		case 0:
+			trainerbattle_no_intro(TRAINER_BARRY_ROUTE_201_TURTWIG, Route201_Text_BarryDefeated)
+		case 1:
+			trainerbattle_no_intro(TRAINER_BARRY_ROUTE_201_CHIMCHAR, Route201_Text_BarryDefeated)
+		case 2:
+			trainerbattle_no_intro(TRAINER_BARRY_ROUTE_201_PIPLUP, Route201_Text_BarryDefeated)
+	}
+
+	release
+}
+
+text Route201_Text_BarryDefeated{
+	"What are you saying?!\nWe ended up losing?"
 }

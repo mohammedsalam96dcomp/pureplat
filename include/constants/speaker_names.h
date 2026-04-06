@@ -8,6 +8,7 @@ enum SpeakerNames {
     SP_NAME_BARRY,
     SP_NAME_BARRYMOM,
     SP_NAME_PROFESSOR,
+    SP_NAME_RIVAL,
     SP_NAME_COUNT
 };
 

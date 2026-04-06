@@ -41,3 +41,21 @@ script TwinleafTownBarrysHouse_2F_ON_FRAME {
 	setvar(VAR_TWINLEAF_INTRO_STATE, 6)
 	release
 }
+
+script TwinleafTownBarrysHouse_2f_EventScript_Wii {
+	lock
+	msgbox("It's a wii!\n"
+			"It's controlled by a Wii Remote!")
+	release
+}
+
+script TwinleafTownBarrysHouse_2f_EventScript_PC {
+	lock
+	msgbox("{PLAYER} checked the PC screen.\p"
+			"Adventure Rule No. 1\n"
+			"The START Button opens the menu!\p"
+			"Adventure Rule No. 2\n"
+			"Record your progress with SAVE.\p"
+			"There is nothing else on here. . .")
+	release
+}

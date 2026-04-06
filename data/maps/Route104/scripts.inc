@@ -113,7 +113,7 @@ Route104_EventScript_RivalTrigger::
 # 57 "data/maps/Route104/scripts.pory"
 	addobject LOCALID_ROUTE104_RIVAL
 # 58 "data/maps/Route104/scripts.pory"
-	clearflag FLAG_HIDE_ROUTE_104_RIVAL
+	clearflag FLAG_HIDE_ROUTE_201_BRIEFCASE
 # 59 "data/maps/Route104/scripts.pory"
 	applymovement LOCALID_PLAYER, Route104_Movement_PlayerBackUp
 # 60 "data/maps/Route104/scripts.pory"
