@@ -9403,6 +9403,16 @@
       "secondary_tileset": "gTileset_Twinleaf",
       "border_filepath": "data/layouts/Route201/border.bin",
       "blockdata_filepath": "data/layouts/Route201/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERITY_LAKE_FRONT",
+      "name": "VerityLakeFront_Layout",
+      "width": 20,
+      "height": 26,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_Twinleaf",
+      "border_filepath": "data/layouts/VerityLakeFront/border.bin",
+      "blockdata_filepath": "data/layouts/VerityLakeFront/map.bin"
     }
   ]
 }
