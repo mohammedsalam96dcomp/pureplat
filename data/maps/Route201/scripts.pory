@@ -3,6 +3,9 @@ const LOCALID_ROWAN = 2
 const LOCALID_LUCASDAWN = 3
 const LOCALID_BRIEFCASE = 4
 
+
+//VAR_TWINLEAF_INTRO_STATE = 9 when barry start following you
+
 mapscripts Route201_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION: Route201_EventScript_OnTransition
 }
@@ -520,11 +523,11 @@ script Route201_EventScript_ChooseStarter {
 
 	switch(var(VAR_STARTER_MON)){
 		case 0:
-			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_TURTWIG, Route201_Text_BarryDefeated)
+			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_TURTWIG, "What are you saying?!\nWe ended up losing?")
 		case 1:
-			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_CHIMCHAR, Route201_Text_BarryDefeated)
+			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_CHIMCHAR, "What are you saying?!\nWe ended up losing?")
 		case 2:
-			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_PIPLUP, Route201_Text_BarryDefeated)
+			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_PIPLUP, "What are you saying?!\nWe ended up losing?")
 	}
 
 	// setflag(B_FLAG_NO_WHITEOUT)
@@ -550,16 +553,176 @@ script Route201_EventScript_ChooseStarter {
 	}
 		
 	special(HealPlayerParty)
-	// setvar(VAR_TWINLEAF_INTRO_STATE, 7)
-
 	fadescreen(FADE_TO_BLACK)
-	setflag(FLAG_HIDE_ROUTE_201_BARRY)
-	removeobject(LOCALID_RIVAL)
 	warp(MAP_TWINLEAF_TOWN_PLAYERS_HOUSE_1F, 1, 5)
 
 	release
 }
 
-text Route201_Text_BarryDefeated{
-	"What are you saying?!\nWe ended up losing?"
+
+script Route201_EventScript_LakeVerity1 {
+	lock
+	setvar(VAR_TEMP_1, 1)
+	goto(Route201_EventScript_LakeVerityScene)
+	release
+}
+
+script Route201_EventScript_LakeVerity2 {
+	lock
+	setvar(VAR_TEMP_1, 2)
+	goto(Route201_EventScript_LakeVerityScene)
+	release
+}
+
+script Route201_EventScript_LakeVerity3 {
+	lock
+	setvar(VAR_TEMP_1, 3)
+	goto(Route201_EventScript_LakeVerityScene)
+	release
+}
+
+script Route201_EventScript_LakeVerity4 {
+	lock
+	setvar(VAR_TEMP_1, 4)
+	goto(Route201_EventScript_LakeVerityScene)
+	release
+}
+
+script Route201_EventScript_LakeVerityScene {
+	lock
+
+	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
+	playse(SE_PIN)
+	waitmovement(0)
+	waitse
+	delay(30)
+
+	applymovement(LOCALID_RIVAL, moves(walk_in_place_faster_down))
+	waitmovement(LOCALID_RIVAL)
+
+	msgbox("{SPEAKER NAME_BARRY}Too slow!\n"
+			"{PLAYER}, I'm sick of waiting!\p"
+			"I'm going to go see Prof. Rowan, so I\n"
+			"can thank him properly.\p"
+			"So, I had this great idea.\n"
+			"Listen up, OK?\p"
+			"You know that lake where we always\n"
+			"play at?\p"
+			"You know how they say a legendary\n"
+			"Pokémon lives there?\p"
+			"You guessed it!\n"
+			"Let's catch that Pokémon.\p"
+			"That'll make Prof. Rowan happy.\n"
+			"I'm sure of that!")
+	closemessage
+
+	switch(var(VAR_TEMP_1)) {
+		case 1:
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left*2, walk_in_place_faster_down))
+		case 2:
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_left, walk_in_place_faster_down))
+		case 3:
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down))
+		case 4:
+			applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_fast_right, walk_in_place_faster_down))
+	}
+	waitmovement(LOCALID_RIVAL)
+
+	msgbox("{SPEAKER NAME_BARRY}Me and you together,\n"
+			"we've got nothing to fear!")
+	closemessage
+
+	setvar(VAR_ROUTE201_BARRYNPC_STATE, 1)
+	setvar(VAR_TWINLEAF_INTRO_STATE, 9)
+
+	setfollowernpc(LOCALID_RIVAL, FLAG_HIDE_ROUTE_201_BARRY, Route201_EventScript_NPCBarry, 0)
+
+	release
+}
+
+script Route201_EventScript_VerityExitSouth {
+	lock
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_in_place_down))
+	waitmovement(OBJ_EVENT_ID_NPC_FOLLOWER)
+
+	msgbox("{SPEAKER NAME_BARRY}Heheh, {PLAYER}.\n"
+			"The lake's not that way!")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	waitmovement(OBJ_EVENT_ID_NPC_FOLLOWER)
+
+	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_in_place_down))
+	waitmovement(OBJ_EVENT_ID_NPC_FOLLOWER)
+
+
+	release
+}
+
+script Route201_EventScript_NPCBarry {
+	lock
+	switch(var(VAR_ROUTE201_BARRYNPC_STATE)) {
+		case 1:
+			faceplayer
+			msgbox("{SPEAKER NAME_BARRY}That Pokémon battle. . .\p"
+					"Wasn't that wickedly fun or what?\p"
+					"I mean, I'd pick the moves, and my\n"
+					"Pokémon would use them!\p"
+					"Yeah, I'm going to battle tons and get\n"
+					"real close with Pokémon.")
+			closemessage
+			addvar(VAR_ROUTE201_BARRYNPC_STATE, 1)
+		case 2:
+			faceplayer
+			msgbox("{SPEAKER NAME_BARRY}Pokémon all have\n"
+					"different moves, huh?\p"
+					"A Trainer makes his Pokémon battle\n"
+					"by ordering them to use moves.\p"
+					"That's so awesomely cool.")
+			closemessage
+			addvar(VAR_ROUTE201_BARRYNPC_STATE, 1)
+		case 3:
+			faceplayer
+			msgbox("{SPEAKER NAME_BARRY}Do you believe it?\n"
+					"I can hardly believe it.\p"
+					"You and me, we're Pokémon Trainers all\n"
+					"of a sudden.\p"
+					"Man we've got tons to learn about\n"
+					"being a Trainer.\p"
+					"But seeing this Poké Ball with this\n"
+					"TURTWIG inside. . .\p"
+					"It makes me feel like I can do anything!\n"
+					"Nothing's impossible!")
+			closemessage
+			addvar(VAR_ROUTE201_BARRYNPC_STATE, 1)
+		case 4:
+			faceplayer
+			msgbox("{SPEAKER NAME_BARRY}That lake has a mirage\n"
+					"Pokémon living in it.\p"
+					"Everyone says it's just a legend, but\n"
+					"I know I'm right.")
+			closemessage
+			addvar(VAR_ROUTE201_BARRYNPC_STATE, 1)
+		case 5:
+			faceplayer
+			msgbox("{SPEAKER NAME_BARRY}Hey, do you know about\n"
+					"the Champion?\p"
+					"There's this out-of-this-world tough\n"
+					"Trainer who gets called that.\p"
+					"Well, I'm gonna get so tough, the Champ\n"
+					"has to battle me. You watch!\p"
+					"With this little guy here, I'm sure I can\n"
+					"get that tough.")
+			closemessage
+			addvar(VAR_ROUTE201_BARRYNPC_STATE, 1)
+		case 6:
+			faceplayer
+			msgbox("{SPEAKER NAME_BARRY}Hey, that's enough\n"
+					"talking already.\p"
+					"I'm itching to get going to the lake.\n"
+					"Come on, come on!")
+			closemessage
+	}
 }
