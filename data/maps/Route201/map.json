@@ -17,6 +17,11 @@
       "map": "MAP_TWINLEAF_TOWN",
       "offset": 2,
       "direction": "down"
+    },
+    {
+      "map": "MAP_VERITY_LAKE_FRONT",
+      "offset": -4,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -78,7 +83,7 @@
     {
       "type": "trigger",
       "x": 14,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
@@ -87,7 +92,7 @@
     {
       "type": "trigger",
       "x": 15,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
@@ -96,7 +101,7 @@
     {
       "type": "trigger",
       "x": 16,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
@@ -105,7 +110,7 @@
     {
       "type": "trigger",
       "x": 17,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
@@ -137,6 +142,96 @@
       "var": "VAR_TWINLEAF_INTRO_STATE",
       "var_value": "6",
       "script": "Route201_EventScript_PickAPokemonRight"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "8",
+      "script": "Route201_EventScript_LakeVerity1"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "8",
+      "script": "Route201_EventScript_LakeVerity2"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "8",
+      "script": "Route201_EventScript_LakeVerity3"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "8",
+      "script": "Route201_EventScript_LakeVerity4"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "9",
+      "script": "Route201_EventScript_VerityExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "9",
+      "script": "Route201_EventScript_VerityExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "9",
+      "script": "Route201_EventScript_VerityExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "9",
+      "script": "Route201_EventScript_VerityExitSouth"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TWINLEAF_INTRO_STATE",
+      "var_value": "9",
+      "script": "Route201_EventScript_VerityExitEast"
     }
   ],
   "bg_events": []

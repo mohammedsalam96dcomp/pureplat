@@ -7,6 +7,8 @@ script TwinleafTown_EventScript_BarrysMom {
 		goto(TwinleafTown_EventScript_SitStill)
 	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
 		goto(TwinleafTown_EventScript_RocketedOff)
+	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 8) {
+		goto(TwinleafTown_EventScript_Route201)
 	}
 	release
 }
@@ -40,4 +42,18 @@ script TwinleafTown_EventScript_RocketedOff {
 		"I wonder who he takes after?")
 
 	release
+}
+
+script TwinleafTown_EventScript_Route201 {
+	lock
+
+	faceplayer
+	setspeaker(SP_NAME_BARRYMOM)
+	msgbox("My Barry should\n"
+			"be out on Route 201 by now.\p"
+			"He just can't sit still, that boy.\n"
+			"I wonder who he takes after?")
+
+	release
+
 }

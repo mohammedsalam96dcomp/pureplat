@@ -1634,6 +1634,10 @@
     {
       "id": "MAPSEC_ROUTE_201",
       "name": "Route 201"
+    },
+    {
+      "id": "MAPSEC_VERITY_LAKEFRONT",
+      "name": "Verity Lakefront"
     }
   ]
 }
