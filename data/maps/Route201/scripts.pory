@@ -661,6 +661,21 @@ script Route201_EventScript_VerityExitSouth {
 	release
 }
 
+script Route201_EventScript_VerityExitEast {
+	lock
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+	if (var(VAR_RESULT) == DIR_NORTH) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down))
+		waitmovement(0)
+	} elif (var(VAR_RESULT) == DIR_EAST) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+		waitmovement(0)
+	}
+
+	release
+}
+
 script Route201_EventScript_NPCBarry {
 	lock
 	switch(var(VAR_ROUTE201_BARRYNPC_STATE)) {
