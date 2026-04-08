@@ -13,17 +13,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_FORTREE_CITY",
-      "name": "FortreeCity_Layout",
-      "width": 40,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fortree",
-      "border_filepath": "data/layouts/FortreeCity/border.bin",
-      "blockdata_filepath": "data/layouts/FortreeCity/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_LILYCOVE_CITY",
       "name": "LilycoveCity_Layout",
       "width": 80,
@@ -703,39 +692,6 @@
       "secondary_tileset": "gTileset_Facility",
       "border_filepath": "data/layouts/Harbor/border.bin",
       "blockdata_filepath": "data/layouts/Harbor/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_FORTREE_CITY_HOUSE1",
-      "name": "FortreeCity_House1_Layout",
-      "width": 8,
-      "height": 6,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/FortreeCity_House1/border.bin",
-      "blockdata_filepath": "data/layouts/FortreeCity_House1/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_FORTREE_CITY_GYM",
-      "name": "FortreeCity_Gym_Layout",
-      "width": 20,
-      "height": 25,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_FortreeGym",
-      "border_filepath": "data/layouts/FortreeCity_Gym/border.bin",
-      "blockdata_filepath": "data/layouts/FortreeCity_Gym/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_FORTREE_CITY_HOUSE2",
-      "name": "FortreeCity_House2_Layout",
-      "width": 8,
-      "height": 6,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/FortreeCity_House2/border.bin",
-      "blockdata_filepath": "data/layouts/FortreeCity_House2/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -2232,17 +2188,6 @@
       "secondary_tileset": "gTileset_TrickHousePuzzle",
       "border_filepath": "data/layouts/Route110_TrickHousePuzzle8/border.bin",
       "blockdata_filepath": "data/layouts/Route110_TrickHousePuzzle8/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_FORTREE_CITY_DECORATION_SHOP",
-      "name": "FortreeCity_DecorationShop_Layout",
-      "width": 8,
-      "height": 6,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/FortreeCity_DecorationShop/border.bin",
-      "blockdata_filepath": "data/layouts/FortreeCity_DecorationShop/map.bin",
       "layout_version": "emerald"
     },
     {

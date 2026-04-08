@@ -4,7 +4,6 @@
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorSlateport",
-    "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
     "gMapGroup_IndoorEverGrande",
     "gMapGroup_IndoorRoute104",
@@ -30,7 +29,6 @@
   ],
   "gMapGroup_TownsAndRoutes": [
     "SlateportCity",
-    "FortreeCity",
     "LilycoveCity",
     "EverGrandeCity",
     "LittlerootTown",
@@ -104,18 +102,6 @@
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
     "SlateportCity_Mart"
-  ],
-  "gMapGroup_IndoorFortree": [
-    "FortreeCity_House1",
-    "FortreeCity_Gym",
-    "FortreeCity_PokemonCenter_1F",
-    "FortreeCity_PokemonCenter_2F",
-    "FortreeCity_Mart",
-    "FortreeCity_House2",
-    "FortreeCity_House3",
-    "FortreeCity_House4",
-    "FortreeCity_House5",
-    "FortreeCity_DecorationShop"
   ],
   "gMapGroup_IndoorLilycove": [
     "LilycoveCity_CoveLilyMotel_1F",
