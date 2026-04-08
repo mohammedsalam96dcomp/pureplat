@@ -6,7 +6,6 @@
     "gMapGroup_IndoorDewford",
     "gMapGroup_IndoorLavaridge",
     "gMapGroup_IndoorFallarbor",
-    "gMapGroup_IndoorVerdanturf",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
@@ -43,7 +42,6 @@
     "DewfordTown",
     "LavaridgeTown",
     "FallarborTown",
-    "VerdanturfTown",
     "Route101",
     "Route102",
     "Route103",
@@ -126,17 +124,6 @@
     "FallarborTown_PokemonCenter_2F",
     "FallarborTown_CozmosHouse",
     "FallarborTown_MoveRelearnersHouse"
-  ],
-  "gMapGroup_IndoorVerdanturf": [
-    "VerdanturfTown_BattleTentLobby",
-    "VerdanturfTown_BattleTentCorridor",
-    "VerdanturfTown_BattleTentBattleRoom",
-    "VerdanturfTown_Mart",
-    "VerdanturfTown_PokemonCenter_1F",
-    "VerdanturfTown_PokemonCenter_2F",
-    "VerdanturfTown_WandasHouse",
-    "VerdanturfTown_FriendshipRatersHouse",
-    "VerdanturfTown_House"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
