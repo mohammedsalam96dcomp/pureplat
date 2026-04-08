@@ -5,7 +5,6 @@
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
     "gMapGroup_IndoorLavaridge",
-    "gMapGroup_IndoorFallarbor",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
@@ -41,7 +40,6 @@
     "OldaleTown",
     "DewfordTown",
     "LavaridgeTown",
-    "FallarborTown",
     "Route101",
     "Route102",
     "Route103",
@@ -114,16 +112,6 @@
     "LavaridgeTown_Mart",
     "LavaridgeTown_PokemonCenter_1F",
     "LavaridgeTown_PokemonCenter_2F"
-  ],
-  "gMapGroup_IndoorFallarbor": [
-    "FallarborTown_Mart",
-    "FallarborTown_BattleTentLobby",
-    "FallarborTown_BattleTentCorridor",
-    "FallarborTown_BattleTentBattleRoom",
-    "FallarborTown_PokemonCenter_1F",
-    "FallarborTown_PokemonCenter_2F",
-    "FallarborTown_CozmosHouse",
-    "FallarborTown_MoveRelearnersHouse"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",

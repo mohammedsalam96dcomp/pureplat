@@ -90,17 +90,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_FALLARBOR_TOWN",
-      "name": "FallarborTown_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
-      "border_filepath": "data/layouts/FallarborTown/border.bin",
-      "blockdata_filepath": "data/layouts/FallarborTown/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_ROUTE101",
       "name": "Route101_Layout",
       "width": 20,
@@ -703,28 +692,6 @@
       "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/border.bin",
       "blockdata_filepath": "data/layouts/LavaridgeTown_PokemonCenter_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_FALLARBOR_TOWN_LEFTOVER_RSCONTEST_LOBBY",
-      "name": "FallarborTown_LeftoverRSContestLobby_Layout",
-      "width": 15,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Contest",
-      "border_filepath": "data/layouts/FallarborTown_LeftoverRSContestLobby/border.bin",
-      "blockdata_filepath": "data/layouts/FallarborTown_LeftoverRSContestLobby/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_FALLARBOR_TOWN_LEFTOVER_RSCONTEST_HALL",
-      "name": "FallarborTown_LeftoverRSContestHall_Layout",
-      "width": 21,
-      "height": 18,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Contest",
-      "border_filepath": "data/layouts/FallarborTown_LeftoverRSContestHall/border.bin",
-      "blockdata_filepath": "data/layouts/FallarborTown_LeftoverRSContestHall/map.bin",
       "layout_version": "emerald"
     },
     {

@@ -71,127 +71,127 @@ SlateportCity_BattleTentBattleRoom_EventScript_SetUpObjects::
 # 36 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	setvar VAR_TEMP_1, 1
 # 37 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	hideobjectat LOCALID_PLAYER, MAP_FALLARBOR_TOWN_BATTLE_TENT_BATTLE_ROOM
-# 38 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	hideobjectat LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT, MAP_SLATEPORT_CITY_BATTLE_TENT_BATTLE_ROOM
-# 39 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 38 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	end
+# 39 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+
 # 40 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-
-# 41 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 SlateportCity_BattleTentBattleRoom_OnFrame:
-# 42 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 41 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	map_script_2 VAR_TEMP_0, 0, SlateportCity_BattleTentBattleRoom_EventScript_EnterRoom
-# 43 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 42 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	.2byte 0
+# 43 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+
 # 44 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-
-# 45 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 SlateportCity_BattleTentBattleRoom_EventScript_EnterRoom::
-# 46 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 45 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	applymovement LOCALID_SLATEPORT_TENT_BATTLE_PLAYER, SlateportCity_BattleTentBattleRoom_Movement_PlayerEnter
+# 46 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+	waitmovement 0
 # 47 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	waitmovement 0
-# 48 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	factory_setopponentgfx
-# 49 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 48 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	setobjectxyperm LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT, 5, 1
-# 50 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 49 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	removeobject LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT
-# 51 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 50 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	delay 1
-# 52 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 51 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	addobject LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT
-# 53 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 52 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	applymovement LOCALID_SLATEPORT_TENT_BATTLE_OPPONENT, SlateportCity_BattleTentBattleRoom_Movement_OpponentEnter
-# 54 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 53 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	waitmovement 0
-# 55 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 54 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	battletent_getopponentintro
-# 56 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 55 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	lockall
-# 57 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 56 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	msgbox gStringVar4, MSGBOX_DEFAULT
-# 58 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 57 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	waitmessage
-# 59 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 58 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	closemessage
-# 60 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 59 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	special HealPlayerParty
-# 61 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 60 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	dofacilitytrainerbattle FACILITY_BATTLE_FACTORY
+# 61 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+	waitstate
 # 62 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	waitstate
+	switch VAR_RESULT
 # 63 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	switch VAR_RESULT
-# 64 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	case 1, SlateportCity_BattleTentBattleRoom_EventScript_DefeatedOpponent
-# 65 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 64 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 SlateportCity_BattleTent_EventScript_WarpToLobbyLost::
-# 66 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 65 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_LOST
+# 66 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+	special LoadPlayerParty
 # 67 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	special LoadPlayerParty
+	warp MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY, 6, 6
 # 68 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	warp MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY, 6, 6
+	waitstate
 # 69 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	waitstate
+@ forced stop
 # 70 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-@ forced stop
+
 # 71 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-
-# 72 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 SlateportCity_BattleTentBattleRoom_EventScript_DefeatedOpponent::
-# 73 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 72 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	frontier_get FRONTIER_DATA_BATTLE_NUM
-# 74 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 73 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	addvar VAR_RESULT, 1
-# 75 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 74 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	frontier_set FRONTIER_DATA_BATTLE_NUM, VAR_RESULT
-# 76 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 75 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	switch VAR_RESULT
-# 77 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 76 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	case 3, SlateportCity_BattleTentBattleRoom_EventScript_WarpToLobbyWon
-# 78 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 77 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	setvar VAR_0x8006, 1
-# 79 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 78 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	warp MAP_SLATEPORT_CITY_BATTLE_TENT_CORRIDOR, 2, 3
+# 79 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+	waitstate
 # 80 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	waitstate
+@ forced stop
 # 81 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-@ forced stop
+
 # 82 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-
-# 83 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 SlateportCity_BattleTentBattleRoom_EventScript_WarpToLobbyWon::
-# 84 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 83 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	frontier_set FRONTIER_DATA_CHALLENGE_STATUS, CHALLENGE_STATUS_WON
-# 85 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 84 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	special LoadPlayerParty
-# 86 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 85 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	warp MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY, 6, 6
-# 87 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 86 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	waitstate
-# 88 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 87 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 @ forced stop
-# 89 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 88 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 
-# 90 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 89 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 SlateportCity_BattleTentBattleRoom_Movement_PlayerEnter:
+# 90 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+	walk_up
 # 91 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	walk_up
 # 92 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	walk_up
 # 93 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	walk_up
-# 94 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	walk_in_place_faster_right
-# 95 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 94 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	step_end
-# 96 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 95 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 
-# 97 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 96 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 SlateportCity_BattleTentBattleRoom_Movement_OpponentEnter:
+# 97 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+	walk_down
 # 98 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	walk_down
 # 99 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
@@ -199,8 +199,6 @@ SlateportCity_BattleTentBattleRoom_Movement_OpponentEnter:
 # 100 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	walk_down
 # 101 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
-	walk_down
-# 102 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	walk_in_place_faster_left
-# 103 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
+# 102 "data/maps/SlateportCity_BattleTentBattleRoom/scripts.pory"
 	step_end
