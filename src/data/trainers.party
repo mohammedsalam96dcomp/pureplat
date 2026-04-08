@@ -84,7 +84,7 @@ Double Battle: No
 === TRAINER_BARRY_ROUTE_201_TURTWIG ===
 Name: BARRY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Double Battle: No
@@ -97,7 +97,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BARRY_ROUTE_201_CHIMCHAR ===
 Name: BARRY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Double Battle: No
@@ -110,7 +110,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_BARRY_ROUTE_201_PIPLUP ===
 Name: BARRY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Double Battle: No
@@ -9450,7 +9450,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_WALLY_VR_1 ===
 Name: WALLY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12031,7 +12031,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_WALLY_MAUVILLE ===
 Name: WALLY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Double Battle: No
@@ -12044,7 +12044,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12094,7 +12094,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_WALLY_VR_3 ===
 Name: WALLY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12144,7 +12144,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_WALLY_VR_4 ===
 Name: WALLY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore
@@ -12194,7 +12194,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 === TRAINER_WALLY_VR_5 ===
 Name: WALLY
 Class: Rival
-Pic: Wally
+Pic: Barry
 Gender: Male
 Music: Male
 Items: Full Restore / Full Restore

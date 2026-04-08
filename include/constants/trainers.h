@@ -87,7 +87,7 @@ enum __attribute__((packed)) TrainerPicID
     TRAINER_PIC_FRONT_TWINS,
     TRAINER_PIC_FRONT_SAILOR,
     TRAINER_PIC_FRONT_MAGMA_ADMIN,
-    TRAINER_PIC_FRONT_WALLY,
+    TRAINER_PIC_FRONT_BARRY,
     TRAINER_PIC_FRONT_BRENDAN,
     TRAINER_PIC_FRONT_MAY,
     TRAINER_PIC_FRONT_BUG_CATCHER,
@@ -249,7 +249,7 @@ enum __attribute__((packed)) TrainerPicID
 #define FACILITY_CLASS_SWIMMER_F             0x38
 #define FACILITY_CLASS_TWINS                 0x39
 #define FACILITY_CLASS_SAILOR                0x3a
-#define FACILITY_CLASS_WALLY                 0x3b
+#define FACILITY_CLASS_BARRY                 0x3b
 #define FACILITY_CLASS_BRENDAN               0x3c
 #define FACILITY_CLASS_BRENDAN_2             0x3d
 #define FACILITY_CLASS_BRENDAN_3             0x3e
