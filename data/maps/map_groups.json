@@ -66,10 +66,6 @@
     "LilycoveCity_DepartmentStoreElevator"
   ],
   "gMapGroup_Dungeons": [
-    "MeteorFalls_1F_1R",
-    "MeteorFalls_1F_2R",
-    "MeteorFalls_B1F_1R",
-    "MeteorFalls_B1F_2R",
     "RusturfTunnel",
     "DesertRuins",
     "GraniteCave_1F",
@@ -158,8 +154,7 @@
     "MarineCave_End",
     "TerraCave_Entrance",
     "TerraCave_End",
-    "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "AlteringCave"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
