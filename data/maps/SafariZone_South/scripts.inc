@@ -185,117 +185,116 @@ SafariZone_South_EventScript_Exit::
 # 93 "data/maps/SafariZone_South/scripts.pory"
 	special ExitSafariMode
 # 94 "data/maps/SafariZone_South/scripts.pory"
-# 95 "data/maps/SafariZone_South/scripts.pory"
 	waitstate
+# 95 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 96 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 97 "data/maps/SafariZone_South/scripts.pory"
-
-# 98 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_Movement_PlayerExitNorth:
-# 99 "data/maps/SafariZone_South/scripts.pory"
+# 98 "data/maps/SafariZone_South/scripts.pory"
 	walk_up
+# 99 "data/maps/SafariZone_South/scripts.pory"
+	step_end
 # 100 "data/maps/SafariZone_South/scripts.pory"
-	step_end
+
 # 101 "data/maps/SafariZone_South/scripts.pory"
-
-# 102 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_Movement_PlayerExitEast:
-# 103 "data/maps/SafariZone_South/scripts.pory"
+# 102 "data/maps/SafariZone_South/scripts.pory"
 	walk_right
+# 103 "data/maps/SafariZone_South/scripts.pory"
+	walk_in_place_faster_up
 # 104 "data/maps/SafariZone_South/scripts.pory"
-	walk_in_place_faster_up
+	step_end
 # 105 "data/maps/SafariZone_South/scripts.pory"
-	step_end
+
 # 106 "data/maps/SafariZone_South/scripts.pory"
-
-# 107 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_Movement_MoveExitAttendantNorth:
-# 108 "data/maps/SafariZone_South/scripts.pory"
+# 107 "data/maps/SafariZone_South/scripts.pory"
 	walk_left
-# 109 "data/maps/SafariZone_South/scripts.pory"
+# 108 "data/maps/SafariZone_South/scripts.pory"
 	walk_in_place_faster_right
+# 109 "data/maps/SafariZone_South/scripts.pory"
+	step_end
 # 110 "data/maps/SafariZone_South/scripts.pory"
-	step_end
+
 # 111 "data/maps/SafariZone_South/scripts.pory"
-
-# 112 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_Movement_MoveExitAttendantEast:
-# 113 "data/maps/SafariZone_South/scripts.pory"
+# 112 "data/maps/SafariZone_South/scripts.pory"
 	walk_down
-# 114 "data/maps/SafariZone_South/scripts.pory"
+# 113 "data/maps/SafariZone_South/scripts.pory"
 	walk_in_place_faster_up
-# 115 "data/maps/SafariZone_South/scripts.pory"
+# 114 "data/maps/SafariZone_South/scripts.pory"
 	step_end
+# 115 "data/maps/SafariZone_South/scripts.pory"
+
 # 116 "data/maps/SafariZone_South/scripts.pory"
-
-# 117 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_EventScript_ConstructionWorker1::
-# 118 "data/maps/SafariZone_South/scripts.pory"
+# 117 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_South_Text_AreaOffLimits1, MSGBOX_NPC
+# 118 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 119 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 120 "data/maps/SafariZone_South/scripts.pory"
-
-# 121 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Southeast_EventScript_ExpansionZoneAttendant::
-# 122 "data/maps/SafariZone_South/scripts.pory"
+# 121 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_Southeast_Text_ExpansionIsFinished, MSGBOX_NPC
+# 122 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 123 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 124 "data/maps/SafariZone_South/scripts.pory"
-
-# 125 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_South_EventScript_ConstructionWorker2::
-# 126 "data/maps/SafariZone_South/scripts.pory"
+# 125 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_South_Text_AreaOffLimits2, MSGBOX_NPC
+# 126 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 127 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 128 "data/maps/SafariZone_South/scripts.pory"
-
-# 129 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Southeast_EventScript_LittleGirl::
-# 130 "data/maps/SafariZone_South/scripts.pory"
+# 129 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_Southeast_Text_LittleGirl, MSGBOX_NPC
+# 130 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 131 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 132 "data/maps/SafariZone_South/scripts.pory"
-
-# 133 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Southeast_EventScript_FatMan::
-# 134 "data/maps/SafariZone_South/scripts.pory"
+# 133 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_Southeast_Text_FatMan, MSGBOX_NPC
+# 134 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 135 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 136 "data/maps/SafariZone_South/scripts.pory"
-
-# 137 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Southeast_EventScript_RichBoy::
-# 138 "data/maps/SafariZone_South/scripts.pory"
+# 137 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_Southeast_Text_RichBoy, MSGBOX_NPC
+# 138 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 139 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 140 "data/maps/SafariZone_South/scripts.pory"
-
-# 141 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Northeast_EventScript_Boy::
-# 142 "data/maps/SafariZone_South/scripts.pory"
+# 141 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_Northeast_Text_Boy, MSGBOX_NPC
+# 142 "data/maps/SafariZone_South/scripts.pory"
+	end
 # 143 "data/maps/SafariZone_South/scripts.pory"
-	end
+
 # 144 "data/maps/SafariZone_South/scripts.pory"
-
-# 145 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Northeast_EventScript_Woman::
-# 146 "data/maps/SafariZone_South/scripts.pory"
+# 145 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_Northeast_Text_Woman, MSGBOX_NPC
-# 147 "data/maps/SafariZone_South/scripts.pory"
+# 146 "data/maps/SafariZone_South/scripts.pory"
 	end
-# 148 "data/maps/SafariZone_South/scripts.pory"
+# 147 "data/maps/SafariZone_South/scripts.pory"
 
-# 149 "data/maps/SafariZone_South/scripts.pory"
+# 148 "data/maps/SafariZone_South/scripts.pory"
 SafariZone_Northeast_EventScript_Girl::
-# 150 "data/maps/SafariZone_South/scripts.pory"
+# 149 "data/maps/SafariZone_South/scripts.pory"
 	msgbox SafariZone_Northeast_Text_Girl, MSGBOX_NPC
-# 151 "data/maps/SafariZone_South/scripts.pory"
+# 150 "data/maps/SafariZone_South/scripts.pory"
 	end

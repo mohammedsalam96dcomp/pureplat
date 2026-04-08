@@ -2,10 +2,8 @@
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
-    "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorLilycove",
-    "gMapGroup_IndoorEverGrande",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
@@ -17,9 +15,7 @@
   "gMapGroup_TownsAndRoutes": [
     "SlateportCity",
     "LilycoveCity",
-    "EverGrandeCity",
-    "LittlerootTown",
-    "OldaleTown"
+    "LittlerootTown"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -27,13 +23,6 @@
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
     "LittlerootTown_ProfessorBirchsLab"
-  ],
-  "gMapGroup_IndoorOldale": [
-    "OldaleTown_House1",
-    "OldaleTown_House2",
-    "OldaleTown_PokemonCenter_1F",
-    "OldaleTown_PokemonCenter_2F",
-    "OldaleTown_Mart"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -75,23 +64,6 @@
     "LilycoveCity_DepartmentStore_5F",
     "LilycoveCity_DepartmentStoreRooftop",
     "LilycoveCity_DepartmentStoreElevator"
-  ],
-  "gMapGroup_IndoorEverGrande": [
-    "EverGrandeCity_SidneysRoom",
-    "EverGrandeCity_PhoebesRoom",
-    "EverGrandeCity_GlaciasRoom",
-    "EverGrandeCity_DrakesRoom",
-    "EverGrandeCity_ChampionsRoom",
-    "EverGrandeCity_Hall1",
-    "EverGrandeCity_Hall2",
-    "EverGrandeCity_Hall3",
-    "EverGrandeCity_Hall4",
-    "EverGrandeCity_Hall5",
-    "EverGrandeCity_PokemonLeague_1F",
-    "EverGrandeCity_HallOfFame",
-    "EverGrandeCity_PokemonCenter_1F",
-    "EverGrandeCity_PokemonCenter_2F",
-    "EverGrandeCity_PokemonLeague_2F"
   ],
   "gMapGroup_Dungeons": [
     "MeteorFalls_1F_1R",
