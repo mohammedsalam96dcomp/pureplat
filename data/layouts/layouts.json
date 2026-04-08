@@ -79,17 +79,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY",
-      "name": "SootopolisCity_Layout",
-      "width": 60,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Sootopolis",
-      "border_filepath": "data/layouts/SootopolisCity/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY",
       "name": "EverGrandeCity_Layout",
       "width": 40,
@@ -1190,28 +1179,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_GYM_1F",
-      "name": "SootopolisCity_Gym_1F_Layout",
-      "width": 17,
-      "height": 26,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
-      "border_filepath": "data/layouts/SootopolisCity_Gym_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_Gym_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_GYM_B1F",
-      "name": "SootopolisCity_Gym_B1F_Layout",
-      "width": 17,
-      "height": 26,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
-      "border_filepath": "data/layouts/SootopolisCity_Gym_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY_SIDNEYS_ROOM",
       "name": "EverGrandeCity_SidneysRoom_Layout",
       "width": 13,
@@ -1418,17 +1385,6 @@
       "secondary_tileset": "gTileset_RusturfTunnel",
       "border_filepath": "data/layouts/RusturfTunnel/border.bin",
       "blockdata_filepath": "data/layouts/RusturfTunnel/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_SOOTOPOLIS_CITY",
-      "name": "Underwater_SootopolisCity_Layout",
-      "width": 20,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_SootopolisCity/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_SootopolisCity/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -1715,72 +1671,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SeafloorCavern_Room9/border.bin",
       "blockdata_filepath": "data/layouts/SeafloorCavern_Room9/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_ENTRANCE",
-      "name": "CaveOfOrigin_Entrance_Layout",
-      "width": 19,
-      "height": 26,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_Entrance/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_Entrance/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_1F",
-      "name": "CaveOfOrigin_1F_Layout",
-      "width": 23,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_1F/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP1",
-      "name": "CaveOfOrigin_UnusedRubySapphireMap1_Layout",
-      "width": 23,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap1/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap1/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP2",
-      "name": "CaveOfOrigin_UnusedRubySapphireMap2_Layout",
-      "width": 21,
-      "height": 21,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap2/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap2/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_RUBY_SAPPHIRE_MAP3",
-      "name": "CaveOfOrigin_UnusedRubySapphireMap3_Layout",
-      "width": 19,
-      "height": 21,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap3/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_UnusedRubySapphireMap3/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_B1F",
-      "name": "CaveOfOrigin_B1F_Layout",
-      "width": 19,
-      "height": 19,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_B1F/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -3225,17 +3115,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE",
-      "name": "SootopolisCity_LotadAndSeedotHouse_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_LotadAndSeedotHouse/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY_HALL_OF_FAME",
       "name": "EverGrandeCity_HallOfFame_Layout",
       "width": 15,
@@ -3335,39 +3214,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE1",
-      "name": "SootopolisCity_House1_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House1/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House1/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE2",
-      "name": "SootopolisCity_House2_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House2/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House2/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_HOUSE3",
-      "name": "SootopolisCity_House3_Layout",
-      "width": 8,
-      "height": 7,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/SootopolisCity_House3/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_House3/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS",
       "name": "AbandonedShip_HiddenFloorRooms_Layout",
       "width": 44,
@@ -3387,17 +3233,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/ScorchedSlab/border.bin",
       "blockdata_filepath": "data/layouts/ScorchedSlab/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_CAVE_OF_ORIGIN_UNUSED_B4F_LAVA",
-      "name": "CaveOfOrigin_Unused_B4F_Lava_Layout",
-      "width": 19,
-      "height": 19,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/CaveOfOrigin_Unused_B4F_Lava/border.bin",
-      "blockdata_filepath": "data/layouts/CaveOfOrigin_Unused_B4F_Lava/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -3882,17 +3717,6 @@
       "secondary_tileset": "gTileset_BattleArena",
       "border_filepath": "data/layouts/BattleFrontier_BattleArenaBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleArenaBattleRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_LEGENDS_BATTLE",
-      "name": "SootopolisCity_LegendsBattle_Layout",
-      "width": 60,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Sootopolis",
-      "border_filepath": "data/layouts/SootopolisCity_LegendsBattle/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_LegendsBattle/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -4784,39 +4608,6 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/SkyPillar_Top_Clean/border.bin",
       "blockdata_filepath": "data/layouts/SkyPillar_Top_Clean/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F",
-      "name": "SootopolisCity_MysteryEventsHouse_1F_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F",
-      "name": "SootopolisCity_MysteryEventsHouse_B1F_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_B1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F_STAIRS_UNBLOCKED",
-      "name": "SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MysteryEventsHouse",
-      "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
-      "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin",
       "layout_version": "emerald"
     },
     {
