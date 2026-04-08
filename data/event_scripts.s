@@ -124,8 +124,6 @@ gStdScripts::
 	.4byte Std_ReceivedItem            @ STD_RECEIVED_ITEM
 gStdScripts_End::
 
-
-	.include "data/maps/PetalburgCity/scripts.inc"
 	.include "data/maps/SlateportCity/scripts.inc"
 	.include "data/maps/MauvilleCity/scripts.inc"
 	.include "data/maps/RustboroCity/scripts.inc"
@@ -227,13 +225,6 @@ gStdScripts_End::
 	.include "data/maps/PacifidlogTown_House3/scripts.inc"
 	.include "data/maps/PacifidlogTown_House4/scripts.inc"
 	.include "data/maps/PacifidlogTown_House5/scripts.inc"
-	.include "data/maps/PetalburgCity_WallysHouse/scripts.inc"
-	.include "data/maps/PetalburgCity_Gym/scripts.inc"
-	.include "data/maps/PetalburgCity_House1/scripts.inc"
-	.include "data/maps/PetalburgCity_House2/scripts.inc"
-	.include "data/maps/PetalburgCity_PokemonCenter_1F/scripts.inc"
-	.include "data/maps/PetalburgCity_PokemonCenter_2F/scripts.inc"
-	.include "data/maps/PetalburgCity_Mart/scripts.inc"
 	.include "data/maps/SlateportCity_SternsShipyard_1F/scripts.inc"
 	.include "data/maps/SlateportCity_SternsShipyard_2F/scripts.inc"
 	.include "data/maps/SlateportCity_BattleTentLobby/scripts.inc"
@@ -343,7 +334,6 @@ gStdScripts_End::
 	.include "data/maps/GraniteCave_B1F/scripts.inc"
 	.include "data/maps/GraniteCave_B2F/scripts.inc"
 	.include "data/maps/GraniteCave_StevensRoom/scripts.inc"
-	.include "data/maps/PetalburgWoods/scripts.inc"
 	.include "data/maps/MtChimney/scripts.inc"
 	.include "data/maps/JaggedPass/scripts.inc"
 	.include "data/maps/FieryPath/scripts.inc"

@@ -2,17 +2,6 @@
   "layouts_table_label": "gMapLayouts",
   "layouts": [
     {
-      "id": "LAYOUT_PETALBURG_CITY",
-      "name": "PetalburgCity_Layout",
-      "width": 30,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/PetalburgCity/border.bin",
-      "blockdata_filepath": "data/layouts/PetalburgCity/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_SLATEPORT_CITY",
       "name": "SlateportCity_Layout",
       "width": 40,
@@ -838,17 +827,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_PETALBURG_CITY_GYM",
-      "name": "PetalburgCity_Gym_Layout",
-      "width": 9,
-      "height": 112,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PetalburgGym",
-      "border_filepath": "data/layouts/PetalburgCity_Gym/border.bin",
-      "blockdata_filepath": "data/layouts/PetalburgCity_Gym/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_HOUSE_WITH_BED",
       "name": "HouseWithBed_Layout",
       "width": 10,
@@ -1407,17 +1385,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/GraniteCave_B2F/border.bin",
       "blockdata_filepath": "data/layouts/GraniteCave_B2F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_PETALBURG_WOODS",
-      "name": "PetalburgWoods_Layout",
-      "width": 48,
-      "height": 44,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
-      "border_filepath": "data/layouts/PetalburgWoods/border.bin",
-      "blockdata_filepath": "data/layouts/PetalburgWoods/map.bin",
       "layout_version": "emerald"
     },
     {
