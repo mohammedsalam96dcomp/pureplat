@@ -68,17 +68,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_MOSSDEEP_CITY",
-      "name": "MossdeepCity_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Mossdeep",
-      "border_filepath": "data/layouts/MossdeepCity/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_EVER_GRANDE_CITY",
       "name": "EverGrandeCity_Layout",
       "width": 40,
@@ -1165,17 +1154,6 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/LilycoveCity_PokemonTrainerFanClub/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_PokemonTrainerFanClub/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MOSSDEEP_CITY_GYM",
-      "name": "MossdeepCity_Gym_Layout",
-      "width": 26,
-      "height": 36,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MossdeepGym",
-      "border_filepath": "data/layouts/MossdeepCity_Gym/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_Gym/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -2895,28 +2873,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_MOSSDEEP_CITY_SPACE_CENTER_1F",
-      "name": "MossdeepCity_SpaceCenter_1F_Layout",
-      "width": 16,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_1F/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MOSSDEEP_CITY_SPACE_CENTER_2F",
-      "name": "MossdeepCity_SpaceCenter_2F_Layout",
-      "width": 16,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_SpaceCenter_2F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_SS_TIDAL_CORRIDOR",
       "name": "SSTidalCorridor_Layout",
       "width": 18,
@@ -3192,28 +3148,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_MOSSDEEP_CITY_GAME_CORNER_1F",
-      "name": "MossdeepCity_GameCorner_1F_Layout",
-      "width": 12,
-      "height": 10,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_MossdeepGameCorner",
-      "border_filepath": "data/layouts/MossdeepCity_GameCorner_1F/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_GameCorner_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MOSSDEEP_CITY_GAME_CORNER_B1F",
-      "name": "MossdeepCity_GameCorner_B1F_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/MossdeepCity_GameCorner_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_GameCorner_B1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_ABANDONED_SHIP_HIDDEN_FLOOR_ROOMS",
       "name": "AbandonedShip_HiddenFloorRooms_Layout",
       "width": 44,
@@ -3387,17 +3321,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SeafloorCavern_Room9_Lava/border.bin",
       "blockdata_filepath": "data/layouts/SeafloorCavern_Room9_Lava/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MOSSDEEP_CITY_STEVENS_HOUSE",
-      "name": "MossdeepCity_StevensHouse_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_GenericBuilding",
-      "border_filepath": "data/layouts/MossdeepCity_StevensHouse/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_StevensHouse/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -4788,32 +4711,6 @@
       "secondary_tileset": "gTileset_PewterCity",
       "border_filepath": "data/layouts/RS_BattleTower_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/RS_BattleTower_Frlg/map.bin",
-      "border_height": 2,
-      "border_width": 2,
-      "layout_version": "frlg"
-    },
-    {
-      "id": "LAYOUT_MOSSDEEP_CITY_EREADER_TRAINER_HOUSE_1F",
-      "name": "MossdeepCity_EReaderTrainerHouse_1F_Layout",
-      "width": 11,
-      "height": 8,
-      "primary_tileset": "gTileset_BuildingFrlg",
-      "secondary_tileset": "gTileset_HoennBuilding",
-      "border_filepath": "data/layouts/MossdeepCity_EReaderTrainerHouse_1F_Frlg/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_EReaderTrainerHouse_1F_Frlg/map.bin",
-      "border_height": 2,
-      "border_width": 2,
-      "layout_version": "frlg"
-    },
-    {
-      "id": "LAYOUT_MOSSDEEP_CITY_EREADER_TRAINER_HOUSE_2F",
-      "name": "MossdeepCity_EReaderTrainerHouse_2F_Layout",
-      "width": 12,
-      "height": 9,
-      "primary_tileset": "gTileset_BuildingFrlg",
-      "secondary_tileset": "gTileset_HoennBuilding",
-      "border_filepath": "data/layouts/MossdeepCity_EReaderTrainerHouse_2F_Frlg/border.bin",
-      "blockdata_filepath": "data/layouts/MossdeepCity_EReaderTrainerHouse_2F_Frlg/map.bin",
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"

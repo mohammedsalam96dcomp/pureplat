@@ -14,7 +14,6 @@
     "gMapGroup_IndoorRustboro",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
-    "gMapGroup_IndoorMossdeep",
     "gMapGroup_IndoorEverGrande",
     "gMapGroup_IndoorRoute104",
     "gMapGroup_IndoorRoute111",
@@ -45,7 +44,6 @@
     "RustboroCity",
     "FortreeCity",
     "LilycoveCity",
-    "MossdeepCity",
     "EverGrandeCity",
     "LittlerootTown",
     "OldaleTown",
@@ -247,21 +245,6 @@
     "LilycoveCity_DepartmentStore_5F",
     "LilycoveCity_DepartmentStoreRooftop",
     "LilycoveCity_DepartmentStoreElevator"
-  ],
-  "gMapGroup_IndoorMossdeep": [
-    "MossdeepCity_Gym",
-    "MossdeepCity_House1",
-    "MossdeepCity_House2",
-    "MossdeepCity_PokemonCenter_1F",
-    "MossdeepCity_PokemonCenter_2F",
-    "MossdeepCity_Mart",
-    "MossdeepCity_House3",
-    "MossdeepCity_StevensHouse",
-    "MossdeepCity_House4",
-    "MossdeepCity_SpaceCenter_1F",
-    "MossdeepCity_SpaceCenter_2F",
-    "MossdeepCity_GameCorner_1F",
-    "MossdeepCity_GameCorner_B1F"
   ],
   "gMapGroup_IndoorEverGrande": [
     "EverGrandeCity_SidneysRoom",
