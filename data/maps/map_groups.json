@@ -12,19 +12,6 @@
   "gMapGroup_TownsAndRoutes": [
   ],
   "gMapGroup_Dungeons": [
-    "Underwater_SealedChamber",
-    "SealedChamber_OuterRoom",
-    "SealedChamber_InnerRoom",
-    "ScorchedSlab",
-    "DesertUnderpass",
-    "ArtisanCave_B1F",
-    "ArtisanCave_1F",
-    "Underwater_MarineCave",
-    "MarineCave_Entrance",
-    "MarineCave_End",
-    "TerraCave_Entrance",
-    "TerraCave_End",
-    "AlteringCave"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -849,28 +849,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_UNDERWATER_SEALED_CHAMBER",
-      "name": "Underwater_SealedChamber_Layout",
-      "width": 22,
-      "height": 48,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_SealedChamber/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_SealedChamber/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SEALED_CHAMBER_OUTER_ROOM",
-      "name": "SealedChamber_OuterRoom_Layout",
-      "width": 21,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/SealedChamber_OuterRoom/border.bin",
-      "blockdata_filepath": "data/layouts/SealedChamber_OuterRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_SOUTHERN_ISLAND_EXTERIOR",
       "name": "SouthernIsland_Exterior_Layout",
       "width": 33,
@@ -890,28 +868,6 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SouthernIsland_Interior/border.bin",
       "blockdata_filepath": "data/layouts/SouthernIsland_Interior/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SEALED_CHAMBER_INNER_ROOM",
-      "name": "SealedChamber_InnerRoom_Layout",
-      "width": 21,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/SealedChamber_InnerRoom/border.bin",
-      "blockdata_filepath": "data/layouts/SealedChamber_InnerRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SCORCHED_SLAB",
-      "name": "ScorchedSlab_Layout",
-      "width": 15,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ScorchedSlab/border.bin",
-      "blockdata_filepath": "data/layouts/ScorchedSlab/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -1399,17 +1355,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_DESERT_UNDERPASS",
-      "name": "DesertUnderpass_Layout",
-      "width": 139,
-      "height": 23,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/DesertUnderpass/border.bin",
-      "blockdata_filepath": "data/layouts/DesertUnderpass/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_BATTLE_FRONTIER_BATTLE_TOWER_MULTI_PARTNER_ROOM",
       "name": "BattleFrontier_BattleTowerMultiPartnerRoom_Layout",
       "width": 21,
@@ -1509,28 +1454,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_ARTISAN_CAVE_B1F",
-      "name": "ArtisanCave_B1F_Layout",
-      "width": 46,
-      "height": 54,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ArtisanCave_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/ArtisanCave_B1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ARTISAN_CAVE_1F",
-      "name": "ArtisanCave_1F_Layout",
-      "width": 21,
-      "height": 22,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ArtisanCave_1F/border.bin",
-      "blockdata_filepath": "data/layouts/ArtisanCave_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_FARAWAY_ISLAND_ENTRANCE",
       "name": "FarawayIsland_Entrance_Layout",
       "width": 34,
@@ -1572,61 +1495,6 @@
       "secondary_tileset": "gTileset_IslandHarbor",
       "border_filepath": "data/layouts/IslandHarbor/border.bin",
       "blockdata_filepath": "data/layouts/IslandHarbor/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_MARINE_CAVE",
-      "name": "Underwater_MarineCave_Layout",
-      "width": 20,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_MarineCave/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_MarineCave/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MARINE_CAVE_ENTRANCE",
-      "name": "MarineCave_Entrance_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/MarineCave_Entrance/border.bin",
-      "blockdata_filepath": "data/layouts/MarineCave_Entrance/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_TERRA_CAVE_ENTRANCE",
-      "name": "TerraCave_Entrance_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/TerraCave_Entrance/border.bin",
-      "blockdata_filepath": "data/layouts/TerraCave_Entrance/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_TERRA_CAVE_END",
-      "name": "TerraCave_End_Layout",
-      "width": 27,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/TerraCave_End/border.bin",
-      "blockdata_filepath": "data/layouts/TerraCave_End/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MARINE_CAVE_END",
-      "name": "MarineCave_End_Layout",
-      "width": 27,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/MarineCave_End/border.bin",
-      "blockdata_filepath": "data/layouts/MarineCave_End/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -1693,17 +1561,6 @@
       "secondary_tileset": "gTileset_TrainerHill",
       "border_filepath": "data/layouts/TrainerHill_Roof/border.bin",
       "blockdata_filepath": "data/layouts/TrainerHill_Roof/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ALTERING_CAVE",
-      "name": "AlteringCave_Layout",
-      "width": 32,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/AlteringCave/border.bin",
-      "blockdata_filepath": "data/layouts/AlteringCave/map.bin",
       "layout_version": "emerald"
     },
     {
