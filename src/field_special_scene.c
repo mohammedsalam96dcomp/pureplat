@@ -56,17 +56,17 @@ static const u8 sSSTidalSailWestMovementScript[] =
     MOVEMENT_ACTION_STEP_END
 };
 
-static void Task_Truck3(u8);
+// static void Task_Truck3(u8);
 
-static s16 GetTruckCameraBobbingY(int time)
-{
-    if (!(time % 120))
-        return -1;
-    else if ((time % 10) <= 4)
-        return 1;
+// static s16 GetTruckCameraBobbingY(int time)
+// {
+//     if (!(time % 120))
+//         return -1;
+//     else if ((time % 10) <= 4)
+//         return 1;
 
-    return 0;
-}
+//     return 0;
+// }
 
 // Determines the frequency that the truck boxes bounce at.
 // The return value of this function is multiplied and added
@@ -76,13 +76,13 @@ static s16 GetTruckCameraBobbingY(int time)
 // Box 1 has 30 added to the time so it jumps earlier, and
 // box 2 has the return value multiplied by less, so it doesn't
 // jump as high.
-static s16 GetTruckBoxYMovement(int time)
-{
-    if (!((time + 120) % 180))
-        return -1;
+// static s16 GetTruckBoxYMovement(int time)
+// {
+//     if (!((time + 120) % 180))
+//         return -1;
 
-    return 0;
-}
+//     return 0;
+// }
 
 #define tTimer data[0]
 
@@ -149,8 +149,8 @@ static void Task_Truck2(u8 taskId)
     // }
 }
 
-static void Task_Truck3(u8 taskId)
-{
+// static void Task_Truck3(u8 taskId)
+// {
 //    s16 *data = gTasks[taskId].data;
 //    s16 cameraXpan, cameraYpan;
 
@@ -175,7 +175,7 @@ static void Task_Truck3(u8 taskId)
 //        SetObjectEventSpritePosByLocalIdAndMap(LOCALID_TRUCK_BOX_BOTTOM_L, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, BOX2_X_OFFSET - cameraXpan, BOX2_Y_OFFSET + cameraYpan);
 //        SetObjectEventSpritePosByLocalIdAndMap(LOCALID_TRUCK_BOX_BOTTOM_R, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup, BOX3_X_OFFSET - cameraXpan, BOX3_Y_OFFSET + cameraYpan);
 //    }
-}
+// }
 
 #undef tTimerHorizontal
 #undef tMoveStep
