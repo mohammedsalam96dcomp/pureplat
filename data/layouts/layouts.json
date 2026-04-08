@@ -145,28 +145,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_DESERT_RUINS",
-      "name": "DesertRuins_Layout",
-      "width": 17,
-      "height": 33,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/DesertRuins/border.bin",
-      "blockdata_filepath": "data/layouts/DesertRuins/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_CHIMNEY",
-      "name": "MtChimney_Layout",
-      "width": 40,
-      "height": 47,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MtChimney/border.bin",
-      "blockdata_filepath": "data/layouts/MtChimney/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_UNUSED_CAVE1",
       "name": "UnusedCave1_Layout",
       "width": 1,
@@ -871,28 +849,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_ISLAND_CAVE",
-      "name": "IslandCave_Layout",
-      "width": 17,
-      "height": 33,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/IslandCave/border.bin",
-      "blockdata_filepath": "data/layouts/IslandCave/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ANCIENT_TOMB",
-      "name": "AncientTomb_Layout",
-      "width": 17,
-      "height": 33,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/AncientTomb/border.bin",
-      "blockdata_filepath": "data/layouts/AncientTomb/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_UNDERWATER_SEALED_CHAMBER",
       "name": "Underwater_SealedChamber_Layout",
       "width": 22,
@@ -934,28 +890,6 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/SouthernIsland_Interior/border.bin",
       "blockdata_filepath": "data/layouts/SouthernIsland_Interior/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_JAGGED_PASS",
-      "name": "JaggedPass_Layout",
-      "width": 30,
-      "height": 46,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/JaggedPass/border.bin",
-      "blockdata_filepath": "data/layouts/JaggedPass/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_FIERY_PATH",
-      "name": "FieryPath_Layout",
-      "width": 35,
-      "height": 38,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/FieryPath/border.bin",
-      "blockdata_filepath": "data/layouts/FieryPath/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -1432,39 +1366,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_MIRAGE_TOWER_1F",
-      "name": "MirageTower_1F_Layout",
-      "width": 21,
-      "height": 17,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_MirageTower",
-      "border_filepath": "data/layouts/MirageTower_1F/border.bin",
-      "blockdata_filepath": "data/layouts/MirageTower_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MIRAGE_TOWER_2F",
-      "name": "MirageTower_2F_Layout",
-      "width": 21,
-      "height": 17,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_MirageTower",
-      "border_filepath": "data/layouts/MirageTower_2F/border.bin",
-      "blockdata_filepath": "data/layouts/MirageTower_2F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MIRAGE_TOWER_3F",
-      "name": "MirageTower_3F_Layout",
-      "width": 21,
-      "height": 17,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_MirageTower",
-      "border_filepath": "data/layouts/MirageTower_3F/border.bin",
-      "blockdata_filepath": "data/layouts/MirageTower_3F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_BATTLE_TENT_LOBBY",
       "name": "BattleTentLobby_Layout",
       "width": 13,
@@ -1495,17 +1396,6 @@
       "secondary_tileset": "gTileset_BattleTent",
       "border_filepath": "data/layouts/BattleTentBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleTentBattleRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MIRAGE_TOWER_4F",
-      "name": "MirageTower_4F_Layout",
-      "width": 13,
-      "height": 10,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_MirageTower",
-      "border_filepath": "data/layouts/MirageTower_4F/border.bin",
-      "blockdata_filepath": "data/layouts/MirageTower_4F/map.bin",
       "layout_version": "emerald"
     },
     {

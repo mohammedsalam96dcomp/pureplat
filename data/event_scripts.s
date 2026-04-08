@@ -124,20 +124,10 @@ gStdScripts::
 	.4byte Std_ReceivedItem            @ STD_RECEIVED_ITEM
 gStdScripts_End::
 
-	.include "data/maps/DesertRuins/scripts.inc"
-	.include "data/maps/MtChimney/scripts.inc"
-	.include "data/maps/JaggedPass/scripts.inc"
-	.include "data/maps/FieryPath/scripts.inc"
-	.include "data/maps/IslandCave/scripts.inc"
-	.include "data/maps/AncientTomb/scripts.inc"
 	.include "data/maps/Underwater_SealedChamber/scripts.inc"
 	.include "data/maps/SealedChamber_OuterRoom/scripts.inc"
 	.include "data/maps/SealedChamber_InnerRoom/scripts.inc"
 	.include "data/maps/ScorchedSlab/scripts.inc"
-	.include "data/maps/MirageTower_1F/scripts.inc"
-	.include "data/maps/MirageTower_2F/scripts.inc"
-	.include "data/maps/MirageTower_3F/scripts.inc"
-	.include "data/maps/MirageTower_4F/scripts.inc"
 	.include "data/maps/DesertUnderpass/scripts.inc"
 	.include "data/maps/ArtisanCave_B1F/scripts.inc"
 	.include "data/maps/ArtisanCave_1F/scripts.inc"
