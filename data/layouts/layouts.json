@@ -200,105 +200,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_AQUA_HIDEOUT_1F",
-      "name": "AquaHideout_1F_Layout",
-      "width": 28,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/AquaHideout_1F/border.bin",
-      "blockdata_filepath": "data/layouts/AquaHideout_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_AQUA_HIDEOUT_B1F",
-      "name": "AquaHideout_B1F_Layout",
-      "width": 51,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/AquaHideout_B1F/border.bin",
-      "blockdata_filepath": "data/layouts/AquaHideout_B1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_AQUA_HIDEOUT_B2F",
-      "name": "AquaHideout_B2F_Layout",
-      "width": 34,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/AquaHideout_B2F/border.bin",
-      "blockdata_filepath": "data/layouts/AquaHideout_B2F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ENTRANCE_ROOM",
-      "name": "ShoalCave_LowTideEntranceRoom_Layout",
-      "width": 35,
-      "height": 35,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideEntranceRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideEntranceRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_INNER_ROOM",
-      "name": "ShoalCave_LowTideInnerRoom_Layout",
-      "width": 46,
-      "height": 38,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideInnerRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideInnerRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_STAIRS_ROOM",
-      "name": "ShoalCave_LowTideStairsRoom_Layout",
-      "width": 21,
-      "height": 15,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideStairsRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideStairsRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_LOWER_ROOM",
-      "name": "ShoalCave_LowTideLowerRoom_Layout",
-      "width": 31,
-      "height": 14,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideLowerRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideLowerRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_HIGH_TIDE_ENTRANCE_ROOM",
-      "name": "ShoalCave_HighTideEntranceRoom_Layout",
-      "width": 35,
-      "height": 35,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_HighTideEntranceRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_HighTideEntranceRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_HIGH_TIDE_INNER_ROOM",
-      "name": "ShoalCave_HighTideInnerRoom_Layout",
-      "width": 46,
-      "height": 38,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_HighTideInnerRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_HighTideInnerRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_UNUSED_CAVE1",
       "name": "UnusedCave1_Layout",
       "width": 1,
@@ -1124,39 +1025,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_AQUA_HIDEOUT_UNUSED_RUBY_MAP1",
-      "name": "AquaHideout_UnusedRubyMap1_Layout",
-      "width": 28,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/AquaHideout_UnusedRubyMap1/border.bin",
-      "blockdata_filepath": "data/layouts/AquaHideout_UnusedRubyMap1/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_AQUA_HIDEOUT_UNUSED_RUBY_MAP2",
-      "name": "AquaHideout_UnusedRubyMap2_Layout",
-      "width": 62,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/AquaHideout_UnusedRubyMap2/border.bin",
-      "blockdata_filepath": "data/layouts/AquaHideout_UnusedRubyMap2/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_AQUA_HIDEOUT_UNUSED_RUBY_MAP3",
-      "name": "AquaHideout_UnusedRubyMap3_Layout",
-      "width": 34,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/AquaHideout_UnusedRubyMap3/border.bin",
-      "blockdata_filepath": "data/layouts/AquaHideout_UnusedRubyMap3/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_SKY_PILLAR_ENTRANCE",
       "name": "SkyPillar_Entrance_Layout",
       "width": 18,
@@ -1220,17 +1088,6 @@
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/SkyPillar_4F/border.bin",
       "blockdata_filepath": "data/layouts/SkyPillar_4F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SHOAL_CAVE_LOW_TIDE_ICE_ROOM",
-      "name": "ShoalCave_LowTideIceRoom_Layout",
-      "width": 20,
-      "height": 30,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Cave",
-      "border_filepath": "data/layouts/ShoalCave_LowTideIceRoom/border.bin",
-      "blockdata_filepath": "data/layouts/ShoalCave_LowTideIceRoom/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -1308,72 +1165,6 @@
       "secondary_tileset": "gTileset_BattleDome",
       "border_filepath": "data/layouts/BattleFrontier_BattleDomeBattleRoom/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattleDomeBattleRoom/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_1F",
-      "name": "MagmaHideout_1F_Layout",
-      "width": 37,
-      "height": 38,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_1F/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_2F_1R",
-      "name": "MagmaHideout_2F_1R_Layout",
-      "width": 33,
-      "height": 39,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_2F_1R/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_2F_1R/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_2F_2R",
-      "name": "MagmaHideout_2F_2R_Layout",
-      "width": 49,
-      "height": 28,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_2F_2R/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_2F_2R/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_3F_1R",
-      "name": "MagmaHideout_3F_1R_Layout",
-      "width": 28,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_3F_1R/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_3F_1R/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_3F_2R",
-      "name": "MagmaHideout_3F_2R_Layout",
-      "width": 24,
-      "height": 17,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_3F_2R/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_3F_2R/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_4F",
-      "name": "MagmaHideout_4F_Layout",
-      "width": 59,
-      "height": 28,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_4F/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_4F/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -1770,28 +1561,6 @@
       "secondary_tileset": "gTileset_BattlePyramid",
       "border_filepath": "data/layouts/BattleFrontier_BattlePyramidTop/border.bin",
       "blockdata_filepath": "data/layouts/BattleFrontier_BattlePyramidTop/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_3F_3R",
-      "name": "MagmaHideout_3F_3R_Layout",
-      "width": 33,
-      "height": 24,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_3F_3R/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_3F_3R/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MAGMA_HIDEOUT_2F_3R",
-      "name": "MagmaHideout_2F_3R_Layout",
-      "width": 60,
-      "height": 19,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lavaridge",
-      "border_filepath": "data/layouts/MagmaHideout_2F_3R/border.bin",
-      "blockdata_filepath": "data/layouts/MagmaHideout_2F_3R/map.bin",
       "layout_version": "emerald"
     },
     {
