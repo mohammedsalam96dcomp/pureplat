@@ -4,7 +4,6 @@
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
     "gMapGroup_IndoorDewford",
-    "gMapGroup_IndoorLavaridge",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
@@ -39,7 +38,6 @@
     "LittlerootTown",
     "OldaleTown",
     "DewfordTown",
-    "LavaridgeTown",
     "Route101",
     "Route102",
     "Route103",
@@ -103,15 +101,6 @@
     "DewfordTown_Gym",
     "DewfordTown_Hall",
     "DewfordTown_House2"
-  ],
-  "gMapGroup_IndoorLavaridge": [
-    "LavaridgeTown_HerbShop",
-    "LavaridgeTown_Gym_1F",
-    "LavaridgeTown_Gym_B1F",
-    "LavaridgeTown_House",
-    "LavaridgeTown_Mart",
-    "LavaridgeTown_PokemonCenter_1F",
-    "LavaridgeTown_PokemonCenter_2F"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
