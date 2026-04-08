@@ -411,8 +411,8 @@ extern const u8 EventScript_UseDefog[];
 
 //player pc
 extern const u8 EventScript_PalletTown_PlayersHouse_2F_ShutDownPC[];
-extern const u8 LittlerootTown_BrendansHouse_2F_EventScript_TurnOffPlayerPC[];
-extern const u8 LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC[];
+// extern const u8 LittlerootTown_BrendansHouse_2F_EventScript_TurnOffPlayerPC[];
+// extern const u8 LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC[];
 
 // Mauville Old Man (Giddy)
 extern const u8 GiddyText_Is[];
@@ -544,8 +544,8 @@ extern const u8 MauvilleCity_PokemonCenter_1F_Text_HotSpringsTitle[];
 extern const u8 MauvilleCity_PokemonCenter_1F_Text_HotSpringsAction[];
 extern const u8 MauvilleCity_PokemonCenter_1F_Text_HotSpringsStory[];
 
-extern const u8 LittlerootTown_BrendansHouse_2F_EventScript_PC[];
-extern const u8 LittlerootTown_MaysHouse_2F_EventScript_PC[];
+// extern const u8 LittlerootTown_BrendansHouse_2F_EventScript_PC[];
+// extern const u8 LittlerootTown_MaysHouse_2F_EventScript_PC[];
 extern const u8 EventScript_PalletTown_PlayersHouse_2F_TurnOnPC[];
 extern const u8 EventScript_PC[];
 extern const u8 EventScript_AccessPokemonBoxLink[];
@@ -557,7 +557,7 @@ extern const u8 SkyPillar_Outside_EventScript_ClosedDoor[];
 extern const u8 EventScript_CableBoxResults[];
 extern const u8 EventScript_PokeBlockFeeder[];
 extern const u8 EventScript_RegionMap[];
-extern const u8 EventScript_RunningShoesManual[];
+// extern const u8 EventScript_RunningShoesManual[];
 extern const u8 EventScript_PictureBookShelf[];
 extern const u8 EventScript_BookShelf[];
 extern const u8 EventScript_PokemonCenterBookShelf[];
@@ -580,7 +580,7 @@ extern const u8 EventScript_FallDownHole[];
 extern const u8 EventScript_FieldPoison[];
 extern const u8 EventScript_EggHatch[];
 extern const u8 IslandCave_EventScript_OpenRegiEntrance[];
-extern const u8 LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall[];
+// extern const u8 LittlerootTown_ProfessorBirchsLab_EventScript_ScottAboardSSTidalCall[];
 // extern const u8 RustboroCity_Gym_EventScript_RegisterRoxanne[];
 extern const u8 MossdeepCity_SpaceCenter_2F_EventScript_RivalRayquazaCall[];
 //extern const u8 SSTidalCorridor_EventScript_ReachedStepCount[];

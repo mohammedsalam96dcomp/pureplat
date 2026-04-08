@@ -1,7 +1,6 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
-    "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorLilycove",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
@@ -12,15 +11,7 @@
     "gMapGroup_IndoorTwinleaf"
   ],
   "gMapGroup_TownsAndRoutes": [
-    "LilycoveCity",
-    "LittlerootTown"
-  ],
-  "gMapGroup_IndoorLittleroot": [
-    "LittlerootTown_BrendansHouse_1F",
-    "LittlerootTown_BrendansHouse_2F",
-    "LittlerootTown_MaysHouse_1F",
-    "LittlerootTown_MaysHouse_2F",
-    "LittlerootTown_ProfessorBirchsLab"
+    "LilycoveCity"
   ],
   "gMapGroup_IndoorLilycove": [
     "LilycoveCity_CoveLilyMotel_1F",
@@ -179,7 +170,6 @@
     "ContestHallCool",
     "ContestHallSmart",
     "ContestHallCute",
-    "InsideOfTruck",
     "BattlePyramidSquare01",
     "BattlePyramidSquare02",
     "BattlePyramidSquare03",
