@@ -9,7 +9,6 @@
     "gMapGroup_IndoorVerdanturf",
     "gMapGroup_IndoorPacifidlog",
     "gMapGroup_IndoorSlateport",
-    "gMapGroup_IndoorRustboro",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
     "gMapGroup_IndoorEverGrande",
@@ -37,7 +36,6 @@
   ],
   "gMapGroup_TownsAndRoutes": [
     "SlateportCity",
-    "RustboroCity",
     "FortreeCity",
     "LilycoveCity",
     "EverGrandeCity",
@@ -166,25 +164,6 @@
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
     "SlateportCity_Mart"
-  ],
-  "gMapGroup_IndoorRustboro": [
-    "RustboroCity_DevonCorp_1F",
-    "RustboroCity_DevonCorp_2F",
-    "RustboroCity_DevonCorp_3F",
-    "RustboroCity_Gym",
-    "RustboroCity_PokemonSchool",
-    "RustboroCity_PokemonCenter_1F",
-    "RustboroCity_PokemonCenter_2F",
-    "RustboroCity_Mart",
-    "RustboroCity_Flat1_1F",
-    "RustboroCity_Flat1_2F",
-    "RustboroCity_House1",
-    "RustboroCity_CuttersHouse",
-    "RustboroCity_House2",
-    "RustboroCity_Flat2_1F",
-    "RustboroCity_Flat2_2F",
-    "RustboroCity_Flat2_3F",
-    "RustboroCity_House3"
   ],
   "gMapGroup_IndoorFortree": [
     "FortreeCity_House1",

@@ -58,7 +58,7 @@
       "x": 5,
       "y": 7,
       "respawn_map": "MAP_FORTREE_CITY_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_FORTREE_NURSE"
+      "respawn_npc": "0"
     },
     {
       "id": "HEAL_LOCATION_LILYCOVE_CITY",
@@ -66,7 +66,7 @@
       "x": 24,
       "y": 15,
       "respawn_map": "MAP_LILYCOVE_CITY_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_LILYCOVE_NURSE"
+      "respawn_npc": "0"
     },
     {
       "id": "HEAL_LOCATION_MOSSDEEP_CITY",
@@ -186,7 +186,7 @@
       "x": 3,
       "y": 52,
       "respawn_map": "MAP_BATTLE_FRONTIER_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_FRONTIER_NURSE"
+      "respawn_npc": "0"
     },
     {
       "id": "HEAL_LOCATION_PALLET_TOWN",

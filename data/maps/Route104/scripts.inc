@@ -127,7 +127,7 @@ Route104_EventScript_RivalTrigger::
 # 64 "data/maps/Route104/scripts.pory"
 	setvar VAR_0x8008, 0
 # 65 "data/maps/Route104/scripts.pory"
-	call RustboroCity_EventScript_PlayRivalMusic
+	// call RustboroCity_EventScript_PlayRivalMusic
 # 66 "data/maps/Route104/scripts.pory"
 	playse SE_PIN
 # 67 "data/maps/Route104/scripts.pory"
