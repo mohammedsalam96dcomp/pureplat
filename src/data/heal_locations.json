@@ -42,7 +42,7 @@
       "x": 22,
       "y": 6,
       "respawn_map": "MAP_MAUVILLE_CITY_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_MAUVILLE_NURSE"
+      "respawn_npc": "0"
     },
     {
       "id": "HEAL_LOCATION_RUSTBORO_CITY",
@@ -50,7 +50,7 @@
       "x": 16,
       "y": 39,
       "respawn_map": "MAP_RUSTBORO_CITY_POKEMON_CENTER_1F",
-      "respawn_npc": "LOCALID_RUSTBORO_NURSE"
+      "respawn_npc": "0"
     },
     {
       "id": "HEAL_LOCATION_FORTREE_CITY",
@@ -166,7 +166,7 @@
       "x": 18,
       "y": 6,
       "respawn_map": "MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F",
-      "respawn_npc": "LOCALID_LEAGUE_NURSE",
+      "respawn_npc": "0",
       "respawn_x": 3,
       "respawn_y": 4
     },
@@ -176,7 +176,7 @@
       "x": 15,
       "y": 20,
       "respawn_map": "MAP_SOUTHERN_ISLAND_EXTERIOR",
-      "respawn_npc": "LOCALID_NONE",
+      "respawn_npc": "0",
       "respawn_x": 15,
       "respawn_y": 20
     },

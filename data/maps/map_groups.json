@@ -9,7 +9,6 @@
     "gMapGroup_IndoorVerdanturf",
     "gMapGroup_IndoorPacifidlog",
     "gMapGroup_IndoorSlateport",
-    "gMapGroup_IndoorMauville",
     "gMapGroup_IndoorRustboro",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
@@ -38,7 +37,6 @@
   ],
   "gMapGroup_TownsAndRoutes": [
     "SlateportCity",
-    "MauvilleCity",
     "RustboroCity",
     "FortreeCity",
     "LilycoveCity",
@@ -168,16 +166,6 @@
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
     "SlateportCity_Mart"
-  ],
-  "gMapGroup_IndoorMauville": [
-    "MauvilleCity_Gym",
-    "MauvilleCity_BikeShop",
-    "MauvilleCity_House1",
-    "MauvilleCity_GameCorner",
-    "MauvilleCity_House2",
-    "MauvilleCity_PokemonCenter_1F",
-    "MauvilleCity_PokemonCenter_2F",
-    "MauvilleCity_Mart"
   ],
   "gMapGroup_IndoorRustboro": [
     "RustboroCity_DevonCorp_1F",
@@ -320,8 +308,6 @@
     "ShoalCave_LowTideLowerRoom",
     "ShoalCave_HighTideEntranceRoom",
     "ShoalCave_HighTideInnerRoom",
-    "NewMauville_Entrance",
-    "NewMauville_Inside",
     "AbandonedShip_Deck",
     "AbandonedShip_Corridors_1F",
     "AbandonedShip_Rooms_1F",
