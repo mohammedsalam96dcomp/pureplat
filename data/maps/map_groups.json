@@ -3,7 +3,6 @@
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
     "gMapGroup_IndoorOldale",
-    "gMapGroup_IndoorDewford",
     "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorFortree",
     "gMapGroup_IndoorLilycove",
@@ -19,7 +18,6 @@
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
     "gMapGroup_IndoorRoute104Prototype",
-    "gMapGroup_IndoorRoute109",
     "gMapGroup_IndoorRoute110",
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
@@ -37,16 +35,13 @@
     "EverGrandeCity",
     "LittlerootTown",
     "OldaleTown",
-    "DewfordTown",
     "Route101",
     "Route102",
     "Route103",
-    "Route104",
     "Route105",
     "Route106",
     "Route107",
     "Route108",
-    "Route109",
     "Route110",
     "Route111",
     "Route112",
@@ -93,14 +88,6 @@
     "OldaleTown_PokemonCenter_1F",
     "OldaleTown_PokemonCenter_2F",
     "OldaleTown_Mart"
-  ],
-  "gMapGroup_IndoorDewford": [
-    "DewfordTown_House1",
-    "DewfordTown_PokemonCenter_1F",
-    "DewfordTown_PokemonCenter_2F",
-    "DewfordTown_Gym",
-    "DewfordTown_Hall",
-    "DewfordTown_House2"
   ],
   "gMapGroup_IndoorSlateport": [
     "SlateportCity_SternsShipyard_1F",
@@ -171,10 +158,6 @@
     "EverGrandeCity_PokemonCenter_1F",
     "EverGrandeCity_PokemonCenter_2F",
     "EverGrandeCity_PokemonLeague_2F"
-  ],
-  "gMapGroup_IndoorRoute104": [
-    "Route104_MrBrineysHouse",
-    "Route104_PrettyPetalFlowerShop"
   ],
   "gMapGroup_IndoorRoute111": [
     "Route111_WinstrateFamilysHouse",
@@ -448,13 +431,6 @@
     "NavelRock_Down11",
     "NavelRock_Bottom",
     "TrainerHill_Elevator"
-  ],
-  "gMapGroup_IndoorRoute104Prototype": [
-    "Route104_Prototype",
-    "Route104_PrototypePrettyPetalFlowerShop"
-  ],
-  "gMapGroup_IndoorRoute109": [
-    "Route109_SeashoreHouse"
   ],
   "gMapGroup_IndoorRoute110": [
     "Route110_TrickHouseEntrance",
