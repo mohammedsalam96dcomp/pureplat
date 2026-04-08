@@ -1,7 +1,6 @@
 {
   "group_order": [
     "gMapGroup_TownsAndRoutes",
-    "gMapGroup_IndoorLilycove",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
@@ -11,35 +10,8 @@
     "gMapGroup_IndoorTwinleaf"
   ],
   "gMapGroup_TownsAndRoutes": [
-    "LilycoveCity"
-  ],
-  "gMapGroup_IndoorLilycove": [
-    "LilycoveCity_CoveLilyMotel_1F",
-    "LilycoveCity_CoveLilyMotel_2F",
-    "LilycoveCity_LilycoveMuseum_1F",
-    "LilycoveCity_LilycoveMuseum_2F",
-    "LilycoveCity_ContestLobby",
-    "LilycoveCity_ContestHall",
-    "LilycoveCity_PokemonCenter_1F",
-    "LilycoveCity_PokemonCenter_2F",
-    "LilycoveCity_UnusedMart",
-    "LilycoveCity_PokemonTrainerFanClub",
-    "LilycoveCity_Harbor",
-    "LilycoveCity_MoveDeletersHouse",
-    "LilycoveCity_House1",
-    "LilycoveCity_House2",
-    "LilycoveCity_House3",
-    "LilycoveCity_House4",
-    "LilycoveCity_DepartmentStore_1F",
-    "LilycoveCity_DepartmentStore_2F",
-    "LilycoveCity_DepartmentStore_3F",
-    "LilycoveCity_DepartmentStore_4F",
-    "LilycoveCity_DepartmentStore_5F",
-    "LilycoveCity_DepartmentStoreRooftop",
-    "LilycoveCity_DepartmentStoreElevator"
   ],
   "gMapGroup_Dungeons": [
-    "RusturfTunnel",
     "DesertRuins",
     "GraniteCave_1F",
     "GraniteCave_B1F",

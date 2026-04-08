@@ -33,20 +33,18 @@ NavelRock_Harbor_EventScript_Sailor::
 # 17 "data/maps/NavelRock_Harbor/scripts.pory"
 	call Common_EventScript_FerryDepartIsland
 # 18 "data/maps/NavelRock_Harbor/scripts.pory"
-	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
-# 19 "data/maps/NavelRock_Harbor/scripts.pory"
 	waitstate
+# 19 "data/maps/NavelRock_Harbor/scripts.pory"
+	release
 # 20 "data/maps/NavelRock_Harbor/scripts.pory"
-	release
-# 21 "data/maps/NavelRock_Harbor/scripts.pory"
 	end
-# 22 "data/maps/NavelRock_Harbor/scripts.pory"
+# 21 "data/maps/NavelRock_Harbor/scripts.pory"
 
-# 23 "data/maps/NavelRock_Harbor/scripts.pory"
+# 22 "data/maps/NavelRock_Harbor/scripts.pory"
 NavelRock_Harbor_EventScript_AsYouLike::
-# 24 "data/maps/NavelRock_Harbor/scripts.pory"
+# 23 "data/maps/NavelRock_Harbor/scripts.pory"
 	msgbox EventTicket_Text_AsYouLike, MSGBOX_DEFAULT
-# 25 "data/maps/NavelRock_Harbor/scripts.pory"
+# 24 "data/maps/NavelRock_Harbor/scripts.pory"
 	release
-# 26 "data/maps/NavelRock_Harbor/scripts.pory"
+# 25 "data/maps/NavelRock_Harbor/scripts.pory"
 	end

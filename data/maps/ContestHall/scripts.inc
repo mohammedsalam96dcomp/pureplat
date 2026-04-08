@@ -823,37 +823,37 @@ ContestHall_EventScript_SetExitWarp::
 # 412 "data/maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpNormalContest::
 # 413 "data/maps/ContestHall/scripts.pory"
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
+	waitstate
 # 414 "data/maps/ContestHall/scripts.pory"
-	waitstate
+	end
 # 415 "data/maps/ContestHall/scripts.pory"
-	end
+
 # 416 "data/maps/ContestHall/scripts.pory"
-
-# 417 "data/maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpSuperContest::
+# 417 "data/maps/ContestHall/scripts.pory"
+	waitstate
 # 418 "data/maps/ContestHall/scripts.pory"
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
+	end
 # 419 "data/maps/ContestHall/scripts.pory"
-	waitstate
+
 # 420 "data/maps/ContestHall/scripts.pory"
-	end
-# 421 "data/maps/ContestHall/scripts.pory"
-
-# 422 "data/maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpHyperContest::
-# 423 "data/maps/ContestHall/scripts.pory"
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
-# 424 "data/maps/ContestHall/scripts.pory"
+# 421 "data/maps/ContestHall/scripts.pory"
 	waitstate
-# 425 "data/maps/ContestHall/scripts.pory"
+# 422 "data/maps/ContestHall/scripts.pory"
 	end
-# 426 "data/maps/ContestHall/scripts.pory"
+# 423 "data/maps/ContestHall/scripts.pory"
 
-# 427 "data/maps/ContestHall/scripts.pory"
+# 424 "data/maps/ContestHall/scripts.pory"
 ContestHall_EventScript_SetExitWarpMasterContest::
+# 425 "data/maps/ContestHall/scripts.pory"
+	waitstate
+# 426 "data/maps/ContestHall/scripts.pory"
+	end
+# 427 "data/maps/ContestHall/scripts.pory"
+
 # 428 "data/maps/ContestHall/scripts.pory"
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 14, 4
+ContestHall_EventScript_SetExitWarpLinkContest::
 # 429 "data/maps/ContestHall/scripts.pory"
 	waitstate
 # 430 "data/maps/ContestHall/scripts.pory"
@@ -861,38 +861,28 @@ ContestHall_EventScript_SetExitWarpMasterContest::
 # 431 "data/maps/ContestHall/scripts.pory"
 
 # 432 "data/maps/ContestHall/scripts.pory"
-ContestHall_EventScript_SetExitWarpLinkContest::
-# 433 "data/maps/ContestHall/scripts.pory"
-	warp MAP_LILYCOVE_CITY_CONTEST_LOBBY, 15, 4
-# 434 "data/maps/ContestHall/scripts.pory"
-	waitstate
-# 435 "data/maps/ContestHall/scripts.pory"
-	end
-# 436 "data/maps/ContestHall/scripts.pory"
-
-# 437 "data/maps/ContestHall/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_SetPlayerGfx::
-# 438 "data/maps/ContestHall/scripts.pory"
+# 433 "data/maps/ContestHall/scripts.pory"
 	checkplayergender
-# 439 "data/maps/ContestHall/scripts.pory"
+# 434 "data/maps/ContestHall/scripts.pory"
 	goto_if_eq VAR_RESULT, MALE, LilycoveCity_ContestLobby_EventScript_SetPlayerGfxBrendan
-# 440 "data/maps/ContestHall/scripts.pory"
+# 435 "data/maps/ContestHall/scripts.pory"
 	goto_if_eq VAR_RESULT, FEMALE, LilycoveCity_ContestLobby_EventScript_SetPlayerGfxMay
-# 441 "data/maps/ContestHall/scripts.pory"
+# 436 "data/maps/ContestHall/scripts.pory"
 	return
-# 442 "data/maps/ContestHall/scripts.pory"
+# 437 "data/maps/ContestHall/scripts.pory"
 
-# 443 "data/maps/ContestHall/scripts.pory"
+# 438 "data/maps/ContestHall/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_SetPlayerGfxBrendan::
-# 444 "data/maps/ContestHall/scripts.pory"
+# 439 "data/maps/ContestHall/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL
-# 445 "data/maps/ContestHall/scripts.pory"
+# 440 "data/maps/ContestHall/scripts.pory"
 	return
-# 446 "data/maps/ContestHall/scripts.pory"
+# 441 "data/maps/ContestHall/scripts.pory"
 
-# 447 "data/maps/ContestHall/scripts.pory"
+# 442 "data/maps/ContestHall/scripts.pory"
 LilycoveCity_ContestLobby_EventScript_SetPlayerGfxMay::
-# 448 "data/maps/ContestHall/scripts.pory"
+# 443 "data/maps/ContestHall/scripts.pory"
 	setvar VAR_OBJ_GFX_ID_3, OBJ_EVENT_GFX_RIVAL_MAY_NORMAL
-# 449 "data/maps/ContestHall/scripts.pory"
+# 444 "data/maps/ContestHall/scripts.pory"
 	return
