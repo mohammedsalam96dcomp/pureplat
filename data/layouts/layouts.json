@@ -200,72 +200,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_MT_PYRE_1F",
-      "name": "MtPyre_1F_Layout",
-      "width": 22,
-      "height": 19,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_1F/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_PYRE_2F",
-      "name": "MtPyre_2F_Layout",
-      "width": 13,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_2F/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_2F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_PYRE_3F",
-      "name": "MtPyre_3F_Layout",
-      "width": 13,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_3F/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_3F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_PYRE_4F",
-      "name": "MtPyre_4F_Layout",
-      "width": 13,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_4F/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_4F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_PYRE_5F",
-      "name": "MtPyre_5F_Layout",
-      "width": 13,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_5F/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_5F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_PYRE_6F",
-      "name": "MtPyre_6F_Layout",
-      "width": 13,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_6F/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_6F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_AQUA_HIDEOUT_1F",
       "name": "AquaHideout_1F_Layout",
       "width": 28,
@@ -1418,28 +1352,6 @@
       "secondary_tileset": "gTileset_Lavaridge",
       "border_filepath": "data/layouts/FieryPath/border.bin",
       "blockdata_filepath": "data/layouts/FieryPath/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_PYRE_EXTERIOR",
-      "name": "MtPyre_Exterior_Layout",
-      "width": 38,
-      "height": 51,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_Exterior/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_Exterior/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_MT_PYRE_SUMMIT",
-      "name": "MtPyre_Summit_Layout",
-      "width": 50,
-      "height": 37,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/MtPyre_Summit/border.bin",
-      "blockdata_filepath": "data/layouts/MtPyre_Summit/map.bin",
       "layout_version": "emerald"
     },
     {
