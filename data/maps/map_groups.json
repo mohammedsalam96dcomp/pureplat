@@ -2,7 +2,6 @@
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_IndoorLittleroot",
-    "gMapGroup_IndoorSlateport",
     "gMapGroup_IndoorLilycove",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorDynamic",
@@ -13,7 +12,6 @@
     "gMapGroup_IndoorTwinleaf"
   ],
   "gMapGroup_TownsAndRoutes": [
-    "SlateportCity",
     "LilycoveCity",
     "LittlerootTown"
   ],
@@ -23,22 +21,6 @@
     "LittlerootTown_MaysHouse_1F",
     "LittlerootTown_MaysHouse_2F",
     "LittlerootTown_ProfessorBirchsLab"
-  ],
-  "gMapGroup_IndoorSlateport": [
-    "SlateportCity_SternsShipyard_1F",
-    "SlateportCity_SternsShipyard_2F",
-    "SlateportCity_BattleTentLobby",
-    "SlateportCity_BattleTentCorridor",
-    "SlateportCity_BattleTentBattleRoom",
-    "SlateportCity_NameRatersHouse",
-    "SlateportCity_PokemonFanClub",
-    "SlateportCity_OceanicMuseum_1F",
-    "SlateportCity_OceanicMuseum_2F",
-    "SlateportCity_Harbor",
-    "SlateportCity_House",
-    "SlateportCity_PokemonCenter_1F",
-    "SlateportCity_PokemonCenter_2F",
-    "SlateportCity_Mart"
   ],
   "gMapGroup_IndoorLilycove": [
     "LilycoveCity_CoveLilyMotel_1F",
@@ -198,9 +180,6 @@
     "ContestHallSmart",
     "ContestHallCute",
     "InsideOfTruck",
-    "SSTidalCorridor",
-    "SSTidalLowerDeck",
-    "SSTidalRooms",
     "BattlePyramidSquare01",
     "BattlePyramidSquare02",
     "BattlePyramidSquare03",

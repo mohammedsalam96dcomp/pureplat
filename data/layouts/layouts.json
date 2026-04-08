@@ -2,17 +2,6 @@
   "layouts_table_label": "gMapLayouts",
   "layouts": [
     {
-      "id": "LAYOUT_SLATEPORT_CITY",
-      "name": "SlateportCity_Layout",
-      "width": 40,
-      "height": 60,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Slateport",
-      "border_filepath": "data/layouts/SlateportCity/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_LILYCOVE_CITY",
       "name": "LilycoveCity_Layout",
       "width": 80,
@@ -200,28 +189,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_SLATEPORT_CITY_STERNS_SHIPYARD_1F",
-      "name": "SlateportCity_SternsShipyard_1F_Layout",
-      "width": 21,
-      "height": 15,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/SlateportCity_SternsShipyard_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_SternsShipyard_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_STERNS_SHIPYARD_2F",
-      "name": "SlateportCity_SternsShipyard_2F_Layout",
-      "width": 17,
-      "height": 15,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Facility",
-      "border_filepath": "data/layouts/SlateportCity_SternsShipyard_2F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_SternsShipyard_2F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_UNUSED_CONTEST_ROOM2",
       "name": "UnusedContestRoom2_Layout",
       "width": 1,
@@ -241,39 +208,6 @@
       "secondary_tileset": "gTileset_Contest",
       "border_filepath": "data/layouts/UnusedContestRoom3/border.bin",
       "blockdata_filepath": "data/layouts/UnusedContestRoom3/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_POKEMON_FAN_CLUB",
-      "name": "SlateportCity_PokemonFanClub_Layout",
-      "width": 14,
-      "height": 11,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_PokemonFanClub",
-      "border_filepath": "data/layouts/SlateportCity_PokemonFanClub/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_PokemonFanClub/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_OCEANIC_MUSEUM_1F",
-      "name": "SlateportCity_OceanicMuseum_1F_Layout",
-      "width": 20,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
-      "border_filepath": "data/layouts/SlateportCity_OceanicMuseum_1F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_OceanicMuseum_1F/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SLATEPORT_CITY_OCEANIC_MUSEUM_2F",
-      "name": "SlateportCity_OceanicMuseum_2F_Layout",
-      "width": 20,
-      "height": 9,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_OceanicMuseum",
-      "border_filepath": "data/layouts/SlateportCity_OceanicMuseum_2F/border.bin",
-      "blockdata_filepath": "data/layouts/SlateportCity_OceanicMuseum_2F/map.bin",
       "layout_version": "emerald"
     },
     {
@@ -1616,39 +1550,6 @@
       "secondary_tileset": "gTileset_BattleFrontier",
       "border_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/border.bin",
       "blockdata_filepath": "data/layouts/LilycoveCity_DepartmentStoreElevator/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SS_TIDAL_CORRIDOR",
-      "name": "SSTidalCorridor_Layout",
-      "width": 18,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideShip",
-      "border_filepath": "data/layouts/SSTidalCorridor/border.bin",
-      "blockdata_filepath": "data/layouts/SSTidalCorridor/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SS_TIDAL_LOWER_DECK",
-      "name": "SSTidalLowerDeck_Layout",
-      "width": 17,
-      "height": 13,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideShip",
-      "border_filepath": "data/layouts/SSTidalLowerDeck/border.bin",
-      "blockdata_filepath": "data/layouts/SSTidalLowerDeck/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_SS_TIDAL_ROOMS",
-      "name": "SSTidalRooms_Layout",
-      "width": 36,
-      "height": 18,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_InsideShip",
-      "border_filepath": "data/layouts/SSTidalRooms/border.bin",
-      "blockdata_filepath": "data/layouts/SSTidalRooms/map.bin",
       "layout_version": "emerald"
     },
     {

@@ -2634,9 +2634,6 @@ static bool8 ShouldApplyPokeNewsEffect(u8 newsKind)
     switch (newsKind)
     {
     case POKENEWS_SLATEPORT:
-        if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_SLATEPORT_CITY)
-         && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_SLATEPORT_CITY)
-         && gSpecialVar_LastTalked == LOCALID_SLATEPORT_ENERGY_GURU)
             return TRUE;
         return FALSE;
     case POKENEWS_LILYCOVE:
@@ -4186,7 +4183,6 @@ void DoTVShow(void)
             DoTVShowTheWorldOfMasters();
             break;
         case TVSHOW_TODAYS_RIVAL_TRAINER:
-            DoTVShowTodaysRivalTrainer();
             break;
         case TVSHOW_TREND_WATCHER:
             DoTVShowDewfordTrendWatcherNetwork();
@@ -5498,17 +5494,6 @@ static void DoTVShowTodaysRivalTrainer(void)
             sTVShowState = 8;
             break;
         case MAPSEC_DYNAMIC:
-            switch (show->rivalTrainer.mapLayoutId)
-            {
-            case LAYOUT_SS_TIDAL_CORRIDOR:
-            case LAYOUT_SS_TIDAL_LOWER_DECK:
-            case LAYOUT_SS_TIDAL_ROOMS:
-                sTVShowState = 10;
-                break;
-            default:
-                sTVShowState = 9;
-                break;
-            }
             break;
         }
         break;
@@ -5661,11 +5646,6 @@ static void DoTVShowHoennTreasureInvestigators(void)
         {
             switch (show->treasureInvestigators.mapLayoutId)
             {
-            case LAYOUT_SS_TIDAL_CORRIDOR:
-            case LAYOUT_SS_TIDAL_LOWER_DECK:
-            case LAYOUT_SS_TIDAL_ROOMS:
-                sTVShowState = 2;
-                break;
             default:
                 sTVShowState = 1;
                 break;
