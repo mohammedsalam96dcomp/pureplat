@@ -23,26 +23,22 @@ Underwater_SealedChamber_OnDive:
 # 12 "data/maps/Underwater_SealedChamber/scripts.pory"
 Underwater_SealedChamber_EventScript_SurfaceRoute134::
 # 13 "data/maps/Underwater_SealedChamber/scripts.pory"
-	setdivewarp MAP_ROUTE134, 60, 31
+	end
 # 14 "data/maps/Underwater_SealedChamber/scripts.pory"
-	end
+
 # 15 "data/maps/Underwater_SealedChamber/scripts.pory"
-
-# 16 "data/maps/Underwater_SealedChamber/scripts.pory"
 Underwater_SealedChamber_EventScript_SurfaceSealedChamber::
-# 17 "data/maps/Underwater_SealedChamber/scripts.pory"
-	setdivewarp MAP_SEALED_CHAMBER_OUTER_ROOM, 10, 19
-# 18 "data/maps/Underwater_SealedChamber/scripts.pory"
+# 16 "data/maps/Underwater_SealedChamber/scripts.pory"
 	end
-# 19 "data/maps/Underwater_SealedChamber/scripts.pory"
+# 17 "data/maps/Underwater_SealedChamber/scripts.pory"
 
-# 20 "data/maps/Underwater_SealedChamber/scripts.pory"
+# 18 "data/maps/Underwater_SealedChamber/scripts.pory"
 Underwater_SealedChamber_EventScript_Braille::
-# 21 "data/maps/Underwater_SealedChamber/scripts.pory"
+# 19 "data/maps/Underwater_SealedChamber/scripts.pory"
 	lockall
-# 22 "data/maps/Underwater_SealedChamber/scripts.pory"
+# 20 "data/maps/Underwater_SealedChamber/scripts.pory"
 	braillemsgbox Underwater_SealedChamber_Braille_GoUpHere
-# 23 "data/maps/Underwater_SealedChamber/scripts.pory"
+# 21 "data/maps/Underwater_SealedChamber/scripts.pory"
 	releaseall
-# 24 "data/maps/Underwater_SealedChamber/scripts.pory"
+# 22 "data/maps/Underwater_SealedChamber/scripts.pory"
 	end

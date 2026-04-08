@@ -57,72 +57,6 @@
       "layout_version": "emerald"
     },
     {
-      "id": "LAYOUT_ROUTE101",
-      "name": "Route101_Layout",
-      "width": 20,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/Route101/border.bin",
-      "blockdata_filepath": "data/layouts/Route101/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ROUTE102",
-      "name": "Route102_Layout",
-      "width": 50,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/Route102/border.bin",
-      "blockdata_filepath": "data/layouts/Route102/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ROUTE103",
-      "name": "Route103_Layout",
-      "width": 80,
-      "height": 22,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/Route103/border.bin",
-      "blockdata_filepath": "data/layouts/Route103/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ROUTE105",
-      "name": "Route105_Layout",
-      "width": 40,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/Route105/border.bin",
-      "blockdata_filepath": "data/layouts/Route105/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ROUTE106",
-      "name": "Route106_Layout",
-      "width": 80,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/Route106/border.bin",
-      "blockdata_filepath": "data/layouts/Route106/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_ROUTE107",
-      "name": "Route107_Layout",
-      "width": 60,
-      "height": 20,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
-      "border_filepath": "data/layouts/Route107/border.bin",
-      "blockdata_filepath": "data/layouts/Route107/map.bin",
-      "layout_version": "emerald"
-    },
-    {
       "id": "LAYOUT_ROUTE108",
       "name": "Route108_Layout",
       "width": 60,
@@ -3651,39 +3585,6 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TerraCave_End/border.bin",
       "blockdata_filepath": "data/layouts/TerraCave_End/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE105",
-      "name": "Underwater_Route105_Layout",
-      "width": 40,
-      "height": 80,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route105/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route105/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE125",
-      "name": "Underwater_Route125_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route125/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route125/map.bin",
-      "layout_version": "emerald"
-    },
-    {
-      "id": "LAYOUT_UNDERWATER_ROUTE129",
-      "name": "Underwater_Route129_Layout",
-      "width": 80,
-      "height": 40,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Underwater",
-      "border_filepath": "data/layouts/Underwater_Route129/border.bin",
-      "blockdata_filepath": "data/layouts/Underwater_Route129/map.bin",
       "layout_version": "emerald"
     },
     {
