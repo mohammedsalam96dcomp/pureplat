@@ -552,6 +552,7 @@ script Route201_EventScript_ChooseStarter {
 				"See ya, {PLAYER}!")
 	}
 		
+	setvar(VAR_TWINLEAF_INTRO_STATE, 7)
 	special(HealPlayerParty)
 	fadescreen(FADE_TO_BLACK)
 	warp(MAP_TWINLEAF_TOWN_PLAYERS_HOUSE_1F, 1, 5)
@@ -633,7 +634,7 @@ script Route201_EventScript_LakeVerityScene {
 	closemessage
 
 	setvar(VAR_ROUTE201_BARRYNPC_STATE, 1)
-	setvar(VAR_TWINLEAF_INTRO_STATE, 9)
+	setvar(VAR_TWINLEAF_INTRO_STATE, 10)
 
 	setfollowernpc(LOCALID_RIVAL, FLAG_HIDE_ROUTE_201_BARRY, Route201_EventScript_NPCBarry, 0)
 
