@@ -2022,7 +2022,6 @@
 #define FLAG_HIDE_MEW                                               0
 #define FLAG_HIDE_ROUTE_201_BRIEFCASE                                   0
 #define FLAG_HIDE_ROUTE_201_BARRY                  0
-#define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_BIRCH                  0
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0
 #define FLAG_HIDE_PETALBURG_WOODS_DEVON_EMPLOYEE                    0

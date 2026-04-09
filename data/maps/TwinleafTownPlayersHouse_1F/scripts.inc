@@ -521,7 +521,7 @@ TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Text_0:
 
 TwinleafTown_PlayersHouse1F_ByeBye_Text_0:
 # 226 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	.string "Bye-Bye, Nic!\n"
+	.string "Bye-Bye, {PLAYER}!\n"
 	.string "You take care now!$"
 
 TwinleafTown_PlayersHouse1F_BarryWaiting_Text_0:

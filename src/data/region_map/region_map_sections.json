@@ -1638,6 +1638,10 @@
     {
       "id": "MAPSEC_VERITY_LAKEFRONT",
       "name": "Verity Lakefront"
+    },
+    {
+      "id": "MAPSEC_LAKE_VERITY",
+      "name": "Lake Verity"
     }
   ]
 }

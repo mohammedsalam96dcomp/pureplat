@@ -20,7 +20,41 @@
     }
   ],
   "object_events": [],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_VERITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_LAKE_VERITY",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "3",
+      "script": "VerityLakeFront_EventScript_EnterLakeVerity"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "3",
+      "script": "VerityLakeFront_EventScript_EnterLakeVerity"
+    }
+  ],
   "bg_events": []
 }

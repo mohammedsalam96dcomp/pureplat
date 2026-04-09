@@ -11,7 +11,9 @@
     "Route201",
     "VerityLakeFront"
   ],
-  "gMapGroup_Dungeons": [],
+  "gMapGroup_Dungeons": [
+    "LakeVerity"
+  ],
   "gMapGroup_IndoorTwinleaf": [
     "TwinleafTownPlayersHouse_2F",
     "TwinleafTownPlayersHouse_1F",

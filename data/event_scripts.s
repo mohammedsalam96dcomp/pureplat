@@ -934,3 +934,5 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/TwinleafTownHouse2/scripts.inc"
 	.include "data/maps/Route201/scripts.inc"
 	.include "data/maps/VerityLakeFront/scripts.inc"
+
+	.include "data/maps/LakeVerity/scripts.inc"

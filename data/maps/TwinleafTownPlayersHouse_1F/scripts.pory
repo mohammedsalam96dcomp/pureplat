@@ -223,7 +223,7 @@ script TwinleafTown_PlayersHouse1F_ByeBye {
 	faceplayer
 
 	setspeaker(SP_NAME_MOM)
-	msgbox(format("Bye-Bye, Nic!\n"
+	msgbox(format("Bye-Bye, {PLAYER}!\n"
 				  "You take care now!"
 	))
 	closemessage

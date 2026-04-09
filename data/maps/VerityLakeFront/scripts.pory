@@ -1,0 +1,24 @@
+mapscripts VerityLakeFront_MapScripts{
+}
+
+
+script VerityLakeFront_EventScript_EnterLakeVerity {
+	lock
+	facefollowernpc
+
+	msgbox("{SPEAKER NAME_BARRY}All right!\n"
+			"We're at the lake!\p"
+			"Get ready, because we're capturing\n"
+			"that legendary Pokémon.\p"
+			"Trust me on this one. It's here.\n"
+			"It even says so on the sign!")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_up))
+	waitmovement(OBJ_EVENT_ID_NPC_FOLLOWER)
+		
+	warp(MAP_LAKE_VERITY, 10, 28)
+
+	release
+}
