@@ -12,7 +12,7 @@ TwinleafTown_EventScript_BarrysMom::
 	compare VAR_TWINLEAF_TOWN_STATE, 4
 	goto_if_eq TwinleafTown_EventScript_BarrysMom_3
 # 15 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"
-	compare VAR_TWINLEAF_TOWN_STATE, 8
+	compare VAR_TWINLEAF_TOWN_STATE, 7
 	goto_if_eq TwinleafTown_EventScript_BarrysMom_4
 TwinleafTown_EventScript_BarrysMom_1:
 # 18 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"

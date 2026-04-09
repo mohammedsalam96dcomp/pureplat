@@ -97,7 +97,7 @@ script TwinleafTown_EventScript_TwinleafMan {
     lock
     if (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
         goto(TwinleafTown_EventScript_BarryLooking)
-    } elif (var(VAR_TWINLEAF_TOWN_STATE) == 4) {
+    } elif (var(VAR_TWINLEAF_TOWN_STATE) == 4 || var(VAR_TWINLEAF_TOWN_STATE) == 7) {
         goto(TwinleafTown_EventScript_TearingOff)
     }
 

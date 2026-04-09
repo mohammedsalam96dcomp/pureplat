@@ -12,7 +12,7 @@ script TwinleafTown_EventScript_BarrysMom {
 		goto(TwinleafTown_EventScript_SitStill)
 	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 4) {
 		goto(TwinleafTown_EventScript_RocketedOff)
-	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 8) {
+	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 7) {
 		goto(TwinleafTown_EventScript_Route201)
 	}
 	release

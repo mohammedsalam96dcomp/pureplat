@@ -137,6 +137,9 @@ TwinleafTown_EventScript_TwinleafMan::
 # 100 "data/maps/TwinleafTown/scripts.pory"
 	compare VAR_TWINLEAF_TOWN_STATE, 4
 	goto_if_eq TwinleafTown_EventScript_TwinleafMan_3
+# 100 "data/maps/TwinleafTown/scripts.pory"
+	compare VAR_TWINLEAF_TOWN_STATE, 7
+	goto_if_eq TwinleafTown_EventScript_TwinleafMan_3
 TwinleafTown_EventScript_TwinleafMan_1:
 # 104 "data/maps/TwinleafTown/scripts.pory"
 	release
