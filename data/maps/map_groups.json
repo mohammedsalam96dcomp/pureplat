@@ -5,8 +5,7 @@
     "gMapGroup_IndoorTwinleaf",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
-    "gMapGroup_Link_Frlg",
-    "gMapGroup_SpecialArea_Frlg"
+    "gMapGroup_Link_Frlg"  
   ],
   "gMapGroup_TownsAndRoutes": [
     "TwinleafTown",
@@ -178,20 +177,5 @@
     "RecordCorner_Frlg",
     "BattleColosseum_4P_Frlg",
     "UnionRoom_Frlg"
-  ],
-  "gMapGroup_SpecialArea_Frlg": [
-    "TrainerTower_1F_Frlg",
-    "TrainerTower_2F_Frlg",
-    "TrainerTower_3F_Frlg",
-    "TrainerTower_4F_Frlg",
-    "TrainerTower_5F_Frlg",
-    "TrainerTower_6F_Frlg",
-    "TrainerTower_7F_Frlg",
-    "TrainerTower_8F_Frlg",
-    "TrainerTower_Roof_Frlg",
-    "TrainerTower_Lobby_Frlg",
-    "TrainerTower_Elevator_Frlg",
-    "BirthIsland_Exterior_Frlg",
-    "BirthIsland_Harbor_Frlg"
   ]
 }

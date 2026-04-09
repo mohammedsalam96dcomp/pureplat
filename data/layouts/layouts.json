@@ -2155,19 +2155,6 @@
       "layout_version": "frlg"
     },
     {
-      "id": "LAYOUT_BIRTH_ISLAND_EXTERIOR_FRLG",
-      "name": "BirthIsland_Exterior_FRLG_Layout",
-      "width": 30,
-      "height": 30,
-      "primary_tileset": "gTileset_General_Frlg",
-      "secondary_tileset": "gTileset_SeviiIslands67",
-      "border_filepath": "data/layouts/BirthIsland_Exterior_Frlg/border.bin",
-      "blockdata_filepath": "data/layouts/BirthIsland_Exterior_Frlg/map.bin",
-      "border_height": 2,
-      "border_width": 2,
-      "layout_version": "frlg"
-    },
-    {
       "id": "LAYOUT_TRAINER_TOWER_1F_DOUBLES",
       "name": "TrainerTower_1F_Doubles_Layout",
       "width": 18,
