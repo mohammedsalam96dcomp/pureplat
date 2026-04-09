@@ -225,12 +225,6 @@ gStdScripts_End::
 .if IS_FRLG
 
 @ FRLG scripts
-	.include "data/maps/BattleColosseum_2P_Frlg/scripts.inc"
-	.include "data/maps/TradeCenter_Frlg/scripts.inc"
-	.include "data/maps/RecordCorner_Frlg/scripts.inc"
-	.include "data/maps/BattleColosseum_4P_Frlg/scripts.inc"
-	.include "data/maps/UnionRoom_Frlg/scripts.inc"
-
 	.include "data/scripts/trainer_tower.inc"
 	.include "data/scripts/fame_checker_frlg.inc"
 	.include "data/text/fame_checker_frlg.inc"
@@ -929,20 +923,14 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
 
+
+
 	.include "data/maps/TwinleafTown/scripts.inc"
-
 	.include "data/maps/TwinleafTownPlayersHouse_2F/scripts.inc"
-
 	.include "data/maps/TwinleafTownPlayersHouse_1F/scripts.inc"
-
 	.include "data/maps/TwinleafTownBarrysHouse_1F/scripts.inc"
-
 	.include "data/maps/TwinleafTownBarrysHouse_2f/scripts.inc"
-
 	.include "data/maps/TwinleafTownHouse1/scripts.inc"
-
 	.include "data/maps/TwinleafTownHouse2/scripts.inc"
-
 	.include "data/maps/Route201/scripts.inc"
-
 	.include "data/maps/VerityLakeFront/scripts.inc"

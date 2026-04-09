@@ -4,8 +4,7 @@
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorTwinleaf",
     "gMapGroup_IndoorDynamic",
-    "gMapGroup_SpecialArea",
-    "gMapGroup_Link_Frlg"  
+    "gMapGroup_SpecialArea"  
   ],
   "gMapGroup_TownsAndRoutes": [
     "TwinleafTown",
@@ -170,12 +169,5 @@
     "NavelRock_Down11",
     "NavelRock_Bottom",
     "TrainerHill_Elevator"
-  ],
-  "gMapGroup_Link_Frlg": [
-    "BattleColosseum_2P_Frlg",
-    "TradeCenter_Frlg",
-    "RecordCorner_Frlg",
-    "BattleColosseum_4P_Frlg",
-    "UnionRoom_Frlg"
   ]
 }
