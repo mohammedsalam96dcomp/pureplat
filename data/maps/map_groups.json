@@ -2,16 +2,26 @@
   "group_order": [
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_Dungeons",
+    "gMapGroup_IndoorTwinleaf",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
     "gMapGroup_Link_Frlg",
-    "gMapGroup_SpecialArea_Frlg",
-    "gMapGroup_TownsAndRoutes_Plat",
-    "gMapGroup_IndoorTwinleaf"
+    "gMapGroup_SpecialArea_Frlg"
   ],
   "gMapGroup_TownsAndRoutes": [
+    "TwinleafTown",
+    "Route201",
+    "VerityLakeFront"
   ],
   "gMapGroup_Dungeons": [
+  ],
+    "gMapGroup_IndoorTwinleaf": [
+    "TwinleafTownPlayersHouse_2F",
+    "TwinleafTownPlayersHouse_1F",
+    "TwinleafTownBarrysHouse_1F",
+    "TwinleafTownBarrysHouse_2f",
+    "TwinleafTownHouse1",
+    "TwinleafTownHouse2"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -206,18 +216,5 @@
     "BirthIsland_Exterior_Frlg",
     "BirthIsland_Harbor_Frlg",
     "NavelRock_Harbor_Frlg"
-  ],
-  "gMapGroup_TownsAndRoutes_Plat": [
-    "TwinleafTown",
-    "Route201",
-    "VerityLakeFront"
-  ],
-  "gMapGroup_IndoorTwinleaf": [
-    "TwinleafTownPlayersHouse_2F",
-    "TwinleafTownPlayersHouse_1F",
-    "TwinleafTownBarrysHouse_1F",
-    "TwinleafTownBarrysHouse_2f",
-    "TwinleafTownHouse1",
-    "TwinleafTownHouse2"
   ]
 }
