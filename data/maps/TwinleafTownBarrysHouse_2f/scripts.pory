@@ -1,9 +1,13 @@
-//VAR_TWINLEAF_INTRO_STATE 7 after speaking to barry in Barrys House
+//VAR_TWINLEAF_TOWN_STATE 1 - AFTER TV
+//VAR_TWINLEAF_TOWN_STATE 2 - AFTER BARRY LEAVES
+//VAR_TWINLEAF_TOWN STATE 3 - AFTER SPEAKING WITH MOM
+//VAR_TWINLEAF_TOWN STATE 4 - AFTER SPEAKING WITH BARRY
+
 const LOCALID_RIVAL = 1
 
-mapscripts TwinleafTownBarrysHouse_2f_MapScripts{
+mapscripts TwinleafTownBarrysHouse_2F_MapScripts{
 	MAP_SCRIPT_ON_FRAME_TABLE[
-    	VAR_TWINLEAF_INTRO_STATE, 5: TwinleafTownBarrysHouse_2F_ON_FRAME
+    	VAR_TWINLEAF_BARRY_STATE, 2: TwinleafTownBarrysHouse_2F_ON_FRAME
   	]
 }
 
@@ -40,18 +44,20 @@ script TwinleafTownBarrysHouse_2F_ON_FRAME {
     setflag(FLAG_HIDE_BARRY_ROOM_BARRY)
     removeobject(LOCALID_RIVAL)
 
-	setvar(VAR_TWINLEAF_INTRO_STATE, 6)
+	setvar(VAR_TWINLEAF_BARRY_STATE, 3)
+	setvar(VAR_ROUTE201_STATE, 1)    
+	setvar(VAR_TWINLEAF_TOWN_STATE, 4)
 	release
 }
 
-script TwinleafTownBarrysHouse_2f_EventScript_Wii {
+script TwinleafTownBarrysHouse_2F_EventScript_Wii {
 	lock
 	msgbox("It's a wii!\n"
 			"It's controlled by a Wii Remote!")
 	release
 }
 
-script TwinleafTownBarrysHouse_2f_EventScript_PC {
+script TwinleafTownBarrysHouse_2F_EventScript_PC {
 	lock
 	msgbox("{PLAYER} checked the PC screen.\p"
 			"Adventure Rule No. 1\n"

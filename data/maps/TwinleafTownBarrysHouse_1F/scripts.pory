@@ -1,13 +1,18 @@
+//VAR_TWINLEAF_TOWN_STATE 1 - AFTER TV
+//VAR_TWINLEAF_TOWN_STATE 2 - AFTER BARRY LEAVES
+//VAR_TWINLEAF_TOWN STATE 3 - AFTER SPEAKING WITH MOM
+//VAR_TWINLEAF_TOWN STATE 4 - AFTER SPEAKING WITH BARRY
+
 mapscripts TwinleafTownBarrysHouse_1F_MapScripts{
 }
 
 script TwinleafTown_EventScript_BarrysMom {
 	lock
-	if (var(VAR_TWINLEAF_INTRO_STATE) == 5) {
+	if (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
 		goto(TwinleafTown_EventScript_SitStill)
-	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
+	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 4) {
 		goto(TwinleafTown_EventScript_RocketedOff)
-	} elif (var(VAR_TWINLEAF_INTRO_STATE) == 8) {
+	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 8) {
 		goto(TwinleafTown_EventScript_Route201)
 	}
 	release

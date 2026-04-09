@@ -929,7 +929,7 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/TwinleafTownPlayersHouse_2F/scripts.inc"
 	.include "data/maps/TwinleafTownPlayersHouse_1F/scripts.inc"
 	.include "data/maps/TwinleafTownBarrysHouse_1F/scripts.inc"
-	.include "data/maps/TwinleafTownBarrysHouse_2f/scripts.inc"
+	.include "data/maps/TwinleafTownBarrysHouse_2F/scripts.inc"
 	.include "data/maps/TwinleafTownHouse1/scripts.inc"
 	.include "data/maps/TwinleafTownHouse2/scripts.inc"
 	.include "data/maps/Route201/scripts.inc"

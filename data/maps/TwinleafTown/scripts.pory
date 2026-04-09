@@ -1,16 +1,13 @@
-//VAR_TWINLEAF_INTRO_STATE is 5 at the start of this script
+//VAR_TWINLEAF_TOWN_STATE 1 - AFTER TV
+//VAR_TWINLEAF_TOWN_STATE 2 - AFTER BARRY LEAVES
+//VAR_TWINLEAF_TOWN STATE 3 - AFTER SPEAKING WITH MOM
+//VAR_TWINLEAF_TOWN STATE 4 - AFTER SPEAKING WITH BARRY
+
 const LOCALID_NPC3 = 3
 const LOCALID_RIVAL = 4
 
 mapscripts TwinleafTown_MapScripts{
-//     MAP_SCRIPT_ON_FRAME_TABLE[
-//         VAR_TWINLEAF_MOM_STATE, 4: TwinleafTown_ON_FRAME
-//   ]
 }
-
-// script TwinleafTown_ON_FRAME {
-//   setvar(VAR_TWINLEAF_MOM_STATE, 5)
-// }
 
 script TwinleafTown_EventScript_THUD {
     lock
@@ -71,7 +68,7 @@ script TwinleafTown_EventScript_THUD {
     setflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
     removeobject(LOCALID_RIVAL)
 
-    setvar(VAR_TWINLEAF_BARRY_STATE,2)
+    setvar(VAR_TWINLEAF_BARRY_STATE, 2)
 
     release
 }
@@ -98,9 +95,9 @@ script TwinleafTown_EventScript_WildPokemon {
 
 script TwinleafTown_EventScript_TwinleafMan {
     lock
-    if (var(VAR_TWINLEAF_INTRO_STATE) == 5) {
+    if (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
         goto(TwinleafTown_EventScript_BarryLooking)
-    } elif (var(VAR_TWINLEAF_INTRO_STATE) == 6) {
+    } elif (var(VAR_TWINLEAF_TOWN_STATE) == 4) {
         goto(TwinleafTown_EventScript_TearingOff)
     }
 

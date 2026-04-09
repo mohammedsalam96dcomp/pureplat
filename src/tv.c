@@ -171,7 +171,7 @@ static void DoTVShow3CheersForPokeblocks(void);
 static void DoTVShowPokemonTodayFailedCapture(void);
 static void DoTVShowPokemonAngler(void);
 static void DoTVShowTheWorldOfMasters(void);
-static void DoTVShowTodaysRivalTrainer(void);
+//static void DoTVShowTodaysRivalTrainer(void);
 static void DoTVShowDewfordTrendWatcherNetwork(void);
 static void DoTVShowHoennTreasureInvestigators(void);
 static void DoTVShowFindThatGamer(void);
@@ -5474,113 +5474,113 @@ static void DoTVShowTheWorldOfMasters(void)
     ShowFieldMessage(sTVWorldOfMastersTextGroup[state]);
 }
 
-static void DoTVShowTodaysRivalTrainer(void)
-{
-    TVShow *show;
-    u8 state;
+// static void DoTVShowTodaysRivalTrainer(void)
+// {
+//     TVShow *show;
+//     u8 state;
 
-    show = &gSaveBlock1Ptr->tvShows[gSpecialVar_0x8004];
-    gSpecialVar_Result = FALSE;
-    state = sTVShowState;
-    switch (state)
-    {
-    case 0:
-        switch (show->rivalTrainer.location)
-        {
-        default:
-            sTVShowState = 7;
-            break;
-        case MAPSEC_SECRET_BASE:
-            sTVShowState = 8;
-            break;
-        case MAPSEC_DYNAMIC:
-            break;
-        }
-        break;
-    case 7:
-        TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
-        ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
-        GetMapName(gStringVar3, show->rivalTrainer.location, 0);
-        if (show->rivalTrainer.badgeCount != 0)
-            sTVShowState = 1;
-        else
-            sTVShowState = 2;
-        break;
-    case 8:
-        TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
-        ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
-        if (show->rivalTrainer.badgeCount != 0)
-            sTVShowState = 1;
-        else
-            sTVShowState = 2;
-        break;
-    case 9:
-        TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
-        ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
-        if (show->rivalTrainer.badgeCount != 0)
-            sTVShowState = 1;
-        else
-            sTVShowState = 2;
-        break;
-    case 10:
-        TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
-        ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
-        if (show->rivalTrainer.badgeCount != 0)
-            sTVShowState = 1;
-        else
-            sTVShowState = 2;
-        break;
-    case 1:
-        ConvertIntToDecimalString(0, show->rivalTrainer.badgeCount);
-        if (FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
-        {
-            if (show->rivalTrainer.nSilverSymbols || show->rivalTrainer.nGoldSymbols)
-                sTVShowState = 4;
-            else
-                sTVShowState = 3;
-        }
-        else
-        {
-            sTVShowState = 6;
-        }
-        break;
-    case 2:
-        if (FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
-        {
-            if (show->rivalTrainer.nSilverSymbols || show->rivalTrainer.nGoldSymbols)
-                sTVShowState = 4;
-            else
-                sTVShowState = 3;
-        }
-        else
-        {
-            sTVShowState = 6;
-        }
-        break;
-    case 3:
-        if (show->rivalTrainer.battlePoints == 0)
-            sTVShowState = 6;
-        else
-            sTVShowState = 5;
-        break;
-    case 4:
-        ConvertIntToDecimalString(0, show->rivalTrainer.nGoldSymbols);
-        ConvertIntToDecimalString(1, show->rivalTrainer.nSilverSymbols);
-        if (show->rivalTrainer.battlePoints == 0)
-            sTVShowState = 6;
-        else
-            sTVShowState = 5;
-        break;
-    case 5:
-        ConvertIntToDecimalString(0, show->rivalTrainer.battlePoints);
-        sTVShowState = 6;
-        break;
-    case 6:
-        TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
-        TVShowDone();
-    }
-    ShowFieldMessage(sTVTodaysRivalTrainerTextGroup[state]);
-}
+//     show = &gSaveBlock1Ptr->tvShows[gSpecialVar_0x8004];
+//     gSpecialVar_Result = FALSE;
+//     state = sTVShowState;
+//     switch (state)
+//     {
+//     case 0:
+//         switch (show->rivalTrainer.location)
+//         {
+//         default:
+//             sTVShowState = 7;
+//             break;
+//         case MAPSEC_SECRET_BASE:
+//             sTVShowState = 8;
+//             break;
+//         case MAPSEC_DYNAMIC:
+//             break;
+//         }
+//         break;
+//     case 7:
+//         TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
+//         ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
+//         GetMapName(gStringVar3, show->rivalTrainer.location, 0);
+//         if (show->rivalTrainer.badgeCount != 0)
+//             sTVShowState = 1;
+//         else
+//             sTVShowState = 2;
+//         break;
+//     case 8:
+//         TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
+//         ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
+//         if (show->rivalTrainer.badgeCount != 0)
+//             sTVShowState = 1;
+//         else
+//             sTVShowState = 2;
+//         break;
+//     case 9:
+//         TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
+//         ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
+//         if (show->rivalTrainer.badgeCount != 0)
+//             sTVShowState = 1;
+//         else
+//             sTVShowState = 2;
+//         break;
+//     case 10:
+//         TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
+//         ConvertIntToDecimalString(1, show->rivalTrainer.dexCount);
+//         if (show->rivalTrainer.badgeCount != 0)
+//             sTVShowState = 1;
+//         else
+//             sTVShowState = 2;
+//         break;
+//     case 1:
+//         ConvertIntToDecimalString(0, show->rivalTrainer.badgeCount);
+//         if (FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
+//         {
+//             if (show->rivalTrainer.nSilverSymbols || show->rivalTrainer.nGoldSymbols)
+//                 sTVShowState = 4;
+//             else
+//                 sTVShowState = 3;
+//         }
+//         else
+//         {
+//             sTVShowState = 6;
+//         }
+//         break;
+//     case 2:
+//         if (FlagGet(FLAG_LANDMARK_BATTLE_FRONTIER))
+//         {
+//             if (show->rivalTrainer.nSilverSymbols || show->rivalTrainer.nGoldSymbols)
+//                 sTVShowState = 4;
+//             else
+//                 sTVShowState = 3;
+//         }
+//         else
+//         {
+//             sTVShowState = 6;
+//         }
+//         break;
+//     case 3:
+//         if (show->rivalTrainer.battlePoints == 0)
+//             sTVShowState = 6;
+//         else
+//             sTVShowState = 5;
+//         break;
+//     case 4:
+//         ConvertIntToDecimalString(0, show->rivalTrainer.nGoldSymbols);
+//         ConvertIntToDecimalString(1, show->rivalTrainer.nSilverSymbols);
+//         if (show->rivalTrainer.battlePoints == 0)
+//             sTVShowState = 6;
+//         else
+//             sTVShowState = 5;
+//         break;
+//     case 5:
+//         ConvertIntToDecimalString(0, show->rivalTrainer.battlePoints);
+//         sTVShowState = 6;
+//         break;
+//     case 6:
+//         TVShowConvertInternationalString(gStringVar1, show->rivalTrainer.playerName, show->rivalTrainer.language);
+//         TVShowDone();
+//     }
+//     ShowFieldMessage(sTVTodaysRivalTrainerTextGroup[state]);
+// }
 
 static void DoTVShowDewfordTrendWatcherNetwork(void)
 {

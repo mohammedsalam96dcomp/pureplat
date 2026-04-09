@@ -85,8 +85,8 @@
       "x": 14,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "1",
       "script": "Route201_EventScript_BarryScene1"
     },
     {
@@ -94,8 +94,8 @@
       "x": 15,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "1",
       "script": "Route201_EventScript_BarryScene2"
     },
     {
@@ -103,8 +103,8 @@
       "x": 16,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "1",
       "script": "Route201_EventScript_BarryScene3"
     },
     {
@@ -112,8 +112,8 @@
       "x": 17,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "1",
       "script": "Route201_EventScript_BarryScene4"
     },
     {
@@ -121,8 +121,8 @@
       "x": 18,
       "y": 15,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "1",
       "script": "Route201_EventScript_PickAPokemonDown"
     },
     {
@@ -130,8 +130,8 @@
       "x": 17,
       "y": 15,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "1",
       "script": "Route201_EventScript_PickAPokemonDown"
     },
     {
@@ -139,8 +139,8 @@
       "x": 19,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "6",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "1",
       "script": "Route201_EventScript_PickAPokemonRight"
     },
     {
@@ -148,8 +148,8 @@
       "x": 14,
       "y": 17,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "9",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "2",
       "script": "Route201_EventScript_LakeVerity1"
     },
     {
@@ -157,8 +157,8 @@
       "x": 15,
       "y": 17,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "9",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "2",
       "script": "Route201_EventScript_LakeVerity2"
     },
     {
@@ -166,8 +166,8 @@
       "x": 16,
       "y": 17,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "9",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "2",
       "script": "Route201_EventScript_LakeVerity3"
     },
     {
@@ -175,8 +175,8 @@
       "x": 17,
       "y": 17,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "9",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "2",
       "script": "Route201_EventScript_LakeVerity4"
     },
     {
@@ -184,8 +184,8 @@
       "x": 14,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "10",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "3",
       "script": "Route201_EventScript_VerityExitSouth"
     },
     {
@@ -193,8 +193,8 @@
       "x": 15,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "10",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "3",
       "script": "Route201_EventScript_VerityExitSouth"
     },
     {
@@ -202,8 +202,8 @@
       "x": 16,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "10",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "3",
       "script": "Route201_EventScript_VerityExitSouth"
     },
     {
@@ -211,8 +211,8 @@
       "x": 17,
       "y": 18,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "10",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "3",
       "script": "Route201_EventScript_VerityExitSouth"
     },
     {
@@ -220,8 +220,8 @@
       "x": 19,
       "y": 15,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "10",
+      "var": "VAR_ROUTE201_STATE",
+      "var_value": "3",
       "script": "Route201_EventScript_VerityExitEast"
     }
   ],

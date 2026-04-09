@@ -278,7 +278,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_ROUTE_201_DAWN
 	setflag FLAG_HIDE_ROUTE_201_BRIEFCASE
 	call EventScript_ResetAllBerries
-	setvar VAR_TWINLEAF_INTRO_STATE, 0
+	setvar VAR_NEW_GAME_START, 0
 	end
 
 EventScript_ResetAllMapFlagsFrlg::

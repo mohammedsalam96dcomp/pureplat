@@ -4,7 +4,7 @@
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorTwinleaf",
     "gMapGroup_IndoorDynamic",
-    "gMapGroup_SpecialArea"  
+    "gMapGroup_SpecialArea"
   ],
   "gMapGroup_TownsAndRoutes": [
     "TwinleafTown",
@@ -16,7 +16,7 @@
     "TwinleafTownPlayersHouse_2F",
     "TwinleafTownPlayersHouse_1F",
     "TwinleafTownBarrysHouse_1F",
-    "TwinleafTownBarrysHouse_2f",
+    "TwinleafTownBarrysHouse_2F",
     "TwinleafTownHouse1",
     "TwinleafTownHouse2"
   ],

@@ -1715,13 +1715,13 @@
     },
     {
       "id": "LAYOUT_TWINLEAF_TOWN_BARRYS_HOUSE_2F",
-      "name": "TwinleafTownBarrysHouse_2f_Layout",
+      "name": "TwinleafTownBarrysHouse_2F_Layout",
       "width": 10,
       "height": 10,
       "primary_tileset": "gTileset_BuildingSinnoh",
       "secondary_tileset": "gTileset_PlayersHouse",
-      "border_filepath": "data/layouts/TwinleafTownBarrysHouse_2f/border.bin",
-      "blockdata_filepath": "data/layouts/TwinleafTownBarrysHouse_2f/map.bin"
+      "border_filepath": "data/layouts/TwinleafTownBarrysHouse_2F/border.bin",
+      "blockdata_filepath": "data/layouts/TwinleafTownBarrysHouse_2F/map.bin"
     },
     {
       "id": "LAYOUT_TWINLEAF_TOWN_HOUSE1",

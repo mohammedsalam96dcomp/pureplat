@@ -43,8 +43,8 @@
       "x": 4,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "2",
+      "var": "VAR_TWINLEAF_TOWN_STATE",
+      "var_value": "1",
       "script": "TwinleafTownPlayersHouse_2F_EnterBarryRight"
     },
     {
@@ -52,8 +52,8 @@
       "x": 3,
       "y": 6,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "2",
+      "var": "VAR_TWINLEAF_TOWN_STATE",
+      "var_value": "1",
       "script": "TwinleafTownPlayersHouse_2F_EnterBarryDown"
     },
     {
@@ -61,8 +61,8 @@
       "x": 2,
       "y": 5,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "2",
+      "var": "VAR_TWINLEAF_TOWN_STATE",
+      "var_value": "1",
       "script": "TwinleafTownPlayersHouse_2F_EnterBarryLeft"
     },
     {
@@ -70,8 +70,8 @@
       "x": 3,
       "y": 4,
       "elevation": 0,
-      "var": "VAR_TWINLEAF_INTRO_STATE",
-      "var_value": "2",
+      "var": "VAR_TWINLEAF_TOWN_STATE",
+      "var_value": "1",
       "script": "TwinleafTownPlayersHouse_2F_EnterBarryUp"
     }
   ],

@@ -1,21 +1,25 @@
-//VAR_TWINLEAF_INTRO_STATE 1 - warp into map
-//VAR_TWINLEAF_INTRO_STATE 2 - tv program
-//VAR_TWINLEAF_INTRO_STATE 3 - barry leave room
-//VAR_TWINLEAF_INTRO_STATE 4 - Leaving House
-//VAR_TWINLEAF_INTRO_STATE 5 - Talked to barry
-//VAR_TWINLEAF_INTRO_STATE 6 - Left twinleaf
-//VAR_TWINLEAF_INTRO_STATE 7 - Got Pokemon
+//VAR_TWINLEAF_TOWN_STATE 1 - AFTER TV
+//VAR_TWINLEAF_TOWN_STATE 2 - AFTER BARRY LEAVES
+//VAR_TWINLEAF_TOWN STATE 3 - AFTER SPEAKING WITH MOM
+//VAR_TWINLEAF_TOWN STATE 4 - AFTER SPEAKING WITH BARRY
+
+//VAR_TWINLEAF_TOWN_STATE 2 - tv program
+//VAR_TWINLEAF_TOWN_STATE 3 - barry leave room
+//VAR_TWINLEAF_TOWN_STATE 4 - Leaving House
+//VAR_TWINLEAF_TOWN_STATE 5 - Talked to barry
+//VAR_TWINLEAF_TOWN_STATE 6 - Left twinleaf
+//VAR_TWINLEAF_TOWN_STATE 7 - Got Pokemon
 
 
 const LOCALID_RIVAL = 1
 
 mapscripts TwinleafTownPlayersHouse_2F_MapScripts {
   MAP_SCRIPT_ON_FRAME_TABLE[
-    VAR_TWINLEAF_INTRO_STATE, 1: TwinleafTownPlayersHouse_2F_ON_FRAME
+    VAR_NEW_GAME_START, 1: TwinleafTownPlayersHouse_2F_ON_FRAME
   ]
 
   MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
-    VAR_TWINLEAF_INTRO_STATE, 0: TwinleafTownPlayersHouse_2F_ON_WARP
+    VAR_NEW_GAME_START, 0: TwinleafTownPlayersHouse_2F_ON_WARP
   ]
 }
 
@@ -30,12 +34,13 @@ script TwinleafTownPlayersHouse_2F_ON_FRAME {
                 "See you next week, same time\n"
                 "same channel."))
   release
-  setvar(VAR_TWINLEAF_INTRO_STATE, 2)
+  setvar(VAR_TWINLEAF_TOWN_STATE, 1)
+  setvar(VAR_NEW_GAME_START, 2)
 }
 
 script TwinleafTownPlayersHouse_2F_ON_WARP {
   applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
-  setvar(VAR_TWINLEAF_INTRO_STATE, 1)
+  setvar(VAR_NEW_GAME_START, 1)
 }
 
 
@@ -206,7 +211,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   removeobject(LOCALID_RIVAL)
   setflag(FLAG_HIDE_PLAYER_HOUSE_BARRY)
   delay(40)
-  setvar(VAR_TWINLEAF_INTRO_STATE, 3)
+  setvar(VAR_TWINLEAF_TOWN_STATE, 2)
   fadedefaultbgm()
   releaseall
 }
