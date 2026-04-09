@@ -13,9 +13,8 @@
     "Route201",
     "VerityLakeFront"
   ],
-  "gMapGroup_Dungeons": [
-  ],
-    "gMapGroup_IndoorTwinleaf": [
+  "gMapGroup_Dungeons": [],
+  "gMapGroup_IndoorTwinleaf": [
     "TwinleafTownPlayersHouse_2F",
     "TwinleafTownPlayersHouse_1F",
     "TwinleafTownBarrysHouse_1F",
@@ -181,7 +180,6 @@
     "UnionRoom_Frlg"
   ],
   "gMapGroup_SpecialArea_Frlg": [
-    "NavelRock_Exterior_Frlg",
     "TrainerTower_1F_Frlg",
     "TrainerTower_2F_Frlg",
     "TrainerTower_3F_Frlg",
@@ -193,28 +191,7 @@
     "TrainerTower_Roof_Frlg",
     "TrainerTower_Lobby_Frlg",
     "TrainerTower_Elevator_Frlg",
-    "NavelRock_1F_Frlg",
-    "NavelRock_Summit_Frlg",
-    "NavelRock_Base_Frlg",
-    "NavelRock_SummitPath_2F_Frlg",
-    "NavelRock_SummitPath_3F_Frlg",
-    "NavelRock_SummitPath_4F_Frlg",
-    "NavelRock_SummitPath_5F_Frlg",
-    "NavelRock_BasePath_B1F_Frlg",
-    "NavelRock_BasePath_B2F_Frlg",
-    "NavelRock_BasePath_B3F_Frlg",
-    "NavelRock_BasePath_B4F_Frlg",
-    "NavelRock_BasePath_B5F_Frlg",
-    "NavelRock_BasePath_B6F_Frlg",
-    "NavelRock_BasePath_B7F_Frlg",
-    "NavelRock_BasePath_B8F_Frlg",
-    "NavelRock_BasePath_B9F_Frlg",
-    "NavelRock_BasePath_B10F_Frlg",
-    "NavelRock_BasePath_B11F_Frlg",
-    "NavelRock_B1F_Frlg",
-    "NavelRock_Fork_Frlg",
     "BirthIsland_Exterior_Frlg",
-    "BirthIsland_Harbor_Frlg",
-    "NavelRock_Harbor_Frlg"
+    "BirthIsland_Harbor_Frlg"
   ]
 }
