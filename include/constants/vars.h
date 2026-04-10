@@ -108,7 +108,6 @@
 #define VAR_ROUTE201_FOLLOWERBARRY                       0x4052 
 #define VAR_LAKE_VERITY_STATE                            0x4055
 
-
 #define VAR_CURRENT_SECRET_BASE                          0x4054 
 
 #define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var

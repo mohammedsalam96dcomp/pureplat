@@ -13,7 +13,14 @@ script TwinleafTown_EventScript_BarrysMom {
 	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 4) {
 		goto(TwinleafTown_EventScript_RocketedOff)
 	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 7) {
-		goto(TwinleafTown_EventScript_Route201)
+		if (var(VAR_LAKE_VERITY_STATE) == 3) {
+			faceplayer
+			msgbox("{SPEAKER NAME_BARRYMOM}Oh, you've\n"
+					"become friends with a Pokémon, too.")
+		} 
+		else {
+			goto(TwinleafTown_EventScript_Route201)
+		}
 	}
 	release
 }
@@ -58,7 +65,6 @@ script TwinleafTown_EventScript_Route201 {
 			"be out on Route 201 by now.\p"
 			"He just can't sit still, that boy.\n"
 			"I wonder who he takes after?")
-
 	release
 
 }

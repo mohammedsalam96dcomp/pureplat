@@ -761,8 +761,10 @@
 #define FLAG_HIDE_ROUTE_201_DAWN                                    0x2BD
 #define FLAG_HIDE_ROUTE_201_BRIEFCASE                               0x2CF
 #define FLAG_HIDE_ROUTE_201_BARRY                                   0x2D0
+#define FLAG_HIDE_ROUTE_201_KID                                     0x2D2
 #define FLAG_HIDE_LAKE_VERITY_BARRY                                 0x2D1
 #define FLAG_HIDE_LAKE_VERITY_CYRUS                                 0x2D2
+#define FLAG_RECEIVED_POTION                                        0x2D9 // Unused Flag
 
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 
@@ -784,7 +786,6 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB

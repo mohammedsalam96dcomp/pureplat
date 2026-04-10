@@ -38,7 +38,7 @@ script LakeVerity_ON_FRAME {
 	setobjectxyperm(LOCALID_BARRY, 11, 27)
 	delay(10)
 
-	applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down*9))
+	applymovement(OBJ_EVENT_ID_CAMERA, moves(walk_down*5, walk_in_place_down, walk_down*4))
 	applymovement(LOCALID_CYRUS, moves(walk_down*5, walk_left, walk_down*4))
 	waitmovement(LOCALID_CYRUS)
 
@@ -93,6 +93,7 @@ script LakeVerity_ON_FRAME {
 	applymovement(LOCALID_BARRY, moves(face_left, delay_16*2, face_up, delay_16*2)) 
 	waitmovement(LOCALID_BARRY)
 	applymovement(LOCALID_BARRY, moves(walk_fast_down*3, walk_in_place_faster_left*2))
+	waitmovement(LOCALID_BARRY)
 
 	msgbox("{SPEAKER NAME_BARRY}!\n"
 		"Did you hear that, {PLAYER}?!\p"

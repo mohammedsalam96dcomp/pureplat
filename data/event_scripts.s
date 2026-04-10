@@ -936,3 +936,5 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/VerityLakeFront/scripts.inc"
 
 	.include "data/maps/LakeVerity/scripts.inc"
+
+	.include "data/maps/SandgemTown/scripts.inc"

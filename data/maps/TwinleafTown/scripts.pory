@@ -97,10 +97,19 @@ script TwinleafTown_EventScript_TwinleafMan {
     lock
     if (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
         goto(TwinleafTown_EventScript_BarryLooking)
-    } elif (var(VAR_TWINLEAF_TOWN_STATE) == 4 || var(VAR_TWINLEAF_TOWN_STATE) == 7) {
-        goto(TwinleafTown_EventScript_TearingOff)
+    } elif (var(VAR_TWINLEAF_TOWN_STATE) >= 4) {
+        if (!(var(VAR_LAKE_VERITY_STATE) == 3)) {
+            goto(TwinleafTown_EventScript_TearingOff)
+        }
+        else {
+            faceplayer
+            msgbox("Barry? He went tearing off\n"
+                    "in a huge rush a while ago.\p"
+                    ". . .Ouch. He ran right into me earlier.\n"
+                    "It's still hurting.\l"
+                    "That kid's growing up tough.")
+        }
     }
-
     release
 }
 

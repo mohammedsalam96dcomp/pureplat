@@ -1642,6 +1642,9 @@
     {
       "id": "MAPSEC_LAKE_VERITY",
       "name": "Lake Verity"
+    },
+    {
+      "id": "MAPSEC_SANDGEM_TOWN"
     }
   ]
 }

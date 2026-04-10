@@ -136,12 +136,9 @@ TwinleafTown_EventScript_TwinleafMan::
 	goto_if_eq TwinleafTown_EventScript_TwinleafMan_2
 # 100 "data/maps/TwinleafTown/scripts.pory"
 	compare VAR_TWINLEAF_TOWN_STATE, 4
-	goto_if_eq TwinleafTown_EventScript_TwinleafMan_3
-# 100 "data/maps/TwinleafTown/scripts.pory"
-	compare VAR_TWINLEAF_TOWN_STATE, 7
-	goto_if_eq TwinleafTown_EventScript_TwinleafMan_3
+	goto_if_ge TwinleafTown_EventScript_TwinleafMan_3
 TwinleafTown_EventScript_TwinleafMan_1:
-# 104 "data/maps/TwinleafTown/scripts.pory"
+# 113 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
@@ -152,312 +149,322 @@ TwinleafTown_EventScript_TwinleafMan_2:
 
 TwinleafTown_EventScript_TwinleafMan_3:
 # 101 "data/maps/TwinleafTown/scripts.pory"
+	compare VAR_LAKE_VERITY_STATE, 3
+	goto_if_ne TwinleafTown_EventScript_TwinleafMan_6
+# 105 "data/maps/TwinleafTown/scripts.pory"
+	faceplayer
+# 106 "data/maps/TwinleafTown/scripts.pory"
+	msgbox TwinleafTown_EventScript_TwinleafMan_Text_0
+	goto TwinleafTown_EventScript_TwinleafMan_1
+
+TwinleafTown_EventScript_TwinleafMan_6:
+# 102 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_TearingOff
 	goto TwinleafTown_EventScript_TwinleafMan_1
 
 
 TwinleafTown_EventScript_BarryLooking::
-# 108 "data/maps/TwinleafTown/scripts.pory"
+# 117 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 109 "data/maps/TwinleafTown/scripts.pory"
+# 118 "data/maps/TwinleafTown/scripts.pory"
 	faceplayer
-# 110 "data/maps/TwinleafTown/scripts.pory"
+# 119 "data/maps/TwinleafTown/scripts.pory"
 	msgbox BarryLooking
-# 111 "data/maps/TwinleafTown/scripts.pory"
+# 120 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_PlayersHouseSign::
-# 115 "data/maps/TwinleafTown/scripts.pory"
+# 124 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 116 "data/maps/TwinleafTown/scripts.pory"
+# 125 "data/maps/TwinleafTown/scripts.pory"
 	msgbox TwinleafTown_EventScript_PlayersHouseSign_Text_0
-# 117 "data/maps/TwinleafTown/scripts.pory"
+# 126 "data/maps/TwinleafTown/scripts.pory"
 	release
 	end
 
 
 TwinleafTown_EventScript_RivalsHouseSign::
-# 122 "data/maps/TwinleafTown/scripts.pory"
+# 131 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 123 "data/maps/TwinleafTown/scripts.pory"
+# 132 "data/maps/TwinleafTown/scripts.pory"
 	msgbox TwinleafTown_EventScript_RivalsHouseSign_Text_0
-# 124 "data/maps/TwinleafTown/scripts.pory"
+# 133 "data/maps/TwinleafTown/scripts.pory"
 	release
 	end
 
 
 TwinleafTown_EventScript_TwinleafSign::
-# 129 "data/maps/TwinleafTown/scripts.pory"
+# 138 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 130 "data/maps/TwinleafTown/scripts.pory"
+# 139 "data/maps/TwinleafTown/scripts.pory"
 	msgbox TwinleafTown_EventScript_TwinleafSign_Text_0
-# 132 "data/maps/TwinleafTown/scripts.pory"
+# 141 "data/maps/TwinleafTown/scripts.pory"
 	release
 	end
 
 
 TwinleafTown_EventScript_GoSeeBarry1::
-# 137 "data/maps/TwinleafTown/scripts.pory"
+# 146 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 138 "data/maps/TwinleafTown/scripts.pory"
+# 147 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 139 "data/maps/TwinleafTown/scripts.pory"
+# 148 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 140 "data/maps/TwinleafTown/scripts.pory"
+# 149 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry2::
-# 144 "data/maps/TwinleafTown/scripts.pory"
+# 153 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 145 "data/maps/TwinleafTown/scripts.pory"
+# 154 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 2
-# 146 "data/maps/TwinleafTown/scripts.pory"
+# 155 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 147 "data/maps/TwinleafTown/scripts.pory"
+# 156 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry3::
-# 151 "data/maps/TwinleafTown/scripts.pory"
+# 160 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 152 "data/maps/TwinleafTown/scripts.pory"
+# 161 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 3
-# 153 "data/maps/TwinleafTown/scripts.pory"
+# 162 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 154 "data/maps/TwinleafTown/scripts.pory"
+# 163 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry4::
-# 158 "data/maps/TwinleafTown/scripts.pory"
+# 167 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 159 "data/maps/TwinleafTown/scripts.pory"
+# 168 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 4
-# 160 "data/maps/TwinleafTown/scripts.pory"
+# 169 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 161 "data/maps/TwinleafTown/scripts.pory"
+# 170 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry5::
-# 165 "data/maps/TwinleafTown/scripts.pory"
+# 174 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 166 "data/maps/TwinleafTown/scripts.pory"
+# 175 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 5
-# 167 "data/maps/TwinleafTown/scripts.pory"
+# 176 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 168 "data/maps/TwinleafTown/scripts.pory"
+# 177 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry6::
-# 172 "data/maps/TwinleafTown/scripts.pory"
+# 181 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 173 "data/maps/TwinleafTown/scripts.pory"
+# 182 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 6
-# 174 "data/maps/TwinleafTown/scripts.pory"
+# 183 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 175 "data/maps/TwinleafTown/scripts.pory"
+# 184 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry7::
-# 179 "data/maps/TwinleafTown/scripts.pory"
+# 188 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 180 "data/maps/TwinleafTown/scripts.pory"
+# 189 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 7
-# 181 "data/maps/TwinleafTown/scripts.pory"
+# 190 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 182 "data/maps/TwinleafTown/scripts.pory"
+# 191 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry8::
-# 186 "data/maps/TwinleafTown/scripts.pory"
+# 195 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 187 "data/maps/TwinleafTown/scripts.pory"
+# 196 "data/maps/TwinleafTown/scripts.pory"
 	setvar VAR_TEMP_1, 8
-# 188 "data/maps/TwinleafTown/scripts.pory"
+# 197 "data/maps/TwinleafTown/scripts.pory"
 	goto TwinleafTown_EventScript_GoSeeBarry
-# 189 "data/maps/TwinleafTown/scripts.pory"
+# 198 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 
 TwinleafTown_EventScript_GoSeeBarry::
-# 193 "data/maps/TwinleafTown/scripts.pory"
-	lock
-# 195 "data/maps/TwinleafTown/scripts.pory"
-	applymovement 3, Common_Movement_ExclamationMark
-# 196 "data/maps/TwinleafTown/scripts.pory"
-	playse SE_PIN
-# 197 "data/maps/TwinleafTown/scripts.pory"
-	waitmovement 0
-# 198 "data/maps/TwinleafTown/scripts.pory"
-	waitse
-# 199 "data/maps/TwinleafTown/scripts.pory"
-	delay 30
-# 201 "data/maps/TwinleafTown/scripts.pory"
-	switch VAR_TEMP_1
 # 202 "data/maps/TwinleafTown/scripts.pory"
-	case 1, TwinleafTown_EventScript_GoSeeBarry_3
+	lock
 # 204 "data/maps/TwinleafTown/scripts.pory"
-	case 2, TwinleafTown_EventScript_GoSeeBarry_4
+	applymovement 3, Common_Movement_ExclamationMark
+# 205 "data/maps/TwinleafTown/scripts.pory"
+	playse SE_PIN
 # 206 "data/maps/TwinleafTown/scripts.pory"
-	case 3, TwinleafTown_EventScript_GoSeeBarry_5
+	waitmovement 0
+# 207 "data/maps/TwinleafTown/scripts.pory"
+	waitse
 # 208 "data/maps/TwinleafTown/scripts.pory"
-	case 4, TwinleafTown_EventScript_GoSeeBarry_6
+	delay 30
 # 210 "data/maps/TwinleafTown/scripts.pory"
+	switch VAR_TEMP_1
+# 211 "data/maps/TwinleafTown/scripts.pory"
+	case 1, TwinleafTown_EventScript_GoSeeBarry_3
+# 213 "data/maps/TwinleafTown/scripts.pory"
+	case 2, TwinleafTown_EventScript_GoSeeBarry_4
+# 215 "data/maps/TwinleafTown/scripts.pory"
+	case 3, TwinleafTown_EventScript_GoSeeBarry_5
+# 217 "data/maps/TwinleafTown/scripts.pory"
+	case 4, TwinleafTown_EventScript_GoSeeBarry_6
+# 219 "data/maps/TwinleafTown/scripts.pory"
 	case 5, TwinleafTown_EventScript_GoSeeBarry_7
-# 212 "data/maps/TwinleafTown/scripts.pory"
+# 221 "data/maps/TwinleafTown/scripts.pory"
 	case 6, TwinleafTown_EventScript_GoSeeBarry_8
-# 214 "data/maps/TwinleafTown/scripts.pory"
+# 223 "data/maps/TwinleafTown/scripts.pory"
 	case 7, TwinleafTown_EventScript_GoSeeBarry_9
-# 216 "data/maps/TwinleafTown/scripts.pory"
+# 225 "data/maps/TwinleafTown/scripts.pory"
 	case 8, TwinleafTown_EventScript_GoSeeBarry_10
 TwinleafTown_EventScript_GoSeeBarry_1:
-# 220 "data/maps/TwinleafTown/scripts.pory"
+# 229 "data/maps/TwinleafTown/scripts.pory"
 	waitmovement 3
-# 221 "data/maps/TwinleafTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_EventScript_THUD_Movement_1
-# 222 "data/maps/TwinleafTown/scripts.pory"
-	waitmovement 0
-# 223 "data/maps/TwinleafTown/scripts.pory"
-	applymovement 3, TwinleafTown_EventScript_THUD_Movement_3
-# 224 "data/maps/TwinleafTown/scripts.pory"
-	waitmovement 0
-# 225 "data/maps/TwinleafTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_EventScript_THUD_Movement_3
-# 226 "data/maps/TwinleafTown/scripts.pory"
-	waitmovement 0
-# 228 "data/maps/TwinleafTown/scripts.pory"
-	msgbox BarryLooking
 # 230 "data/maps/TwinleafTown/scripts.pory"
-	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_EventScript_THUD_Movement_1
+# 231 "data/maps/TwinleafTown/scripts.pory"
+	waitmovement 0
 # 232 "data/maps/TwinleafTown/scripts.pory"
-	switch VAR_TEMP_1
+	applymovement 3, TwinleafTown_EventScript_THUD_Movement_3
 # 233 "data/maps/TwinleafTown/scripts.pory"
-	case 1, TwinleafTown_EventScript_GoSeeBarry_13
+	waitmovement 0
+# 234 "data/maps/TwinleafTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_EventScript_THUD_Movement_3
 # 235 "data/maps/TwinleafTown/scripts.pory"
-	case 2, TwinleafTown_EventScript_GoSeeBarry_14
+	waitmovement 0
 # 237 "data/maps/TwinleafTown/scripts.pory"
-	case 3, TwinleafTown_EventScript_GoSeeBarry_15
+	msgbox BarryLooking
 # 239 "data/maps/TwinleafTown/scripts.pory"
-	case 4, TwinleafTown_EventScript_GoSeeBarry_16
+	closemessage
 # 241 "data/maps/TwinleafTown/scripts.pory"
+	switch VAR_TEMP_1
+# 242 "data/maps/TwinleafTown/scripts.pory"
+	case 1, TwinleafTown_EventScript_GoSeeBarry_13
+# 244 "data/maps/TwinleafTown/scripts.pory"
+	case 2, TwinleafTown_EventScript_GoSeeBarry_14
+# 246 "data/maps/TwinleafTown/scripts.pory"
+	case 3, TwinleafTown_EventScript_GoSeeBarry_15
+# 248 "data/maps/TwinleafTown/scripts.pory"
+	case 4, TwinleafTown_EventScript_GoSeeBarry_16
+# 250 "data/maps/TwinleafTown/scripts.pory"
 	case 5, TwinleafTown_EventScript_GoSeeBarry_17
-# 243 "data/maps/TwinleafTown/scripts.pory"
+# 252 "data/maps/TwinleafTown/scripts.pory"
 	case 6, TwinleafTown_EventScript_GoSeeBarry_18
-# 245 "data/maps/TwinleafTown/scripts.pory"
+# 254 "data/maps/TwinleafTown/scripts.pory"
 	case 7, TwinleafTown_EventScript_GoSeeBarry_19
-# 247 "data/maps/TwinleafTown/scripts.pory"
+# 256 "data/maps/TwinleafTown/scripts.pory"
 	case 8, TwinleafTown_EventScript_GoSeeBarry_20
 TwinleafTown_EventScript_GoSeeBarry_11:
-# 250 "data/maps/TwinleafTown/scripts.pory"
+# 259 "data/maps/TwinleafTown/scripts.pory"
 	waitmovement 3
-# 252 "data/maps/TwinleafTown/scripts.pory"
+# 261 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
 TwinleafTown_EventScript_GoSeeBarry_3:
-# 203 "data/maps/TwinleafTown/scripts.pory"
+# 212 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_0
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_4:
-# 205 "data/maps/TwinleafTown/scripts.pory"
+# 214 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_1
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_5:
-# 207 "data/maps/TwinleafTown/scripts.pory"
+# 216 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_2
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_6:
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_3
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_7:
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_4
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_8:
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_5
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_9:
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_6
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_10:
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_7
 	goto TwinleafTown_EventScript_GoSeeBarry_1
 
 TwinleafTown_EventScript_GoSeeBarry_13:
-# 234 "data/maps/TwinleafTown/scripts.pory"
+# 243 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_8
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 TwinleafTown_EventScript_GoSeeBarry_14:
-# 236 "data/maps/TwinleafTown/scripts.pory"
+# 245 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_9
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 TwinleafTown_EventScript_GoSeeBarry_15:
-# 238 "data/maps/TwinleafTown/scripts.pory"
+# 247 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_10
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 TwinleafTown_EventScript_GoSeeBarry_16:
-# 240 "data/maps/TwinleafTown/scripts.pory"
+# 249 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_11
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 TwinleafTown_EventScript_GoSeeBarry_17:
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_12
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 TwinleafTown_EventScript_GoSeeBarry_18:
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_13
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 TwinleafTown_EventScript_GoSeeBarry_19:
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_14
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 TwinleafTown_EventScript_GoSeeBarry_20:
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 3, TwinleafTown_EventScript_GoSeeBarry_Movement_15
 	goto TwinleafTown_EventScript_GoSeeBarry_11
 
 
 TwinleafTown_EventScript_TearingOff::
-# 256 "data/maps/TwinleafTown/scripts.pory"
+# 265 "data/maps/TwinleafTown/scripts.pory"
 	lock
-# 258 "data/maps/TwinleafTown/scripts.pory"
+# 267 "data/maps/TwinleafTown/scripts.pory"
 	faceplayer
-# 259 "data/maps/TwinleafTown/scripts.pory"
+# 268 "data/maps/TwinleafTown/scripts.pory"
 	msgbox TwinleafTown_EventScript_TearingOff_Text_0
-# 266 "data/maps/TwinleafTown/scripts.pory"
+# 275 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
 
@@ -518,267 +525,267 @@ TwinleafTown_EventScript_THUD_Movement_6:
 	walk_fast_up
 	step_end
 
-# 203 "data/maps/TwinleafTown/scripts.pory"
+# 212 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_0:
-# 203 "data/maps/TwinleafTown/scripts.pory"
+# 212 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 203 "data/maps/TwinleafTown/scripts.pory"
+# 212 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 203 "data/maps/TwinleafTown/scripts.pory"
+# 212 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 203 "data/maps/TwinleafTown/scripts.pory"
+# 212 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 203 "data/maps/TwinleafTown/scripts.pory"
+# 212 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_left
 	step_end
 
-# 205 "data/maps/TwinleafTown/scripts.pory"
+# 214 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_1:
-# 205 "data/maps/TwinleafTown/scripts.pory"
+# 214 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 205 "data/maps/TwinleafTown/scripts.pory"
+# 214 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 205 "data/maps/TwinleafTown/scripts.pory"
+# 214 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 205 "data/maps/TwinleafTown/scripts.pory"
+# 214 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 207 "data/maps/TwinleafTown/scripts.pory"
+# 216 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_2:
-# 207 "data/maps/TwinleafTown/scripts.pory"
+# 216 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 207 "data/maps/TwinleafTown/scripts.pory"
+# 216 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 207 "data/maps/TwinleafTown/scripts.pory"
+# 216 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 207 "data/maps/TwinleafTown/scripts.pory"
+# 216 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 207 "data/maps/TwinleafTown/scripts.pory"
+# 216 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_3:
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 209 "data/maps/TwinleafTown/scripts.pory"
+# 218 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_4:
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 211 "data/maps/TwinleafTown/scripts.pory"
+# 220 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_5:
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 213 "data/maps/TwinleafTown/scripts.pory"
+# 222 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_6:
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 215 "data/maps/TwinleafTown/scripts.pory"
+# 224 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_7:
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_up
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
-# 217 "data/maps/TwinleafTown/scripts.pory"
+# 226 "data/maps/TwinleafTown/scripts.pory"
 	walk_fast_right
 	step_end
 
-# 234 "data/maps/TwinleafTown/scripts.pory"
+# 243 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_8:
-# 234 "data/maps/TwinleafTown/scripts.pory"
+# 243 "data/maps/TwinleafTown/scripts.pory"
 	walk_right
-# 234 "data/maps/TwinleafTown/scripts.pory"
+# 243 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 234 "data/maps/TwinleafTown/scripts.pory"
+# 243 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 234 "data/maps/TwinleafTown/scripts.pory"
+# 243 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
 	step_end
 
-# 236 "data/maps/TwinleafTown/scripts.pory"
+# 245 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_9:
-# 236 "data/maps/TwinleafTown/scripts.pory"
+# 245 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 236 "data/maps/TwinleafTown/scripts.pory"
+# 245 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 236 "data/maps/TwinleafTown/scripts.pory"
+# 245 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
 	step_end
 
-# 238 "data/maps/TwinleafTown/scripts.pory"
+# 247 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_10:
-# 238 "data/maps/TwinleafTown/scripts.pory"
+# 247 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 238 "data/maps/TwinleafTown/scripts.pory"
+# 247 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 238 "data/maps/TwinleafTown/scripts.pory"
+# 247 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 238 "data/maps/TwinleafTown/scripts.pory"
+# 247 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
 	step_end
 
-# 240 "data/maps/TwinleafTown/scripts.pory"
+# 249 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_11:
-# 240 "data/maps/TwinleafTown/scripts.pory"
+# 249 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 240 "data/maps/TwinleafTown/scripts.pory"
+# 249 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 240 "data/maps/TwinleafTown/scripts.pory"
+# 249 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 240 "data/maps/TwinleafTown/scripts.pory"
+# 249 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 240 "data/maps/TwinleafTown/scripts.pory"
+# 249 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
 	step_end
 
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_12:
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 242 "data/maps/TwinleafTown/scripts.pory"
+# 251 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
 	step_end
 
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_13:
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 244 "data/maps/TwinleafTown/scripts.pory"
+# 253 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
 	step_end
 
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_14:
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 246 "data/maps/TwinleafTown/scripts.pory"
+# 255 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
 	step_end
 
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 TwinleafTown_EventScript_GoSeeBarry_Movement_15:
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_left
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
-# 248 "data/maps/TwinleafTown/scripts.pory"
+# 257 "data/maps/TwinleafTown/scripts.pory"
 	walk_down
 	step_end
 
@@ -811,21 +818,29 @@ TwinleafTown_EventScript_WildPokemon_Text_0:
 	.string "But, Pokémon also open their hearts\n"
 	.string "to you, so you can become friends.$"
 
+TwinleafTown_EventScript_TwinleafMan_Text_0:
+# 106 "data/maps/TwinleafTown/scripts.pory"
+	.string "Barry? He went tearing off\n"
+	.string "in a huge rush a while ago.\p"
+	.string ". . .Ouch. He ran right into me earlier.\n"
+	.string "It's still hurting.\l"
+	.string "That kid's growing up tough.$"
+
 TwinleafTown_EventScript_PlayersHouseSign_Text_0:
-# 116 "data/maps/TwinleafTown/scripts.pory"
+# 125 "data/maps/TwinleafTown/scripts.pory"
 	.string "{PLAYER}'s House$"
 
 TwinleafTown_EventScript_RivalsHouseSign_Text_0:
-# 123 "data/maps/TwinleafTown/scripts.pory"
+# 132 "data/maps/TwinleafTown/scripts.pory"
 	.string "Barry's House$"
 
 TwinleafTown_EventScript_TwinleafSign_Text_0:
-# 130 "data/maps/TwinleafTown/scripts.pory"
+# 139 "data/maps/TwinleafTown/scripts.pory"
 	.string "Twinleaf Town\n"
 	.string "Fresh and Free!$"
 
 TwinleafTown_EventScript_TearingOff_Text_0:
-# 259 "data/maps/TwinleafTown/scripts.pory"
+# 268 "data/maps/TwinleafTown/scripts.pory"
 	.string "Hiya, {PLAYER}.\n"
 	.string "You're looking for Barry?\p"
 	.string "He just went tearing off a little\n"
@@ -834,7 +849,7 @@ TwinleafTown_EventScript_TearingOff_Text_0:
 	.string "Why not go chase after him?$"
 
 BarryLooking::
-# 269 "data/maps/TwinleafTown/scripts.pory"
+# 278 "data/maps/TwinleafTown/scripts.pory"
 	.string "Hiya, {PLAYER}.\n"
 	.string "Barry was looking for you.\p"
 	.string "I think he's home now.\n"

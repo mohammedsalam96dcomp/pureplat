@@ -102,6 +102,7 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME_GOTPOKEMON {
 
 	setflag(FLAG_SYS_B_DASH)
 
+	clearflag(FLAG_HIDE_ROUTE_201_KID)
 	setvar(VAR_TWINLEAF_TOWN_STATE, 7)
 	setvar(VAR_TEMP_1, 1)
 	setvar(VAR_TWINLEAF_MOM_STATE, 4)

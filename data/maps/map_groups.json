@@ -9,7 +9,8 @@
   "gMapGroup_TownsAndRoutes": [
     "TwinleafTown",
     "Route201",
-    "VerityLakeFront"
+    "VerityLakeFront",
+    "SandgemTown"
   ],
   "gMapGroup_Dungeons": [
     "LakeVerity"

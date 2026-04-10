@@ -595,7 +595,7 @@ script Route201_EventScript_LakeVerity4 {
 }
 
 script Route201_EventScript_LakeVerityScene {
-	lock
+	lockall
 
 	applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
 	playse(SE_PIN)
@@ -643,11 +643,12 @@ script Route201_EventScript_LakeVerityScene {
 
 	setfollowernpc(LOCALID_RIVAL, FLAG_HIDE_ROUTE_201_BARRY, Route201_EventScript_NPCBarry, 0)
 
-	release
+	releaseall
 }
 
 script Route201_EventScript_VerityExitSouth {
-	lock
+	lockall
+
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
 	applymovement(OBJ_EVENT_ID_NPC_FOLLOWER, moves(walk_in_place_down))
 	waitmovement(OBJ_EVENT_ID_NPC_FOLLOWER)
@@ -664,11 +665,11 @@ script Route201_EventScript_VerityExitSouth {
 	waitmovement(OBJ_EVENT_ID_NPC_FOLLOWER)
 
 
-	release
+	releaseall
 }
 
 script Route201_EventScript_VerityExitEast {
-	lock
+	lockall
 
 	specialvar(VAR_RESULT, GetPlayerFacingDirection)
 	facefollowernpc
@@ -686,11 +687,11 @@ script Route201_EventScript_VerityExitEast {
 		waitmovement(OBJ_EVENT_ID_NPC_FOLLOWER)
 	}
 
-	release
+	releaseall
 }
 
 script Route201_EventScript_NPCBarry {
-	lock
+	lockall
 	switch(var(VAR_ROUTE201_FOLLOWERBARRY)) {
 		case 1:
 			faceplayer
@@ -753,4 +754,68 @@ script Route201_EventScript_NPCBarry {
 					"Come on, come on!")
 			closemessage
 	}
+	releaseall
+}
+
+script Route201_EventScript_Kid {
+	lock
+
+	faceplayer
+	msgbox("Wild Pokémon lurk in tall grass. They\n"
+			"can come bursting out at any time.\p"
+			"So if you're wanting ot battle wild\n"
+			"Pokémon, just walk in tall grass.\p"
+			"If you want to avoid wild Pokémon,\n"
+			"then stay out of the tall grass.")
+
+	release
+}
+
+
+
+script Route201_EventScript_Lass {
+	lockall
+
+	faceplayer
+	msgbox("If your Pokémon's health--that's its\n"
+			"HP--is getting low, you should go\l"
+			"home and get some rest.")
+
+	releaseall
+}
+
+script Route201_EventScript_MartEmployee{
+	lockall
+
+	faceplayer
+	if (!flag(FLAG_RECEIVED_POTION)) {
+		msgbox("Hi!\p"
+				"I work at a Pokémon Mart.\p"
+				"Did you know that a Pokémon's health\n"
+				"is measured by Hit Points (HP)?\p"
+				"If a Pokémon runs out of HP, it\n"
+				"faints and can't battle anymore.\p"
+				"If a Pokémon's HP gets low, you\n"
+				"should heal it with a Potion.\p"
+				"Here, let me give you a Potion as\n"
+				"a free sample. First one's free!\p"
+				"It will automatically go in the\n"
+				"Medicine Pocket of your Bag.")
+		giveitem(ITEM_POTION, 1)
+		setflag(FLAG_RECEIVED_POTION)
+	} else {
+		msgbox("You can find a Pokémon Mart in cities\n"
+				"and most major towns.")
+	}
+	releaseall
+}
+
+script Route201_EventScript_LedgeKid {
+	lockall
+
+	faceplayer
+	msgbox("That ledge is one way. Jump down\n"
+			"for a shortcut to Twinleaf Town!")
+
+	releaseall
 }

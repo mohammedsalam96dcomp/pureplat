@@ -276,6 +276,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_ROUTE_201_ROWAN
 	setflag FLAG_HIDE_ROUTE_201_DAWN
 	setflag FLAG_HIDE_ROUTE_201_BRIEFCASE
+	setflag FLAG_HIDE_ROUTE_201_KID
 	call EventScript_ResetAllBerries
 	setvar VAR_NEW_GAME_START, 0
 	end
