@@ -3,16 +3,16 @@
     "gMapGroup_TownsAndRoutes",
     "gMapGroup_Dungeons",
     "gMapGroup_IndoorTwinleaf",
+    "gMapGroup_IndoorSandgem",
     "gMapGroup_IndoorDynamic",
-    "gMapGroup_SpecialArea",
-    "gMapGroup_IndoorSandgem"
+    "gMapGroup_SpecialArea"
   ],
   "gMapGroup_TownsAndRoutes": [
     "TwinleafTown",
-    "Route201",
-    "VerityLakeFront",
     "SandgemTown",
-    "Route202"
+    "Route201",
+    "Route202",
+    "VerityLakeFront"
   ],
   "gMapGroup_Dungeons": [
     "LakeVerity"
@@ -24,6 +24,9 @@
     "TwinleafTownBarrysHouse_2F",
     "TwinleafTownHouse1",
     "TwinleafTownHouse2"
+  ],
+  "gMapGroup_IndoorSandgem": [
+    "SandgemProfessorsLab"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
@@ -174,8 +177,5 @@
     "NavelRock_Down11",
     "NavelRock_Bottom",
     "TrainerHill_Elevator"
-  ],
-  "gMapGroup_IndoorSandgem": [
-    "SandgemProfessorsLab"
   ]
 }

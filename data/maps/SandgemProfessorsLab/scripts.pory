@@ -28,9 +28,6 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	setvar(VAR_SANDGEM_TOWN_STATE, 2)
-	release
-
 	msgbox("{SPEAKER NAME_PROFESSOR}Well, well, look who's here.\p"
 			"{PLAYER}, was it?\n"
 			"Let's have a look at your Pokémon.")
@@ -65,8 +62,7 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 				call(Common_EventScript_NameReceivedPartyMon)
 			} else {
 				break
-			}
-				
+			}	
 		}
 	}
 
@@ -112,7 +108,7 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 			"My name, as you know, is Rowan.\n"
 			"I study Pokémon.\p"
 			"First of all, I want to know exactly\n"
-			"what kinds of Pokémon live in the\n"
+			"what kinds of Pokémon live in the\l"
 			"Sinnoh region.\p"
 			"To do so, it is necessary to collect\n"
 			"data using the Pokédex.\p"
@@ -142,11 +138,11 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	closemessage
 
 	playfanfare(MUS_OBTAIN_ITEM)
-	msgbox("POKEDEX")
-	closemessage
+	msgbox("{PLAYER} obtained\n"
+			"the Pokédex.")
 	waitfanfare()
+	closemessage
 	setflag(FLAG_SYS_POKEDEX_GET)
-	release
 
 	msgbox("{SPEAKER NAME_PROFESSOR}That Pokédex is a very\n"
 			"high-tech device.\p"
@@ -187,9 +183,121 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 			"I'll teach you stuff later, OK?")
 	closemessage
 
-	applymovement(LOCALID_LUCASDAWN, moves(walk_down*6))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_down*3))
+	waitmovement(LOCALID_LUCASDAWN)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_down*3))
 	waitmovement(LOCALID_LUCASDAWN)
 
 	setflag(FLAG_HIDE_ROWANS_LAB_DAWN)
 	removeobject(LOCALID_LUCASDAWN)
+	setvar(VAR_SANDGEM_TOWN_STATE, 2)
+
+	release
 }
+
+script SandgemProfessorsLab_EventScript_Professor{
+	lock
+	
+	if(var(VAR_SANDGEM_TOWN_STATE) == 2) {
+		faceplayer
+		msgbox("{SPEAKER NAME_PROFESSOR}Go on!\p"
+				"{PLAYER}, your grand adventure\n"
+				"begins right now!")
+		closemessage
+	}
+	release
+}
+
+script SandgemProfessorsLab_EventScript_RivalFather{
+	lockall
+
+	faceplayer
+	msgbox("I'm {RIVAL}'s father.\p"
+			"I'll be happy to assist you on your\n"
+			"quest for the professor.\p"
+			"Hahaha. Eh. . .\n"
+			"I'm sure we can count on you!")
+	closemessage
+
+	releaseall
+}
+
+script SandgemProfessorsLab_EventScript_Roseanne{
+	lockall
+
+	faceplayer
+	msgbox("Professor Rowan invented a new\n"
+			"Pokédex while working alongisde a\l"
+			"professor from the Kanto region.\p"
+			"Oh, my name is Roseanne.\p"
+			"It's an honor to be an assistant to\n"
+			"our professor!")
+	closemessage
+	
+	releaseall
+}
+
+
+script SandgemProfessorsLab_EventScript_Rule1 {
+	lockall
+
+	msgbox("Adventure Rule No. 1\n"
+			"The START Button opens the menu.")
+	closemessage
+	
+	releaseall
+}
+
+script SandgemProfessorsLab_EventScript_Rule2 {
+	lockall
+
+	msgbox("Adventure Rule No. 2\n"
+			"Record your progress with SAVE.")
+	closemessage
+	
+	releaseall
+}
+
+script SandgemProfessorsLab_EventScript_Research1 {
+	lockall
+
+	msgbox("It's crammed full of books with all\n"
+			"sorts of Pokémon information.")
+	closemessage
+	
+	releaseall
+}
+
+script SandgemProfessorsLab_EventScript_Research2 {
+	lockall
+
+	msgbox("There's a lot of reference material\n"
+			"and research reports on Pokémon.")
+	closemessage
+	
+	releaseall
+}
+
+script SandgemProfessorsLab_EventScript_PC {
+lockall
+
+	msgbox("{PLAYER} checked the PC.\p"
+			"The screen is filled with special terms\n"
+			"and academic writing that is impossible\l"
+			"to figure out.")
+	closemessage
+	
+	releaseall
+}
+
+script SandgemProfessorsLab_EventScript_Refrigerator {
+lockall
+
+	msgbox("The refrigerator is filled with\n"
+			"tasty sweets! Mmm. . .")
+	closemessage
+	
+	releaseall
+}
+
