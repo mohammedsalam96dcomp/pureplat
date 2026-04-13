@@ -22,6 +22,11 @@
       "map": "MAP_VERITY_LAKE_FRONT",
       "offset": -4,
       "direction": "left"
+    },
+    {
+      "map": "MAP_SANDGEM_TOWN",
+      "offset": -8,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -118,10 +123,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
-      "x": 57,
+      "x": 53,
       "y": 7,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",

@@ -166,20 +166,22 @@ LakeVerity_ON_FRAME::
 # 140 "data/maps/LakeVerity/scripts.pory"
 	setvar VAR_LAKE_VERITY_STATE, 3
 # 142 "data/maps/LakeVerity/scripts.pory"
+	setvar VAR_SANDGEM_TOWN_STATE, 1
+# 144 "data/maps/LakeVerity/scripts.pory"
 	release
 	return
 
 
 LakeVerity_ON_WARP::
-# 148 "data/maps/LakeVerity/scripts.pory"
-	destroyfollowernpc
 # 150 "data/maps/LakeVerity/scripts.pory"
-	setmetatile 10, 28, METATILE_GeneralSinnoh_GrassSouth, FALSE
-# 151 "data/maps/LakeVerity/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	destroyfollowernpc
 # 152 "data/maps/LakeVerity/scripts.pory"
-	setvar VAR_LAKE_VERITY_STATE, 1
+	setmetatile 10, 28, METATILE_GeneralSinnoh_GrassSouth, FALSE
 # 153 "data/maps/LakeVerity/scripts.pory"
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+# 154 "data/maps/LakeVerity/scripts.pory"
+	setvar VAR_LAKE_VERITY_STATE, 1
+# 155 "data/maps/LakeVerity/scripts.pory"
 	setvar VAR_ROUTE201_STATE, 4
 	return
 

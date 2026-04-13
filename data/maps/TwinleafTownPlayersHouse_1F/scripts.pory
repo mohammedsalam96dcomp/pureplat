@@ -270,7 +270,9 @@ script TwinleafTown_PlayersHouse1F_Heal {
 	msgbox("Welcome home {PLAYER}.\n"
 			"Are you and your Pokémon healthy?\l"
 			"Take a quick rest, dear.")
-	closemessage
 
 	call(Common_EventScript_OutOfCenterPartyHeal)
+	closemessage
+
+	release
 }

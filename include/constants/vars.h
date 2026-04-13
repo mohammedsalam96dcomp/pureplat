@@ -105,12 +105,12 @@
 #define VAR_TWINLEAF_BARRY_STATE                         0x408B 
 #define VAR_TWINLEAF_MOM_STATE                           0x4050
 #define VAR_ROUTE201_STATE                               0x4053
-#define VAR_ROUTE201_FOLLOWERBARRY                       0x4052 
+#define VAR_FOLLOWER_STATE                               0x4052 
 #define VAR_LAKE_VERITY_STATE                            0x4055
+#define VAR_SANDGEM_TOWN_STATE                           0x4056 // Unused Var
 
 #define VAR_CURRENT_SECRET_BASE                          0x4054 
 
-#define VAR_PACIFIDLOG_TOWN_STATE                        0x4056 // Unused Var
 #define VAR_PETALBURG_CITY_STATE                         0x4057
 #define VAR_SLATEPORT_CITY_STATE                         0x4058
 #define VAR_MAUVILLE_CITY_STATE                          0x4059 // Unused Var

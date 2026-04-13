@@ -765,6 +765,7 @@
 #define FLAG_HIDE_LAKE_VERITY_BARRY                                 0x2D1
 #define FLAG_HIDE_LAKE_VERITY_CYRUS                                 0x2D2
 #define FLAG_RECEIVED_POTION                                        0x2D9 // Unused Flag
+#define FLAG_HIDE_SANDGEM_TOWN_DAWN                                 0x2D2
 
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 
@@ -777,8 +778,6 @@
 #define FLAG_HIDE_SAFARI_ZONE_SOUTH_CONSTRUCTION_WORKERS            0x2CD
 #define FLAG_HIDE_MEW                                               0x2CE
 
-
-#define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_BEDROOM          0x2D2
 #define FLAG_HIDE_ROUTE_103_RIVAL                                   0x2D3
 #define FLAG_HIDE_PETALBURG_WOODS_DEVON_EMPLOYEE                    0x2D4
 #define FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT                        0x2D5

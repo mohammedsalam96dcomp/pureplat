@@ -408,7 +408,7 @@ Route201_EventScript_PickAPokemonRight::
 # 362 "data/maps/Route201/scripts.pory"
 	lock
 # 364 "data/maps/Route201/scripts.pory"
-	setvar VAR_ROUTE201_FOLLOWERBARRY, 1
+	setvar VAR_FOLLOWER_STATE, 1
 # 365 "data/maps/Route201/scripts.pory"
 	goto Route201_EventScript_PickAPokemon
 # 367 "data/maps/Route201/scripts.pory"
@@ -420,7 +420,7 @@ Route201_EventScript_PickAPokemonDown::
 # 371 "data/maps/Route201/scripts.pory"
 	lock
 # 373 "data/maps/Route201/scripts.pory"
-	setvar VAR_ROUTE201_FOLLOWERBARRY, 2
+	setvar VAR_FOLLOWER_STATE, 2
 # 374 "data/maps/Route201/scripts.pory"
 	goto Route201_EventScript_PickAPokemon
 # 376 "data/maps/Route201/scripts.pory"
@@ -440,10 +440,10 @@ Route201_EventScript_PickAPokemon::
 # 386 "data/maps/Route201/scripts.pory"
 	closemessage
 # 388 "data/maps/Route201/scripts.pory"
-	compare VAR_ROUTE201_FOLLOWERBARRY, 1
+	compare VAR_FOLLOWER_STATE, 1
 	goto_if_eq Route201_EventScript_PickAPokemon_2
 # 391 "data/maps/Route201/scripts.pory"
-	compare VAR_ROUTE201_FOLLOWERBARRY, 2
+	compare VAR_FOLLOWER_STATE, 2
 	goto_if_eq Route201_EventScript_PickAPokemon_3
 Route201_EventScript_PickAPokemon_1:
 # 394 "data/maps/Route201/scripts.pory"
@@ -761,7 +761,7 @@ Route201_EventScript_LakeVerityScene_1:
 # 639 "data/maps/Route201/scripts.pory"
 	closemessage
 # 641 "data/maps/Route201/scripts.pory"
-	setvar VAR_ROUTE201_FOLLOWERBARRY, 1
+	setvar VAR_FOLLOWER_STATE, 1
 # 642 "data/maps/Route201/scripts.pory"
 	setvar VAR_ROUTE201_STATE, 3
 # 644 "data/maps/Route201/scripts.pory"
@@ -864,7 +864,7 @@ Route201_EventScript_NPCBarry::
 # 694 "data/maps/Route201/scripts.pory"
 	lockall
 # 695 "data/maps/Route201/scripts.pory"
-	switch VAR_ROUTE201_FOLLOWERBARRY
+	switch VAR_FOLLOWER_STATE
 # 696 "data/maps/Route201/scripts.pory"
 	case 1, Route201_EventScript_NPCBarry_3
 # 706 "data/maps/Route201/scripts.pory"
@@ -890,7 +890,7 @@ Route201_EventScript_NPCBarry_3:
 # 704 "data/maps/Route201/scripts.pory"
 	closemessage
 # 705 "data/maps/Route201/scripts.pory"
-	addvar VAR_ROUTE201_FOLLOWERBARRY, 1
+	addvar VAR_FOLLOWER_STATE, 1
 	goto Route201_EventScript_NPCBarry_1
 
 Route201_EventScript_NPCBarry_4:
@@ -901,7 +901,7 @@ Route201_EventScript_NPCBarry_4:
 # 713 "data/maps/Route201/scripts.pory"
 	closemessage
 # 714 "data/maps/Route201/scripts.pory"
-	addvar VAR_ROUTE201_FOLLOWERBARRY, 1
+	addvar VAR_FOLLOWER_STATE, 1
 	goto Route201_EventScript_NPCBarry_1
 
 Route201_EventScript_NPCBarry_5:
@@ -912,7 +912,7 @@ Route201_EventScript_NPCBarry_5:
 # 727 "data/maps/Route201/scripts.pory"
 	closemessage
 # 728 "data/maps/Route201/scripts.pory"
-	addvar VAR_ROUTE201_FOLLOWERBARRY, 1
+	addvar VAR_FOLLOWER_STATE, 1
 	goto Route201_EventScript_NPCBarry_1
 
 Route201_EventScript_NPCBarry_6:
@@ -923,7 +923,7 @@ Route201_EventScript_NPCBarry_6:
 # 735 "data/maps/Route201/scripts.pory"
 	closemessage
 # 736 "data/maps/Route201/scripts.pory"
-	addvar VAR_ROUTE201_FOLLOWERBARRY, 1
+	addvar VAR_FOLLOWER_STATE, 1
 	goto Route201_EventScript_NPCBarry_1
 
 Route201_EventScript_NPCBarry_7:
@@ -934,7 +934,7 @@ Route201_EventScript_NPCBarry_7:
 # 747 "data/maps/Route201/scripts.pory"
 	closemessage
 # 748 "data/maps/Route201/scripts.pory"
-	addvar VAR_ROUTE201_FOLLOWERBARRY, 1
+	addvar VAR_FOLLOWER_STATE, 1
 	goto Route201_EventScript_NPCBarry_1
 
 Route201_EventScript_NPCBarry_8:
@@ -961,49 +961,59 @@ Route201_EventScript_Kid::
 
 Route201_EventScript_Lass::
 # 777 "data/maps/Route201/scripts.pory"
-	lockall
+	lock
 # 779 "data/maps/Route201/scripts.pory"
 	faceplayer
 # 780 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_Lass_Text_0
+# 783 "data/maps/Route201/scripts.pory"
+	closemessage
 # 784 "data/maps/Route201/scripts.pory"
-	releaseall
+	release
 	return
 
 
 Route201_EventScript_MartEmployee::
 # 788 "data/maps/Route201/scripts.pory"
-	lockall
+	lock
 # 790 "data/maps/Route201/scripts.pory"
-	faceplayer
-# 791 "data/maps/Route201/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_POTION, Route201_EventScript_MartEmployee_2
-# 807 "data/maps/Route201/scripts.pory"
+# 808 "data/maps/Route201/scripts.pory"
+	faceplayer
+# 809 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_MartEmployee_Text_1
+# 811 "data/maps/Route201/scripts.pory"
+	closemessage
 Route201_EventScript_MartEmployee_1:
-# 810 "data/maps/Route201/scripts.pory"
-	releaseall
+# 814 "data/maps/Route201/scripts.pory"
+	release
 	return
 
 Route201_EventScript_MartEmployee_2:
+# 791 "data/maps/Route201/scripts.pory"
+	faceplayer
 # 792 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_MartEmployee_Text_0
 # 804 "data/maps/Route201/scripts.pory"
 	giveitem ITEM_POTION, 1
 # 805 "data/maps/Route201/scripts.pory"
 	setflag FLAG_RECEIVED_POTION
+# 806 "data/maps/Route201/scripts.pory"
+	closemessage
 	goto Route201_EventScript_MartEmployee_1
 
 
 Route201_EventScript_LedgeKid::
-# 814 "data/maps/Route201/scripts.pory"
-	lockall
-# 816 "data/maps/Route201/scripts.pory"
+# 819 "data/maps/Route201/scripts.pory"
+	lock
+# 821 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 817 "data/maps/Route201/scripts.pory"
+# 822 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_LedgeKid_Text_0
-# 820 "data/maps/Route201/scripts.pory"
-	releaseall
+# 824 "data/maps/Route201/scripts.pory"
+	closemessage
+# 826 "data/maps/Route201/scripts.pory"
+	release
 	return
 
 
@@ -1857,11 +1867,11 @@ Route201_EventScript_MartEmployee_Text_0:
 	.string "Medicine Pocket of your Bag.$"
 
 Route201_EventScript_MartEmployee_Text_1:
-# 807 "data/maps/Route201/scripts.pory"
+# 809 "data/maps/Route201/scripts.pory"
 	.string "You can find a Pokémon Mart in cities\n"
 	.string "and most major towns.$"
 
 Route201_EventScript_LedgeKid_Text_0:
-# 817 "data/maps/Route201/scripts.pory"
+# 822 "data/maps/Route201/scripts.pory"
 	.string "That ledge is one way. Jump down\n"
 	.string "for a shortcut to Twinleaf Town!$"

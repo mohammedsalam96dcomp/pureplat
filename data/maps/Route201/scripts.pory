@@ -361,7 +361,7 @@ script Route201_EventScript_BarryScene {
 script Route201_EventScript_PickAPokemonRight {
 	lock
 
-	setvar(VAR_ROUTE201_FOLLOWERBARRY, 1)
+	setvar(VAR_FOLLOWER_STATE, 1)
 	goto(Route201_EventScript_PickAPokemon)
 
 	release
@@ -370,7 +370,7 @@ script Route201_EventScript_PickAPokemonRight {
 script Route201_EventScript_PickAPokemonDown {
 	lock
 
-	setvar(VAR_ROUTE201_FOLLOWERBARRY, 2)
+	setvar(VAR_FOLLOWER_STATE, 2)
 	goto(Route201_EventScript_PickAPokemon)
 
 	release
@@ -385,10 +385,10 @@ script Route201_EventScript_PickAPokemon {
 			"Open the briefcase and pick a Pokémon!")
 	closemessage
 
-	if(var(VAR_ROUTE201_FOLLOWERBARRY) == 1) {
+	if(var(VAR_FOLLOWER_STATE) == 1) {
 		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
 
-	} elif (var(VAR_ROUTE201_FOLLOWERBARRY) == 2) {
+	} elif (var(VAR_FOLLOWER_STATE) == 2) {
 		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
 	}
 	waitmovement(0)
@@ -638,7 +638,7 @@ script Route201_EventScript_LakeVerityScene {
 			"we've got nothing to fear!")
 	closemessage
 
-	setvar(VAR_ROUTE201_FOLLOWERBARRY, 1)
+	setvar(VAR_FOLLOWER_STATE, 1)
 	setvar(VAR_ROUTE201_STATE, 3)
 
 	setfollowernpc(LOCALID_RIVAL, FLAG_HIDE_ROUTE_201_BARRY, Route201_EventScript_NPCBarry, 0)
@@ -692,7 +692,7 @@ script Route201_EventScript_VerityExitEast {
 
 script Route201_EventScript_NPCBarry {
 	lockall
-	switch(var(VAR_ROUTE201_FOLLOWERBARRY)) {
+	switch(var(VAR_FOLLOWER_STATE)) {
 		case 1:
 			faceplayer
 			msgbox("{SPEAKER NAME_BARRY}That Pokémon battle. . .\p"
@@ -702,7 +702,7 @@ script Route201_EventScript_NPCBarry {
 					"Yeah, I'm going to battle tons and get\n"
 					"real close with Pokémon.")
 			closemessage
-			addvar(VAR_ROUTE201_FOLLOWERBARRY, 1)
+			addvar(VAR_FOLLOWER_STATE, 1)
 		case 2:
 			faceplayer
 			msgbox("{SPEAKER NAME_BARRY}Pokémon all have\n"
@@ -711,7 +711,7 @@ script Route201_EventScript_NPCBarry {
 					"by ordering them to use moves.\p"
 					"That's so awesomely cool.")
 			closemessage
-			addvar(VAR_ROUTE201_FOLLOWERBARRY, 1)
+			addvar(VAR_FOLLOWER_STATE, 1)
 		case 3:
 			faceplayer
 			msgbox("{SPEAKER NAME_BARRY}Do you believe it?\n"
@@ -725,7 +725,7 @@ script Route201_EventScript_NPCBarry {
 					"It makes me feel like I can do anything!\n"
 					"Nothing's impossible!")
 			closemessage
-			addvar(VAR_ROUTE201_FOLLOWERBARRY, 1)
+			addvar(VAR_FOLLOWER_STATE, 1)
 		case 4:
 			faceplayer
 			msgbox("{SPEAKER NAME_BARRY}That lake has a mirage\n"
@@ -733,7 +733,7 @@ script Route201_EventScript_NPCBarry {
 					"Everyone says it's just a legend, but\n"
 					"I know I'm right.")
 			closemessage
-			addvar(VAR_ROUTE201_FOLLOWERBARRY, 1)
+			addvar(VAR_FOLLOWER_STATE, 1)
 		case 5:
 			faceplayer
 			msgbox("{SPEAKER NAME_BARRY}Hey, do you know about\n"
@@ -745,7 +745,7 @@ script Route201_EventScript_NPCBarry {
 					"With this little guy here, I'm sure I can\n"
 					"get that tough.")
 			closemessage
-			addvar(VAR_ROUTE201_FOLLOWERBARRY, 1)
+			addvar(VAR_FOLLOWER_STATE, 1)
 		case 6:
 			faceplayer
 			msgbox("{SPEAKER NAME_BARRY}Hey, that's enough\n"
@@ -774,21 +774,21 @@ script Route201_EventScript_Kid {
 
 
 script Route201_EventScript_Lass {
-	lockall
+	lock
 
 	faceplayer
 	msgbox("If your Pokémon's health--that's its\n"
 			"HP--is getting low, you should go\l"
 			"home and get some rest.")
-
-	releaseall
+	closemessage
+	release
 }
 
 script Route201_EventScript_MartEmployee{
-	lockall
+	lock
 
-	faceplayer
 	if (!flag(FLAG_RECEIVED_POTION)) {
+		faceplayer
 		msgbox("Hi!\p"
 				"I work at a Pokémon Mart.\p"
 				"Did you know that a Pokémon's health\n"
@@ -803,19 +803,25 @@ script Route201_EventScript_MartEmployee{
 				"Medicine Pocket of your Bag.")
 		giveitem(ITEM_POTION, 1)
 		setflag(FLAG_RECEIVED_POTION)
+		closemessage
 	} else {
+		faceplayer
 		msgbox("You can find a Pokémon Mart in cities\n"
 				"and most major towns.")
+		closemessage
 	}
-	releaseall
+
+	release
+
 }
 
 script Route201_EventScript_LedgeKid {
-	lockall
+	lock
 
 	faceplayer
 	msgbox("That ledge is one way. Jump down\n"
 			"for a shortcut to Twinleaf Town!")
+	closemessage
 
-	releaseall
+	release
 }

@@ -938,3 +938,7 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/LakeVerity/scripts.inc"
 
 	.include "data/maps/SandgemTown/scripts.inc"
+
+	.include "data/maps/Route202/scripts.inc"
+
+	.include "data/maps/SandgemProfessorsLab/scripts.inc"

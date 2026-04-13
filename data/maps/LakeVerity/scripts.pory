@@ -138,6 +138,8 @@ script LakeVerity_ON_FRAME {
 
 	setmetatile(10, 28, METATILE_GeneralSinnoh_GrassSouthWarp, FALSE)
 	setvar(VAR_LAKE_VERITY_STATE, 3)
+	// clearflag(FLAG_HIDE_SANDGEM_TOWN_DAWN)
+	setvar(VAR_SANDGEM_TOWN_STATE, 1)
 
 	release
 }

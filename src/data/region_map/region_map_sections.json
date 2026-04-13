@@ -1644,7 +1644,12 @@
       "name": "Lake Verity"
     },
     {
-      "id": "MAPSEC_SANDGEM_TOWN"
+      "id": "MAPSEC_SANDGEM_TOWN",
+      "name": "Sandgem Town"
+    },
+    {
+      "id": "MAPSEC_ROUTE_202",
+      "name": "Route 202"
     }
   ]
 }

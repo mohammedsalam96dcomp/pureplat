@@ -322,10 +322,12 @@ TwinleafTown_PlayersHouse1F_Heal::
 	setspeaker SP_NAME_MOM
 # 270 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	msgbox TwinleafTown_PlayersHouse1F_Heal_Text_0
-# 273 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	closemessage
-# 275 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 274 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	call Common_EventScript_OutOfCenterPartyHeal
+# 275 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	closemessage
+# 277 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	release
 	return
 
 

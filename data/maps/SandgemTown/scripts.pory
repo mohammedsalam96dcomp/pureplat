@@ -1,0 +1,22 @@
+mapscripts SandgemTown_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION : SandgemTown_EventScript_OnTransition
+}
+
+
+script SandgemTown_EventScript_OnTransition {
+	call(Common_EventScript_SetupRivalGfxId)
+}
+
+
+script SandgemTown_EventScript_LucasDawnScene1 {
+	lock
+	setvar(VAR_TEMP_1, 1)
+	goto(Route201_EventScript_LucasDawnScene)
+	release
+}
+
+script SandgemTown_EventScript_LucasDawnScene {
+	lock
+
+	release
+}
