@@ -1,4 +1,195 @@
-raw `
-SandgemProfessorsLab_MapScripts::
-	.byte 0
-`
+const LOCALID_ROWAN = 1
+const LOCALID_LUCASDAWN = 2
+
+mapscripts SandgemProfessorsLab_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION : SandgemProfessorsLab_EventScript_OnTransition
+
+	MAP_SCRIPT_ON_FRAME_TABLE [
+		VAR_SANDGEM_TOWN_STATE, 1: SandgemProfessorsLab_MapScripts_ON_FRAME
+	]
+}
+
+
+script  SandgemProfessorsLab_EventScript_OnTransition {
+	call(Common_EventScript_SetupRivalGfxId)
+}
+
+script SandgemProfessorsLab_MapScripts_ON_FRAME {
+	lock
+
+	applymovement(LOCALID_LUCASDAWN, moves(delay_16))
+	waitmovement(0)
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up*5))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*5))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right, walk_in_place_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	setvar(VAR_SANDGEM_TOWN_STATE, 2)
+	release
+
+	msgbox("{SPEAKER NAME_PROFESSOR}Well, well, look who's here.\p"
+			"{PLAYER}, was it?\n"
+			"Let's have a look at your Pokémon.")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right, walk_in_place_up))
+	waitmovement(0)
+
+	msgbox("{SPEAKER NAME_PROFESSOR}. . .\p"
+			"Hmm. . .\n"
+			"I see. . .\p"
+			"This Pokémon seems to be rather\n"
+			"happy.")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up, walk_in_place_right, walk_in_place_up))
+	waitmovement(0)
+
+	msgbox("{SPEAKER NAME_PROFESSOR}Hm!\p"
+			"Entrusting you with that X\n"
+			"was no mistake, it seems!\p"
+			"Well, would you like to give\n"
+			"it a nickname?", MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 1) {
+		setvar(VAR_0x8004, 0)
+		call(Common_EventScript_NameReceivedPartyMon)
+		while {
+			msgbox("{SPEAKER NAME_PROFESSOR}Hmm, OK, I see. . .\n"
+					"And you're happy with that nickname?", MSGBOX_YESNO)
+			if (var(VAR_RESULT) != 1) {
+				call(Common_EventScript_NameReceivedPartyMon)
+			} else {
+				break
+			}
+				
+		}
+	}
+
+	msgbox("{SPEAKER NAME_PROFESSOR}When I first saw you two\n"
+			"about to step into the tall grass\l"
+			"without Pokémon, I was shocked.\p"
+			"I was astounded by these foolhardy\n"
+			"children.\p"
+			"But now, you've astounded me in an\n"
+			"entirely different way.\p"
+			"Already, there is bond growing\n"
+			"between you and that Pokémon.\p"
+			"I feel privileged to have met you.\p"
+			"I'm sure X feels the same\n"
+			"way about you.\p"
+			"That's why I'll ask you to cherish that\n"
+			"X of yours.")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}Boy, am I glad you're kind\n"
+			"toward Pokémon.\p"
+			"If you weren't well. . .\n"
+			"I don't even want to think about it.")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left, delay_16*2))
+	waitmovement(0)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+	applymovement(LOCALID_ROWAN, moves(walk_in_place_down))
+	waitmovement(LOCALID_ROWAN)
+
+	msgbox("{SPEAKER NAME_PROFESSOR}Er-hem!\n"
+			"Let's move on to the main topic.\p"
+			"There is something I want you to do\n"
+			"for me.\p"
+			"Allow me to properly introduce myself\n"
+			"first.\p"
+			"My name, as you know, is Rowan.\n"
+			"I study Pokémon.\p"
+			"First of all, I want to know exactly\n"
+			"what kinds of Pokémon live in the\n"
+			"Sinnoh region.\p"
+			"To do so, it is necessary to collect\n"
+			"data using the Pokédex.\p"
+			"This is what I wish to ask of you.")
+
+
+	while {
+		msgbox("{SPEAKER NAME_PROFESSOR}I want to entrust you with this\n"
+				"Pokédex.\p"
+				"Will you use it to record data on all\n"
+				"the Pokémon in Sinnoh for me?", MSGBOX_YESNO)
+		if (var(VAR_RESULT) != 1) {
+			msgbox("{SPEAKER NAME_PROFESSOR}. . .\p"
+					". . .\p"
+					". . .\p"
+					". . .\p"
+					"I can stand here without speaking for\n"
+					"hours. I'm a very patient man.\p"
+					"Let me ask you again, {PLAYER}.")
+		} else {
+			break
+		}
+	}
+
+	msgbox("{SPEAKER NAME_PROFESSOR}Hm!\p"
+			"Good answer!")
+	closemessage
+
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox("POKEDEX")
+	closemessage
+	waitfanfare()
+	setflag(FLAG_SYS_POKEDEX_GET)
+	release
+
+	msgbox("{SPEAKER NAME_PROFESSOR}That Pokédex is a very\n"
+			"high-tech device.\p"
+			"It will automatically record data on\n"
+			"every kind of Pokémon you encounter.\p"
+			"{PLAYER}, I ask that you go\n"
+			"everywhere and meet every kind of\l"
+			"Pokémon in this region!")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}I've got the same kind of\n"
+			"Pokédex as you.\p"
+			"{SPEAKER NAME_PROFESSOR}When you walked up Route 201\n"
+			"with your Pokémon, what did you feel?\p"
+			"I've lived for 60 long years.\n"
+			"Even now, I get a thrill when\p"
+			"I'm with a Pokémon.\p"
+			"Now you should know that there are\n"
+			"countless Pokémon in this world.\p"
+			"That means there are just as many\n"
+			"thrills waiting for you out there!\p"
+			"Now go!\p"
+			"{PLAYER}, your grand adventure\n"
+			"begins right now!")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}The professor asked me to help,\n"
+			"so I'm filling the Pokédex pages, too.\p"
+			"That makes us comrades working toward\n"
+			"the same goal.\p"
+			"I'll teach you stuff later, OK?")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_down*6))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	setflag(FLAG_HIDE_ROWANS_LAB_DAWN)
+	removeobject(LOCALID_LUCASDAWN)
+}

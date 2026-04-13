@@ -1,3 +1,6 @@
+const LOCALID_LUCASDAWN = 1
+const LOCALID_RIVAL = 2
+
 mapscripts SandgemTown_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION : SandgemTown_EventScript_OnTransition
 }
@@ -11,12 +14,167 @@ script SandgemTown_EventScript_OnTransition {
 script SandgemTown_EventScript_LucasDawnScene1 {
 	lock
 	setvar(VAR_TEMP_1, 1)
-	goto(Route201_EventScript_LucasDawnScene)
+	goto(SandgemTown_EventScript_LucasDawnScene)
+	release
+}
+
+script SandgemTown_EventScript_LucasDawnScene2 {
+	lock
+	setvar(VAR_TEMP_1, 2)
+	goto(SandgemTown_EventScript_LucasDawnScene)
+	release
+}
+
+script SandgemTown_EventScript_LucasDawnScene3 {
+	lock
+	setvar(VAR_TEMP_1, 3)
+	goto(SandgemTown_EventScript_LucasDawnScene)
+	release
+}
+
+script SandgemTown_EventScript_LucasDawnScene4 {
+	lock
+	setvar(VAR_TEMP_1, 4)
+	goto(SandgemTown_EventScript_LucasDawnScene)
+	release
+}
+
+script SandgemTown_EventScript_LucasDawnScene5 {
+	lock
+	setvar(VAR_TEMP_1, 5)
+	goto(SandgemTown_EventScript_LucasDawnScene)
 	release
 }
 
 script SandgemTown_EventScript_LucasDawnScene {
 	lock
+
+	playse(SE_PIN)
+    applymovement(LOCALID_LUCASDAWN, moves(emote_exclamation_mark, delay_16 * 3))
+	waitmovement(LOCALID_LUCASDAWN)
+	waitse
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_left*2))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	switch(var(VAR_TEMP_1)){
+		case 1:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left*2))
+			waitmovement(LOCALID_LUCASDAWN)
+			applymovement(LOCALID_LUCASDAWN, moves(walk_up))
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 2:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_up, walk_left))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 3:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 4:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left))
+			waitmovement(LOCALID_LUCASDAWN)
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left, walk_in_place_down))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 5:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left*2))
+			waitmovement(LOCALID_LUCASDAWN)
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_down))
+			waitmovement(LOCALID_LUCASDAWN)
+	}
+
+	msgbox("{SPEAKER NAME_RIVAL}Hi! I've been waiting for you!\n"
+			"Please, come with me.\l"
+			"The prof's waiting to see you.")
+	closemessage
+
+	switch(var(VAR_TEMP_1)){
+		case 1:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_right*4, walk_in_place_up))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*5, walk_in_place_up))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 2:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*4, walk_in_place_up))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_in_place_up))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 3:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right, walk_up, walk_right*3, walk_in_place_up))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_up, walk_right*4, walk_in_place_up))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 4:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right*2,, walk_up, walk_right*2, walk_in_place_up))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*2, walk_up, walk_right*3, walk_in_place_up))
+			waitmovement(LOCALID_LUCASDAWN)
+		case 5:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*3, walk_right*4, walk_in_place_up))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_up*2, walk_right*5, walk_in_place_up))
+			waitmovement(LOCALID_LUCASDAWN)
+	}
+
+	msgbox("{SPEAKER NAME_RIVAL}See? This is our Pokémon Research\n"
+			"Lab.\p"
+			"We'll just go ahead and. . .")
+	closemessage
+
+    clearflag(FLAG_HIDE_SANDGEM_TOWN_RIVAL)
+    addobject(LOCALID_RIVAL)
+
+    playse(SE_DOOR)
+    applymovement(LOCALID_RIVAL, moves(walk_fast_down, walk_in_place_faster_down))
+    waitmovement(0)
+    waitse
+
+	playse(SE_WALL_HIT)
+    msgbox("THUD! !")
+    waitse
+    playbgm(MUS_GSC_ROUTE38,0)
+
+	msgbox("{SPEAKER NAME_BARRY}What the. . .\p"
+			"Oh, it's you, {PLAYER}!\p"
+			"That old guy. . . He's not so scary so\n"
+			"much as he is totally out there!\p"
+			"Aww, it doesn't matter, {PLAYER}.\n"
+			"I'm out of here. See you later!")
+	closemessage
+
+	applymovement(LOCALID_RIVAL, moves(walk_fast_right*2, walk_fast_down))
+    waitmovement(0)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+	applymovement(LOCALID_LUCASDAWN, moves(face_right))
+	applymovement(LOCALID_RIVAL, moves(walk_fast_right*6))
+	waitmovement(LOCALID_RIVAL)
+
+    setflag(FLAG_HIDE_SANDGEM_TOWN_RIVAL)
+    removeobject(LOCALID_RIVAL)
+	delay(10)
+	fadedefaultbgm()
+
+	msgbox("{SPEAKER NAME_RIVAL}What was that?!\p"
+			"Your friend always seems to be\n"
+			"in such a rush.\p"
+			"Anyway. . .\n"
+			"Let's go in.")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up))
+	waitmovement(0)
+	applymovement(LOCALID_LUCASDAWN, moves(walk_left))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	playse(SE_DOOR)
+    applymovement(LOCALID_LUCASDAWN, moves(walk_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	waitmovement(LOCALID_LUCASDAWN)
+	setflag(FLAG_HIDE_SANDGEM_TOWN_DAWN)
+	removeobject(LOCALID_LUCASDAWN)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
+	waitmovement(0)
+
+	warp(MAP_SANDGEM_PROFESSORS_LAB, 6, 12)
 
 	release
 }

@@ -36,7 +36,20 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_SANDGEM_TOWN_DAWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BARRY",
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_SANDGEM_TOWN_RIVAL"
     }
   ],
   "warp_events": [
@@ -56,16 +69,16 @@
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "SandgemTown_EventScript_LucasDawnScene1"
     },
     {
       "type": "trigger",
-      "x": 6,
-      "y": 12,
+      "x": 3,
+      "y": 14,
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "SandgemTown_EventScript_LucasDawnScene2"
     },
     {
       "type": "trigger",
@@ -74,7 +87,7 @@
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "SandgemTown_EventScript_LucasDawnScene3"
     },
     {
       "type": "trigger",
@@ -83,7 +96,7 @@
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "SandgemTown_EventScript_LucasDawnScene4"
     },
     {
       "type": "trigger",
@@ -92,7 +105,7 @@
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "SandgemTown_EventScript_LucasDawnScene5"
     }
   ],
   "bg_events": []

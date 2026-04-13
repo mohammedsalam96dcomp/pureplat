@@ -1,6 +1,398 @@
-# 1 "data/maps/SandgemProfessorsLab/scripts.pory"
-
-# 2 "data/maps/SandgemProfessorsLab/scripts.pory"
 SandgemProfessorsLab_MapScripts::
-# 3 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 5 "data/maps/SandgemProfessorsLab/scripts.pory"
+	map_script MAP_SCRIPT_ON_TRANSITION, SandgemProfessorsLab_EventScript_OnTransition
+# 7 "data/maps/SandgemProfessorsLab/scripts.pory"
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SandgemProfessorsLab_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE
 	.byte 0
+
+SandgemProfessorsLab_MapScripts_MAP_SCRIPT_ON_FRAME_TABLE:
+# 8 "data/maps/SandgemProfessorsLab/scripts.pory"
+	map_script_2 VAR_SANDGEM_TOWN_STATE, 1, SandgemProfessorsLab_MapScripts_ON_FRAME
+	.2byte 0
+
+
+SandgemProfessorsLab_EventScript_OnTransition::
+# 14 "data/maps/SandgemProfessorsLab/scripts.pory"
+	call Common_EventScript_SetupRivalGfxId
+	return
+
+
+SandgemProfessorsLab_MapScripts_ON_FRAME::
+# 18 "data/maps/SandgemProfessorsLab/scripts.pory"
+	lock
+# 20 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_0
+# 21 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 0
+# 23 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_1
+# 24 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_1
+# 25 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 2
+# 27 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_2
+# 28 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_3
+# 29 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 2
+# 31 "data/maps/SandgemProfessorsLab/scripts.pory"
+	setvar VAR_SANDGEM_TOWN_STATE, 2
+# 32 "data/maps/SandgemProfessorsLab/scripts.pory"
+	release
+# 34 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_0
+# 37 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 39 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_4
+# 40 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 0
+# 42 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_1
+# 47 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 49 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_5
+# 50 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 0
+# 52 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_2, MSGBOX_YESNO
+# 58 "data/maps/SandgemProfessorsLab/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_eq SandgemProfessorsLab_MapScripts_ON_FRAME_2
+SandgemProfessorsLab_MapScripts_ON_FRAME_1:
+# 73 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_4
+# 87 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 89 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_6
+# 90 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_7
+# 91 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 2
+# 93 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_5
+# 97 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 99 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_8
+# 100 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 0
+# 102 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_9
+# 103 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 1, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_10
+# 104 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 1
+# 106 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_6
+SandgemProfessorsLab_MapScripts_ON_FRAME_5:
+# 123 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_7, MSGBOX_YESNO
+# 127 "data/maps/SandgemProfessorsLab/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_ne SandgemProfessorsLab_MapScripts_ON_FRAME_9
+# 140 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_9
+# 142 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 144 "data/maps/SandgemProfessorsLab/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
+# 145 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_10
+# 146 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 147 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitfanfare
+# 148 "data/maps/SandgemProfessorsLab/scripts.pory"
+	setflag FLAG_SYS_POKEDEX_GET
+# 149 "data/maps/SandgemProfessorsLab/scripts.pory"
+	release
+# 151 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_11
+# 158 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 160 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_6
+# 161 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 2
+# 163 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_12
+# 177 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 179 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_7
+# 180 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_6
+# 181 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 2
+# 183 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_13
+# 188 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_11
+# 191 "data/maps/SandgemProfessorsLab/scripts.pory"
+	waitmovement 2
+# 193 "data/maps/SandgemProfessorsLab/scripts.pory"
+	setflag FLAG_HIDE_ROWANS_LAB_DAWN
+# 194 "data/maps/SandgemProfessorsLab/scripts.pory"
+	removeobject 2
+	return
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_2:
+# 59 "data/maps/SandgemProfessorsLab/scripts.pory"
+	setvar VAR_0x8004, 0
+# 60 "data/maps/SandgemProfessorsLab/scripts.pory"
+	call Common_EventScript_NameReceivedPartyMon
+SandgemProfessorsLab_MapScripts_ON_FRAME_7:
+# 62 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_3, MSGBOX_YESNO
+# 64 "data/maps/SandgemProfessorsLab/scripts.pory"
+	compare VAR_RESULT, 1
+	goto_if_ne SandgemProfessorsLab_MapScripts_ON_FRAME_12
+	goto SandgemProfessorsLab_MapScripts_ON_FRAME_1
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_9:
+# 128 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_8
+	goto SandgemProfessorsLab_MapScripts_ON_FRAME_5
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_12:
+# 65 "data/maps/SandgemProfessorsLab/scripts.pory"
+	call Common_EventScript_NameReceivedPartyMon
+	goto SandgemProfessorsLab_MapScripts_ON_FRAME_7
+
+
+# 20 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_0:
+# 20 "data/maps/SandgemProfessorsLab/scripts.pory"
+	delay_16
+	step_end
+
+# 23 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_1:
+# 23 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_up
+# 23 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_up
+# 23 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_up
+# 23 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_up
+# 23 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_up
+	step_end
+
+# 27 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_2:
+# 27 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_right
+# 27 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 28 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_3:
+# 28 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_up
+	step_end
+
+# 39 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_4:
+# 39 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_right
+# 39 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 49 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_5:
+# 49 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_up
+# 49 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_right
+# 49 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 89 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_6:
+# 89 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 90 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_7:
+# 90 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_right
+	step_end
+
+# 99 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_8:
+# 99 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_left
+# 99 "data/maps/SandgemProfessorsLab/scripts.pory"
+	delay_16
+# 99 "data/maps/SandgemProfessorsLab/scripts.pory"
+	delay_16
+	step_end
+
+# 102 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_9:
+# 102 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_up
+	step_end
+
+# 103 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_10:
+# 103 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_in_place_down
+	step_end
+
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_11:
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_down
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_down
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_down
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_down
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_down
+# 190 "data/maps/SandgemProfessorsLab/scripts.pory"
+	walk_down
+	step_end
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_0:
+# 34 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}Well, well, look who's here.\p"
+	.string "{PLAYER}, was it?\n"
+	.string "Let's have a look at your Pokémon.$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_1:
+# 42 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}. . .\p"
+	.string "Hmm. . .\n"
+	.string "I see. . .\p"
+	.string "This Pokémon seems to be rather\n"
+	.string "happy.$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_2:
+# 52 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}Hm!\p"
+	.string "Entrusting you with that X\n"
+	.string "was no mistake, it seems!\p"
+	.string "Well, would you like to give\n"
+	.string "it a nickname?$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_3:
+# 62 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}Hmm, OK, I see. . .\n"
+	.string "And you're happy with that nickname?$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_4:
+# 73 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}When I first saw you two\n"
+	.string "about to step into the tall grass\l"
+	.string "without Pokémon, I was shocked.\p"
+	.string "I was astounded by these foolhardy\n"
+	.string "children.\p"
+	.string "But now, you've astounded me in an\n"
+	.string "entirely different way.\p"
+	.string "Already, there is bond growing\n"
+	.string "between you and that Pokémon.\p"
+	.string "I feel privileged to have met you.\p"
+	.string "I'm sure X feels the same\n"
+	.string "way about you.\p"
+	.string "That's why I'll ask you to cherish that\n"
+	.string "X of yours.$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_5:
+# 93 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}Boy, am I glad you're kind\n"
+	.string "toward Pokémon.\p"
+	.string "If you weren't well. . .\n"
+	.string "I don't even want to think about it.$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_6:
+# 106 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}Er-hem!\n"
+	.string "Let's move on to the main topic.\p"
+	.string "There is something I want you to do\n"
+	.string "for me.\p"
+	.string "Allow me to properly introduce myself\n"
+	.string "first.\p"
+	.string "My name, as you know, is Rowan.\n"
+	.string "I study Pokémon.\p"
+	.string "First of all, I want to know exactly\n"
+	.string "what kinds of Pokémon live in the\n"
+	.string "Sinnoh region.\p"
+	.string "To do so, it is necessary to collect\n"
+	.string "data using the Pokédex.\p"
+	.string "This is what I wish to ask of you.$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_7:
+# 123 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}I want to entrust you with this\n"
+	.string "Pokédex.\p"
+	.string "Will you use it to record data on all\n"
+	.string "the Pokémon in Sinnoh for me?$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_8:
+# 128 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}. . .\p"
+	.string ". . .\p"
+	.string ". . .\p"
+	.string ". . .\p"
+	.string "I can stand here without speaking for\n"
+	.string "hours. I'm a very patient man.\p"
+	.string "Let me ask you again, {PLAYER}.$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_9:
+# 140 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}Hm!\p"
+	.string "Good answer!$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_10:
+# 145 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "POKEDEX$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_11:
+# 151 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}That Pokédex is a very\n"
+	.string "high-tech device.\p"
+	.string "It will automatically record data on\n"
+	.string "every kind of Pokémon you encounter.\p"
+	.string "{PLAYER}, I ask that you go\n"
+	.string "everywhere and meet every kind of\l"
+	.string "Pokémon in this region!$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_12:
+# 163 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}I've got the same kinf of\n"
+	.string "Pokédex as you.\p"
+	.string "{SPEAKER NAME_PROFESSOR}When you walked up Route 201\n"
+	.string "with your Pokémon, what did you feel?\p"
+	.string "I've lived for 60 long years.\n"
+	.string "Even now, I get a thrill when\p"
+	.string "I'm with a Pokémon.\p"
+	.string "Now you should know that there are\n"
+	.string "countless Pokémon in this world.\p"
+	.string "That means there are just as many\n"
+	.string "thrills waiting for you out there!\p"
+	.string "Now go!\p"
+	.string "{PLAYER}, your grand adventure\n"
+	.string "begins right now!$"
+
+SandgemProfessorsLab_MapScripts_ON_FRAME_Text_13:
+# 183 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}The professor asked me to help,\n"
+	.string "so I'm filling the Pokédex pages, too.\p"
+	.string "That makes us comrades working toward\n"
+	.string "the same goal.\p"
+	.string "I'll teach you stuff later, OK?\p$"
