@@ -1,4 +1,111 @@
-raw `
-Route202_MapScripts::
-	.byte 0
-`
+const LOCALID_LUCASDAWN = 1
+
+mapscripts Route202_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION: Route202_EventScript_OnTransition
+}
+
+script Route202_EventScript_OnTransition {
+	call(Common_EventScript_SetupRivalGfxId)
+}
+
+
+script Route202_EventScript_GoSeeMom1 {
+	lock
+	setvar(VAR_TEMP_1, 1)
+	goto(Route202_EventScript_GoSeeMom)
+	release
+}
+
+script Route202_EventScript_GoSeeMom2 {
+	lock
+	setvar(VAR_TEMP_1, 2)
+	goto(Route202_EventScript_GoSeeMom)
+	release
+}
+
+script Route202_EventScript_GoSeeMom3 {
+	lock
+	setvar(VAR_TEMP_1, 3)
+	goto(Route202_EventScript_GoSeeMom)
+	release
+}
+
+script Route202_EventScript_GoSeeMom4 {
+	lock
+	setvar(VAR_TEMP_1, 4)
+	goto(Route202_EventScript_GoSeeMom)
+	release
+}
+
+script Route202_EventScript_GoSeeMom5 {
+	lock
+	setvar(VAR_TEMP_1, 5)
+	goto(Route202_EventScript_GoSeeMom)
+	release
+}
+
+script Route202_EventScript_GoSeeMom {
+	lock
+
+	playse(SE_PIN)
+    applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right, emote_exclamation_mark, delay_16 * 3))
+	waitmovement(LOCALID_LUCASDAWN)
+	waitse
+
+	switch(var(VAR_TEMP_1)) {
+		case 1:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up*2, walk_right))	
+		case 2:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up, walk_right))
+		case 3:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*5))
+		case 4:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down, walk_right))
+		case 5:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down*2, walk_right))
+
+	}
+	waitmovement(LOCALID_LUCASDAWN)
+
+	if (var(VAR_ROUTE202_DAWN_STATE) == 1) {
+		msgbox("{SPEAKER NAME_RIVAL}{PLAYER}?!\p"
+			"Did you tell your family that you're\n"
+			"helping the professor?\p"
+			". . .I bet you didn't, did you?\p"
+			"I know that you're eager to\n"
+			"see all kinds of Pokémon.\p"
+			"But you shouldn't make your mom\n"
+			"worry like that.")
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Why don't you go to tell your\n"
+				"family that the professor asked for\l"
+				"your help?\p"
+				"You should do it right away.")
+		closemessage
+	}
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction))
+    waitmovement(0)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	switch(var(VAR_TEMP_1)) {
+		case 1:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left*6, walk_down*2, face_right))
+		case 2:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left*6, walk_down, face_right))
+		case 3:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left*6, face_right))
+		case 4:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left*6, walk_up, face_right))
+		case 5:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_left*6, walk_up*2, face_right))
+	}
+
+	waitmovement(LOCALID_LUCASDAWN)
+	setvar(VAR_ROUTE202_DAWN_STATE, 2)
+	release
+}

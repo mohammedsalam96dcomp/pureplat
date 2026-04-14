@@ -1812,6 +1812,16 @@
       "secondary_tileset": "gTileset_PokemonCenterPlat",
       "border_filepath": "data/layouts/SandgemPokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/SandgemPokemonCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE219",
+      "name": "Route219_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_Sandgem",
+      "border_filepath": "data/layouts/Route219/border.bin",
+      "blockdata_filepath": "data/layouts/Route219/map.bin"
     }
   ]
 }

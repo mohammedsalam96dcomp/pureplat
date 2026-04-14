@@ -145,6 +145,10 @@ script SandgemTown_ON_FRAME {
 	removeobject(LOCALID_LUCASDAWN)
 
 	setvar(VAR_SANDGEM_TOWN_STATE, 3)
+	setvar(VAR_ROUTE202_STATE, 1)     
+	setvar(VAR_ROUTE202_DAWN_STATE, 1)     
+	setvar(VAR_TWINLEAF_TOWN_STATE, 8)
+	             
 	release
 }
 
@@ -153,6 +157,7 @@ script SandgemTown_EventScript_OnTransition {
 }
 
 script SandgemTown_ON_WARP {
+	addobject(LOCALID_LUCASDAWN)
 	turnobject(LOCALID_LUCASDAWN, DIR_NORTH)
 
 }

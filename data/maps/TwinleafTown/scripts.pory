@@ -86,10 +86,10 @@ script TwinleafTown_EventScript_Technology {
 script TwinleafTown_EventScript_WildPokemon {
     lock
     faceplayer
-    msgbox(format("It's true that wild Pokémon do attack\n"
-                "people sometimes. . .\p"
-                "But, Pokémon also open their hearts\n"
-                "to you, so you can become friends."))
+    msgbox(("It's true that wild Pokémon do attack\n"
+            "people sometimes. . .\p"
+            "But, Pokémon also open their hearts\n"
+            "to you, so you can become friends."))
     release
 }
 
@@ -97,6 +97,11 @@ script TwinleafTown_EventScript_TwinleafMan {
     lock
     if (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
         goto(TwinleafTown_EventScript_BarryLooking)
+    } elif(var(VAR_TWINLEAF_TOWN_STATE) == 8) {
+        faceplayer
+        msgbox("Everyone goes off on adventures,\n"
+                "and then they gradually grow up...")
+        closemessage
     } elif (var(VAR_TWINLEAF_TOWN_STATE) >= 4) {
         if (!(var(VAR_LAKE_VERITY_STATE) == 3)) {
             goto(TwinleafTown_EventScript_TearingOff)
@@ -108,6 +113,7 @@ script TwinleafTown_EventScript_TwinleafMan {
                     ". . .Ouch. He ran right into me earlier.\n"
                     "It's still hurting.\l"
                     "That kid's growing up tough.")
+            closemessage
         }
     }
     release
