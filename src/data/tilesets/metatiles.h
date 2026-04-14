@@ -429,3 +429,6 @@ const u16 gMetatileAttributes_Sandgem[] = INCBIN_U16("data/tilesets/secondary/sa
 
 const u16 gMetatiles_ProfessorsLab[] = INCBIN_U16("data/tilesets/secondary/professors_lab/metatiles.bin");
 const u16 gMetatileAttributes_ProfessorsLab[] = INCBIN_U16("data/tilesets/secondary/professors_lab/metatile_attributes.bin");
+
+const u16 gMetatiles_PokemonCenterPlat[] = INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/metatiles.bin");
+const u16 gMetatileAttributes_PokemonCenterPlat[] = INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/metatile_attributes.bin");

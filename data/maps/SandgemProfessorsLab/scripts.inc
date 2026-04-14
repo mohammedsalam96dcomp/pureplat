@@ -540,7 +540,7 @@ SandgemProfessorsLab_EventScript_RivalFather_Text_0:
 SandgemProfessorsLab_EventScript_Roseanne_Text_0:
 # 230 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "Professor Rowan invented a new\n"
-	.string "Pokédex while working alongisde a\l"
+	.string "Pokédex while working alongside a\l"
 	.string "professor from the Kanto region.\p"
 	.string "Oh, my name is Roseanne.\p"
 	.string "It's an honor to be an assistant to\n"

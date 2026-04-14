@@ -228,7 +228,7 @@ script SandgemProfessorsLab_EventScript_Roseanne{
 
 	faceplayer
 	msgbox("Professor Rowan invented a new\n"
-			"Pokédex while working alongisde a\l"
+			"Pokédex while working alongside a\l"
 			"professor from the Kanto region.\p"
 			"Oh, my name is Roseanne.\p"
 			"It's an honor to be an assistant to\n"

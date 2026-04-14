@@ -1,15 +1,161 @@
 const LOCALID_LUCASDAWN = 1
 const LOCALID_RIVAL = 2
+const LOCALID_ROWAN = 3
 
 mapscripts SandgemTown_MapScripts{
+
+	MAP_SCRIPT_ON_FRAME_TABLE[
+		VAR_SANDGEM_TOWN_STATE, 2: SandgemTown_ON_FRAME
+  	]
+
+
 	MAP_SCRIPT_ON_TRANSITION : SandgemTown_EventScript_OnTransition
+
+	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
+		VAR_SANDGEM_TOWN_STATE, 2: SandgemTown_ON_WARP
+	]
 }
 
+script SandgemTown_ON_FRAME {
+	lock
+
+	delay(30)
+
+	clearflag(FLAG_HIDE_SANDGEM_TOWN_ROWAN)
+    addobject(LOCALID_ROWAN)
+
+	playse(SE_DOOR)
+	waitse
+
+	msgbox("{SPEAKER NAME_PROFESSOR}{PLAYER}!")
+	closemessage
+
+  	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark)
+	applymovement(LOCALID_LUCASDAWN, Common_Movement_ExclamationMark)
+  	waitse
+	waitmovement(LOCALID_LUCASDAWN)
+  	delay(48)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
+	waitmovement(0)
+
+	msgbox("{SPEAKER NAME_PROFESSOR}I have something good here.\n"
+			"You should take this as well.")
+	closemessage
+	giveitem(ITEM_TM_RETURN)
+	msgbox("{SPEAKER NAME_PROFESSOR}That is a Technical Machine.\n"
+			"That one contains the move Return.\p"
+			"Using a Technical Machine, or TM for\n"
+			"short, teaches a move instantly to\l"
+			"a Pokémon.\p"
+			"Bear in mind, however,\n" 
+			"that a TM is single-use only.\p"
+			"The move Return gains power the more\n"
+			"friendly your Pokémon is with you.\p"
+			"It's up to you, of course, if you want\n"
+			"to use that TM or not.\p"
+			"I'll send you off with the wish that\n"
+			"your journey will be fun.")
+	closemessage
+
+	applymovement(LOCALID_ROWAN, moves(walk_in_place_up))
+	waitmovement(0)
+
+	playse(SE_DOOR)
+	setflag(FLAG_HIDE_SANDGEM_TOWN_ROWAN)
+    removeobject(LOCALID_ROWAN)
+	waitse
+
+	delay(10)
+
+	msgbox("{SPEAKER NAME_RIVAL}Well, I'll be. . .\n"
+			"The professor had TMs. . .?\p"
+			"Next thing, he'll tell me he battled\n"
+			"when he was young.")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}Hey, {PLAYER}!\n"
+			"I want to show you a few things.\l"
+			"So, follow me!")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_down, walk_right*9, walk_in_place_up))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right*10, walk_in_place_up))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}This building with the red roof is\n"
+			"the Pokémon Center.\p"
+			"You can get your Pokémon healed if\n"
+			"it's been hurt in battle.\p"
+			"You'll find a Pokémon Center in most\n"
+			"towns.")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*11, walk_in_place_up))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right*11, walk_in_place_up))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}Over here, the building with the blue\n"
+			"roof is the Poké Mart.\p"
+			"It's a shop where you can buy and\n"
+			"sell all sorts of items.\p"
+			"{PLAYER}, since you're a rookie\n"
+			"Trainer, you won't be able to buy\l"
+			"very much stuff.\p"
+			"Don't worry about it, OK?")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_LUCASDAWN, Common_Movement_ExclamationMark)
+	waitmovement(0)
+	waitse
+
+	msgbox("{SPEAKER NAME_RIVAL}Oh, yeah, right!\n"
+			"{PLAYER}. . .\p"
+			"You should let your family know\n"
+			"you're helping Prof. Rowan put\l"
+			"together his Pokédex.\p"
+			"Sometimes, you have to go far away,\n"
+			"so you should let someone know.\p"
+			"Oh, but first, go heal up your\n"
+			"Pokémon at the Pokémon Center.\p"
+			"You'll be safe then.\n"
+			"OK, be seeing you!")
+	closemessage
+
+	applymovement(LOCALID_LUCASDAWN, moves(walk_down))
+	waitmovement(LOCALID_LUCASDAWN)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_left*6))
+	waitmovement(LOCALID_LUCASDAWN)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up*8))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	setflag(FLAG_HIDE_SANDGEM_TOWN_DAWN)
+	removeobject(LOCALID_LUCASDAWN)
+
+	setvar(VAR_SANDGEM_TOWN_STATE, 3)
+	release
+}
 
 script SandgemTown_EventScript_OnTransition {
 	call(Common_EventScript_SetupRivalGfxId)
 }
 
+script SandgemTown_ON_WARP {
+	turnobject(LOCALID_LUCASDAWN, DIR_NORTH)
+
+}
 
 script SandgemTown_EventScript_LucasDawnScene1 {
 	lock

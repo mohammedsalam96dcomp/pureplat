@@ -277,6 +277,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_ROUTE_201_BRIEFCASE
 	setflag FLAG_HIDE_ROUTE_201_KID
 	setflag FLAG_HIDE_SANDGEM_TOWN_RIVAL
+	setflag FLAG_HIDE_SANDGEM_TOWN_ROWAN
 	call EventScript_ResetAllBerries
 	setvar VAR_NEW_GAME_START, 0
 	end

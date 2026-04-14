@@ -26,7 +26,8 @@
     "TwinleafTownHouse2"
   ],
   "gMapGroup_IndoorSandgem": [
-    "SandgemProfessorsLab"
+    "SandgemProfessorsLab",
+    "SandgemPokemonCenter"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

@@ -1802,6 +1802,16 @@
       "secondary_tileset": "gTileset_ProfessorsLab",
       "border_filepath": "data/layouts/SandgemProfessorsLab/border.bin",
       "blockdata_filepath": "data/layouts/SandgemProfessorsLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_POKEMON_CENTER",
+      "name": "SandgemPokemonCenter_Layout",
+      "width": 15,
+      "height": 11,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_PokemonCenterPlat",
+      "border_filepath": "data/layouts/SandgemPokemonCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemPokemonCenter/map.bin"
     }
   ]
 }

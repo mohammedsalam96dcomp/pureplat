@@ -1617,3 +1617,14 @@ const struct Tileset gTileset_ProfessorsLab =
     .metatileAttributes = gMetatileAttributes_ProfessorsLab,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PokemonCenterPlat =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PokemonCenterPlat,
+    .palettes = gTilesetPalettes_PokemonCenterPlat,
+    .metatiles = gMetatiles_PokemonCenterPlat,
+    .metatileAttributes = gMetatileAttributes_PokemonCenterPlat,
+    .callback = NULL,
+};

@@ -3180,3 +3180,22 @@ const u16 gTilesetPalettes_ProfessorsLab[][16] =
 };
 
 const u32 gTilesetTiles_ProfessorsLab[] = INCBIN_U32("data/tilesets/secondary/professors_lab/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_PokemonCenterPlat[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/pokemon_center_plat/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_PokemonCenterPlat[] = INCBIN_U32("data/tilesets/secondary/pokemon_center_plat/tiles.4bpp.lz");
