@@ -127,7 +127,7 @@ Route202_EventScript_GoSeeMom_8:
 # 104 "data/maps/Route202/scripts.pory"
 	case 5, Route202_EventScript_GoSeeMom_18
 Route202_EventScript_GoSeeMom_12:
-# 108 "data/maps/Route202/scripts.pory"
+# 107 "data/maps/Route202/scripts.pory"
 	waitmovement 1
 # 109 "data/maps/Route202/scripts.pory"
 	setvar VAR_ROUTE202_DAWN_STATE, 2

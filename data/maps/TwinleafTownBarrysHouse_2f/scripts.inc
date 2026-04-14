@@ -75,16 +75,20 @@ TwinleafTownBarrysHouse_2F_EventScript_Wii::
 # 55 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	msgbox TwinleafTownBarrysHouse_2F_EventScript_Wii_Text_0
 # 57 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	closemessage
+# 58 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	release
 	return
 
 
 TwinleafTownBarrysHouse_2F_EventScript_PC::
-# 61 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
-	lock
 # 62 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	lock
+# 63 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	msgbox TwinleafTownBarrysHouse_2F_EventScript_PC_Text_0
-# 68 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+# 69 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+	closemessage
+# 70 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	release
 	return
 
@@ -144,7 +148,7 @@ TwinleafTownBarrysHouse_2F_EventScript_Wii_Text_0:
 	.string "It's controlled by a Wii Remote!$"
 
 TwinleafTownBarrysHouse_2F_EventScript_PC_Text_0:
-# 62 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
+# 63 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	.string "{PLAYER} checked the PC screen.\p"
 	.string "Adventure Rule No. 1\n"
 	.string "The START Button opens the menu!\p"

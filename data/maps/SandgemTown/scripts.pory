@@ -19,7 +19,7 @@ mapscripts SandgemTown_MapScripts{
 script SandgemTown_ON_FRAME {
 	lock
 
-	delay(30)
+	delay(8)
 
 	clearflag(FLAG_HIDE_SANDGEM_TOWN_ROWAN)
     addobject(LOCALID_ROWAN)
@@ -147,8 +147,7 @@ script SandgemTown_ON_FRAME {
 	setvar(VAR_SANDGEM_TOWN_STATE, 3)
 	setvar(VAR_ROUTE202_STATE, 1)     
 	setvar(VAR_ROUTE202_DAWN_STATE, 1)     
-	setvar(VAR_TWINLEAF_TOWN_STATE, 8)
-	             
+	setvar(VAR_TWINLEAF_MOM_STATE, 5)
 	release
 }
 
@@ -326,6 +325,34 @@ script SandgemTown_EventScript_LucasDawnScene {
 	waitmovement(0)
 
 	warp(MAP_SANDGEM_PROFESSORS_LAB, 6, 12)
+
+	release
+}
+
+script SandgemTown_EventScript_Woman {
+	lock
+
+	faceplayer
+	msgbox("So I don't forget what's happened,\n"
+			"till now, I'd better save this. . .\p"
+			"There!\n"
+			"Now I can take a break.")
+	closemessage
+
+	release
+}
+
+script SandgemTown_EventScript_Youngster {
+	lock
+
+	faceplayer
+	msgbox("Oh, wow!\n"
+			"Pokémon are so cool!\p"
+			"You can make yours battle and make\n"
+			"them stronger!\p"
+			"I wish I had some!\n"
+			"It's so cool!")
+	closemessage
 
 	release
 }

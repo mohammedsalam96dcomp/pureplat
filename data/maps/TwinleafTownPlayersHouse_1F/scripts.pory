@@ -7,6 +7,7 @@
 //VAR_TWINLEAF_TOWN STATE 7 - AFTER SPEAKING WITH MOM GETTING SHOES
 
 const LOCALID_MOM = 1
+const LOCALID_BARRYMOM = 2
 
 mapscripts TwinleafTownPlayersHouse_1F_MapScripts {
 	MAP_SCRIPT_ON_FRAME_TABLE[
@@ -133,6 +134,8 @@ script TwinleafTown_PlayersHouse1F_EventScript_Mom {
 		goto(TwinleafTown_PlayersHouse1F_BarryWaiting)
 	} elif (var(VAR_TWINLEAF_MOM_STATE) == 4) {
 		goto(TwinleafTown_PlayersHouse1F_Heal)
+	} elif (var(VAR_TWINLEAF_MOM_STATE) == 5 ) {
+		goto(TwinleafTown_PlayersHouse1F_GotPokedex)
 	}
 	
 	release
@@ -270,9 +273,120 @@ script TwinleafTown_PlayersHouse1F_Heal {
 	msgbox("Welcome home {PLAYER}.\n"
 			"Are you and your Pokémon healthy?\l"
 			"Take a quick rest, dear.")
+	closemessage
 
 	call(Common_EventScript_OutOfCenterPartyHeal)
+
+	release
+}
+
+script TwinleafTown_PlayersHouse1F_GotPokedex {
+	lock
+
+	call(TwinleafTown_PlayersHouse1F_Heal)
+
+	msgbox("{SPEAKER NAME_MOM}What is it {PLAYER}?\p"
+			". . .\p"
+			"Wow. Professor Rowan asked you\n"
+			"to do something that big.\p"
+			"OK, dear, go for it!\n"
+			"Your mom's got your back!")
+
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+	if (var(VAR_RESULT) != DIR_SOUTH) {
+		applymovement(LOCALID_MOM, moves(face_up))
+		waitmovement(LOCALID_MOM)
+	} else {
+		applymovement(LOCALID_MOM, moves(face_down))
+		waitmovement(LOCALID_MOM)
+	}
+
+	msgbox("{SPEAKER NAME_MOM}Gee, a journey full of adventure. . .\n"
+			"I envy you, kiddo.\p"
+			"Plus, you're not alone.\n"
+			"You have your Pokémon with you.\l"
+			"I wish I could go instead!")
+
+	applymovement(LOCALID_MOM, Common_Movement_FacePlayer)
+	waitmovement(LOCALID_MOM)
+
+	msgbox("{SPEAKER NAME_MOM}I'm just joking, dear!\n"
+			"Yup, {PLAYER}!\p"
+			"I'll be all right by myself, so you\n"
+			"go and enjoy your adventure!\p"
+			"When you're exposed to new things,\n"
+			"and experience new sensations. . .\l"
+			"It makes your mother happy, too.\p"
+			". . .But come back sometimes.\p"
+			"I would like to see the kinds of\n"
+			"Pokémon you've caught, dear.")
 	closemessage
+
+	playse(SE_DOOR)
+	clearflag(FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM)
+	addobject(LOCALID_BARRYMOM)
+	waitse
+
+	playse(SE_PIN)
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+
+	applymovement(LOCALID_MOM, moves(face_down, emote_exclamation_mark, delay_16*2))
+	waitmovement(LOCALID_MOM)
+	waitse
+
+	applymovement(LOCALID_BARRYMOM, moves(walk_up, face_right))
+	waitmovement(LOCALID_BARRYMOM)
+
+	msgbox("{SPEAKER NAME_BARRYMOM}Excuse me.\n"
+			"Is my little Barry here?")
+	
+	applymovement(LOCALID_MOM, moves(walk_in_place_down))
+	waitmovement(LOCALID_MOM)
+
+	msgbox("{SPEAKER NAME_MOM}Oh?\n"
+			"No, he's not. . .\p"
+			"{SPEAKER NAME_BARRYMOM}Oh. . .\n"
+			"Then, he must have left already. . .\l"
+			"What to do. . .\p"
+			"That boy shouted about going on an\n"
+			"adventure, then he bolted.\p"
+			"He's so headstrong and reckless. . .\n"
+			"I at least wanted him to take this. . .\p"
+			"{SPEAKER NAME_MOM}Not to worry, {PLAYER} will\n"
+			"deliver that to him.")
+
+	applymovement(LOCALID_MOM, Common_Movement_FacePlayer)
+	waitmovement(LOCALID_MOM)
+
+	msgbox("{SPEAKER NAME_MOM}Won't you {PLAYER}?")
+
+	applymovement(LOCALID_BARRYMOM, Common_Movement_FacePlayer)
+	waitmovement(LOCALID_BARRYMOM)
+
+	msgbox("{SPEAKER NAME_BARRYMOM}Oh, really?\n"
+			"You'd do that for me?\p"
+			"{PLAYER}, please take this to\n"
+			"Barry for me.")
+	giveitem(ITEM_PARCEL)
+	msgbox("{SPEAKER NAME_MOM}Bye-bye, {PLAYER}!\n"
+			"Enjoy your adventure!\p"
+			"{SPEAKER NAME_BARRYMOM}Let me think. . .\p"
+			"Knowing my boy, he would probably\n"
+			"head straight to Jubilife City. . .\p"
+			"OK, please take that to my\n"
+			"Barry.")
+	closemessage
+
+	playse(SE_DOOR)
+	applymovement(LOCALID_BARRYMOM, moves(walk_down))
+	waitmovement(LOCALID_BARRYMOM)
+	waitse
+
+	setflag(FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM)
+	removeobject(LOCALID_BARRYMOM)
+
+	setvar(VAR_TWINLEAF_MOM_STATE, 4)
 
 	release
 }

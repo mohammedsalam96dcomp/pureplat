@@ -15,7 +15,7 @@ script  SandgemProfessorsLab_EventScript_OnTransition {
 }
 
 script SandgemProfessorsLab_MapScripts_ON_FRAME {
-	lock
+	lockall
 
 	applymovement(LOCALID_LUCASDAWN, moves(delay_16))
 	waitmovement(0)
@@ -51,13 +51,14 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 			"was no mistake, it seems!\p"
 			"Well, would you like to give\n"
 			"it a nickname?", MSGBOX_YESNO)
-
+	closemessage
 	if(var(VAR_RESULT) == 1) {
 		setvar(VAR_0x8004, 0)
 		call(Common_EventScript_NameReceivedPartyMon)
 		while {
 			msgbox("{SPEAKER NAME_PROFESSOR}Hmm, OK, I see. . .\n"
 					"And you're happy with that nickname?", MSGBOX_YESNO)
+			closemessage
 			if (var(VAR_RESULT) != 1) {
 				call(Common_EventScript_NameReceivedPartyMon)
 			} else {
@@ -120,6 +121,7 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 				"Pokédex.\p"
 				"Will you use it to record data on all\n"
 				"the Pokémon in Sinnoh for me?", MSGBOX_YESNO)
+				 closemessage
 		if (var(VAR_RESULT) != 1) {
 			msgbox("{SPEAKER NAME_PROFESSOR}. . .\p"
 					". . .\p"
@@ -128,6 +130,7 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 					"I can stand here without speaking for\n"
 					"hours. I'm a very patient man.\p"
 					"Let me ask you again, {PLAYER}.")
+					closemessage
 		} else {
 			break
 		}
@@ -193,11 +196,11 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	removeobject(LOCALID_LUCASDAWN)
 	setvar(VAR_SANDGEM_TOWN_STATE, 2)
 
-	release
+	releaseall
 }
 
 script SandgemProfessorsLab_EventScript_Professor{
-	lock
+	lockall
 	
 	if(var(VAR_SANDGEM_TOWN_STATE) == 2) {
 		faceplayer
@@ -205,8 +208,22 @@ script SandgemProfessorsLab_EventScript_Professor{
 				"{PLAYER}, your grand adventure\n"
 				"begins right now!")
 		closemessage
+	} elif (var(VAR_SANDGEM_TOWN_STATE) == 3) {
+		faceplayer
+		msgbox("{SPEAKER NAME_PROFESSOR}Ah, {PLAYER}!\p"
+				"You've come to show me the progress\n"
+				"you've made on your Pokédex?", MSGBOX_YESNO)
+				closemessage
+		if (var(VAR_RESULT) == 1) {
+
+		} else {
+			msgbox("{SPEAKER NAME_PROFESSOR}What's wrong?\p"
+					"You're not suggesting you've seen so\n"
+					"few that you're afraid to show me?")
+			closemessage
+		}
 	}
-	release
+	releaseall
 }
 
 script SandgemProfessorsLab_EventScript_RivalFather{
@@ -280,7 +297,7 @@ script SandgemProfessorsLab_EventScript_Research2 {
 }
 
 script SandgemProfessorsLab_EventScript_PC {
-lockall
+	lockall
 
 	msgbox("{PLAYER} checked the PC.\p"
 			"The screen is filled with special terms\n"
@@ -292,7 +309,7 @@ lockall
 }
 
 script SandgemProfessorsLab_EventScript_Refrigerator {
-lockall
+	lockall
 
 	msgbox("The refrigerator is filled with\n"
 			"tasty sweets! Mmm. . .")

@@ -54,6 +54,7 @@ script TwinleafTownBarrysHouse_2F_EventScript_Wii {
 	lock
 	msgbox("It's a wii!\n"
 			"It's controlled by a Wii Remote!")
+	closemessage
 	release
 }
 
@@ -65,5 +66,6 @@ script TwinleafTownBarrysHouse_2F_EventScript_PC {
 			"Adventure Rule No. 2\n"
 			"Record your progress with SAVE.\p"
 			"There is nothing else on here. . .")
+	closemessage
 	release
 }

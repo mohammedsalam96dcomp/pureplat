@@ -104,8 +104,8 @@ script Route202_EventScript_GoSeeMom {
 		case 5:
 			applymovement(LOCALID_LUCASDAWN, moves(walk_left*6, walk_up*2, face_right))
 	}
-
 	waitmovement(LOCALID_LUCASDAWN)
+	
 	setvar(VAR_ROUTE202_DAWN_STATE, 2)
 	release
 }
