@@ -15,7 +15,7 @@ script  SandgemProfessorsLab_EventScript_OnTransition {
 }
 
 script SandgemProfessorsLab_MapScripts_ON_FRAME {
-	lockall
+	lock
 
 	applymovement(LOCALID_LUCASDAWN, moves(delay_16))
 	waitmovement(0)
@@ -196,11 +196,11 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	removeobject(LOCALID_LUCASDAWN)
 	setvar(VAR_SANDGEM_TOWN_STATE, 2)
 
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_Professor{
-	lockall
+	lock
 	
 	if(var(VAR_SANDGEM_TOWN_STATE) == 2) {
 		faceplayer
@@ -223,11 +223,11 @@ script SandgemProfessorsLab_EventScript_Professor{
 			closemessage
 		}
 	}
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_RivalFather{
-	lockall
+	lock
 
 	faceplayer
 	msgbox("I'm {RIVAL}'s father.\p"
@@ -237,11 +237,11 @@ script SandgemProfessorsLab_EventScript_RivalFather{
 			"I'm sure we can count on you!")
 	closemessage
 
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_Roseanne{
-	lockall
+	lock
 
 	faceplayer
 	msgbox("Professor Rowan invented a new\n"
@@ -252,52 +252,52 @@ script SandgemProfessorsLab_EventScript_Roseanne{
 			"our professor!")
 	closemessage
 	
-	releaseall
+	release
 }
 
 
 script SandgemProfessorsLab_EventScript_Rule1 {
-	lockall
+	lock
 
 	msgbox("Adventure Rule No. 1\n"
 			"The START Button opens the menu.")
 	closemessage
 	
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_Rule2 {
-	lockall
+	lock
 
 	msgbox("Adventure Rule No. 2\n"
 			"Record your progress with SAVE.")
 	closemessage
 	
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_Research1 {
-	lockall
+	lock
 
 	msgbox("It's crammed full of books with all\n"
 			"sorts of Pokémon information.")
 	closemessage
 	
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_Research2 {
-	lockall
+	lock
 
 	msgbox("There's a lot of reference material\n"
 			"and research reports on Pokémon.")
 	closemessage
 	
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_PC {
-	lockall
+	lock
 
 	msgbox("{PLAYER} checked the PC.\p"
 			"The screen is filled with special terms\n"
@@ -305,16 +305,16 @@ script SandgemProfessorsLab_EventScript_PC {
 			"to figure out.")
 	closemessage
 	
-	releaseall
+	release
 }
 
 script SandgemProfessorsLab_EventScript_Refrigerator {
-	lockall
+	lock
 
 	msgbox("The refrigerator is filled with\n"
 			"tasty sweets! Mmm. . .")
 	closemessage
 	
-	releaseall
+	release
 }
 

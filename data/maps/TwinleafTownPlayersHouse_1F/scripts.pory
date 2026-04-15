@@ -293,6 +293,16 @@ script TwinleafTown_PlayersHouse1F_GotPokedex {
 			"Your mom's got your back!")
 
 	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+	if (var(VAR_RESULT) == DIR_NORTH) {
+		setvar(VAR_TEMP_2, 1)
+	}
+	elif(var(VAR_RESULT) == DIR_SOUTH) {
+		setvar(VAR_TEMP_2, 2)
+	} elif (var(VAR_RESULT) == DIR_EAST) {
+		setvar(VAR_TEMP_2, 3)
+	} elif (var(VAR_RESULT) == DIR_WEST) {
+		setvar(VAR_TEMP_2, 4)
+	}
 
 	if (var(VAR_RESULT) != DIR_SOUTH) {
 		applymovement(LOCALID_MOM, moves(face_up))
@@ -337,9 +347,14 @@ script TwinleafTown_PlayersHouse1F_GotPokedex {
 
 	applymovement(LOCALID_BARRYMOM, moves(walk_up, face_right))
 	waitmovement(LOCALID_BARRYMOM)
+	if(var(VAR_TEMP_2) == 1) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+		waitmovement(0)
+	}
 
 	msgbox("{SPEAKER NAME_BARRYMOM}Excuse me.\n"
 			"Is my little Barry here?")
+	
 	
 	applymovement(LOCALID_MOM, moves(walk_in_place_down))
 	waitmovement(LOCALID_MOM)
@@ -356,11 +371,45 @@ script TwinleafTown_PlayersHouse1F_GotPokedex {
 			"{SPEAKER NAME_MOM}Not to worry, {PLAYER} will\n"
 			"deliver that to him.")
 
+	switch(var(VAR_TEMP_2)) {
+		case 1:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+		case 2:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+		case 3:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(face_right))
+		case 4:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(face_left))
+	}
+
 	applymovement(LOCALID_MOM, Common_Movement_FacePlayer)
 	waitmovement(LOCALID_MOM)
 
 	msgbox("{SPEAKER NAME_MOM}Won't you {PLAYER}?")
+	closemessage
 
+	switch(var(VAR_TEMP_2)) {
+		case 1:
+			break		
+		case 2:
+			applymovement(LOCALID_BARRYMOM, moves(walk_up*2))
+		case 3:
+			break
+		case 4:
+			applymovement(LOCALID_BARRYMOM, moves(walk_right*2))
+	}
+	waitmovement(LOCALID_BARRYMOM)
+
+	switch(var(VAR_TEMP_2)) {
+		case 1:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))	
+		case 2:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
+		case 3:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
+		case 4:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
+	}
 	applymovement(LOCALID_BARRYMOM, Common_Movement_FacePlayer)
 	waitmovement(LOCALID_BARRYMOM)
 
@@ -379,7 +428,19 @@ script TwinleafTown_PlayersHouse1F_GotPokedex {
 	closemessage
 
 	playse(SE_DOOR)
-	applymovement(LOCALID_BARRYMOM, moves(walk_down))
+
+	switch(var(VAR_TEMP_2)) {
+		case 1:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
+			applymovement(LOCALID_BARRYMOM, moves(walk_down))	
+		case 2:
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
+			applymovement(LOCALID_BARRYMOM, moves(walk_down*3))
+		case 3:
+			applymovement(LOCALID_BARRYMOM, moves(walk_down))
+		case 4:
+			applymovement(LOCALID_BARRYMOM, moves(walk_left*2, walk_down))
+	}
 	waitmovement(LOCALID_BARRYMOM)
 	waitse
 
@@ -387,6 +448,6 @@ script TwinleafTown_PlayersHouse1F_GotPokedex {
 	removeobject(LOCALID_BARRYMOM)
 
 	setvar(VAR_TWINLEAF_MOM_STATE, 4)
-
+	setvar(VAR_ROUTE202_STATE, 2)
 	release
 }

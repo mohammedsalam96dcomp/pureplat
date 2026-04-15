@@ -348,96 +348,268 @@ TwinleafTown_PlayersHouse1F_GotPokedex::
 	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_0
 # 295 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	specialvar VAR_RESULT, GetPlayerFacingDirection
-# 297 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 296 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	compare VAR_RESULT, DIR_NORTH
+	goto_if_eq TwinleafTown_PlayersHouse1F_GotPokedex_2
+# 299 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	compare VAR_RESULT, DIR_SOUTH
-	goto_if_ne TwinleafTown_PlayersHouse1F_GotPokedex_2
+	goto_if_eq TwinleafTown_PlayersHouse1F_GotPokedex_3
 # 301 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 1, TwinleafTownPlayersHouse_1F_ON_FRAME_BARRYLEFT_Movement_1
-# 302 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitmovement 1
+	compare VAR_RESULT, DIR_EAST
+	goto_if_eq TwinleafTown_PlayersHouse1F_GotPokedex_4
+# 303 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	compare VAR_RESULT, DIR_WEST
+	goto_if_eq TwinleafTown_PlayersHouse1F_GotPokedex_5
 TwinleafTown_PlayersHouse1F_GotPokedex_1:
-# 305 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_1
+# 307 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	compare VAR_RESULT, DIR_SOUTH
+	goto_if_ne TwinleafTown_PlayersHouse1F_GotPokedex_11
 # 311 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 1, Common_Movement_FacePlayer
+	applymovement 1, TwinleafTownPlayersHouse_1F_ON_FRAME_BARRYLEFT_Movement_1
 # 312 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	waitmovement 1
-# 314 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_2
-# 324 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	closemessage
-# 326 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	playse SE_DOOR
-# 327 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	clearflag FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM
-# 328 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	addobject 2
-# 329 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitse
-# 331 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	playse SE_PIN
-# 332 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_1F_ON_FRAME_BARRYLEFT_Movement_1
-# 334 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 1, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_1
-# 335 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_10:
+# 315 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_1
+# 321 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 1, Common_Movement_FacePlayer
+# 322 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	waitmovement 1
+# 324 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_2
+# 334 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	closemessage
 # 336 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitse
+	playse SE_DOOR
+# 337 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	clearflag FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM
 # 338 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_2
+	addobject 2
 # 339 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitmovement 2
+	waitse
 # 341 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_3
+	playse SE_PIN
+# 342 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_1F_ON_FRAME_BARRYLEFT_Movement_1
 # 344 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 1, TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0
+	applymovement 1, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_1
 # 345 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	waitmovement 1
-# 347 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_4
+# 346 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitse
+# 348 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_2
+# 349 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitmovement 2
+# 350 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	compare VAR_TEMP_2, 1
+	goto_if_eq TwinleafTown_PlayersHouse1F_GotPokedex_15
+TwinleafTown_PlayersHouse1F_GotPokedex_14:
+# 355 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_3
 # 359 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 1, Common_Movement_FacePlayer
+	applymovement 1, TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0
 # 360 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	waitmovement 1
 # 362 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_5
-# 364 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 2, Common_Movement_FacePlayer
-# 365 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitmovement 2
-# 367 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_6
-# 371 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	giveitem ITEM_PARCEL
-# 372 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_7
+	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_4
+# 374 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	switch VAR_TEMP_2
+# 375 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 1, TwinleafTown_PlayersHouse1F_GotPokedex_19
+# 377 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 2, TwinleafTown_PlayersHouse1F_GotPokedex_20
 # 379 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	closemessage
+	case 3, TwinleafTown_PlayersHouse1F_GotPokedex_21
 # 381 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	playse SE_DOOR
-# 382 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_3
-# 383 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitmovement 2
-# 384 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitse
+	case 4, TwinleafTown_PlayersHouse1F_GotPokedex_22
+TwinleafTown_PlayersHouse1F_GotPokedex_17:
+# 385 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 1, Common_Movement_FacePlayer
 # 386 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	setflag FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM
-# 387 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	removeobject 2
+	waitmovement 1
+# 388 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_5
 # 389 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	setvar VAR_TWINLEAF_MOM_STATE, 4
+	closemessage
 # 391 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	switch VAR_TEMP_2
+# 392 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 1, TwinleafTown_PlayersHouse1F_GotPokedex_25
+# 394 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 2, TwinleafTown_PlayersHouse1F_GotPokedex_26
+# 396 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 3, TwinleafTown_PlayersHouse1F_GotPokedex_27
+# 398 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 4, TwinleafTown_PlayersHouse1F_GotPokedex_28
+TwinleafTown_PlayersHouse1F_GotPokedex_23:
+# 401 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitmovement 2
+# 403 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	switch VAR_TEMP_2
+# 404 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 1, TwinleafTown_PlayersHouse1F_GotPokedex_31
+# 406 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 2, TwinleafTown_PlayersHouse1F_GotPokedex_32
+# 408 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 3, TwinleafTown_PlayersHouse1F_GotPokedex_33
+# 410 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 4, TwinleafTown_PlayersHouse1F_GotPokedex_34
+TwinleafTown_PlayersHouse1F_GotPokedex_29:
+# 413 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, Common_Movement_FacePlayer
+# 414 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitmovement 2
+# 416 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_6
+# 420 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	giveitem ITEM_PARCEL
+# 421 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	msgbox TwinleafTown_PlayersHouse1F_GotPokedex_Text_7
+# 428 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	closemessage
+# 430 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	playse SE_DOOR
+# 432 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	switch VAR_TEMP_2
+# 433 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 1, TwinleafTown_PlayersHouse1F_GotPokedex_37
+# 436 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 2, TwinleafTown_PlayersHouse1F_GotPokedex_38
+# 439 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 3, TwinleafTown_PlayersHouse1F_GotPokedex_39
+# 441 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	case 4, TwinleafTown_PlayersHouse1F_GotPokedex_40
+TwinleafTown_PlayersHouse1F_GotPokedex_35:
+# 444 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitmovement 2
+# 445 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitse
+# 447 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setflag FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM
+# 448 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	removeobject 2
+# 450 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setvar VAR_TWINLEAF_MOM_STATE, 4
+# 451 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setvar VAR_ROUTE202_STATE, 2
+# 452 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	release
 	return
 
 TwinleafTown_PlayersHouse1F_GotPokedex_2:
-# 298 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	applymovement 1, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_0
-# 299 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
-	waitmovement 1
+# 297 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setvar VAR_TEMP_2, 1
 	goto TwinleafTown_PlayersHouse1F_GotPokedex_1
+
+TwinleafTown_PlayersHouse1F_GotPokedex_3:
+# 300 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setvar VAR_TEMP_2, 2
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_1
+
+TwinleafTown_PlayersHouse1F_GotPokedex_4:
+# 302 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setvar VAR_TEMP_2, 3
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_1
+
+TwinleafTown_PlayersHouse1F_GotPokedex_5:
+# 304 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	setvar VAR_TEMP_2, 4
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_1
+
+TwinleafTown_PlayersHouse1F_GotPokedex_11:
+# 308 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 1, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_0
+# 309 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitmovement 1
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_10
+
+TwinleafTown_PlayersHouse1F_GotPokedex_15:
+# 351 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_3
+# 352 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	waitmovement 0
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_14
+
+TwinleafTown_PlayersHouse1F_GotPokedex_19:
+# 376 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_0
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_17
+
+TwinleafTown_PlayersHouse1F_GotPokedex_20:
+# 378 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTownPlayersHouse_1F_ON_FRAME_BARRYLEFT_Movement_1
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_17
+
+TwinleafTown_PlayersHouse1F_GotPokedex_21:
+# 380 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_4
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_17
+
+TwinleafTown_PlayersHouse1F_GotPokedex_22:
+# 382 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_3
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_17
+
+TwinleafTown_PlayersHouse1F_GotPokedex_25:
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_23
+
+TwinleafTown_PlayersHouse1F_GotPokedex_26:
+# 395 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_5
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_23
+
+TwinleafTown_PlayersHouse1F_GotPokedex_27:
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_23
+
+TwinleafTown_PlayersHouse1F_GotPokedex_28:
+# 399 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_6
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_23
+
+TwinleafTown_PlayersHouse1F_GotPokedex_31:
+# 405 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_7
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_29
+
+TwinleafTown_PlayersHouse1F_GotPokedex_32:
+# 407 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_7
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_29
+
+TwinleafTown_PlayersHouse1F_GotPokedex_33:
+# 409 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_29
+
+TwinleafTown_PlayersHouse1F_GotPokedex_34:
+# 411 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_29
+
+TwinleafTown_PlayersHouse1F_GotPokedex_37:
+# 434 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0
+# 435 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_8
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_35
+
+TwinleafTown_PlayersHouse1F_GotPokedex_38:
+# 437 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0
+# 438 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_9
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_35
+
+TwinleafTown_PlayersHouse1F_GotPokedex_39:
+# 440 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_8
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_35
+
+TwinleafTown_PlayersHouse1F_GotPokedex_40:
+# 442 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	applymovement 2, TwinleafTown_PlayersHouse1F_GotPokedex_Movement_10
+	goto TwinleafTown_PlayersHouse1F_GotPokedex_35
 
 
 # 26 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
@@ -552,37 +724,89 @@ TwinleafTown_PlayersHouse1F_EventScript_ExitHouse_Movement_0:
 	walk_in_place_down
 	step_end
 
-# 298 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 308 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 TwinleafTown_PlayersHouse1F_GotPokedex_Movement_0:
-# 298 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 308 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	face_up
 	step_end
 
-# 334 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 344 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 TwinleafTown_PlayersHouse1F_GotPokedex_Movement_1:
-# 334 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 344 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	face_down
-# 334 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 344 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	emote_exclamation_mark
-# 334 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 344 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	delay_16
-# 334 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 344 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	delay_16
 	step_end
 
-# 338 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 348 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 TwinleafTown_PlayersHouse1F_GotPokedex_Movement_2:
-# 338 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 348 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	walk_up
-# 338 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 348 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	face_right
 	step_end
 
-# 382 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 351 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 TwinleafTown_PlayersHouse1F_GotPokedex_Movement_3:
-# 382 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 351 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	face_left
+	step_end
+
+# 380 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_Movement_4:
+# 380 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	face_right
+	step_end
+
+# 395 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_Movement_5:
+# 395 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_up
+# 395 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_up
+	step_end
+
+# 399 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_Movement_6:
+# 399 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_right
+# 399 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_right
+	step_end
+
+# 405 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_Movement_7:
+# 405 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_in_place_left
+	step_end
+
+# 435 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_Movement_8:
+# 435 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	walk_down
-# 382 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	step_end
+
+# 438 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_Movement_9:
+# 438 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_down
+# 438 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_down
+# 438 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_down
+	step_end
+
+# 442 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+TwinleafTown_PlayersHouse1F_GotPokedex_Movement_10:
+# 442 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_left
+# 442 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+	walk_left
+# 442 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	walk_down
 	step_end
 
@@ -702,7 +926,7 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Text_0:
 	.string "Your mom's got your back!$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_1:
-# 305 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 315 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_MOM}Gee, a journey full of adventure. . .\n"
 	.string "I envy you, kiddo.\p"
 	.string "Plus, you're not alone.\n"
@@ -710,7 +934,7 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Text_1:
 	.string "I wish I could go instead!$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_2:
-# 314 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 324 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_MOM}I'm just joking, dear!\n"
 	.string "Yup, {PLAYER}!\p"
 	.string "I'll be all right by myself, so you\n"
@@ -723,12 +947,12 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Text_2:
 	.string "Pokémon you've caught, dear.$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_3:
-# 341 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 355 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_BARRYMOM}Excuse me.\n"
 	.string "Is my little Barry here?$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_4:
-# 347 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 362 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_MOM}Oh?\n"
 	.string "No, he's not. . .\p"
 	.string "{SPEAKER NAME_BARRYMOM}Oh. . .\n"
@@ -742,18 +966,18 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Text_4:
 	.string "deliver that to him.$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_5:
-# 362 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 388 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_MOM}Won't you {PLAYER}?$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_6:
-# 367 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 416 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_BARRYMOM}Oh, really?\n"
 	.string "You'd do that for me?\p"
 	.string "{PLAYER}, please take this to\n"
 	.string "Barry for me.$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_7:
-# 372 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
+# 421 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_MOM}Bye-bye, {PLAYER}!\n"
 	.string "Enjoy your adventure!\p"
 	.string "{SPEAKER NAME_BARRYMOM}Let me think. . .\p"

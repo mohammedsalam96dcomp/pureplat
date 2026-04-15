@@ -105,7 +105,58 @@ script Route202_EventScript_GoSeeMom {
 			applymovement(LOCALID_LUCASDAWN, moves(walk_left*6, walk_up*2, face_right))
 	}
 	waitmovement(LOCALID_LUCASDAWN)
-	
+
 	setvar(VAR_ROUTE202_DAWN_STATE, 2)
 	release
+}
+
+script Route202_EventScript_CatchingTutorial1 {
+	lock
+	setvar(VAR_TEMP_1, 1)
+	goto(Route202_EventScript_CatchingTutorial)
+	release
+}
+
+script Route202_EventScript_CatchingTutorial {
+	lock
+
+	playse(SE_PIN)
+    applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right, emote_exclamation_mark, delay_16 * 3))
+	waitmovement(LOCALID_LUCASDAWN)
+	waitse
+
+	switch(var(VAR_TEMP_1)) {
+		case 1:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up*2, walk_right))	
+		case 2:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up, walk_right))
+		case 3:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*5))
+		case 4:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down, walk_right))
+		case 5:
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down*2, walk_right))
+
+	}
+	waitmovement(LOCALID_LUCASDAWN)
+
+	msgbox("{SPEAKER NAME_RIVAL}{PLAYER}, do you know\n"
+			"how to catch a Pokémon?\p"
+			"I'll demonstrate how to catch\n"
+			"one, so just watch, OK?")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left*2))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_left*2))
+	waitmovement(LOCALID_LUCASDAWN)
+	
+	special(SavePlayerParty)
+	special(LoadWallyZigzagoon)
+	special(StartWallyTutorialBattle)
+	waitstate
+
+	special(LoadPlayerParty)
+
+	release
+
 }

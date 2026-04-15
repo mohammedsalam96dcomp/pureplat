@@ -193,6 +193,94 @@ Route202_EventScript_GoSeeMom_18:
 	goto Route202_EventScript_GoSeeMom_12
 
 
+Route202_EventScript_CatchingTutorial1::
+# 114 "data/maps/Route202/scripts.pory"
+	lock
+# 115 "data/maps/Route202/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 116 "data/maps/Route202/scripts.pory"
+	goto Route202_EventScript_CatchingTutorial
+# 117 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+Route202_EventScript_CatchingTutorial::
+# 121 "data/maps/Route202/scripts.pory"
+	lock
+# 123 "data/maps/Route202/scripts.pory"
+	playse SE_PIN
+# 124 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_0
+# 125 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 126 "data/maps/Route202/scripts.pory"
+	waitse
+# 128 "data/maps/Route202/scripts.pory"
+	switch VAR_TEMP_1
+# 129 "data/maps/Route202/scripts.pory"
+	case 1, Route202_EventScript_CatchingTutorial_3
+# 131 "data/maps/Route202/scripts.pory"
+	case 2, Route202_EventScript_CatchingTutorial_4
+# 133 "data/maps/Route202/scripts.pory"
+	case 3, Route202_EventScript_CatchingTutorial_5
+# 135 "data/maps/Route202/scripts.pory"
+	case 4, Route202_EventScript_CatchingTutorial_6
+# 137 "data/maps/Route202/scripts.pory"
+	case 5, Route202_EventScript_CatchingTutorial_7
+Route202_EventScript_CatchingTutorial_1:
+# 141 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 143 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_CatchingTutorial_Text_0
+# 147 "data/maps/Route202/scripts.pory"
+	closemessage
+# 149 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_CatchingTutorial_Movement_0
+# 150 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_0
+# 151 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 153 "data/maps/Route202/scripts.pory"
+	special SavePlayerParty
+# 154 "data/maps/Route202/scripts.pory"
+	special LoadWallyZigzagoon
+# 155 "data/maps/Route202/scripts.pory"
+	special StartWallyTutorialBattle
+# 156 "data/maps/Route202/scripts.pory"
+	waitstate
+# 158 "data/maps/Route202/scripts.pory"
+	special LoadPlayerParty
+# 160 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+Route202_EventScript_CatchingTutorial_3:
+# 130 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_1
+	goto Route202_EventScript_CatchingTutorial_1
+
+Route202_EventScript_CatchingTutorial_4:
+# 132 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_2
+	goto Route202_EventScript_CatchingTutorial_1
+
+Route202_EventScript_CatchingTutorial_5:
+# 134 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_3
+	goto Route202_EventScript_CatchingTutorial_1
+
+Route202_EventScript_CatchingTutorial_6:
+# 136 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_4
+	goto Route202_EventScript_CatchingTutorial_1
+
+Route202_EventScript_CatchingTutorial_7:
+# 138 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_5
+	goto Route202_EventScript_CatchingTutorial_1
+
+
 # 51 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_0:
 # 51 "data/maps/Route202/scripts.pory"
@@ -403,6 +491,14 @@ Route202_EventScript_GoSeeMom_Movement_12:
 	face_right
 	step_end
 
+# 149 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_0:
+# 149 "data/maps/Route202/scripts.pory"
+	walk_left
+# 149 "data/maps/Route202/scripts.pory"
+	walk_left
+	step_end
+
 Route202_EventScript_GoSeeMom_Text_0:
 # 71 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}{PLAYER}?!\p"
@@ -420,3 +516,10 @@ Route202_EventScript_GoSeeMom_Text_1:
 	.string "family that the professor asked for\l"
 	.string "your help?\p"
 	.string "You should do it right away.$"
+
+Route202_EventScript_CatchingTutorial_Text_0:
+# 143 "data/maps/Route202/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}{PLAYER}, do you know\n"
+	.string "how to catch a Pokémon?\p"
+	.string "I'll demonstrate how to catch\n"
+	.string "one, so just watch, OK?$"

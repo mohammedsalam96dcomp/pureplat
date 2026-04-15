@@ -490,6 +490,20 @@ SandgemTown_EventScript_Youngster::
 	return
 
 
+SandgemTown_EventScript_Man::
+# 362 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 364 "data/maps/SandgemTown/scripts.pory"
+	faceplayer
+# 365 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_EventScript_Man_Text_0
+# 369 "data/maps/SandgemTown/scripts.pory"
+	closemessage
+# 371 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
 # 40 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_0:
 # 40 "data/maps/SandgemTown/scripts.pory"
@@ -1010,3 +1024,10 @@ SandgemTown_EventScript_Youngster_Text_0:
 	.string "them stronger!\p"
 	.string "I wish I had some!\n"
 	.string "It's so cool!$"
+
+SandgemTown_EventScript_Man_Text_0:
+# 365 "data/maps/SandgemTown/scripts.pory"
+	.string "That thing you have!\p"
+	.string "It's a Pokédex, isn't it?!\p"
+	.string "You're off to see all kinds of\n"
+	.string "Pokémon now! Lucky you!$"

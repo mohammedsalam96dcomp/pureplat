@@ -1,0 +1,31 @@
+mapscripts SandgemTownHouse1_MapScripts{
+}
+
+
+script SandgemTownHouse1_EventScript_Man {
+	lock
+
+	faceplayer
+	msgbox("Pokémon grow steadily stronger from\n"
+			"battling against other Pokémon.\p"
+			"At first, you should take it easy,\n"
+			"though.\p"
+			"Heal your Pokémon regularly at Pokémon\n"
+			"Centers while you're leveling them up.")
+	closemessage
+
+	release
+}
+
+
+script SandgemTownHouse1_EventScript_Woman {
+	lock
+
+	faceplayer
+	msgbox("A good Trainer is one that takes care\n"
+			"not to let their Pokémon faint from\l"
+			"losing HP.")
+	closemessage
+
+	release
+}

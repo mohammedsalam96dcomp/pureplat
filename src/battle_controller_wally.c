@@ -138,7 +138,7 @@ static void WallyHandleActions(enum BattlerId battler)
             PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
             BtlController_Complete(battler);
-            gBattleStruct->wallyBattleState++;
+            gBattleStruct->wallyBattleState = 3;
             gBattleStruct->wallyMovesState = 0;
             gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
         }
@@ -167,6 +167,7 @@ static void WallyHandleActions(enum BattlerId battler)
     case 4:
         if (--gBattleStruct->wallyWaitFrames == 0)
         {
+            BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_WALLY_THROW, 0);
             PlaySE(SE_SELECT);
             ActionSelectionDestroyCursorAt(0);
             ActionSelectionCreateCursorAt(1, 0);
@@ -282,14 +283,23 @@ void WallyBufferExecCompleted(enum BattlerId battler)
 
 static void WallyHandleDrawTrainerPic(enum BattlerId battler)
 {
-    BtlController_HandleDrawTrainerPic(battler, TRAINER_PIC_BACK_WALLY, FALSE,
-                                       80, 80 + 4 * (8 - gTrainerBacksprites[TRAINER_PIC_BACK_WALLY].coordinates.size),
+    if (gSaveBlock2Ptr->playerGender == MALE) 
+        BtlController_HandleDrawTrainerPic(battler, TRAINER_PIC_BACK_MAY, FALSE,
+                                       80, 80 + 4 * (8 - gTrainerBacksprites[TRAINER_PIC_BACK_MAY].coordinates.size),
                                        30);
+    else
+        BtlController_HandleDrawTrainerPic(battler, TRAINER_PIC_BACK_BRENDAN, FALSE,
+                                       80, 80 + 4 * (8 - gTrainerBacksprites[TRAINER_PIC_BACK_BRENDAN].coordinates.size),
+                                       30);
+    
 }
 
 static void WallyHandleTrainerSlide(enum BattlerId battler)
 {
-    BtlController_HandleTrainerSlide(battler, TRAINER_PIC_BACK_WALLY);
+    if (gSaveBlock2Ptr->playerGender == MALE)  
+        BtlController_HandleTrainerSlide(battler, TRAINER_PIC_BACK_MAY);
+    else 
+        BtlController_HandleTrainerSlide(battler, TRAINER_PIC_BACK_BRENDAN);
 }
 
 #undef sSpeedX
@@ -366,8 +376,17 @@ static void WallyHandleFaintingCry(enum BattlerId battler)
 
 static void WallyHandleIntroTrainerBallThrow(enum BattlerId battler)
 {
-    const u16 *trainerPal = gTrainerBacksprites[TRAINER_PIC_BACK_WALLY].palette.data;
-    BtlController_HandleIntroTrainerBallThrow(battler, 0xD6F8, trainerPal, 31, Intro_TryShinyAnimShowHealthbox);
+    const u16 *trainerPal;
+    
+    if (gSaveBlock2Ptr->playerGender == MALE) {
+        const u16 *trainerPal = gTrainerBacksprites[TRAINER_PIC_BACK_MAY].palette.data;
+        BtlController_HandleIntroTrainerBallThrow(battler, 0xD6F8, trainerPal, 31, Intro_TryShinyAnimShowHealthbox);
+
+    } else {
+        const u16 *trainerPal = gTrainerBacksprites[TRAINER_PIC_BACK_BRENDAN].palette.data;
+        BtlController_HandleIntroTrainerBallThrow(battler, 0xD6F8, trainerPal, 31, Intro_TryShinyAnimShowHealthbox);
+    }
+    
 }
 
 static void WallyHandleDrawPartyStatusSummary(enum BattlerId battler)

@@ -28,7 +28,10 @@
   ],
   "gMapGroup_IndoorSandgem": [
     "SandgemProfessorsLab",
-    "SandgemPokemonCenter"
+    "SandgemPokemonCenter",
+    "SandgemTownHouse1",
+    "SandgemTownDawnHouse_1F",
+    "SandgemTownDawnHouse_2F"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

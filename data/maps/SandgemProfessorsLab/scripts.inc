@@ -19,7 +19,7 @@ SandgemProfessorsLab_EventScript_OnTransition::
 
 SandgemProfessorsLab_MapScripts_ON_FRAME::
 # 18 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 20 "data/maps/SandgemProfessorsLab/scripts.pory"
 	applymovement 2, SandgemProfessorsLab_MapScripts_ON_FRAME_Movement_0
 # 21 "data/maps/SandgemProfessorsLab/scripts.pory"
@@ -147,7 +147,7 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_5:
 # 197 "data/maps/SandgemProfessorsLab/scripts.pory"
 	setvar VAR_SANDGEM_TOWN_STATE, 2
 # 199 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 SandgemProfessorsLab_MapScripts_ON_FRAME_2:
@@ -180,7 +180,7 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_12:
 
 SandgemProfessorsLab_EventScript_Professor::
 # 203 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 205 "data/maps/SandgemProfessorsLab/scripts.pory"
 	compare VAR_SANDGEM_TOWN_STATE, 2
 	goto_if_eq SandgemProfessorsLab_EventScript_Professor_2
@@ -189,7 +189,7 @@ SandgemProfessorsLab_EventScript_Professor::
 	goto_if_eq SandgemProfessorsLab_EventScript_Professor_3
 SandgemProfessorsLab_EventScript_Professor_1:
 # 226 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 SandgemProfessorsLab_EventScript_Professor_2:
@@ -223,7 +223,7 @@ SandgemProfessorsLab_EventScript_Professor_6:
 
 SandgemProfessorsLab_EventScript_RivalFather::
 # 230 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 232 "data/maps/SandgemProfessorsLab/scripts.pory"
 	faceplayer
 # 233 "data/maps/SandgemProfessorsLab/scripts.pory"
@@ -231,13 +231,13 @@ SandgemProfessorsLab_EventScript_RivalFather::
 # 238 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 240 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Roseanne::
 # 244 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 246 "data/maps/SandgemProfessorsLab/scripts.pory"
 	faceplayer
 # 247 "data/maps/SandgemProfessorsLab/scripts.pory"
@@ -245,79 +245,79 @@ SandgemProfessorsLab_EventScript_Roseanne::
 # 253 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 255 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Rule1::
 # 260 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 262 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Rule1_Text_0
 # 264 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 266 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Rule2::
 # 270 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 272 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Rule2_Text_0
 # 274 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 276 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Research1::
 # 280 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 282 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Research1_Text_0
 # 284 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 286 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Research2::
 # 290 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 292 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Research2_Text_0
 # 294 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 296 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 SandgemProfessorsLab_EventScript_PC::
 # 300 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 302 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_PC_Text_0
 # 306 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 308 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Refrigerator::
 # 312 "data/maps/SandgemProfessorsLab/scripts.pory"
-	lockall
+	lock
 # 314 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Refrigerator_Text_0
 # 316 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 318 "data/maps/SandgemProfessorsLab/scripts.pory"
-	releaseall
+	release
 	return
 
 

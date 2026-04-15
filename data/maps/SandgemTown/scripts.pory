@@ -356,3 +356,17 @@ script SandgemTown_EventScript_Youngster {
 
 	release
 }
+
+
+script SandgemTown_EventScript_Man {
+	lock
+	
+	faceplayer
+	msgbox("That thing you have!\p"
+			"It's a Pokédex, isn't it?!\p"
+			"You're off to see all kinds of\n"
+			"Pokémon now! Lucky you!")
+	closemessage
+
+	release
+}
