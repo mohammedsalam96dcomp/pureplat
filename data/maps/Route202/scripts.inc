@@ -772,6 +772,6 @@ Route202_EventScript_CatchingTutorial_Text_5:
 	.string "{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
 	.string "it will be safer on long trips.\p"
 	.string "Plus, it will be a lot more fun\n"
-	.string "having your Pokémon friends along."
+	.string "having your Pokémon friends along.\p"
 	.string "OK, I need to get going.\n"
 	.string "Bye, now!$"

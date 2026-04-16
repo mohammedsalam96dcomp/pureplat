@@ -33,7 +33,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
       "x": 10,
-      "y": 13,
+      "y": 11,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -46,7 +46,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BARRY",
       "x": 10,
-      "y": 10,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -59,7 +59,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_PROF_ROWAN",
       "x": 10,
-      "y": 10,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -72,7 +72,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 25,
-      "y": 21,
+      "y": 19,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -85,7 +85,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
       "x": 29,
-      "y": 24,
+      "y": 19,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 2,
@@ -98,7 +98,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_4",
       "x": 13,
-      "y": 22,
+      "y": 18,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -112,28 +112,28 @@
   "warp_events": [
     {
       "x": 10,
-      "y": 10,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_PROFESSORS_LAB",
       "dest_warp_id": "0"
     },
     {
       "x": 19,
-      "y": 10,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_POKEMON_CENTER",
       "dest_warp_id": "0"
     },
     {
       "x": 9,
-      "y": 22,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_HOUSE1",
       "dest_warp_id": "0"
     },
     {
       "x": 18,
-      "y": 22,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_SANDGEM_TOWN_DAWN_HOUSE_1F",
       "dest_warp_id": "0"
@@ -143,7 +143,7 @@
     {
       "type": "trigger",
       "x": 6,
-      "y": 11,
+      "y": 9,
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
@@ -152,7 +152,7 @@
     {
       "type": "trigger",
       "x": 6,
-      "y": 12,
+      "y": 10,
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
@@ -161,7 +161,7 @@
     {
       "type": "trigger",
       "x": 6,
-      "y": 13,
+      "y": 11,
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
@@ -170,7 +170,7 @@
     {
       "type": "trigger",
       "x": 6,
-      "y": 14,
+      "y": 12,
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
@@ -179,7 +179,7 @@
     {
       "type": "trigger",
       "x": 6,
-      "y": 15,
+      "y": 13,
       "elevation": 0,
       "var": "VAR_SANDGEM_TOWN_STATE",
       "var_value": "1",
