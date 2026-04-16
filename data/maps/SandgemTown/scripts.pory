@@ -8,7 +8,6 @@ mapscripts SandgemTown_MapScripts{
 		VAR_SANDGEM_TOWN_STATE, 2: SandgemTown_ON_FRAME
   	]
 
-
 	MAP_SCRIPT_ON_TRANSITION : SandgemTown_EventScript_OnTransition
 
 	MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
@@ -96,8 +95,8 @@ script SandgemTown_ON_FRAME {
 			"towns.")
 	closemessage
 
-	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*11, walk_in_place_up))
-	applymovement(LOCALID_LUCASDAWN, moves(walk_right*11, walk_in_place_up))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_right*10, walk_in_place_up))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right*10, walk_in_place_up))
 	waitmovement(LOCALID_LUCASDAWN)
 
 	msgbox("{SPEAKER NAME_RIVAL}Over here, the building with the blue\n"
@@ -135,7 +134,7 @@ script SandgemTown_ON_FRAME {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_down))
 	waitmovement(LOCALID_LUCASDAWN)
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
-	applymovement(LOCALID_LUCASDAWN, moves(walk_left*6))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_left*5))
 	waitmovement(LOCALID_LUCASDAWN)
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
 	applymovement(LOCALID_LUCASDAWN, moves(walk_up*8))
@@ -234,10 +233,19 @@ script SandgemTown_EventScript_LucasDawnScene {
 			waitmovement(LOCALID_LUCASDAWN)
 	}
 
-	msgbox("{SPEAKER NAME_RIVAL}Hi! I've been waiting for you!\n"
-			"Please, come with me.\l"
+	checkplayergender()
+
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}Hi! I've been waiting for you!\n"
+			"Please, come with me!\l"
 			"The prof's waiting to see you.")
-	closemessage
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Oh! There you are!\n"
+			"Please, come with me!\l"
+			"The professor is waiting!")
+		closemessage
+	}
 
 	switch(var(VAR_TEMP_1)){
 		case 1:
@@ -262,10 +270,18 @@ script SandgemTown_EventScript_LucasDawnScene {
 			waitmovement(LOCALID_LUCASDAWN)
 	}
 
-	msgbox("{SPEAKER NAME_RIVAL}See? This is our Pokémon Research\n"
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}See? This is our Pokémon Research\n"
 			"Lab.\p"
 			"We'll just go ahead and. . .")
-	closemessage
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}This is it!\n"
+			"Our Pokémon Research Lab!\p"
+			"Let's go. . .")
+		closemessage
+	}
+	
 
     clearflag(FLAG_HIDE_SANDGEM_TOWN_RIVAL)
     addobject(LOCALID_RIVAL)
@@ -301,12 +317,22 @@ script SandgemTown_EventScript_LucasDawnScene {
 	delay(10)
 	fadedefaultbgm()
 
-	msgbox("{SPEAKER NAME_RIVAL}What was that?!\p"
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}What was that?!\p"
 			"Your friend always seems to be\n"
 			"in such a rush.\p"
 			"Anyway. . .\n"
 			"Let's go in.")
-	closemessage
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Wow, what was that?!\p"
+			"Your friend sure seems to be really\n"
+			"impatient.\p"
+			"Well, anyway. . .\n"
+			"Let's go inside.")
+		closemessage
+	}
+	
 
 	applymovement(LOCALID_LUCASDAWN, moves(walk_up))
 	waitmovement(0)

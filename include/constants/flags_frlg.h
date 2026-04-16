@@ -2027,7 +2027,6 @@
 #define FLAG_HIDE_PETALBURG_WOODS_DEVON_EMPLOYEE                    0
 #define FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT                        0
 #define FLAG_HIDE_PETALBURG_CITY_WALLY                              0
-#define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0

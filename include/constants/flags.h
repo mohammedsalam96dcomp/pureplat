@@ -763,7 +763,7 @@
 #define FLAG_HIDE_ROUTE_201_BARRY                                   0x2D0
 #define FLAG_HIDE_ROUTE_201_KID                                     0x2D2
 #define FLAG_HIDE_LAKE_VERITY_BARRY                                 0x2D1
-#define FLAG_HIDE_LAKE_VERITY_CYRUS                                 0x2D2
+#define FLAG_HIDE_LAKE_VERITY_CYRUS                                 0x2D7
 #define FLAG_RECEIVED_POTION                                        0x2D9 // Unused Flag
 #define FLAG_HIDE_SANDGEM_TOWN_DAWN                                 0x2D2
 #define FLAG_HIDE_SANDGEM_TOWN_RIVAL                                0x2D3
@@ -786,7 +786,7 @@
 
 
 
-#define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
+// #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
 

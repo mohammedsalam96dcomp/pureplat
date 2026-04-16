@@ -305,10 +305,18 @@ script Route201_EventScript_BarryScene {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_right*7))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}Professor Rowan!\p"
-			"You left your briefcase behind at\n" 
-			"the lake.")
-	closemessage
+	
+	checkplayergender()
+
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}Professor Rowan!\p"
+				"You left your briefcase behind at\n" 
+				"the lake.")
+		closemessage
+	}  else {
+		msgbox("{SPEAKER NAME_RIVAL}Professor Rowan.\p"
+				"You left your briefcase at the lake!")
+	}
 
 	applymovement(LOCALID_ROWAN, moves(walk_in_place_left))
 	waitmovement(LOCALID_ROWAN)
@@ -317,7 +325,7 @@ script Route201_EventScript_BarryScene {
 	addobject(LOCALID_BRIEFCASE)
   	setobjectxy(LOCALID_BRIEFCASE, 16, 14)	
 
-	msgbox("{SPEAKER NAME_RIVAL}Is something wrong here?\p"
+	msgbox("{SPEAKER NAME_RIVAL}Oh?\nIs something wrong here?\p"
 			"{SPEAKER NAME_PROFESSOR}Ah! There it is!\n" 
 			"{RIVAL}, nice work.\p"
 			"What I was about to do was to entrust\n"
@@ -325,10 +333,16 @@ script Route201_EventScript_BarryScene {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}Wha. . .?!\p"
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}Wha. . .?!\p"
 			"Those Pokémon are crucial.\n"
-			"You're giving them away?\p"
-			"{SPEAKER NAME_PROFESSOR}Hm!\p"
+			"You're giving them away?")
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Pardon?!\p"
+			"Those Pokémon are hard to replace.\n"
+			"Are you sure about giving them away?")
+	}
+	msgbox("{SPEAKER NAME_PROFESSOR}Hm!\p"
 			"We exist side by side with Pokémon.\p"
 			"There comes a time when people should\n"
 			"meet Pokémon.\p"
@@ -472,20 +486,33 @@ script Route201_EventScript_ChooseStarter {
 	setflag(FLAG_HIDE_ROUTE_201_ROWAN)
 	removeobject(LOCALID_ROWAN)
 
-	msgbox("{SPEAKER NAME_RIVAL}Professor!\n"
+	checkplayergender()
+
+	if (var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}Professor!\n"
 			"Wait for me!")
-	closemessage
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Professor!\n"
+			"Wait for me, please!")
+		closemessage
+	}
 
 	applymovement(LOCALID_LUCASDAWN, moves(walk_right))
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_up))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}Uh, sorry, folks.")
-	closemessage
+	if (var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}Uh, sorry, folks.")
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}I'm sorry. . .\nPlease let me pass.")
+		closemessage
+	}
 
 	applymovement(LOCALID_LUCASDAWN, moves(walk_right))
 	waitmovement(LOCALID_LUCASDAWN)
-	applymovement(LOCALID_LUCASDAWN, moves(walk_right*7))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_right*7, delay_16))
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
 	waitmovement(LOCALID_LUCASDAWN)
 

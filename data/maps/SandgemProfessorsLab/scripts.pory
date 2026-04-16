@@ -87,11 +87,21 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}Boy, am I glad you're kind\n"
+	checkplayergender()
+
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}Boy, am I glad you're kind\n"
 			"toward Pokémon.\p"
 			"If you weren't well. . .\n"
 			"I don't even want to think about it.")
-	closemessage
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}I'm so glad that you're kind\n"
+			"toward Pokémon!\p"
+			"If you weren't, I'd have to. . .\n"
+			"Oh, I just can't say it. . .")
+		closemessage
+	}
 
 	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left, delay_16*2))
 	waitmovement(0)
@@ -159,9 +169,16 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}I've got the same kind of\n"
-			"Pokédex as you.\p"
-			"{SPEAKER NAME_PROFESSOR}When you walked up Route 201\n"
+	checkplayergender()
+
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}I've got the same kind of\n"
+			"Pokédex as you.")
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}I've got one too!")
+	}
+
+	msgbox("{SPEAKER NAME_PROFESSOR}When you walked up Route 201\n"
 			"with your Pokémon, what did you feel?\p"
 			"I've lived for 60 long years.\n"
 			"Even now, I get a thrill when\p"
@@ -179,12 +196,31 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_left))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}The professor asked me to help,\n"
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}The professor asked me to help,\n"
 			"so I'm filling the Pokédex pages, too.\p"
 			"That makes us comrades working toward\n"
 			"the same goal.\p"
 			"I'll teach you stuff later, OK?")
-	closemessage
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}The Pokémon that I met for\n"
+				"the first time was a X!\p"
+				"If you would have chosen a X\n"
+				"on Route 201, we'd have the same\l"
+				"Pokémon now!\p"
+				"Not that it matters, but. . .\p"
+				"Anyway, I'm Dawn.\p"
+				"I also help the professor add pages\n"
+				"to the Pokédex.\p"
+				"So, in a sense, I'm just like you.\p"
+				"I just got a little head start on you,\n"
+				"that's all.\p"
+				"I'll be happy to teach you things.\n"
+				"Glad to meet you, {PLAYER}!")
+		closemessage
+	}
+
 
 	applymovement(LOCALID_LUCASDAWN, moves(walk_down*3))
 	waitmovement(LOCALID_LUCASDAWN)

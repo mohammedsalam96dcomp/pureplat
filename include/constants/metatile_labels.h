@@ -302,9 +302,8 @@
 #define METATILE_General_YellowCaveOpen        0x1A9
 
 // gTileset_GeneralSinnoh
-#define METATILE_GeneralSinnoh_Empty           0x042
-#define METATILE_GeneralSinnoh_GrassSouth      0x070
-#define METATILE_GeneralSinnoh_GrassSouthWarp  0x03C
+#define METATILE_GeneralSinnoh_GrassSouth      0x0A6
+#define METATILE_GeneralSinnoh_GrassSouthWarp  0x096
 
 // gTileset_GenericBuilding
 #define METATILE_GenericBuilding_TableEdge               0x2F1

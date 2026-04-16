@@ -14,8 +14,9 @@ mapscripts LakeVerity_MapScripts{
 script LakeVerity_ON_FRAME {
 	lock
 
-	clearflag(FLAG_HIDE_LAKE_VERITY_CYRUS)
-	addobject(LOCALID_CYRUS)
+	// clearflag(FLAG_HIDE_LAKE_VERITY_CYRUS)
+	// addobject(LOCALID_CYRUS)
+	setmetatile(10, 28, METATILE_GeneralSinnoh_GrassSouthWarp, FALSE)
 
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up))
 	applymovement(LOCALID_BARRY, moves(walk_up))
@@ -136,7 +137,6 @@ script LakeVerity_ON_FRAME {
 	removeobject(LOCALID_BARRY)
 	waitse
 
-	setmetatile(10, 28, METATILE_GeneralSinnoh_GrassSouthWarp, FALSE)
 	setvar(VAR_LAKE_VERITY_STATE, 3)
 	setvar(VAR_SANDGEM_TOWN_STATE, 1)
 	clearflag(FLAG_HIDE_SANDGEM_TOWN_DAWN)
