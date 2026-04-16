@@ -76,529 +76,609 @@ Route202_EventScript_GoSeeMom::
 # 50 "data/maps/Route202/scripts.pory"
 	playse SE_PIN
 # 51 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_0
+	specialvar VAR_RESULT, GetPlayerFacingDirection
 # 52 "data/maps/Route202/scripts.pory"
-	waitmovement 1
-# 53 "data/maps/Route202/scripts.pory"
-	waitse
-# 55 "data/maps/Route202/scripts.pory"
-	switch VAR_TEMP_1
-# 56 "data/maps/Route202/scripts.pory"
-	case 1, Route202_EventScript_GoSeeMom_3
-# 58 "data/maps/Route202/scripts.pory"
-	case 2, Route202_EventScript_GoSeeMom_4
-# 60 "data/maps/Route202/scripts.pory"
-	case 3, Route202_EventScript_GoSeeMom_5
-# 62 "data/maps/Route202/scripts.pory"
-	case 4, Route202_EventScript_GoSeeMom_6
-# 64 "data/maps/Route202/scripts.pory"
-	case 5, Route202_EventScript_GoSeeMom_7
+	compare VAR_RESULT, DIR_NORTH
+	goto_if_eq Route202_EventScript_GoSeeMom_2
 Route202_EventScript_GoSeeMom_1:
-# 68 "data/maps/Route202/scripts.pory"
+# 55 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_1
+# 56 "data/maps/Route202/scripts.pory"
 	waitmovement 1
-# 70 "data/maps/Route202/scripts.pory"
-	compare VAR_ROUTE202_DAWN_STATE, 1
-	goto_if_eq Route202_EventScript_GoSeeMom_9
-# 81 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_GoSeeMom_Text_1
-# 85 "data/maps/Route202/scripts.pory"
-	closemessage
-Route202_EventScript_GoSeeMom_8:
-# 88 "data/maps/Route202/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_GoSeeMom_Movement_6
-# 89 "data/maps/Route202/scripts.pory"
-	waitmovement 0
-# 91 "data/maps/Route202/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_GoSeeMom_Movement_7
-# 92 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_7
-# 93 "data/maps/Route202/scripts.pory"
-	waitmovement 1
-# 95 "data/maps/Route202/scripts.pory"
+# 57 "data/maps/Route202/scripts.pory"
+	waitse
+# 59 "data/maps/Route202/scripts.pory"
 	switch VAR_TEMP_1
-# 96 "data/maps/Route202/scripts.pory"
-	case 1, Route202_EventScript_GoSeeMom_14
-# 98 "data/maps/Route202/scripts.pory"
-	case 2, Route202_EventScript_GoSeeMom_15
-# 100 "data/maps/Route202/scripts.pory"
-	case 3, Route202_EventScript_GoSeeMom_16
-# 102 "data/maps/Route202/scripts.pory"
-	case 4, Route202_EventScript_GoSeeMom_17
-# 104 "data/maps/Route202/scripts.pory"
-	case 5, Route202_EventScript_GoSeeMom_18
-Route202_EventScript_GoSeeMom_12:
-# 107 "data/maps/Route202/scripts.pory"
+# 60 "data/maps/Route202/scripts.pory"
+	case 1, Route202_EventScript_GoSeeMom_6
+# 62 "data/maps/Route202/scripts.pory"
+	case 2, Route202_EventScript_GoSeeMom_7
+# 64 "data/maps/Route202/scripts.pory"
+	case 3, Route202_EventScript_GoSeeMom_8
+# 66 "data/maps/Route202/scripts.pory"
+	case 4, Route202_EventScript_GoSeeMom_9
+# 68 "data/maps/Route202/scripts.pory"
+	case 5, Route202_EventScript_GoSeeMom_10
+Route202_EventScript_GoSeeMom_4:
+# 72 "data/maps/Route202/scripts.pory"
 	waitmovement 1
+# 74 "data/maps/Route202/scripts.pory"
+	checkplayergender
+# 76 "data/maps/Route202/scripts.pory"
+	compare VAR_ROUTE202_DAWN_STATE, 1
+	goto_if_eq Route202_EventScript_GoSeeMom_12
+# 99 "data/maps/Route202/scripts.pory"
+	compare VAR_RESULT, FEMALE
+	goto_if_eq Route202_EventScript_GoSeeMom_25
+# 106 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_GoSeeMom_Text_3
 # 109 "data/maps/Route202/scripts.pory"
+	closemessage
+Route202_EventScript_GoSeeMom_11:
+# 113 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_GoSeeMom_Movement_7
+# 114 "data/maps/Route202/scripts.pory"
+	waitmovement 0
+# 116 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_GoSeeMom_Movement_8
+# 117 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_8
+# 118 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 120 "data/maps/Route202/scripts.pory"
+	switch VAR_TEMP_1
+# 121 "data/maps/Route202/scripts.pory"
+	case 1, Route202_EventScript_GoSeeMom_17
+# 123 "data/maps/Route202/scripts.pory"
+	case 2, Route202_EventScript_GoSeeMom_18
+# 125 "data/maps/Route202/scripts.pory"
+	case 3, Route202_EventScript_GoSeeMom_19
+# 127 "data/maps/Route202/scripts.pory"
+	case 4, Route202_EventScript_GoSeeMom_20
+# 129 "data/maps/Route202/scripts.pory"
+	case 5, Route202_EventScript_GoSeeMom_21
+Route202_EventScript_GoSeeMom_15:
+# 132 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 134 "data/maps/Route202/scripts.pory"
 	setvar VAR_ROUTE202_DAWN_STATE, 2
-# 110 "data/maps/Route202/scripts.pory"
+# 135 "data/maps/Route202/scripts.pory"
 	release
 	return
 
-Route202_EventScript_GoSeeMom_3:
-# 57 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_1
-	goto Route202_EventScript_GoSeeMom_1
-
-Route202_EventScript_GoSeeMom_4:
-# 59 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_2
-	goto Route202_EventScript_GoSeeMom_1
-
-Route202_EventScript_GoSeeMom_5:
-# 61 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_3
+Route202_EventScript_GoSeeMom_2:
+# 53 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_GoSeeMom_Movement_0
 	goto Route202_EventScript_GoSeeMom_1
 
 Route202_EventScript_GoSeeMom_6:
-# 63 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_4
-	goto Route202_EventScript_GoSeeMom_1
+# 61 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_2
+	goto Route202_EventScript_GoSeeMom_4
 
 Route202_EventScript_GoSeeMom_7:
+# 63 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_3
+	goto Route202_EventScript_GoSeeMom_4
+
+Route202_EventScript_GoSeeMom_8:
 # 65 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_5
-	goto Route202_EventScript_GoSeeMom_1
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_4
+	goto Route202_EventScript_GoSeeMom_4
 
 Route202_EventScript_GoSeeMom_9:
-# 71 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_GoSeeMom_Text_0
-# 79 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_5
+	goto Route202_EventScript_GoSeeMom_4
+
+Route202_EventScript_GoSeeMom_10:
+# 69 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_6
+	goto Route202_EventScript_GoSeeMom_4
+
+Route202_EventScript_GoSeeMom_12:
+# 77 "data/maps/Route202/scripts.pory"
+	compare VAR_RESULT, FEMALE
+	goto_if_eq Route202_EventScript_GoSeeMom_22
+# 88 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_GoSeeMom_Text_1
+# 96 "data/maps/Route202/scripts.pory"
 	closemessage
-	goto Route202_EventScript_GoSeeMom_8
-
-Route202_EventScript_GoSeeMom_14:
-# 97 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_8
-	goto Route202_EventScript_GoSeeMom_12
-
-Route202_EventScript_GoSeeMom_15:
-# 99 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_9
-	goto Route202_EventScript_GoSeeMom_12
-
-Route202_EventScript_GoSeeMom_16:
-# 101 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_10
-	goto Route202_EventScript_GoSeeMom_12
+	goto Route202_EventScript_GoSeeMom_11
 
 Route202_EventScript_GoSeeMom_17:
-# 103 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_11
-	goto Route202_EventScript_GoSeeMom_12
+# 122 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_9
+	goto Route202_EventScript_GoSeeMom_15
 
 Route202_EventScript_GoSeeMom_18:
-# 105 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_10
+	goto Route202_EventScript_GoSeeMom_15
+
+Route202_EventScript_GoSeeMom_19:
+# 126 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_11
+	goto Route202_EventScript_GoSeeMom_15
+
+Route202_EventScript_GoSeeMom_20:
+# 128 "data/maps/Route202/scripts.pory"
 	applymovement 1, Route202_EventScript_GoSeeMom_Movement_12
-	goto Route202_EventScript_GoSeeMom_12
+	goto Route202_EventScript_GoSeeMom_15
+
+Route202_EventScript_GoSeeMom_21:
+# 130 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_13
+	goto Route202_EventScript_GoSeeMom_15
+
+Route202_EventScript_GoSeeMom_22:
+# 78 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_GoSeeMom_Text_0
+# 86 "data/maps/Route202/scripts.pory"
+	closemessage
+	goto Route202_EventScript_GoSeeMom_11
+
+Route202_EventScript_GoSeeMom_25:
+# 100 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_GoSeeMom_Text_2
+# 104 "data/maps/Route202/scripts.pory"
+	closemessage
+	goto Route202_EventScript_GoSeeMom_11
 
 
 Route202_EventScript_CatchingTutorial1::
-# 114 "data/maps/Route202/scripts.pory"
+# 139 "data/maps/Route202/scripts.pory"
 	lock
-# 115 "data/maps/Route202/scripts.pory"
+# 140 "data/maps/Route202/scripts.pory"
 	setvar VAR_TEMP_1, 1
-# 116 "data/maps/Route202/scripts.pory"
+# 141 "data/maps/Route202/scripts.pory"
 	goto Route202_EventScript_CatchingTutorial
-# 117 "data/maps/Route202/scripts.pory"
+# 142 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_EventScript_CatchingTutorial2::
-# 121 "data/maps/Route202/scripts.pory"
+# 146 "data/maps/Route202/scripts.pory"
 	lock
-# 122 "data/maps/Route202/scripts.pory"
+# 147 "data/maps/Route202/scripts.pory"
 	setvar VAR_TEMP_1, 2
-# 123 "data/maps/Route202/scripts.pory"
+# 148 "data/maps/Route202/scripts.pory"
 	goto Route202_EventScript_CatchingTutorial
-# 124 "data/maps/Route202/scripts.pory"
+# 149 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_EventScript_CatchingTutorial3::
-# 128 "data/maps/Route202/scripts.pory"
+# 153 "data/maps/Route202/scripts.pory"
 	lock
-# 129 "data/maps/Route202/scripts.pory"
+# 154 "data/maps/Route202/scripts.pory"
 	setvar VAR_TEMP_1, 3
-# 130 "data/maps/Route202/scripts.pory"
+# 155 "data/maps/Route202/scripts.pory"
 	goto Route202_EventScript_CatchingTutorial
-# 131 "data/maps/Route202/scripts.pory"
+# 156 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_EventScript_CatchingTutorial4::
-# 135 "data/maps/Route202/scripts.pory"
+# 160 "data/maps/Route202/scripts.pory"
 	lock
-# 136 "data/maps/Route202/scripts.pory"
+# 161 "data/maps/Route202/scripts.pory"
 	setvar VAR_TEMP_1, 4
-# 137 "data/maps/Route202/scripts.pory"
+# 162 "data/maps/Route202/scripts.pory"
 	goto Route202_EventScript_CatchingTutorial
-# 138 "data/maps/Route202/scripts.pory"
+# 163 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_EventScript_CatchingTutorial5::
-# 142 "data/maps/Route202/scripts.pory"
+# 167 "data/maps/Route202/scripts.pory"
 	lock
-# 143 "data/maps/Route202/scripts.pory"
+# 168 "data/maps/Route202/scripts.pory"
 	setvar VAR_TEMP_1, 5
-# 144 "data/maps/Route202/scripts.pory"
+# 169 "data/maps/Route202/scripts.pory"
 	goto Route202_EventScript_CatchingTutorial
-# 145 "data/maps/Route202/scripts.pory"
+# 170 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_EventScript_CatchingTutorial::
-# 149 "data/maps/Route202/scripts.pory"
+# 174 "data/maps/Route202/scripts.pory"
 	lock
-# 151 "data/maps/Route202/scripts.pory"
+# 176 "data/maps/Route202/scripts.pory"
 	playse SE_PIN
-# 152 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_0
-# 153 "data/maps/Route202/scripts.pory"
-	waitmovement 1
-# 154 "data/maps/Route202/scripts.pory"
-	waitse
-# 156 "data/maps/Route202/scripts.pory"
-	switch VAR_TEMP_1
-# 157 "data/maps/Route202/scripts.pory"
-	case 1, Route202_EventScript_CatchingTutorial_3
-# 159 "data/maps/Route202/scripts.pory"
-	case 2, Route202_EventScript_CatchingTutorial_4
-# 161 "data/maps/Route202/scripts.pory"
-	case 3, Route202_EventScript_CatchingTutorial_5
-# 163 "data/maps/Route202/scripts.pory"
-	case 4, Route202_EventScript_CatchingTutorial_6
-# 165 "data/maps/Route202/scripts.pory"
-	case 5, Route202_EventScript_CatchingTutorial_7
-Route202_EventScript_CatchingTutorial_1:
-# 169 "data/maps/Route202/scripts.pory"
-	waitmovement 1
-# 171 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_CatchingTutorial_Text_0
-# 175 "data/maps/Route202/scripts.pory"
-	closemessage
 # 177 "data/maps/Route202/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_CatchingTutorial_Movement_0
+	specialvar VAR_RESULT, GetPlayerFacingDirection
 # 178 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_0
-# 179 "data/maps/Route202/scripts.pory"
-	waitmovement 1
+	compare VAR_RESULT, DIR_NORTH
+	goto_if_eq Route202_EventScript_CatchingTutorial_2
+Route202_EventScript_CatchingTutorial_1:
 # 181 "data/maps/Route202/scripts.pory"
-	special SavePlayerParty
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_1
 # 182 "data/maps/Route202/scripts.pory"
-	special LoadWallyZigzagoon
+	waitmovement 1
 # 183 "data/maps/Route202/scripts.pory"
-	special StartWallyTutorialBattle
-# 184 "data/maps/Route202/scripts.pory"
-	waitstate
+	waitse
+# 185 "data/maps/Route202/scripts.pory"
+	switch VAR_TEMP_1
 # 186 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_1
-# 187 "data/maps/Route202/scripts.pory"
+	case 1, Route202_EventScript_CatchingTutorial_6
+# 188 "data/maps/Route202/scripts.pory"
+	case 2, Route202_EventScript_CatchingTutorial_7
+# 190 "data/maps/Route202/scripts.pory"
+	case 3, Route202_EventScript_CatchingTutorial_8
+# 192 "data/maps/Route202/scripts.pory"
+	case 4, Route202_EventScript_CatchingTutorial_9
+# 194 "data/maps/Route202/scripts.pory"
+	case 5, Route202_EventScript_CatchingTutorial_10
+Route202_EventScript_CatchingTutorial_4:
+# 198 "data/maps/Route202/scripts.pory"
 	waitmovement 1
-# 189 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_CatchingTutorial_Text_1
-# 201 "data/maps/Route202/scripts.pory"
-	closemessage
+# 200 "data/maps/Route202/scripts.pory"
+	checkplayergender
 # 202 "data/maps/Route202/scripts.pory"
-	giveitem ITEM_POKE_BALL, 10
-# 203 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_CatchingTutorial_Text_2
-# 208 "data/maps/Route202/scripts.pory"
-	closemessage
-# 210 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_2
-# 211 "data/maps/Route202/scripts.pory"
-	waitmovement 1
-# 213 "data/maps/Route202/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_202_DAWN
+	compare VAR_RESULT, FEMALE
+	goto_if_eq Route202_EventScript_CatchingTutorial_12
+# 209 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_CatchingTutorial_Text_1
 # 214 "data/maps/Route202/scripts.pory"
-	removeobject 1
-# 216 "data/maps/Route202/scripts.pory"
-	special LoadPlayerParty
+	closemessage
+Route202_EventScript_CatchingTutorial_11:
+# 217 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_CatchingTutorial_Movement_0
 # 218 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_0
+# 219 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 221 "data/maps/Route202/scripts.pory"
+	special SavePlayerParty
+# 222 "data/maps/Route202/scripts.pory"
+	special LoadWallyZigzagoon
+# 223 "data/maps/Route202/scripts.pory"
+	special StartWallyTutorialBattle
+# 224 "data/maps/Route202/scripts.pory"
+	waitstate
+# 226 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_1
+# 227 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 229 "data/maps/Route202/scripts.pory"
+	compare VAR_RESULT, FEMALE
+	goto_if_eq Route202_EventScript_CatchingTutorial_16
+# 251 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_CatchingTutorial_Text_4
+# 265 "data/maps/Route202/scripts.pory"
+	closemessage
+# 266 "data/maps/Route202/scripts.pory"
+	giveitem ITEM_POKE_BALL, 10
+# 267 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_CatchingTutorial_Text_5
+# 273 "data/maps/Route202/scripts.pory"
+	closemessage
+Route202_EventScript_CatchingTutorial_15:
+# 275 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_2
+# 276 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 278 "data/maps/Route202/scripts.pory"
+	setflag FLAG_HIDE_ROUTE_202_DAWN
+# 279 "data/maps/Route202/scripts.pory"
+	removeobject 1
+# 281 "data/maps/Route202/scripts.pory"
+	special LoadPlayerParty
+# 283 "data/maps/Route202/scripts.pory"
 	setvar VAR_ROUTE202_STATE, 3
-# 220 "data/maps/Route202/scripts.pory"
+# 285 "data/maps/Route202/scripts.pory"
 	release
 	return
 
-Route202_EventScript_CatchingTutorial_3:
-# 158 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_1
-	goto Route202_EventScript_CatchingTutorial_1
-
-Route202_EventScript_CatchingTutorial_4:
-# 160 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_2
-	goto Route202_EventScript_CatchingTutorial_1
-
-Route202_EventScript_CatchingTutorial_5:
-# 162 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_3
+Route202_EventScript_CatchingTutorial_2:
+# 179 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_GoSeeMom_Movement_0
 	goto Route202_EventScript_CatchingTutorial_1
 
 Route202_EventScript_CatchingTutorial_6:
-# 164 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_4
-	goto Route202_EventScript_CatchingTutorial_1
+# 187 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_2
+	goto Route202_EventScript_CatchingTutorial_4
 
 Route202_EventScript_CatchingTutorial_7:
-# 166 "data/maps/Route202/scripts.pory"
+# 189 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_3
+	goto Route202_EventScript_CatchingTutorial_4
+
+Route202_EventScript_CatchingTutorial_8:
+# 191 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_4
+	goto Route202_EventScript_CatchingTutorial_4
+
+Route202_EventScript_CatchingTutorial_9:
+# 193 "data/maps/Route202/scripts.pory"
 	applymovement 1, Route202_EventScript_GoSeeMom_Movement_5
-	goto Route202_EventScript_CatchingTutorial_1
+	goto Route202_EventScript_CatchingTutorial_4
+
+Route202_EventScript_CatchingTutorial_10:
+# 195 "data/maps/Route202/scripts.pory"
+	applymovement 1, Route202_EventScript_GoSeeMom_Movement_6
+	goto Route202_EventScript_CatchingTutorial_4
+
+Route202_EventScript_CatchingTutorial_12:
+# 203 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_CatchingTutorial_Text_0
+# 207 "data/maps/Route202/scripts.pory"
+	closemessage
+	goto Route202_EventScript_CatchingTutorial_11
+
+Route202_EventScript_CatchingTutorial_16:
+# 230 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_CatchingTutorial_Text_2
+# 242 "data/maps/Route202/scripts.pory"
+	closemessage
+# 243 "data/maps/Route202/scripts.pory"
+	giveitem ITEM_POKE_BALL, 10
+# 244 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_CatchingTutorial_Text_3
+# 249 "data/maps/Route202/scripts.pory"
+	closemessage
+	goto Route202_EventScript_CatchingTutorial_15
 
 
-# 51 "data/maps/Route202/scripts.pory"
+# 53 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_0:
-# 51 "data/maps/Route202/scripts.pory"
-	walk_in_place_right
-# 51 "data/maps/Route202/scripts.pory"
-	emote_exclamation_mark
-# 51 "data/maps/Route202/scripts.pory"
-	delay_16
-# 51 "data/maps/Route202/scripts.pory"
-	delay_16
-# 51 "data/maps/Route202/scripts.pory"
-	delay_16
+# 53 "data/maps/Route202/scripts.pory"
+	walk_in_place_left
 	step_end
 
-# 57 "data/maps/Route202/scripts.pory"
+# 55 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_1:
-# 57 "data/maps/Route202/scripts.pory"
-	walk_right
-# 57 "data/maps/Route202/scripts.pory"
-	walk_right
-# 57 "data/maps/Route202/scripts.pory"
-	walk_right
-# 57 "data/maps/Route202/scripts.pory"
-	walk_right
-# 57 "data/maps/Route202/scripts.pory"
-	walk_up
-# 57 "data/maps/Route202/scripts.pory"
-	walk_up
-# 57 "data/maps/Route202/scripts.pory"
-	walk_right
+# 55 "data/maps/Route202/scripts.pory"
+	walk_in_place_right
+# 55 "data/maps/Route202/scripts.pory"
+	emote_exclamation_mark
+# 55 "data/maps/Route202/scripts.pory"
+	delay_16
+# 55 "data/maps/Route202/scripts.pory"
+	delay_16
+# 55 "data/maps/Route202/scripts.pory"
+	delay_16
 	step_end
 
-# 59 "data/maps/Route202/scripts.pory"
+# 61 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_2:
-# 59 "data/maps/Route202/scripts.pory"
+# 61 "data/maps/Route202/scripts.pory"
 	walk_right
-# 59 "data/maps/Route202/scripts.pory"
+# 61 "data/maps/Route202/scripts.pory"
 	walk_right
-# 59 "data/maps/Route202/scripts.pory"
+# 61 "data/maps/Route202/scripts.pory"
 	walk_right
-# 59 "data/maps/Route202/scripts.pory"
+# 61 "data/maps/Route202/scripts.pory"
 	walk_right
-# 59 "data/maps/Route202/scripts.pory"
+# 61 "data/maps/Route202/scripts.pory"
 	walk_up
-# 59 "data/maps/Route202/scripts.pory"
+# 61 "data/maps/Route202/scripts.pory"
+	walk_up
+# 61 "data/maps/Route202/scripts.pory"
 	walk_right
 	step_end
 
-# 61 "data/maps/Route202/scripts.pory"
+# 63 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_3:
-# 61 "data/maps/Route202/scripts.pory"
+# 63 "data/maps/Route202/scripts.pory"
 	walk_right
-# 61 "data/maps/Route202/scripts.pory"
+# 63 "data/maps/Route202/scripts.pory"
 	walk_right
-# 61 "data/maps/Route202/scripts.pory"
+# 63 "data/maps/Route202/scripts.pory"
 	walk_right
-# 61 "data/maps/Route202/scripts.pory"
+# 63 "data/maps/Route202/scripts.pory"
 	walk_right
-# 61 "data/maps/Route202/scripts.pory"
+# 63 "data/maps/Route202/scripts.pory"
+	walk_up
+# 63 "data/maps/Route202/scripts.pory"
 	walk_right
 	step_end
 
-# 63 "data/maps/Route202/scripts.pory"
+# 65 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_4:
-# 63 "data/maps/Route202/scripts.pory"
+# 65 "data/maps/Route202/scripts.pory"
 	walk_right
-# 63 "data/maps/Route202/scripts.pory"
+# 65 "data/maps/Route202/scripts.pory"
 	walk_right
-# 63 "data/maps/Route202/scripts.pory"
+# 65 "data/maps/Route202/scripts.pory"
 	walk_right
-# 63 "data/maps/Route202/scripts.pory"
+# 65 "data/maps/Route202/scripts.pory"
 	walk_right
-# 63 "data/maps/Route202/scripts.pory"
-	walk_down
-# 63 "data/maps/Route202/scripts.pory"
+# 65 "data/maps/Route202/scripts.pory"
 	walk_right
 	step_end
 
-# 65 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_5:
-# 65 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
 	walk_right
-# 65 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
 	walk_right
-# 65 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
 	walk_right
-# 65 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
 	walk_right
-# 65 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
 	walk_down
-# 65 "data/maps/Route202/scripts.pory"
-	walk_down
-# 65 "data/maps/Route202/scripts.pory"
+# 67 "data/maps/Route202/scripts.pory"
 	walk_right
 	step_end
 
-# 88 "data/maps/Route202/scripts.pory"
+# 69 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_6:
-# 88 "data/maps/Route202/scripts.pory"
+# 69 "data/maps/Route202/scripts.pory"
+	walk_right
+# 69 "data/maps/Route202/scripts.pory"
+	walk_right
+# 69 "data/maps/Route202/scripts.pory"
+	walk_right
+# 69 "data/maps/Route202/scripts.pory"
+	walk_right
+# 69 "data/maps/Route202/scripts.pory"
+	walk_down
+# 69 "data/maps/Route202/scripts.pory"
+	walk_down
+# 69 "data/maps/Route202/scripts.pory"
+	walk_right
+	step_end
+
+# 113 "data/maps/Route202/scripts.pory"
+Route202_EventScript_GoSeeMom_Movement_7:
+# 113 "data/maps/Route202/scripts.pory"
 	lock_facing_direction
 	step_end
 
-# 91 "data/maps/Route202/scripts.pory"
-Route202_EventScript_GoSeeMom_Movement_7:
-# 91 "data/maps/Route202/scripts.pory"
+# 116 "data/maps/Route202/scripts.pory"
+Route202_EventScript_GoSeeMom_Movement_8:
+# 116 "data/maps/Route202/scripts.pory"
 	walk_right
 	step_end
 
-# 97 "data/maps/Route202/scripts.pory"
-Route202_EventScript_GoSeeMom_Movement_8:
-# 97 "data/maps/Route202/scripts.pory"
-	walk_left
-# 97 "data/maps/Route202/scripts.pory"
-	walk_left
-# 97 "data/maps/Route202/scripts.pory"
-	walk_left
-# 97 "data/maps/Route202/scripts.pory"
-	walk_left
-# 97 "data/maps/Route202/scripts.pory"
-	walk_left
-# 97 "data/maps/Route202/scripts.pory"
-	walk_left
-# 97 "data/maps/Route202/scripts.pory"
-	walk_down
-# 97 "data/maps/Route202/scripts.pory"
-	walk_down
-# 97 "data/maps/Route202/scripts.pory"
-	face_right
-	step_end
-
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_9:
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 	walk_left
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 	walk_left
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 	walk_left
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 	walk_left
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 	walk_left
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 	walk_left
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
 	walk_down
-# 99 "data/maps/Route202/scripts.pory"
+# 122 "data/maps/Route202/scripts.pory"
+	walk_down
+# 122 "data/maps/Route202/scripts.pory"
 	face_right
 	step_end
 
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_10:
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
 	walk_left
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
 	walk_left
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
 	walk_left
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
 	walk_left
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
 	walk_left
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
 	walk_left
-# 101 "data/maps/Route202/scripts.pory"
+# 124 "data/maps/Route202/scripts.pory"
+	walk_down
+# 124 "data/maps/Route202/scripts.pory"
 	face_right
 	step_end
 
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_11:
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 	walk_left
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 	walk_left
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 	walk_left
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 	walk_left
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 	walk_left
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 	walk_left
-# 103 "data/maps/Route202/scripts.pory"
-	walk_up
-# 103 "data/maps/Route202/scripts.pory"
+# 126 "data/maps/Route202/scripts.pory"
 	face_right
 	step_end
 
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_12:
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	walk_left
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	walk_left
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	walk_left
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	walk_left
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	walk_left
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	walk_left
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	walk_up
-# 105 "data/maps/Route202/scripts.pory"
-	walk_up
-# 105 "data/maps/Route202/scripts.pory"
+# 128 "data/maps/Route202/scripts.pory"
 	face_right
 	step_end
 
-# 177 "data/maps/Route202/scripts.pory"
-Route202_EventScript_CatchingTutorial_Movement_0:
-# 177 "data/maps/Route202/scripts.pory"
+# 130 "data/maps/Route202/scripts.pory"
+Route202_EventScript_GoSeeMom_Movement_13:
+# 130 "data/maps/Route202/scripts.pory"
 	walk_left
-# 177 "data/maps/Route202/scripts.pory"
+# 130 "data/maps/Route202/scripts.pory"
+	walk_left
+# 130 "data/maps/Route202/scripts.pory"
+	walk_left
+# 130 "data/maps/Route202/scripts.pory"
+	walk_left
+# 130 "data/maps/Route202/scripts.pory"
+	walk_left
+# 130 "data/maps/Route202/scripts.pory"
+	walk_left
+# 130 "data/maps/Route202/scripts.pory"
+	walk_up
+# 130 "data/maps/Route202/scripts.pory"
+	walk_up
+# 130 "data/maps/Route202/scripts.pory"
+	face_right
+	step_end
+
+# 217 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_0:
+# 217 "data/maps/Route202/scripts.pory"
+	walk_left
+# 217 "data/maps/Route202/scripts.pory"
 	walk_left
 	step_end
 
-# 186 "data/maps/Route202/scripts.pory"
+# 226 "data/maps/Route202/scripts.pory"
 Route202_EventScript_CatchingTutorial_Movement_1:
-# 186 "data/maps/Route202/scripts.pory"
+# 226 "data/maps/Route202/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 Route202_EventScript_CatchingTutorial_Movement_2:
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
-# 210 "data/maps/Route202/scripts.pory"
+# 275 "data/maps/Route202/scripts.pory"
 	walk_left
 	step_end
 
 Route202_EventScript_GoSeeMom_Text_0:
-# 71 "data/maps/Route202/scripts.pory"
+# 78 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}{PLAYER}?!\p"
 	.string "Did you tell your family that you're\n"
 	.string "helping the professor?\p"
@@ -609,21 +689,46 @@ Route202_EventScript_GoSeeMom_Text_0:
 	.string "worry like that.$"
 
 Route202_EventScript_GoSeeMom_Text_1:
-# 81 "data/maps/Route202/scripts.pory"
+# 88 "data/maps/Route202/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}{PLAYER}?!\p"
+	.string "Did you tell your family that you're\n"
+	.string "helping the professor?\p"
+	.string ". . .You didn't, did you?\p"
+	.string "I know that you're really eager to\n"
+	.string "see all kinds of Pokémon.\p"
+	.string "But you shouldn't make your mom\n"
+	.string "worry that you've disappeared.$"
+
+Route202_EventScript_GoSeeMom_Text_2:
+# 100 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Why don't you go to tell your\n"
 	.string "family that the professor asked for\l"
 	.string "your help?\p"
 	.string "You should do it right away.$"
 
+Route202_EventScript_GoSeeMom_Text_3:
+# 106 "data/maps/Route202/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}You should go tell your family\n"
+	.string "that you're helping the professor.\p"
+	.string "The faster the better, too.$"
+
 Route202_EventScript_CatchingTutorial_Text_0:
-# 171 "data/maps/Route202/scripts.pory"
+# 203 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}{PLAYER}, do you know\n"
 	.string "how to catch a Pokémon?\p"
 	.string "I'll demonstrate how to catch\n"
 	.string "one, so just watch, OK?$"
 
 Route202_EventScript_CatchingTutorial_Text_1:
-# 189 "data/maps/Route202/scripts.pory"
+# 209 "data/maps/Route202/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}Oh, that's right!\p"
+	.string "{PLAYER}, I haven't shown you\n"
+	.string "how to catch a Pokémon.\p"
+	.string "I'll demonstrate how to catch\n"
+	.string "one, so just watch me, OK?$"
+
+Route202_EventScript_CatchingTutorial_Text_2:
+# 230 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}And that's how it's done.\p"
 	.string "Actually, I should have lowered the\n"
 	.string "target's HP some more.\p"
@@ -637,10 +742,36 @@ Route202_EventScript_CatchingTutorial_Text_1:
 	.string "Here, {PLAYER}, I'll give you\n"
 	.string "ten Poké Balls to get you started.$"
 
-Route202_EventScript_CatchingTutorial_Text_2:
-# 203 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Text_3:
+# 244 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
 	.string "you'll be able to travel farther.\p"
 	.string "That way, you'll have a better shot\n"
 	.string "at meeting more Pokémon.\p"
 	.string "See you around!$"
+
+Route202_EventScript_CatchingTutorial_Text_4:
+# 251 "data/maps/Route202/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}Giggle. . .\n"
+	.string "See? Isn't it neat?\p"
+	.string "Actually, it's better to lower your\n"
+	.string "target's HP more than I did\p"
+	.string "It's important to get the Pokémon's\n"
+	.string "HP down as low as possible.\p"
+	.string "This is because a healthy Pokémon\n"
+	.string "is very difficult to catch.\p"
+	.string "Oh, Pokémon also get easier to catch\n"
+	.string "if you make them sleep or something\l"
+	.string "by using a Pokémon's move.\p"
+	.string "OK, {PLAYER}, to get you\n"
+	.string "started, I'll give you ten\l"
+	.string "Poké Balls!$"
+
+Route202_EventScript_CatchingTutorial_Text_5:
+# 267 "data/maps/Route202/scripts.pory"
+	.string "{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
+	.string "it will be safer on long trips.\p"
+	.string "Plus, it will be a lot more fun\n"
+	.string "having your Pokémon friends along."
+	.string "OK, I need to get going.\n"
+	.string "Bye, now!$"

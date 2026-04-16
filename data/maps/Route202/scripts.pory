@@ -48,6 +48,10 @@ script Route202_EventScript_GoSeeMom {
 	lock
 
 	playse(SE_PIN)
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+	if(var(VAR_RESULT) == DIR_NORTH) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
+	}
     applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right, emote_exclamation_mark, delay_16 * 3))
 	waitmovement(LOCALID_LUCASDAWN)
 	waitse
@@ -67,8 +71,11 @@ script Route202_EventScript_GoSeeMom {
 	}
 	waitmovement(LOCALID_LUCASDAWN)
 
+	checkplayergender()
+
 	if (var(VAR_ROUTE202_DAWN_STATE) == 1) {
-		msgbox("{SPEAKER NAME_RIVAL}{PLAYER}?!\p"
+		if (var(VAR_RESULT) == FEMALE) {
+			msgbox("{SPEAKER NAME_RIVAL}{PLAYER}?!\p"
 			"Did you tell your family that you're\n"
 			"helping the professor?\p"
 			". . .I bet you didn't, did you?\p"
@@ -76,13 +83,31 @@ script Route202_EventScript_GoSeeMom {
 			"see all kinds of Pokémon.\p"
 			"But you shouldn't make your mom\n"
 			"worry like that.")
-		closemessage
+			closemessage
+		} else {
+			msgbox("{SPEAKER NAME_RIVAL}{PLAYER}?!\p"
+			"Did you tell your family that you're\n"
+			"helping the professor?\p"
+			". . .You didn't, did you?\p"
+			"I know that you're really eager to\n"
+			"see all kinds of Pokémon.\p"
+			"But you shouldn't make your mom\n"
+			"worry that you've disappeared.")
+			closemessage
+		}
 	} else {
-		msgbox("{SPEAKER NAME_RIVAL}Why don't you go to tell your\n"
-				"family that the professor asked for\l"
-				"your help?\p"
-				"You should do it right away.")
-		closemessage
+		if (var(VAR_RESULT) == FEMALE) {
+			msgbox("{SPEAKER NAME_RIVAL}Why don't you go to tell your\n"
+					"family that the professor asked for\l"
+					"your help?\p"
+					"You should do it right away.")
+			closemessage
+		} else {
+			msgbox("{SPEAKER NAME_RIVAL}You should go tell your family\n"
+					"that you're helping the professor.\p"
+					"The faster the better, too.")
+			closemessage
+		}
 	}
 
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(lock_facing_direction))
@@ -149,6 +174,10 @@ script Route202_EventScript_CatchingTutorial {
 	lock
 
 	playse(SE_PIN)
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+	if(var(VAR_RESULT) == DIR_NORTH) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
+	}
     applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right, emote_exclamation_mark, delay_16 * 3))
 	waitmovement(LOCALID_LUCASDAWN)
 	waitse
@@ -168,11 +197,22 @@ script Route202_EventScript_CatchingTutorial {
 	}
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}{PLAYER}, do you know\n"
+	checkplayergender
+
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}{PLAYER}, do you know\n"
 			"how to catch a Pokémon?\p"
 			"I'll demonstrate how to catch\n"
 			"one, so just watch, OK?")
-	closemessage
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Oh, that's right!\p"
+				"{PLAYER}, I haven't shown you\n"
+				"how to catch a Pokémon.\p"
+				"I'll demonstrate how to catch\n"
+				"one, so just watch me, OK?")
+		closemessage
+	}
 
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left*2))
 	applymovement(LOCALID_LUCASDAWN, moves(walk_left*2))
@@ -186,27 +226,52 @@ script Route202_EventScript_CatchingTutorial {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right))
 	waitmovement(LOCALID_LUCASDAWN)
 
-	msgbox("{SPEAKER NAME_RIVAL}And that's how it's done.\p"
-			"Actually, I should have lowered the\n"
-			"target's HP some more.\p"
-			"Yup, the important thing is to lower\n"
-			"the Pokémon's HP as much as possible.\p"
-			"See, a healthy Pokémon isn't easy to\n"
-			"catch.\p"
-			"Oh, yeah. They also get easier to\n"
-			"catch if you make one of your\l"
-			"Pokémon put them to sleep or such.\p"
-			"Here, {PLAYER}, I'll give you\n"
-			"ten Poké Balls to get you started.")
-	closemessage
-	giveitem(ITEM_POKE_BALL, 10)
-	msgbox("{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
-			"you'll be able to travel farther.\p"
-			"That way, you'll have a better shot\n"
-			"at meeting more Pokémon.\p"
-			"See you around!")
-	closemessage
-
+	if(var(VAR_RESULT) == FEMALE) {
+		msgbox("{SPEAKER NAME_RIVAL}And that's how it's done.\p"
+				"Actually, I should have lowered the\n"
+				"target's HP some more.\p"
+				"Yup, the important thing is to lower\n"
+				"the Pokémon's HP as much as possible.\p"
+				"See, a healthy Pokémon isn't easy to\n"
+				"catch.\p"
+				"Oh, yeah. They also get easier to\n"
+				"catch if you make one of your\l"
+				"Pokémon put them to sleep or such.\p"
+				"Here, {PLAYER}, I'll give you\n"
+				"ten Poké Balls to get you started.")
+		closemessage
+		giveitem(ITEM_POKE_BALL, 10)
+		msgbox("{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
+				"you'll be able to travel farther.\p"
+				"That way, you'll have a better shot\n"
+				"at meeting more Pokémon.\p"
+				"See you around!")
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Giggle. . .\n"
+				"See? Isn't it neat?\p"
+				"Actually, it's better to lower your\n"
+				"target's HP more than I did\p"
+				"It's important to get the Pokémon's\n"
+				"HP down as low as possible.\p"
+				"This is because a healthy Pokémon\n"
+				"is very difficult to catch.\p"
+				"Oh, Pokémon also get easier to catch\n"
+				"if you make them sleep or something\l"
+				"by using a Pokémon's move.\p"
+				"OK, {PLAYER}, to get you\n"
+				"started, I'll give you ten\l"
+				"Poké Balls!")
+		closemessage
+		giveitem(ITEM_POKE_BALL, 10)
+		msgbox("{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
+				"it will be safer on long trips.\p"
+				"Plus, it will be a lot more fun\n"
+				"having your Pokémon friends along.\p"
+				"OK, I need to get going.\n"
+				"Bye, now!")
+		closemessage
+	}
 	applymovement(LOCALID_LUCASDAWN, moves(walk_left*8))
 	waitmovement(LOCALID_LUCASDAWN)
 
