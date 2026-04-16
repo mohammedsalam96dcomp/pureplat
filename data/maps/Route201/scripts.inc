@@ -1024,14 +1024,14 @@ Route201_EventScript_MartEmployee::
 	lock
 # 817 "data/maps/Route201/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_POTION, Route201_EventScript_MartEmployee_2
-# 835 "data/maps/Route201/scripts.pory"
+# 839 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 836 "data/maps/Route201/scripts.pory"
+# 840 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_MartEmployee_Text_1
-# 838 "data/maps/Route201/scripts.pory"
+# 842 "data/maps/Route201/scripts.pory"
 	closemessage
 Route201_EventScript_MartEmployee_1:
-# 841 "data/maps/Route201/scripts.pory"
+# 845 "data/maps/Route201/scripts.pory"
 	release
 	return
 
@@ -1043,22 +1043,30 @@ Route201_EventScript_MartEmployee_2:
 # 831 "data/maps/Route201/scripts.pory"
 	giveitem ITEM_POTION, 1
 # 832 "data/maps/Route201/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq Route201_EventScript_MartEmployee_5
+# 835 "data/maps/Route201/scripts.pory"
 	setflag FLAG_RECEIVED_POTION
-# 833 "data/maps/Route201/scripts.pory"
+# 836 "data/maps/Route201/scripts.pory"
 	closemessage
+	goto Route201_EventScript_MartEmployee_1
+
+Route201_EventScript_MartEmployee_5:
+# 833 "data/maps/Route201/scripts.pory"
+	call Common_EventScript_BagIsFull
 	goto Route201_EventScript_MartEmployee_1
 
 
 Route201_EventScript_LedgeKid::
-# 846 "data/maps/Route201/scripts.pory"
+# 850 "data/maps/Route201/scripts.pory"
 	lock
-# 848 "data/maps/Route201/scripts.pory"
+# 852 "data/maps/Route201/scripts.pory"
 	faceplayer
-# 849 "data/maps/Route201/scripts.pory"
-	msgbox Route201_EventScript_LedgeKid_Text_0
-# 851 "data/maps/Route201/scripts.pory"
-	closemessage
 # 853 "data/maps/Route201/scripts.pory"
+	msgbox Route201_EventScript_LedgeKid_Text_0
+# 855 "data/maps/Route201/scripts.pory"
+	closemessage
+# 857 "data/maps/Route201/scripts.pory"
 	release
 	return
 
@@ -1956,11 +1964,11 @@ Route201_EventScript_MartEmployee_Text_0:
 	.string "Medicine Pocket of your Bag.$"
 
 Route201_EventScript_MartEmployee_Text_1:
-# 836 "data/maps/Route201/scripts.pory"
+# 840 "data/maps/Route201/scripts.pory"
 	.string "You can find a Pokémon Mart in cities\n"
 	.string "and most major towns.$"
 
 Route201_EventScript_LedgeKid_Text_0:
-# 849 "data/maps/Route201/scripts.pory"
+# 853 "data/maps/Route201/scripts.pory"
 	.string "That ledge is one way. Jump down\n"
 	.string "for a shortcut to Twinleaf Town!$"

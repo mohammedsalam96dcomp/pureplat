@@ -829,8 +829,12 @@ script Route201_EventScript_MartEmployee{
 				"It will automatically go in the\n"
 				"Medicine Pocket of your Bag.")
 		giveitem(ITEM_POTION, 1)
-		setflag(FLAG_RECEIVED_POTION)
-		closemessage
+		if (var(VAR_RESULT) == FALSE) {
+			call(Common_EventScript_BagIsFull)
+		} else {
+			setflag(FLAG_RECEIVED_POTION)
+			closemessage
+		}
 	} else {
 		faceplayer
 		msgbox("You can find a Pokémon Mart in cities\n"

@@ -152,7 +152,7 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 
 	playfanfare(MUS_OBTAIN_ITEM)
 	msgbox("{PLAYER} obtained\n"
-			"the Pokédex.")
+			"the {COLOR RED}Pokédex.")
 	waitfanfare()
 	closemessage
 	setflag(FLAG_SYS_POKEDEX_GET)
