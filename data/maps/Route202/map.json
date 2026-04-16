@@ -31,7 +31,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROUTE_202_DAWN"
     }
   ],
   "warp_events": [],
@@ -89,6 +89,42 @@
       "var": "VAR_ROUTE202_STATE",
       "var_value": "2",
       "script": "Route202_EventScript_CatchingTutorial1"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_ROUTE202_STATE",
+      "var_value": "2",
+      "script": "Route202_EventScript_CatchingTutorial2"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_ROUTE202_STATE",
+      "var_value": "2",
+      "script": "Route202_EventScript_CatchingTutorial3"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 16,
+      "elevation": 0,
+      "var": "VAR_ROUTE202_STATE",
+      "var_value": "2",
+      "script": "Route202_EventScript_CatchingTutorial4"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_ROUTE202_STATE",
+      "var_value": "2",
+      "script": "Route202_EventScript_CatchingTutorial5"
     }
   ],
   "bg_events": []

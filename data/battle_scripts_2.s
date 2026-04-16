@@ -183,6 +183,7 @@ BattleScript_BallThrow::
 BattleScript_BallThrowByWally::
 	printstring STRINGID_WALLYUSEDITEM
 	handleballthrow
+	waitstate
 
 BattleScript_SafariBallThrow::
 	printstring STRINGID_PLAYERUSEDITEM
@@ -273,12 +274,6 @@ BattleScript_ActionThrowPokeblock:
 	end2
 
 BattleScript_ActionWallyThrow:
-	printstring STRINGID_RETURNMON
-	waitmessage B_WAIT_TIME_LONG
-	returnatktoball
-	waitstate
-	trainerslidein BS_PLAYER1
-	waitstate
 	printstring STRINGID_YOUTHROWABALLNOWRIGHT
 	waitmessage B_WAIT_TIME_LONG
 	end2

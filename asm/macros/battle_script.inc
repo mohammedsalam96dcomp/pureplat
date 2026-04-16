@@ -2195,6 +2195,11 @@
 	1:
 	.endm
 
+	@ Checks the player's gender. Stores the result (MALE (0) or FEMALE (1)) in VAR_RESULT.
+	.macro checkplayergender
+	.byte SCR_OP_CHECKPLAYERGENDER
+	.endm
+	
 	@ Tries to increase or decrease a battler's stat's stat stage by a specified amount. If impossible, jumps to \script.
 	.macro modifybattlerstatstage battler:req, stat:req, mode:req, amount:req, script:req, animation:req, customString
 

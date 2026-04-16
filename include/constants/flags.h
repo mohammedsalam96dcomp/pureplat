@@ -770,6 +770,7 @@
 #define FLAG_HIDE_ROWANS_LAB_DAWN                                   0x2D4
 #define FLAG_HIDE_SANDGEM_TOWN_ROWAN                                0x2D5
 #define FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM                          0x2D6
+#define FLAG_HIDE_ROUTE_202_DAWN                                    0x2DB
 
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 
@@ -790,7 +791,7 @@
 
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
-#define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
+
 #define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0x2DC
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE

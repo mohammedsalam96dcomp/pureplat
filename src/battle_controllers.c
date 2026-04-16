@@ -2593,12 +2593,12 @@ void BtlController_HandleBallThrowAnim(enum BattlerId battler)
     u32 animId = B_ANIM_BALL_THROW;
     enum BattlerId target = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
 
-    if (BattlerIsPlayer(battler))
+    if (BattlerIsPlayer(battler) || IsControllerWally(battler) )
     {
         allowCriticalCapture = TRUE;
         target = gBattlerTarget;
     }
-    else if (IsControllerSafari(battler) || IsControllerWally(battler) || IsControllerOakOldMan(battler))
+    else if (IsControllerSafari(battler) || IsControllerOakOldMan(battler))
     {
         animId = B_ANIM_BALL_THROW_WITH_TRAINER;
     }
