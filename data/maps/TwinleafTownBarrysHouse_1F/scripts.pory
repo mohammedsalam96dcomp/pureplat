@@ -8,7 +8,16 @@ mapscripts TwinleafTownBarrysHouse_1F_MapScripts{
 
 script TwinleafTown_EventScript_BarrysMom {
 	lock
-	if (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
+
+	if (flag(FLAG_RECEIVED_POKEDEX)) {
+		faceplayer
+		msgbox("{SPEAKER NAME_BARRYMOM}My Barry took\n"
+				"off like a rocket as usual.\p"
+				"He was shouting something about\n"
+				"becoming the greatest Trainer ever. . .\p"
+				"He just can't sit still, that boy.\n"
+				"I wonder who he takes after?")
+	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
 		goto(TwinleafTown_EventScript_SitStill)
 	} elif (var(VAR_TWINLEAF_TOWN_STATE) == 4) {
 		goto(TwinleafTown_EventScript_RocketedOff)

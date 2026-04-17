@@ -135,8 +135,7 @@ TwinleafTown_EventScript_TwinleafMan::
 	compare VAR_TWINLEAF_TOWN_STATE, 3
 	goto_if_eq TwinleafTown_EventScript_TwinleafMan_2
 # 100 "data/maps/TwinleafTown/scripts.pory"
-	compare VAR_TWINLEAF_TOWN_STATE, 8
-	goto_if_eq TwinleafTown_EventScript_TwinleafMan_3
+	goto_if_set FLAG_RECEIVED_POKEDEX, TwinleafTown_EventScript_TwinleafMan_3
 # 105 "data/maps/TwinleafTown/scripts.pory"
 	compare VAR_TWINLEAF_TOWN_STATE, 4
 	goto_if_ge TwinleafTown_EventScript_TwinleafMan_4
@@ -481,6 +480,38 @@ TwinleafTown_EventScript_TearingOff::
 # 281 "data/maps/TwinleafTown/scripts.pory"
 	release
 	return
+
+
+TwinleafTown_EventScript_Woman::
+# 293 "data/maps/TwinleafTown/scripts.pory"
+	lock
+# 294 "data/maps/TwinleafTown/scripts.pory"
+	goto_if_set FLAG_RECEIVED_POKEDEX, TwinleafTown_EventScript_Woman_2
+# 302 "data/maps/TwinleafTown/scripts.pory"
+	compare VAR_TWINLEAF_TOWN_STATE, 7
+	goto_if_eq TwinleafTown_EventScript_Woman_3
+# 308 "data/maps/TwinleafTown/scripts.pory"
+	goto TwinleafTown_EventScript_WildPokemon
+TwinleafTown_EventScript_Woman_1:
+# 310 "data/maps/TwinleafTown/scripts.pory"
+	release
+	return
+
+TwinleafTown_EventScript_Woman_2:
+# 295 "data/maps/TwinleafTown/scripts.pory"
+	faceplayer
+# 296 "data/maps/TwinleafTown/scripts.pory"
+	msgbox TwinleafTown_EventScript_Woman_Text_0
+	goto TwinleafTown_EventScript_Woman_1
+
+TwinleafTown_EventScript_Woman_3:
+# 303 "data/maps/TwinleafTown/scripts.pory"
+	faceplayer
+# 304 "data/maps/TwinleafTown/scripts.pory"
+	msgbox TwinleafTown_EventScript_Woman_Text_1
+# 306 "data/maps/TwinleafTown/scripts.pory"
+	closemessage
+	goto TwinleafTown_EventScript_Woman_1
 
 
 # 18 "data/maps/TwinleafTown/scripts.pory"
@@ -866,6 +897,20 @@ TwinleafTown_EventScript_TearingOff_Text_0:
 	.string "while ago.\p"
 	.string "He's probably not gone too far.\n"
 	.string "Why not go chase after him?$"
+
+TwinleafTown_EventScript_Woman_Text_0:
+# 296 "data/maps/TwinleafTown/scripts.pory"
+	.string "Oh, you're helping put together\n"
+	.string "a Pokédex?\p"
+	.string "That means you're going to travel\n"
+	.string "all over the place with Pokémon!\p"
+	.string "That sounds like a lot of fun!\n"
+	.string "I'm a little envious, to be honest!$"
+
+TwinleafTown_EventScript_Woman_Text_1:
+# 304 "data/maps/TwinleafTown/scripts.pory"
+	.string "Oh! A Pokémon!\n"
+	.string "You look good together!$"
 
 BarryLooking::
 # 284 "data/maps/TwinleafTown/scripts.pory"

@@ -97,7 +97,7 @@ script TwinleafTown_EventScript_TwinleafMan {
     lock
     if (var(VAR_TWINLEAF_TOWN_STATE) == 3) {
         goto(TwinleafTown_EventScript_BarryLooking)
-    } elif(var(VAR_TWINLEAF_TOWN_STATE) == 8) {
+    } elif(flag(FLAG_RECEIVED_POKEDEX)) {
         faceplayer
         msgbox("Everyone goes off on adventures,\n"
                 "and then they gradually grow up...")
@@ -286,4 +286,26 @@ text BarryLooking {
         "Barry was looking for you.\p"
         "I think he's home now.\n"
         "Why don't you go check it out?"
+}
+
+
+script TwinleafTown_EventScript_Woman {
+    lock
+    if(flag(FLAG_RECEIVED_POKEDEX)) {
+        faceplayer
+        msgbox("Oh, you're helping put together\n"
+                "a Pokédex?\p"
+                "That means you're going to travel\n"
+                "all over the place with Pokémon!\p"
+                "That sounds like a lot of fun!\n"
+                "I'm a little envious, to be honest!")
+    } elif (var(VAR_TWINLEAF_TOWN_STATE) == 7) {
+        faceplayer
+        msgbox("Oh! A Pokémon!\n"
+                "You look good together!")
+        closemessage
+    } else {
+        goto(TwinleafTown_EventScript_WildPokemon)
+    }
+    release
 }

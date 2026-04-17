@@ -164,7 +164,9 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_23:
 	removeobject 2
 # 233 "data/maps/SandgemProfessorsLab/scripts.pory"
 	setvar VAR_SANDGEM_TOWN_STATE, 2
-# 235 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 234 "data/maps/SandgemProfessorsLab/scripts.pory"
+	setflag FLAG_RECEIVED_POKEDEX
+# 236 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
@@ -216,41 +218,41 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_24:
 
 
 SandgemProfessorsLab_EventScript_Professor::
-# 239 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 240 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 241 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 242 "data/maps/SandgemProfessorsLab/scripts.pory"
 	compare VAR_SANDGEM_TOWN_STATE, 2
 	goto_if_eq SandgemProfessorsLab_EventScript_Professor_2
-# 247 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 248 "data/maps/SandgemProfessorsLab/scripts.pory"
 	compare VAR_SANDGEM_TOWN_STATE, 3
 	goto_if_eq SandgemProfessorsLab_EventScript_Professor_3
 SandgemProfessorsLab_EventScript_Professor_1:
-# 262 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 263 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 SandgemProfessorsLab_EventScript_Professor_2:
-# 242 "data/maps/SandgemProfessorsLab/scripts.pory"
-	faceplayer
 # 243 "data/maps/SandgemProfessorsLab/scripts.pory"
+	faceplayer
+# 244 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Professor_Text_0
-# 246 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 247 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 	goto SandgemProfessorsLab_EventScript_Professor_1
 
 SandgemProfessorsLab_EventScript_Professor_3:
-# 248 "data/maps/SandgemProfessorsLab/scripts.pory"
-	faceplayer
 # 249 "data/maps/SandgemProfessorsLab/scripts.pory"
+	faceplayer
+# 250 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Professor_Text_1, MSGBOX_YESNO
-# 252 "data/maps/SandgemProfessorsLab/scripts.pory"
-	closemessage
 # 253 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 254 "data/maps/SandgemProfessorsLab/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq SandgemProfessorsLab_EventScript_Professor_6
-# 256 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 257 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Professor_Text_2
-# 259 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 260 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 	goto SandgemProfessorsLab_EventScript_Professor_1
 
@@ -259,101 +261,101 @@ SandgemProfessorsLab_EventScript_Professor_6:
 
 
 SandgemProfessorsLab_EventScript_RivalFather::
-# 266 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 267 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 268 "data/maps/SandgemProfessorsLab/scripts.pory"
-	faceplayer
 # 269 "data/maps/SandgemProfessorsLab/scripts.pory"
+	faceplayer
+# 270 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_RivalFather_Text_0
-# 274 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 275 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 276 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 277 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Roseanne::
-# 280 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 281 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 282 "data/maps/SandgemProfessorsLab/scripts.pory"
-	faceplayer
 # 283 "data/maps/SandgemProfessorsLab/scripts.pory"
+	faceplayer
+# 284 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Roseanne_Text_0
-# 289 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 290 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 291 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 292 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Rule1::
-# 296 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 297 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 298 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 299 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Rule1_Text_0
-# 300 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 301 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 302 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 303 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Rule2::
-# 306 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 307 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 308 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 309 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Rule2_Text_0
-# 310 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 311 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 312 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 313 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Research1::
-# 316 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 317 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 318 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 319 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Research1_Text_0
-# 320 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 321 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 322 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 323 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Research2::
-# 326 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 327 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 328 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 329 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Research2_Text_0
-# 330 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 331 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 332 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 333 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 
 SandgemProfessorsLab_EventScript_PC::
-# 336 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 337 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 338 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 339 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_PC_Text_0
-# 342 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 343 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 344 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 345 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
 
 SandgemProfessorsLab_EventScript_Refrigerator::
-# 348 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 349 "data/maps/SandgemProfessorsLab/scripts.pory"
 	lock
-# 350 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 351 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_EventScript_Refrigerator_Text_0
-# 352 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 353 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
-# 354 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 355 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
 
@@ -622,25 +624,25 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_Text_17:
 	.string "Glad to meet you, {PLAYER}!$"
 
 SandgemProfessorsLab_EventScript_Professor_Text_0:
-# 243 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 244 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}Go on!\p"
 	.string "{PLAYER}, your grand adventure\n"
 	.string "begins right now!$"
 
 SandgemProfessorsLab_EventScript_Professor_Text_1:
-# 249 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 250 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}Ah, {PLAYER}!\p"
 	.string "You've come to show me the progress\n"
 	.string "you've made on your Pokédex?$"
 
 SandgemProfessorsLab_EventScript_Professor_Text_2:
-# 256 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 257 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "{SPEAKER NAME_PROFESSOR}What's wrong?\p"
 	.string "You're not suggesting you've seen so\n"
 	.string "few that you're afraid to show me?$"
 
 SandgemProfessorsLab_EventScript_RivalFather_Text_0:
-# 269 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 270 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "I'm {RIVAL}'s father.\p"
 	.string "I'll be happy to assist you on your\n"
 	.string "quest for the professor.\p"
@@ -648,7 +650,7 @@ SandgemProfessorsLab_EventScript_RivalFather_Text_0:
 	.string "I'm sure we can count on you!$"
 
 SandgemProfessorsLab_EventScript_Roseanne_Text_0:
-# 283 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 284 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "Professor Rowan invented a new\n"
 	.string "Pokédex while working alongside a\l"
 	.string "professor from the Kanto region.\p"
@@ -657,33 +659,33 @@ SandgemProfessorsLab_EventScript_Roseanne_Text_0:
 	.string "our professor!$"
 
 SandgemProfessorsLab_EventScript_Rule1_Text_0:
-# 298 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 299 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "Adventure Rule No. 1\n"
 	.string "The START Button opens the menu.$"
 
 SandgemProfessorsLab_EventScript_Rule2_Text_0:
-# 308 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 309 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "Adventure Rule No. 2\n"
 	.string "Record your progress with SAVE.$"
 
 SandgemProfessorsLab_EventScript_Research1_Text_0:
-# 318 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 319 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "It's crammed full of books with all\n"
 	.string "sorts of Pokémon information.$"
 
 SandgemProfessorsLab_EventScript_Research2_Text_0:
-# 328 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 329 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "There's a lot of reference material\n"
 	.string "and research reports on Pokémon.$"
 
 SandgemProfessorsLab_EventScript_PC_Text_0:
-# 338 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 339 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "{PLAYER} checked the PC.\p"
 	.string "The screen is filled with special terms\n"
 	.string "and academic writing that is impossible\l"
 	.string "to figure out.$"
 
 SandgemProfessorsLab_EventScript_Refrigerator_Text_0:
-# 350 "data/maps/SandgemProfessorsLab/scripts.pory"
+# 351 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "The refrigerator is filled with\n"
 	.string "tasty sweets! Mmm. . .$"

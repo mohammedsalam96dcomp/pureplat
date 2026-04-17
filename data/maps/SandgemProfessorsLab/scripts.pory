@@ -231,6 +231,7 @@ script SandgemProfessorsLab_MapScripts_ON_FRAME {
 	setflag(FLAG_HIDE_ROWANS_LAB_DAWN)
 	removeobject(LOCALID_LUCASDAWN)
 	setvar(VAR_SANDGEM_TOWN_STATE, 2)
+	setflag(FLAG_RECEIVED_POKEDEX)
 
 	release
 }

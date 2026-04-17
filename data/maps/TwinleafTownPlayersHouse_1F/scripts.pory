@@ -88,7 +88,7 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME_GOTPOKEMON {
 			"Oh, I know!\n"
 			"{PLAYER}, put these on.\p"
 			"{PLAYER} received a pair of\n"
-			"Running Shoes!\p"
+			"{COLOR RED}Running Shoes!\p"
 			"Going to Sandgem Town is like an\n"
 			"adventure in itself, right?\p"
 			"With those Running Shoes, you can\n"
@@ -133,7 +133,12 @@ script TwinleafTown_PlayersHouse1F_EventScript_Mom {
 	} elif (var(VAR_TWINLEAF_MOM_STATE) == 3) {
 		goto(TwinleafTown_PlayersHouse1F_BarryWaiting)
 	} elif (var(VAR_TWINLEAF_MOM_STATE) == 4) {
-		goto(TwinleafTown_PlayersHouse1F_Heal)
+		if (var(VAR_TEMP_3) == 1) {
+			goto(TwinleafTown_PlayersHouse1F_Mom_FlavorText)
+		}
+		else {
+			goto(TwinleafTown_PlayersHouse1F_Heal)
+		}
 	} elif (var(VAR_TWINLEAF_MOM_STATE) == 5 ) {
 		goto(TwinleafTown_PlayersHouse1F_GotPokedex)
 	}
@@ -276,6 +281,8 @@ script TwinleafTown_PlayersHouse1F_Heal {
 	closemessage
 
 	call(Common_EventScript_OutOfCenterPartyHeal)
+
+	setvar(VAR_TEMP_3, 1)
 
 	release
 }
@@ -448,6 +455,45 @@ script TwinleafTown_PlayersHouse1F_GotPokedex {
 	removeobject(LOCALID_BARRYMOM)
 
 	setvar(VAR_TWINLEAF_MOM_STATE, 4)
+	setvar(VAR_TEMP_3, 1)
 	setvar(VAR_ROUTE202_STATE, 2)
+	release
+}
+
+
+
+
+script TwinleafTown_PlayersHouse1F_Mom_FlavorText {
+	lock
+
+	random(4)
+
+	switch(var(VAR_RESULT)) {
+		case 0:
+			faceplayer
+			msgbox("{SPEAKER NAME_MOM}{PLAYER}.\p"
+			"Seeing you reminds me so much of your\n"
+			"father.\p"
+			"You two are so alike!")
+		case 1:
+			faceplayer
+			msgbox("{SPEAKER NAME_MOM}{PLAYER}.\p"
+			"Listen. Always treat your Pokémon\n"
+			"with kindness.\p"
+			"Your Pokémon work hard, not for\n"
+			"themselves, but for you!")
+		case 2:
+			faceplayer
+			msgbox("{SPEAKER NAME_MOM}While you're gone, I go and\n"
+			"visit Barry's mom.\p"
+			"We talk about this and that.\p"
+			"Well, actually all we do is talk about\n"
+			"you two.")
+		case 3:
+			faceplayer
+			msgbox("{SPEAKER NAME_MOM}{PLAYER}!\p"
+			"You and your Pokémon are looking good!\n"
+			"Nothing can stop you now!")
+	}
 	release
 }
