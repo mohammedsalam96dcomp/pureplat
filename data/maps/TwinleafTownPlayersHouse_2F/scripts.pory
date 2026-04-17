@@ -21,6 +21,12 @@ mapscripts TwinleafTownPlayersHouse_2F_MapScripts {
   MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE[
     VAR_NEW_GAME_START, 0: TwinleafTownPlayersHouse_2F_ON_WARP
   ]
+
+  MAP_SCRIPT_ON_TRANSITION : TwinleafTownPlayersHouse_2F_OnTransition
+}
+
+script TwinleafTownPlayersHouse_2F_OnTransition {
+  setrespawn(HEAL_LOCATION_TWINLEAF_TOWN)
 }
 
 script TwinleafTownPlayersHouse_2F_ON_FRAME {

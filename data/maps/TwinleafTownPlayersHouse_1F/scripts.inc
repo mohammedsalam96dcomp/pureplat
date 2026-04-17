@@ -897,7 +897,7 @@ TwinleafTownPlayersHouse_1F_ON_FRAME_GOTPOKEMON_Text_0:
 	.string "Oh, I know!\n"
 	.string "{PLAYER}, put these on.\p"
 	.string "{PLAYER} received a pair of\n"
-	.string "{COLOR RED}Running Shoes!\p"
+	.string "{COLOR RED}Running Shoes{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!\p"
 	.string "Going to Sandgem Town is like an\n"
 	.string "adventure in itself, right?\p"
 	.string "With those Running Shoes, you can\n"

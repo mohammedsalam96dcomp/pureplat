@@ -88,7 +88,7 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME_GOTPOKEMON {
 			"Oh, I know!\n"
 			"{PLAYER}, put these on.\p"
 			"{PLAYER} received a pair of\n"
-			"{COLOR RED}Running Shoes!\p"
+			"{COLOR RED}Running Shoes{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!\p"
 			"Going to Sandgem Town is like an\n"
 			"adventure in itself, right?\p"
 			"With those Running Shoes, you can\n"

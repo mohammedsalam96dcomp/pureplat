@@ -173,6 +173,7 @@ script Route202_EventScript_CatchingTutorial5 {
 script Route202_EventScript_CatchingTutorial {
 	lock
 
+	setflag(FLAG_FOLLOWER_POKEMON)
 	playse(SE_PIN)
 	specialvar(VAR_RESULT, GetPlayerFacingDirection)
 	if(var(VAR_RESULT) == DIR_NORTH) {
@@ -281,6 +282,7 @@ script Route202_EventScript_CatchingTutorial {
 	special(LoadPlayerParty)
 
 	setvar(VAR_ROUTE202_STATE, 3)
+	clearflag(FLAG_FOLLOWER_POKEMON)
 
 	release
 

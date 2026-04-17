@@ -583,7 +583,8 @@ script Route201_EventScript_ChooseStarter {
 				"My Pokémon needs rest, too.\p"
 				"See ya, {PLAYER}!")
 	}
-		
+	
+	setflag(FLAG_FOLLOWER_POKEMON)
 	setvar(VAR_TWINLEAF_TOWN_STATE, 5)
 	special(HealPlayerParty)
 	fadescreen(FADE_TO_BLACK)
