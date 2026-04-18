@@ -357,8 +357,8 @@
       "y": 19,
       "respawn_map": "MAP_TWINLEAF_TOWN_PLAYERS_HOUSE_1F",
       "respawn_npc": "0",
-      "respawn_x": 7,
-      "respawn_y": 6
+      "respawn_x": 6,
+      "respawn_y": 7
     }
   ]
 }

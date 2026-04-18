@@ -32,11 +32,9 @@ script TwinleafTownPlayersHouse_2F_OnTransition {
 script TwinleafTownPlayersHouse_2F_ON_FRAME {
   lock
   msgbox(format("That concludes our special program,\n"
-                "'Lets ask Prof. Rowan!'\p"
-
+                "“Lets ask Prof. Rowan!”\p"
                 "Brought to you by Jubilife TV on\n"
                 "Nationwide Net!\p"
-
                 "See you next week, same time\n"
                 "same channel."))
   release

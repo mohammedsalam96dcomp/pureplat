@@ -287,3 +287,13 @@ script Route202_EventScript_CatchingTutorial {
 	release
 
 }
+
+script Route202_EventScript_Tristan {
+	 trainerbattle_single(
+		TRAINER_TRISTAN,
+		format("You're a Pokémon Trainer, and so am I!\nOur eyes met, so battle we must!"),
+        format("Too strong!\n Too strong!")
+	)
+	msgbox(("Don't be shy about talking to\nTrainers you'd like to battle.\pPokémon grow stronger and stronger\nfrom battling."), MSGBOX_AUTOCLOSE)
+	end
+}

@@ -431,6 +431,14 @@ Route202_EventScript_CatchingTutorial_16:
 	goto Route202_EventScript_CatchingTutorial_15
 
 
+Route202_EventScript_Tristan::
+# 292 "data/maps/Route202/scripts.pory"
+	trainerbattle_single TRAINER_TRISTAN, Route202_EventScript_Tristan_Text_0, Route202_EventScript_Tristan_Text_1
+# 297 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_Tristan_Text_2, MSGBOX_AUTOCLOSE
+	end
+
+
 # 53 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_0:
 # 53 "data/maps/Route202/scripts.pory"
@@ -779,3 +787,17 @@ Route202_EventScript_CatchingTutorial_Text_5:
 	.string "having your Pokémon friends along.\p"
 	.string "OK, I need to get going.\n"
 	.string "Bye, now!$"
+
+Route202_EventScript_Tristan_Text_0:
+# 294 "data/maps/Route202/scripts.pory"
+	.string "You're a Pokémon Trainer, and so am I!\n"
+	.string "Our eyes met, so battle we must!$"
+
+Route202_EventScript_Tristan_Text_1:
+# 295 "data/maps/Route202/scripts.pory"
+	.string "Too strong!\n"
+	.string "Too strong!$"
+
+Route202_EventScript_Tristan_Text_2:
+# 297 "data/maps/Route202/scripts.pory"
+	.string "Don't be shy about talking to\nTrainers you'd like to battle.\pPokémon grow stronger and stronger\nfrom battling.$"

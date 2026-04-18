@@ -6,6 +6,8 @@
 //VAR_TWINLEAF_TOWN STATE 6 - GOT POKEMON RECEIVED 
 //VAR_TWINLEAF_TOWN STATE 7 - AFTER SPEAKING WITH MOM GETTING SHOES
 
+
+
 const LOCALID_MOM = 1
 const LOCALID_BARRYMOM = 2
 
@@ -95,10 +97,10 @@ script TwinleafTownPlayersHouse_1F_ON_FRAME_GOTPOKEMON {
 			"get to faraway places much faster.\p"
 			"OK. . .\n"
 			"Let me read the instructions. . .\p"
-			"Press the B Button and dash\n"
+			"“Press the B Button and dash\n"
 			"about faster than ever before!\p"
 			"Put on the Running Shoes and\n"
-			"blaze new trails of adventure!\p"
+			"blaze new trails of adventure!”\p"
 			"Well, isn't that just nifty!")
 
 	setflag(FLAG_SYS_B_DASH)
@@ -259,10 +261,10 @@ script TwinleafTown_PlayersHouse1F_RunningShoes {
 	setspeaker(SP_NAME_MOM)
 	msgbox(format("I'll read you the instructions\n"
 				"for the Running Shoes. . .\p"
-				"Press the B Button and dash\n"
+				"“Press the B Button and dash\n"
 				"about faster than ever before!\p"
 				"Put on the Running Shoes and\n"
-				"blaze new trails of adventure!\p"
+				"blaze new trails of adventure!”\p"
 				"Well, isn't that just nifty!"
 	))
 	closemessage
