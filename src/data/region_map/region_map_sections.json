@@ -1654,6 +1654,10 @@
     {
       "id": "MAPSEC_ROUTE_219",
       "name": "Route 219"
+    },
+    {
+      "id": "MAPSEC_JUBILIFE_CITY",
+      "name": "Jubilife City"
     }
   ]
 }

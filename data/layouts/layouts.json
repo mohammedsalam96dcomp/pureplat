@@ -1862,6 +1862,16 @@
       "secondary_tileset": "gTileset_Shop",
       "border_filepath": "data/layouts/SandgemTownMart/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTownMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY",
+      "name": "JubilifeCity_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_Twinleaf",
+      "border_filepath": "data/layouts/JubilifeCity/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity/map.bin"
     }
   ]
 }

@@ -951,3 +951,5 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/SandgemTownDawnHouse_2F/scripts.inc"
 
 	.include "data/maps/SandgemTownMart/scripts.inc"
+
+	.include "data/maps/JubilifeCity/scripts.inc"
