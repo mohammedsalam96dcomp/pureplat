@@ -259,6 +259,8 @@ SandgemProfessorsLab_EventScript_Professor_3:
 	goto SandgemProfessorsLab_EventScript_Professor_1
 
 SandgemProfessorsLab_EventScript_Professor_6:
+# 257 "data/maps/SandgemProfessorsLab/scripts.pory"
+	goto SandgemProfessorsLab_EventScript_RatePokedex
 	goto SandgemProfessorsLab_EventScript_Professor_1
 
 
@@ -360,6 +362,35 @@ SandgemProfessorsLab_EventScript_Refrigerator::
 # 357 "data/maps/SandgemProfessorsLab/scripts.pory"
 	release
 	return
+
+
+SandgemProfessorsLab_EventScript_RatePokedex::
+# 361 "data/maps/SandgemProfessorsLab/scripts.pory"
+	lock
+# 363 "data/maps/SandgemProfessorsLab/scripts.pory"
+	setvar VAR_0x8004, 0
+# 364 "data/maps/SandgemProfessorsLab/scripts.pory"
+	specialvar VAR_RESULT, ScriptGetPokedexInfo
+# 365 "data/maps/SandgemProfessorsLab/scripts.pory"
+	copyvar VAR_0x8008, VAR_0x8005
+# 366 "data/maps/SandgemProfessorsLab/scripts.pory"
+	buffernumberstring STR_VAR_1, VAR_0x8008
+# 367 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_EventScript_RatePokedex_Text_0
+# 370 "data/maps/SandgemProfessorsLab/scripts.pory"
+	compare VAR_0x8008, 16
+	goto_if_lt SandgemProfessorsLab_EventScript_RatePokedex_2
+SandgemProfessorsLab_EventScript_RatePokedex_1:
+# 375 "data/maps/SandgemProfessorsLab/scripts.pory"
+	closemessage
+# 377 "data/maps/SandgemProfessorsLab/scripts.pory"
+	release
+	return
+
+SandgemProfessorsLab_EventScript_RatePokedex_2:
+# 371 "data/maps/SandgemProfessorsLab/scripts.pory"
+	msgbox SandgemProfessorsLab_EventScript_RatePokedex_Text_1
+	goto SandgemProfessorsLab_EventScript_RatePokedex_1
 
 
 # 20 "data/maps/SandgemProfessorsLab/scripts.pory"
@@ -691,3 +722,15 @@ SandgemProfessorsLab_EventScript_Refrigerator_Text_0:
 # 353 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "The refrigerator is filled with\n"
 	.string "tasty sweets! Mmm. . .$"
+
+SandgemProfessorsLab_EventScript_RatePokedex_Text_0:
+# 367 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}Hmm. . .\p"
+	.string "You've spotted {STR_VAR_1} Pokémon in\n"
+	.string "Sinnoh. . .$"
+
+SandgemProfessorsLab_EventScript_RatePokedex_Text_1:
+# 371 "data/maps/SandgemProfessorsLab/scripts.pory"
+	.string "{SPEAKER NAME_PROFESSOR}Look harder for wild Pokémon.\p"
+	.string "Don't be afraid of going into tall\n"
+	.string "grass.$"

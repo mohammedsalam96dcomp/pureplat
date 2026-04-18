@@ -10,7 +10,7 @@
 #define TRAINER_BARRY_ROUTE_201_PIPLUP        3
 #define TRAINER_TRISTAN                       4
 #define TRAINER_NATALIE                       5
-#define TRAINER_GRUNT_SEAFLOOR_CAVERN_1       6
+#define TRAINER_LOGAN                         6
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_2       7
 #define TRAINER_GRUNT_SEAFLOOR_CAVERN_3       8
 #define TRAINER_GABRIELLE_1                   9

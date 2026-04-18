@@ -562,7 +562,6 @@ script Route201_EventScript_ChooseStarter {
 			trainerbattle_no_intro_no_whiteout(TRAINER_BARRY_ROUTE_201_PIPLUP, "What are you saying?!\nWe ended up losing?")
 	}
 
-	// setflag(B_FLAG_NO_WHITEOUT)
 	specialvar(VAR_RESULT, GetBattleOutcome)
 
 	if (var(VAR_RESULT) == B_OUTCOME_WON) {
@@ -584,6 +583,7 @@ script Route201_EventScript_ChooseStarter {
 				"See ya, {PLAYER}!")
 	}
 	
+	clearflag(B_FLAG_NO_WHITEOUT)
 	setflag(FLAG_FOLLOWER_POKEMON)
 	setvar(VAR_TWINLEAF_TOWN_STATE, 5)
 	special(HealPlayerParty)

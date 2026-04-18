@@ -148,18 +148,19 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Jolly
 
-=== TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+=== TRAINER_LOGAN ===
+Name: Logan
+Class: Youngster
+Pic: Youngster
 Gender: Male
-Music: Aqua
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Poochyena
-Level: 36
+Burmy
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Jolly
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: GRUNT

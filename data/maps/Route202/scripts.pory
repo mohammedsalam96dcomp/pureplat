@@ -292,8 +292,40 @@ script Route202_EventScript_Tristan {
 	 trainerbattle_single(
 		TRAINER_TRISTAN,
 		format("You're a Pokémon Trainer, and so am I!\nOur eyes met, so battle we must!"),
-        format("Too strong!\n Too strong!")
+        format("Too strong!\nToo strong!")
 	)
 	msgbox(("Don't be shy about talking to\nTrainers you'd like to battle.\pPokémon grow stronger and stronger\nfrom battling."), MSGBOX_AUTOCLOSE)
 	end
+}
+
+script Route202_EventScript_Natalie {
+	trainerbattle_single (
+		TRAINER_NATALIE,
+		format("I spy, with my little eye. . .\nA Trainer!\pA battle, please!"),
+		format("Oh, boo!\nI can't win!")
+	)
+	msgbox(("My Pokémon are all tuckered out!\nI need to go to a Pokémon Center."), MSGBOX_AUTOCLOSE)
+	end
+}
+
+script Route202_EventScript_Logan {
+	trainerbattle_single (
+		TRAINER_LOGAN,
+		format("Let's have a Pokémon battle!\nHumph! But I'm gonna win!"),
+		format("You beat me?!\nYou got talent!")
+	)
+	msgbox(("It was fun battling!\nYup! I'm going to battle everyone!"), MSGBOX_AUTOCLOSE)
+	end
+}
+
+script Route202_EventScript_Youngster {
+	lock
+	faceplayer
+
+	msgbox("Some Pokémon only appear in the\n"
+			"morning.\p"
+			"Some only come out at night.\p"
+			"I'll keep looking till I've seen them\n"
+			"all!")
+	release
 }

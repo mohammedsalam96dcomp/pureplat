@@ -439,6 +439,34 @@ Route202_EventScript_Tristan::
 	end
 
 
+Route202_EventScript_Natalie::
+# 302 "data/maps/Route202/scripts.pory"
+	trainerbattle_single TRAINER_NATALIE, Route202_EventScript_Natalie_Text_0, Route202_EventScript_Natalie_Text_1
+# 307 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_Natalie_Text_2, MSGBOX_AUTOCLOSE
+	end
+
+
+Route202_EventScript_Logan::
+# 312 "data/maps/Route202/scripts.pory"
+	trainerbattle_single TRAINER_LOGAN, Route202_EventScript_Logan_Text_0, Route202_EventScript_Logan_Text_1
+# 317 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_Logan_Text_2, MSGBOX_AUTOCLOSE
+	end
+
+
+Route202_EventScript_Youngster::
+# 322 "data/maps/Route202/scripts.pory"
+	lock
+# 323 "data/maps/Route202/scripts.pory"
+	faceplayer
+# 325 "data/maps/Route202/scripts.pory"
+	msgbox Route202_EventScript_Youngster_Text_0
+# 330 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
 # 53 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_0:
 # 53 "data/maps/Route202/scripts.pory"
@@ -801,3 +829,40 @@ Route202_EventScript_Tristan_Text_1:
 Route202_EventScript_Tristan_Text_2:
 # 297 "data/maps/Route202/scripts.pory"
 	.string "Don't be shy about talking to\nTrainers you'd like to battle.\pPokémon grow stronger and stronger\nfrom battling.$"
+
+Route202_EventScript_Natalie_Text_0:
+# 304 "data/maps/Route202/scripts.pory"
+	.string "I spy, with my little eye. . .\n"
+	.string "A Trainer!\p"
+	.string "A battle, please!$"
+
+Route202_EventScript_Natalie_Text_1:
+# 305 "data/maps/Route202/scripts.pory"
+	.string "Oh, boo!\n"
+	.string "I can't win!$"
+
+Route202_EventScript_Natalie_Text_2:
+# 307 "data/maps/Route202/scripts.pory"
+	.string "My Pokémon are all tuckered out!\nI need to go to a Pokémon Center.$"
+
+Route202_EventScript_Logan_Text_0:
+# 314 "data/maps/Route202/scripts.pory"
+	.string "Let's have a Pokémon battle!\n"
+	.string "Humph! But I'm gonna win!$"
+
+Route202_EventScript_Logan_Text_1:
+# 315 "data/maps/Route202/scripts.pory"
+	.string "You beat me?!\n"
+	.string "You got talent!$"
+
+Route202_EventScript_Logan_Text_2:
+# 317 "data/maps/Route202/scripts.pory"
+	.string "It was fun battling!\nYup! I'm going to battle everyone!$"
+
+Route202_EventScript_Youngster_Text_0:
+# 325 "data/maps/Route202/scripts.pory"
+	.string "Some Pokémon only appear in the\n"
+	.string "morning.\p"
+	.string "Some only come out at night.\p"
+	.string "I'll keep looking till I've seen them\n"
+	.string "all!$"

@@ -254,7 +254,7 @@ script SandgemProfessorsLab_EventScript_Professor{
 				"you've made on your Pokédex?", MSGBOX_YESNO)
 				closemessage
 		if (var(VAR_RESULT) == 1) {
-
+			goto(SandgemProfessorsLab_EventScript_RatePokedex)
 		} else {
 			msgbox("{SPEAKER NAME_PROFESSOR}What's wrong?\p"
 					"You're not suggesting you've seen so\n"
@@ -357,3 +357,22 @@ script SandgemProfessorsLab_EventScript_Refrigerator {
 	release
 }
 
+script SandgemProfessorsLab_EventScript_RatePokedex {
+	lock
+	
+	setvar(VAR_0x8004, 0)
+	specialvar(VAR_RESULT, ScriptGetPokedexInfo)
+	copyvar(VAR_0x8008, VAR_0x8005)
+	buffernumberstring(STR_VAR_1, VAR_0x8008)
+	msgbox("{SPEAKER NAME_PROFESSOR}Hmm. . .\p"
+			"You've spotted {STR_VAR_1} Pokémon in\n"
+			"Sinnoh. . .")
+	if(var(VAR_0x8008) < 16) {
+		msgbox("{SPEAKER NAME_PROFESSOR}Look harder for wild Pokémon.\p"
+			"Don't be afraid of going into tall\n"
+			"grass.")
+	}
+	closemessage
+
+	release
+}

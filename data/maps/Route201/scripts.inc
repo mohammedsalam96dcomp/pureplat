@@ -650,14 +650,16 @@ Route201_EventScript_ChooseStarter_16:
 # 561 "data/maps/Route201/scripts.pory"
 	case 2, Route201_EventScript_ChooseStarter_22
 Route201_EventScript_ChooseStarter_18:
-# 566 "data/maps/Route201/scripts.pory"
+# 565 "data/maps/Route201/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 568 "data/maps/Route201/scripts.pory"
+# 567 "data/maps/Route201/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_WON
 	goto_if_eq Route201_EventScript_ChooseStarter_27
-# 575 "data/maps/Route201/scripts.pory"
+# 574 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_14
 Route201_EventScript_ChooseStarter_26:
+# 586 "data/maps/Route201/scripts.pory"
+	clearflag B_FLAG_NO_WHITEOUT
 # 587 "data/maps/Route201/scripts.pory"
 	setflag FLAG_FOLLOWER_POKEMON
 # 588 "data/maps/Route201/scripts.pory"
@@ -717,7 +719,7 @@ Route201_EventScript_ChooseStarter_23:
 	goto Route201_EventScript_ChooseStarter_16
 
 Route201_EventScript_ChooseStarter_27:
-# 569 "data/maps/Route201/scripts.pory"
+# 568 "data/maps/Route201/scripts.pory"
 	msgbox Route201_EventScript_ChooseStarter_Text_13
 	goto Route201_EventScript_ChooseStarter_26
 
@@ -1828,7 +1830,7 @@ Route201_EventScript_ChooseStarter_Text_12:
 	.string "What are you saying?!\nWe ended up losing?$"
 
 Route201_EventScript_ChooseStarter_Text_13:
-# 569 "data/maps/Route201/scripts.pory"
+# 568 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Whew!\n"
 	.string "Let's go home.\p"
 	.string "I'm beat after that battle.\n"
@@ -1836,7 +1838,7 @@ Route201_EventScript_ChooseStarter_Text_13:
 	.string "See ya, {PLAYER}!$"
 
 Route201_EventScript_ChooseStarter_Text_14:
-# 575 "data/maps/Route201/scripts.pory"
+# 574 "data/maps/Route201/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Aha. . .\n"
 	.string "Ahaha. . . I won? I won!\p"
 	.string "But that battle, it could've gone\n"
