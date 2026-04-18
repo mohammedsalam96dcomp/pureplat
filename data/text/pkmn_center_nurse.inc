@@ -1,9 +1,9 @@
 gText_WouldYouLikeToRestYourPkmn::
 	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
+	.string "the Pokémon CENTER.\p"
+	.string "We restore your tired Pokémon\n"
 	.string "to full health.\p"
-	.string "Would you like to rest your POKéMON?$"
+	.string "Would you like to rest your Pokémon?$"
 
 gText_IllTakeYourPkmn::
 	.string "Okay, I'll take your POKéMON\n"
@@ -11,16 +11,16 @@ gText_IllTakeYourPkmn::
 
 gText_RestoredPkmnToFullHealth::
 	.string "Thank you for waiting.\p"
-	.string "We've restored your POKéMON\n"
-	.string "to full health.$"
+	.string "We've restored your Pokémon to full\n"
+	.string "health.$"
 
 gText_WeHopeToSeeYouAgain::
 	.string "We hope to see you again!$"
 
 gText_WelcomeCutShort::
 	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
+	.string "the Pokémon CENTER.\p"
+	.string "We restore your tired Pokémon\n"
 	.string "to full health.\p"
 	.string "Would you like to…$"
 

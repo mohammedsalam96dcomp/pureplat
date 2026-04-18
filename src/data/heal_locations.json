@@ -359,6 +359,12 @@
       "respawn_npc": "0",
       "respawn_x": 6,
       "respawn_y": 7
+    },
+    {
+      "id": "HEAL_LOCATION_SANDGEM_TOWN",
+      "map": "MAP_SANDGEM_TOWN",
+      "x": 19,
+      "y": 9
     }
   ]
 }

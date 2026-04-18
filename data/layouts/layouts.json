@@ -1806,10 +1806,10 @@
     {
       "id": "LAYOUT_SANDGEM_POKEMON_CENTER",
       "name": "SandgemPokemonCenter_Layout",
-      "width": 15,
-      "height": 11,
-      "primary_tileset": "gTileset_BuildingSinnoh",
-      "secondary_tileset": "gTileset_PokemonCenterPlat",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
       "border_filepath": "data/layouts/SandgemPokemonCenter/border.bin",
       "blockdata_filepath": "data/layouts/SandgemPokemonCenter/map.bin"
     },
@@ -1852,6 +1852,16 @@
       "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/SandgemTownDawnHouse_2F/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTownDawnHouse_2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_SANDGEM_TOWN_MART",
+      "name": "SandgemTownMart_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/SandgemTownMart/border.bin",
+      "blockdata_filepath": "data/layouts/SandgemTownMart/map.bin"
     }
   ]
 }

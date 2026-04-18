@@ -1,0 +1,21 @@
+mapscripts SandgemTownMart_MapScripts{
+}
+
+script SandgemTown_Mart_EventScript_Clerk {
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(SandgemTown_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+raw`
+SandgemTown_Mart:
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_POTION
+	.2byte ITEM_ANTIDOTE
+	.2byte ITEM_PARALYZE_HEAL
+`

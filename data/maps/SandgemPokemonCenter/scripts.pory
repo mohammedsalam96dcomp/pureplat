@@ -1,4 +1,40 @@
-raw `
-SandgemPokemonCenter_MapScripts::
-	.byte 0
-`
+mapscripts SandgemPokemonCenter_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION : SandgemPokemonCenter_OnTransition
+	MAP_SCRIPT_ON_RESUME: CableClub_OnResume
+}
+
+script SandgemPokemonCenter_OnTransition {
+	setrespawn(HEAL_LOCATION_SANDGEM_TOWN)
+}
+
+script SandgemTown_PokemonCenter_1F_EventScript_Nurse {
+	setvar(VAR_0x800B, LOCALID_SANDGEM_NURSE)
+	call(Common_EventScript_PkmnCenterNurse)
+	waitmessage
+	waitbuttonpress
+	release
+	end
+}
+
+script SandgemTown_PokemonCenter_1F_EventScript_OldMan {
+	lock
+
+	faceplayer
+	msgbox("Do you see that PC over there?\n"
+			"That fancy blue one?\p"
+			"If you've got Pokémon with you,\n"
+			"it's free to use.")
+
+	release
+}
+
+script SandgemTown_PokemonCenter_1F_EventScript_Man {
+	lock
+
+	faceplayer
+	msgbox("Talk to that nice lady at the counter\n"
+			"and hand her your Pokémon.\p"
+			"She'll heal your Pokémon to perfect\n"
+			"health in no time at all!")
+	release
+}
