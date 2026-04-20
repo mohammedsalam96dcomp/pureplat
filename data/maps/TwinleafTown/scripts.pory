@@ -135,7 +135,7 @@ script TwinleafTown_EventScript_PlayersHouseSign{
 
 script TwinleafTown_EventScript_RivalsHouseSign{
 	lock
-    msgbox("Barry's House")
+    msgbox("{BARRY}'s House")
     release
     end
 }
@@ -272,7 +272,7 @@ script TwinleafTown_EventScript_TearingOff {
 
     faceplayer
     msgbox("Hiya, {PLAYER}.\n"
-        "You're looking for Barry?\p"
+        "You're looking for {BARRY}?\p"
         "He just went tearing off a little\n"
         "while ago.\p"
         "He's probably not gone too far.\n"
@@ -283,7 +283,7 @@ script TwinleafTown_EventScript_TearingOff {
 
 text BarryLooking {
         "Hiya, {PLAYER}.\n"
-        "Barry was looking for you.\p"
+        "{BARRY} was looking for you.\p"
         "I think he's home now.\n"
         "Why don't you go check it out?"
 }

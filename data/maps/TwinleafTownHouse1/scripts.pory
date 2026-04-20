@@ -10,7 +10,7 @@ script TwinleafTownHouse1_EventScript_Man {
 				"It was only to Sandgem, the next town\n"
 				"over, though. Yeah, good times. . .")
 	} else {
-		msgbox("You're off to hang with Barry\n"
+		msgbox("You're off to hang with {BARRY}\n"
 		"again, right? You two sure are tight!")
 	}
 	release

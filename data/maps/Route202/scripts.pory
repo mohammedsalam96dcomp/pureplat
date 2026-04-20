@@ -329,3 +329,26 @@ script Route202_EventScript_Youngster {
 			"all!")
 	release
 }
+
+script Route202_SignScript_Sandgem {
+	lock
+	msgbox("{DOWN_ARROW}Sandgem Town")
+	release
+
+}
+
+script Route202_SignScript_TrainerTips {
+	lock
+	msgbox("Trainer Tips!\p"
+			"All Pokémon that are involved in\n"
+			"a battle earn Exp. Points!\p"
+			"The more your Pokémon battle,\n"
+			"the stronger they will become.")
+	release
+}
+
+script Route202_SignScript_Jubilife {
+	lock
+	msgbox("{UP_ARROW}Jubilife City")
+	release
+}

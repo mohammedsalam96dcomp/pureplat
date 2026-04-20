@@ -98,7 +98,7 @@ TwinleafTown_EventScript_Route201::
 
 TwinleafTown_EventScript_BarrysMom_Text_0:
 # 14 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"
-	.string "{SPEAKER NAME_BARRYMOM}My Barry took\n"
+	.string "{SPEAKER NAME_BARRYMOM}My {BARRY} took\n"
 	.string "off like a rocket as usual.\p"
 	.string "He was shouting something about\n"
 	.string "becoming the greatest Trainer ever. . .\p"
@@ -114,7 +114,7 @@ TwinleafTown_EventScript_SitStill_Text_0:
 # 42 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"
 	.string "Oh, hi,\n"
 	.string "{PLAYER}.\p"
-	.string "Did you come calling on Barry?\p"
+	.string "Did you come calling on {BARRY}?\p"
 	.string "He was gone for a second, but then\n"
 	.string "he came running right back home.\p"
 	.string "He just can't sit still, that boy.\n"
@@ -131,7 +131,7 @@ TwinleafTown_EventScript_RocketedOff_Text_0:
 
 TwinleafTown_EventScript_Route201_Text_0:
 # 73 "data/maps/TwinleafTownBarrysHouse_1F/scripts.pory"
-	.string "My Barry should\n"
+	.string "My {BARRY} should\n"
 	.string "be out on Route 201 by now.\p"
 	.string "He just can't sit still, that boy.\n"
 	.string "I wonder who he takes after?$"

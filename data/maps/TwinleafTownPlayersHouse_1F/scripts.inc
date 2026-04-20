@@ -874,7 +874,7 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Movement_10:
 TwinleafTownPlayersHouse_1F_ON_FRAME_BARRYLEFT_Text_0:
 # 40 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "Hey, {PLAYER}!\p"
-	.string "Barry already left.\p"
+	.string "{BARRY} already left.\p"
 	.string "I don't know what it was about, but\n"
 	.string "he sure was in a hurry!$"
 
@@ -884,7 +884,7 @@ TwinleafTownPlayersHouse_1F_ON_FRAME_GOTPOKEMON_Text_0:
 	.string ". . .\p"
 	.string "Wow.\n"
 	.string "That's what happened to you?\p"
-	.string "You and Barry are lucky to have\n"
+	.string "You and {BARRY} are lucky to have\n"
 	.string "met Prof. Rowan.\p"
 	.string "Imagine if you didn't. . .\p"
 	.string "I wouldn't like to think what the wild\n"
@@ -913,7 +913,7 @@ TwinleafTownPlayersHouse_1F_ON_FRAME_GOTPOKEMON_Text_0:
 TwinleafTown_PlayersHouse1F_HowImpatient_Text_0:
 # 156 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "You know how impatient\n"
-	.string "Barry is.\p"
+	.string "{BARRY} is.\p"
 	.string "He took off before I could even\n"
 	.string "ask what it was about.$"
 
@@ -1010,7 +1010,7 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Text_2:
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_3:
 # 364 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_BARRYMOM}Excuse me.\n"
-	.string "Is my little Barry here?$"
+	.string "Is my little {BARRY} here?$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_4:
 # 371 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
@@ -1035,7 +1035,7 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Text_6:
 	.string "{SPEAKER NAME_BARRYMOM}Oh, really?\n"
 	.string "You'd do that for me?\p"
 	.string "{PLAYER}, please take this to\n"
-	.string "Barry for me.$"
+	.string "{BARRY} for me.$"
 
 TwinleafTown_PlayersHouse1F_GotPokedex_Text_7:
 # 430 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
@@ -1045,7 +1045,7 @@ TwinleafTown_PlayersHouse1F_GotPokedex_Text_7:
 	.string "Knowing my boy, he would probably\n"
 	.string "head straight to Jubilife City. . .\p"
 	.string "OK, please take that to my\n"
-	.string "Barry.$"
+	.string "{BARRY}.$"
 
 TwinleafTown_PlayersHouse1F_Mom_FlavorText_Text_0:
 # 476 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
@@ -1065,7 +1065,7 @@ TwinleafTown_PlayersHouse1F_Mom_FlavorText_Text_1:
 TwinleafTown_PlayersHouse1F_Mom_FlavorText_Text_2:
 # 489 "data/maps/TwinleafTownPlayersHouse_1F/scripts.pory"
 	.string "{SPEAKER NAME_MOM}While you're gone, I go and\n"
-	.string "visit Barry's mom.\p"
+	.string "visit {BARRY}'s mom.\p"
 	.string "We talk about this and that.\p"
 	.string "Well, actually all we do is talk about\n"
 	.string "you two.$"

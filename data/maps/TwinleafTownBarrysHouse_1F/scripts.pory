@@ -11,7 +11,7 @@ script TwinleafTown_EventScript_BarrysMom {
 
 	if (flag(FLAG_RECEIVED_POKEDEX)) {
 		faceplayer
-		msgbox("{SPEAKER NAME_BARRYMOM}My Barry took\n"
+		msgbox("{SPEAKER NAME_BARRYMOM}My {BARRY} took\n"
 				"off like a rocket as usual.\p"
 				"He was shouting something about\n"
 				"becoming the greatest Trainer ever. . .\p"
@@ -41,7 +41,7 @@ script TwinleafTown_EventScript_SitStill {
 	setspeaker(SP_NAME_BARRYMOM)
 	msgbox(format("Oh, hi,\n"
 				"{PLAYER}.\p"
-				"Did you come calling on Barry?\p"
+				"Did you come calling on {BARRY}?\p"
 				"He was gone for a second, but then\n"
 				"he came running right back home.\p"
 				"He just can't sit still, that boy.\n"
@@ -70,7 +70,7 @@ script TwinleafTown_EventScript_Route201 {
 
 	faceplayer
 	setspeaker(SP_NAME_BARRYMOM)
-	msgbox("My Barry should\n"
+	msgbox("My {BARRY} should\n"
 			"be out on Route 201 by now.\p"
 			"He just can't sit still, that boy.\n"
 			"I wonder who he takes after?")

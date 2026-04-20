@@ -857,3 +857,19 @@ script Route201_EventScript_LedgeKid {
 
 	release
 }
+
+script Route201_SignScript_TrainerTips {
+	lock
+	msgbox("Trainer Tips!\p"
+			"Don't be shy! Talk to anyone and\n"
+			"everyone you happen to see.\p"
+			"By talking to people, you will get\n"
+			"invaluable information and advice.")
+	release
+}
+
+script Route201_SignScript_SandgemTown {
+	lock
+	msgbox("{RIGHT_ARROW} Sandgem Town")
+	release
+}

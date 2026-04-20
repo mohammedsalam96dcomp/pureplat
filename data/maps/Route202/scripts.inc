@@ -467,6 +467,36 @@ Route202_EventScript_Youngster::
 	return
 
 
+Route202_SignScript_Sandgem::
+# 334 "data/maps/Route202/scripts.pory"
+	lock
+# 335 "data/maps/Route202/scripts.pory"
+	msgbox Route202_SignScript_Sandgem_Text_0
+# 336 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+Route202_SignScript_TrainerTips::
+# 341 "data/maps/Route202/scripts.pory"
+	lock
+# 342 "data/maps/Route202/scripts.pory"
+	msgbox Route202_SignScript_TrainerTips_Text_0
+# 347 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
+Route202_SignScript_Jubilife::
+# 351 "data/maps/Route202/scripts.pory"
+	lock
+# 352 "data/maps/Route202/scripts.pory"
+	msgbox Route202_SignScript_Jubilife_Text_0
+# 353 "data/maps/Route202/scripts.pory"
+	release
+	return
+
+
 # 53 "data/maps/Route202/scripts.pory"
 Route202_EventScript_GoSeeMom_Movement_0:
 # 53 "data/maps/Route202/scripts.pory"
@@ -866,3 +896,19 @@ Route202_EventScript_Youngster_Text_0:
 	.string "Some only come out at night.\p"
 	.string "I'll keep looking till I've seen them\n"
 	.string "all!$"
+
+Route202_SignScript_Sandgem_Text_0:
+# 335 "data/maps/Route202/scripts.pory"
+	.string "{DOWN_ARROW}Sandgem Town$"
+
+Route202_SignScript_TrainerTips_Text_0:
+# 342 "data/maps/Route202/scripts.pory"
+	.string "Trainer Tips!\p"
+	.string "All Pokémon that are involved in\n"
+	.string "a battle earn Exp. Points!\p"
+	.string "The more your Pokémon battle,\n"
+	.string "the stronger they will become.$"
+
+Route202_SignScript_Jubilife_Text_0:
+# 352 "data/maps/Route202/scripts.pory"
+	.string "{UP_ARROW}Jubilife City$"

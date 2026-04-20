@@ -2,3 +2,9 @@ raw `
 Route219_MapScripts::
 	.byte 0
 `
+
+script Route219_SignScript_SandgemBeach {
+	lock
+	msgbox("{DOWN_ARROW} Sandgem Beach")
+	release
+}

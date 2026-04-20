@@ -1075,6 +1075,26 @@ Route201_EventScript_LedgeKid::
 	return
 
 
+Route201_SignScript_TrainerTips::
+# 862 "data/maps/Route201/scripts.pory"
+	lock
+# 863 "data/maps/Route201/scripts.pory"
+	msgbox Route201_SignScript_TrainerTips_Text_0
+# 868 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
+Route201_SignScript_SandgemTown::
+# 872 "data/maps/Route201/scripts.pory"
+	lock
+# 873 "data/maps/Route201/scripts.pory"
+	msgbox Route201_SignScript_SandgemTown_Text_0
+# 874 "data/maps/Route201/scripts.pory"
+	release
+	return
+
+
 # 54 "data/maps/Route201/scripts.pory"
 Route201_EventScript_BarryScene_Movement_0:
 # 54 "data/maps/Route201/scripts.pory"
@@ -1976,3 +1996,15 @@ Route201_EventScript_LedgeKid_Text_0:
 # 854 "data/maps/Route201/scripts.pory"
 	.string "That ledge is one way. Jump down\n"
 	.string "for a shortcut to Twinleaf Town!$"
+
+Route201_SignScript_TrainerTips_Text_0:
+# 863 "data/maps/Route201/scripts.pory"
+	.string "Trainer Tips!\p"
+	.string "Don't be shy! Talk to anyone and\n"
+	.string "everyone you happen to see.\p"
+	.string "By talking to people, you will get\n"
+	.string "invaluable information and advice.$"
+
+Route201_SignScript_SandgemTown_Text_0:
+# 873 "data/maps/Route201/scripts.pory"
+	.string "{RIGHT_ARROW} Sandgem Town$"

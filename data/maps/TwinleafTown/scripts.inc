@@ -882,7 +882,7 @@ TwinleafTown_EventScript_PlayersHouseSign_Text_0:
 
 TwinleafTown_EventScript_RivalsHouseSign_Text_0:
 # 138 "data/maps/TwinleafTown/scripts.pory"
-	.string "Barry's House$"
+	.string "{BARRY}'s House$"
 
 TwinleafTown_EventScript_TwinleafSign_Text_0:
 # 145 "data/maps/TwinleafTown/scripts.pory"
@@ -892,7 +892,7 @@ TwinleafTown_EventScript_TwinleafSign_Text_0:
 TwinleafTown_EventScript_TearingOff_Text_0:
 # 274 "data/maps/TwinleafTown/scripts.pory"
 	.string "Hiya, {PLAYER}.\n"
-	.string "You're looking for Barry?\p"
+	.string "You're looking for {BARRY}?\p"
 	.string "He just went tearing off a little\n"
 	.string "while ago.\p"
 	.string "He's probably not gone too far.\n"
@@ -915,6 +915,6 @@ TwinleafTown_EventScript_Woman_Text_1:
 BarryLooking::
 # 284 "data/maps/TwinleafTown/scripts.pory"
 	.string "Hiya, {PLAYER}.\n"
-	.string "Barry was looking for you.\p"
+	.string "{BARRY} was looking for you.\p"
 	.string "I think he's home now.\n"
 	.string "Why don't you go check it out?$"

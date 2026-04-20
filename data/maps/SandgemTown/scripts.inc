@@ -596,6 +596,56 @@ SandgemTown_EventScript_Man::
 	return
 
 
+SandgemTown_SignScript_Lab::
+# 458 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 459 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_SignScript_Lab_Text_0
+# 460 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_SignScript_RivalHouse::
+# 464 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 465 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_SignScript_RivalHouse_Text_0
+# 466 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_SignScript_Town::
+# 470 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 471 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_SignScript_Town_Text_0
+# 472 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_SignScript_Center::
+# 476 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 477 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_SignScript_Center_Text_0
+# 478 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
+SandgemTown_SignScript_Mart::
+# 482 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 483 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_SignScript_Mart_Text_0
+# 484 "data/maps/SandgemTown/scripts.pory"
+	release
+	return
+
+
 # 39 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_0:
 # 39 "data/maps/SandgemTown/scripts.pory"
@@ -1162,3 +1212,23 @@ SandgemTown_EventScript_Man_Text_0:
 	.string "It's a Pokédex, isn't it?!\p"
 	.string "You're off to see all kinds of\n"
 	.string "Pokémon now! Lucky you!$"
+
+SandgemTown_SignScript_Lab_Text_0:
+# 459 "data/maps/SandgemTown/scripts.pory"
+	.string "Pokémon Research Lab$"
+
+SandgemTown_SignScript_RivalHouse_Text_0:
+# 465 "data/maps/SandgemTown/scripts.pory"
+	.string "{RIVAL}'s House$"
+
+SandgemTown_SignScript_Town_Text_0:
+# 471 "data/maps/SandgemTown/scripts.pory"
+	.string "Sangdem Town\nTown of Sand!$"
+
+SandgemTown_SignScript_Center_Text_0:
+# 477 "data/maps/SandgemTown/scripts.pory"
+	.string "Heal Your Pokémon!\nPokémon Center$"
+
+SandgemTown_SignScript_Mart_Text_0:
+# 483 "data/maps/SandgemTown/scripts.pory"
+	.string "All your Item Needs Fulfilled!\nPokémon Mart!$"

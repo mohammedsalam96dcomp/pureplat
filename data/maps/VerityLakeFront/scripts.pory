@@ -22,3 +22,14 @@ script VerityLakeFront_EventScript_EnterLakeVerity {
 
 	release
 }
+
+script VerityLakeFront_SignScript_LakeVerity {
+	lock
+	msgbox("Lake Verity Ahead\p"
+			"According to legend, this lake is home\n"
+			"to the Pokémon said to be “The Being of\l"
+			"Emotion.”\p"
+			"It is because of this Pokémon that\n"
+			"people can experience sorrow and joy.")
+	release
+}

@@ -453,3 +453,33 @@ script SandgemTown_EventScript_Man {
 
 	release
 }
+
+script SandgemTown_SignScript_Lab {
+	lock
+	msgbox("Pokémon Research Lab")
+	release
+}
+
+script SandgemTown_SignScript_RivalHouse {
+	lock
+	msgbox("{RIVAL}'s House")
+	release
+}
+
+script SandgemTown_SignScript_Town {
+	lock
+	msgbox("Sangdem Town\nTown of Sand!")
+	release
+}
+
+script SandgemTown_SignScript_Center {
+	lock
+	msgbox("Heal Your Pokémon!\nPokémon Center")
+	release
+}
+
+script SandgemTown_SignScript_Mart {
+	lock
+	msgbox("All your Item Needs Fulfilled!\nPokémon Mart!")
+	release
+}

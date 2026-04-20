@@ -20,7 +20,7 @@
     },
     {
       "map": "MAP_JUBILIFE_CITY",
-      "offset": -20,
+      "offset": -23,
       "direction": "up"
     }
   ],
@@ -197,5 +197,30 @@
       "script": "Route202_EventScript_CatchingTutorial5"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 25,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route202_SignScript_Sandgem"
+    },
+    {
+      "type": "sign",
+      "x": 16,
+      "y": 16,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route202_SignScript_TrainerTips"
+    },
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Route202_SignScript_Jubilife"
+    }
+  ]
 }

@@ -32,5 +32,5 @@ TwinleafTownHouse1_EventScript_Man_Text_0:
 
 TwinleafTownHouse1_EventScript_Man_Text_1:
 # 13 "data/maps/TwinleafTownHouse1/scripts.pory"
-	.string "You're off to hang with Barry\n"
+	.string "You're off to hang with {BARRY}\n"
 	.string "again, right? You two sure are tight!$"

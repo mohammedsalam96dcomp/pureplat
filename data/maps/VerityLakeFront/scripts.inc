@@ -24,6 +24,16 @@ VerityLakeFront_EventScript_EnterLakeVerity::
 	return
 
 
+VerityLakeFront_SignScript_LakeVerity::
+# 27 "data/maps/VerityLakeFront/scripts.pory"
+	lock
+# 28 "data/maps/VerityLakeFront/scripts.pory"
+	msgbox VerityLakeFront_SignScript_LakeVerity_Text_0
+# 34 "data/maps/VerityLakeFront/scripts.pory"
+	release
+	return
+
+
 # 17 "data/maps/VerityLakeFront/scripts.pory"
 VerityLakeFront_EventScript_EnterLakeVerity_Movement_0:
 # 17 "data/maps/VerityLakeFront/scripts.pory"
@@ -38,3 +48,12 @@ VerityLakeFront_EventScript_EnterLakeVerity_Text_0:
 	.string "that legendary Pokémon.\p"
 	.string "Trust me on this one. It's here.\n"
 	.string "It even says so on the sign!$"
+
+VerityLakeFront_SignScript_LakeVerity_Text_0:
+# 28 "data/maps/VerityLakeFront/scripts.pory"
+	.string "Lake Verity Ahead\p"
+	.string "According to legend, this lake is home\n"
+	.string "to the Pokémon said to be “The Being of\l"
+	.string "Emotion.”\p"
+	.string "It is because of this Pokémon that\n"
+	.string "people can experience sorrow and joy.$"
