@@ -1377,6 +1377,7 @@ static void NamingScreen_CreateMonIcon(void);
 static void NamingScreen_CreateWaldaDadIcon(void);
 static void NamingScreen_CreateCodeIcon(void);
 static void NamingScreen_CreateRivalIcon(void);
+static void NamingScreen_CreateBarryIcon(void);
 
 static void (*const sIconFunctions[])(void) =
 {
@@ -1387,6 +1388,7 @@ static void (*const sIconFunctions[])(void) =
     NamingScreen_CreateWaldaDadIcon,
     NamingScreen_CreateCodeIcon,
     NamingScreen_CreateRivalIcon,
+    NamingScreen_CreateBarryIcon
 };
 
 static void CreateInputTargetIcon(void)
@@ -1442,6 +1444,15 @@ static void NamingScreen_CreateCodeIcon(void)
     u8 spriteId;
     spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_MYSTERY_GIFT_MAN, SpriteCallbackDummy, 56, 37, 0);
     gSprites[spriteId].oam.priority = 3;
+}
+
+static void NamingScreen_CreateBarryIcon(void)
+{
+    u8 spriteId;
+
+    spriteId = CreateObjectGraphicsSprite(OBJ_EVENT_GFX_BARRY, SpriteCallbackDummy, 56, 37, 0);
+    gSprites[spriteId].oam.priority = 3;
+    StartSpriteAnim(&gSprites[spriteId], ANIM_STD_GO_SOUTH);
 }
 
 static const union AnimCmd sAnim_Rival[] =
@@ -1792,6 +1803,7 @@ static void (*const sDrawTextEntryBoxFuncs[])(void) =
     [NAMING_SCREEN_PLAYER]     = DrawNormalTextEntryBox,
     [NAMING_SCREEN_BOX]        = DrawNormalTextEntryBox,
     [NAMING_SCREEN_CAUGHT_MON] = DrawMonTextEntryBox,
+    [NAMING_SCREEN_BARRY]      = DrawNormalTextEntryBox, 
     [NAMING_SCREEN_NICKNAME]   = DrawMonTextEntryBox,
     [NAMING_SCREEN_WALDA]      = DrawNormalTextEntryBox,
     [NAMING_SCREEN_CODE]       = DrawNormalTextEntryBox,
@@ -2212,12 +2224,23 @@ static const struct NamingScreenTemplate sRivalNamingScreenTemplate =
     .title = sText_RivalsName,
 };
 
+static const struct NamingScreenTemplate sBarryNamingScreenTemplate =
+{
+    .copyExistingString = FALSE,
+    .maxChars = PLAYER_NAME_LENGTH,
+    .iconFunction = 7,
+    .addGenderIcon = FALSE,
+    .initialPage = KBPAGE_LETTERS_UPPER,
+    .title = sText_RivalsName,
+};
+
 static const struct NamingScreenTemplate *const sNamingScreenTemplates[] =
 {
     [NAMING_SCREEN_PLAYER]     = &sPlayerNamingScreenTemplate,
     [NAMING_SCREEN_BOX]        = &sPCBoxNamingTemplate,
     [NAMING_SCREEN_CAUGHT_MON] = &sMonNamingScreenTemplate,
     [NAMING_SCREEN_NICKNAME]   = &sMonNamingScreenTemplate,
+    [NAMING_SCREEN_BARRY]      = &sBarryNamingScreenTemplate,
     [NAMING_SCREEN_WALDA]      = &sWaldaWordsScreenTemplate,
     [NAMING_SCREEN_CODE]       = &sCodeScreenTemplate,
     [NAMING_SCREEN_RIVAL]      = &sRivalNamingScreenTemplate,

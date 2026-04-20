@@ -351,7 +351,7 @@ MAXIE          = FD 0B
 KYOGRE         = FD 0C
 GROUDON        = FD 0D
 REGION         = FD 0E
-
+BARRY         =  FD 0F
 @ battle string placeholders
 
 B_BUFF1 = FD 00
@@ -427,7 +427,6 @@ B_PARTNER_NAME_WITH_CLASS = FD 44
 B_ATK_TRAINER_NAME_WITH_CLASS = FD 45
 B_EFF_TEAM1 = FD 46
 B_EFF_TEAM2 = FD 47
-B_RIVAL_NAME = FD 48
 
 @ indicates the end of a town/city name (before " TOWN" or " CITY")
 NAME_END = FC 00
