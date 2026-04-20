@@ -1628,3 +1628,14 @@ const struct Tileset gTileset_PokemonCenterPlat =
     .metatileAttributes = gMetatileAttributes_PokemonCenterPlat,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Jubilife =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Jubilife,
+    .palettes = gTilesetPalettes_Jubilife,
+    .metatiles = gMetatiles_Jubilife,
+    .metatileAttributes = gMetatileAttributes_Jubilife,
+    .callback = NULL,
+};
