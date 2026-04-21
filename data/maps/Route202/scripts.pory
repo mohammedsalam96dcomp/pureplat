@@ -252,7 +252,7 @@ script Route202_EventScript_CatchingTutorial {
 		msgbox("{SPEAKER NAME_RIVAL}Giggle. . .\n"
 				"See? Isn't it neat?\p"
 				"Actually, it's better to lower your\n"
-				"target's HP more than I did\p"
+				"target's HP more than I did.\p"
 				"It's important to get the Pokémon's\n"
 				"HP down as low as possible.\p"
 				"This is because a healthy Pokémon\n"
