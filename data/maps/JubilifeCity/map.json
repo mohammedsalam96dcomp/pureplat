@@ -17,13 +17,18 @@
       "map": "MAP_ROUTE202",
       "offset": 30,
       "direction": "down"
+    },
+    {
+      "map": "MAP_ROUTE204",
+      "offset": 32,
+      "direction": "up"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_VAR_0",
       "x": 46,
-      "y": 49,
+      "y": 48,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -36,7 +41,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_STEVEN",
       "x": 49,
-      "y": 33,
+      "y": 32,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -50,7 +55,7 @@
   "warp_events": [
     {
       "x": 40,
-      "y": 35,
+      "y": 34,
       "elevation": 0,
       "dest_map": "MAP_JUBILIFE_CITY_POKEMON_SCHOOL",
       "dest_warp_id": "0"
@@ -60,7 +65,7 @@
     {
       "type": "trigger",
       "x": 45,
-      "y": 55,
+      "y": 54,
       "elevation": 0,
       "var": "VAR_JUBILIFE_CITY_STATE",
       "var_value": "1",
@@ -69,7 +74,7 @@
     {
       "type": "trigger",
       "x": 46,
-      "y": 55,
+      "y": 54,
       "elevation": 0,
       "var": "VAR_JUBILIFE_CITY_STATE",
       "var_value": "1",
@@ -78,7 +83,7 @@
     {
       "type": "trigger",
       "x": 47,
-      "y": 55,
+      "y": 54,
       "elevation": 0,
       "var": "VAR_JUBILIFE_CITY_STATE",
       "var_value": "1",

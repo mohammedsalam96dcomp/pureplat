@@ -1867,7 +1867,7 @@
       "id": "LAYOUT_JUBILIFE_CITY",
       "name": "JubilifeCity_Layout",
       "width": 70,
-      "height": 59,
+      "height": 58,
       "primary_tileset": "gTileset_GeneralSinnoh",
       "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/JubilifeCity/border.bin",
@@ -1889,9 +1889,19 @@
       "width": 10,
       "height": 10,
       "primary_tileset": "gTileset_BuildingSinnoh",
-      "secondary_tileset": "gTileset_Jubilife",
+      "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/JubilifeCity_Condo_1F/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_Condo_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE204",
+      "name": "Route204_Layout",
+      "width": 32,
+      "height": 37,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_Jubilife",
+      "border_filepath": "data/layouts/Route204/border.bin",
+      "blockdata_filepath": "data/layouts/Route204/map.bin"
     }
   ]
 }

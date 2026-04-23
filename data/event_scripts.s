@@ -957,3 +957,5 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/JubilifeCity_PokemonSchool/scripts.inc"
 
 	.include "data/maps/JubilifeCity_Condo_1F/scripts.inc"
+
+	.include "data/maps/Route204/scripts.inc"
