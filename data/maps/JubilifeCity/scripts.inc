@@ -32,7 +32,7 @@ JubilifeCity_EventScript_GoToTrainerSchool::
 	compare VAR_TEMP_1, 46
 	goto_if_eq JubilifeCity_EventScript_GoToTrainerSchool_3
 # 26 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 47, 49
+	setobjectxy 1, 47, 48
 JubilifeCity_EventScript_GoToTrainerSchool_1:
 # 29 "data/maps/JubilifeCity/scripts.pory"
 	applymovement 1, JubilifeCity_EventScript_GoToTrainerSchool_Movement_0
@@ -207,12 +207,12 @@ JubilifeCity_EventScript_GoToTrainerSchool_44:
 
 JubilifeCity_EventScript_GoToTrainerSchool_2:
 # 22 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 45, 49
+	setobjectxy 1, 45, 48
 	goto JubilifeCity_EventScript_GoToTrainerSchool_1
 
 JubilifeCity_EventScript_GoToTrainerSchool_3:
 # 24 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 46, 49
+	setobjectxy 1, 46, 48
 	goto JubilifeCity_EventScript_GoToTrainerSchool_1
 
 JubilifeCity_EventScript_GoToTrainerSchool_8:

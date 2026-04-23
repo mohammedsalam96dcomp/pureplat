@@ -1896,7 +1896,7 @@
     {
       "id": "LAYOUT_ROUTE204",
       "name": "Route204_Layout",
-      "width": 32,
+      "width": 34,
       "height": 37,
       "primary_tileset": "gTileset_GeneralSinnoh",
       "secondary_tileset": "gTileset_Jubilife",

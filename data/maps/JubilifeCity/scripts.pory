@@ -8,7 +8,7 @@ mapscripts JubilifeCity_MapScripts{
 script JubilifeCity_EventScript_OnTransition {
 	call(Common_EventScript_SetupRivalGfxId)
 	if (var(VAR_JUBILIFE_CITY_STATE) == 2) {
-		setobjectxyperm(LOCALID_LOOKER, 58, 17)
+		setobjectxyperm(LOCALID_LOOKER, 58, 16)
 		turnobject(LOCALID_LOOKER, DIR_SOUTH)
 	}
 }
@@ -19,11 +19,11 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
 
 	if (var(VAR_TEMP_1) == 45) {
-		setobjectxy(LOCALID_LUCASDAWN, 45, 49)
+		setobjectxy(LOCALID_LUCASDAWN, 45, 48)
 	} elif (var(VAR_TEMP_1) == 46) {
-		setobjectxy(LOCALID_LUCASDAWN, 46, 49)
+		setobjectxy(LOCALID_LUCASDAWN, 46, 48)
 	} else {
-		setobjectxy(LOCALID_LUCASDAWN, 47, 49)
+		setobjectxy(LOCALID_LUCASDAWN, 47, 48)
 	}
 
 	applymovement(LOCALID_LUCASDAWN, moves(delay_16*2, walk_down*3, emote_exclamation_mark, delay_16*3, walk_down*2))
@@ -197,7 +197,7 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	waitmovement(LOCALID_LOOKER)
 
 	removeobject(LOCALID_LOOKER)
-	setobjectxyperm(LOCALID_LOOKER, 58, 17)
+	setobjectxyperm(LOCALID_LOOKER, 58, 16)
 	// addobject(LOCALID_LOOKER)
 	turnobject(LOCALID_LOOKER, DIR_SOUTH)
 
