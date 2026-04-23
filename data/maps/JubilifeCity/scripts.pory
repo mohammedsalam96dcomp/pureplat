@@ -1,0 +1,255 @@
+const LOCALID_LUCASDAWN = 1
+const LOCALID_LOOKER = 2
+
+mapscripts JubilifeCity_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION: JubilifeCity_EventScript_OnTransition
+}
+
+script JubilifeCity_EventScript_OnTransition {
+	call(Common_EventScript_SetupRivalGfxId)
+	if (var(VAR_JUBILIFE_CITY_STATE) == 2) {
+		setobjectxyperm(LOCALID_LOOKER, 58, 17)
+		turnobject(LOCALID_LOOKER, DIR_SOUTH)
+	}
+}
+
+script JubilifeCity_EventScript_GoToTrainerSchool {
+	lock
+
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
+
+	if (var(VAR_TEMP_1) == 45) {
+		setobjectxy(LOCALID_LUCASDAWN, 45, 49)
+	} elif (var(VAR_TEMP_1) == 46) {
+		setobjectxy(LOCALID_LUCASDAWN, 46, 49)
+	} else {
+		setobjectxy(LOCALID_LUCASDAWN, 47, 49)
+	}
+
+	applymovement(LOCALID_LUCASDAWN, moves(delay_16*2, walk_down*3, emote_exclamation_mark, delay_16*3, walk_down*2))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	checkplayergender
+
+	if(var(VAR_RESULT) == MALE) {
+		msgbox("{SPEAKER NAME_RIVAL}Hi {PLAYER}!\n"
+				"Are you catching Pokémon?")
+		getpartysize
+		buffernumberstring(STR_VAR_1, VAR_RESULT)
+		if(var(VAR_RESULT) >=4) {
+			msgbox("{SPEAKER NAME_RIVAL}Wow! You've already got {STR_VAR_1} Pokémon\n"
+					"with you!\p"
+					"At that pace, your Pokédex should\n"
+					"be full in no time at all!")
+		} else {
+			msgbox("{SPEAKER NAME_RIVAL}. . .Um. . .\p"
+					"I think youd'd feel a lot safer if you\n"
+					"were to catch some more.\p"
+					"You know, like when you need to travel\n"
+					"to faraway places.")
+		}
+		msgbox("{SPEAKER NAME_RIVAL}Oh, I know! Don't you think its\n"
+				"better to know more about Pokémon?\p"
+				"Sure it is!\n"
+				"I know just the place.\p"
+				"Come on!\n"
+				"Don't be shy. Follow me!"
+		)
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Hey, {PLAYER}!\n"
+				"How many Pokémon have you caught?")
+		getpartysize
+		buffernumberstring(STR_VAR_1, VAR_RESULT)
+		if(var(VAR_RESULT) >=4) {
+			msgbox("{SPEAKER NAME_RIVAL}Whoa!\n"
+					"You already have {STR_VAR_1} with you!")
+		} else {
+			msgbox("{SPEAKER NAME_RIVAL}Huh?\n"
+					"I think you should catch some more.\p"
+					"It might be more of a challenge\n"
+					"raising a lot of Pokémon. . .\p"
+					"But it's worth it. The more Pokémon\n"
+					"you have, the happier you'll be.")
+		}
+		msgbox("{SPEAKER NAME_RIVAL}Hey, that's right! Don't you think it's\n"
+				"better to know more about Pokémon?\p"
+				"Sure it is!\n"
+				"There's this great place for that.\p"
+				"Come on! It's all right.\n"
+				"Follow me.")
+		closemessage
+	}
+
+	if (var(VAR_TEMP_1) == 45) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right))
+		applymovement(LOCALID_LUCASDAWN, moves(walk_right, walk_up))
+		waitmovement(LOCALID_LUCASDAWN)
+	} elif (var(VAR_TEMP_1) == 47) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_left))
+		applymovement(LOCALID_LUCASDAWN, moves(walk_left, walk_up))
+		waitmovement(LOCALID_LUCASDAWN)
+	} 
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*17))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up*17))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	checkplayergender
+
+	if(var(VAR_RESULT) == MALE) { 
+		msgbox("{SPEAKER NAME_RIVAL}That man. . .\n"
+				"What is he doing?")
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}That guy. . .\n"
+				"What's he doing?")
+		closemessage
+	}
+
+	applymovement(LOCALID_LOOKER, moves(face_left, delay_16*2, face_down, delay_16*2, walk_left, walk_fast_left*5, delay_16*2, face_right, delay_16*2, face_up, delay_16*2))
+	waitmovement(LOCALID_LOOKER)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right, walk_up))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up*2))
+	applymovement(LOCALID_LOOKER, moves(delay_16*2, walk_fast_right*3))
+	waitmovement(OBJ_EVENT_ID_PLAYER)
+
+	if(var(VAR_RESULT) == MALE) { 
+		msgbox("{SPEAKER NAME_RIVAL}Umm. . .", MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Uh, excuse. . .", MSGBOX_AUTOCLOSE)
+	}
+	applymovement(LOCALID_LOOKER, moves(emote_exclamation_mark, face_down))
+	waitmovement(LOCALID_LOOKER)
+	msgbox("{SPEAKER NAME_MYSTERIOUS}WHAAAT?!\p"
+			". . .How did you know?\p"
+			"How did you unmask me as a member of\n"
+			"the International Police?!")
+	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_up))
+	waitmovement(LOCALID_LUCASDAWN)
+	if(var(VAR_RESULT) == MALE) { 
+		msgbox("{SPEAKER NAME_RIVAL}Huh? What? I beg your pardon?\n"
+				"I was just making conversation. . .")
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}Huh? What? Are you kidding\n"
+				"I was just making small talk. . .")
+	}
+
+	msgbox("{SPEAKER NAME_MYSTERIOUS}. . .Heh. You claim you were\n"
+			"only making conversation, do you?\p"
+			"But, I know better not to believe that.\n"
+			"No, no, no.\p"
+			"You recognized right away that I was\n"
+			"someone extraordinary.\p"
+			"That is why you spoke to me, is it not?\n"
+			"Your power of observation is fearsome!\p"
+			"Quite admirable, you are!\p"
+			"Now that my cover has been blown, let\n"
+			"me introduce myself.\p"
+			"I am a globe-trotting elite of the\n"
+			"International Police.\p"
+			"My name. . . Ah, no, I shall inform you\n"
+			"only of my code name.\p"
+			"{SPEAKER NAME_LOOKER}My code name, it is Looker.\n"
+			"It is what they all call me.\p"
+			"Incidentally, is the saying,  “Don't be\n"
+			"a thief!” familiar to you?", MSGBOX_YESNO)
+	if (var(VAR_RESULT) == 1) {
+		msgbox("{SPEAKER NAME_LOOKER}Yes, that is correct.\n"
+				"Taking what belongs to others is wrong.")
+	} else {
+		msgbox("{SPEAKER NAME_LOOKER}No? You claim to not know it?\n"
+				"How could that be?\p"
+				"Perhaps your mama has said it, but you\n"
+				"have forgotten it, like usual?\p"
+				"Now listen, my friends. It is wrong to\n"
+				"take what belongs to others.")
+	}
+	msgbox("{SPEAKER NAME_LOOKER}Unfortunately, there are apparently\n"
+			"those who do not heed those words.\p"
+			"In Sinnoh, in fact, there are criminals\n"
+			"stealing the Pokémon of others.\p"
+			"I have, therefore, been on the lookout\n"
+			"for characters arousing my suspicion.")
+
+	applymovement(LOCALID_LOOKER, moves(face_left, delay_16*3, face_right, delay_16*3, face_down))
+	waitmovement(LOCALID_LOOKER)
+
+	msgbox("{SPEAKER NAME_LOOKER}I have a request.\p"
+			"If you were to see me again, I ask that\n"
+			"you not talk to me, for I am on duty.\p"
+			". . .Actually, yes, yes you may speak to\n"
+			"me. You must.\p"
+			"Not because I am lonely, no, no!\n"
+			"You must inform me of bad guys!\l"
+			"You must inform me of any happenings!")
+	closemessage
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16, face_right))
+	applymovement(LOCALID_LUCASDAWN, moves(delay_16, face_right))
+	applymovement(LOCALID_LOOKER, moves(walk_fast_right*3)) 
+	waitmovement(LOCALID_LOOKER)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16, face_up))
+	applymovement(LOCALID_LUCASDAWN, moves(delay_16, face_up))
+	applymovement(LOCALID_LOOKER, moves(face_left, delay_16, walk_up, walk_fast_up*4))
+	waitmovement(LOCALID_LOOKER)
+
+	removeobject(LOCALID_LOOKER)
+	setobjectxyperm(LOCALID_LOOKER, 58, 17)
+	// addobject(LOCALID_LOOKER)
+	turnobject(LOCALID_LOOKER, DIR_SOUTH)
+
+	checkplayergender
+	
+	if(var(VAR_RESULT) == MALE) {
+		msgbox("{SPEAKER NAME_RIVAL}. . .Working for the International\n"
+				"Police must be hard.")
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}. . .Working for the International\n"
+				"Police sounds hard.")
+		closemessage
+	}
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16*3, face_left))
+	applymovement(LOCALID_LUCASDAWN, moves(delay_16*2, walk_down, walk_left*2))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	if(var(VAR_RESULT) == MALE) {
+		msgbox("{SPEAKER NAME_RIVAL}{PLAYER}, here it is.\n"
+				"It's the Trainers School.\l"
+				"The name says it all!")
+		closemessage
+		applymovement(LOCALID_LUCASDAWN, moves(walk_right, walk_up, walk_right))
+		waitmovement(LOCALID_LUCASDAWN)
+		msgbox("{SPEAKER NAME_RIVAL}I saw your friend {BARRY} go in\n"
+				"earlier.\p"
+				"He could still be in there studying.\n"
+				"OK, bye now!")
+		closemessage
+	} else {
+		msgbox("{SPEAKER NAME_RIVAL}{PLAYER}, here we are.\n"
+				"This is the Trainers School.\l"
+				"The name says it all!")
+		closemessage
+		applymovement(LOCALID_LUCASDAWN, moves(walk_right, walk_up, walk_right))
+		waitmovement(LOCALID_LUCASDAWN)
+		msgbox("{SPEAKER NAME_RIVAL}Your pal {BARRY} went in earlier.\n"
+				"He might still be studying in there.\p"
+				"OK, see you around!")
+		closemessage
+	}
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16*2, face_down))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_down*6))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	setflag(FLAG_HIDE_DAWN_JUBILIFE_CITY)
+	removeobject(LOCALID_LUCASDAWN)
+
+	setvar(VAR_JUBILIFE_CITY_STATE, 2)
+
+	release
+}

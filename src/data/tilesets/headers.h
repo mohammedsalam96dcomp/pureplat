@@ -1639,3 +1639,14 @@ const struct Tileset gTileset_Jubilife =
     .metatileAttributes = gMetatileAttributes_Jubilife,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SchoolSinnoh =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SchoolSinnoh,
+    .palettes = gTilesetPalettes_SchoolSinnoh,
+    .metatiles = gMetatiles_SchoolSinnoh,
+    .metatileAttributes = gMetatileAttributes_SchoolSinnoh,
+    .callback = NULL,
+};

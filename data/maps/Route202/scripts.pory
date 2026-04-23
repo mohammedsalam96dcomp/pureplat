@@ -264,7 +264,7 @@ script Route202_EventScript_CatchingTutorial {
 				"started, I'll give you ten\l"
 				"Poké Balls!")
 		closemessage
-		giveitem(ITEM_POKE_BALL, 10)
+		giveitem(ITEM_POKE_BALL, 20)
 		msgbox("{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
 				"it will be safer on long trips.\p"
 				"Plus, it will be a lot more fun\n"
@@ -282,6 +282,7 @@ script Route202_EventScript_CatchingTutorial {
 	special(LoadPlayerParty)
 
 	setvar(VAR_ROUTE202_STATE, 3)
+	setvar(VAR_JUBILIFE_CITY_STATE, 1)
 	clearflag(FLAG_FOLLOWER_POKEMON)
 
 	release

@@ -953,3 +953,7 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/SandgemTownMart/scripts.inc"
 
 	.include "data/maps/JubilifeCity/scripts.inc"
+
+	.include "data/maps/JubilifeCity_PokemonSchool/scripts.inc"
+
+	.include "data/maps/JubilifeCity_Condo_1F/scripts.inc"

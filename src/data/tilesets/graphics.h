@@ -3218,3 +3218,22 @@ const u16 gTilesetPalettes_Jubilife[][16] =
 };
 
 const u32 gTilesetTiles_Jubilife[] = INCBIN_U32("data/tilesets/secondary/jubilife/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_SchoolSinnoh[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/school_sinnoh/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_SchoolSinnoh[] = INCBIN_U32("data/tilesets/secondary/school_sinnoh/tiles.4bpp.lz");

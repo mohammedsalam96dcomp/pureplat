@@ -5,7 +5,8 @@
     "gMapGroup_IndoorTwinleaf",
     "gMapGroup_IndoorSandgem",
     "gMapGroup_IndoorDynamic",
-    "gMapGroup_SpecialArea"
+    "gMapGroup_SpecialArea",
+    "gMapGroup_IndoorJubilife"
   ],
   "gMapGroup_TownsAndRoutes": [
     "TwinleafTown",
@@ -184,5 +185,9 @@
     "NavelRock_Down11",
     "NavelRock_Bottom",
     "TrainerHill_Elevator"
+  ],
+  "gMapGroup_IndoorJubilife": [
+    "JubilifeCity_PokemonSchool",
+    "JubilifeCity_Condo_1F"
   ]
 }

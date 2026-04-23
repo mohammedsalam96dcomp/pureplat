@@ -2031,7 +2031,6 @@
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0
 #define FLAG_HIDE_ROUTE_202_DAWN                                    0
-#define FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1                    0
 #define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0
 #define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0

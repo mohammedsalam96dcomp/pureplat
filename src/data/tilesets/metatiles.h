@@ -435,3 +435,6 @@ const u16 gMetatileAttributes_PokemonCenterPlat[] = INCBIN_U16("data/tilesets/se
 
 const u16 gMetatiles_Jubilife[] = INCBIN_U16("data/tilesets/secondary/jubilife/metatiles.bin");
 const u16 gMetatileAttributes_Jubilife[] = INCBIN_U16("data/tilesets/secondary/jubilife/metatile_attributes.bin");
+
+const u16 gMetatiles_SchoolSinnoh[] = INCBIN_U16("data/tilesets/secondary/school_sinnoh/metatiles.bin");
+const u16 gMetatileAttributes_SchoolSinnoh[] = INCBIN_U16("data/tilesets/secondary/school_sinnoh/metatile_attributes.bin");

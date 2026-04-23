@@ -10,6 +10,8 @@ enum SpeakerNames {
     SP_NAME_PROFESSOR,
     SP_NAME_RIVAL,
     SP_NAME_CYRUS,
+    SP_NAME_MYSTERIOUS,
+    SP_NAME_LOOKER,
     SP_NAME_COUNT
 };
 
