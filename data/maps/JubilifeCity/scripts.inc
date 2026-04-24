@@ -14,7 +14,7 @@ JubilifeCity_EventScript_OnTransition::
 
 JubilifeCity_EventScript_OnTransition_1:
 # 11 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxyperm 2, 58, 17
+	setobjectxyperm 2, 58, 16
 # 12 "data/maps/JubilifeCity/scripts.pory"
 	turnobject 2, DIR_SOUTH
 	return
@@ -154,7 +154,7 @@ JubilifeCity_EventScript_GoToTrainerSchool_36:
 # 199 "data/maps/JubilifeCity/scripts.pory"
 	removeobject 2
 # 200 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxyperm 2, 58, 17
+	setobjectxyperm 2, 58, 16
 # 202 "data/maps/JubilifeCity/scripts.pory"
 	turnobject 2, DIR_SOUTH
 # 204 "data/maps/JubilifeCity/scripts.pory"
