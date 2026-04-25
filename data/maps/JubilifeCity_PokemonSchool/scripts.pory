@@ -1,4 +1,167 @@
-raw `
-JubilifeCity_PokemonSchool_MapScripts::
-	.byte 0
-`
+mapscripts JubilifeCity_PokemonSchool_MapScripts{
+}
+
+
+script JubilifeCity_PokemonSchool_EventScripts_Items {
+	lock
+	faceplayer
+	msgbox("Pokémon are smart enough to use\n"
+			"items they're hiding.\p"
+			"But they won't know what to do with\n"
+			"man-made items like Potions and\l"
+			"Antidotes.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCity_PokemonSchool_EventScripts_Essay {
+	lock
+	faceplayer
+	msgbox("I wrote an essay in my notebook on\n"
+			"what makes a true Pokémon Trainer.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCity_PokemonSchool_EventScripts_Types {
+	lock
+	faceplayer
+	msgbox("We learned about Pokémon types\n"
+			"today. Umm. . .\p"
+			"Grass is weak to Fire,\p"
+			"Fire is weak to Water,\p"
+			"and Water is weak to Grass!", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCity_PokemonSchool_EventScripts_Pace {
+	lock
+	faceplayer
+	msgbox("It's perfectly fine for Trainers and\n"
+			"Pokémon to develop at their own pace.\p"
+			"If there is anything you're not familiar\n"
+			"with, you can look it up here.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCity_PokemonSchool_EventScripts_SchoolBoy {
+	lock
+	faceplayer
+
+	if(!flag(FLAG_DEFEATED_TRAINER_SCHOOL_BOY)) {
+		msgbox("Doing it is the best way to learn!\n"
+				"Can we get a battle with you?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 1) {
+			goto(JubilifeCity_PokemonSchool_EventScripts_Harrison)
+		} else {
+			msgbox("Aww! But battling is the best way\n"
+					"to learn about Pokémon!", MSGBOX_AUTOCLOSE)
+		}
+	} else{
+		goto(JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolBoy)
+	}
+
+	release
+}
+
+script JubilifeCity_PokemonSchool_EventScripts_SchoolGirl {
+	lock
+	faceplayer
+
+	if(!flag(FLAG_DEFEATED_TRAINER_SCHOOL_GIRL)) {
+		msgbox("I just became friends with my\n"
+				"Pokémon.\p"
+				"I'm not sure if we can do this\n"
+				"properly, but may we battle?", MSGBOX_YESNO)
+		if (var(VAR_RESULT) == 1) {
+			goto(JubilifeCity_PokemonSchool_EventScripts_Christine)
+		} else {
+			msgbox("Boo!\n"
+					"Where's your sense of adventure?\p"
+					"Don't be shy about talking to people\n"
+					"and getting into battles!", MSGBOX_AUTOCLOSE)
+		}
+	} else {
+		msgbox("I wonder if we could have done better\n"
+				"against you?\p"
+				"Like if I used Potions right when we\n"
+				"needed to.", MSGBOX_AUTOCLOSE)
+	}
+
+	release
+}
+
+
+script JubilifeCity_PokemonSchool_EventScripts_Harrison {
+	trainerbattle_single(
+		TRAINER_HARRISON,
+		format("Go!\nMy Pokémon, go!"),
+		format("Ugh. . .\nI didn't use items effectively."), 
+		JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolBoy
+	)
+}
+
+
+			
+script JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolBoy {
+	lock
+	if(flag(FLAG_DEFEATED_TRAINER_SCHOOL_GIRL)) {
+		if(!flag(FLAG_RECEIVED_POTION_SCHOOL)) {
+			msgbox("Whew! You're really good!\p"
+				"We've been studying every day. but\n"
+				"we were no match for you at all!\p"
+				"You'd be able to use this Potion\n"
+				"properly. Here you go!")
+			giveitem(ITEM_POTION)
+			if (var(VAR_RESULT) == FALSE) {
+				call(Common_EventScript_BagIsFull)
+			} else {
+				setflag(FLAG_RECEIVED_POTION_SCHOOL)
+				msgbox(GotPotion, MSGBOX_AUTOCLOSE)
+			}
+		} else {
+			msgbox(GotPotion, MSGBOX_AUTOCLOSE)
+		}
+	} else {
+		msgbox("It's hard to win if you don't have\n"
+		"some Pokémon to choose from.", MSGBOX_AUTOCLOSE)
+	}
+	setflag(FLAG_DEFEATED_TRAINER_SCHOOL_BOY)
+	release
+}
+
+script JubilifeCity_PokemonSchool_EventScripts_Christine {
+	trainerbattle_single(
+		TRAINER_CHRISTINE,
+		format("I need to try the things I learned\nbefore I forget them!"),
+		format("I like to study alot. . .\nI thought I could win. . ."), 
+		JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolGirl
+	)
+}
+
+script JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolGirl {
+	lock
+	if(!flag(FLAG_DEFEATED_TRAINER_SCHOOL_BOY)) {
+		msgbox("I wonder if we could have done better\n"
+				"against you?\p"
+				"Like if I used Potions right when we\n"
+				"needed to.", MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox("We were actually confident that we\n"
+			"would do pretty good.\p"
+			"But I'm completely impressed by how\n"
+			"tough you are.\p"
+			"If you'd like, talk to my friend and\n"
+			"get a nice item from him.", MSGBOX_AUTOCLOSE)
+	}
+	setflag(FLAG_DEFEATED_TRAINER_SCHOOL_GIRL)
+	release
+}
+
+
+text GotPotion {
+	"When a Potion is used, it restores the\n"
+	"HP, the health, of a Pokémon.\p"
+	"Being a good Trainer isn't only about\n"
+	"ordering your Pokémon around.\p"
+	"A superior Trainer knows how to use\n"
+	"items to the full advantage!"
+}

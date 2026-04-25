@@ -14,7 +14,8 @@
 #define TRAINER_SARAH                         7
 #define TRAINER_TYLER                         8
 #define TRAINER_GABRIELLE_1                   9
-#define TRAINER_GRUNT_PETALBURG_WOODS        10
+#define TRAINER_HARRISON                    578
+#define TRAINER_CHRISTINE                    10
 #define TRAINER_MARCEL                       11
 #define TRAINER_ALBERTO                      12
 #define TRAINER_ED                           13
@@ -582,7 +583,6 @@
 #define TRAINER_SYLVIA                      575
 #define TRAINER_LEONARDO                    576
 #define TRAINER_ATHENA                      577
-#define TRAINER_HARRISON                    578
 #define TRAINER_GRUNT_MT_CHIMNEY_2          579
 #define TRAINER_CLARENCE                    580
 #define TRAINER_TERRY                       581

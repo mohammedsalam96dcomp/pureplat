@@ -26,7 +26,15 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 		setobjectxy(LOCALID_LUCASDAWN, 47, 48)
 	}
 
-	applymovement(LOCALID_LUCASDAWN, moves(delay_16*2, walk_down*3, emote_exclamation_mark, delay_16*3, walk_down*2))
+	applymovement(LOCALID_LUCASDAWN, moves(delay_16*2, walk_down*3))
+	waitmovement(LOCALID_LUCASDAWN)
+
+	playse(SE_PIN)
+	applymovement(LOCALID_LUCASDAWN, moves(emote_exclamation_mark, delay_16))
+	waitmovement(LOCALID_LUCASDAWN)
+	waitse
+
+	applymovement(LOCALID_LUCASDAWN, moves( delay_16*2, walk_down*2))
 	waitmovement(LOCALID_LUCASDAWN)
 
 	checkplayergender
@@ -251,5 +259,169 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 
 	setvar(VAR_JUBILIFE_CITY_STATE, 2)
 
+	release
+}
+
+
+script JubilifeCity_EventScript_LookerVisitSchool {
+	lock
+	
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
+
+	playse(SE_PIN)
+	applymovement(LOCALID_LOOKER, moves(emote_exclamation_mark, delay_16*2))
+	waitmovement(LOCALID_LOOKER)
+	waitse
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
+	waitmovement(0)
+
+	if (var(VAR_TEMP_2) == 17) {
+		applymovement(LOCALID_LOOKER, moves(walk_down, walk_right))
+
+	} elif (var(VAR_TEMP_2) == 18) {
+		applymovement(LOCALID_LOOKER, moves(walk_down*2, walk_right))
+	} elif (var(VAR_TEMP_2) == 19) {
+		applymovement(LOCALID_LOOKER, moves(walk_down*3, walk_right))
+	} else {
+		applymovement(LOCALID_LOOKER, moves(walk_down*4, walk_right))
+	}
+	waitmovement(LOCALID_LOOKER)
+
+	msgbox("{SPEAKER NAME_LOOKER}Hello, my friend.\n"
+			"Have you visited the Trainers' School?\p"
+			"Did your friend not guide you there\n"
+			"earlier?", MSGBOX_AUTOCLOSE)
+
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
+	if (var(VAR_TEMP_2) == 17) {
+		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up, face_down))
+	} elif (var(VAR_TEMP_2) == 18) {
+		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up*2, face_down))
+	} elif (var(VAR_TEMP_2) == 19) {
+		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up*3, face_down))
+	} else {
+		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up*4, face_down))
+	}
+	waitmovement(LOCALID_LOOKER)
+
+	release
+}
+
+//POKETCH STUFF HERE
+
+
+script JubilifeCity_EventScript_GameKid1 {
+	lock
+
+	faceplayer
+	msgbox("I'm trading Pokémon with my buddy!", MSGBOX_AUTOCLOSE)
+
+	release
+}
+
+
+script JubilifeCity_EventScript_GameKid2 {
+	lock
+
+	faceplayer
+	msgbox("I made my Pokémon hold an item before\n"
+			"trading it.\p"
+			"That will make the other Trainer\n"
+			"double happy!", MSGBOX_AUTOCLOSE)
+
+	release
+}
+
+script JubilifeCity_EventScript_OldMan {
+	lock
+
+	faceplayer
+	msgbox("Hello, Trainer!\n"
+			"Do you know much about Pokémon?", MSGBOX_YESNO)
+
+	if(var(VAR_RESULT) == 1) {
+		msgbox("Ah, I see!\n"
+				"You are knowledgeable!\p"
+				"I imagine you wouldn't see the need\n"
+				"to visit the Trainers' School, then.\p"
+				"But do visit if you have the time.\n"
+				"You may discover something new!", MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox("Oh, you're not knowledgeable. . .\n"
+				"But not to worry!\l"
+				"There's the Trainers' School.\p"
+				"The school will teach you the\n"
+				"basics of Pokémon.", MSGBOX_AUTOCLOSE)
+	}
+	release
+}
+
+script JubilifeCity_EventScript_SchoolKid {
+	lock
+
+	faceplayer
+	msgbox("OK, set six Poké Balls in my\n"
+			"belt. . .\p"
+			"Yeah, that'll do it. At most, you\n"
+			"can have six Pokémon with you.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCity_EventScript_OldMan2 {
+	lock
+
+	faceplayer
+	msgbox("Jubilife City's built on land they\n"
+			"carved out of a mountain.\p"
+			"The people and Pokémon of Oreburgh\n"
+			"City helped out with that undertaking.", MSGBOX_AUTOCLOSE)
+
+	release
+}
+
+script JubilifeCity_EventScript_LittleGirl {
+	lock
+
+	faceplayer
+	msgbox("Did you see me on TV?\n"
+			"I was in an interview!", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCity_EventScript_AceTrainerF {
+	lock
+
+	faceplayer
+	msgbox("When you walk with your Pokémon,\n"
+			"they gradually grow friendlier.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+
+script JubilifeCity_EventScript_AceTrainerM {
+	lock
+
+	faceplayer
+	msgbox("Hiya, where'd you come from?\p"
+			". . .\p"
+			"Twinleaf Town, huh. . .\n"
+			"It's a nice place. Quiet and all.\p"
+			"Jubilife City is a big place, so it\n"
+			"might be a bit of a shock to you.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCity_EventScript_Clown1 {
+	lock
+
+	faceplayer
+
+	if(var(VAR_JUBILIFE_CITY_STATE) == 2) {
+		msgbox("Hi, there. You should stick around.\n"
+				"We're doing a Pokétch campaign soon.\p"
+				"Before it starts, I think you should\n"
+				"brush up at the Trainers' School.", MSGBOX_AUTOCLOSE)
+	}
 	release
 }

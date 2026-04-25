@@ -1,0 +1,33 @@
+raw `
+JubilifecityBuilding2F_MapScripts::
+	.byte 0
+`
+
+script JubilifeBuilding2F_EventScript_Youngster {
+	lock
+	faceplayer
+	msgbox("Did you know?\p"
+			"Some kinds of Pokémon evolve when\n"
+			"they get stronger from battling!\p"
+			"When they evolve, they can take on\n"
+			"completely different forms!", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeBuilding2F_EventScript_Breeder {
+	lock
+	faceplayer
+	msgbox("Evolution makes Pokémon just that\n"
+			"much more fascinating.\p"
+			"The mysteries of evolution. . . Can that\n"
+			"dandy Prof. Rowan unravel them?", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeBuilding2F_EventScript_Woman {
+	lock
+	faceplayer
+	msgbox("Didn't Prof. Rowan conduct research\n"
+			"with Prof. Oak of the Kanto region?", MSGBOX_AUTOCLOSE)
+	release
+}

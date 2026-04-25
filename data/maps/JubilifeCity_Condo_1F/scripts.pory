@@ -2,3 +2,48 @@ raw `
 JubilifeCity_Condo_1F_MapScripts::
 	.byte 0
 `
+script JubilifeCondo1F_EventScript_QuickClaw {
+	lock
+	faceplayer
+	if(!flag(FLAG_RECEIVED_QUICK_CLAW)) {
+		msgbox("Oh, your Pokémon is quite adorable!\p"
+				"Here, try making it hold this\n"
+				"Quick Claw.")
+		giveitem(ITEM_QUICK_CLAW)
+		setflag(FLAG_RECEIVED_QUICK_CLAW)
+	} else {
+		msgbox("A Pokémon holding that Quick Claw can\n"
+				"sometimes attack first, even if it is\l"
+				"normally a little bit slow.\p"
+				"There are other items that are only\n"
+				"useful when given to a Pokémon.\p"
+				"Try finding other items that you can\n"
+				"make your Pokémon hold.\p"
+				". . .I sound like I'm a teacher or\n"
+				"something.", MSGBOX_AUTOCLOSE)
+	}
+	release
+}
+
+script JubilifeCondo1F_EventScript_OldWoman {
+	lock
+	faceplayer
+	msgbox("Oh, hello, darlings.\n"
+			"Isn't my Pokétch quite fetching?\p"
+			"It's the latest design that just came\n"
+			"out. I obtained it instantly, of course.\p"
+			"A Trainer would be simply lost without\n"
+			"a Pokétch, after all.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeCondo1F_EventScript_Pikachu {
+	lock
+	faceplayer
+	playmoncry(SPECIES_PIKACHU, CRY_MODE_NORMAL)
+	msgbox("Piika pi!", MSGBOX_AUTOCLOSE)
+	waitmoncry()
+	release
+}
+
+//FLAG_RECEIVED_QUICK_CLAW

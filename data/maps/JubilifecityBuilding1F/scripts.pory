@@ -1,0 +1,30 @@
+raw `
+JubilifecityBuilding1F_MapScripts::
+	.byte 0
+`
+
+script JubilifeBuilding1F_EventScript_AceTrainerM {
+	lock
+	faceplayer
+	msgbox("Pokémon are wonderful, deeply\n"
+			"mysterious creatures.\p"
+			"But to Trainers, the key thing is to do\n"
+			"battle with their Pokémon.\p"
+			"That's what it boils down to.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script JubilifeBuilding1F_EventScript_AceTrainerF {
+	lock
+	faceplayer
+	msgbox("Hello there, Trainer!\p"
+			"If you get stumped and don't know\n"
+			"what to do. . .\p"
+			"Talk to people!\n"
+			"Talk to everyone you see!\p"
+			"Go places!\n"
+			"Go everywhere you can!\p"
+			"You'll find many new places by\n"
+			"doing just that.", MSGBOX_AUTOCLOSE)
+	release
+}

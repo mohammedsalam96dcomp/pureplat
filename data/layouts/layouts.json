@@ -1886,8 +1886,8 @@
     {
       "id": "LAYOUT_JUBILIFE_CITY_CONDO_1F",
       "name": "JubilifeCity_Condo_1F_Layout",
-      "width": 10,
-      "height": 10,
+      "width": 16,
+      "height": 13,
       "primary_tileset": "gTileset_BuildingSinnoh",
       "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/JubilifeCity_Condo_1F/border.bin",
@@ -1896,12 +1896,42 @@
     {
       "id": "LAYOUT_ROUTE204",
       "name": "Route204_Layout",
-      "width": 34,
+      "width": 40,
       "height": 50,
       "primary_tileset": "gTileset_GeneralSinnoh",
       "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route204/border.bin",
       "blockdata_filepath": "data/layouts/Route204/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFECITY_BUILDING2F",
+      "name": "JubilifecityBuilding2F_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_PlayersHouse",
+      "border_filepath": "data/layouts/JubilifecityBuilding2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifecityBuilding2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFECITY_BUILDING1F",
+      "name": "JubilifecityBuilding1F_Layout",
+      "width": 16,
+      "height": 13,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_PlayersHouse",
+      "border_filepath": "data/layouts/JubilifecityBuilding1F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifecityBuilding1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILIFE_CITY_CONDO_2F",
+      "name": "JubilifeCity_Condo_2F_Layout",
+      "width": 16,
+      "height": 12,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_PlayersHouse",
+      "border_filepath": "data/layouts/JubilifeCity_Condo_2F/border.bin",
+      "blockdata_filepath": "data/layouts/JubilifeCity_Condo_2F/map.bin"
     }
   ]
 }

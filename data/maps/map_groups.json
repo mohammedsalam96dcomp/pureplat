@@ -189,6 +189,9 @@
   ],
   "gMapGroup_IndoorJubilife": [
     "JubilifeCity_PokemonSchool",
-    "JubilifeCity_Condo_1F"
+    "JubilifeCity_Condo_1F",
+    "JubilifecityBuilding2F",
+    "JubilifecityBuilding1F",
+    "JubilifeCity_Condo_2F"
   ]
 }

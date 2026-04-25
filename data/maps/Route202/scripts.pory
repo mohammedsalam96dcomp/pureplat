@@ -290,7 +290,7 @@ script Route202_EventScript_CatchingTutorial {
 }
 
 script Route202_EventScript_Tristan {
-	 trainerbattle_single(
+	trainerbattle_single(
 		TRAINER_TRISTAN,
 		format("You're a Pokémon Trainer, and so am I!\nOur eyes met, so battle we must!"),
         format("Too strong!\nToo strong!")

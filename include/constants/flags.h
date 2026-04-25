@@ -772,6 +772,8 @@
 #define FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM                          0x2D6
 #define FLAG_HIDE_ROUTE_202_DAWN                                    0x2DB
 #define FLAG_HIDE_DAWN_JUBILIFE_CITY                                0x2DC
+#define FLAG_DEFEATED_TRAINER_SCHOOL_BOY                            0x2DA
+#define FLAG_DEFEATED_TRAINER_SCHOOL_GIRL                           0x2DD
 
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 
@@ -787,12 +789,10 @@
 
 
 
+// #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
+#define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-
-#define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
-
-#define FLAG_HIDE_SEAFLOOR_CAVERN_ROOM_9_KYOGRE_ASLEEP              0x2DD
-#define FLAG_HIDE_PLAYERS_HOUSE_DAD                                 0x2DE
+#define FLAG_RECEIVED_POTION_SCHOOL                                 0x2DE
 #define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0x2E0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE             0x2E1
