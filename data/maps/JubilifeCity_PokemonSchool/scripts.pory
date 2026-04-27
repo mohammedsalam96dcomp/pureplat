@@ -165,3 +165,87 @@ text GotPotion {
 	"A superior Trainer knows how to use\n"
 	"items to the full advantage!"
 }
+
+script JubilifeCity_PokemonSchool_SignScript_ChockFull {
+	lock
+	msgbox("It's chock-full of Pokémon books and\n"
+			"photo collections.")
+	release
+}
+
+script JubilifeCity_PokemonSchool_SignScript_PictureBooks {
+	lock
+	msgbox("It's lined with Pokémon picture books.")
+	release
+}
+
+script JubilifeCity_PokemonSchool_SignScript_Notebook {
+	lock
+	msgbox("It's a notebook filled with writing.\n"
+			"Let's see. . .\p"
+			"Pokémon are to be caught using\n"
+			"Poké Balls.\p"
+			"Up to six Pokémon can accompany\n"
+			"a Trainer.\p"
+			"A Trainer is someone who catches\n"
+			"Pokémon, raises them, and battles\l"
+			"with them.\p"
+			"A Trainer's mission is to defeat the\n"
+			"strong Trainers who await challengers\l"
+			"in Pokémon Gyms.")
+	release
+}
+
+script JubilifeCity_PokemonSchool_SignScript_Board {
+	lock
+	msgbox("The blackboard lists status changes\n"
+			"that may affect Pokémon in battle.")
+	while {
+		message("Which would you like to read about?")
+		multichoicegrid(0, 0, MULTI_STATUS, 2, 0)
+		switch(var(VAR_RESULT)) {
+			case 0:
+				msgbox("If a Pokémon is poisoned, it will\n"
+						"steadily lose HP.\p"
+						"The effects of poison remain after\n"
+						"a battle.\p"
+						"A poisoned Pokémon's HP will drop\n"
+						"while it is traveling.\p"
+						"Heal a poisoning using an Antidote.")
+			case 1:
+				msgbox("A burn reduces the Attack stat and\n"
+						"steadily reduces the victim's HP.\p"
+						"A burn lingers after battle.\n"
+						"Cure a burn using a Burn Heal.")
+			case 2:
+				msgbox("If a Pokémon becomes paralyzed,\n"
+						"its Speed stat drops.\p"
+						"In addition, it may not be able to\n"
+						"move while it is in battle.\p"
+						"Paralysis remains after battle.\n"
+						"Cure it using a Paralyz Heal.")
+			case 3:
+				msgbox("If a Pokémon is frozen, it becomes\n"
+						"completely helpless.\p"
+						"The Pokémon may thaw out on its own,\n"
+						"but if a battle ends while it is\l"
+						"frozen, it will stay frozen.\p"
+						"Thaw it out using an Ice Heal.")
+			case 4:
+				msgbox("If a Pokémon falls asleep, it will be\n"
+						"unable to attack.\p"
+						"The Pokémon may wake up on its own,\n"
+						"but if a battle ends while it is\l"
+						"sleeping, it will stay asleep.\p"
+						"Wake it up using an Awakening.")
+			case 5: 
+				closemessage
+				end
+			case MULTI_B_PRESSED:
+				closemessage
+				end
+		}
+	}
+
+	release
+}

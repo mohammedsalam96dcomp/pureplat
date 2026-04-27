@@ -54,6 +54,17 @@ static const struct MenuAction MultichoiceList_RegisterMenu[] =
     {gText_Cancel2},
 };
 
+
+static const struct MenuAction MultichoiceList_Status[] = 
+{
+    {COMPOUND_STRING("POISONED")},
+    {COMPOUND_STRING("BURNED")},
+    {COMPOUND_STRING("PARALYZED")},
+    {COMPOUND_STRING("FROZEN")},
+    {COMPOUND_STRING("ASLEEP")},
+    {gText_Exit},
+};
+
 static const struct MenuAction MultichoiceList_Bike[] =
 {
     {COMPOUND_STRING("MACH")},
@@ -1110,7 +1121,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_BASE_PC_WITH_REGISTRY]      = MULTICHOICE(MultichoiceList_BasePCWithRegistry),
     [MULTI_REGISTER_MENU]              = MULTICHOICE(MultichoiceList_RegisterMenu),
     [MULTI_SSTIDAL_LILYCOVE]           = MULTICHOICE(MultichoiceList_Exit),
-    [MULTI_UNUSED_9]                   = MULTICHOICE(MultichoiceList_Exit),
+    [MULTI_STATUS]                     = MULTICHOICE(MultichoiceList_Status),
     [MULTI_UNUSED_10]                  = MULTICHOICE(MultichoiceList_Exit),
     [MULTI_FRONTIER_PASS_INFO]         = MULTICHOICE(MultichoiceList_FrontierPassInfo),
     [MULTI_BIKE]                       = MULTICHOICE(MultichoiceList_Bike),
