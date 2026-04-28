@@ -111,12 +111,11 @@
 #define VAR_ROUTE202_STATE                               0x4057
 #define VAR_ROUTE202_DAWN_STATE                          0x4058
 #define VAR_JUBILIFE_CITY_STATE                          0x4059 // Unused Var
-
+#define VAR_JUBILIFE_LOOKER_STATE                        0x405A
+#define VAR_POKETCH_COUPON_STATE                         0x405B // Unused Var
 
 #define VAR_CURRENT_SECRET_BASE                          0x4054 
 
-#define VAR_RUSTBORO_CITY_STATE                          0x405A
-#define VAR_FORTREE_CITY_STATE                           0x405B // Unused Var
 #define VAR_LILYCOVE_CITY_STATE                          0x405C // Unused Var
 #define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E

@@ -1,3 +1,5 @@
+const LOCALID_BARRY = 1
+
 mapscripts JubilifeCity_PokemonSchool_MapScripts{
 }
 
@@ -246,6 +248,67 @@ script JubilifeCity_PokemonSchool_SignScript_Board {
 				end
 		}
 	}
+
+	release
+}
+
+
+
+script JubilifeCity_PokemonSchool_EventScript_Barry {
+	lock
+	faceplayer
+	msgbox("{SPEAKER NAME_BARRY}Hey, {PLAYER}!\n"
+			"Did you come to study, too?\p"
+			"I went ahead and memorized everything\n"
+			"that was up on the blackboard.\p"
+			"After all, it's the Trainer's job to\n"
+			"avoid having their precious Pokémon\l"
+			"hurt in battle, right?\p"
+			"So {PLAYER}, what brings you?\n"
+			"Huh?\l"
+			"You've got something for me?")
+	playfanfare(MUS_OBTAIN_ITEM)
+	msgbox("{SPEAKER NAME_NONE}{PLAYER} delivered the Parcel.")
+	waitfanfare
+	removeitem(ITEM_PARCEL, 1)
+	msgbox("{SPEAKER NAME_BARRY}So, what is this. . .?\p"
+			"Score!\n"
+			"It's a Town Map!\p"
+			"Huh?!\n"
+			"Why are there two in here?\p"
+			"I like it a lot, but I don't need two.\n"
+			"Here, {PLAYER}, you take one!")
+	giveitem(ITEM_TOWN_MAP)
+	msgbox("{SPEAKER NAME_BARRY}Hmm. . .\p"
+			"Well, according to the Town Map,\n"
+			"I guess Oreburgh City is where\l"
+			"I should be going next.\p"
+			"There's a Gym, so it'd be perfect for\n"
+			"raising the Pokémon I just caught.\p"
+			"Well, I'm on the road to becoming\n"
+			"the greatest Trainer of all time!\p"
+			"See you around!", MSGBOX_AUTOCLOSE)
+	
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+
+	if (var(VAR_RESULT) == DIR_NORTH) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_right, walk_in_place_down))
+		applymovement(LOCALID_BARRY, moves(walk_fast_right, walk_fast_down*6))
+	} else {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_down))
+		applymovement(LOCALID_BARRY, moves(walk_fast_down*2, walk_fast_right, walk_fast_down*4))
+	}	
+	waitmovement(LOCALID_BARRY)
+
+	playse(SE_EXIT)
+	setflag(FLAG_HIDE_BARRY_POKEMON_SCHOOL)
+	removeobject(LOCALID_BARRY)
+	waitse
+
+	clearflag(FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE)
+	clearflag(FLAG_HIDE_POKETCH_CLOWNS)
+	setvar(VAR_JUBILIFE_CITY_STATE, 3)
 
 	release
 }

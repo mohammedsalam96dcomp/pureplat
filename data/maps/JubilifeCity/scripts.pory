@@ -1,5 +1,7 @@
 const LOCALID_LUCASDAWN = 1
 const LOCALID_LOOKER = 2
+const LOCALID_EMPLOYEE = 12
+const LOCALID_LOOKER_EXIT = 15
 
 mapscripts JubilifeCity_MapScripts{
 	MAP_SCRIPT_ON_TRANSITION: JubilifeCity_EventScript_OnTransition
@@ -7,10 +9,6 @@ mapscripts JubilifeCity_MapScripts{
 
 script JubilifeCity_EventScript_OnTransition {
 	call(Common_EventScript_SetupRivalGfxId)
-	if (var(VAR_JUBILIFE_CITY_STATE) == 2) {
-		setobjectxyperm(LOCALID_LOOKER, 58, 16)
-		turnobject(LOCALID_LOOKER, DIR_SOUTH)
-	}
 }
 
 script JubilifeCity_EventScript_GoToTrainerSchool {
@@ -204,11 +202,6 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	applymovement(LOCALID_LOOKER, moves(face_left, delay_16, walk_up, walk_fast_up*4))
 	waitmovement(LOCALID_LOOKER)
 
-	removeobject(LOCALID_LOOKER)
-	setobjectxyperm(LOCALID_LOOKER, 58, 16)
-	// addobject(LOCALID_LOOKER)
-	turnobject(LOCALID_LOOKER, DIR_SOUTH)
-
 	checkplayergender
 	
 	if(var(VAR_RESULT) == MALE) {
@@ -256,9 +249,10 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 
 	setflag(FLAG_HIDE_DAWN_JUBILIFE_CITY)
 	removeobject(LOCALID_LUCASDAWN)
+	removeobject(LOCALID_LOOKER)
 
 	setvar(VAR_JUBILIFE_CITY_STATE, 2)
-
+	setvar(VAR_JUBILIFE_LOOKER_STATE, 1)
 	release
 }
 
@@ -269,47 +263,149 @@ script JubilifeCity_EventScript_LookerVisitSchool {
 	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
 
 	playse(SE_PIN)
-	applymovement(LOCALID_LOOKER, moves(emote_exclamation_mark, delay_16*2))
-	waitmovement(LOCALID_LOOKER)
+	applymovement(LOCALID_LOOKER_EXIT, moves(emote_exclamation_mark, delay_16*2))
+	waitmovement(LOCALID_LOOKER_EXIT)
 	waitse
 
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
 	waitmovement(0)
 
 	if (var(VAR_TEMP_2) == 17) {
-		applymovement(LOCALID_LOOKER, moves(walk_down, walk_right))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down, walk_right))
 
 	} elif (var(VAR_TEMP_2) == 18) {
-		applymovement(LOCALID_LOOKER, moves(walk_down*2, walk_right))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down*2, walk_right))
 	} elif (var(VAR_TEMP_2) == 19) {
-		applymovement(LOCALID_LOOKER, moves(walk_down*3, walk_right))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down*3, walk_right))
 	} else {
-		applymovement(LOCALID_LOOKER, moves(walk_down*4, walk_right))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down*4, walk_right))
 	}
-	waitmovement(LOCALID_LOOKER)
+	waitmovement(LOCALID_LOOKER_EXIT)
 
-	msgbox("{SPEAKER NAME_LOOKER}Hello, my friend.\n"
+	if (var(VAR_JUBILIFE_CITY_STATE) == 2) {
+		msgbox("{SPEAKER NAME_LOOKER}Hello, my friend.\n"
 			"Have you visited the Trainers' School?\p"
 			"Did your friend not guide you there\n"
 			"earlier?", MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox("{SPEAKER NAME_LOOKER}Tell me, have you not obtained\n"
+				"a Pokétch?\p"
+				"I believe a Pokétch is now free in\n"
+				"exchange for some Coupons?", MSGBOX_AUTOCLOSE)
+	}
 
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
 	if (var(VAR_TEMP_2) == 17) {
-		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up, face_down))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up, face_down))
 	} elif (var(VAR_TEMP_2) == 18) {
-		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up*2, face_down))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up*2, face_down))
 	} elif (var(VAR_TEMP_2) == 19) {
-		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up*3, face_down))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up*3, face_down))
 	} else {
-		applymovement(LOCALID_LOOKER, moves(walk_left, walk_up*4, face_down))
+		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up*4, face_down))
 	}
-	waitmovement(LOCALID_LOOKER)
+	waitmovement(LOCALID_LOOKER_EXIT)
 
 	release
 }
 
-//POKETCH STUFF HERE
+script JubilifeCity_EventScript_PoketchCampaign {
+	lock
 
+	specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+	if (var(VAR_RESULT) != DIR_NORTH) {
+		applymovement(OBJ_EVENT_ID_PLAYER, moves(face_up))
+		waitmovement(OBJ_EVENT_ID_PLAYER)
+	}
+
+	playse(SE_PIN)
+	applymovement(LOCALID_EMPLOYEE, moves(walk_in_place_down, emote_exclamation_mark, delay_16*3))
+	waitmovement(LOCALID_EMPLOYEE)
+	waitse
+
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
+
+	if (var(VAR_TEMP_1) == 44) {
+		applymovement(LOCALID_EMPLOYEE, moves(walk_down*2, walk_left*2, walk_down))
+	} elif (var(VAR_TEMP_1) == 45) {
+		applymovement(LOCALID_EMPLOYEE, moves(walk_down*2, walk_left, walk_down))
+	} elif (var(VAR_TEMP_1) == 46) {
+		applymovement(LOCALID_EMPLOYEE, moves(walk_down*3))
+	}  elif (var(VAR_TEMP_1) == 47) {
+		applymovement(LOCALID_EMPLOYEE, moves(walk_down*2, walk_right, walk_down))
+	} else {
+		applymovement(LOCALID_EMPLOYEE, moves(walk_down*2, walk_right*2, walk_down))
+	}
+	waitmovement(LOCALID_EMPLOYEE)
+
+	msgbox("Oh, oh, oh?\p"
+			"You call yourself a Pokémon Trainer?\n"
+			"And yet you have no Pokétch?\p"
+			"That is, Pokémon Watch, or Pokétch\n"
+			"for short!\p"
+			"Oh my, you are a rare case\n"
+			"indeed!\p"
+			"You see, I invented, and now\n"
+			"manufacture, Pokétches.\p"
+			"Not only that, I'm now coducting\n"
+			"the Pokétch promotional campaign!\p"
+			"All you have to do is find three\n"
+			"clowns in Jubilife City.\p"
+			"If you can find them. . .\n"
+			"I will gift you with a Pokétch!", MSGBOX_AUTOCLOSE)
+	setvar(VAR_JUBILIFE_CITY_STATE, 4)
+	release
+}
+
+script JubilifeCity_EventScript_PoketchInventor {
+	lock
+	faceplayer
+	if(flag(FLAG_POKETCH_COUPON_1) && flag(FLAG_POKETCH_COUPON_2) && flag(FLAG_POKETCH_COUPON_3)) {
+		msgbox("OK, let me count your Coupons!\n"
+				"I'll use the Pokétch here. . .\p"
+				"One, two, three!\n"
+				"Bravo! I say, bravo!\p"
+				"In return for these Coupons,\n"
+				"I present you this Pokémon Watch,\l"
+				"or Pokétch for short!")
+		//giveitem(POKETCH)
+		msgbox("You can add apps to your Pokétch\n"
+				"to make it even more versatile!", MSGBOX_AUTOCLOSE)
+
+		specialvar(VAR_RESULT, GetPlayerFacingDirection)
+		if(var(VAR_RESULT) == DIR_SOUTH) {
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16, walk_in_place_left, walk_in_place_up))
+			applymovement(LOCALID_EMPLOYEE, moves(walk_left, walk_up*6))
+		} elif(var(VAR_RESULT) == DIR_NORTH) {
+			applymovement(LOCALID_EMPLOYEE, moves(walk_up*6))
+		} else {
+			applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16, walk_in_place_up))
+			applymovement(LOCALID_EMPLOYEE, moves(walk_up*6))
+		}
+		waitmovement(LOCALID_EMPLOYEE)
+
+		setflag(FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE)
+		removeobject(LOCALID_EMPLOYEE)
+
+		setflag(FLAG_HIDE_JUBILIFE_LOOKER)
+		removeobject(LOCALID_LOOKER)
+
+		setvar(VAR_JUBILIFE_LOOKER_STATE, 2)
+		setvar(VAR_JUBILIFE_CITY_STATE, 5)
+		
+	} else {
+		msgbox("The three clowns will each ask you\n"
+			"a skill-testing question.\p"
+			"The questions will all have to do\n"
+			"with Pokémon.\p"
+			"After all, a Pokétch is a tool for\n"
+			"Pokémon Trainers.\p"
+			"Collect a Coupon from each clown,\n"
+			"then come see me, OK?", MSGBOX_AUTOCLOSE)
+	}
+	release
+}
 
 script JubilifeCity_EventScript_GameKid1 {
 	lock
@@ -414,6 +510,60 @@ script JubilifeCity_EventScript_AceTrainerM {
 
 script JubilifeCity_EventScript_Clown1 {
 	lock
+	faceplayer
+
+	if(!flag(FLAG_POKETCH_COUPON_1)) {
+		msgbox("Hi! I'm a Pokétch campaign clown!\n"
+				"Let's roll out my question!\p"
+				"Does a Pokémon grow by defeating\n"
+				"others and gaining Exp. Points?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 1) {
+			msgbox("Ding-ding!\n"
+					"You're absolutely correct!")
+			msgbox(Clown1Correct)
+			msgbox("Here you go!\n"
+					"Your Pokétch Coupon!")
+			setflag(FLAG_POKETCH_COUPON_1)
+		} else {
+			playse(SE_FAILURE)
+			msgbox("Bzzzzt!\n"
+					"That's the wrong answer. . .", MSGBOX_AUTOCLOSE)
+			waitse
+		}
+	} else {
+		msgbox(Clown1Correct)
+	}
+	release
+}
+
+script JubilifeCity_EventScript_Clown2 {
+	lock
+	faceplayer
+
+	if(!flag(FLAG_POKETCH_COUPON_2)) {
+		msgbox("Hi! I'm a Pokétch campaign clown!\n"
+				"Let's roll out my question!\p"
+				"Just like Pokémon types, the moves\n"
+				"of Pokémon also have types?", MSGBOX_YESNO)
+		if(var(VAR_RESULT) == 1) {
+			msgbox("Ding-ding!\n"
+					"You're absolutely correct!")
+			msgbox(Clown2Correct)
+			msgbox("Here you go!\n"
+					"Your Pokétch Coupon!")
+			setflag(FLAG_POKETCH_COUPON_2)
+		} else {
+			msgbox("Bzzzzt!\n"
+					"That's the wrong answer. . .", MSGBOX_AUTOCLOSE)
+		}
+	} else {
+		msgbox(Clown2Correct)
+	}
+	release
+}
+
+script JubilifeCity_EventScript_Clown3 {
+	lock
 
 	faceplayer
 
@@ -422,6 +572,70 @@ script JubilifeCity_EventScript_Clown1 {
 				"We're doing a Pokétch campaign soon.\p"
 				"Before it starts, I think you should\n"
 				"brush up at the Trainers' School.", MSGBOX_AUTOCLOSE)
+	} else {
+		if(flag(FLAG_POKETCH_COUPON_3)) {
+			msgbox(Clown3Correct)
+		} else {
+			msgbox("Hi! I'm a Pokétch campaign clown!\n"
+				"Let's roll out my question!\p"
+				"Can a Pokémon hold an item?", MSGBOX_YESNO)
+			if(var(VAR_RESULT) == 1) {
+				msgbox("Ding-ding!\n"
+						"You're absolutely correct!")
+				msgbox(Clown3Correct)
+				msgbox("Here you go!\n"
+						"Your Pokétch Coupon!")
+				setflag(FLAG_POKETCH_COUPON_3)
+				setobjectxyperm(LOCALID_EMPLOYEE, 46, 30)
+				//giveitem(ITEM_COUPON_3)
+			} else {
+				msgbox("Bzzzzt!\n"
+					"That's the wrong answer. . .", MSGBOX_AUTOCLOSE)
+			}
+		}
 	}
 	release
+}
+
+
+script JubilifeCity_EventScript_Looker {
+	lock
+	faceplayer
+	if (var(VAR_JUBILIFE_CITY_STATE) == 4) {
+		msgbox("{SPEAKER NAME_LOOKER}Ah, it is you! Have no fear.\n"
+				"There are no shady characters about.\p"
+				"Incidentally, have you not obtained\n"
+				"a Pokétch?\p"
+				"I believe a Pokétch is now free in\n"
+				"exchange for some Coupons?", MSGBOX_AUTOCLOSE)
+	} else {
+		msgbox("{SPEAKER NAME_LOOKER}Ah, it is you! Have no fear.\n"
+				"There are no shady characters about.\p"
+				"Incidentally, have you visited the\n"
+				"Trainers' School?\p"
+				"Did your friend not guide you there\n"
+				"earlier?", MSGBOX_AUTOCLOSE)
+	}
+	release
+}
+text Clown1Correct {
+	"Pokémon grow stronger by defeating\n"
+	"other Pokémon in battle.\p"
+	"Some Pokémon even grow into an\n"
+	"entirely different form in a process\l"
+	"known as evolution."
+}
+
+text Clown2Correct {
+	"If the Pokémon's type matches its\n"
+	"move's type, that move is made much\l"
+	"more powerful!"
+}
+
+text Clown3Correct {
+	"A Pokémon may hold a single item.\p"
+	"Some items become effective as soon\n"
+	"as they are held by a Pokémon.\p"
+	"Berries are eaten by Pokémon as\n"
+	"necessary during battle."
 }

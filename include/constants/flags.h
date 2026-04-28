@@ -51,7 +51,6 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
 #define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
@@ -772,8 +771,18 @@
 #define FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM                          0x2D6
 #define FLAG_HIDE_ROUTE_202_DAWN                                    0x2DB
 #define FLAG_HIDE_DAWN_JUBILIFE_CITY                                0x2DC
+#define FLAG_HIDE_JUBILIFE_LOOKER                                   0x20 
 #define FLAG_DEFEATED_TRAINER_SCHOOL_BOY                            0x2DA
 #define FLAG_DEFEATED_TRAINER_SCHOOL_GIRL                           0x2DD
+#define FLAG_RECEIVED_POTION_SCHOOL                                 0x2DE
+#define FLAG_HIDE_BARRY_POKEMON_SCHOOL                              0x496 // Unused Flag
+#define FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE                         0x468 // Unused Flag
+#define FLAG_HIDE_POKETCH_CLOWNS                                    0x497 // Unused Flag
+#define FLAG_POKETCH_COUPON_1                                       0x498 // Unused Flag
+#define FLAG_POKETCH_COUPON_2                                       0x499 // Unused Flag
+#define FLAG_POKETCH_COUPON_3                                       0x49A // Unused Flag
+
+// #define FLAG_HIDE_BARRY_POKEMON_SCHOOL                              0x2DF
 
 #define FLAG_HIDE_POKEMON_CENTER_2F_MYSTERY_GIFT_MAN                0x2BE
 
@@ -792,8 +801,6 @@
 // #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_RECEIVED_POTION_SCHOOL                                 0x2DE
-#define FLAG_HIDE_LITTLEROOT_TOWN_BRENDANS_HOUSE_RIVAL_SIBLING      0x2DF
 #define FLAG_HIDE_LITTLEROOT_TOWN_MAYS_HOUSE_RIVAL_SIBLING          0x2E0
 #define FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_MAGMA_NOTE             0x2E1
 #define FLAG_HIDE_ROUTE_104_MR_BRINEY                               0x2E2
@@ -1188,7 +1195,6 @@
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MAX_ELIXIR                  0x466 // Unused Flag, leftover from the Ruby Magma hideout
 #define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B2F_NEST_BALL                   0x467 // Unused Flag, leftover from the Ruby Magma hideout
-#define FLAG_UNUSED_0x468                                           0x468 // Unused Flag
 #define FLAG_ITEM_MT_PYRE_2F_ULTRA_BALL                             0x469
 #define FLAG_ITEM_MT_PYRE_4F_SEA_INCENSE                            0x46A
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE                 0x46B
@@ -1233,11 +1239,7 @@
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
 
-#define FLAG_UNUSED_0x496                                           0x496 // Unused Flag
-#define FLAG_UNUSED_0x497                                           0x497 // Unused Flag
-#define FLAG_UNUSED_0x498                                           0x498 // Unused Flag
-#define FLAG_UNUSED_0x499                                           0x499 // Unused Flag
-#define FLAG_UNUSED_0x49A                                           0x49A // Unused Flag
+
 #define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag

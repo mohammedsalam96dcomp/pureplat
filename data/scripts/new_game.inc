@@ -275,6 +275,8 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_TWINLEAF_TOWN_BARRYS_MOM
 	call EventScript_ResetAllBerries
 	setvar VAR_NEW_GAME_START, 0
+	setflag FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE
+	setflag FLAG_HIDE_POKETCH_CLOWNS
 	end
 
 EventScript_ResetAllMapFlagsFrlg::
