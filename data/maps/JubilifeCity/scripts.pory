@@ -524,6 +524,7 @@ script JubilifeCity_EventScript_Clown1 {
 			msgbox("Here you go!\n"
 					"Your Pokétch Coupon!")
 			setflag(FLAG_POKETCH_COUPON_1)
+			giveitem(ITEM_COUPON_ONE)
 		} else {
 			playse(SE_FAILURE)
 			msgbox("Bzzzzt!\n"
@@ -551,6 +552,7 @@ script JubilifeCity_EventScript_Clown2 {
 			msgbox(Clown2Correct)
 			msgbox("Here you go!\n"
 					"Your Pokétch Coupon!")
+			giveitem(ITEM_COUPON_TWO)
 			setflag(FLAG_POKETCH_COUPON_2)
 		} else {
 			msgbox("Bzzzzt!\n"
@@ -585,9 +587,9 @@ script JubilifeCity_EventScript_Clown3 {
 				msgbox(Clown3Correct)
 				msgbox("Here you go!\n"
 						"Your Pokétch Coupon!")
+				giveitem(ITEM_COUPON_THREE)
 				setflag(FLAG_POKETCH_COUPON_3)
 				setobjectxyperm(LOCALID_EMPLOYEE, 46, 30)
-				//giveitem(ITEM_COUPON_3)
 			} else {
 				msgbox("Bzzzzt!\n"
 					"That's the wrong answer. . .", MSGBOX_AUTOCLOSE)

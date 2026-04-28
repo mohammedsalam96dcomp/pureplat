@@ -15828,6 +15828,54 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_COUPON_ONE] =
+    {
+        .name = ITEM_NAME("Coupon 1"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A coupon to be\n"
+            "exchanged for\n"
+            "a Pokétch."),
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CouponOne,
+        .iconPalette = gItemIconPalette_CouponOne,
+    },
+
+    [ITEM_COUPON_TWO] =
+    {
+        .name = ITEM_NAME("Coupon 2"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A coupon to be\n"
+            "exchanged for\n"
+            "a Pokétch."),
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CouponTwo,
+        .iconPalette = gItemIconPalette_CouponTwo,
+    },
+
+    [ITEM_COUPON_THREE] =
+    {
+        .name = ITEM_NAME("Coupon 3"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A coupon to be\n"
+            "exchanged for\n"
+            "a Pokétch."),
+        .importance = 2,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_CouponThree,
+        .iconPalette = gItemIconPalette_CouponThree,
+    },
 };
 
 #undef ITEM_NAME

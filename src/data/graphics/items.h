@@ -2017,6 +2017,15 @@ const u16 gItemIconPalette_TeraOrb[] = INCBIN_U16("graphics/items/icon_palettes/
 const u32 gItemIcon_TinyBambooShoot[] = INCBIN_U32("graphics/items/icons/tiny_bamboo_shoot.4bpp.smol");
 const u16 gItemIconPalette_TinyBambooShoot[] = INCBIN_U16("graphics/items/icon_palettes/tiny_bamboo_shoot.gbapal");
 
+const u32 gItemIcon_CouponOne[] = INCBIN_U32("graphics/items/icons/coupon_one.4bpp.smol");
+const u16 gItemIconPalette_CouponOne[] = INCBIN_U16("graphics/items/icon_palettes/coupon_one.gbapal");
+
+const u32 gItemIcon_CouponTwo[] = INCBIN_U32("graphics/items/icons/coupon_two.4bpp.smol");
+const u16 gItemIconPalette_CouponTwo[] = INCBIN_U16("graphics/items/icon_palettes/coupon_two.gbapal");
+
+const u32 gItemIcon_CouponThree[] = INCBIN_U32("graphics/items/icons/coupon_three.4bpp.smol");
+const u16 gItemIconPalette_CouponThree[] = INCBIN_U16("graphics/items/icon_palettes/coupon_three.gbapal");
+ 
 // Tera Shards
 
 const u32 gItemIcon_TeraShard[] = INCBIN_U32("graphics/items/icons/tera_shard.4bpp.smol");

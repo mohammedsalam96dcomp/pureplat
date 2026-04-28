@@ -227,6 +227,7 @@ script Route202_EventScript_CatchingTutorial {
 	applymovement(LOCALID_LUCASDAWN, moves(walk_in_place_right))
 	waitmovement(LOCALID_LUCASDAWN)
 
+	checkplayergender
 	if(var(VAR_RESULT) == FEMALE) {
 		msgbox("{SPEAKER NAME_RIVAL}And that's how it's done.\p"
 				"Actually, I should have lowered the\n"
@@ -239,7 +240,7 @@ script Route202_EventScript_CatchingTutorial {
 				"catch if you make one of your\l"
 				"Pokémon put them to sleep or such.\p"
 				"Here, {PLAYER}, I'll give you\n"
-				"ten Poké Balls to get you started.")
+				"twenty Poké Balls to get you started.")
 		closemessage
 		giveitem(ITEM_POKE_BALL, 10)
 		msgbox("{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
@@ -261,7 +262,7 @@ script Route202_EventScript_CatchingTutorial {
 				"if you make them sleep or something\l"
 				"by using a Pokémon's move.\p"
 				"OK, {PLAYER}, to get you\n"
-				"started, I'll give you ten\l"
+				"started, I'll give you twenty\l"
 				"Poké Balls!")
 		closemessage
 		giveitem(ITEM_POKE_BALL, 20)
