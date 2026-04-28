@@ -384,7 +384,9 @@ script JubilifeCity_EventScript_PoketchInventor {
 			applymovement(LOCALID_EMPLOYEE, moves(walk_up*6))
 		}
 		waitmovement(LOCALID_EMPLOYEE)
-
+		removeitem(ITEM_COUPON_ONE, 1)
+		removeitem(ITEM_COUPON_TWO, 1)
+		removeitem(ITEM_COUPON_THREE, 1)
 		setflag(FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE)
 		removeobject(LOCALID_EMPLOYEE)
 

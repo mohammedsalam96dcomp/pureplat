@@ -595,7 +595,7 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_Text_10:
 SandgemProfessorsLab_MapScripts_ON_FRAME_Text_11:
 # 154 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "{PLAYER} obtained\n"
-	.string "the {COLOR RED}Pokédex.$"
+	.string "the {COLOR RED}Pokédex{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}.$"
 
 SandgemProfessorsLab_MapScripts_ON_FRAME_Text_12:
 # 160 "data/maps/SandgemProfessorsLab/scripts.pory"
