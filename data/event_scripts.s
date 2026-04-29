@@ -965,3 +965,5 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/JubilifecityBuilding1F/scripts.inc"
 
 	.include "data/maps/JubilifeCity_Condo_2F/scripts.inc"
+
+	.include "data/maps/Route203/scripts.inc"
