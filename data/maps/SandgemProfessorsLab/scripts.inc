@@ -105,7 +105,7 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_11:
 # 151 "data/maps/SandgemProfessorsLab/scripts.pory"
 	closemessage
 # 153 "data/maps/SandgemProfessorsLab/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
+	playfanfare MUS_DP_OBTAIN_ITEM
 # 154 "data/maps/SandgemProfessorsLab/scripts.pory"
 	msgbox SandgemProfessorsLab_MapScripts_ON_FRAME_Text_11
 # 156 "data/maps/SandgemProfessorsLab/scripts.pory"
@@ -595,7 +595,7 @@ SandgemProfessorsLab_MapScripts_ON_FRAME_Text_10:
 SandgemProfessorsLab_MapScripts_ON_FRAME_Text_11:
 # 154 "data/maps/SandgemProfessorsLab/scripts.pory"
 	.string "{PLAYER} obtained\n"
-	.string "the {COLOR RED}Pokédex{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}.$"
+	.string "the {COLOR RED}Pokédex{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!$"
 
 SandgemProfessorsLab_MapScripts_ON_FRAME_Text_12:
 # 160 "data/maps/SandgemProfessorsLab/scripts.pory"

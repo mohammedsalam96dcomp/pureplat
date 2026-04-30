@@ -99,86 +99,90 @@ SandgemTown_ON_FRAME_1:
 # 102 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 SandgemTown_ON_FRAME_5:
-# 106 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_3
+# 105 "data/maps/SandgemTown/scripts.pory"
+	playbgm MUS_DP_FOLLOW_ME, 0
 # 107 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_4
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_3
 # 108 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_ON_FRAME_Movement_4
+# 109 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
-# 110 "data/maps/SandgemTown/scripts.pory"
+# 111 "data/maps/SandgemTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq SandgemTown_ON_FRAME_10
-# 119 "data/maps/SandgemTown/scripts.pory"
+# 120 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_ON_FRAME_Text_8
-# 125 "data/maps/SandgemTown/scripts.pory"
+# 126 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 SandgemTown_ON_FRAME_9:
-# 128 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_4
 # 129 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_4
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_4
 # 130 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_ON_FRAME_Movement_4
+# 131 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
-# 132 "data/maps/SandgemTown/scripts.pory"
+# 133 "data/maps/SandgemTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq SandgemTown_ON_FRAME_14
-# 143 "data/maps/SandgemTown/scripts.pory"
+# 144 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_ON_FRAME_Text_10
-# 151 "data/maps/SandgemTown/scripts.pory"
+# 152 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 SandgemTown_ON_FRAME_13:
-# 154 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_5
 # 155 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_6
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_5
 # 156 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_ON_FRAME_Movement_6
+# 157 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
-# 158 "data/maps/SandgemTown/scripts.pory"
-	playse SE_PIN
 # 159 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
+	playse SE_PIN
 # 160 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 0
+	applymovement 1, Common_Movement_ExclamationMark
 # 161 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 0
+# 162 "data/maps/SandgemTown/scripts.pory"
 	waitse
-# 163 "data/maps/SandgemTown/scripts.pory"
+# 164 "data/maps/SandgemTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq SandgemTown_ON_FRAME_18
-# 177 "data/maps/SandgemTown/scripts.pory"
+# 178 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_ON_FRAME_Text_12
-# 188 "data/maps/SandgemTown/scripts.pory"
+# 189 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 SandgemTown_ON_FRAME_17:
-# 191 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_7
 # 192 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 1
+	applymovement 1, SandgemTown_ON_FRAME_Movement_7
 # 193 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_1
+	waitmovement 1
 # 194 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_8
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_1
 # 195 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 1
+	applymovement 1, SandgemTown_ON_FRAME_Movement_8
 # 196 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_6
-# 197 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_9
-# 198 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
-# 200 "data/maps/SandgemTown/scripts.pory"
-	setflag FLAG_HIDE_SANDGEM_TOWN_DAWN
+# 197 "data/maps/SandgemTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_6
+# 198 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_ON_FRAME_Movement_9
+# 199 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 1
 # 201 "data/maps/SandgemTown/scripts.pory"
+	setflag FLAG_HIDE_SANDGEM_TOWN_DAWN
+# 202 "data/maps/SandgemTown/scripts.pory"
 	removeobject 1
-# 203 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_SANDGEM_TOWN_STATE, 3
 # 204 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_ROUTE202_STATE, 1
+	setvar VAR_SANDGEM_TOWN_STATE, 3
 # 205 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_ROUTE202_DAWN_STATE, 1
+	setvar VAR_ROUTE202_STATE, 1
 # 206 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TWINLEAF_MOM_STATE, 5
+	setvar VAR_ROUTE202_DAWN_STATE, 1
 # 207 "data/maps/SandgemTown/scripts.pory"
+	setvar VAR_TWINLEAF_MOM_STATE, 5
+# 208 "data/maps/SandgemTown/scripts.pory"
 	release
+# 210 "data/maps/SandgemTown/scripts.pory"
+	fadedefaultbgm
 	return
 
 SandgemTown_ON_FRAME_2:
@@ -196,452 +200,452 @@ SandgemTown_ON_FRAME_6:
 	goto SandgemTown_ON_FRAME_5
 
 SandgemTown_ON_FRAME_10:
-# 111 "data/maps/SandgemTown/scripts.pory"
+# 112 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_ON_FRAME_Text_7
-# 117 "data/maps/SandgemTown/scripts.pory"
+# 118 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 	goto SandgemTown_ON_FRAME_9
 
 SandgemTown_ON_FRAME_14:
-# 133 "data/maps/SandgemTown/scripts.pory"
+# 134 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_ON_FRAME_Text_9
-# 141 "data/maps/SandgemTown/scripts.pory"
+# 142 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 	goto SandgemTown_ON_FRAME_13
 
 SandgemTown_ON_FRAME_18:
-# 164 "data/maps/SandgemTown/scripts.pory"
+# 165 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_ON_FRAME_Text_11
-# 175 "data/maps/SandgemTown/scripts.pory"
+# 176 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 	goto SandgemTown_ON_FRAME_17
 
 
 SandgemTown_EventScript_OnTransition::
-# 211 "data/maps/SandgemTown/scripts.pory"
+# 214 "data/maps/SandgemTown/scripts.pory"
 	call Common_EventScript_SetupRivalGfxId
 	return
 
 
 SandgemTown_ON_WARP::
-# 215 "data/maps/SandgemTown/scripts.pory"
+# 218 "data/maps/SandgemTown/scripts.pory"
 	addobject 1
-# 216 "data/maps/SandgemTown/scripts.pory"
+# 219 "data/maps/SandgemTown/scripts.pory"
 	turnobject 1, DIR_NORTH
 	return
 
 
 SandgemTown_EventScript_LucasDawnScene1::
-# 221 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 222 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TEMP_1, 1
-# 223 "data/maps/SandgemTown/scripts.pory"
-	goto SandgemTown_EventScript_LucasDawnScene
 # 224 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 225 "data/maps/SandgemTown/scripts.pory"
+	setvar VAR_TEMP_1, 1
+# 226 "data/maps/SandgemTown/scripts.pory"
+	goto SandgemTown_EventScript_LucasDawnScene
+# 227 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_EventScript_LucasDawnScene2::
-# 228 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 229 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TEMP_1, 2
-# 230 "data/maps/SandgemTown/scripts.pory"
-	goto SandgemTown_EventScript_LucasDawnScene
 # 231 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 232 "data/maps/SandgemTown/scripts.pory"
+	setvar VAR_TEMP_1, 2
+# 233 "data/maps/SandgemTown/scripts.pory"
+	goto SandgemTown_EventScript_LucasDawnScene
+# 234 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_EventScript_LucasDawnScene3::
-# 235 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 236 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TEMP_1, 3
-# 237 "data/maps/SandgemTown/scripts.pory"
-	goto SandgemTown_EventScript_LucasDawnScene
 # 238 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 239 "data/maps/SandgemTown/scripts.pory"
+	setvar VAR_TEMP_1, 3
+# 240 "data/maps/SandgemTown/scripts.pory"
+	goto SandgemTown_EventScript_LucasDawnScene
+# 241 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_EventScript_LucasDawnScene4::
-# 242 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 243 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TEMP_1, 4
-# 244 "data/maps/SandgemTown/scripts.pory"
-	goto SandgemTown_EventScript_LucasDawnScene
 # 245 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 246 "data/maps/SandgemTown/scripts.pory"
+	setvar VAR_TEMP_1, 4
+# 247 "data/maps/SandgemTown/scripts.pory"
+	goto SandgemTown_EventScript_LucasDawnScene
+# 248 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_EventScript_LucasDawnScene5::
-# 249 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 250 "data/maps/SandgemTown/scripts.pory"
-	setvar VAR_TEMP_1, 5
-# 251 "data/maps/SandgemTown/scripts.pory"
-	goto SandgemTown_EventScript_LucasDawnScene
 # 252 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 253 "data/maps/SandgemTown/scripts.pory"
+	setvar VAR_TEMP_1, 5
+# 254 "data/maps/SandgemTown/scripts.pory"
+	goto SandgemTown_EventScript_LucasDawnScene
+# 255 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_EventScript_LucasDawnScene::
-# 256 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 258 "data/maps/SandgemTown/scripts.pory"
-	playse SE_PIN
 # 259 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_0
-# 260 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 1
+	lock
 # 261 "data/maps/SandgemTown/scripts.pory"
-	waitse
+	playse SE_PIN
+# 262 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_0
 # 263 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_1
-# 264 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
+# 264 "data/maps/SandgemTown/scripts.pory"
+	waitse
 # 266 "data/maps/SandgemTown/scripts.pory"
-	switch VAR_TEMP_1
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_1
 # 267 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 1
+# 269 "data/maps/SandgemTown/scripts.pory"
+	switch VAR_TEMP_1
+# 270 "data/maps/SandgemTown/scripts.pory"
 	case 1, SandgemTown_EventScript_LucasDawnScene_3
-# 273 "data/maps/SandgemTown/scripts.pory"
-	case 2, SandgemTown_EventScript_LucasDawnScene_4
 # 276 "data/maps/SandgemTown/scripts.pory"
-	case 3, SandgemTown_EventScript_LucasDawnScene_5
+	case 2, SandgemTown_EventScript_LucasDawnScene_4
 # 279 "data/maps/SandgemTown/scripts.pory"
+	case 3, SandgemTown_EventScript_LucasDawnScene_5
+# 282 "data/maps/SandgemTown/scripts.pory"
 	case 4, SandgemTown_EventScript_LucasDawnScene_6
-# 285 "data/maps/SandgemTown/scripts.pory"
+# 288 "data/maps/SandgemTown/scripts.pory"
 	case 5, SandgemTown_EventScript_LucasDawnScene_7
 SandgemTown_EventScript_LucasDawnScene_1:
-# 293 "data/maps/SandgemTown/scripts.pory"
+# 296 "data/maps/SandgemTown/scripts.pory"
 	checkplayergender
-# 295 "data/maps/SandgemTown/scripts.pory"
+# 298 "data/maps/SandgemTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq SandgemTown_EventScript_LucasDawnScene_9
-# 301 "data/maps/SandgemTown/scripts.pory"
-	msgbox SandgemTown_EventScript_LucasDawnScene_Text_1
 # 304 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_EventScript_LucasDawnScene_Text_1
+# 307 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 SandgemTown_EventScript_LucasDawnScene_8:
-# 307 "data/maps/SandgemTown/scripts.pory"
+# 310 "data/maps/SandgemTown/scripts.pory"
 	switch VAR_TEMP_1
-# 308 "data/maps/SandgemTown/scripts.pory"
+# 311 "data/maps/SandgemTown/scripts.pory"
 	case 1, SandgemTown_EventScript_LucasDawnScene_14
-# 312 "data/maps/SandgemTown/scripts.pory"
+# 315 "data/maps/SandgemTown/scripts.pory"
 	case 2, SandgemTown_EventScript_LucasDawnScene_15
-# 316 "data/maps/SandgemTown/scripts.pory"
+# 319 "data/maps/SandgemTown/scripts.pory"
 	case 3, SandgemTown_EventScript_LucasDawnScene_16
-# 320 "data/maps/SandgemTown/scripts.pory"
+# 323 "data/maps/SandgemTown/scripts.pory"
 	case 4, SandgemTown_EventScript_LucasDawnScene_17
-# 324 "data/maps/SandgemTown/scripts.pory"
+# 327 "data/maps/SandgemTown/scripts.pory"
 	case 5, SandgemTown_EventScript_LucasDawnScene_18
 SandgemTown_EventScript_LucasDawnScene_12:
-# 330 "data/maps/SandgemTown/scripts.pory"
+# 333 "data/maps/SandgemTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq SandgemTown_EventScript_LucasDawnScene_20
-# 336 "data/maps/SandgemTown/scripts.pory"
-	msgbox SandgemTown_EventScript_LucasDawnScene_Text_3
 # 339 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_EventScript_LucasDawnScene_Text_3
+# 342 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 SandgemTown_EventScript_LucasDawnScene_19:
-# 343 "data/maps/SandgemTown/scripts.pory"
-	clearflag FLAG_HIDE_SANDGEM_TOWN_RIVAL
-# 344 "data/maps/SandgemTown/scripts.pory"
-	addobject 2
 # 346 "data/maps/SandgemTown/scripts.pory"
-	playse SE_DOOR
+	clearflag FLAG_HIDE_SANDGEM_TOWN_RIVAL
 # 347 "data/maps/SandgemTown/scripts.pory"
-	applymovement 2, SandgemTown_EventScript_LucasDawnScene_Movement_16
-# 348 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 0
+	addobject 2
 # 349 "data/maps/SandgemTown/scripts.pory"
-	waitse
+	playse SE_DOOR
+# 350 "data/maps/SandgemTown/scripts.pory"
+	applymovement 2, SandgemTown_EventScript_LucasDawnScene_Movement_16
 # 351 "data/maps/SandgemTown/scripts.pory"
-	playse SE_WALL_HIT
+	waitmovement 0
 # 352 "data/maps/SandgemTown/scripts.pory"
-	msgbox SandgemTown_EventScript_LucasDawnScene_Text_4
-# 353 "data/maps/SandgemTown/scripts.pory"
 	waitse
 # 354 "data/maps/SandgemTown/scripts.pory"
-	playbgm MUS_DP_RIVAL, 0
+	playse SE_WALL_HIT
+# 355 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_EventScript_LucasDawnScene_Text_4
 # 356 "data/maps/SandgemTown/scripts.pory"
+	waitse
+# 357 "data/maps/SandgemTown/scripts.pory"
+	playbgm MUS_DP_RIVAL, 0
+# 359 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_EventScript_LucasDawnScene_Text_5
-# 362 "data/maps/SandgemTown/scripts.pory"
-	closemessage
-# 364 "data/maps/SandgemTown/scripts.pory"
-	applymovement 2, SandgemTown_EventScript_LucasDawnScene_Movement_17
 # 365 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 0
+	closemessage
 # 367 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_18
+	applymovement 2, SandgemTown_EventScript_LucasDawnScene_Movement_17
 # 368 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_18
-# 369 "data/maps/SandgemTown/scripts.pory"
-	applymovement 2, SandgemTown_EventScript_LucasDawnScene_Movement_19
+	waitmovement 0
 # 370 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 2
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_18
+# 371 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_18
 # 372 "data/maps/SandgemTown/scripts.pory"
-	setflag FLAG_HIDE_SANDGEM_TOWN_RIVAL
+	applymovement 2, SandgemTown_EventScript_LucasDawnScene_Movement_19
 # 373 "data/maps/SandgemTown/scripts.pory"
-	removeobject 2
-# 374 "data/maps/SandgemTown/scripts.pory"
-	delay 10
+	waitmovement 2
 # 375 "data/maps/SandgemTown/scripts.pory"
-	fadedefaultbgm
+	setflag FLAG_HIDE_SANDGEM_TOWN_RIVAL
+# 376 "data/maps/SandgemTown/scripts.pory"
+	removeobject 2
 # 377 "data/maps/SandgemTown/scripts.pory"
+	delay 10
+# 378 "data/maps/SandgemTown/scripts.pory"
+	fadedefaultbgm
+# 380 "data/maps/SandgemTown/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq SandgemTown_EventScript_LucasDawnScene_24
-# 385 "data/maps/SandgemTown/scripts.pory"
+# 388 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_EventScript_LucasDawnScene_Text_7
-# 390 "data/maps/SandgemTown/scripts.pory"
+# 393 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 SandgemTown_EventScript_LucasDawnScene_23:
-# 394 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_2
-# 395 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 0
-# 396 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_4
 # 397 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_5
-# 398 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 1
-# 400 "data/maps/SandgemTown/scripts.pory"
-	playse SE_DOOR
-# 401 "data/maps/SandgemTown/scripts.pory"
 	applymovement 1, SandgemTown_ON_FRAME_Movement_2
-# 402 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_2
-# 403 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 1
-# 404 "data/maps/SandgemTown/scripts.pory"
-	setflag FLAG_HIDE_SANDGEM_TOWN_DAWN
-# 405 "data/maps/SandgemTown/scripts.pory"
-	removeobject 1
-# 407 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_2
-# 408 "data/maps/SandgemTown/scripts.pory"
+# 398 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 0
+# 399 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_4
+# 400 "data/maps/SandgemTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_5
+# 401 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 1
+# 403 "data/maps/SandgemTown/scripts.pory"
+	playse SE_DOOR
+# 404 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_ON_FRAME_Movement_2
+# 405 "data/maps/SandgemTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_2
+# 406 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 1
+# 407 "data/maps/SandgemTown/scripts.pory"
+	setflag FLAG_HIDE_SANDGEM_TOWN_DAWN
+# 408 "data/maps/SandgemTown/scripts.pory"
+	removeobject 1
 # 410 "data/maps/SandgemTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_ON_FRAME_Movement_2
+# 411 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 0
+# 413 "data/maps/SandgemTown/scripts.pory"
 	warp MAP_SANDGEM_PROFESSORS_LAB, 6, 12
-# 412 "data/maps/SandgemTown/scripts.pory"
+# 415 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 SandgemTown_EventScript_LucasDawnScene_3:
-# 268 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_1
-# 269 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 1
-# 270 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_2
 # 271 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_2
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_1
 # 272 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
-	goto SandgemTown_EventScript_LucasDawnScene_1
-
-SandgemTown_EventScript_LucasDawnScene_4:
+# 273 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_ON_FRAME_Movement_2
 # 274 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_3
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_2
 # 275 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_1
 
-SandgemTown_EventScript_LucasDawnScene_5:
+SandgemTown_EventScript_LucasDawnScene_4:
 # 277 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_4
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_3
 # 278 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_1
 
-SandgemTown_EventScript_LucasDawnScene_6:
+SandgemTown_EventScript_LucasDawnScene_5:
 # 280 "data/maps/SandgemTown/scripts.pory"
 	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_4
 # 281 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
-# 282 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_5
+	goto SandgemTown_EventScript_LucasDawnScene_1
+
+SandgemTown_EventScript_LucasDawnScene_6:
 # 283 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_6
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_4
 # 284 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 1
+# 285 "data/maps/SandgemTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_5
+# 286 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_6
+# 287 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_1
 
 SandgemTown_EventScript_LucasDawnScene_7:
-# 286 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_1
-# 287 "data/maps/SandgemTown/scripts.pory"
-	waitmovement 1
-# 288 "data/maps/SandgemTown/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_5
 # 289 "data/maps/SandgemTown/scripts.pory"
-	applymovement 1, SandgemTown_ON_FRAME_Movement_7
+	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_1
 # 290 "data/maps/SandgemTown/scripts.pory"
+	waitmovement 1
+# 291 "data/maps/SandgemTown/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_5
+# 292 "data/maps/SandgemTown/scripts.pory"
+	applymovement 1, SandgemTown_ON_FRAME_Movement_7
+# 293 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_1
 
 SandgemTown_EventScript_LucasDawnScene_9:
-# 296 "data/maps/SandgemTown/scripts.pory"
-	msgbox SandgemTown_EventScript_LucasDawnScene_Text_0
 # 299 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_EventScript_LucasDawnScene_Text_0
+# 302 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 	goto SandgemTown_EventScript_LucasDawnScene_8
 
 SandgemTown_EventScript_LucasDawnScene_14:
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_7
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_8
-# 311 "data/maps/SandgemTown/scripts.pory"
+# 314 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_12
 
 SandgemTown_EventScript_LucasDawnScene_15:
-# 313 "data/maps/SandgemTown/scripts.pory"
+# 316 "data/maps/SandgemTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_9
-# 314 "data/maps/SandgemTown/scripts.pory"
+# 317 "data/maps/SandgemTown/scripts.pory"
 	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_9
-# 315 "data/maps/SandgemTown/scripts.pory"
+# 318 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_12
 
 SandgemTown_EventScript_LucasDawnScene_16:
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_10
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_11
-# 319 "data/maps/SandgemTown/scripts.pory"
+# 322 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_12
 
 SandgemTown_EventScript_LucasDawnScene_17:
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_12
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_13
-# 323 "data/maps/SandgemTown/scripts.pory"
+# 326 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_12
 
 SandgemTown_EventScript_LucasDawnScene_18:
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, SandgemTown_EventScript_LucasDawnScene_Movement_14
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	applymovement 1, SandgemTown_EventScript_LucasDawnScene_Movement_15
-# 327 "data/maps/SandgemTown/scripts.pory"
+# 330 "data/maps/SandgemTown/scripts.pory"
 	waitmovement 1
 	goto SandgemTown_EventScript_LucasDawnScene_12
 
 SandgemTown_EventScript_LucasDawnScene_20:
-# 331 "data/maps/SandgemTown/scripts.pory"
-	msgbox SandgemTown_EventScript_LucasDawnScene_Text_2
 # 334 "data/maps/SandgemTown/scripts.pory"
+	msgbox SandgemTown_EventScript_LucasDawnScene_Text_2
+# 337 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 	goto SandgemTown_EventScript_LucasDawnScene_19
 
 SandgemTown_EventScript_LucasDawnScene_24:
-# 378 "data/maps/SandgemTown/scripts.pory"
+# 381 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_EventScript_LucasDawnScene_Text_6
-# 383 "data/maps/SandgemTown/scripts.pory"
+# 386 "data/maps/SandgemTown/scripts.pory"
 	closemessage
 	goto SandgemTown_EventScript_LucasDawnScene_23
 
 
 SandgemTown_EventScript_Woman::
-# 416 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 418 "data/maps/SandgemTown/scripts.pory"
-	faceplayer
 # 419 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 421 "data/maps/SandgemTown/scripts.pory"
+	faceplayer
+# 422 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_EventScript_Woman_Text_0
-# 423 "data/maps/SandgemTown/scripts.pory"
+# 426 "data/maps/SandgemTown/scripts.pory"
 	closemessage
-# 425 "data/maps/SandgemTown/scripts.pory"
+# 428 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_EventScript_Youngster::
-# 429 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 431 "data/maps/SandgemTown/scripts.pory"
-	faceplayer
 # 432 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 434 "data/maps/SandgemTown/scripts.pory"
+	faceplayer
+# 435 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_EventScript_Youngster_Text_0
-# 438 "data/maps/SandgemTown/scripts.pory"
+# 441 "data/maps/SandgemTown/scripts.pory"
 	closemessage
-# 440 "data/maps/SandgemTown/scripts.pory"
+# 443 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_EventScript_Man::
-# 445 "data/maps/SandgemTown/scripts.pory"
-	lock
-# 447 "data/maps/SandgemTown/scripts.pory"
-	faceplayer
 # 448 "data/maps/SandgemTown/scripts.pory"
+	lock
+# 450 "data/maps/SandgemTown/scripts.pory"
+	faceplayer
+# 451 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_EventScript_Man_Text_0
-# 452 "data/maps/SandgemTown/scripts.pory"
+# 455 "data/maps/SandgemTown/scripts.pory"
 	closemessage
-# 454 "data/maps/SandgemTown/scripts.pory"
+# 457 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_SignScript_Lab::
-# 458 "data/maps/SandgemTown/scripts.pory"
+# 461 "data/maps/SandgemTown/scripts.pory"
 	lock
-# 459 "data/maps/SandgemTown/scripts.pory"
+# 462 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_SignScript_Lab_Text_0
-# 460 "data/maps/SandgemTown/scripts.pory"
+# 463 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_SignScript_RivalHouse::
-# 464 "data/maps/SandgemTown/scripts.pory"
+# 467 "data/maps/SandgemTown/scripts.pory"
 	lock
-# 465 "data/maps/SandgemTown/scripts.pory"
+# 468 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_SignScript_RivalHouse_Text_0
-# 466 "data/maps/SandgemTown/scripts.pory"
+# 469 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_SignScript_Town::
-# 470 "data/maps/SandgemTown/scripts.pory"
+# 473 "data/maps/SandgemTown/scripts.pory"
 	lock
-# 471 "data/maps/SandgemTown/scripts.pory"
+# 474 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_SignScript_Town_Text_0
-# 472 "data/maps/SandgemTown/scripts.pory"
+# 475 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_SignScript_Center::
-# 476 "data/maps/SandgemTown/scripts.pory"
+# 479 "data/maps/SandgemTown/scripts.pory"
 	lock
-# 477 "data/maps/SandgemTown/scripts.pory"
+# 480 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_SignScript_Center_Text_0
-# 478 "data/maps/SandgemTown/scripts.pory"
+# 481 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
 
 SandgemTown_SignScript_Mart::
-# 482 "data/maps/SandgemTown/scripts.pory"
+# 485 "data/maps/SandgemTown/scripts.pory"
 	lock
-# 483 "data/maps/SandgemTown/scripts.pory"
+# 486 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_SignScript_Mart_Text_0
-# 484 "data/maps/SandgemTown/scripts.pory"
+# 487 "data/maps/SandgemTown/scripts.pory"
 	release
 	return
 
@@ -664,355 +668,355 @@ SandgemTown_ON_FRAME_Movement_2:
 	walk_up
 	step_end
 
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_3:
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_down
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 106 "data/maps/SandgemTown/scripts.pory"
+# 107 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_4:
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 107 "data/maps/SandgemTown/scripts.pory"
+# 108 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 154 "data/maps/SandgemTown/scripts.pory"
+# 155 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_5:
-# 154 "data/maps/SandgemTown/scripts.pory"
+# 155 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 155 "data/maps/SandgemTown/scripts.pory"
+# 156 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_6:
-# 155 "data/maps/SandgemTown/scripts.pory"
+# 156 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_left
 	step_end
 
-# 191 "data/maps/SandgemTown/scripts.pory"
+# 192 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_7:
-# 191 "data/maps/SandgemTown/scripts.pory"
+# 192 "data/maps/SandgemTown/scripts.pory"
 	walk_down
 	step_end
 
-# 194 "data/maps/SandgemTown/scripts.pory"
+# 195 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_8:
-# 194 "data/maps/SandgemTown/scripts.pory"
+# 195 "data/maps/SandgemTown/scripts.pory"
 	walk_left
-# 194 "data/maps/SandgemTown/scripts.pory"
+# 195 "data/maps/SandgemTown/scripts.pory"
 	walk_left
-# 194 "data/maps/SandgemTown/scripts.pory"
+# 195 "data/maps/SandgemTown/scripts.pory"
 	walk_left
-# 194 "data/maps/SandgemTown/scripts.pory"
+# 195 "data/maps/SandgemTown/scripts.pory"
 	walk_left
-# 194 "data/maps/SandgemTown/scripts.pory"
+# 195 "data/maps/SandgemTown/scripts.pory"
 	walk_left
 	step_end
 
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_ON_FRAME_Movement_9:
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 197 "data/maps/SandgemTown/scripts.pory"
+# 198 "data/maps/SandgemTown/scripts.pory"
 	walk_up
 	step_end
 
-# 259 "data/maps/SandgemTown/scripts.pory"
+# 262 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_0:
-# 259 "data/maps/SandgemTown/scripts.pory"
+# 262 "data/maps/SandgemTown/scripts.pory"
 	emote_exclamation_mark
-# 259 "data/maps/SandgemTown/scripts.pory"
+# 262 "data/maps/SandgemTown/scripts.pory"
 	delay_16
-# 259 "data/maps/SandgemTown/scripts.pory"
+# 262 "data/maps/SandgemTown/scripts.pory"
 	delay_16
-# 259 "data/maps/SandgemTown/scripts.pory"
+# 262 "data/maps/SandgemTown/scripts.pory"
 	delay_16
 	step_end
 
-# 263 "data/maps/SandgemTown/scripts.pory"
+# 266 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_1:
-# 263 "data/maps/SandgemTown/scripts.pory"
+# 266 "data/maps/SandgemTown/scripts.pory"
 	walk_left
-# 263 "data/maps/SandgemTown/scripts.pory"
+# 266 "data/maps/SandgemTown/scripts.pory"
 	walk_left
 	step_end
 
-# 271 "data/maps/SandgemTown/scripts.pory"
+# 274 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_2:
-# 271 "data/maps/SandgemTown/scripts.pory"
+# 274 "data/maps/SandgemTown/scripts.pory"
 	face_down
 	step_end
 
-# 274 "data/maps/SandgemTown/scripts.pory"
+# 277 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_3:
-# 274 "data/maps/SandgemTown/scripts.pory"
+# 277 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 274 "data/maps/SandgemTown/scripts.pory"
+# 277 "data/maps/SandgemTown/scripts.pory"
 	walk_left
 	step_end
 
-# 277 "data/maps/SandgemTown/scripts.pory"
+# 280 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_4:
-# 277 "data/maps/SandgemTown/scripts.pory"
+# 280 "data/maps/SandgemTown/scripts.pory"
 	walk_left
 	step_end
 
-# 282 "data/maps/SandgemTown/scripts.pory"
+# 285 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_5:
-# 282 "data/maps/SandgemTown/scripts.pory"
+# 285 "data/maps/SandgemTown/scripts.pory"
 	face_up
 	step_end
 
-# 283 "data/maps/SandgemTown/scripts.pory"
+# 286 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_6:
-# 283 "data/maps/SandgemTown/scripts.pory"
+# 286 "data/maps/SandgemTown/scripts.pory"
 	walk_left
-# 283 "data/maps/SandgemTown/scripts.pory"
+# 286 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_7:
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 	walk_down
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 309 "data/maps/SandgemTown/scripts.pory"
+# 312 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_8:
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 310 "data/maps/SandgemTown/scripts.pory"
+# 313 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 313 "data/maps/SandgemTown/scripts.pory"
+# 316 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_9:
-# 313 "data/maps/SandgemTown/scripts.pory"
+# 316 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 313 "data/maps/SandgemTown/scripts.pory"
+# 316 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 313 "data/maps/SandgemTown/scripts.pory"
+# 316 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 313 "data/maps/SandgemTown/scripts.pory"
+# 316 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 313 "data/maps/SandgemTown/scripts.pory"
+# 316 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_10:
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 317 "data/maps/SandgemTown/scripts.pory"
+# 320 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_11:
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 318 "data/maps/SandgemTown/scripts.pory"
+# 321 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_12:
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 321 "data/maps/SandgemTown/scripts.pory"
+# 324 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_13:
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 322 "data/maps/SandgemTown/scripts.pory"
+# 325 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_14:
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 325 "data/maps/SandgemTown/scripts.pory"
+# 328 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_15:
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_up
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_right
-# 326 "data/maps/SandgemTown/scripts.pory"
+# 329 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_up
 	step_end
 
-# 347 "data/maps/SandgemTown/scripts.pory"
+# 350 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_16:
-# 347 "data/maps/SandgemTown/scripts.pory"
+# 350 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_down
-# 347 "data/maps/SandgemTown/scripts.pory"
+# 350 "data/maps/SandgemTown/scripts.pory"
 	walk_in_place_faster_down
 	step_end
 
-# 364 "data/maps/SandgemTown/scripts.pory"
+# 367 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_17:
-# 364 "data/maps/SandgemTown/scripts.pory"
+# 367 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
-# 364 "data/maps/SandgemTown/scripts.pory"
+# 367 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
-# 364 "data/maps/SandgemTown/scripts.pory"
+# 367 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 367 "data/maps/SandgemTown/scripts.pory"
+# 370 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_18:
-# 367 "data/maps/SandgemTown/scripts.pory"
+# 370 "data/maps/SandgemTown/scripts.pory"
 	face_right
 	step_end
 
-# 369 "data/maps/SandgemTown/scripts.pory"
+# 372 "data/maps/SandgemTown/scripts.pory"
 SandgemTown_EventScript_LucasDawnScene_Movement_19:
-# 369 "data/maps/SandgemTown/scripts.pory"
+# 372 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
-# 369 "data/maps/SandgemTown/scripts.pory"
+# 372 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
-# 369 "data/maps/SandgemTown/scripts.pory"
+# 372 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
-# 369 "data/maps/SandgemTown/scripts.pory"
+# 372 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
-# 369 "data/maps/SandgemTown/scripts.pory"
+# 372 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
-# 369 "data/maps/SandgemTown/scripts.pory"
+# 372 "data/maps/SandgemTown/scripts.pory"
 	walk_fast_right
 	step_end
 
@@ -1070,7 +1074,7 @@ SandgemTown_ON_FRAME_Text_6:
 	.string "OK, follow me!$"
 
 SandgemTown_ON_FRAME_Text_7:
-# 111 "data/maps/SandgemTown/scripts.pory"
+# 112 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}This building with the red roof is\n"
 	.string "the Pokémon Center.\p"
 	.string "You can get your Pokémon healed if\n"
@@ -1079,7 +1083,7 @@ SandgemTown_ON_FRAME_Text_7:
 	.string "towns.$"
 
 SandgemTown_ON_FRAME_Text_8:
-# 119 "data/maps/SandgemTown/scripts.pory"
+# 120 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}This building with the red roof is\n"
 	.string "the Pokémon Center.\p"
 	.string "It's the place that heals Pokémon\n"
@@ -1088,7 +1092,7 @@ SandgemTown_ON_FRAME_Text_8:
 	.string "most towns.$"
 
 SandgemTown_ON_FRAME_Text_9:
-# 133 "data/maps/SandgemTown/scripts.pory"
+# 134 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Over here, the building with the blue\n"
 	.string "roof is the Poké Mart.\p"
 	.string "It's a shop where you can buy and\n"
@@ -1099,7 +1103,7 @@ SandgemTown_ON_FRAME_Text_9:
 	.string "Don't worry about it, OK?$"
 
 SandgemTown_ON_FRAME_Text_10:
-# 143 "data/maps/SandgemTown/scripts.pory"
+# 144 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}The building with the blue roof over\n"
 	.string "here is the Poké Mart.\p"
 	.string "It's a shop where you can buy and\n"
@@ -1110,7 +1114,7 @@ SandgemTown_ON_FRAME_Text_10:
 	.string "Don't let it bother you!$"
 
 SandgemTown_ON_FRAME_Text_11:
-# 164 "data/maps/SandgemTown/scripts.pory"
+# 165 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Oh, yeah, right!\n"
 	.string "{PLAYER}. . .\p"
 	.string "You should let your family know\n"
@@ -1124,7 +1128,7 @@ SandgemTown_ON_FRAME_Text_11:
 	.string "OK, be seeing you!$"
 
 SandgemTown_ON_FRAME_Text_12:
-# 177 "data/maps/SandgemTown/scripts.pory"
+# 178 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Oh, that's right!\n"
 	.string "{PLAYER}. . .\p"
 	.string "Don't you need to let your family\n"
@@ -1138,35 +1142,35 @@ SandgemTown_ON_FRAME_Text_12:
 	.string "OK, bye now!$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_0:
-# 296 "data/maps/SandgemTown/scripts.pory"
+# 299 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Hi! I've been waiting for you!\n"
 	.string "Please, come with me!\l"
 	.string "The prof's waiting to see you.$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_1:
-# 301 "data/maps/SandgemTown/scripts.pory"
+# 304 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Oh! There you are!\n"
 	.string "Please, come with me!\l"
 	.string "The professor is waiting!$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_2:
-# 331 "data/maps/SandgemTown/scripts.pory"
+# 334 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}See? This is our Pokémon Research\n"
 	.string "Lab.\p"
 	.string "We'll just go ahead and. . .$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_3:
-# 336 "data/maps/SandgemTown/scripts.pory"
+# 339 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}This is it!\n"
 	.string "Our Pokémon Research Lab!\p"
 	.string "Let's go. . .$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_4:
-# 352 "data/maps/SandgemTown/scripts.pory"
+# 355 "data/maps/SandgemTown/scripts.pory"
 	.string "THUD! !$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_5:
-# 356 "data/maps/SandgemTown/scripts.pory"
+# 359 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}What the. . .\p"
 	.string "Oh, it's you, {PLAYER}!\p"
 	.string "That old guy. . . He's not so scary so\n"
@@ -1175,7 +1179,7 @@ SandgemTown_EventScript_LucasDawnScene_Text_5:
 	.string "I'm out of here. See you later!$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_6:
-# 378 "data/maps/SandgemTown/scripts.pory"
+# 381 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}What was that?!\p"
 	.string "Your friend always seems to be\n"
 	.string "in such a rush.\p"
@@ -1183,7 +1187,7 @@ SandgemTown_EventScript_LucasDawnScene_Text_6:
 	.string "Let's go in.$"
 
 SandgemTown_EventScript_LucasDawnScene_Text_7:
-# 385 "data/maps/SandgemTown/scripts.pory"
+# 388 "data/maps/SandgemTown/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Wow, what was that?!\p"
 	.string "Your friend sure seems to be really\n"
 	.string "impatient.\p"
@@ -1191,14 +1195,14 @@ SandgemTown_EventScript_LucasDawnScene_Text_7:
 	.string "Let's go inside.$"
 
 SandgemTown_EventScript_Woman_Text_0:
-# 419 "data/maps/SandgemTown/scripts.pory"
+# 422 "data/maps/SandgemTown/scripts.pory"
 	.string "So I don't forget what's happened,\n"
 	.string "till now, I'd better save this. . .\p"
 	.string "There!\n"
 	.string "Now I can take a break.$"
 
 SandgemTown_EventScript_Youngster_Text_0:
-# 432 "data/maps/SandgemTown/scripts.pory"
+# 435 "data/maps/SandgemTown/scripts.pory"
 	.string "Oh, wow!\n"
 	.string "Pokémon are so cool!\p"
 	.string "You can make yours battle and make\n"
@@ -1207,28 +1211,28 @@ SandgemTown_EventScript_Youngster_Text_0:
 	.string "It's so cool!$"
 
 SandgemTown_EventScript_Man_Text_0:
-# 448 "data/maps/SandgemTown/scripts.pory"
+# 451 "data/maps/SandgemTown/scripts.pory"
 	.string "That thing you have!\p"
 	.string "It's a Pokédex, isn't it?!\p"
 	.string "You're off to see all kinds of\n"
 	.string "Pokémon now! Lucky you!$"
 
 SandgemTown_SignScript_Lab_Text_0:
-# 459 "data/maps/SandgemTown/scripts.pory"
+# 462 "data/maps/SandgemTown/scripts.pory"
 	.string "Pokémon Research Lab$"
 
 SandgemTown_SignScript_RivalHouse_Text_0:
-# 465 "data/maps/SandgemTown/scripts.pory"
+# 468 "data/maps/SandgemTown/scripts.pory"
 	.string "{RIVAL}'s House$"
 
 SandgemTown_SignScript_Town_Text_0:
-# 471 "data/maps/SandgemTown/scripts.pory"
+# 474 "data/maps/SandgemTown/scripts.pory"
 	.string "Sangdem Town\nTown of Sand!$"
 
 SandgemTown_SignScript_Center_Text_0:
-# 477 "data/maps/SandgemTown/scripts.pory"
+# 480 "data/maps/SandgemTown/scripts.pory"
 	.string "Heal Your Pokémon!\nPokémon Center$"
 
 SandgemTown_SignScript_Mart_Text_0:
-# 483 "data/maps/SandgemTown/scripts.pory"
+# 486 "data/maps/SandgemTown/scripts.pory"
 	.string "All your Item Needs Fulfilled!\nPokémon Mart!$"

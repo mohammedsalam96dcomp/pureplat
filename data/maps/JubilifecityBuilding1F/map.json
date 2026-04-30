@@ -2,7 +2,7 @@
   "id": "MAP_JUBILIFECITY_BUILDING1F",
   "name": "JubilifecityBuilding1F",
   "layout": "LAYOUT_JUBILIFECITY_BUILDING1F",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DP_JUBILIFE_DAY",
   "region_map_section": "MAPSEC_JUBILIFE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

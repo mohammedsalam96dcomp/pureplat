@@ -322,65 +322,67 @@ Route202_EventScript_CatchingTutorial_4:
 	waitmovement 1
 # 201 "data/maps/Route202/scripts.pory"
 	checkplayergender
-# 203 "data/maps/Route202/scripts.pory"
+# 204 "data/maps/Route202/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route202_EventScript_CatchingTutorial_12
-# 210 "data/maps/Route202/scripts.pory"
+# 212 "data/maps/Route202/scripts.pory"
+	playbgm MUS_DP_DAWN, 0
+# 213 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_CatchingTutorial_Text_1
-# 215 "data/maps/Route202/scripts.pory"
+# 218 "data/maps/Route202/scripts.pory"
 	closemessage
 Route202_EventScript_CatchingTutorial_11:
-# 218 "data/maps/Route202/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_CatchingTutorial_Movement_0
-# 219 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_0
-# 220 "data/maps/Route202/scripts.pory"
-	waitmovement 1
+# 221 "data/maps/Route202/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, Route202_EventScript_CatchingTutorial_Movement_5
 # 222 "data/maps/Route202/scripts.pory"
-	special SavePlayerParty
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_5
 # 223 "data/maps/Route202/scripts.pory"
-	special LoadWallyZigzagoon
-# 224 "data/maps/Route202/scripts.pory"
-	special StartWallyTutorialBattle
-# 225 "data/maps/Route202/scripts.pory"
-	waitstate
-# 227 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_1
-# 228 "data/maps/Route202/scripts.pory"
 	waitmovement 1
+# 225 "data/maps/Route202/scripts.pory"
+	special SavePlayerParty
+# 226 "data/maps/Route202/scripts.pory"
+	special LoadWallyZigzagoon
+# 227 "data/maps/Route202/scripts.pory"
+	special StartWallyTutorialBattle
+# 228 "data/maps/Route202/scripts.pory"
+	waitstate
 # 230 "data/maps/Route202/scripts.pory"
-	checkplayergender
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_6
 # 231 "data/maps/Route202/scripts.pory"
+	waitmovement 1
+# 233 "data/maps/Route202/scripts.pory"
+	checkplayergender
+# 234 "data/maps/Route202/scripts.pory"
 	compare VAR_RESULT, FEMALE
 	goto_if_eq Route202_EventScript_CatchingTutorial_16
-# 253 "data/maps/Route202/scripts.pory"
+# 256 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_CatchingTutorial_Text_4
-# 267 "data/maps/Route202/scripts.pory"
+# 270 "data/maps/Route202/scripts.pory"
 	closemessage
-# 268 "data/maps/Route202/scripts.pory"
+# 271 "data/maps/Route202/scripts.pory"
 	giveitem ITEM_POKE_BALL, 20
-# 269 "data/maps/Route202/scripts.pory"
+# 272 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_CatchingTutorial_Text_5
-# 275 "data/maps/Route202/scripts.pory"
+# 278 "data/maps/Route202/scripts.pory"
 	closemessage
 Route202_EventScript_CatchingTutorial_15:
-# 277 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_2
-# 278 "data/maps/Route202/scripts.pory"
-	waitmovement 1
 # 280 "data/maps/Route202/scripts.pory"
-	setflag FLAG_HIDE_ROUTE_202_DAWN
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_7
 # 281 "data/maps/Route202/scripts.pory"
-	removeobject 1
+	waitmovement 1
 # 283 "data/maps/Route202/scripts.pory"
-	special LoadPlayerParty
-# 285 "data/maps/Route202/scripts.pory"
-	setvar VAR_ROUTE202_STATE, 3
+	setflag FLAG_HIDE_ROUTE_202_DAWN
+# 284 "data/maps/Route202/scripts.pory"
+	removeobject 1
 # 286 "data/maps/Route202/scripts.pory"
-	setvar VAR_JUBILIFE_CITY_STATE, 1
-# 287 "data/maps/Route202/scripts.pory"
-	clearflag FLAG_FOLLOWER_POKEMON
+	special LoadPlayerParty
+# 288 "data/maps/Route202/scripts.pory"
+	setvar VAR_ROUTE202_STATE, 3
 # 289 "data/maps/Route202/scripts.pory"
+	setvar VAR_JUBILIFE_CITY_STATE, 1
+# 290 "data/maps/Route202/scripts.pory"
+	clearflag FLAG_FOLLOWER_POKEMON
+# 292 "data/maps/Route202/scripts.pory"
 	release
 	return
 
@@ -391,112 +393,114 @@ Route202_EventScript_CatchingTutorial_2:
 
 Route202_EventScript_CatchingTutorial_6:
 # 188 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_2
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_0
 	goto Route202_EventScript_CatchingTutorial_4
 
 Route202_EventScript_CatchingTutorial_7:
 # 190 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_3
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_1
 	goto Route202_EventScript_CatchingTutorial_4
 
 Route202_EventScript_CatchingTutorial_8:
 # 192 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_4
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_2
 	goto Route202_EventScript_CatchingTutorial_4
 
 Route202_EventScript_CatchingTutorial_9:
 # 194 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_5
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_3
 	goto Route202_EventScript_CatchingTutorial_4
 
 Route202_EventScript_CatchingTutorial_10:
 # 196 "data/maps/Route202/scripts.pory"
-	applymovement 1, Route202_EventScript_GoSeeMom_Movement_6
+	applymovement 1, Route202_EventScript_CatchingTutorial_Movement_4
 	goto Route202_EventScript_CatchingTutorial_4
 
 Route202_EventScript_CatchingTutorial_12:
-# 204 "data/maps/Route202/scripts.pory"
+# 205 "data/maps/Route202/scripts.pory"
+	playbgm MUS_DP_LUCAS, 0
+# 206 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_CatchingTutorial_Text_0
-# 208 "data/maps/Route202/scripts.pory"
+# 210 "data/maps/Route202/scripts.pory"
 	closemessage
 	goto Route202_EventScript_CatchingTutorial_11
 
 Route202_EventScript_CatchingTutorial_16:
-# 232 "data/maps/Route202/scripts.pory"
+# 235 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_CatchingTutorial_Text_2
-# 244 "data/maps/Route202/scripts.pory"
+# 247 "data/maps/Route202/scripts.pory"
 	closemessage
-# 245 "data/maps/Route202/scripts.pory"
+# 248 "data/maps/Route202/scripts.pory"
 	giveitem ITEM_POKE_BALL, 10
-# 246 "data/maps/Route202/scripts.pory"
+# 249 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_CatchingTutorial_Text_3
-# 251 "data/maps/Route202/scripts.pory"
+# 254 "data/maps/Route202/scripts.pory"
 	closemessage
 	goto Route202_EventScript_CatchingTutorial_15
 
 
 Route202_EventScript_Tristan::
-# 294 "data/maps/Route202/scripts.pory"
+# 297 "data/maps/Route202/scripts.pory"
 	trainerbattle_single TRAINER_TRISTAN, Route202_EventScript_Tristan_Text_0, Route202_EventScript_Tristan_Text_1
-# 299 "data/maps/Route202/scripts.pory"
+# 302 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_Tristan_Text_2, MSGBOX_AUTOCLOSE
 	end
 
 
 Route202_EventScript_Natalie::
-# 304 "data/maps/Route202/scripts.pory"
+# 307 "data/maps/Route202/scripts.pory"
 	trainerbattle_single TRAINER_NATALIE, Route202_EventScript_Natalie_Text_0, Route202_EventScript_Natalie_Text_1
-# 309 "data/maps/Route202/scripts.pory"
+# 312 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_Natalie_Text_2, MSGBOX_AUTOCLOSE
 	end
 
 
 Route202_EventScript_Logan::
-# 314 "data/maps/Route202/scripts.pory"
+# 317 "data/maps/Route202/scripts.pory"
 	trainerbattle_single TRAINER_LOGAN, Route202_EventScript_Logan_Text_0, Route202_EventScript_Logan_Text_1
-# 319 "data/maps/Route202/scripts.pory"
+# 322 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_Logan_Text_2, MSGBOX_AUTOCLOSE
 	end
 
 
 Route202_EventScript_Youngster::
-# 324 "data/maps/Route202/scripts.pory"
-	lock
-# 325 "data/maps/Route202/scripts.pory"
-	faceplayer
 # 327 "data/maps/Route202/scripts.pory"
+	lock
+# 328 "data/maps/Route202/scripts.pory"
+	faceplayer
+# 330 "data/maps/Route202/scripts.pory"
 	msgbox Route202_EventScript_Youngster_Text_0
-# 332 "data/maps/Route202/scripts.pory"
+# 335 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_SignScript_Sandgem::
-# 336 "data/maps/Route202/scripts.pory"
+# 339 "data/maps/Route202/scripts.pory"
 	lock
-# 337 "data/maps/Route202/scripts.pory"
+# 340 "data/maps/Route202/scripts.pory"
 	msgbox Route202_SignScript_Sandgem_Text_0
-# 338 "data/maps/Route202/scripts.pory"
+# 341 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_SignScript_TrainerTips::
-# 343 "data/maps/Route202/scripts.pory"
+# 346 "data/maps/Route202/scripts.pory"
 	lock
-# 344 "data/maps/Route202/scripts.pory"
+# 347 "data/maps/Route202/scripts.pory"
 	msgbox Route202_SignScript_TrainerTips_Text_0
-# 349 "data/maps/Route202/scripts.pory"
+# 352 "data/maps/Route202/scripts.pory"
 	release
 	return
 
 
 Route202_SignScript_Jubilife::
-# 353 "data/maps/Route202/scripts.pory"
+# 356 "data/maps/Route202/scripts.pory"
 	lock
-# 354 "data/maps/Route202/scripts.pory"
+# 357 "data/maps/Route202/scripts.pory"
 	msgbox Route202_SignScript_Jubilife_Text_0
-# 355 "data/maps/Route202/scripts.pory"
+# 358 "data/maps/Route202/scripts.pory"
 	release
 	return
 
@@ -717,37 +721,129 @@ Route202_EventScript_GoSeeMom_Movement_13:
 	face_right
 	step_end
 
-# 218 "data/maps/Route202/scripts.pory"
+# 188 "data/maps/Route202/scripts.pory"
 Route202_EventScript_CatchingTutorial_Movement_0:
-# 218 "data/maps/Route202/scripts.pory"
+# 188 "data/maps/Route202/scripts.pory"
+	walk_right
+# 188 "data/maps/Route202/scripts.pory"
+	walk_right
+# 188 "data/maps/Route202/scripts.pory"
+	walk_right
+# 188 "data/maps/Route202/scripts.pory"
+	walk_right
+# 188 "data/maps/Route202/scripts.pory"
+	walk_up
+# 188 "data/maps/Route202/scripts.pory"
+	walk_up
+# 188 "data/maps/Route202/scripts.pory"
+	walk_right
+# 188 "data/maps/Route202/scripts.pory"
+	delay_16
+	step_end
+
+# 190 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_1:
+# 190 "data/maps/Route202/scripts.pory"
+	walk_right
+# 190 "data/maps/Route202/scripts.pory"
+	walk_right
+# 190 "data/maps/Route202/scripts.pory"
+	walk_right
+# 190 "data/maps/Route202/scripts.pory"
+	walk_right
+# 190 "data/maps/Route202/scripts.pory"
+	walk_up
+# 190 "data/maps/Route202/scripts.pory"
+	walk_right
+# 190 "data/maps/Route202/scripts.pory"
+	delay_16
+	step_end
+
+# 192 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_2:
+# 192 "data/maps/Route202/scripts.pory"
+	walk_right
+# 192 "data/maps/Route202/scripts.pory"
+	walk_right
+# 192 "data/maps/Route202/scripts.pory"
+	walk_right
+# 192 "data/maps/Route202/scripts.pory"
+	walk_right
+# 192 "data/maps/Route202/scripts.pory"
+	walk_right
+# 192 "data/maps/Route202/scripts.pory"
+	delay_16
+	step_end
+
+# 194 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_3:
+# 194 "data/maps/Route202/scripts.pory"
+	walk_right
+# 194 "data/maps/Route202/scripts.pory"
+	walk_right
+# 194 "data/maps/Route202/scripts.pory"
+	walk_right
+# 194 "data/maps/Route202/scripts.pory"
+	walk_right
+# 194 "data/maps/Route202/scripts.pory"
+	walk_down
+# 194 "data/maps/Route202/scripts.pory"
+	walk_right
+# 194 "data/maps/Route202/scripts.pory"
+	delay_16
+	step_end
+
+# 196 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_4:
+# 196 "data/maps/Route202/scripts.pory"
+	walk_right
+# 196 "data/maps/Route202/scripts.pory"
+	walk_right
+# 196 "data/maps/Route202/scripts.pory"
+	walk_right
+# 196 "data/maps/Route202/scripts.pory"
+	walk_right
+# 196 "data/maps/Route202/scripts.pory"
+	walk_down
+# 196 "data/maps/Route202/scripts.pory"
+	walk_down
+# 196 "data/maps/Route202/scripts.pory"
+	walk_right
+# 196 "data/maps/Route202/scripts.pory"
+	delay_16
+	step_end
+
+# 221 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_5:
+# 221 "data/maps/Route202/scripts.pory"
 	walk_left
-# 218 "data/maps/Route202/scripts.pory"
+# 221 "data/maps/Route202/scripts.pory"
 	walk_left
 	step_end
 
-# 227 "data/maps/Route202/scripts.pory"
-Route202_EventScript_CatchingTutorial_Movement_1:
-# 227 "data/maps/Route202/scripts.pory"
+# 230 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_6:
+# 230 "data/maps/Route202/scripts.pory"
 	walk_in_place_right
 	step_end
 
-# 277 "data/maps/Route202/scripts.pory"
-Route202_EventScript_CatchingTutorial_Movement_2:
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
+Route202_EventScript_CatchingTutorial_Movement_7:
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
-# 277 "data/maps/Route202/scripts.pory"
+# 280 "data/maps/Route202/scripts.pory"
 	walk_left
 	step_end
 
@@ -787,14 +883,14 @@ Route202_EventScript_GoSeeMom_Text_3:
 	.string "The faster the better, too.$"
 
 Route202_EventScript_CatchingTutorial_Text_0:
-# 204 "data/maps/Route202/scripts.pory"
+# 206 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}{PLAYER}, do you know\n"
 	.string "how to catch a Pokémon?\p"
 	.string "I'll demonstrate how to catch\n"
 	.string "one, so just watch, OK?$"
 
 Route202_EventScript_CatchingTutorial_Text_1:
-# 210 "data/maps/Route202/scripts.pory"
+# 213 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Oh, that's right!\p"
 	.string "{PLAYER}, I haven't shown you\n"
 	.string "how to catch a Pokémon.\p"
@@ -802,7 +898,7 @@ Route202_EventScript_CatchingTutorial_Text_1:
 	.string "one, so just watch me, OK?$"
 
 Route202_EventScript_CatchingTutorial_Text_2:
-# 232 "data/maps/Route202/scripts.pory"
+# 235 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}And that's how it's done.\p"
 	.string "Actually, I should have lowered the\n"
 	.string "target's HP some more.\p"
@@ -817,7 +913,7 @@ Route202_EventScript_CatchingTutorial_Text_2:
 	.string "twenty Poké Balls to get you started.$"
 
 Route202_EventScript_CatchingTutorial_Text_3:
-# 246 "data/maps/Route202/scripts.pory"
+# 249 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
 	.string "you'll be able to travel farther.\p"
 	.string "That way, you'll have a better shot\n"
@@ -825,7 +921,7 @@ Route202_EventScript_CatchingTutorial_Text_3:
 	.string "See you around!$"
 
 Route202_EventScript_CatchingTutorial_Text_4:
-# 253 "data/maps/Route202/scripts.pory"
+# 256 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}Giggle. . .\n"
 	.string "See? Isn't it neat?\p"
 	.string "Actually, it's better to lower your\n"
@@ -842,7 +938,7 @@ Route202_EventScript_CatchingTutorial_Text_4:
 	.string "Poké Balls!$"
 
 Route202_EventScript_CatchingTutorial_Text_5:
-# 269 "data/maps/Route202/scripts.pory"
+# 272 "data/maps/Route202/scripts.pory"
 	.string "{SPEAKER NAME_RIVAL}If you have lots of Pokémon with you,\n"
 	.string "it will be safer on long trips.\p"
 	.string "Plus, it will be a lot more fun\n"
@@ -851,50 +947,50 @@ Route202_EventScript_CatchingTutorial_Text_5:
 	.string "Bye, now!$"
 
 Route202_EventScript_Tristan_Text_0:
-# 296 "data/maps/Route202/scripts.pory"
+# 299 "data/maps/Route202/scripts.pory"
 	.string "You're a Pokémon Trainer, and so am I!\n"
 	.string "Our eyes met, so battle we must!$"
 
 Route202_EventScript_Tristan_Text_1:
-# 297 "data/maps/Route202/scripts.pory"
+# 300 "data/maps/Route202/scripts.pory"
 	.string "Too strong!\n"
 	.string "Too strong!$"
 
 Route202_EventScript_Tristan_Text_2:
-# 299 "data/maps/Route202/scripts.pory"
+# 302 "data/maps/Route202/scripts.pory"
 	.string "Don't be shy about talking to\nTrainers you'd like to battle.\pPokémon grow stronger and stronger\nfrom battling.$"
 
 Route202_EventScript_Natalie_Text_0:
-# 306 "data/maps/Route202/scripts.pory"
+# 309 "data/maps/Route202/scripts.pory"
 	.string "I spy, with my little eye. . .\n"
 	.string "A Trainer!\p"
 	.string "A battle, please!$"
 
 Route202_EventScript_Natalie_Text_1:
-# 307 "data/maps/Route202/scripts.pory"
+# 310 "data/maps/Route202/scripts.pory"
 	.string "Oh, boo!\n"
 	.string "I can't win!$"
 
 Route202_EventScript_Natalie_Text_2:
-# 309 "data/maps/Route202/scripts.pory"
+# 312 "data/maps/Route202/scripts.pory"
 	.string "My Pokémon are all tuckered out!\nI need to go to a Pokémon Center.$"
 
 Route202_EventScript_Logan_Text_0:
-# 316 "data/maps/Route202/scripts.pory"
+# 319 "data/maps/Route202/scripts.pory"
 	.string "Let's have a Pokémon battle!\n"
 	.string "Humph! But I'm gonna win!$"
 
 Route202_EventScript_Logan_Text_1:
-# 317 "data/maps/Route202/scripts.pory"
+# 320 "data/maps/Route202/scripts.pory"
 	.string "You beat me?!\n"
 	.string "You got talent!$"
 
 Route202_EventScript_Logan_Text_2:
-# 319 "data/maps/Route202/scripts.pory"
+# 322 "data/maps/Route202/scripts.pory"
 	.string "It was fun battling!\nYup! I'm going to battle everyone!$"
 
 Route202_EventScript_Youngster_Text_0:
-# 327 "data/maps/Route202/scripts.pory"
+# 330 "data/maps/Route202/scripts.pory"
 	.string "Some Pokémon only appear in the\n"
 	.string "morning.\p"
 	.string "Some only come out at night.\p"
@@ -902,11 +998,11 @@ Route202_EventScript_Youngster_Text_0:
 	.string "all!$"
 
 Route202_SignScript_Sandgem_Text_0:
-# 337 "data/maps/Route202/scripts.pory"
+# 340 "data/maps/Route202/scripts.pory"
 	.string "{DOWN_ARROW}Sandgem Town$"
 
 Route202_SignScript_TrainerTips_Text_0:
-# 344 "data/maps/Route202/scripts.pory"
+# 347 "data/maps/Route202/scripts.pory"
 	.string "Trainer Tips!\p"
 	.string "All Pokémon that are involved in\n"
 	.string "a battle earn Exp. Points!\p"
@@ -914,5 +1010,5 @@ Route202_SignScript_TrainerTips_Text_0:
 	.string "the stronger they will become.$"
 
 Route202_SignScript_Jubilife_Text_0:
-# 354 "data/maps/Route202/scripts.pory"
+# 357 "data/maps/Route202/scripts.pory"
 	.string "{UP_ARROW}Jubilife City$"

@@ -32,12 +32,13 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	waitmovement(LOCALID_LUCASDAWN)
 	waitse
 
-	applymovement(LOCALID_LUCASDAWN, moves( delay_16*2, walk_down*2))
+	applymovement(LOCALID_LUCASDAWN, moves( delay_16*2, walk_down*2, delay_16))
 	waitmovement(LOCALID_LUCASDAWN)
 
 	checkplayergender
 
 	if(var(VAR_RESULT) == MALE) {
+		playbgm(MUS_DP_DAWN, 0)
 		msgbox("{SPEAKER NAME_RIVAL}Hi {PLAYER}!\n"
 				"Are you catching Pokémon?")
 		getpartysize
@@ -63,6 +64,7 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 		)
 		closemessage
 	} else {
+		playbgm(MUS_DP_LUCAS, 0)
 		msgbox("{SPEAKER NAME_RIVAL}Hey, {PLAYER}!\n"
 				"How many Pokémon have you caught?")
 		getpartysize
@@ -97,8 +99,8 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 		waitmovement(LOCALID_LUCASDAWN)
 	} 
 
-	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*17))
-	applymovement(LOCALID_LUCASDAWN, moves(walk_up*17))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*18))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up*18))
 	waitmovement(LOCALID_LUCASDAWN)
 
 	checkplayergender
@@ -116,8 +118,8 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	applymovement(LOCALID_LOOKER, moves(face_left, delay_16*2, face_down, delay_16*2, walk_left, walk_fast_left*5, delay_16*2, face_right, delay_16*2, face_up, delay_16*2))
 	waitmovement(LOCALID_LOOKER)
 
-	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up*2, walk_right, walk_up))
-	applymovement(LOCALID_LUCASDAWN, moves(walk_up*2))
+	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_up, walk_right, walk_up))
+	applymovement(LOCALID_LUCASDAWN, moves(walk_up))
 	applymovement(LOCALID_LOOKER, moves(delay_16*2, walk_fast_right*3))
 	waitmovement(OBJ_EVENT_ID_PLAYER)
 
@@ -128,6 +130,7 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	}
 	applymovement(LOCALID_LOOKER, moves(emote_exclamation_mark, face_down))
 	waitmovement(LOCALID_LOOKER)
+	playbgm(MUS_PL_LOOKER, 0)
 	msgbox("{SPEAKER NAME_MYSTERIOUS}WHAAAT?!\p"
 			". . .How did you know?\p"
 			"How did you unmask me as a member of\n"
@@ -203,7 +206,7 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	waitmovement(LOCALID_LOOKER)
 
 	checkplayergender
-	
+	fadedefaultbgm()
 	if(var(VAR_RESULT) == MALE) {
 		msgbox("{SPEAKER NAME_RIVAL}. . .Working for the International\n"
 				"Police must be hard.")

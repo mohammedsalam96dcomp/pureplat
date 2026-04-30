@@ -185,28 +185,31 @@ script Route202_EventScript_CatchingTutorial {
 
 	switch(var(VAR_TEMP_1)) {
 		case 1:
-			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up*2, walk_right))	
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up*2, walk_right, delay_16))	
 		case 2:
-			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up, walk_right))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_up, walk_right, delay_16))
 		case 3:
-			applymovement(LOCALID_LUCASDAWN, moves(walk_right*5))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*5, delay_16, ))
 		case 4:
-			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down, walk_right))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down, walk_right, delay_16))
 		case 5:
-			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down*2, walk_right))
+			applymovement(LOCALID_LUCASDAWN, moves(walk_right*4, walk_down*2, walk_right, delay_16))
 
 	}
 	waitmovement(LOCALID_LUCASDAWN)
 
 	checkplayergender
 
+
 	if(var(VAR_RESULT) == FEMALE) {
+		playbgm(MUS_DP_LUCAS, 0)
 		msgbox("{SPEAKER NAME_RIVAL}{PLAYER}, do you know\n"
 			"how to catch a Pokémon?\p"
 			"I'll demonstrate how to catch\n"
 			"one, so just watch, OK?")
 		closemessage
 	} else {
+		playbgm(MUS_DP_DAWN, 0)
 		msgbox("{SPEAKER NAME_RIVAL}Oh, that's right!\p"
 				"{PLAYER}, I haven't shown you\n"
 				"how to catch a Pokémon.\p"
