@@ -351,7 +351,7 @@ script SandgemTown_EventScript_LucasDawnScene {
 	playse(SE_WALL_HIT)
     msgbox("THUD! !")
     waitse
-    playbgm(MUS_ENCOUNTER_BARRY,0)
+    playbgm(MUS_DP_RIVAL,0)
 
 	msgbox("{SPEAKER NAME_BARRY}What the. . .\p"
 			"Oh, it's you, {PLAYER}!\p"

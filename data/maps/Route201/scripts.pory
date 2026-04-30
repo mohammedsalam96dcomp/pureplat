@@ -159,7 +159,7 @@ script Route201_EventScript_BarryScene {
 	clearflag(FLAG_HIDE_ROUTE_201_ROWAN)
   	addobject(LOCALID_ROWAN)
 
-	playbgm(MUS_BIRCH_LAB, 0)
+	playbgm(MUS_DP_ROWAN, 0)
 
 	applymovement(LOCALID_ROWAN, moves(walk_right*8))
 	waitmovement(LOCALID_ROWAN)
@@ -291,6 +291,7 @@ script Route201_EventScript_BarryScene {
 			"Now, where. . .?")
 	closemessage
 
+
 	applymovement(LOCALID_ROWAN, moves(face_left))
 	delay(30)
 	waitmovement(LOCALID_ROWAN)
@@ -298,7 +299,13 @@ script Route201_EventScript_BarryScene {
 	waitmovement(LOCALID_ROWAN)
 	delay(30)
 
-	playbgm(MUS_ENCOUNTER_BRENDAN, 0)
+	checkplayergender
+	if(var(VAR_RESULT) == MALE) { 
+		playbgm(MUS_DP_DAWN, 0)
+	} else {
+		playbgm(MUS_DP_LUCAS, 0)
+	}
+
 	clearflag(FLAG_HIDE_ROUTE_201_DAWN)
   	addobject(LOCALID_LUCASDAWN)	
 

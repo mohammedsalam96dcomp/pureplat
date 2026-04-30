@@ -36,7 +36,7 @@ TwinleafTown_EventScript_THUD::
 # 29 "data/maps/TwinleafTown/scripts.pory"
 	waitse
 # 30 "data/maps/TwinleafTown/scripts.pory"
-	playbgm MUS_GSC_ROUTE38, 0
+	playbgm MUS_DP_RIVAL, 0
 # 31 "data/maps/TwinleafTown/scripts.pory"
 	applymovement 4, Common_Movement_ExclamationMark
 # 32 "data/maps/TwinleafTown/scripts.pory"

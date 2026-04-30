@@ -33,7 +33,7 @@ TwinleafTownBarrysHouse_2F_ON_FRAME::
 # 28 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	delay 48
 # 29 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
-	playbgm MUS_ENCOUNTER_BARRY, 0
+	playbgm MUS_DP_RIVAL, 0
 # 30 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"
 	setspeaker SP_NAME_BARRY
 # 31 "data/maps/TwinleafTownBarrysHouse_2f/scripts.pory"

@@ -369,7 +369,7 @@ SandgemTown_EventScript_LucasDawnScene_19:
 # 353 "data/maps/SandgemTown/scripts.pory"
 	waitse
 # 354 "data/maps/SandgemTown/scripts.pory"
-	playbgm MUS_ENCOUNTER_BARRY, 0
+	playbgm MUS_DP_RIVAL, 0
 # 356 "data/maps/SandgemTown/scripts.pory"
 	msgbox SandgemTown_EventScript_LucasDawnScene_Text_5
 # 362 "data/maps/SandgemTown/scripts.pory"
