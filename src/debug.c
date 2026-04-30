@@ -4083,7 +4083,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_C_COMM_CENTER)            \
     X(MUS_GSC_PEWTER)               \
     X(MUS_C_VS_LEGEND_BEAST)        \
-    X(MUS_ROUTE101)                 \
+    X(MUS_ROUTE201)                 \
     X(MUS_ROUTE110)                 \
     X(MUS_ROUTE120)                 \
     X(MUS_PETALBURG)                \
@@ -4165,7 +4165,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_SEALED_CHAMBER)           \
     X(MUS_CONTEST_WINNER)           \
     X(MUS_CONTEST)                  \
-    X(MUS_ENCOUNTER_MAGMA)          \
+    X(MUS_ENCOUNTER_BARRY)          \
     X(MUS_INTRO_BATTLE)             \
     X(MUS_ABNORMAL_WEATHER)         \
     X(MUS_WEATHER_GROUDON)          \

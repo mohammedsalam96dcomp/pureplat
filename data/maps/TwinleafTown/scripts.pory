@@ -27,7 +27,7 @@ script TwinleafTown_EventScript_THUD {
     playse(SE_WALL_HIT)
     msgbox(format("THUD! !"))
     waitse
-    playbgm(MUS_GSC_ROUTE38,0)
+    playbgm(MUS_ENCOUNTER_BARRY,0)
     applymovement(LOCALID_RIVAL, Common_Movement_ExclamationMark)
     playse(SE_PIN)
     waitmovement(0)

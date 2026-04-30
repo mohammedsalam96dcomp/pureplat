@@ -365,7 +365,7 @@ gSongTable::
 	song mus_c_comm_center, MUSIC_PLAYER_BGM, 0
 	song mus_gsc_pewter, MUSIC_PLAYER_BGM, 0
 	song mus_c_vs_legend_beast, MUSIC_PLAYER_BGM, 0
-	song mus_route101, MUSIC_PLAYER_BGM, 0
+	song mus_route201, MUSIC_PLAYER_BGM, 0
 	song mus_route110, MUSIC_PLAYER_BGM, 0
 	song mus_route120, MUSIC_PLAYER_BGM, 0
 	song mus_petalburg, MUSIC_PLAYER_BGM, 0
@@ -447,7 +447,7 @@ gSongTable::
 	song mus_sealed_chamber, MUSIC_PLAYER_BGM, 0
 	song mus_contest_winner, MUSIC_PLAYER_BGM, 0
 	song mus_contest, MUSIC_PLAYER_BGM, 0
-	song mus_encounter_magma, MUSIC_PLAYER_BGM, 0
+	song mus_encounter_barry, MUSIC_PLAYER_BGM, 0
 	song mus_intro_battle, MUSIC_PLAYER_BGM, 0
 	song mus_abnormal_weather, MUSIC_PLAYER_BGM, 0
 	song mus_weather_groudon, MUSIC_PLAYER_BGM, 0

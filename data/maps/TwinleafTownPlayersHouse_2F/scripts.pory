@@ -90,7 +90,7 @@ script TwinleafTownPlayersHouse_2F_EnterBarry {
   waitmovement(0)
   waitse
   delay(48)
-  playbgm(MUS_GSC_ROUTE38,0)
+  playbgm(MUS_ENCOUNTER_BARRY,0)
   setspeaker(SP_NAME_BARRY)
   msgbox(format("There you are!"))
   closemessage

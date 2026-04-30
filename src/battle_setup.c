@@ -1618,8 +1618,6 @@ void PlayTrainerEncounterMusic(void)
         case TRAINER_ENCOUNTER_MUSIC_AQUA:
             music = MUS_ENCOUNTER_AQUA;
             break;
-        case TRAINER_ENCOUNTER_MUSIC_MAGMA:
-            music = MUS_ENCOUNTER_MAGMA;
             break;
         case TRAINER_ENCOUNTER_MUSIC_SWIMMER:
             music = MUS_ENCOUNTER_SWIMMER;
