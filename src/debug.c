@@ -4129,7 +4129,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_ROUTE119)                 \
     X(MUS_CYCLING)                  \
     X(MUS_POKE_MART)                \
-    X(MUS_LITTLEROOT)               \
+    X(MUS_TWINLEAF_DAY)               \
     X(MUS_MT_CHIMNEY)               \
     X(MUS_ENCOUNTER_FEMALE)         \
     X(MUS_LILYCOVE)                 \

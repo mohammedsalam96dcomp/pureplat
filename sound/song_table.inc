@@ -411,7 +411,7 @@ gSongTable::
 	song mus_route119, MUSIC_PLAYER_BGM, 0
 	song mus_cycling, MUSIC_PLAYER_BGM, 0
 	song mus_poke_mart, MUSIC_PLAYER_BGM, 0
-	song mus_littleroot, MUSIC_PLAYER_BGM, 0
+	song mus_twinleaf_day, MUSIC_PLAYER_BGM, 0
 	song mus_mt_chimney, MUSIC_PLAYER_BGM, 0
 	song mus_encounter_female, MUSIC_PLAYER_BGM, 0
 	song mus_lilycove, MUSIC_PLAYER_BGM, 0
