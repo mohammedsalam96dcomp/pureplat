@@ -32,3 +32,14 @@ script Route204_EventScript_Samantha {
 	end
 }
 
+script Route204_EventScript_Youngster {
+	lock
+
+	faceplayer
+	msgbox("There are boulders blocking the way\n"
+			"inside the cavern. . .\p"
+			"I think a Pokémon's hidden move will be\n"
+			"able to smash those boulders, though.", MSGBOX_AUTOCLOSE)
+	release
+
+}
