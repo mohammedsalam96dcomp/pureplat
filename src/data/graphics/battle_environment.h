@@ -27,7 +27,7 @@ const u16 gBattleEnvironmentPalette_Rock[] = INCGFX_U16("graphics/battle_environ
 const u32 gBattleEnvironmentTilemap_Rock[] = INCBIN_U32("graphics/battle_environment/rock/map.bin.smolTM");
 
 const u32 gBattleEnvironmentTiles_Plain[] = INCBIN_U32("graphics/battle_environment/plain/tiles.4bpp.smol");
-const u16 gBattleEnvironmentPalette_Plain[] = INCBIN_U16("graphics/battle_environment/plain/palette.gbapal");
+// const u16 gBattleEnvironmentPalette_Plain[] = INCBIN_U16("graphics/battle_environment/plain/palette.gbapal");
 const u32 gBattleEnvironmentTilemap_Plain[] = INCBIN_U32("graphics/battle_environment/plain/map.bin.smolTM");
 
 // const u32 gBattleEnvironmentAnimTiles_Plain[] = INCBIN_U32("graphics/battle_environment/plain/anim_tiles.4bpp.smol");
