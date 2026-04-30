@@ -100,7 +100,7 @@ EWRAM_DATA static u8 sSaveInfoWindowId = 0;
 EWRAM_DATA static u8 sSelectorSpriteIds[2];
 EWRAM_DATA static u8 sSpriteIds[8];
 EWRAM_DATA static u8 sSpriteIdCount;
-EWRAM_DATA static u8 sLastY;
+// EWRAM_DATA static u8 sLastY;
 
 // Menu action callbacks
 static bool8 StartMenuPokedexCallback(void);
