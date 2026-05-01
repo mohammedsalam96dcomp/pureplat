@@ -296,30 +296,30 @@ script Route202_EventScript_CatchingTutorial {
 script Route202_EventScript_Tristan {
 	trainerbattle_single(
 		TRAINER_TRISTAN,
-		format("You're a Pokémon Trainer, and so am I!\nOur eyes met, so battle we must!"),
-        format("Too strong!\nToo strong!")
+		Route202_Text_TristanIntro,
+		Route202_Text_TristanDefeated	
 	)
-	msgbox(("Don't be shy about talking to\nTrainers you'd like to battle.\pPokémon grow stronger and stronger\nfrom battling."), MSGBOX_AUTOCLOSE)
+	msgbox((Route202_Text_TristanPostBattle), MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route202_EventScript_Natalie {
 	trainerbattle_single (
 		TRAINER_NATALIE,
-		format("I spy, with my little eye. . .\nA Trainer!\pA battle, please!"),
-		format("Oh, boo!\nI can't win!")
+		Route202_Text_NatalieIntro,
+		Route202_Text_NatalieDefeated
 	)
-	msgbox(("My Pokémon are all tuckered out!\nI need to go to a Pokémon Center."), MSGBOX_AUTOCLOSE)
+	msgbox((Route202_Text_NataliePostBattle), MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route202_EventScript_Logan {
 	trainerbattle_single (
 		TRAINER_LOGAN,
-		format("Let's have a Pokémon battle!\nHumph! But I'm gonna win!"),
+		Route202_Text_LoganIntro,
 		format("You beat me?!\nYou got talent!")
 	)
-	msgbox(("It was fun battling!\nYup! I'm going to battle everyone!"), MSGBOX_AUTOCLOSE)
+	msgbox((Route202_Text_LoganPostBattle), MSGBOX_AUTOCLOSE)
 	end
 }
 

@@ -82,10 +82,7 @@ script JubilifeCity_PokemonSchool_EventScripts_SchoolGirl {
 					"and getting into battles!", MSGBOX_AUTOCLOSE)
 		}
 	} else {
-		msgbox("I wonder if we could have done better\n"
-				"against you?\p"
-				"Like if I used Potions right when we\n"
-				"needed to.", MSGBOX_AUTOCLOSE)
+		msgbox(JubilifeCity_TrainerSchool_Text_ChristinePostBattle, MSGBOX_AUTOCLOSE)
 	}
 
 	release
@@ -95,8 +92,8 @@ script JubilifeCity_PokemonSchool_EventScripts_SchoolGirl {
 script JubilifeCity_PokemonSchool_EventScripts_Harrison {
 	trainerbattle_single(
 		TRAINER_HARRISON,
-		format("Go!\nMy Pokémon, go!"),
-		format("Ugh. . .\nI didn't use items effectively."), 
+		JubilifeCity_TrainerSchool_Text_HarrisonIntro,
+		JubilifeCity_TrainerSchool_Text_HarrisonDefeated, 
 		JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolBoy
 	)
 }
@@ -107,11 +104,7 @@ script JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolBoy {
 	lock
 	if(flag(FLAG_DEFEATED_TRAINER_SCHOOL_GIRL)) {
 		if(!flag(FLAG_RECEIVED_POTION_SCHOOL)) {
-			msgbox("Whew! You're really good!\p"
-				"We've been studying every day. but\n"
-				"we were no match for you at all!\p"
-				"You'd be able to use this Potion\n"
-				"properly. Here you go!")
+			msgbox(JubilifeCity_TrainerSchool_Text_HarrisonEventText)
 			giveitem(ITEM_POTION)
 			if (var(VAR_RESULT) == FALSE) {
 				call(Common_EventScript_BagIsFull)
@@ -123,8 +116,7 @@ script JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolBoy {
 			msgbox(GotPotion, MSGBOX_AUTOCLOSE)
 		}
 	} else {
-		msgbox("It's hard to win if you don't have\n"
-		"some Pokémon to choose from.", MSGBOX_AUTOCLOSE)
+		msgbox(JubilifeCity_TrainerSchool_Text_HarrisonPostBattle, MSGBOX_AUTOCLOSE)
 	}
 	setflag(FLAG_DEFEATED_TRAINER_SCHOOL_BOY)
 	release
@@ -133,8 +125,8 @@ script JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolBoy {
 script JubilifeCity_PokemonSchool_EventScripts_Christine {
 	trainerbattle_single(
 		TRAINER_CHRISTINE,
-		format("I need to try the things I learned\nbefore I forget them!"),
-		format("I like to study alot. . .\nI thought I could win. . ."), 
+		JubilifeCity_TrainerSchool_Text_ChristineIntro,
+		JubilifeCity_TrainerSchool_Text_ChristineDefeated,
 		JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolGirl
 	)
 }
@@ -142,10 +134,7 @@ script JubilifeCity_PokemonSchool_EventScripts_Christine {
 script JubilifeCity_PokemonSchool_EventScripts_DefeatedSchoolGirl {
 	lock
 	if(!flag(FLAG_DEFEATED_TRAINER_SCHOOL_BOY)) {
-		msgbox("I wonder if we could have done better\n"
-				"against you?\p"
-				"Like if I used Potions right when we\n"
-				"needed to.", MSGBOX_AUTOCLOSE)
+		msgbox(JubilifeCity_TrainerSchool_Text_ChristinePostBattle, MSGBOX_AUTOCLOSE)
 	} else {
 		msgbox("We were actually confident that we\n"
 			"would do pretty good.\p"

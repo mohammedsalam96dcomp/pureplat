@@ -5,30 +5,30 @@ mapscripts Route204_MapScripts{
 script Route204_EventScript_Sarah {
 	 trainerbattle_single(
 		TRAINER_SARAH,
-		format("Oh, a weak-looking Trainer. . .\nDo you want to have a go?"),
-        format("Aww. . .\nI should have said no.")
+		Route204_Text_SarahIntro,
+        Route204_Text_SarahDefeated
 	)
-	msgbox(("Oh, you're so mean!\nI just started training Pokémon!"), MSGBOX_AUTOCLOSE)
+	msgbox(Route204_Text_SarahPostBattle, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route204_EventScript_Tyler {
 	 trainerbattle_single(
 		TRAINER_TYLER,
-		format("I'll beat you with the MAGIKARP my dad\ngave me!"),
-        format("But they're Pokémon I got from my\ndad. . .")
+		Route204_Text_TylerIntro,
+        Route204_Text_TylerDefeated
 	)
-	msgbox(("Who gave you your first Pokémon?\pYour first Pokémon is the one with\nthe most fond memories, I think."), MSGBOX_AUTOCLOSE)
+	msgbox(Route204_Text_TylerPostBattle, MSGBOX_AUTOCLOSE)
 	end
 }
 
 script Route204_EventScript_Samantha {
  	trainerbattle_single(
 		TRAINER_SAMANTHA,
-		format("May I please trouble you for a\nbattle?"),
-        format("Oh...\nYou’re so strong. . .")
+		Route204_Text_SamanthaIntro,
+        Route204_Text_SamanthaDefeated
 	)
-	msgbox(("Maybe I could have won if my Pokémon\nwas holding a Berry. . ."), MSGBOX_AUTOCLOSE)
+	msgbox(Route204_Text_SamanthaPostBattle, MSGBOX_AUTOCLOSE)
 	end
 }
 

@@ -3,6 +3,10 @@ const u16 gObjectEventPal_Brendan[] = INCGFX_U16("graphics/object_events/palette
 const u32 gObjectEventPic_RubySapphireBrendanNormal[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/walking.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_RubySapphireBrendanRunning[] = INCGFX_U32("graphics/object_events/pics/people/ruby_sapphire_brendan/running.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_RubySapphireBrendan[] = INCGFX_U16("graphics/object_events/palettes/ruby_sapphire_brendan.pal", ".gbapal");
+const u32 gObjectEventPic_Barry[] = INCGFX_U32("graphics/object_events/pics/people/barry.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPal_Barry[] = INCGFX_U16("graphics/object_events/palettes/barry.pal", ".gbapal");
+const u16 gObjectEventPal_Rowan[] = INCGFX_U16("graphics/object_events/palettes/rowan.pal", ".gbapal");
+const u32 gObjectEventPic_ProfRowan[] = INCGFX_U32("graphics/object_events/pics/people/prof_rowan.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u16 gObjectEventPal_Null1[16] = {};
 const u16 gObjectEventPal_Null2[16] = {};
 const u16 gObjectEventPal_Null3[16] = {};
@@ -418,10 +422,6 @@ const u32 gObjectEventPic_MoonBall[] = INCGFX_U32("graphics/object_events/pics/m
 const u32 gObjectEventPic_SportBall[] = INCGFX_U32("graphics/object_events/pics/misc/ball_sport.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_DreamBall[] = INCGFX_U32("graphics/object_events/pics/misc/ball_dream.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gObjectEventPic_BeastBall[] = INCGFX_U32("graphics/object_events/pics/misc/ball_beast.png", ".4bpp", "-mwidth 2 -mheight 4");
-const u32 gObjectEventPic_Barry[] = INCBIN_U32("graphics/object_events/pics/people/barry.4bpp");
-const u16 gObjectEventPal_Barry[] = INCBIN_U16("graphics/object_events/palettes/barry.gbapal");
-const u16 gObjectEventPal_Rowan[] = INCBIN_U16("graphics/object_events/palettes/rowan.gbapal");
-const u32 gObjectEventPic_ProfRowan[] = INCBIN_U32("graphics/object_events/pics/people/prof_rowan.4bpp");
 
 #ifdef ITEM_STRANGE_BALL
 const u32 gObjectEventPic_StrangeBall[] = INCGFX_U32("graphics/object_events/pics/misc/ball_strange.png", ".4bpp", "-mwidth 2 -mheight 4");

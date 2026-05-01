@@ -441,25 +441,25 @@ Route202_EventScript_CatchingTutorial_16:
 
 Route202_EventScript_Tristan::
 # 297 "data/maps/Route202/scripts.pory"
-	trainerbattle_single TRAINER_TRISTAN, Route202_EventScript_Tristan_Text_0, Route202_EventScript_Tristan_Text_1
+	trainerbattle_single TRAINER_TRISTAN, Route202_Text_TristanIntro, Route202_Text_TristanDefeated
 # 302 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_Tristan_Text_2, MSGBOX_AUTOCLOSE
+	msgbox ( Route202_Text_TristanPostBattle ), MSGBOX_AUTOCLOSE
 	end
 
 
 Route202_EventScript_Natalie::
 # 307 "data/maps/Route202/scripts.pory"
-	trainerbattle_single TRAINER_NATALIE, Route202_EventScript_Natalie_Text_0, Route202_EventScript_Natalie_Text_1
+	trainerbattle_single TRAINER_NATALIE, Route202_Text_NatalieIntro, Route202_Text_NatalieDefeated
 # 312 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_Natalie_Text_2, MSGBOX_AUTOCLOSE
+	msgbox ( Route202_Text_NataliePostBattle ), MSGBOX_AUTOCLOSE
 	end
 
 
 Route202_EventScript_Logan::
 # 317 "data/maps/Route202/scripts.pory"
-	trainerbattle_single TRAINER_LOGAN, Route202_EventScript_Logan_Text_0, Route202_EventScript_Logan_Text_1
+	trainerbattle_single TRAINER_LOGAN, Route202_Text_LoganIntro, Route202_EventScript_Logan_Text_0
 # 322 "data/maps/Route202/scripts.pory"
-	msgbox Route202_EventScript_Logan_Text_2, MSGBOX_AUTOCLOSE
+	msgbox ( Route202_Text_LoganPostBattle ), MSGBOX_AUTOCLOSE
 	end
 
 
@@ -946,48 +946,10 @@ Route202_EventScript_CatchingTutorial_Text_5:
 	.string "OK, I need to get going.\n"
 	.string "Bye, now!$"
 
-Route202_EventScript_Tristan_Text_0:
-# 299 "data/maps/Route202/scripts.pory"
-	.string "You're a Pokémon Trainer, and so am I!\n"
-	.string "Our eyes met, so battle we must!$"
-
-Route202_EventScript_Tristan_Text_1:
-# 300 "data/maps/Route202/scripts.pory"
-	.string "Too strong!\n"
-	.string "Too strong!$"
-
-Route202_EventScript_Tristan_Text_2:
-# 302 "data/maps/Route202/scripts.pory"
-	.string "Don't be shy about talking to\nTrainers you'd like to battle.\pPokémon grow stronger and stronger\nfrom battling.$"
-
-Route202_EventScript_Natalie_Text_0:
-# 309 "data/maps/Route202/scripts.pory"
-	.string "I spy, with my little eye. . .\n"
-	.string "A Trainer!\p"
-	.string "A battle, please!$"
-
-Route202_EventScript_Natalie_Text_1:
-# 310 "data/maps/Route202/scripts.pory"
-	.string "Oh, boo!\n"
-	.string "I can't win!$"
-
-Route202_EventScript_Natalie_Text_2:
-# 312 "data/maps/Route202/scripts.pory"
-	.string "My Pokémon are all tuckered out!\nI need to go to a Pokémon Center.$"
-
 Route202_EventScript_Logan_Text_0:
-# 319 "data/maps/Route202/scripts.pory"
-	.string "Let's have a Pokémon battle!\n"
-	.string "Humph! But I'm gonna win!$"
-
-Route202_EventScript_Logan_Text_1:
 # 320 "data/maps/Route202/scripts.pory"
 	.string "You beat me?!\n"
 	.string "You got talent!$"
-
-Route202_EventScript_Logan_Text_2:
-# 322 "data/maps/Route202/scripts.pory"
-	.string "It was fun battling!\nYup! I'm going to battle everyone!$"
 
 Route202_EventScript_Youngster_Text_0:
 # 330 "data/maps/Route202/scripts.pory"
