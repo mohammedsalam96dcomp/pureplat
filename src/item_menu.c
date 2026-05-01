@@ -2437,7 +2437,7 @@ void DoWallyTutorialBagMenu(void)
 {
     PrepareBagForWallyTutorial();
     AddBagItem(ITEM_POTION, 1);
-    AddBagItem(ITEM_POKE_BALL, 20);
+    AddBagItem(ITEM_POKE_BALL, 30);
     GoToBagMenu(ITEMMENULOCATION_WALLY, POCKET_ITEMS, CB2_SetUpReshowBattleScreenAfterMenu2);
 }
 
