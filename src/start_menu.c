@@ -180,7 +180,7 @@ static void DestroyStartMenuGfx(void);
 #define TAG_OPTIONS_GFX            1258
 #define TAG_CANCEL_GFX             1259
 #define TAG_RETIRE_GFX             1260
-#define TAG_MENU_PAL               0x4650
+#define TAG_MENU_PAL               0x4650 | BLEND_IMMUNE_FLAG
 
 static const u32 sSelector_Gfx[] = INCBIN_U32("graphics/dppt_start_menu/selector.4bpp.lz");
 static const u16 sMenu_Pal[] = INCBIN_U16("graphics/dppt_start_menu/menu.gbapal");
