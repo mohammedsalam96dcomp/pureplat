@@ -488,8 +488,8 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
     if (MetatileBehavior_IsSkyPillarClosedDoor(metatileBehavior) == TRUE)
     if (MetatileBehavior_IsCableBoxResults1(metatileBehavior) == TRUE)
         return EventScript_CableBoxResults;
-    if (MetatileBehavior_IsPokeblockFeeder(metatileBehavior) == TRUE)
-        return EventScript_PokeBlockFeeder;
+    // if (MetatileBehavior_IsPokeblockFeeder(metatileBehavior) == TRUE)
+        // return EventScript_PokeBlockFeeder;
     if (MetatileBehavior_IsRegionMap(metatileBehavior) == TRUE)
         return EventScript_RegionMap;
     // if (MetatileBehavior_IsRunningShoesManual(metatileBehavior) == TRUE)

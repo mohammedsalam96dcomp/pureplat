@@ -23,10 +23,10 @@ struct PokeblockFeeder
 
 #define NUM_POKEBLOCK_FEEDERS 10
 
-extern const u8 SafariZone_EventScript_TimesUp[];
-extern const u8 SafariZone_EventScript_RetirePrompt[];
-extern const u8 SafariZone_EventScript_OutOfBallsMidBattle[];
-extern const u8 SafariZone_EventScript_OutOfBalls[];
+// extern const u8 SafariZone_EventScript_TimesUp[];
+// extern const u8 SafariZone_EventScript_RetirePrompt[];
+// extern const u8 SafariZone_EventScript_OutOfBallsMidBattle[];
+// extern const u8 SafariZone_EventScript_OutOfBalls[];
 
 EWRAM_DATA u8 gNumSafariBalls = 0;
 EWRAM_DATA u16 gSafariZoneStepCounter = 0;
@@ -54,71 +54,71 @@ void ResetSafariZoneFlag(void)
 
 void EnterSafariMode(void)
 {
-    IncrementGameStat(GAME_STAT_ENTERED_SAFARI_ZONE);
-    SetSafariZoneFlag();
-    ClearAllPokeblockFeeders();
-    gNumSafariBalls = 30;
-    if (IS_FRLG)
-        gSafariZoneStepCounter = 600;
-    else
-        gSafariZoneStepCounter = 500;
-    sSafariZoneCaughtMons = 0;
-    sSafariZonePkblkUses = 0;
+    // IncrementGameStat(GAME_STAT_ENTERED_SAFARI_ZONE);
+    // SetSafariZoneFlag();
+    // ClearAllPokeblockFeeders();
+    // gNumSafariBalls = 30;
+    // if (IS_FRLG)
+    //     gSafariZoneStepCounter = 600;
+    // else
+    //     gSafariZoneStepCounter = 500;
+    // sSafariZoneCaughtMons = 0;
+    // sSafariZonePkblkUses = 0;
 }
 
 void ExitSafariMode(void)
 {
-    TryPutSafariFanClubOnAir(sSafariZoneCaughtMons, sSafariZonePkblkUses);
-    ResetSafariZoneFlag();
-    ClearAllPokeblockFeeders();
-    gNumSafariBalls = 0;
-    gSafariZoneStepCounter = 0;
+    // TryPutSafariFanClubOnAir(sSafariZoneCaughtMons, sSafariZonePkblkUses);
+    // ResetSafariZoneFlag();
+    // ClearAllPokeblockFeeders();
+    // gNumSafariBalls = 0;
+    // gSafariZoneStepCounter = 0;
 }
 
 bool8 SafariZoneTakeStep(void)
 {
-    if (GetSafariZoneFlag() == FALSE)
-    {
-        return FALSE;
-    }
+    // if (GetSafariZoneFlag() == FALSE)
+    // {
+    //     return FALSE;
+    // }
 
-    DecrementFeederStepCounters();
-    gSafariZoneStepCounter--;
-    if (gSafariZoneStepCounter == 0)
-    {
-        ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
-        return TRUE;
-    }
+    // DecrementFeederStepCounters();
+    // gSafariZoneStepCounter--;
+    // if (gSafariZoneStepCounter == 0)
+    // {
+    //     ScriptContext_SetupScript(SafariZone_EventScript_TimesUp);
+    //     return TRUE;
+    // }
     return FALSE;
 }
 
 void SafariZoneRetirePrompt(void)
 {
-    ScriptContext_SetupScript(SafariZone_EventScript_RetirePrompt);
+    // ScriptContext_SetupScript(SafariZone_EventScript_RetirePrompt);
 }
 
 void CB2_EndSafariBattle(void)
 {
-    sSafariZonePkblkUses += gBattleResults.pokeblockThrows;
-    if (gBattleOutcome == B_OUTCOME_CAUGHT)
-        sSafariZoneCaughtMons++;
-    if (gNumSafariBalls != 0)
-    {
-        SetMainCallback2(CB2_ReturnToField);
-    }
-    else if (gBattleOutcome == B_OUTCOME_NO_SAFARI_BALLS)
-    {
-        RunScriptImmediately(SafariZone_EventScript_OutOfBallsMidBattle);
-        WarpIntoMap();
-        gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
-        SetMainCallback2(CB2_LoadMap);
-    }
-    else if (gBattleOutcome == B_OUTCOME_CAUGHT)
-    {
-        ScriptContext_SetupScript(SafariZone_EventScript_OutOfBalls);
-        ScriptContext_Stop();
-        SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
-    }
+    // sSafariZonePkblkUses += gBattleResults.pokeblockThrows;
+    // if (gBattleOutcome == B_OUTCOME_CAUGHT)
+    //     sSafariZoneCaughtMons++;
+    // if (gNumSafariBalls != 0)
+    // {
+    //     SetMainCallback2(CB2_ReturnToField);
+    // }
+    // else if (gBattleOutcome == B_OUTCOME_NO_SAFARI_BALLS)
+    // {
+    //     RunScriptImmediately(SafariZone_EventScript_OutOfBallsMidBattle);
+    //     WarpIntoMap();
+    //     gFieldCallback = FieldCB_ReturnToFieldNoScriptCheckMusic;
+    //     SetMainCallback2(CB2_LoadMap);
+    // }
+    // else if (gBattleOutcome == B_OUTCOME_CAUGHT)
+    // {
+    //     ScriptContext_SetupScript(SafariZone_EventScript_OutOfBalls);
+    //     ScriptContext_Stop();
+    //     SetMainCallback2(CB2_ReturnToFieldContinueScriptPlayMapMusic);
+    // }
 }
 
 static void ClearPokeblockFeeder(u8 index)
