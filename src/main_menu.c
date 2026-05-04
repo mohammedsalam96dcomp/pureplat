@@ -219,6 +219,7 @@ static void Task_NewGameBirchSpeech_SlidePlatformAway2Barry(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreenBarry(void);
 static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextboxBarry(u8);
 static void Task_NewGameBirchSpeech_WhatsBarryName(u8);
+static void Task_NewGameBirchSpeech_WhatsBarryName2(u8);
 static void Task_NewGameBirchSpeech_WaitForWhatsBarryNameToPrint(u8);
 static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoiceBarry(u8);
 
@@ -243,6 +244,7 @@ static void Task_NewGameBirchSpeech_StartNamingScreen(u8);
 static void CB2_NewGameBirchSpeech_ReturnFromNamingScreen(void);
 static void Task_NewGameBirchSpeech_CreateNameYesNo(u8);
 static void Task_NewGameBirchSpeech_ProcessNameYesNoMenu(u8);
+static void Task_NewGameBirchSpeech_ProcessNameMenuInput(u8 taskId);
 void CreateYesNoMenuParameterized(u8, u8, u16, u16, u8, u8);
 static void Task_NewGameBirchSpeech_SlidePlatformAway2(u8);
 static void Task_NewGameBirchSpeech_ReshowBirchLotad(u8);
@@ -253,6 +255,7 @@ static void SpriteCB_MovePlayerDownWhileShrinking(struct Sprite *);
 static void Task_NewGameBirchSpeech_WaitForPlayerShrink(u8);
 static void Task_NewGameBirchSpeech_FadePlayerToWhite(u8);
 static void Task_NewGameBirchSpeech_Cleanup(u8);
+static void Task_NewGameBirchSpeech_ShowNameList(u8 taskId);
 static void SpriteCB_Null(struct Sprite *);
 static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextbox(u8);
 static void MainMenu_FormatSavegamePlayer(void);
@@ -517,13 +520,14 @@ static const u8 *const sMalePresetNames[] = {
 
 
 static const u8 *const sBarryPresetNames[] = {
+    COMPOUND_STRING("New name!"),
+    COMPOUND_STRING("Diamond"),
     COMPOUND_STRING("Barry"),
-    COMPOUND_STRING("MILTON"),
-    COMPOUND_STRING("TOM"),
-    COMPOUND_STRING("KENNY"),
+    COMPOUND_STRING("Nolan"),
+    COMPOUND_STRING("Roy"),
+    COMPOUND_STRING("Gavin"),
     COMPOUND_STRING("REID"),
     COMPOUND_STRING("JUDE"),
-    COMPOUND_STRING("JAXSON"),
     COMPOUND_STRING("EASTON"),
     COMPOUND_STRING("WALKER"),
     COMPOUND_STRING("TERU"),
@@ -560,6 +564,16 @@ static const u8 *const sFemalePresetNames[] = {
     COMPOUND_STRING("TERRA"),
     COMPOUND_STRING("LUCY"),
     COMPOUND_STRING("HALIE")
+};
+
+static const struct ListMenuItem sBarryNameMenuItems[] = {
+    {sBarryPresetNames[0], 0},
+    {sBarryPresetNames[1], 1},
+    {sBarryPresetNames[2], 2},
+    {sBarryPresetNames[3], 3},
+    {sBarryPresetNames[4], 4},
+    {sBarryPresetNames[5], 5},
+    {sBarryPresetNames[6], 6},
 };
 
 // The number of male vs. female names is assumed to be the same.
@@ -783,6 +797,56 @@ static void Task_MainMenuCheckBattery(u8 taskId)
             gTasks[taskId].func = Task_WaitForBatteryDryErrorWindow;
         }
     }
+}
+
+static void Task_NewGameBirchSpeech_ShowNameList(u8 taskId)
+{
+    struct ListMenuTemplate listTemplate;
+    u8 windowId = 2; 
+
+    // --- HARDWARE RNG FIX ---
+    // The standard Naming Screen normally starts these timers to generate the Trainer ID.
+    // Since we bypass the Naming Screen for preset names, we MUST start them here 
+    // so the native ID generator has actual, wildly spinning entropy!
+    // StartTimer1();
+    // ------------------------
+
+    // StringExpandPlaceholders(gStringVar4, gText_Birch_YourFriend);
+    // AddTextPrinterForMessage(TRUE);
+
+    DrawMainMenuWindowBorder(&sNewGameBirchSpeechTextWindows[windowId], 0xF3);
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(1));
+
+    // if (gSaveBlock2Ptr->playerGender == MALE)
+    listTemplate.items = sBarryNameMenuItems;
+    // else
+    //     listTemplate.items = sFemaleNameMenuItems;
+
+    listTemplate.moveCursorFunc = ListMenuDefaultCursorMoveFunc;
+    listTemplate.itemPrintFunc = NULL;
+    listTemplate.totalItems = 7;
+    listTemplate.maxShowed = 5; 
+    listTemplate.windowId = windowId;
+    listTemplate.header_X = 0;
+    listTemplate.item_X = 8;
+    listTemplate.cursor_X = 0;
+    listTemplate.upText_Y = 1;
+    listTemplate.cursorPal = 2;
+    listTemplate.fillValue = 1;
+    listTemplate.cursorShadowPal = 3;
+    listTemplate.lettersSpacing = 0;
+    listTemplate.itemVerticalPadding = 0;
+    listTemplate.scrollMultiple = LIST_NO_MULTIPLE_SCROLL;
+    listTemplate.fontId = FONT_NORMAL;
+    listTemplate.cursorKind = 0;
+
+    gTasks[taskId].data[0] = ListMenuInit(&listTemplate, 0, 0);
+    gTasks[taskId].data[1] = windowId;
+
+    PutWindowTilemap(windowId);
+    CopyWindowToVram(windowId, COPYWIN_FULL);
+
+    gTasks[taskId].func = Task_NewGameBirchSpeech_ProcessNameMenuInput;
 }
 
 static void Task_WaitForBatteryDryErrorWindow(u8 taskId)
@@ -1747,8 +1811,8 @@ static void Task_NewGameBirchSpeech_ProcessNameYesNoMenuBarry(u8 taskId)
         case MENU_B_PRESSED:
         case 1:
             PlaySE(SE_SELECT);
-            BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
-            gTasks[taskId].func = Task_NewGameBirchSpeech_StartBarryNamingScreen;
+            // BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+            gTasks[taskId].func = Task_NewGameBirchSpeech_WhatsBarryName2;
     }
 }
 
@@ -1948,10 +2012,19 @@ static void Task_NewGameBirchSpeech_WhatsBarryName(u8 taskId)
     gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForWhatsBarryNameToPrint;
 }
 
+
+static void Task_NewGameBirchSpeech_WhatsBarryName2(u8 taskId)
+{
+    NewGameBirchSpeech_ClearWindow(0);
+    StringExpandPlaceholders(gStringVar4, gText_Birch_YourFriend2);
+    AddTextPrinterForMessage(TRUE);
+    gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForWhatsBarryNameToPrint;
+}
+
 static void Task_NewGameBirchSpeech_WaitForWhatsBarryNameToPrint(u8 taskId)
 {
     if (!RunTextPrintersAndIsPrinter0Active())
-        gTasks[taskId].func = Task_NewGameBirchSpeech_WaitPressBeforeNameChoiceBarry;
+        gTasks[taskId].func = Task_NewGameBirchSpeech_ShowNameList;
 }
 
 static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoiceBarry(u8 taskId)
@@ -2577,4 +2650,59 @@ static void Task_NewGameBirchSpeech_ReturnFromNamingScreenShowTextboxBarry(u8 ta
     }
 }
 
+static void Task_NewGameBirchSpeech_ProcessNameMenuInput(u8 taskId)
+{
+    s32 input = ListMenu_ProcessInput(gTasks[taskId].data[0]);
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+
+        DestroyListMenuTask(gTasks[taskId].data[0], NULL, NULL);
+        NewGameBirchSpeech_ClearGenderWindow(gTasks[taskId].data[1], TRUE);
+
+        if (input == 0) // "Custom Name" Selected
+        {
+            gTasks[taskId].func = Task_NewGameBirchSpeech_StartBarryNamingScreen;
+        }
+        else // Preset Name Selected
+        {
+            const u8 *customName;
+            u8 i;
+            
+            customName = sBarryPresetNames[input];
+
+
+            // 1. Safely copy the letters
+            for (i = 0; i < PLAYER_NAME_LENGTH; i++)
+            {
+                if (customName[i] == 0xFF || customName[i] == 0x00)
+                    break;
+                    
+               gSaveBlock2Ptr->barryName[i] = customName[i];
+            }
+
+            // 2. Safely fill the rest of the name array with EOS (0xFF)
+            while (i <= PLAYER_NAME_LENGTH)
+            {
+                gSaveBlock2Ptr->barryName[i] = 0xFF; 
+                i++;
+            }
+
+            // 3. NATIVE FIX: Generate the Trainer ID safely!
+            // Because we called StartTimer1() when the menu opened, 
+            // this native function will now successfully pull a completely unique ID.
+            SeedRngAndSetTrainerId();
+
+            gTasks[taskId].func = Task_NewGameBirchSpeech_SoItsBarryName;
+        }
+    }
+    // else if (JOY_NEW(B_BUTTON))
+    // {
+    //     PlaySE(SE_SELECT);
+    //     DestroyListMenuTask(gTasks[taskId].data[0], NULL, NULL);
+    //     NewGameBirchSpeech_ClearGenderWindow(gTasks[taskId].data[1], TRUE);
+    //     gTasks[taskId].func = Task_NewGameBirchSpeech_WaitForWhatsBarryNameToPrint;
+    // }
+}
 #undef tTimer

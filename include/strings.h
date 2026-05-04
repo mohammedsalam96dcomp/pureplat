@@ -230,6 +230,7 @@ extern const u8 gText_Birch_WhatsYourName[];
 extern const u8 gText_Birch_SoItsPlayer[];
 extern const u8 gText_Birch_YourePlayer[];
 extern const u8 gText_Birch_YourFriend[];
+extern const u8 gText_Birch_YourFriend2[];
 extern const u8 gText_Birch_FriendsName[];
 extern const u8 gText_Birch_AreYouReady[];
 

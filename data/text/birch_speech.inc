@@ -63,6 +63,8 @@ gText_Birch_YourFriend::
 	.string "I believe he's your friend.\p"
 	.string "What might his name be?$"
 
+gText_Birch_YourFriend2::
+	.string "What might his name be?$"
 
 gText_Birch_FriendsName::
 	.string "{BARRY}, is it?\n"
