@@ -22,7 +22,7 @@ JubilifeCity_EventScript_GoToTrainerSchool::
 	compare VAR_TEMP_1, 46
 	goto_if_eq JubilifeCity_EventScript_GoToTrainerSchool_3
 # 24 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 47, 48
+	setobjectxy 1, 47, 50
 JubilifeCity_EventScript_GoToTrainerSchool_1:
 # 27 "data/maps/JubilifeCity/scripts.pory"
 	applymovement 1, JubilifeCity_EventScript_GoToTrainerSchool_Movement_0
@@ -213,12 +213,12 @@ JubilifeCity_EventScript_GoToTrainerSchool_44:
 
 JubilifeCity_EventScript_GoToTrainerSchool_2:
 # 20 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 45, 48
+	setobjectxy 1, 45, 50
 	goto JubilifeCity_EventScript_GoToTrainerSchool_1
 
 JubilifeCity_EventScript_GoToTrainerSchool_3:
 # 22 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 46, 48
+	setobjectxy 1, 46, 50
 	goto JubilifeCity_EventScript_GoToTrainerSchool_1
 
 JubilifeCity_EventScript_GoToTrainerSchool_8:
@@ -333,13 +333,13 @@ JubilifeCity_EventScript_LookerVisitSchool::
 # 274 "data/maps/JubilifeCity/scripts.pory"
 	waitmovement 0
 # 276 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_2, 17
+	compare VAR_TEMP_2, 19
 	goto_if_eq JubilifeCity_EventScript_LookerVisitSchool_2
 # 279 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_2, 18
+	compare VAR_TEMP_2, 20
 	goto_if_eq JubilifeCity_EventScript_LookerVisitSchool_3
 # 281 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_2, 19
+	compare VAR_TEMP_2, 21
 	goto_if_eq JubilifeCity_EventScript_LookerVisitSchool_4
 # 284 "data/maps/JubilifeCity/scripts.pory"
 	applymovement 15, JubilifeCity_EventScript_LookerVisitSchool_Movement_5
@@ -355,13 +355,13 @@ JubilifeCity_EventScript_LookerVisitSchool_9:
 # 300 "data/maps/JubilifeCity/scripts.pory"
 	applymovement OBJ_EVENT_ID_PLAYER, JubilifeCity_EventScript_LookerVisitSchool_Movement_6
 # 301 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_2, 17
+	compare VAR_TEMP_2, 19
 	goto_if_eq JubilifeCity_EventScript_LookerVisitSchool_14
 # 303 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_2, 18
+	compare VAR_TEMP_2, 20
 	goto_if_eq JubilifeCity_EventScript_LookerVisitSchool_15
 # 305 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_2, 19
+	compare VAR_TEMP_2, 21
 	goto_if_eq JubilifeCity_EventScript_LookerVisitSchool_16
 # 308 "data/maps/JubilifeCity/scripts.pory"
 	applymovement 15, JubilifeCity_EventScript_LookerVisitSchool_Movement_10

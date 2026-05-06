@@ -17,11 +17,11 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
 
 	if (var(VAR_TEMP_1) == 45) {
-		setobjectxy(LOCALID_LUCASDAWN, 45, 48)
+		setobjectxy(LOCALID_LUCASDAWN, 45, 50)
 	} elif (var(VAR_TEMP_1) == 46) {
-		setobjectxy(LOCALID_LUCASDAWN, 46, 48)
+		setobjectxy(LOCALID_LUCASDAWN, 46, 50)
 	} else {
-		setobjectxy(LOCALID_LUCASDAWN, 47, 48)
+		setobjectxy(LOCALID_LUCASDAWN, 47, 50)
 	}
 
 	applymovement(LOCALID_LUCASDAWN, moves(delay_16*2, walk_down*3))
@@ -273,12 +273,12 @@ script JubilifeCity_EventScript_LookerVisitSchool {
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_in_place_left))
 	waitmovement(0)
 
-	if (var(VAR_TEMP_2) == 17) {
+	if (var(VAR_TEMP_2) == 19) {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down, walk_right))
 
-	} elif (var(VAR_TEMP_2) == 18) {
+	} elif (var(VAR_TEMP_2) == 20) {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down*2, walk_right))
-	} elif (var(VAR_TEMP_2) == 19) {
+	} elif (var(VAR_TEMP_2) == 21) {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down*3, walk_right))
 	} else {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_down*4, walk_right))
@@ -298,11 +298,11 @@ script JubilifeCity_EventScript_LookerVisitSchool {
 	}
 
 	applymovement(OBJ_EVENT_ID_PLAYER, moves(walk_left))
-	if (var(VAR_TEMP_2) == 17) {
+	if (var(VAR_TEMP_2) == 19) {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up, face_down))
-	} elif (var(VAR_TEMP_2) == 18) {
+	} elif (var(VAR_TEMP_2) == 20) {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up*2, face_down))
-	} elif (var(VAR_TEMP_2) == 19) {
+	} elif (var(VAR_TEMP_2) == 21) {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up*3, face_down))
 	} else {
 		applymovement(LOCALID_LOOKER_EXIT, moves(walk_left, walk_up*4, face_down))
