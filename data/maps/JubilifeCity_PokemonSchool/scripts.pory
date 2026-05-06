@@ -256,9 +256,10 @@ script JubilifeCity_PokemonSchool_EventScript_Barry {
 			"So {PLAYER}, what brings you?\n"
 			"Huh?\l"
 			"You've got something for me?")
-	// playfanfare(MUS_OBTAIN_ITEM)
-	msgbox("{SPEAKER NAME_NONE}{PLAYER} delivered the Parcel.")
-	// waitfanfare
+	playfanfare(MUS_OBTAIN_ITEM)
+	setspeaker(SP_NAME_NONE)
+	msgbox("{PLAYER} delivered the Parcel.")
+	waitfanfare
 	removeitem(ITEM_PARCEL, 1)
 	msgbox("{SPEAKER NAME_BARRY}So, what is this. . .?\p"
 			"Score!\n"

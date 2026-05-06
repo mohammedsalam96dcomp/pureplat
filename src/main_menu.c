@@ -2038,8 +2038,8 @@ static void Task_NewGameBirchSpeech_WaitPressBeforeNameChoiceBarry(u8 taskId)
 
 static void Task_NewGameBirchSpeech_StartBarryNamingScreen(u8 taskId)
 {
-    // if (!gPaletteFade.active)
-    // {
+    if (!gPaletteFade.active)
+    {
         FreeAllWindowBuffers();
 
         NewGameBirchSpeech_SetBarryName(1);
@@ -2047,7 +2047,7 @@ static void Task_NewGameBirchSpeech_StartBarryNamingScreen(u8 taskId)
         FreeAndDestroyMonPicSprite(gTasks[taskId].tLotadSpriteId);
         DestroyTask(taskId);
         DoNamingScreen(NAMING_SCREEN_BARRY, gSaveBlock2Ptr->barryName, 0, 0, 0, CB2_NewGameBirchSpeech_ReturnFromNamingScreenBarry);
-    // }
+    }
 }
 
 static void Task_NewGameBirchSpeech_Cleanup(u8 taskId)

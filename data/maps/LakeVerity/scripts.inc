@@ -100,86 +100,88 @@ LakeVerity_ON_FRAME::
 # 80 "data/maps/LakeVerity/scripts.pory"
 	playmoncry SPECIES_MESPRIT, CRY_MODE_NORMAL
 # 81 "data/maps/LakeVerity/scripts.pory"
-	msgbox LakeVerity_ON_FRAME_Text_5
+	setspeaker SP_NAME_NONE
 # 82 "data/maps/LakeVerity/scripts.pory"
-	waitmoncry
+	msgbox LakeVerity_ON_FRAME_Text_5
 # 83 "data/maps/LakeVerity/scripts.pory"
+	waitmoncry
+# 84 "data/maps/LakeVerity/scripts.pory"
 	closemessage
-# 85 "data/maps/LakeVerity/scripts.pory"
-	applymovement 1, Common_Movement_ExclamationMark
 # 86 "data/maps/LakeVerity/scripts.pory"
-	playse SE_PIN
-# 87 "data/maps/LakeVerity/scripts.pory"
-	waitmovement 0
-# 88 "data/maps/LakeVerity/scripts.pory"
-	waitse
-# 89 "data/maps/LakeVerity/scripts.pory"
-	delay 30
-# 91 "data/maps/LakeVerity/scripts.pory"
-	applymovement 1, LakeVerity_ON_FRAME_Movement_10
-# 92 "data/maps/LakeVerity/scripts.pory"
-	waitmovement 1
-# 93 "data/maps/LakeVerity/scripts.pory"
-	delay 8
-# 94 "data/maps/LakeVerity/scripts.pory"
-	applymovement 1, LakeVerity_ON_FRAME_Movement_11
-# 95 "data/maps/LakeVerity/scripts.pory"
-	waitmovement 1
-# 96 "data/maps/LakeVerity/scripts.pory"
-	applymovement 1, LakeVerity_ON_FRAME_Movement_12
-# 97 "data/maps/LakeVerity/scripts.pory"
-	waitmovement 1
-# 99 "data/maps/LakeVerity/scripts.pory"
-	msgbox LakeVerity_ON_FRAME_Text_6
-# 105 "data/maps/LakeVerity/scripts.pory"
-	closemessage
-# 107 "data/maps/LakeVerity/scripts.pory"
 	applymovement 1, Common_Movement_ExclamationMark
-# 108 "data/maps/LakeVerity/scripts.pory"
+# 87 "data/maps/LakeVerity/scripts.pory"
 	playse SE_PIN
-# 109 "data/maps/LakeVerity/scripts.pory"
+# 88 "data/maps/LakeVerity/scripts.pory"
 	waitmovement 0
-# 110 "data/maps/LakeVerity/scripts.pory"
+# 89 "data/maps/LakeVerity/scripts.pory"
 	waitse
-# 111 "data/maps/LakeVerity/scripts.pory"
+# 90 "data/maps/LakeVerity/scripts.pory"
 	delay 30
-# 113 "data/maps/LakeVerity/scripts.pory"
-	msgbox LakeVerity_ON_FRAME_Text_7
-# 130 "data/maps/LakeVerity/scripts.pory"
+# 92 "data/maps/LakeVerity/scripts.pory"
+	applymovement 1, LakeVerity_ON_FRAME_Movement_10
+# 93 "data/maps/LakeVerity/scripts.pory"
+	waitmovement 1
+# 94 "data/maps/LakeVerity/scripts.pory"
+	delay 8
+# 95 "data/maps/LakeVerity/scripts.pory"
+	applymovement 1, LakeVerity_ON_FRAME_Movement_11
+# 96 "data/maps/LakeVerity/scripts.pory"
+	waitmovement 1
+# 97 "data/maps/LakeVerity/scripts.pory"
+	applymovement 1, LakeVerity_ON_FRAME_Movement_12
+# 98 "data/maps/LakeVerity/scripts.pory"
+	waitmovement 1
+# 100 "data/maps/LakeVerity/scripts.pory"
+	msgbox LakeVerity_ON_FRAME_Text_6
+# 106 "data/maps/LakeVerity/scripts.pory"
 	closemessage
-# 132 "data/maps/LakeVerity/scripts.pory"
-	applymovement 1, LakeVerity_ON_FRAME_Movement_13
-# 133 "data/maps/LakeVerity/scripts.pory"
+# 108 "data/maps/LakeVerity/scripts.pory"
+	applymovement 1, Common_Movement_ExclamationMark
+# 109 "data/maps/LakeVerity/scripts.pory"
+	playse SE_PIN
+# 110 "data/maps/LakeVerity/scripts.pory"
 	waitmovement 0
-# 135 "data/maps/LakeVerity/scripts.pory"
-	playse SE_EXIT
-# 136 "data/maps/LakeVerity/scripts.pory"
-	setflag FLAG_HIDE_LAKE_VERITY_BARRY
-# 137 "data/maps/LakeVerity/scripts.pory"
-	removeobject 1
-# 138 "data/maps/LakeVerity/scripts.pory"
+# 111 "data/maps/LakeVerity/scripts.pory"
 	waitse
-# 140 "data/maps/LakeVerity/scripts.pory"
-	setvar VAR_LAKE_VERITY_STATE, 3
+# 112 "data/maps/LakeVerity/scripts.pory"
+	delay 30
+# 114 "data/maps/LakeVerity/scripts.pory"
+	msgbox LakeVerity_ON_FRAME_Text_7
+# 131 "data/maps/LakeVerity/scripts.pory"
+	closemessage
+# 133 "data/maps/LakeVerity/scripts.pory"
+	applymovement 1, LakeVerity_ON_FRAME_Movement_13
+# 134 "data/maps/LakeVerity/scripts.pory"
+	waitmovement 0
+# 136 "data/maps/LakeVerity/scripts.pory"
+	playse SE_EXIT
+# 137 "data/maps/LakeVerity/scripts.pory"
+	setflag FLAG_HIDE_LAKE_VERITY_BARRY
+# 138 "data/maps/LakeVerity/scripts.pory"
+	removeobject 1
+# 139 "data/maps/LakeVerity/scripts.pory"
+	waitse
 # 141 "data/maps/LakeVerity/scripts.pory"
-	setvar VAR_SANDGEM_TOWN_STATE, 1
+	setvar VAR_LAKE_VERITY_STATE, 3
 # 142 "data/maps/LakeVerity/scripts.pory"
-	clearflag FLAG_HIDE_SANDGEM_TOWN_DAWN
+	setvar VAR_SANDGEM_TOWN_STATE, 1
 # 143 "data/maps/LakeVerity/scripts.pory"
+	clearflag FLAG_HIDE_SANDGEM_TOWN_DAWN
+# 144 "data/maps/LakeVerity/scripts.pory"
 	release
 	return
 
 
 LakeVerity_ON_WARP::
-# 147 "data/maps/LakeVerity/scripts.pory"
+# 148 "data/maps/LakeVerity/scripts.pory"
 	destroyfollowernpc
-# 149 "data/maps/LakeVerity/scripts.pory"
-	setmetatile 10, 28, METATILE_GeneralSinnoh_GrassSouth, FALSE
 # 150 "data/maps/LakeVerity/scripts.pory"
-	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
+	setmetatile 10, 28, METATILE_GeneralSinnoh_GrassSouth, FALSE
 # 151 "data/maps/LakeVerity/scripts.pory"
-	setvar VAR_LAKE_VERITY_STATE, 1
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_NORTH
 # 152 "data/maps/LakeVerity/scripts.pory"
+	setvar VAR_LAKE_VERITY_STATE, 1
+# 153 "data/maps/LakeVerity/scripts.pory"
 	setvar VAR_ROUTE201_STATE, 4
 	return
 
@@ -302,51 +304,51 @@ LakeVerity_ON_FRAME_Movement_9:
 	walk_in_place_left
 	step_end
 
-# 91 "data/maps/LakeVerity/scripts.pory"
+# 92 "data/maps/LakeVerity/scripts.pory"
 LakeVerity_ON_FRAME_Movement_10:
-# 91 "data/maps/LakeVerity/scripts.pory"
+# 92 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_up
-# 91 "data/maps/LakeVerity/scripts.pory"
+# 92 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_up
-# 91 "data/maps/LakeVerity/scripts.pory"
+# 92 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_up
 	step_end
 
-# 94 "data/maps/LakeVerity/scripts.pory"
+# 95 "data/maps/LakeVerity/scripts.pory"
 LakeVerity_ON_FRAME_Movement_11:
-# 94 "data/maps/LakeVerity/scripts.pory"
+# 95 "data/maps/LakeVerity/scripts.pory"
 	face_left
-# 94 "data/maps/LakeVerity/scripts.pory"
+# 95 "data/maps/LakeVerity/scripts.pory"
 	delay_16
-# 94 "data/maps/LakeVerity/scripts.pory"
+# 95 "data/maps/LakeVerity/scripts.pory"
 	delay_16
-# 94 "data/maps/LakeVerity/scripts.pory"
+# 95 "data/maps/LakeVerity/scripts.pory"
 	face_up
-# 94 "data/maps/LakeVerity/scripts.pory"
+# 95 "data/maps/LakeVerity/scripts.pory"
 	delay_16
-# 94 "data/maps/LakeVerity/scripts.pory"
+# 95 "data/maps/LakeVerity/scripts.pory"
 	delay_16
 	step_end
 
-# 96 "data/maps/LakeVerity/scripts.pory"
+# 97 "data/maps/LakeVerity/scripts.pory"
 LakeVerity_ON_FRAME_Movement_12:
-# 96 "data/maps/LakeVerity/scripts.pory"
+# 97 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_down
-# 96 "data/maps/LakeVerity/scripts.pory"
+# 97 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_down
-# 96 "data/maps/LakeVerity/scripts.pory"
+# 97 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_down
-# 96 "data/maps/LakeVerity/scripts.pory"
+# 97 "data/maps/LakeVerity/scripts.pory"
 	walk_in_place_faster_left
-# 96 "data/maps/LakeVerity/scripts.pory"
+# 97 "data/maps/LakeVerity/scripts.pory"
 	walk_in_place_faster_left
 	step_end
 
-# 132 "data/maps/LakeVerity/scripts.pory"
+# 133 "data/maps/LakeVerity/scripts.pory"
 LakeVerity_ON_FRAME_Movement_13:
-# 132 "data/maps/LakeVerity/scripts.pory"
+# 133 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_down
-# 132 "data/maps/LakeVerity/scripts.pory"
+# 133 "data/maps/LakeVerity/scripts.pory"
 	walk_fast_down
 	step_end
 
@@ -379,11 +381,11 @@ LakeVerity_ON_FRAME_Text_4:
 	.string "Let's catch that legendary Pokémon!$"
 
 LakeVerity_ON_FRAME_Text_5:
-# 81 "data/maps/LakeVerity/scripts.pory"
-	.string "{SPEAKER NAME_NONE}Kyauuun!$"
+# 82 "data/maps/LakeVerity/scripts.pory"
+	.string "Kyauuun!$"
 
 LakeVerity_ON_FRAME_Text_6:
-# 99 "data/maps/LakeVerity/scripts.pory"
+# 100 "data/maps/LakeVerity/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}!\n"
 	.string "Did you hear that, {PLAYER}?!\p"
 	.string "That was the legendary Pokémon crying!\n"
@@ -392,7 +394,7 @@ LakeVerity_ON_FRAME_Text_6:
 	.string "Let's catch it!$"
 
 LakeVerity_ON_FRAME_Text_7:
-# 113 "data/maps/LakeVerity/scripts.pory"
+# 114 "data/maps/LakeVerity/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}. . .Wait!\n"
 	.string "What. . .?!\p"
 	.string "We don't have anything on us!\p"

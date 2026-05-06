@@ -288,101 +288,107 @@ JubilifeCity_PokemonSchool_EventScript_Barry::
 	faceplayer
 # 249 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	msgbox JubilifeCity_PokemonSchool_EventScript_Barry_Text_0
+# 259 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	playfanfare MUS_OBTAIN_ITEM
 # 260 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	setspeaker SP_NAME_NONE
+# 261 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	msgbox JubilifeCity_PokemonSchool_EventScript_Barry_Text_1
 # 262 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	removeitem ITEM_PARCEL, 1
+	waitfanfare
 # 263 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	removeitem ITEM_PARCEL, 1
+# 264 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	msgbox JubilifeCity_PokemonSchool_EventScript_Barry_Text_2
-# 270 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	giveitem ITEM_TOWN_MAP
 # 271 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	giveitem ITEM_TOWN_MAP
+# 272 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	msgbox JubilifeCity_PokemonSchool_EventScript_Barry_Text_3, MSGBOX_AUTOCLOSE
-# 281 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 282 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	specialvar VAR_RESULT, GetPlayerFacingDirection
-# 284 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 285 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	compare VAR_RESULT, DIR_NORTH
 	goto_if_eq JubilifeCity_PokemonSchool_EventScript_Barry_2
-# 288 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, JubilifeCity_PokemonSchool_EventScript_Barry_Movement_2
 # 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, JubilifeCity_PokemonSchool_EventScript_Barry_Movement_2
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	applymovement 1, JubilifeCity_PokemonSchool_EventScript_Barry_Movement_3
 JubilifeCity_PokemonSchool_EventScript_Barry_1:
-# 291 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 292 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	waitmovement 1
-# 293 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	playse SE_EXIT
 # 294 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	setflag FLAG_HIDE_BARRY_POKEMON_SCHOOL
+	playse SE_EXIT
 # 295 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	removeobject 1
+	setflag FLAG_HIDE_BARRY_POKEMON_SCHOOL
 # 296 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	removeobject 1
+# 297 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	waitse
-# 298 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	clearflag FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE
 # 299 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	clearflag FLAG_HIDE_POKETCH_CLOWNS
+	clearflag FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE
 # 300 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	clearflag FLAG_HIDE_POKETCH_CLOWNS
+# 301 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	setvar VAR_JUBILIFE_CITY_STATE, 3
-# 302 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 303 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	release
 	return
 
 JubilifeCity_PokemonSchool_EventScript_Barry_2:
-# 285 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	applymovement OBJ_EVENT_ID_PLAYER, JubilifeCity_PokemonSchool_EventScript_Barry_Movement_0
 # 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	applymovement OBJ_EVENT_ID_PLAYER, JubilifeCity_PokemonSchool_EventScript_Barry_Movement_0
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	applymovement 1, JubilifeCity_PokemonSchool_EventScript_Barry_Movement_1
 	goto JubilifeCity_PokemonSchool_EventScript_Barry_1
 
 
-# 285 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 JubilifeCity_PokemonSchool_EventScript_Barry_Movement_0:
-# 285 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_in_place_right
-# 285 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 JubilifeCity_PokemonSchool_EventScript_Barry_Movement_1:
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_right
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 286 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 287 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
 	step_end
 
-# 288 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 JubilifeCity_PokemonSchool_EventScript_Barry_Movement_2:
-# 288 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_in_place_down
 	step_end
 
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 JubilifeCity_PokemonSchool_EventScript_Barry_Movement_3:
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_right
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
-# 289 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 290 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	walk_fast_down
 	step_end
 
@@ -538,11 +544,11 @@ JubilifeCity_PokemonSchool_EventScript_Barry_Text_0:
 	.string "You've got something for me?$"
 
 JubilifeCity_PokemonSchool_EventScript_Barry_Text_1:
-# 260 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	.string "{SPEAKER NAME_NONE}{PLAYER} delivered the Parcel.$"
+# 261 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+	.string "{PLAYER} delivered the Parcel.$"
 
 JubilifeCity_PokemonSchool_EventScript_Barry_Text_2:
-# 263 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 264 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}So, what is this. . .?\p"
 	.string "Score!\n"
 	.string "It's a Town Map!\p"
@@ -552,7 +558,7 @@ JubilifeCity_PokemonSchool_EventScript_Barry_Text_2:
 	.string "Here, {PLAYER}, you take one!$"
 
 JubilifeCity_PokemonSchool_EventScript_Barry_Text_3:
-# 271 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
+# 272 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	.string "{SPEAKER NAME_BARRY}Hmm. . .\p"
 	.string "Well, according to the Town Map,\n"
 	.string "I guess Oreburgh City is where\l"

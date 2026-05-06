@@ -78,7 +78,8 @@ script LakeVerity_ON_FRAME {
 	msgbox("{SPEAKER NAME_BARRY}OK, {PLAYER}!\n"
 			"Let's catch that legendary Pokémon!")
 	playmoncry(SPECIES_MESPRIT, CRY_MODE_NORMAL)
-	msgbox("{SPEAKER NAME_NONE}Kyauuun!")
+	setspeaker(SP_NAME_NONE)
+	msgbox("Kyauuun!")
 	waitmoncry
 	closemessage
 
