@@ -288,12 +288,8 @@ JubilifeCity_PokemonSchool_EventScript_Barry::
 	faceplayer
 # 249 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	msgbox JubilifeCity_PokemonSchool_EventScript_Barry_Text_0
-# 259 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	playfanfare MUS_OBTAIN_ITEM
 # 260 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	msgbox JubilifeCity_PokemonSchool_EventScript_Barry_Text_1
-# 261 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
-	waitfanfare
 # 262 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
 	removeitem ITEM_PARCEL, 1
 # 263 "data/maps/JubilifeCity_PokemonSchool/scripts.pory"
