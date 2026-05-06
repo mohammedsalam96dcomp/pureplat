@@ -79,7 +79,7 @@ script LakeVerity_ON_FRAME {
 			"Let's catch that legendary Pokémon!")
 	playmoncry(SPECIES_MESPRIT, CRY_MODE_NORMAL)
 	msgbox("{SPEAKER NAME_NONE}Kyauuun!")
-	waitmoncry()
+	waitmoncry
 	closemessage
 
 	applymovement(LOCALID_BARRY, Common_Movement_ExclamationMark)

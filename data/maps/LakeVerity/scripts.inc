@@ -97,8 +97,6 @@ LakeVerity_ON_FRAME::
 	delay 8
 # 78 "data/maps/LakeVerity/scripts.pory"
 	msgbox LakeVerity_ON_FRAME_Text_4
-# 80 "data/maps/LakeVerity/scripts.pory"
-	playmoncry SPECIES_MESPRIT, CRY_MODE_NORMAL
 # 81 "data/maps/LakeVerity/scripts.pory"
 	msgbox LakeVerity_ON_FRAME_Text_5
 # 82 "data/maps/LakeVerity/scripts.pory"
