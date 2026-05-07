@@ -143,6 +143,26 @@ Route203_EventScript_Madeline::
 	end
 
 
+Route203_SignScript_TrainerTips1::
+# 129 "data/maps/Route203/scripts.pory"
+	lock
+# 130 "data/maps/Route203/scripts.pory"
+	msgbox Route203_SignScript_TrainerTips1_Text_0, MSGBOX_AUTOCLOSE
+# 135 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
+Route203_SignScript_TrainerTips2::
+# 139 "data/maps/Route203/scripts.pory"
+	lock
+# 140 "data/maps/Route203/scripts.pory"
+	msgbox Route203_SignScript_TrainerTips2_Text_0, MSGBOX_AUTOCLOSE
+# 148 "data/maps/Route203/scripts.pory"
+	release
+	return
+
+
 # 11 "data/maps/Route203/scripts.pory"
 Route203_EventScript_RivalBattle_Movement_0:
 # 11 "data/maps/Route203/scripts.pory"
@@ -266,3 +286,21 @@ Route203_EventScript_Lass_Text_0:
 	.string "at the top left of your party list.\p"
 	.string "That way, it will be the first to go out\n"
 	.string "in a battle.$"
+
+Route203_SignScript_TrainerTips1_Text_0:
+# 130 "data/maps/Route203/scripts.pory"
+	.string "Trainer Tips!\p"
+	.string "Pokémon moves use energy called\n"
+	.string "Power Points, or PP for short.\p"
+	.string "If the PP of moves runs low, head for\n"
+	.string "any Pokémon Center.$"
+
+Route203_SignScript_TrainerTips2_Text_0:
+# 140 "data/maps/Route203/scripts.pory"
+	.string "Trainer Tips!\p"
+	.string "If a Pokémon is about to evolve,\n"
+	.string "it can be instantly stopped.\p"
+	.string "Press the B Button during evolution\n"
+	.string "to startle the Pokémon into stopping.\p"
+	.string "That is how evolution can be\n"
+	.string "canceled.$"

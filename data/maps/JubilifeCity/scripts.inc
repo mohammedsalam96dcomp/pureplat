@@ -816,6 +816,56 @@ JubilifeCity_EventScript_Looker_2:
 	goto JubilifeCity_EventScript_Looker_1
 
 
+Jubilifecity_SignScript_Jubilife::
+# 652 "data/maps/JubilifeCity/scripts.pory"
+	lock
+# 653 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Jubilifecity_SignScript_Jubilife_Text_0, MSGBOX_AUTOCLOSE
+# 655 "data/maps/JubilifeCity/scripts.pory"
+	release
+	return
+
+
+Jubilifecity_SignScript_School::
+# 659 "data/maps/JubilifeCity/scripts.pory"
+	lock
+# 660 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Jubilifecity_SignScript_School_Text_0, MSGBOX_AUTOCLOSE
+# 662 "data/maps/JubilifeCity/scripts.pory"
+	release
+	return
+
+
+Jubilifecity_SignScript_Condos::
+# 666 "data/maps/JubilifeCity/scripts.pory"
+	lock
+# 667 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Jubilifecity_SignScript_Condos_Text_0, MSGBOX_AUTOCLOSE
+# 669 "data/maps/JubilifeCity/scripts.pory"
+	release
+	return
+
+
+Jubilifecity_SignScript_Station::
+# 673 "data/maps/JubilifeCity/scripts.pory"
+	lock
+# 674 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Jubilifecity_SignScript_Station_Text_0, MSGBOX_AUTOCLOSE
+# 676 "data/maps/JubilifeCity/scripts.pory"
+	release
+	return
+
+
+Jubilifecity_SignScript_Poketch::
+# 680 "data/maps/JubilifeCity/scripts.pory"
+	lock
+# 681 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Jubilifecity_SignScript_Poketch_Text_0, MSGBOX_AUTOCLOSE
+# 683 "data/maps/JubilifeCity/scripts.pory"
+	release
+	return
+
+
 # 27 "data/maps/JubilifeCity/scripts.pory"
 JubilifeCity_EventScript_GoToTrainerSchool_Movement_0:
 # 27 "data/maps/JubilifeCity/scripts.pory"
@@ -1758,6 +1808,31 @@ JubilifeCity_EventScript_Looker_Text_1:
 	.string "Trainers' School?\p"
 	.string "Did your friend not guide you there\n"
 	.string "earlier?$"
+
+Jubilifecity_SignScript_Jubilife_Text_0:
+# 653 "data/maps/JubilifeCity/scripts.pory"
+	.string "Jubilife City\p"
+	.string "City of Joy$"
+
+Jubilifecity_SignScript_School_Text_0:
+# 660 "data/maps/JubilifeCity/scripts.pory"
+	.string "Trainers' School\p"
+	.string "The First Step for Trainers!$"
+
+Jubilifecity_SignScript_Condos_Text_0:
+# 667 "data/maps/JubilifeCity/scripts.pory"
+	.string "Jubilife Condominiums\p"
+	.string "Tenants Wanted!$"
+
+Jubilifecity_SignScript_Station_Text_0:
+# 674 "data/maps/JubilifeCity/scripts.pory"
+	.string "Jubilife TV\p"
+	.string "The Fun-and-Games TV Station!$"
+
+Jubilifecity_SignScript_Poketch_Text_0:
+# 681 "data/maps/JubilifeCity/scripts.pory"
+	.string "The Pokétch Company\p"
+	.string "Pokémon Watches for the World!$"
 
 Clown1Correct::
 # 629 "data/maps/JubilifeCity/scripts.pory"
