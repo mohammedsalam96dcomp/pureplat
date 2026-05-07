@@ -398,6 +398,7 @@ script JubilifeCity_EventScript_PoketchInventor {
 
 		setvar(VAR_JUBILIFE_LOOKER_STATE, 2)
 		setvar(VAR_JUBILIFE_CITY_STATE, 5)
+		setvar(VAR_ROUTE203_STATE, 1)
 		
 	} else {
 		msgbox("The three clowns will each ask you\n"
@@ -645,4 +646,39 @@ text Clown3Correct {
 	"as they are held by a Pokémon.\p"
 	"Berries are eaten by Pokémon as\n"
 	"necessary during battle."
+}
+
+script Jubilifecity_SignScript_Jubilife {
+	lock
+	msgbox("Jubilife City\p"
+			"City of Joy", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script Jubilifecity_SignScript_School {
+	lock
+	msgbox("Trainers' School\p"
+			"The First Step for Trainers!", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script Jubilifecity_SignScript_Condos {
+	lock
+	msgbox("Jubilife Condominiums\p"
+			"Tenants Wanted!", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script Jubilifecity_SignScript_Station {
+	lock
+	msgbox("Jubilife TV\p"
+			"The Fun-and-Games TV Station!", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script Jubilifecity_SignScript_Poketch {
+	lock
+	msgbox("The Pokétch Company\p"
+			"Pokémon Watches for the World!", MSGBOX_AUTOCLOSE)
+	release
 }

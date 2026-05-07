@@ -488,10 +488,10 @@ JubilifeCity_EventScript_PoketchInventor::
 # 367 "data/maps/JubilifeCity/scripts.pory"
 	goto_if_set FLAG_POKETCH_COUPON_1, JubilifeCity_EventScript_PoketchInventor_5
 JubilifeCity_EventScript_PoketchInventor_3:
-# 403 "data/maps/JubilifeCity/scripts.pory"
+# 404 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_PoketchInventor_Text_2, MSGBOX_AUTOCLOSE
 JubilifeCity_EventScript_PoketchInventor_1:
-# 412 "data/maps/JubilifeCity/scripts.pory"
+# 413 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
@@ -533,6 +533,8 @@ JubilifeCity_EventScript_PoketchInventor_9:
 	setvar VAR_JUBILIFE_LOOKER_STATE, 2
 # 400 "data/maps/JubilifeCity/scripts.pory"
 	setvar VAR_JUBILIFE_CITY_STATE, 5
+# 401 "data/maps/JubilifeCity/scripts.pory"
+	setvar VAR_ROUTE203_STATE, 1
 	goto JubilifeCity_EventScript_PoketchInventor_1
 
 JubilifeCity_EventScript_PoketchInventor_4:
@@ -559,257 +561,257 @@ JubilifeCity_EventScript_PoketchInventor_11:
 
 
 JubilifeCity_EventScript_GameKid1::
-# 416 "data/maps/JubilifeCity/scripts.pory"
+# 417 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 418 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 419 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 420 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_GameKid1_Text_0, MSGBOX_AUTOCLOSE
-# 421 "data/maps/JubilifeCity/scripts.pory"
+# 422 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 
 JubilifeCity_EventScript_GameKid2::
-# 426 "data/maps/JubilifeCity/scripts.pory"
+# 427 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 428 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 429 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 430 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_GameKid2_Text_0, MSGBOX_AUTOCLOSE
-# 434 "data/maps/JubilifeCity/scripts.pory"
+# 435 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 
 JubilifeCity_EventScript_OldMan::
-# 438 "data/maps/JubilifeCity/scripts.pory"
+# 439 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 440 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 441 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 442 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_OldMan_Text_0, MSGBOX_YESNO
-# 444 "data/maps/JubilifeCity/scripts.pory"
+# 445 "data/maps/JubilifeCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq JubilifeCity_EventScript_OldMan_2
-# 452 "data/maps/JubilifeCity/scripts.pory"
+# 453 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_OldMan_Text_2, MSGBOX_AUTOCLOSE
 JubilifeCity_EventScript_OldMan_1:
-# 458 "data/maps/JubilifeCity/scripts.pory"
+# 459 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 JubilifeCity_EventScript_OldMan_2:
-# 445 "data/maps/JubilifeCity/scripts.pory"
+# 446 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_OldMan_Text_1, MSGBOX_AUTOCLOSE
 	goto JubilifeCity_EventScript_OldMan_1
 
 
 JubilifeCity_EventScript_SchoolKid::
-# 462 "data/maps/JubilifeCity/scripts.pory"
+# 463 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 464 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 465 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 466 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_SchoolKid_Text_0, MSGBOX_AUTOCLOSE
-# 469 "data/maps/JubilifeCity/scripts.pory"
+# 470 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 
 JubilifeCity_EventScript_OldMan2::
-# 473 "data/maps/JubilifeCity/scripts.pory"
+# 474 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 475 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 476 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 477 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_OldMan2_Text_0, MSGBOX_AUTOCLOSE
-# 481 "data/maps/JubilifeCity/scripts.pory"
+# 482 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 
 JubilifeCity_EventScript_LittleGirl::
-# 485 "data/maps/JubilifeCity/scripts.pory"
+# 486 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 487 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 488 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 489 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_LittleGirl_Text_0, MSGBOX_AUTOCLOSE
-# 490 "data/maps/JubilifeCity/scripts.pory"
+# 491 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 
 JubilifeCity_EventScript_AceTrainerF::
-# 494 "data/maps/JubilifeCity/scripts.pory"
+# 495 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 496 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 497 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 498 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_AceTrainerF_Text_0, MSGBOX_AUTOCLOSE
-# 499 "data/maps/JubilifeCity/scripts.pory"
+# 500 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 
 JubilifeCity_EventScript_AceTrainerM::
-# 504 "data/maps/JubilifeCity/scripts.pory"
+# 505 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 506 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
 # 507 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 508 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_AceTrainerM_Text_0, MSGBOX_AUTOCLOSE
-# 513 "data/maps/JubilifeCity/scripts.pory"
+# 514 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 
 JubilifeCity_EventScript_Clown1::
-# 517 "data/maps/JubilifeCity/scripts.pory"
-	lock
 # 518 "data/maps/JubilifeCity/scripts.pory"
+	lock
+# 519 "data/maps/JubilifeCity/scripts.pory"
 	faceplayer
-# 520 "data/maps/JubilifeCity/scripts.pory"
+# 521 "data/maps/JubilifeCity/scripts.pory"
 	goto_if_unset FLAG_POKETCH_COUPON_1, JubilifeCity_EventScript_Clown1_2
-# 540 "data/maps/JubilifeCity/scripts.pory"
+# 541 "data/maps/JubilifeCity/scripts.pory"
 	msgbox Clown1Correct
 JubilifeCity_EventScript_Clown1_1:
-# 542 "data/maps/JubilifeCity/scripts.pory"
+# 543 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 JubilifeCity_EventScript_Clown1_2:
-# 521 "data/maps/JubilifeCity/scripts.pory"
+# 522 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_0, MSGBOX_YESNO
-# 525 "data/maps/JubilifeCity/scripts.pory"
+# 526 "data/maps/JubilifeCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq JubilifeCity_EventScript_Clown1_5
-# 534 "data/maps/JubilifeCity/scripts.pory"
-	playse SE_FAILURE
 # 535 "data/maps/JubilifeCity/scripts.pory"
+	playse SE_FAILURE
+# 536 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_3, MSGBOX_AUTOCLOSE
-# 537 "data/maps/JubilifeCity/scripts.pory"
+# 538 "data/maps/JubilifeCity/scripts.pory"
 	waitse
 	goto JubilifeCity_EventScript_Clown1_1
 
 JubilifeCity_EventScript_Clown1_5:
-# 526 "data/maps/JubilifeCity/scripts.pory"
+# 527 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_1
-# 528 "data/maps/JubilifeCity/scripts.pory"
-	msgbox Clown1Correct
 # 529 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Clown1Correct
+# 530 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_2
-# 531 "data/maps/JubilifeCity/scripts.pory"
-	setflag FLAG_POKETCH_COUPON_1
 # 532 "data/maps/JubilifeCity/scripts.pory"
+	setflag FLAG_POKETCH_COUPON_1
+# 533 "data/maps/JubilifeCity/scripts.pory"
 	giveitem ITEM_COUPON_ONE
 	goto JubilifeCity_EventScript_Clown1_1
 
 
 JubilifeCity_EventScript_Clown2::
-# 546 "data/maps/JubilifeCity/scripts.pory"
-	lock
 # 547 "data/maps/JubilifeCity/scripts.pory"
+	lock
+# 548 "data/maps/JubilifeCity/scripts.pory"
 	faceplayer
-# 549 "data/maps/JubilifeCity/scripts.pory"
+# 550 "data/maps/JubilifeCity/scripts.pory"
 	goto_if_unset FLAG_POKETCH_COUPON_2, JubilifeCity_EventScript_Clown2_2
-# 567 "data/maps/JubilifeCity/scripts.pory"
+# 568 "data/maps/JubilifeCity/scripts.pory"
 	msgbox Clown2Correct
 JubilifeCity_EventScript_Clown2_1:
-# 569 "data/maps/JubilifeCity/scripts.pory"
+# 570 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 JubilifeCity_EventScript_Clown2_2:
-# 550 "data/maps/JubilifeCity/scripts.pory"
+# 551 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown2_Text_0, MSGBOX_YESNO
-# 554 "data/maps/JubilifeCity/scripts.pory"
+# 555 "data/maps/JubilifeCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq JubilifeCity_EventScript_Clown2_5
-# 563 "data/maps/JubilifeCity/scripts.pory"
+# 564 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_3, MSGBOX_AUTOCLOSE
 	goto JubilifeCity_EventScript_Clown2_1
 
 JubilifeCity_EventScript_Clown2_5:
-# 555 "data/maps/JubilifeCity/scripts.pory"
+# 556 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_1
-# 557 "data/maps/JubilifeCity/scripts.pory"
-	msgbox Clown2Correct
 # 558 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Clown2Correct
+# 559 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_2
-# 560 "data/maps/JubilifeCity/scripts.pory"
-	giveitem ITEM_COUPON_TWO
 # 561 "data/maps/JubilifeCity/scripts.pory"
+	giveitem ITEM_COUPON_TWO
+# 562 "data/maps/JubilifeCity/scripts.pory"
 	setflag FLAG_POKETCH_COUPON_2
 	goto JubilifeCity_EventScript_Clown2_1
 
 
 JubilifeCity_EventScript_Clown3::
-# 573 "data/maps/JubilifeCity/scripts.pory"
+# 574 "data/maps/JubilifeCity/scripts.pory"
 	lock
-# 575 "data/maps/JubilifeCity/scripts.pory"
+# 576 "data/maps/JubilifeCity/scripts.pory"
 	faceplayer
-# 577 "data/maps/JubilifeCity/scripts.pory"
+# 578 "data/maps/JubilifeCity/scripts.pory"
 	compare VAR_JUBILIFE_CITY_STATE, 2
 	goto_if_eq JubilifeCity_EventScript_Clown3_2
-# 583 "data/maps/JubilifeCity/scripts.pory"
+# 584 "data/maps/JubilifeCity/scripts.pory"
 	goto_if_set FLAG_POKETCH_COUPON_3, JubilifeCity_EventScript_Clown3_5
-# 586 "data/maps/JubilifeCity/scripts.pory"
+# 587 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown3_Text_1, MSGBOX_YESNO
-# 589 "data/maps/JubilifeCity/scripts.pory"
+# 590 "data/maps/JubilifeCity/scripts.pory"
 	compare VAR_RESULT, 1
 	goto_if_eq JubilifeCity_EventScript_Clown3_8
-# 599 "data/maps/JubilifeCity/scripts.pory"
+# 600 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_3, MSGBOX_AUTOCLOSE
 JubilifeCity_EventScript_Clown3_1:
-# 604 "data/maps/JubilifeCity/scripts.pory"
+# 605 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 JubilifeCity_EventScript_Clown3_2:
-# 578 "data/maps/JubilifeCity/scripts.pory"
+# 579 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown3_Text_0, MSGBOX_AUTOCLOSE
 	goto JubilifeCity_EventScript_Clown3_1
 
 JubilifeCity_EventScript_Clown3_5:
-# 584 "data/maps/JubilifeCity/scripts.pory"
+# 585 "data/maps/JubilifeCity/scripts.pory"
 	msgbox Clown3Correct
 	goto JubilifeCity_EventScript_Clown3_1
 
 JubilifeCity_EventScript_Clown3_8:
-# 590 "data/maps/JubilifeCity/scripts.pory"
+# 591 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_1
-# 592 "data/maps/JubilifeCity/scripts.pory"
-	msgbox Clown3Correct
 # 593 "data/maps/JubilifeCity/scripts.pory"
+	msgbox Clown3Correct
+# 594 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Clown1_Text_2
-# 595 "data/maps/JubilifeCity/scripts.pory"
-	giveitem ITEM_COUPON_THREE
 # 596 "data/maps/JubilifeCity/scripts.pory"
-	setflag FLAG_POKETCH_COUPON_3
+	giveitem ITEM_COUPON_THREE
 # 597 "data/maps/JubilifeCity/scripts.pory"
+	setflag FLAG_POKETCH_COUPON_3
+# 598 "data/maps/JubilifeCity/scripts.pory"
 	setobjectxyperm 12, 46, 30
 	goto JubilifeCity_EventScript_Clown3_1
 
 
 JubilifeCity_EventScript_Looker::
-# 609 "data/maps/JubilifeCity/scripts.pory"
-	lock
 # 610 "data/maps/JubilifeCity/scripts.pory"
-	faceplayer
+	lock
 # 611 "data/maps/JubilifeCity/scripts.pory"
+	faceplayer
+# 612 "data/maps/JubilifeCity/scripts.pory"
 	compare VAR_JUBILIFE_CITY_STATE, 4
 	goto_if_eq JubilifeCity_EventScript_Looker_2
-# 619 "data/maps/JubilifeCity/scripts.pory"
+# 620 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Looker_Text_1, MSGBOX_AUTOCLOSE
 JubilifeCity_EventScript_Looker_1:
-# 626 "data/maps/JubilifeCity/scripts.pory"
+# 627 "data/maps/JubilifeCity/scripts.pory"
 	release
 	return
 
 JubilifeCity_EventScript_Looker_2:
-# 612 "data/maps/JubilifeCity/scripts.pory"
+# 613 "data/maps/JubilifeCity/scripts.pory"
 	msgbox JubilifeCity_EventScript_Looker_Text_0, MSGBOX_AUTOCLOSE
 	goto JubilifeCity_EventScript_Looker_1
 
@@ -1621,7 +1623,7 @@ JubilifeCity_EventScript_PoketchInventor_Text_1:
 	.string "to make it even more versatile!$"
 
 JubilifeCity_EventScript_PoketchInventor_Text_2:
-# 403 "data/maps/JubilifeCity/scripts.pory"
+# 404 "data/maps/JubilifeCity/scripts.pory"
 	.string "The three clowns will each ask you\n"
 	.string "a skill-testing question.\p"
 	.string "The questions will all have to do\n"
@@ -1632,23 +1634,23 @@ JubilifeCity_EventScript_PoketchInventor_Text_2:
 	.string "then come see me, OK?$"
 
 JubilifeCity_EventScript_GameKid1_Text_0:
-# 419 "data/maps/JubilifeCity/scripts.pory"
+# 420 "data/maps/JubilifeCity/scripts.pory"
 	.string "I'm trading Pokémon with my buddy!$"
 
 JubilifeCity_EventScript_GameKid2_Text_0:
-# 429 "data/maps/JubilifeCity/scripts.pory"
+# 430 "data/maps/JubilifeCity/scripts.pory"
 	.string "I made my Pokémon hold an item before\n"
 	.string "trading it.\p"
 	.string "That will make the other Trainer\n"
 	.string "double happy!$"
 
 JubilifeCity_EventScript_OldMan_Text_0:
-# 441 "data/maps/JubilifeCity/scripts.pory"
+# 442 "data/maps/JubilifeCity/scripts.pory"
 	.string "Hello, Trainer!\n"
 	.string "Do you know much about Pokémon?$"
 
 JubilifeCity_EventScript_OldMan_Text_1:
-# 445 "data/maps/JubilifeCity/scripts.pory"
+# 446 "data/maps/JubilifeCity/scripts.pory"
 	.string "Ah, I see!\n"
 	.string "You are knowledgeable!\p"
 	.string "I imagine you wouldn't see the need\n"
@@ -1657,7 +1659,7 @@ JubilifeCity_EventScript_OldMan_Text_1:
 	.string "You may discover something new!$"
 
 JubilifeCity_EventScript_OldMan_Text_2:
-# 452 "data/maps/JubilifeCity/scripts.pory"
+# 453 "data/maps/JubilifeCity/scripts.pory"
 	.string "Oh, you're not knowledgeable. . .\n"
 	.string "But not to worry!\l"
 	.string "There's the Trainers' School.\p"
@@ -1665,31 +1667,31 @@ JubilifeCity_EventScript_OldMan_Text_2:
 	.string "basics of Pokémon.$"
 
 JubilifeCity_EventScript_SchoolKid_Text_0:
-# 465 "data/maps/JubilifeCity/scripts.pory"
+# 466 "data/maps/JubilifeCity/scripts.pory"
 	.string "OK, set six Poké Balls in my\n"
 	.string "belt. . .\p"
 	.string "Yeah, that'll do it. At most, you\n"
 	.string "can have six Pokémon with you.$"
 
 JubilifeCity_EventScript_OldMan2_Text_0:
-# 476 "data/maps/JubilifeCity/scripts.pory"
+# 477 "data/maps/JubilifeCity/scripts.pory"
 	.string "Jubilife City's built on land they\n"
 	.string "carved out of a mountain.\p"
 	.string "The people and Pokémon of Oreburgh\n"
 	.string "City helped out with that undertaking.$"
 
 JubilifeCity_EventScript_LittleGirl_Text_0:
-# 488 "data/maps/JubilifeCity/scripts.pory"
+# 489 "data/maps/JubilifeCity/scripts.pory"
 	.string "Did you see me on TV?\n"
 	.string "I was in an interview!$"
 
 JubilifeCity_EventScript_AceTrainerF_Text_0:
-# 497 "data/maps/JubilifeCity/scripts.pory"
+# 498 "data/maps/JubilifeCity/scripts.pory"
 	.string "When you walk with your Pokémon,\n"
 	.string "they gradually grow friendlier.$"
 
 JubilifeCity_EventScript_AceTrainerM_Text_0:
-# 507 "data/maps/JubilifeCity/scripts.pory"
+# 508 "data/maps/JubilifeCity/scripts.pory"
 	.string "Hiya, where'd you come from?\p"
 	.string ". . .\p"
 	.string "Twinleaf Town, huh. . .\n"
@@ -1698,49 +1700,49 @@ JubilifeCity_EventScript_AceTrainerM_Text_0:
 	.string "might be a bit of a shock to you.$"
 
 JubilifeCity_EventScript_Clown1_Text_0:
-# 521 "data/maps/JubilifeCity/scripts.pory"
+# 522 "data/maps/JubilifeCity/scripts.pory"
 	.string "Hi! I'm a Pokétch campaign clown!\n"
 	.string "Let's roll out my question!\p"
 	.string "Does a Pokémon grow by defeating\n"
 	.string "others and gaining Exp. Points?$"
 
 JubilifeCity_EventScript_Clown1_Text_1:
-# 526 "data/maps/JubilifeCity/scripts.pory"
+# 527 "data/maps/JubilifeCity/scripts.pory"
 	.string "Ding-ding!\n"
 	.string "You're absolutely correct!$"
 
 JubilifeCity_EventScript_Clown1_Text_2:
-# 529 "data/maps/JubilifeCity/scripts.pory"
+# 530 "data/maps/JubilifeCity/scripts.pory"
 	.string "Here you go!\n"
 	.string "Your Pokétch Coupon!$"
 
 JubilifeCity_EventScript_Clown1_Text_3:
-# 535 "data/maps/JubilifeCity/scripts.pory"
+# 536 "data/maps/JubilifeCity/scripts.pory"
 	.string "Bzzzzt!\n"
 	.string "That's the wrong answer. . .$"
 
 JubilifeCity_EventScript_Clown2_Text_0:
-# 550 "data/maps/JubilifeCity/scripts.pory"
+# 551 "data/maps/JubilifeCity/scripts.pory"
 	.string "Hi! I'm a Pokétch campaign clown!\n"
 	.string "Let's roll out my question!\p"
 	.string "Just like Pokémon types, the moves\n"
 	.string "of Pokémon also have types?$"
 
 JubilifeCity_EventScript_Clown3_Text_0:
-# 578 "data/maps/JubilifeCity/scripts.pory"
+# 579 "data/maps/JubilifeCity/scripts.pory"
 	.string "Hi, there. You should stick around.\n"
 	.string "We're doing a Pokétch campaign soon.\p"
 	.string "Before it starts, I think you should\n"
 	.string "brush up at the Trainers' School.$"
 
 JubilifeCity_EventScript_Clown3_Text_1:
-# 586 "data/maps/JubilifeCity/scripts.pory"
+# 587 "data/maps/JubilifeCity/scripts.pory"
 	.string "Hi! I'm a Pokétch campaign clown!\n"
 	.string "Let's roll out my question!\p"
 	.string "Can a Pokémon hold an item?$"
 
 JubilifeCity_EventScript_Looker_Text_0:
-# 612 "data/maps/JubilifeCity/scripts.pory"
+# 613 "data/maps/JubilifeCity/scripts.pory"
 	.string "{SPEAKER NAME_LOOKER}Ah, it is you! Have no fear.\n"
 	.string "There are no shady characters about.\p"
 	.string "Incidentally, have you not obtained\n"
@@ -1749,7 +1751,7 @@ JubilifeCity_EventScript_Looker_Text_0:
 	.string "exchange for some Coupons?$"
 
 JubilifeCity_EventScript_Looker_Text_1:
-# 619 "data/maps/JubilifeCity/scripts.pory"
+# 620 "data/maps/JubilifeCity/scripts.pory"
 	.string "{SPEAKER NAME_LOOKER}Ah, it is you! Have no fear.\n"
 	.string "There are no shady characters about.\p"
 	.string "Incidentally, have you visited the\n"
@@ -1758,7 +1760,7 @@ JubilifeCity_EventScript_Looker_Text_1:
 	.string "earlier?$"
 
 Clown1Correct::
-# 628 "data/maps/JubilifeCity/scripts.pory"
+# 629 "data/maps/JubilifeCity/scripts.pory"
 	.string "Pokémon grow stronger by defeating\n"
 	.string "other Pokémon in battle.\p"
 	.string "Some Pokémon even grow into an\n"
@@ -1766,13 +1768,13 @@ Clown1Correct::
 	.string "known as evolution.$"
 
 Clown2Correct::
-# 636 "data/maps/JubilifeCity/scripts.pory"
+# 637 "data/maps/JubilifeCity/scripts.pory"
 	.string "If the Pokémon's type matches its\n"
 	.string "move's type, that move is made much\l"
 	.string "more powerful!$"
 
 Clown3Correct::
-# 642 "data/maps/JubilifeCity/scripts.pory"
+# 643 "data/maps/JubilifeCity/scripts.pory"
 	.string "A Pokémon may hold a single item.\p"
 	.string "Some items become effective as soon\n"
 	.string "as they are held by a Pokémon.\p"

@@ -386,5 +386,62 @@
       "script": "JubilifeCity_EventScript_PoketchCampaign"
     }
   ],
-  "bg_events": []
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 42,
+      "y": 51,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Jubilifecity_SignScript_Jubilife"
+    },
+    {
+      "type": "sign",
+      "x": 48,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Jubilifecity_SignScript_Jubilife"
+    },
+    {
+      "type": "sign",
+      "x": 49,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Jubilifecity_SignScript_Condos"
+    },
+    {
+      "type": "sign",
+      "x": 36,
+      "y": 36,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Jubilifecity_SignScript_School"
+    },
+    {
+      "type": "sign",
+      "x": 39,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Jubilifecity_SignScript_Station"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Jubilifecity_SignScript_Poketch"
+    },
+    {
+      "type": "sign",
+      "x": 4,
+      "y": 19,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Jubilifecity_SignScript_Jubilife"
+    }
+  ]
 }

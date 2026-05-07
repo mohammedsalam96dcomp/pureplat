@@ -1,0 +1,149 @@
+const LOCALID_BARRY = 1
+
+mapscripts Route203_MapScripts{
+	MAP_SCRIPT_ON_TRANSITION: JubilifeCity_EventScript_OnTransition
+}
+
+script Route203_EventScript_RivalBattle {
+	lock
+
+	playse(SE_PIN)
+	applymovement(LOCALID_BARRY, moves(delay_16, emote_exclamation_mark, delay_16*2))
+	waitmovement(LOCALID_BARRY)
+	waitse
+
+	playbgm(MUS_DP_RIVAL, 0)
+	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
+
+	if(var(VAR_TEMP_2) == 22) {
+		applymovement(LOCALID_BARRY, moves(walk_fast_left*4))
+	} elif(var(VAR_TEMP_2) == 23) {
+		applymovement(LOCALID_BARRY, moves(walk_fast_left*2, walk_fast_down, walk_fast_left*2))
+	} elif(var(VAR_TEMP_2) == 24) {
+		applymovement(LOCALID_BARRY, moves(walk_fast_left*2, walk_fast_down*2, walk_fast_left*2))
+	} else {
+		applymovement(LOCALID_BARRY, moves(walk_fast_left*2, walk_fast_down*3, walk_fast_left*2))
+	}
+	waitmovement(LOCALID_BARRY)
+
+	msgbox("{SPEAKER NAME_BARRY}Hey! {PLAYER}!"\n
+			"Tell me you got a little tougher!\p"
+			"Me? Do you even need to ask?\n"
+			"Of course I got tougher!\p"
+			"Come on!\n"
+			"I'll demonstrate it to you!", MSGBOX_AUTOCLOSE)
+
+
+	switch(var(VAR_STARTER_MON)){
+		case 0:
+			trainerbattle_no_intro(TRAINER_RIVAL_ROUTE_203_TURTWIG, Rival_Route_203_TurtwigDefeat)
+		case 1:
+			trainerbattle_no_intro(TRAINER_RIVAL_ROUTE_203_CHIMCHAR, Rival_Route_203_ChimcharDefeat)
+		case 2:
+			trainerbattle_no_intro(TRAINER_RIVAL_ROUTE_203_PIPLUP, Rival_Route_203_PiplupDefeat)
+	}
+
+	msgbox("{SPEAKER NAME_BARRY}Waah!\n"
+			"What do you mean I lost?!\p"
+			"Well, that's it!\n"
+			"That's the last time I'll ever lose!\p"
+			"I'm going to be the world's toughest\n"
+			"Trainer, and you know it!\p"
+			"The first thing to do is take on\n"
+			"the Oreburgh City Pokémon Gym!\p"
+			"I'm gonna toughen up for that,\n"
+			"totally!", MSGBOX_AUTOCLOSE)
+
+	applymovement(LOCALID_BARRY, moves(walk_fast_right*7, delay_16))
+	waitmovement(LOCALID_BARRY)
+
+	setflag(FLAG_HIDE_ROUTE_203_BARRY)
+	removeobject(LOCALID_BARRY)
+	setvar(VAR_ROUTE203_STATE, 2)
+
+	release
+}
+
+script Route203_EventScript_Michael {
+ 	trainerbattle_single(
+		TRAINER_MICHAEL,
+		Route203_Text_MichaelIntro,
+        Route203_Text_MichaelDefeated
+	)
+	msgbox(Route203_Text_MichaelPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+script Route203_EventScript_Lass {
+	lock
+	faceplayer
+	msgbox("Your favorite Pokémon should be placed\n"
+			"at the top left of your party list.\p"
+			"That way, it will be the first to go out\n"
+			"in a battle.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script Route203_EventScript_Dallas {
+ 	trainerbattle_single(
+		TRAINER_DALLAS,
+		Route203_Text_DallasIntro,
+        Route203_Text_DallasDefeated
+	)
+	msgbox(Route203_Text_DallasPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+script Route203_EventScript_Sebastian {
+	trainerbattle_single(
+		TRAINER_SEBASTIAN,
+		Route203_Text_SebastianIntro,
+        Route203_Text_SebastianDefeated
+	)
+	msgbox(Route203_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+script Route203_EventScript_Kaitlin {
+	trainerbattle_single(
+		TRAINER_KAITLIN,
+		Route203_Text_KaitlinIntro,
+        Route203_Text_KaitlinDefeated
+	)
+	msgbox(Route203_Text_KaitlinPostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+script Route203_EventScript_Madeline {
+	trainerbattle_single(
+		TRAINER_MADELINE,
+		Route203_Text_MadelineIntro,
+        Route203_Text_MadelineDefeated
+	)
+	msgbox(Route203_Text_MadelinePostBattle, MSGBOX_AUTOCLOSE)
+	end
+}
+
+
+script Route203_SignScript_TrainerTips1 {
+	lock
+	msgbox("Trainer Tips!\p"
+			"Pokémon moves use energy called\n"
+			"Power Points, or PP for short.\p"
+			"If the PP of moves runs low, head for\n"
+			"any Pokémon Center.", MSGBOX_AUTOCLOSE)
+	release
+}
+
+script Route203_SignScript_TrainerTips2 {
+	lock
+	msgbox("Trainer Tips!\p"
+			"If a Pokémon is about to evolve,\n"
+			"it can be instantly stopped.\p"
+			"Press the B Button during evolution\n"
+			"to startle the Pokémon into stopping.\p"
+			"That is how evolution can be\n"
+			"canceled.", MSGBOX_AUTOCLOSE)
+			
+	release
+}

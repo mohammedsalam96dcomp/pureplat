@@ -51,7 +51,6 @@
 
 #else
 
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
 #define FLAG_UNUSED_0x022    0x22 // Unused Flag
 #define FLAG_UNUSED_0x023    0x23 // Unused Flag
 #define FLAG_UNUSED_0x024    0x24 // Unused Flag
@@ -781,6 +780,7 @@
 #define FLAG_POKETCH_COUPON_1                                       0x498 // Unused Flag
 #define FLAG_POKETCH_COUPON_2                                       0x499 // Unused Flag
 #define FLAG_POKETCH_COUPON_3                                       0x49A // Unused Flag
+#define FLAG_HIDE_ROUTE_203_BARRY                                   0x21 // Unused Flag
 
 // #define FLAG_HIDE_BARRY_POKEMON_SCHOOL                              0x2DF
 
@@ -1074,9 +1074,9 @@
 #define FLAG_ITEM_ROUTE_2O4_SEA_INCENSE                             0x3EC
 #define FLAG_ITEM_ROUTE_2O4_PARALYZ_HEAL                            0x3ED
 #define FLAG_ITEM_ROUTE_2O4_HP_UP                                   0x3EE
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0x3EF
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0x3F0
-#define FLAG_ITEM_ROUTE_111_STARDUST                                0x3F1
+#define FLAG_ITEM_ROUTE_203_POKE_BALL                               0x3EF
+#define FLAG_ITEM_ROUTE_203_REPEL                                   0x3F0
+#define FLAG_ITEM_ROUTE_203_X_DEFEND                                0x3F1
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0x3F2
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0x3F3
 #define FLAG_ITEM_ROUTE_113_MAX_ETHER                               0x3F4
