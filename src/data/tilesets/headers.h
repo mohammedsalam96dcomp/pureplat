@@ -1650,3 +1650,14 @@ const struct Tileset gTileset_SchoolSinnoh =
     .metatileAttributes = gMetatileAttributes_SchoolSinnoh,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_CaveSinnoh =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_CaveSinnoh,
+    .palettes = gTilesetPalettes_CaveSinnoh,
+    .metatiles = gMetatiles_CaveSinnoh,
+    .metatileAttributes = gMetatileAttributes_CaveSinnoh,
+    .callback = NULL,
+};

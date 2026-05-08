@@ -650,35 +650,35 @@ text Clown3Correct {
 
 script Jubilifecity_SignScript_Jubilife {
 	lock
-	msgbox("Jubilife City\p"
+	msgbox("Jubilife City\n"
 			"City of Joy", MSGBOX_AUTOCLOSE)
 	release
 }
 
 script Jubilifecity_SignScript_School {
 	lock
-	msgbox("Trainers' School\p"
+	msgbox("Trainers' School\n"
 			"The First Step for Trainers!", MSGBOX_AUTOCLOSE)
 	release
 }
 
 script Jubilifecity_SignScript_Condos {
 	lock
-	msgbox("Jubilife Condominiums\p"
+	msgbox("Jubilife Condominiums\n"
 			"Tenants Wanted!", MSGBOX_AUTOCLOSE)
 	release
 }
 
 script Jubilifecity_SignScript_Station {
 	lock
-	msgbox("Jubilife TV\p"
+	msgbox("Jubilife TV\n"
 			"The Fun-and-Games TV Station!", MSGBOX_AUTOCLOSE)
 	release
 }
 
 script Jubilifecity_SignScript_Poketch {
 	lock
-	msgbox("The Pokétch Company\p"
+	msgbox("The Pokétch Company\n"
 			"Pokémon Watches for the World!", MSGBOX_AUTOCLOSE)
 	release
 }

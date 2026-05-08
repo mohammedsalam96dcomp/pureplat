@@ -20,7 +20,8 @@
     "Route203"
   ],
   "gMapGroup_Dungeons": [
-    "LakeVerity"
+    "LakeVerity",
+    "RavagedPath"
   ],
   "gMapGroup_IndoorTwinleaf": [
     "TwinleafTownPlayersHouse_2F",

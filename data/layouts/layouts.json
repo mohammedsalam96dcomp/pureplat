@@ -2245,7 +2245,7 @@
       "id": "LAYOUT_ROUTE204",
       "name": "Route204_Layout",
       "width": 40,
-      "height": 48,
+      "height": 59,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_GeneralSinnoh",
@@ -2300,6 +2300,18 @@
       "secondary_tileset": "gTileset_Jubilife",
       "border_filepath": "data/layouts/Route203/border.bin",
       "blockdata_filepath": "data/layouts/Route203/map.bin"
+    },
+    {
+      "id": "LAYOUT_RAVAGED_PATH",
+      "name": "RavagedPath_Layout",
+      "width": 35,
+      "height": 57,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_CaveSinnoh",
+      "border_filepath": "data/layouts/RavagedPath/border.bin",
+      "blockdata_filepath": "data/layouts/RavagedPath/map.bin"
     }
   ]
 }

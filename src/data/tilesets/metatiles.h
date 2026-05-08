@@ -438,3 +438,6 @@ const u16 gMetatileAttributes_Jubilife[] = INCBIN_U16("data/tilesets/secondary/j
 
 const u16 gMetatiles_SchoolSinnoh[] = INCBIN_U16("data/tilesets/secondary/school_sinnoh/metatiles.bin");
 const u16 gMetatileAttributes_SchoolSinnoh[] = INCBIN_U16("data/tilesets/secondary/school_sinnoh/metatile_attributes.bin");
+
+const u16 gMetatiles_CaveSinnoh[] = INCBIN_U16("data/tilesets/secondary/cave_sinnoh/metatiles.bin");
+const u16 gMetatileAttributes_CaveSinnoh[] = INCBIN_U16("data/tilesets/secondary/cave_sinnoh/metatile_attributes.bin");

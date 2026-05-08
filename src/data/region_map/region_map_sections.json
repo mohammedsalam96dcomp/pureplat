@@ -1666,6 +1666,10 @@
     {
       "id": "MAPSEC_ROUTE_203",
       "name": "Route 203"
+    },
+    {
+      "id": "MAPSEC_RAVAGED_PATH",
+      "name": "Ravaged Path"
     }
   ]
 }
