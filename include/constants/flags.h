@@ -51,14 +51,14 @@
 
 #else
 
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
-#define FLAG_UNUSED_0x027    0x27 // Unused Flag
-#define FLAG_UNUSED_0x028    0x28 // Unused Flag
-#define FLAG_UNUSED_0x029    0x29 // Unused Flag
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_1      0x22 
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_2      0x23 
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_3      0x24 
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_4      0x25 
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_5      0x26 
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_6      0x27 
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_7      0x28 
+#define FLAG_HIDE_OREBURGH_GATE_ROCK_8      0x29
 #define FLAG_UNUSED_0x02A    0x2A // Unused Flag
 #define FLAG_UNUSED_0x02B    0x2B // Unused Flag
 #define FLAG_UNUSED_0x02C    0x2C // Unused Flag

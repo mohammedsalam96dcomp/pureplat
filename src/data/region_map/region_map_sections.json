@@ -1670,6 +1670,10 @@
     {
       "id": "MAPSEC_RAVAGED_PATH",
       "name": "Ravaged Path"
+    },
+    {
+      "id": "MAPSEC_OREBURGH_GATE",
+      "name": "Oreburgh Gate"
     }
   ]
 }

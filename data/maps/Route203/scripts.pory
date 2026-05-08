@@ -60,6 +60,7 @@ script Route203_EventScript_RivalBattle {
 	setflag(FLAG_HIDE_ROUTE_203_BARRY)
 	removeobject(LOCALID_BARRY)
 	setvar(VAR_ROUTE203_STATE, 2)
+	setvar(VAR_OREBURGH_GATE_STATE, 1)
 
 	release
 }

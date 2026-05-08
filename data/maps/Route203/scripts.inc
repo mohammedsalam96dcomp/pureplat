@@ -56,7 +56,9 @@ Route203_EventScript_RivalBattle_9:
 	removeobject 1
 # 62 "data/maps/Route203/scripts.pory"
 	setvar VAR_ROUTE203_STATE, 2
-# 64 "data/maps/Route203/scripts.pory"
+# 63 "data/maps/Route203/scripts.pory"
+	setvar VAR_OREBURGH_GATE_STATE, 1
+# 65 "data/maps/Route203/scripts.pory"
 	release
 	return
 
@@ -92,73 +94,73 @@ Route203_EventScript_RivalBattle_13:
 
 
 Route203_EventScript_Michael::
-# 68 "data/maps/Route203/scripts.pory"
+# 69 "data/maps/Route203/scripts.pory"
 	trainerbattle_single TRAINER_MICHAEL, Route203_Text_MichaelIntro, Route203_Text_MichaelDefeated
-# 73 "data/maps/Route203/scripts.pory"
+# 74 "data/maps/Route203/scripts.pory"
 	msgbox Route203_Text_MichaelPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 
 Route203_EventScript_Lass::
-# 78 "data/maps/Route203/scripts.pory"
-	lock
 # 79 "data/maps/Route203/scripts.pory"
-	faceplayer
+	lock
 # 80 "data/maps/Route203/scripts.pory"
+	faceplayer
+# 81 "data/maps/Route203/scripts.pory"
 	msgbox Route203_EventScript_Lass_Text_0, MSGBOX_AUTOCLOSE
-# 84 "data/maps/Route203/scripts.pory"
+# 85 "data/maps/Route203/scripts.pory"
 	release
 	return
 
 
 Route203_EventScript_Dallas::
-# 88 "data/maps/Route203/scripts.pory"
+# 89 "data/maps/Route203/scripts.pory"
 	trainerbattle_single TRAINER_DALLAS, Route203_Text_DallasIntro, Route203_Text_DallasDefeated
-# 93 "data/maps/Route203/scripts.pory"
+# 94 "data/maps/Route203/scripts.pory"
 	msgbox Route203_Text_DallasPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 
 Route203_EventScript_Sebastian::
-# 98 "data/maps/Route203/scripts.pory"
+# 99 "data/maps/Route203/scripts.pory"
 	trainerbattle_single TRAINER_SEBASTIAN, Route203_Text_SebastianIntro, Route203_Text_SebastianDefeated
-# 103 "data/maps/Route203/scripts.pory"
+# 104 "data/maps/Route203/scripts.pory"
 	msgbox Route203_Text_SebastianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 
 Route203_EventScript_Kaitlin::
-# 108 "data/maps/Route203/scripts.pory"
+# 109 "data/maps/Route203/scripts.pory"
 	trainerbattle_single TRAINER_KAITLIN, Route203_Text_KaitlinIntro, Route203_Text_KaitlinDefeated
-# 113 "data/maps/Route203/scripts.pory"
+# 114 "data/maps/Route203/scripts.pory"
 	msgbox Route203_Text_KaitlinPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 
 Route203_EventScript_Madeline::
-# 118 "data/maps/Route203/scripts.pory"
+# 119 "data/maps/Route203/scripts.pory"
 	trainerbattle_single TRAINER_MADELINE, Route203_Text_MadelineIntro, Route203_Text_MadelineDefeated
-# 123 "data/maps/Route203/scripts.pory"
+# 124 "data/maps/Route203/scripts.pory"
 	msgbox Route203_Text_MadelinePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 
 Route203_SignScript_TrainerTips1::
-# 129 "data/maps/Route203/scripts.pory"
-	lock
 # 130 "data/maps/Route203/scripts.pory"
+	lock
+# 131 "data/maps/Route203/scripts.pory"
 	msgbox Route203_SignScript_TrainerTips1_Text_0, MSGBOX_AUTOCLOSE
-# 135 "data/maps/Route203/scripts.pory"
+# 136 "data/maps/Route203/scripts.pory"
 	release
 	return
 
 
 Route203_SignScript_TrainerTips2::
-# 139 "data/maps/Route203/scripts.pory"
-	lock
 # 140 "data/maps/Route203/scripts.pory"
+	lock
+# 141 "data/maps/Route203/scripts.pory"
 	msgbox Route203_SignScript_TrainerTips2_Text_0, MSGBOX_AUTOCLOSE
-# 148 "data/maps/Route203/scripts.pory"
+# 149 "data/maps/Route203/scripts.pory"
 	release
 	return
 
@@ -281,14 +283,14 @@ Route203_EventScript_RivalBattle_Text_2:
 	.string "totally!$"
 
 Route203_EventScript_Lass_Text_0:
-# 80 "data/maps/Route203/scripts.pory"
+# 81 "data/maps/Route203/scripts.pory"
 	.string "Your favorite Pokémon should be placed\n"
 	.string "at the top left of your party list.\p"
 	.string "That way, it will be the first to go out\n"
 	.string "in a battle.$"
 
 Route203_SignScript_TrainerTips1_Text_0:
-# 130 "data/maps/Route203/scripts.pory"
+# 131 "data/maps/Route203/scripts.pory"
 	.string "Trainer Tips!\p"
 	.string "Pokémon moves use energy called\n"
 	.string "Power Points, or PP for short.\p"
@@ -296,7 +298,7 @@ Route203_SignScript_TrainerTips1_Text_0:
 	.string "any Pokémon Center.$"
 
 Route203_SignScript_TrainerTips2_Text_0:
-# 140 "data/maps/Route203/scripts.pory"
+# 141 "data/maps/Route203/scripts.pory"
 	.string "Trainer Tips!\p"
 	.string "If a Pokémon is about to evolve,\n"
 	.string "it can be instantly stopped.\p"

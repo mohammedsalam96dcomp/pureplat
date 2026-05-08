@@ -21,7 +21,8 @@
   ],
   "gMapGroup_Dungeons": [
     "LakeVerity",
-    "RavagedPath"
+    "RavagedPath",
+    "OreburghGate_1F"
   ],
   "gMapGroup_IndoorTwinleaf": [
     "TwinleafTownPlayersHouse_2F",

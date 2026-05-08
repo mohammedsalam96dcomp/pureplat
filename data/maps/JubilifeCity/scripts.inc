@@ -1811,27 +1811,27 @@ JubilifeCity_EventScript_Looker_Text_1:
 
 Jubilifecity_SignScript_Jubilife_Text_0:
 # 653 "data/maps/JubilifeCity/scripts.pory"
-	.string "Jubilife City\p"
+	.string "Jubilife City\n"
 	.string "City of Joy$"
 
 Jubilifecity_SignScript_School_Text_0:
 # 660 "data/maps/JubilifeCity/scripts.pory"
-	.string "Trainers' School\p"
+	.string "Trainers' School\n"
 	.string "The First Step for Trainers!$"
 
 Jubilifecity_SignScript_Condos_Text_0:
 # 667 "data/maps/JubilifeCity/scripts.pory"
-	.string "Jubilife Condominiums\p"
+	.string "Jubilife Condominiums\n"
 	.string "Tenants Wanted!$"
 
 Jubilifecity_SignScript_Station_Text_0:
 # 674 "data/maps/JubilifeCity/scripts.pory"
-	.string "Jubilife TV\p"
+	.string "Jubilife TV\n"
 	.string "The Fun-and-Games TV Station!$"
 
 Jubilifecity_SignScript_Poketch_Text_0:
 # 681 "data/maps/JubilifeCity/scripts.pory"
-	.string "The Pokétch Company\p"
+	.string "The Pokétch Company\n"
 	.string "Pokémon Watches for the World!$"
 
 Clown1Correct::

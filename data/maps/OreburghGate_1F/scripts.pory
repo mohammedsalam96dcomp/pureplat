@@ -1,0 +1,63 @@
+const LOCALID_HIKER = 1
+mapscripts OreburghGate_1F_MapScripts {}
+
+script OreburghGate_1F_EventScript_HikerTrigger {
+    lock
+
+    applymovement(OBJ_EVENT_ID_PLAYER, moves(delay_16, walk_in_place_up))
+    applymovement(LOCALID_HIKER, moves(walk_in_place_down))
+    waitmovement(OBJ_EVENT_ID_PLAYER)
+
+    playse(SE_PIN)
+    applymovement(LOCALID_HIKER, moves(emote_exclamation_mark, delay_16*2))
+    waitmovement(LOCALID_HIKER)
+    waitse
+
+    getplayerxy(VAR_TEMP_1, VAR_TEMP_2)
+
+    applymovement(LOCALID_HIKER, moves(walk_down))
+    waitmovement(LOCALID_HIKER)
+
+    goto(OreburghGate_1F_EventScript_HikerGivesRockSmash)
+    release
+}
+
+script OreburghGate_1F_EventScript_HikerGivesRockSmash {
+    lock
+
+    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+
+    if(var(VAR_RESULT) != DIR_NORTH) {
+        faceplayer
+    }
+
+    if(!flag(FLAG_RECEIVED_HM_ROCK_SMASH)) {
+        msgbox("That sparkling new Pokétch!\n"
+            "Your awkwardness as a traveler!\p"
+            "Hmm. . . You're still a pretty new\n"
+            "Trainer, aren't you?\p"
+            "But it's all good! You're a new fellow\n"
+            "friend of Pokémon!\p"
+            "So, let me make a gift of this Hidden\n"
+            "Machine to you!")
+        giveitem(ITEM_HM_ROCK_SMASH, 1)
+        msgbox(RockSmashText)
+        setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
+        setvar(VAR_OREBURGH_GATE_STATE, 2)
+    } else {
+        msgbox(RockSmashText)
+    }
+    release
+}
+
+text RockSmashText {
+    "That Hidden Machine, or HM for short,\n"
+    "contains the hidden move Rock Smash.\p"
+    "A Pokémon learning Rock Smash can\n"
+    "smash small boulders in the field.\p"
+    "But the Trainer has to have\n"
+    "the Gym Badge from Oreburgh City.\p"
+    "If you don't have that Badge, you\n"
+    "can't make a Pokémon use the hidden\l"
+    "move Rock Smash outside of battle."
+}
