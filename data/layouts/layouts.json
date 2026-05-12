@@ -2316,8 +2316,8 @@
     {
       "id": "LAYOUT_OREBURGH_GATE_1F",
       "name": "OreburghGate_1F_Layout",
-      "width": 30,
-      "height": 30,
+      "width": 28,
+      "height": 27,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_GeneralSinnoh",

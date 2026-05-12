@@ -22,14 +22,16 @@ script OreburghGate_1F_EventScript_HikerTrigger {
     release
 }
 
-script OreburghGate_1F_EventScript_HikerGivesRockSmash {
+script OreburghGate_1F_EventScript_Hiker {
     lock
 
-    specialvar(VAR_RESULT, GetPlayerFacingDirection)
+    faceplayer
+    goto(OreburghGate_1F_EventScript_HikerGivesRockSmash)
+    release
 
-    if(var(VAR_RESULT) != DIR_NORTH) {
-        faceplayer
-    }
+}
+script OreburghGate_1F_EventScript_HikerGivesRockSmash {
+    lock
 
     if(!flag(FLAG_RECEIVED_HM_ROCK_SMASH)) {
         msgbox("That sparkling new Pokétch!\n"
