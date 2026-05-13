@@ -70,6 +70,22 @@ OreburghGate_1F_EventScript_HikerGivesRockSmash_2:
 	goto OreburghGate_1F_EventScript_HikerGivesRockSmash_1
 
 
+OreburghGate_1F_EventScript_Curtis::
+# 69 "data/maps/OreburghGate_1F/scripts.pory"
+	trainerbattle_single TRAINER_CURTIS, Camper_CurtisIntro, Camper_CurtisDefeat
+# 74 "data/maps/OreburghGate_1F/scripts.pory"
+	msgbox Camper_CurtisPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+
+OreburghGate_1F_EventScript_Diana::
+# 79 "data/maps/OreburghGate_1F/scripts.pory"
+	trainerbattle_single TRAINER_DIANA, Picnicker_DianaIntro, Picnicker_DianaDefeat
+# 84 "data/maps/OreburghGate_1F/scripts.pory"
+	msgbox Picnicker_DianaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+
 # 7 "data/maps/OreburghGate_1F/scripts.pory"
 OreburghGate_1F_EventScript_HikerTrigger_Movement_0:
 # 7 "data/maps/OreburghGate_1F/scripts.pory"
