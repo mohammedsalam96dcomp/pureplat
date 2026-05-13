@@ -441,3 +441,6 @@ const u16 gMetatileAttributes_SchoolSinnoh[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_CaveSinnoh[] = INCBIN_U16("data/tilesets/secondary/cave_sinnoh/metatiles.bin");
 const u16 gMetatileAttributes_CaveSinnoh[] = INCBIN_U16("data/tilesets/secondary/cave_sinnoh/metatile_attributes.bin");
+
+const u16 gMetatiles_Gate[] = INCBIN_U16("data/tilesets/secondary/gate/metatiles.bin");
+const u16 gMetatileAttributes_Gate[] = INCBIN_U16("data/tilesets/secondary/gate/metatile_attributes.bin");

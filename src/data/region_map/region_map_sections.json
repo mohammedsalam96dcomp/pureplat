@@ -1674,6 +1674,10 @@
     {
       "id": "MAPSEC_OREBURGH_GATE",
       "name": "Oreburgh Gate"
+    },
+    {
+      "id": "MAPSEC_ROUTE_218",
+      "name": "Route 218"
     }
   ]
 }

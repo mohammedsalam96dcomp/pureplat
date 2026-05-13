@@ -274,6 +274,20 @@
       "elevation": 0,
       "dest_map": "MAP_JUBILIFE_CITY_CONDO_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_JUBILFE_CITY_GATE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_JUBILFE_CITY_GATE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -2234,8 +2234,8 @@
       "name": "JubilifeCity_Condo_1F_Layout",
       "width": 16,
       "height": 13,
-      "border_width": 0,
-      "border_height": 0,
+      "border_width": 2,
+      "border_height": 2,
       "primary_tileset": "gTileset_BuildingSinnoh",
       "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/JubilifeCity_Condo_1F/border.bin",
@@ -2324,6 +2324,18 @@
       "secondary_tileset": "gTileset_CaveSinnoh",
       "border_filepath": "data/layouts/OreburghGate_1F/border.bin",
       "blockdata_filepath": "data/layouts/OreburghGate_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_JUBILFE_CITY_GATE",
+      "name": "JubilfeCityGate_Layout",
+      "width": 14,
+      "height": 13,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_Gate",
+      "border_filepath": "data/layouts/JubilfeCityGate/border.bin",
+      "blockdata_filepath": "data/layouts/JubilfeCityGate/map.bin"
     }
   ]
 }
