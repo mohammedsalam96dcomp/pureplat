@@ -2336,6 +2336,18 @@
       "secondary_tileset": "gTileset_Gate",
       "border_filepath": "data/layouts/JubilfeCityGate/border.bin",
       "blockdata_filepath": "data/layouts/JubilfeCityGate/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE218",
+      "name": "Route218_Layout",
+      "width": 20,
+      "height": 33,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_GeneralSinnoh",
+      "secondary_tileset": "gTileset_Gate",
+      "border_filepath": "data/layouts/Route218/border.bin",
+      "blockdata_filepath": "data/layouts/Route218/map.bin"
     }
   ]
 }

@@ -16,12 +16,12 @@ script JubilifeCity_EventScript_GoToTrainerSchool {
 
 	getplayerxy(VAR_TEMP_1, VAR_TEMP_2) 
 
-	if (var(VAR_TEMP_1) == 45) {
-		setobjectxy(LOCALID_LUCASDAWN, 45, 50)
-	} elif (var(VAR_TEMP_1) == 46) {
-		setobjectxy(LOCALID_LUCASDAWN, 46, 50)
+	if (var(VAR_TEMP_1) == 48) {
+		setobjectxy(LOCALID_LUCASDAWN, 48, 50)
+	} elif (var(VAR_TEMP_1) == 49) {
+		setobjectxy(LOCALID_LUCASDAWN, 49, 50)
 	} else {
-		setobjectxy(LOCALID_LUCASDAWN, 47, 50)
+		setobjectxy(LOCALID_LUCASDAWN, 50, 50)
 	}
 
 	applymovement(LOCALID_LUCASDAWN, moves(delay_16*2, walk_down*3))
