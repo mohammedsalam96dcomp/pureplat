@@ -16,13 +16,13 @@ JubilifeCity_EventScript_GoToTrainerSchool::
 # 17 "data/maps/JubilifeCity/scripts.pory"
 	getplayerxy VAR_TEMP_1, VAR_TEMP_2
 # 19 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_1, 45
+	compare VAR_TEMP_1, 48
 	goto_if_eq JubilifeCity_EventScript_GoToTrainerSchool_2
 # 21 "data/maps/JubilifeCity/scripts.pory"
-	compare VAR_TEMP_1, 46
+	compare VAR_TEMP_1, 49
 	goto_if_eq JubilifeCity_EventScript_GoToTrainerSchool_3
 # 24 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 47, 50
+	setobjectxy 1, 50, 50
 JubilifeCity_EventScript_GoToTrainerSchool_1:
 # 27 "data/maps/JubilifeCity/scripts.pory"
 	applymovement 1, JubilifeCity_EventScript_GoToTrainerSchool_Movement_0
@@ -213,12 +213,12 @@ JubilifeCity_EventScript_GoToTrainerSchool_44:
 
 JubilifeCity_EventScript_GoToTrainerSchool_2:
 # 20 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 45, 50
+	setobjectxy 1, 48, 50
 	goto JubilifeCity_EventScript_GoToTrainerSchool_1
 
 JubilifeCity_EventScript_GoToTrainerSchool_3:
 # 22 "data/maps/JubilifeCity/scripts.pory"
-	setobjectxy 1, 46, 50
+	setobjectxy 1, 49, 50
 	goto JubilifeCity_EventScript_GoToTrainerSchool_1
 
 JubilifeCity_EventScript_GoToTrainerSchool_8:
