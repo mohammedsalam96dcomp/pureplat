@@ -55,15 +55,18 @@ JubilifeCite_Gate_EvenScript_Fisherman_Tips::
 	msgbox JubilifeCite_Gate_EvenScript_Fisherman_Tips_Text_0, MSGBOX_YESNO
 # 46 "data/maps/JubilfeCityGate/scripts.pory"
 	compare VAR_RESULT, 1
-	goto_if_eq JubilifeCite_Gate_EvenScript_Fisherman_Tips_1
+	goto_if_eq JubilifeCite_Gate_EvenScript_Fisherman_Tips_2
 # 53 "data/maps/JubilfeCityGate/scripts.pory"
 	msgbox JubilifeCite_Gate_EvenScript_Fisherman_Tips_Text_2, MSGBOX_AUTOCLOSE
+JubilifeCite_Gate_EvenScript_Fisherman_Tips_1:
+# 60 "data/maps/JubilfeCityGate/scripts.pory"
+	release
 	return
 
-JubilifeCite_Gate_EvenScript_Fisherman_Tips_1:
+JubilifeCite_Gate_EvenScript_Fisherman_Tips_2:
 # 47 "data/maps/JubilfeCityGate/scripts.pory"
 	msgbox JubilifeCite_Gate_EvenScript_Fisherman_Tips_Text_1, MSGBOX_AUTOCLOSE
-	return
+	goto JubilifeCite_Gate_EvenScript_Fisherman_Tips_1
 
 
 JubilifeCite_Gate_EvenScript_Officer_Text_0:
