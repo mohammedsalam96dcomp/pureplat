@@ -165,6 +165,13 @@
       "elevation": 0,
       "dest_map": "MAP_ROUTE203",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_OREBURGH_CITY",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

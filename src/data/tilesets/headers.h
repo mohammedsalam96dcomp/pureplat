@@ -1672,3 +1672,25 @@ const struct Tileset gTileset_Gate =
     .metatileAttributes = gMetatileAttributes_Gate,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_OreburghPrimary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_OreburghPrimary,
+    .palettes = gTilesetPalettes_OreburghPrimary,
+    .metatiles = gMetatiles_OreburghPrimary,
+    .metatileAttributes = gMetatileAttributes_OreburghPrimary,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_OreburghSecondary =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_OreburghSecondary,
+    .palettes = gTilesetPalettes_OreburghSecondary,
+    .metatiles = gMetatiles_OreburghSecondary,
+    .metatileAttributes = gMetatileAttributes_OreburghSecondary,
+    .callback = NULL,
+};

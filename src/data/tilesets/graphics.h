@@ -3275,3 +3275,41 @@ const u16 gTilesetPalettes_Gate[][16] =
 };
 
 const u32 gTilesetTiles_Gate[] = INCBIN_U32("data/tilesets/secondary/gate/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_OreburghPrimary[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/oreburgh_primary/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_OreburghPrimary[] = INCBIN_U32("data/tilesets/primary/oreburgh_primary/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_OreburghSecondary[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_OreburghSecondary[] = INCBIN_U32("data/tilesets/secondary/oreburgh_secondary/tiles.4bpp.lz");
