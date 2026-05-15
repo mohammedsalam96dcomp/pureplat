@@ -450,3 +450,6 @@ const u16 gMetatileAttributes_OreburghPrimary[] = INCBIN_U16("data/tilesets/prim
 
 const u16 gMetatiles_OreburghSecondary[] = INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/metatiles.bin");
 const u16 gMetatileAttributes_OreburghSecondary[] = INCBIN_U16("data/tilesets/secondary/oreburgh_secondary/metatile_attributes.bin");
+
+const u16 gMetatiles_Route207[] = INCBIN_U16("data/tilesets/secondary/route_207/metatiles.bin");
+const u16 gMetatileAttributes_Route207[] = INCBIN_U16("data/tilesets/secondary/route_207/metatile_attributes.bin");

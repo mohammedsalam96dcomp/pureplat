@@ -2353,13 +2353,25 @@
       "id": "LAYOUT_OREBURGH_CITY",
       "name": "OreburghCity_Layout",
       "width": 70,
-      "height": 40,
+      "height": 39,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_OreburghPrimary",
       "secondary_tileset": "gTileset_OreburghSecondary",
       "border_filepath": "data/layouts/OreburghCity/border.bin",
       "blockdata_filepath": "data/layouts/OreburghCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE207",
+      "name": "Route207_Layout",
+      "width": 70,
+      "height": 41,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_OreburghPrimary",
+      "secondary_tileset": "gTileset_Route207",
+      "border_filepath": "data/layouts/Route207/border.bin",
+      "blockdata_filepath": "data/layouts/Route207/map.bin"
     }
   ]
 }

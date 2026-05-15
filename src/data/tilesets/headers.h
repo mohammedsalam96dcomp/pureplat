@@ -1694,3 +1694,14 @@ const struct Tileset gTileset_OreburghSecondary =
     .metatileAttributes = gMetatileAttributes_OreburghSecondary,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Route207 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Route207,
+    .palettes = gTilesetPalettes_Route207,
+    .metatiles = gMetatiles_Route207,
+    .metatileAttributes = gMetatileAttributes_Route207,
+    .callback = NULL,
+};

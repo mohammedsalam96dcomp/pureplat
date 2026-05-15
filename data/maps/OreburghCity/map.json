@@ -12,12 +12,18 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": null,
+  "connections": [
+    {
+      "map": "MAP_ROUTE207",
+      "offset": 32,
+      "direction": "up"
+    }
+  ],
   "object_events": [],
   "warp_events": [
     {
       "x": 6,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
       "dest_map": "MAP_OREBURGH_GATE_1F",
       "dest_warp_id": "1"
