@@ -215,7 +215,7 @@ const u8 gText_NumberItem_HM[] = _("{CLEAR_TO 0x11}{STR_VAR_1}{CLEAR 0x05}{STR_V
 
 const u8 gText_ShopBuy[] = _("BUY");
 const u8 gText_ShopSell[] = _("SELL");
-const u8 gText_ShopQuit[] = _("QUIT");
+const u8 gText_ShopQuit[] = _("SEE YA!");
 const u8 gText_ThatItemIsSoldOut[] = _("I'm sorry, but that item is sold out.{PAUSE_UNTIL_PRESS}");
 const u8 gText_SoldOut[] = _("SOLD OUT");
 const u8 gText_InBagVar1[] = _("IN BAG: {STR_VAR_1}");

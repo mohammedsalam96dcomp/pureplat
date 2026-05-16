@@ -2196,12 +2196,12 @@
     {
       "id": "LAYOUT_SANDGEM_TOWN_MART",
       "name": "SandgemTownMart_Layout",
-      "width": 11,
-      "height": 8,
+      "width": 10,
+      "height": 12,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_Shop",
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_Mart_DPPt",
       "border_filepath": "data/layouts/SandgemTownMart/border.bin",
       "blockdata_filepath": "data/layouts/SandgemTownMart/map.bin"
     },

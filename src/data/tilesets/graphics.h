@@ -3332,3 +3332,22 @@ const u16 gTilesetPalettes_Route207[][16] =
 };
 
 const u32 gTilesetTiles_Route207[] = INCBIN_U32("data/tilesets/secondary/route_207/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Mart_DPPt[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/mart_dppt/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Mart_DPPt[] = INCBIN_U32("data/tilesets/secondary/mart_dppt/tiles.4bpp.lz");

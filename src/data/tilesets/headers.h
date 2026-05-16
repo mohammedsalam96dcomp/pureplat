@@ -1705,3 +1705,14 @@ const struct Tileset gTileset_Route207 =
     .metatileAttributes = gMetatileAttributes_Route207,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Mart_DPPt =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Mart_DPPt,
+    .palettes = gTilesetPalettes_Mart_DPPt,
+    .metatiles = gMetatiles_Mart_DPPt,
+    .metatileAttributes = gMetatileAttributes_Mart_DPPt,
+    .callback = NULL,
+};

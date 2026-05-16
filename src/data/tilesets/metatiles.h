@@ -453,3 +453,6 @@ const u16 gMetatileAttributes_OreburghSecondary[] = INCBIN_U16("data/tilesets/se
 
 const u16 gMetatiles_Route207[] = INCBIN_U16("data/tilesets/secondary/route_207/metatiles.bin");
 const u16 gMetatileAttributes_Route207[] = INCBIN_U16("data/tilesets/secondary/route_207/metatile_attributes.bin");
+
+const u16 gMetatiles_Mart_DPPt[] = INCBIN_U16("data/tilesets/secondary/mart_dppt/metatiles.bin");
+const u16 gMetatileAttributes_Mart_DPPt[] = INCBIN_U16("data/tilesets/secondary/mart_dppt/metatile_attributes.bin");
