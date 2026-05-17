@@ -2186,8 +2186,8 @@
       "name": "SandgemTownDawnHouse_2F_Layout",
       "width": 10,
       "height": 9,
-      "border_width": 0,
-      "border_height": 0,
+      "border_width": 2,
+      "border_height": 2,
       "primary_tileset": "gTileset_BuildingSinnoh",
       "secondary_tileset": "gTileset_PlayersHouse",
       "border_filepath": "data/layouts/SandgemTownDawnHouse_2F/border.bin",
@@ -2396,6 +2396,66 @@
       "secondary_tileset": "gTileset_Mart_DPPt",
       "border_filepath": "data/layouts/JubilifeCity_Mart/border.bin",
       "blockdata_filepath": "data/layouts/JubilifeCity_Mart/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_HOUSE1",
+      "name": "OreburghCity_House1_Layout",
+      "width": 9,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_IndoorTwinleaf",
+      "border_filepath": "data/layouts/OreburghCity_House1/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_House1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_HOUSE2",
+      "name": "OreburghCity_House2_Layout",
+      "width": 9,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_IndoorTwinleaf",
+      "border_filepath": "data/layouts/OreburghCity_House2/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_House2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_HOUSE3",
+      "name": "OreburghCity_House3_Layout",
+      "width": 9,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_IndoorTwinleaf",
+      "border_filepath": "data/layouts/OreburghCity_House3/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_House3/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_BUILDING1_1F",
+      "name": "OreburghCity_Building1_1F_Layout",
+      "width": 16,
+      "height": 13,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_PlayersHouse",
+      "border_filepath": "data/layouts/OreburghCity_Building1_1F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_Building1_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OREBURGH_CITY_BUILDING1_2F",
+      "name": "OreburghCity_Building1_2F_Layout",
+      "width": 16,
+      "height": 12,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_BuildingSinnoh",
+      "secondary_tileset": "gTileset_PlayersHouse",
+      "border_filepath": "data/layouts/OreburghCity_Building1_2F/border.bin",
+      "blockdata_filepath": "data/layouts/OreburghCity_Building1_2F/map.bin"
     }
   ]
 }

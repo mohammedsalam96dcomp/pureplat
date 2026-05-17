@@ -6,7 +6,8 @@
     "gMapGroup_IndoorSandgem",
     "gMapGroup_IndoorDynamic",
     "gMapGroup_SpecialArea",
-    "gMapGroup_IndoorJubilife"
+    "gMapGroup_IndoorJubilife",
+    "gMapGroup_IndoorOreburgh"
   ],
   "gMapGroup_TownsAndRoutes": [
     "TwinleafTown",
@@ -202,5 +203,12 @@
     "JubilifeCity_Condo_2F",
     "JubilfeCityGate",
     "JubilifeCity_Mart"
+  ],
+  "gMapGroup_IndoorOreburgh": [
+    "OreburghCity_House1",
+    "OreburghCity_House2",
+    "OreburghCity_House3",
+    "OreburghCity_Building1_1F",
+    "OreburghCity_Building1_2F"
   ]
 }

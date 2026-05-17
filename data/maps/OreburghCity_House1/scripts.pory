@@ -1,0 +1,33 @@
+mapscripts OreburghCity_House1_MapScripts {}
+
+script OreburghCity_House1_EventScript_Mom {
+    lock
+    faceplayer
+    msgbox("You know how Pokémon have different\n"
+            "natures like we have personalities?\p"
+            "I don't think its surprising to see\n"
+            "Pokémon in different colors.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_House1_EventScript_Youngster {
+    lock
+    faceplayer
+    msgbox("Have you ever seen or heard about\n"
+            "differently colored Pokémon?\p"
+            "For instance, a regular PIKACHU has\n"
+            "a yellow, body, correct?\p"
+            "Well, the different-colored PIKACHU\n"
+            "has a sort of orange body.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_House1_EventScript_PIKACHU {
+    lock
+    faceplayer
+    playmoncry(SPECIES_PIKACHU, CRY_MODE_NORMAL)
+    msgbox("Pikaaah!", MSGBOX_AUTOCLOSE)
+    waitmoncry
+    release
+}
+

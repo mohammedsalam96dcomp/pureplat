@@ -1,0 +1,35 @@
+mapscripts OreburghCity_Building1_1F_MapScripts {}
+
+script OreburghCity_Building1_1F_EventScript_Breeder {
+    lock
+    faceplayer
+    msgbox("Roark lets us train our Pokémon in\n"
+            "the mine.", MSGBOX_AUTOCLOSE)
+
+    release
+}
+
+script OreburghCity_Building1_1F_EventScript_Man {
+    lock
+    faceplayer
+    msgbox("There are eight Gym Leaders in the\n"
+            "Sinnoh region.\p"
+            "The objective for Trainers is to get\n"
+            "Gym Badges from them all.\p"
+            "That means you have to defeeat all of\n"
+            "them in battles at their Gyms!", MSGBOX_AUTOCLOSE)
+
+    release
+}
+
+script OreburghCity_Building1_1F_EventScript_Youngster {
+    lock
+    faceplayer
+    msgbox("A Gym Leader isnt like just any Trainer\n"
+            "you meet.\p"
+            "Obviously, they're a lot tougher.\n"
+            "A lot.\p"
+            "I'd take as many Pokémon as possible\n"
+            "if I were you.", MSGBOX_AUTOCLOSE)
+    release
+}

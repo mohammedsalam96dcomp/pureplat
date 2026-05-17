@@ -1,0 +1,47 @@
+mapscripts OreburghCity_Building1_2F_MapScripts {}
+
+script OreburghCity_Building1_2F_EventScript_Lass {
+    lock
+    faceplayer
+    if (!flag(FLAG_RECEIVED_OREBURGH_CITY_DUSK_BALL)) {
+        msgbox("Are you catching Pokémon?\n"
+                "Here, take this if you'd like.")
+        giveitem(ITEM_DUSK_BALL, 1)
+        setflag(FLAG_RECEIVED_OREBURGH_CITY_DUSK_BALL)
+    } else {
+        msgbox("The Dusk Ball is a Poké Ball designed\n"
+                "for use in darkness.\p"
+                "It works better if you use it at\n"
+                "night or in a cave.", MSGBOX_AUTOCLOSE)
+    }
+    release
+}
+
+script OreburghCity_Building1_2F_EventScript_Worker {
+    lock
+    faceplayer
+    msgbox("Giving nicknames to Pokémon is\n"
+            "the way to go.\p"
+            "It makes you feel as if they're your\n"
+            "very own.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_Building1_2F_EventScript_Woman {
+    lock
+    faceplayer
+    msgbox("But he named our PSYDUCK “Yellow”\n"
+            "just because of its color. . .\p"
+            "I don't understand the logic behind\n"
+            "that at all.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_Building1_2F_EventScript_Yellow {
+    lock
+    faceplayer
+    playmoncry(SPECIES_PSYDUCK, CRY_MODE_NORMAL)
+    msgbox("Duuuck?", MSGBOX_AUTOCLOSE)
+    waitmoncry
+    release
+}

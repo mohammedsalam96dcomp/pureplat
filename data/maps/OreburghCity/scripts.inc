@@ -46,7 +46,7 @@ OreburghCity_EventScript_GuideToGym_7:
 # 42 "data/maps/OreburghCity/scripts.pory"
 	msgbox OreburghCity_EventScript_GuideToGym_Text_1, MSGBOX_AUTOCLOSE
 # 45 "data/maps/OreburghCity/scripts.pory"
-	setobjectxyperm 1, 29, 22
+	setobjectxyperm 1, 28, 22
 # 46 "data/maps/OreburghCity/scripts.pory"
 	setvar VAR_OREBURGH_CITY_STATE, 2
 # 47 "data/maps/OreburghCity/scripts.pory"
@@ -596,7 +596,7 @@ OreburghCity_EventScript_Camper_Text_0:
 
 OreburghCity_EventScript_BattleGirl1_Text_0:
 # 127 "data/maps/OreburghCity/scripts.pory"
-	.string "TMS are single use only, but HMS\n"
+	.string "TMs are single use only, but HMs\n"
 	.string "can be used over and over.\p"
 	.string "It's tricky trying to decide which\n"
 	.string "Pokémon should learn what moves.$"

@@ -1,0 +1,12 @@
+mapscripts OreburghCity_House3_MapScripts {}
+
+script OreburghCity_House2_EventScript_Worker {
+    lock
+    faceplayer
+    msgbox("You're taking a tour of our coal mine?\p"
+            "Wonderful!\n"
+            "That's excellent of you.\p"
+            "It's always good to learn about new\n"
+            "things and broaden your horizons!", MSGBOX_AUTOCLOSE)
+    release
+}
