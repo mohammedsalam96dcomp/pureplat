@@ -35,7 +35,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_Youngster",
       "flag": "0"
     },
     {
@@ -43,12 +43,12 @@
       "x": 26,
       "y": 12,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_range_x": 2,
+      "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_Guitarist",
       "flag": "0"
     },
     {
@@ -56,12 +56,12 @@
       "x": 15,
       "y": 24,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_Worker",
       "flag": "0"
     },
     {
@@ -74,7 +74,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_Rival",
       "flag": "0"
     },
     {
@@ -87,7 +87,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_Girl",
       "flag": "0"
     },
     {
@@ -100,7 +100,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_Camper",
       "flag": "0"
     },
     {
@@ -113,7 +113,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_BattleGirl1",
       "flag": "0"
     },
     {
@@ -126,7 +126,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_BattleGirl2",
       "flag": "0"
     },
     {
@@ -139,7 +139,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "OreburghCity_EventScript_Hiker",
       "flag": "0"
     }
   ],
@@ -152,6 +152,59 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
-  "bg_events": []
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_OREBURGH_CITY_STATE",
+      "var_value": "1",
+      "script": "OreburghCity_EventScript_GuideToGym"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_OREBURGH_CITY_STATE",
+      "var_value": "1",
+      "script": "OreburghCity_EventScript_GuideToGym"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_OREBURGH_CITY_STATE",
+      "var_value": "1",
+      "script": "OreburghCity_EventScript_GuideToGym"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 13,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OreburghCity_SignScript_AirVent"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OreburghCity_SignScript_AirVent"
+    },
+    {
+      "type": "sign",
+      "x": 17,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "OreburghCity_SignScript_AirVent"
+    }
+  ]
 }

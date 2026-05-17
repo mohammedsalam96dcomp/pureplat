@@ -49,10 +49,10 @@ OreburghGate_1F_EventScript_HikerGivesRockSmash::
 	lock
 # 36 "data/maps/OreburghGate_1F/scripts.pory"
 	goto_if_unset FLAG_RECEIVED_HM_ROCK_SMASH, OreburghGate_1F_EventScript_HikerGivesRockSmash_2
-# 50 "data/maps/OreburghGate_1F/scripts.pory"
+# 51 "data/maps/OreburghGate_1F/scripts.pory"
 	msgbox RockSmashText
 OreburghGate_1F_EventScript_HikerGivesRockSmash_1:
-# 52 "data/maps/OreburghGate_1F/scripts.pory"
+# 53 "data/maps/OreburghGate_1F/scripts.pory"
 	release
 	return
 
@@ -67,21 +67,23 @@ OreburghGate_1F_EventScript_HikerGivesRockSmash_2:
 	setflag FLAG_RECEIVED_HM_ROCK_SMASH
 # 48 "data/maps/OreburghGate_1F/scripts.pory"
 	setvar VAR_OREBURGH_GATE_STATE, 2
+# 49 "data/maps/OreburghGate_1F/scripts.pory"
+	setvar VAR_OREBURGH_CITY_STATE, 1
 	goto OreburghGate_1F_EventScript_HikerGivesRockSmash_1
 
 
 OreburghGate_1F_EventScript_Curtis::
-# 69 "data/maps/OreburghGate_1F/scripts.pory"
+# 70 "data/maps/OreburghGate_1F/scripts.pory"
 	trainerbattle_single TRAINER_CURTIS, Camper_CurtisIntro, Camper_CurtisDefeat
-# 74 "data/maps/OreburghGate_1F/scripts.pory"
+# 75 "data/maps/OreburghGate_1F/scripts.pory"
 	msgbox Camper_CurtisPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 
 OreburghGate_1F_EventScript_Diana::
-# 79 "data/maps/OreburghGate_1F/scripts.pory"
+# 80 "data/maps/OreburghGate_1F/scripts.pory"
 	trainerbattle_single TRAINER_DIANA, Picnicker_DianaIntro, Picnicker_DianaDefeat
-# 84 "data/maps/OreburghGate_1F/scripts.pory"
+# 85 "data/maps/OreburghGate_1F/scripts.pory"
 	msgbox Picnicker_DianaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -128,7 +130,7 @@ OreburghGate_1F_EventScript_HikerGivesRockSmash_Text_0:
 	.string "Machine to you!$"
 
 RockSmashText::
-# 55 "data/maps/OreburghGate_1F/scripts.pory"
+# 56 "data/maps/OreburghGate_1F/scripts.pory"
 	.string "That Hidden Machine, or HM for short,\n"
 	.string "contains the hidden move Rock Smash.\p"
 	.string "A Pokémon learning Rock Smash can\n"

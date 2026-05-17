@@ -1,1 +1,29 @@
 mapscripts OreburghSouth_MapScripts {}
+
+script OreburghCity_EventScript_Breeder {
+    lock
+    faceplayer 
+    msgbox("Everyone's proud of the mine.\p"
+            "They're digging for coal under the\n"
+            "sea as we speak. . .\p"
+            "It's amazing how they do it!", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_EventScript_Worker1 {
+    lock
+    faceplayer 
+    msgbox("Chop, Chop, MACHOP!\n"
+            "Chop, chop away on the rocks!", MSGBOX_AUTOCLOSE)
+    release
+}
+
+
+script OreburghCity_EventScript_Worker2 {
+    lock
+    faceplayer 
+    msgbox("This pile of dirty sand is called\n"
+            "a slag heap.\p"
+            "It's the waste from sorting coal.", MSGBOX_AUTOCLOSE)
+    release
+}

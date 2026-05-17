@@ -46,6 +46,7 @@ script OreburghGate_1F_EventScript_HikerGivesRockSmash {
         msgbox(RockSmashText)
         setflag(FLAG_RECEIVED_HM_ROCK_SMASH)
         setvar(VAR_OREBURGH_GATE_STATE, 2)
+        setvar(VAR_OREBURGH_CITY_STATE, 1)
     } else {
         msgbox(RockSmashText)
     }

@@ -981,3 +981,5 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/Route207/scripts.inc"
 
 	.include "data/maps/OreburghSouth/scripts.inc"
+
+	.include "data/maps/JubilifeCity_Mart/scripts.inc"

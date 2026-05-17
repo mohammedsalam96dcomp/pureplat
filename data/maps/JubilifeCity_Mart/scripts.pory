@@ -1,0 +1,54 @@
+mapscripts JubilifeCity_Mart_MapScripts {}
+
+script Jubilife_Mart_EventScript_Clerk {
+	lock
+	faceplayer
+	message(gText_HowMayIServeYou)
+	waitmessage
+	pokemart(JubilifeCity_Mart)
+	msgbox(gText_PleaseComeAgain)
+	release
+	end
+}
+
+mart JubilifeCity_Mart {
+	ITEM_POKE_BALL
+	ITEM_POTION
+	ITEM_ANTIDOTE
+	ITEM_PARALYZE_HEAL
+}
+
+script Jubilife_Mart_EventScript_Beauty {
+    lock
+
+    faceplayer  
+    msgbox("Potions are important, but sometimes,\n"
+            "it's better to simply avoid battles.\p"
+            "If you want to avoid wild Pokémon for a\n"
+            "while, just use a Repel.\p"
+            "After all, if you don't battle, your\n"
+            "Pokémon can't lose HP.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script Jubilife_Mart_EventScript_Guitarist {
+    lock
+
+    faceplayer  
+    msgbox("Aww, man.\n"
+            "I wasted money on some Poké Balls.\p"
+            "I should've lowered the HP of wild\n"
+            "Pokémon more before throwing them.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script Jubilife_Mart_EventScript_Breeder {
+    lock
+
+    faceplayer  
+    msgbox("The one thing you must remember is to\n"
+            "pack some Potions.\p"
+            "If all your Pokémon faint, it'll be\n"
+            "lights out for you you, too!", MSGBOX_AUTOCLOSE)
+    release
+}

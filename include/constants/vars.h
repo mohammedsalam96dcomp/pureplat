@@ -115,11 +115,11 @@
 #define VAR_POKETCH_COUPON_STATE                         0x405B // Unused Var
 #define VAR_ROUTE203_STATE                               0x4060
 #define VAR_OREBURGH_GATE_STATE                          0x405C // Unused Var
+#define VAR_OREBURGH_CITY_STATE                          0x405D
 
 #define VAR_CURRENT_SECRET_BASE                          0x4054 
 
 
-#define VAR_MOSSDEEP_CITY_STATE                          0x405D
 #define VAR_SOOTOPOLIS_CITY_STATE                        0x405E
 #define VAR_EVER_GRANDE_CITY_STATE                       0x405F // Unused Var
 #define VAR_ROUTE102_STATE                               0x4061 // Unused Var
