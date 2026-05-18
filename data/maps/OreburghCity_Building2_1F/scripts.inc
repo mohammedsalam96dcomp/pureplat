@@ -30,7 +30,7 @@ OreburghCity_Building2_1F_EventScript_Woman_1:
 
 OreburghCity_Building2_1F_EventScript_Woman_2:
 # 22 "data/maps/OreburghCity_Building2_1F/scripts.pory"
-	ingame_trade INGAME_TRADE_ABRA, KazzaTrade, KazzaTradeDecline, KazzaTradeWrongPokemon, KazzaTradeCompleted
+	ingame_trade INGAME_TRADE_PLUSLE, KazzaTrade, KazzaTradeDecline, KazzaTradeWrongPokemon, KazzaTradeCompleted
 # 23 "data/maps/OreburghCity_Building2_1F/scripts.pory"
 	setflag FLAG_DID_KAZZA_TRADE
 	goto OreburghCity_Building2_1F_EventScript_Woman_1

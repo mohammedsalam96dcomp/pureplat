@@ -19,7 +19,7 @@ script OreburghCity_Building2_1F_EventScript_Woman {
 // ingame_trade tradeId:req wantTradeMsg:req, declineTradeJump:req, wrongMonJump:req, tradeCompleteMsg:req
 
     if(!flag(FLAG_DID_KAZZA_TRADE)) {
-        ingame_trade(INGAME_TRADE_ABRA, KazzaTrade, KazzaTradeDecline, KazzaTradeWrongPokemon, KazzaTradeCompleted)
+        ingame_trade(INGAME_TRADE_PLUSLE, KazzaTrade, KazzaTradeDecline, KazzaTradeWrongPokemon, KazzaTradeCompleted)
         setflag(FLAG_DID_KAZZA_TRADE)
     } else {
         msgbox("Thanks to Pokémon, I got to be\n"
