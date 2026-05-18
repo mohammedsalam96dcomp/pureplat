@@ -968,22 +968,6 @@ static const union AffineAnimCmd *const sAffineAnims_CrossingMonPics[] =
 
 static const struct InGameTrade sIngameTrades[] =
 {
-    [INGAME_TRADE_SEEDOT] =
-    {
-        .nickname = _("DOTS"),
-        .species = SPECIES_SEEDOT,
-        .ivs = {5, 4, 5, 4, 4, 4},
-        .abilityNum = 1,
-        .otId = 38726,
-        .conditions = {30, 5, 5, 5, 5},
-        .personality = 0x84,
-        .heldItem = ITEM_CHESTO_BERRY,
-        .mailNum = -1,
-        .otName = _("KOBE"),
-        .otGender = MALE,
-        .sheen = 10,
-        .requestedSpecies = SPECIES_RALTS
-    },
     [INGAME_TRADE_PLUSLE] =
     {
         .nickname = _("PLUSES"),
@@ -1031,6 +1015,22 @@ static const struct InGameTrade sIngameTrades[] =
         .otGender = FEMALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_SKITTY
+    },
+    [INGAME_TRADE_ABRA] = 
+    {
+        .nickname = _("Kazza"),
+        .species = SPECIES_ABRA,
+        .ivs = {12, 15, 15, 15, 15, 15},
+        .abilityNum = 0,
+        .otId = 25643,
+        .conditions = {5, 30, 5, 5, 5},
+        .personality = 0x498a2e1d,
+        .heldItem = ITEM_ORAN_BERRY,
+        .mailNum = MAIL_NONE,
+        .otName = _("Hilary"),
+        .otGender = FEMALE,
+        .sheen = 10,
+        .requestedSpecies = SPECIES_MACHOP
     },
     [INGAME_TRADE_MR_MIME] = 
     {

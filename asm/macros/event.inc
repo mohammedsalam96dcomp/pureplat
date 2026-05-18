@@ -2668,7 +2668,6 @@
 	goto_if_ne VAR_0x800B, VAR_0x8009, \wrongMonJump
 	special CreateInGameTradePokemon
 	special DoInGameTradeScene
-	waitstate
 	bufferspeciesname STR_VAR_1, VAR_0x8009
 	msgbox \tradeCompleteMsg, MSGBOX_DEFAULT
 	.endm

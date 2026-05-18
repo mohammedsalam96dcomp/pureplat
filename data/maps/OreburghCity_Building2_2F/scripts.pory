@@ -1,0 +1,49 @@
+mapscripts OreburghCity_Building2_2F_MapScripts {}
+
+script OreburghCity_Building2_2F_EventScript_Guitarist {
+    lock
+    faceplayer
+    msgbox("All Pokémon have a special power\n"
+            "called an ability.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_Building2_2F_EventScript_FatMan {
+    lock
+    faceplayer
+
+    if (!flag(FLAG_SHOWN_GEODUDE)) {
+        msgbox("The view is good from the second floor,\n"
+            "but it's a pain going outside.\p"
+            "If you don't mind, how about showing me\n"
+            "a Pokémon called GEODUDE?")
+        checkspecies(SPECIES_GEODUDE, NO_PARTY_SCREEN)
+        if (var(VAR_RESULT) == 1) {
+            msgbox("Oh! That Pokémon!\n"
+                    "That's a GEODUDE!\p"
+                    "Wow, that's cool. . .\n"
+                    "It's so cute. . .\p"
+                    "That does it!\n"
+                    "I'll go out and catch Pokémon, too!\p"
+                    "Thank you, my friend!\n"
+                    "This is a token of my thanks!")
+            giveitem(ITEM_HEAL_BALL, 1)
+            setflag(FLAG_SHOWN_GEODUDE)
+        }
+    } else {
+        msgbox("Yeah, there are so many kinds of\n"
+                "Pokémon out in the world.\p"
+                "I want to see them all now!", MSGBOX_AUTOCLOSE)
+    }
+    release
+}
+
+script OreburghCity_Building2_2F_EventScript_Woman {
+    lock
+    faceplayer
+    msgbox("My favorite Pokémon ability is my\n"
+            "PACHIRISU's Pickup.\p"
+            "My darling picks up a lot of dropped\n"
+            "items without me noticing!", MSGBOX_AUTOCLOSE)
+    release
+}

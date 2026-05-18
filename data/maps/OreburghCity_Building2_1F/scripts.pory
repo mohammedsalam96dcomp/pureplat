@@ -1,0 +1,58 @@
+mapscripts OreburghCity_Building2_1F_MapScripts {}
+
+script OreburghCity_Building2_1F_EventScript_Man {
+    lock
+    faceplayer
+    msgbox("When you trade a Pokémon, the item it's\n"
+            "holding is traded as well.\p"
+            "That's pretty cool, huh?\p"
+            "It means you can send an item as a gift\n"
+            "along with your Pokémon in a trade!", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_Building2_1F_EventScript_Woman {
+
+    lock
+    faceplayer
+
+// ingame_trade tradeId:req wantTradeMsg:req, declineTradeJump:req, wrongMonJump:req, tradeCompleteMsg:req
+
+    if(!flag(FLAG_DID_KAZZA_TRADE)) {
+        ingame_trade(INGAME_TRADE_ABRA, KazzaTrade, KazzaTradeDecline, KazzaTradeWrongPokemon, KazzaTradeCompleted)
+        setflag(FLAG_DID_KAZZA_TRADE)
+    } else {
+        msgbox("Thanks to Pokémon, I got to be\n"
+                "friends with you!", MSGBOX_AUTOCLOSE)
+    }
+
+    release
+}
+
+script OreburghCity_Building2_1F_EventScript_OldWoman {
+    lock
+    faceplayer
+    msgbox("A Pokémon obtained in a trade grows\n"
+            "quickly.\p"
+            "But if a Pokémon grows too much, it may\n"
+            "ignore the Trainer.\p"
+            "Of course, it won't matter if you have\n"
+            "lots of Gym Badges.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+text KazzaTrade {
+    "Listen, Listen. Do you have a Pokémon\ncalled MACHOP?\pWould you be willing to trade your\nMACHOP for my ABRA?"
+}
+
+text KazzaTradeDecline {
+    "Oh, OK. . .\nWell, I can't make you trade me.\pBut if you change your mind,\nI'll be right here waiting!"
+}
+
+text KazzaTradeWrongPokemon {
+    "What I asked for was a MACHOP. . ."
+}
+
+text KazzaTradeCompleted {
+    "Be nice to my ABRA!\pI'll be sure to look after your MACHOP\nin return!"
+}

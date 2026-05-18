@@ -993,3 +993,7 @@ EventScript_BrailleCursorWaitButton::
 	.include "data/maps/OreburghCity_Building1_1F/scripts.inc"
 
 	.include "data/maps/OreburghCity_Building1_2F/scripts.inc"
+
+	.include "data/maps/OreburghCity_Building2_1F/scripts.inc"
+
+	.include "data/maps/OreburghCity_Building2_2F/scripts.inc"
