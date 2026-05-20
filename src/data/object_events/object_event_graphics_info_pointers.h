@@ -387,6 +387,21 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DeoxysD;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DeoxysA;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DeoxysN;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SSAnne;
+
+//DDPT
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_YoungsterDppt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FatManDppt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guitarist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokefanFDppt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LassDppt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TwinDppt;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ScientistM;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Breeder;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MartEmployeeM;
+
+
+
 // Begin pokemon event objects
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokeBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Follower;
@@ -791,6 +806,16 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DEOXYS_N]                 = &gObjectEventGraphicsInfo_DeoxysN,
     [OBJ_EVENT_GFX_SS_ANNE]                  = &gObjectEventGraphicsInfo_SSAnne,
 #endif // IS_FRLG
+    [OBJ_EVENT_GFX_YOUNGSTER_DPPT]           = &gObjectEventGraphicsInfo_YoungsterDppt,
+    [OBJ_EVENT_GFX_FAT_MAN_DPPT]             = &gObjectEventGraphicsInfo_FatManDppt,
+    [OBJ_EVENT_GFX_GUITARIST]                = &gObjectEventGraphicsInfo_Guitarist,
+    [OBJ_EVENT_GFX_POKEFAN_F_DPPT]           = &gObjectEventGraphicsInfo_PokefanFDppt,
+    [OBJ_EVENT_GFX_AROMA_LADY]               = &gObjectEventGraphicsInfo_AromaLady,
+    [OBJ_EVENT_GFX_LASS_DPPT]                = &gObjectEventGraphicsInfo_LassDppt,
+    [OBJ_EVENT_GFX_TWIN_DPPT]                = &gObjectEventGraphicsInfo_TwinDppt,  
+    [OBJ_EVENT_GFX_SCIENTIST_M]              = &gObjectEventGraphicsInfo_ScientistM,
+    [OBJ_EVENT_GFX_BREEDER]                  = &gObjectEventGraphicsInfo_Breeder,   
+    [OBJ_EVENT_GFX_MART_EMPLOYEE_M]          = &gObjectEventGraphicsInfo_MartEmployeeM,   
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

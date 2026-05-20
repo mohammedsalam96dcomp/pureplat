@@ -639,3 +639,26 @@ const u16 gObjectEventPic_PidgeyOld[] = INCGFX_U16("graphics/object_events/pics/
 const u16 gObjectEventPic_ClefairyOld[] = INCGFX_U16("graphics/object_events/pics/pokemon_old/clefairy.png", ".4bpp", "-mwidth 2 -mheight 2");
 
 #endif // IS_FRLG
+
+const u32 gObjectEventPic_YoungsterDppt[] = INCGFX_U32("graphics/object_events/pics/people/youngster_dppt.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_FatManDppt[] = INCGFX_U32("graphics/object_events/pics/people/fat_man_dppt.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_Guitarist[] = INCGFX_U32("graphics/object_events/pics/people/guitarist.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_PokefanFDppt[] = INCGFX_U32("graphics/object_events/pics/people/pokefan_f_dppt.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_AromaLady[] = INCGFX_U32("graphics/object_events/pics/people/aroma_lady.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_LassDppt[] = INCGFX_U32("graphics/object_events/pics/people/lass_dppt.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_TwinDppt[] = INCGFX_U32("graphics/object_events/pics/people/twin_dppt.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_ScientistM[] = INCGFX_U32("graphics/object_events/pics/people/scientist_m.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_Breeder[] = INCGFX_U32("graphics/object_events/pics/people/breeder.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u32 gObjectEventPic_MartEmployeeM[] = INCGFX_U32("graphics/object_events/pics/people/mart_employee_m.png", ".4bpp", "-mwidth 2 -mheight 4");
+
+
+const u16 gObjectEventPal_YoungsterDppt[] = INCGFX_U16("graphics/object_events/palettes/youngster_dppt.pal", ".gbapal");
+const u16 gObjectEventPal_FatManDppt[] = INCGFX_U16("graphics/object_events/palettes/fat_man_dppt.pal", ".gbapal");
+const u16 gObjectEventPal_Guitarist[] = INCGFX_U16("graphics/object_events/palettes/guitarist.pal", ".gbapal");
+const u16 gObjectEventPal_PokefanFDppt[] = INCGFX_U16("graphics/object_events/palettes/pokefan_f_dppt.pal", ".gbapal");
+const u16 gObjectEventPal_AromaLady[] = INCGFX_U16("graphics/object_events/palettes/aroma_lady.pal", ".gbapal");
+const u16 gObjectEventPal_LassDppt[] = INCGFX_U16("graphics/object_events/palettes/lass_dppt.pal", ".gbapal");
+const u16 gObjectEventPal_TwinDppt[] = INCGFX_U16("graphics/object_events/palettes/twin_dppt.pal", ".gbapal");
+const u16 gObjectEventPal_ScientistM[] = INCGFX_U16("graphics/object_events/palettes/scientist_m.pal", ".gbapal");
+const u16 gObjectEventPal_Breeder[] = INCGFX_U16("graphics/object_events/palettes/breeder.pal", ".gbapal");
+const u16 gObjectEventPal_MartEmployee[] = INCGFX_U16("graphics/object_events/palettes/mart_employee.pal", ".gbapal");

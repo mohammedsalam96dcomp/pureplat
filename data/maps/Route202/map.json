@@ -39,7 +39,7 @@
       "flag": "FLAG_HIDE_ROUTE_202_DAWN"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DPPT",
       "x": 8,
       "y": 13,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
+      "graphics_id": "OBJ_EVENT_GFX_LASS_DPPT",
       "x": 22,
       "y": 19,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DPPT",
       "x": 27,
       "y": 4,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
+      "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_DPPT",
       "x": 12,
       "y": 8,
       "elevation": 0,

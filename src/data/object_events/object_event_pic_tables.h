@@ -3029,3 +3029,44 @@ static const struct SpriteFrameImage sPicTable_MomFrlg[] = {
 };
 
 #endif // IS_FRLG
+
+
+static const struct SpriteFrameImage sPicTable_YoungsterDppt[] = {
+    overworld_ascending_frames(gObjectEventPic_YoungsterDppt, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_FatManDppt[] = {
+    overworld_ascending_frames(gObjectEventPic_FatManDppt, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Guitarist[] = {
+    overworld_ascending_frames(gObjectEventPic_Guitarist, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_PokefanFDppt[] = {
+    overworld_ascending_frames(gObjectEventPic_PokefanFDppt, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AromaLady[] = {
+    overworld_ascending_frames(gObjectEventPic_AromaLady, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LassDppt[] = {
+    overworld_ascending_frames(gObjectEventPic_LassDppt, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_TwinDppt[] = {
+    overworld_ascending_frames(gObjectEventPic_TwinDppt, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_ScientistM[] = {
+    overworld_ascending_frames(gObjectEventPic_ScientistM, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Breeder[] = {
+    overworld_ascending_frames(gObjectEventPic_Breeder, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_MartEmployeeM[] = {
+    overworld_ascending_frames(gObjectEventPic_MartEmployeeM, 2, 4),
+};

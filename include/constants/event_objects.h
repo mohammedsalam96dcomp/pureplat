@@ -413,6 +413,17 @@
 #define OBJ_EVENT_GFX_CUTTABLE_TREE_FRLG         386
 #define OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG        387
 
+//DPPt Objects 
+#define OBJ_EVENT_GFX_YOUNGSTER_DPPT             388
+#define OBJ_EVENT_GFX_FAT_MAN_DPPT               389
+#define OBJ_EVENT_GFX_GUITARIST                  390
+#define OBJ_EVENT_GFX_POKEFAN_F_DPPT             391
+#define OBJ_EVENT_GFX_AROMA_LADY                 392
+#define OBJ_EVENT_GFX_LASS_DPPT                  393
+#define OBJ_EVENT_GFX_TWIN_DPPT                  394
+#define OBJ_EVENT_GFX_SCIENTIST_M                395
+#define OBJ_EVENT_GFX_BREEDER                    396
+#define OBJ_EVENT_GFX_MART_EMPLOYEE_M            397
 // FRLG equivalents
 
 // #define OBJ_EVENT_GFX_MEW OBJ_EVENT_GFX_NINJA_BOY
@@ -423,7 +434,7 @@
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        388
+#define NUM_OBJ_EVENT_GFX                        398
 
 
 // These are dynamic object gfx ids.
@@ -568,7 +579,6 @@
 #define OBJ_EVENT_PAL_TAG_METEORITE               0x1131
 #define OBJ_EVENT_PAL_TAG_SEAGALLOP               0x1132
 #define OBJ_EVENT_PAL_TAG_SS_ANNE                 0x1133
-// #define OBJ_EVENT_PAL_TAG_BARRY                   0x1134
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla
@@ -605,6 +615,19 @@
 // Gen VIII
 #define OBJ_EVENT_PAL_TAG_BALL_STRANGE            0x116A
 #endif //OW_FOLLOWERS_POKEBALLS
+
+#define OBJ_EVENT_PAL_TAG_YOUNGSTER_DPPT          0x1134
+#define OBJ_EVENT_PAL_TAG_FAT_MAN_DPPT            0x1135
+#define OBJ_EVENT_PAL_TAG_GUITARIST               0x1136
+#define OBJ_EVENT_PAL_TAG_POKEFAN_F_DPPT          0x1137
+#define OBJ_EVENT_PAL_TAG_AROMA_LADY              0x1138
+#define OBJ_EVENT_PAL_TAG_LASS_DPPT               0x1139
+#define OBJ_EVENT_PAL_TAG_TWIN_DPPT               0x113A
+#define OBJ_EVENT_PAL_TAG_SCIENTIST_M             0x113B
+#define OBJ_EVENT_PAL_TAG_BREEDER                 0x113C
+#define OBJ_EVENT_PAL_TAG_MART_EMPLOYEE           0x113D
+
+
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001
