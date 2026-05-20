@@ -178,6 +178,13 @@
       "elevation": 0,
       "dest_map": "MAP_OREBURGH_CITY_BUILDING2_1F",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 60,
+      "y": 27,
+      "elevation": 0,
+      "dest_map": "MAP_OREBURGH_CITY_BUILDING3_1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

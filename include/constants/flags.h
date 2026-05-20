@@ -762,7 +762,7 @@
 #define FLAG_HIDE_ROUTE_201_KID                                     0x2D2
 #define FLAG_HIDE_LAKE_VERITY_BARRY                                 0x2D1
 #define FLAG_HIDE_LAKE_VERITY_CYRUS                                 0x2D7
-#define FLAG_RECEIVED_POTION                                        0x2D9 // Unused Flag
+#define FLAG_RECEIVED_POTION                                        0x2D9
 #define FLAG_HIDE_SANDGEM_TOWN_DAWN                                 0x2D2
 #define FLAG_HIDE_SANDGEM_TOWN_RIVAL                                0x2D3
 #define FLAG_HIDE_ROWANS_LAB_DAWN                                   0x2D4
@@ -774,13 +774,15 @@
 #define FLAG_DEFEATED_TRAINER_SCHOOL_BOY                            0x2DA
 #define FLAG_DEFEATED_TRAINER_SCHOOL_GIRL                           0x2DD
 #define FLAG_RECEIVED_POTION_SCHOOL                                 0x2DE
-#define FLAG_HIDE_BARRY_POKEMON_SCHOOL                              0x496 // Unused Flag
-#define FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE                         0x468 // Unused Flag
-#define FLAG_HIDE_POKETCH_CLOWNS                                    0x497 // Unused Flag
-#define FLAG_POKETCH_COUPON_1                                       0x498 // Unused Flag
-#define FLAG_POKETCH_COUPON_2                                       0x499 // Unused Flag
-#define FLAG_POKETCH_COUPON_3                                       0x49A // Unused Flag
-#define FLAG_HIDE_ROUTE_203_BARRY                                   0x21 // Unused Flag
+#define FLAG_HIDE_BARRY_POKEMON_SCHOOL                              0x496
+#define FLAG_HIDE_POKETCH_EMPLOYEE_JUBILIFE                         0x468
+#define FLAG_HIDE_POKETCH_CLOWNS                                    0x497 
+#define FLAG_POKETCH_COUPON_1                                       0x498
+#define FLAG_POKETCH_COUPON_2                                       0x499
+#define FLAG_POKETCH_COUPON_3                                       0x49A
+#define FLAG_HIDE_ROUTE_203_BARRY                                   0x21
+#define FLAG_RECEIVED_OREBURGH_GREAT_BALL                           0x49B 
+
 
 // #define FLAG_HIDE_BARRY_POKEMON_SCHOOL                              0x2DF
 
@@ -1239,8 +1241,6 @@
 #define FLAG_ITEM_SAFARI_ZONE_SOUTH_EAST_BIG_PEARL                  0x492
 
 
-
-#define FLAG_UNUSED_0x49B                                           0x49B // Unused Flag
 #define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag

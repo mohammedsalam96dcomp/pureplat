@@ -1,0 +1,28 @@
+mapscripts OreburghCity_Building3_1F_MapScripts {}
+
+script OreburghCity_Building3_1F_EventScript_AceTrainer {
+    lock
+    faceplayer
+    msgbox("You remind me so much of the time\n"
+            "I got my first Pokémon.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_Building3_1F_EventScript_Hiker {
+    lock
+    faceplayer
+    msgbox("I always have a rotten time trying\n"
+            "to decide which moves my Pokémon\l"
+            "should learn.", MSGBOX_AUTOCLOSE)
+    release
+}
+
+script OreburghCity_Building3_1F_EventScript_Balding_Man {
+    lock
+    faceplayer
+    msgbox("Hiya! Your Pokémon could use some\n"
+            "toughening up.\p"
+            "Why not try training in\n"
+            "the Oreburgh Mine?", MSGBOX_AUTOCLOSE)
+    release
+}
