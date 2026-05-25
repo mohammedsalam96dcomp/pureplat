@@ -286,12 +286,6 @@ BattleFrontier_BattleDomePreBattleRoom_EventScript_ContinueChallenge::
 	setvar VAR_0x8005, DOME_BATTLE_PARTY_SIZE  @ 2 of the 3 party mons are selected for battle
 # 144 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
 	special ChoosePartyForBattleFrontier
-<<<<<<< HEAD
-# 145 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
-	waitstate
-# 146 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
-=======
->>>>>>> fcc372d85b26be9d7a824dc3564654ca08382b4d
 	frontier_resetsketch
 # 147 "data/maps/BattleFrontier_BattleDomePreBattleRoom/scripts.pory"
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattleDomePreBattleRoom_EventScript_AskReadyForNextRound
