@@ -252,9 +252,12 @@ BattleFrontier_BattlePikeLobby_EventScript_TryEnterChallenge::
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
 # 127 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	special ChoosePartyForBattleFrontier
+<<<<<<< HEAD
 # 128 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	waitstate
 # 129 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+=======
+>>>>>>> fcc372d85b26be9d7a824dc3564654ca08382b4d
 	goto_if_eq VAR_RESULT, 0, BattleFrontier_BattlePikeLobby_EventScript_LoadPartyAndCancelChallenge
 # 130 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	msgbox BattleFrontier_BattlePikeLobby_Text_SaveBeforeChallenge, MSGBOX_YESNO
@@ -542,9 +545,12 @@ BattleFrontier_BattlePike_EventScript_CloseCurtain::
 	playse SE_PIKE_CURTAIN_CLOSE
 # 272 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	special CloseBattlePikeCurtain
+<<<<<<< HEAD
 # 273 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	waitstate
 # 274 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
+=======
+>>>>>>> fcc372d85b26be9d7a824dc3564654ca08382b4d
 	waitse
 # 275 "data/maps/BattleFrontier_BattlePikeLobby/scripts.pory"
 	return

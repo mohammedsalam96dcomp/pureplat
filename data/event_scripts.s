@@ -53,6 +53,7 @@
 #include "constants/pokeball.h"
 #include "constants/pokedex.h"
 #include "constants/pokemon.h"
+#include "constants/pokemon_size_record.h"
 #include "constants/rtc.h"
 #include "constants/roulette.h"
 #include "constants/script_menu.h"
@@ -106,6 +107,8 @@ gSpecialVars::
 	.4byte gSpecialVar_Unused_0x8014
 	.4byte gTrainerBattleParameter + 2 // gTrainerBattleParameter.params.opponentA
 
+	.purgem def_special
+	.set ALLOCATE_SPECIAL_TABLE, 1
 	.include "data/specials.inc"
 
 gStdScripts::
@@ -455,7 +458,6 @@ EventScript_RegionMap::
 	lockall
 	fadescreen FADE_TO_BLACK
 	special FieldShowRegionMap
-	waitstate
 	releaseall
 	end
 
@@ -536,7 +538,6 @@ Common_EventScript_FerryDepartIsland::
 Common_EventScript_NameReceivedPartyMon::
 	fadescreen FADE_TO_BLACK
 	special ChangePokemonNickname
-	waitstate
 	return
 
 Common_EventScript_PlayerHandedOverTheItem::
@@ -734,7 +735,6 @@ EventScript_GetInGameTradeSpeciesInfo::
 
 EventScript_ChooseMonForInGameTrade::
 	special ChoosePartyMon
-	waitstate
 	lock
 	faceplayer
 	return
@@ -746,7 +746,6 @@ EventScript_GetInGameTradeSpecies::
 EventScript_DoInGameTrade::
 	special CreateInGameTradePokemon
 	special DoInGameTradeScene
-	waitstate
 	lock
 	faceplayer
 	return
@@ -864,6 +863,24 @@ EventScript_BrailleCursorWaitButton::
 	setvar VAR_0x8006, 1
 	special BrailleCursorToggle
 	return
+
+EventScript_PalletTown_PlayersHouse_2F_ShutDownPC::
+	setvar VAR_0x8004, PC_LOCATION_PLAYER_HOUSE_FRLG
+	playse SE_PC_OFF
+	special DoPCTurnOffEffect
+	releaseall
+	end
+
+EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
+	lockall
+	setvar VAR_0x8004, PC_LOCATION_PLAYER_HOUSE_FRLG
+	special DoPCTurnOnEffect
+	playse SE_PC_ON
+	msgbox gText_PlayerHouseBootPC
+	special BedroomPC
+	releaseall
+	end
+
 
 	.include "data/scripts/pc_transfer.inc"
 	.include "data/scripts/questionnaire.inc"
