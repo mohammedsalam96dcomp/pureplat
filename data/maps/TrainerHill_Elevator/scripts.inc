@@ -52,8 +52,6 @@ TrainerHill_Elevator_EventScript_EnterElevator::
 	lockall
 # 27 "data/maps/TrainerHill_Elevator/scripts.pory"
 	msgbox TrainerHill_Elevator_Text_ReturnToReception, MSGBOX_YESNO
-# 28 "data/maps/TrainerHill_Elevator/scripts.pory"
-	goto_if_eq VAR_RESULT, NO, TrainerHill_Elevator_EventScript_ExitToRoof
 # 29 "data/maps/TrainerHill_Elevator/scripts.pory"
 	releaseall
 # 30 "data/maps/TrainerHill_Elevator/scripts.pory"
@@ -108,6 +106,9 @@ TrainerHill_Elevator_EventScript_MoveElevator::
 	waitse
 # 55 "data/maps/TrainerHill_Elevator/scripts.pory"
 	special MoveElevator
+# 56 "data/maps/TrainerHill_Elevator/scripts.pory"
+	waitstate
+# 57 "data/maps/TrainerHill_Elevator/scripts.pory"
 	return
 # 58 "data/maps/TrainerHill_Elevator/scripts.pory"
 
